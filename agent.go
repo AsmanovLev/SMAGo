@@ -269,18 +269,17 @@ func (a *Agent) Handle(chatID int64, userText string) (string, error) {
 				continue
 			}
 			argStr := truncateLog(fmt.Sprintf("%v", args), 150)
-			a.recordTrace(chatID, fmt.Sprintf("  → %s(%s)", tc.Function.Name, argStr))
 			out, err := tdef.Execute(runCtx, args)
 			if err != nil {
 				// /abort returns a context.Canceled error from the tool.
 				if errors.Is(err, context.Canceled) || errors.Is(err, context.DeadlineExceeded) {
-					a.recordTrace(chatID, "  🛑 cancelled by user")
+					a.recordTrace(chatID, fmt.Sprintf("  🛑 %s(%s) cancelled", tc.Function.Name, argStr))
 					return "🛑 aborted.", nil
 				}
-				a.recordTrace(chatID, fmt.Sprintf("  ✗ %s: %v", tc.Function.Name, err))
+				a.recordTrace(chatID, fmt.Sprintf("  ✗ %s(%s) → error: %v", tc.Function.Name, argStr, err))
 				out = "error: " + err.Error()
 			} else {
-				a.recordTrace(chatID, fmt.Sprintf("  ✓ %s: %d chars", tc.Function.Name, len(out)))
+				a.recordTrace(chatID, fmt.Sprintf("  ✓ %s(%s) → %d chars", tc.Function.Name, argStr, len(out)))
 			}
 			_ = sess.Append(ChatMessage{Role: "tool", ToolCallID: tc.ID, Name: tc.Function.Name, Content: out})
 			messages = append(messages,
