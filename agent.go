@@ -69,6 +69,14 @@ func (a *Agent) sendButtons(chatID int64, text string, rows [][]InlineButton) {
 	}
 }
 
+// sendPlain sends raw text without HTML conversion (for code, logs, diffs).
+func (a *Agent) sendPlain(chatID int64, text string) {
+	_ = a.tg.SendPlain(chatID, text)
+	if a.record != nil {
+		a.record(chatID, text)
+	}
+}
+
 func truncateLog(s string, n int) string {
 	if len(s) <= n {
 		return s
