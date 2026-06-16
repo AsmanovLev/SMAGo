@@ -276,3 +276,17 @@
 2026/06/16 20:31:50 reply: chatID=1055198077 "Всё прошло успешно! ✅\n\n- Ветка `main` создана и запушена\n- 10 коммитов на GitHub\n- Остались только runtime файлы (agent.exe, лог\xd0…"
 2026/06/16 20:33:50 msg: chatID=1055198077 text="сделай апгрейд в котором в выводе\n✓ step 6/200\nmodel=mimo-v2.5 <- эта строка будет убрана\nin=162457 out=287 total=162744\ntps=15248.2 itps=15221.3 otps…"
 2026/06/16 20:34:46 self_modify: clean exit requested by tool call
+2026/06/16 20:34:48 proxy: http://127.0.0.1:2080 (from system settings)
+2026/06/16 20:34:48 telegram: dialing api.telegram.org...
+2026/06/16 20:34:48 telegram: ✓ connected as @asmanovlev_bot (id=6627691089, name="@asmanovlev_bot")
+2026/06/16 20:34:48 warn: setMyCommands failed: setMyCommands HTTP 400
+2026/06/16 20:34:48 inject: http://127.0.0.1:7777/inject (POST {chat_id,text})
+2026/06/16 20:34:48 mirror: http://127.0.0.1:7777/mirror (GET, polls outgoing messages)
+2026/06/16 20:34:48 llm: provider=opencode-go model=mimo-v2.5
+2026/06/16 20:34:48 chat:  target chatID=1055198077 (set via /chatid command or SMAGO_TELEGRAM_CHAT_ID)
+2026/06/16 20:34:48 ready: long-polling for updates...
+2026/06/16 20:35:56 msg: chatID=1055198077 text="/version"
+2026/06/16 20:36:05 msg: chatID=1055198077 text="проверка"
+2026/06/16 20:37:09 reply: chatID=1055198077 "Готово! Бинарник собран без ошибок. Теперь нужно сделать релоад чтобы новый бинарник подхватился:\n\n- `/restart` в Tel…"
+2026/06/16 20:37:10 msg: chatID=1055198077 text="/abort"
+2026/06/16 20:37:18 msg: chatID=1055198077 text="/upgrade v2"
