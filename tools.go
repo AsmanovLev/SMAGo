@@ -151,13 +151,26 @@ func (r *ToolRegistry) connectMCPServers() {
 		}
 		log.Printf("mcp: ✓ %s — %d tool(s)", name, len(tools))
 
-		for _, mt := range tools {
+		// Cap MCP tools at a sensible number — the LLM can't handle 29
+		// separate tool JSON schemas in a single request (context explosion
+		// and client timeouts). Take the first maxMcpTools (they arrive in
+		// declaration order from the server, so the most core ones come
+		// first).
+		maxMcpTools := 10
+		if maxMcpTools > len(tools) {
+			maxMcpTools = len(tools)
+		}
+		for _, mt := range tools[:maxMcpTools] {
 			toolName := name + "__" + mt.Name
 			mtCopy := mt
 			clientCopy := client
+			desc := mtCopy.Description
+			if len(desc) > 150 {
+				desc = desc[:150] + "…"
+			}
 			r.tools[toolName] = ToolDef{
 				Name:        toolName,
-				Description: mtCopy.Description,
+				Description: desc,
 				Parameters:  mtCopy.InputSchema,
 				Execute: func(ctx context.Context, args map[string]any) (string, error) {
 					return clientCopy.CallTool(ctx, mtCopy.Name, args)

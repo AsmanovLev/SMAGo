@@ -39,8 +39,8 @@ type Agent struct {
 	verbose  bool
 	traceBuf map[int64][]string
 
-	runMu             sync.Mutex
-	runs              map[int64]*runState
+	runMu               sync.Mutex
+	runs                map[int64]*runState
 	pendingForceVersion string
 }
 
@@ -52,16 +52,9 @@ type injectedMsg struct {
 
 func NewAgent(cfg *Config, llm *LLM, store *Store, tg *Telegram, tools *ToolRegistry) *Agent {
 	return &Agent{
-		cfg:      cfg,
-		llm:      llm,
-		store:    store,
-		tg:       tg,
-		tools:    tools,
-		inject:   make(chan injectedMsg, 16),
-		maxSteps: make(map[int64]int),
-		traceBuf: make(map[int64][]string),
-		runs:     make(map[int64]*runState),
-		verbose:  false,
+		cfg:      cfg, llm: llm, store: store, tg: tg, tools: tools,
+		inject: make(chan injectedMsg, 16), maxSteps: make(map[int64]int),
+		traceBuf: make(map[int64][]string), runs: make(map[int64]*runState),
 	}
 }
 
@@ -453,7 +446,7 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 		case text == "/stop":
 			if rs := a.getRun(chatID); rs != nil {
 				rs.Stop()
-				a.send(chatID, "⏹ <i>stopping after current step…</i>")
+				a.send(chatID, "⏹ *stopping after current step…*")
 			} else {
 				a.send(chatID, "no task in progress")
 			}
@@ -461,7 +454,7 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 		case text == "/abort":
 			if rs := a.getRun(chatID); rs != nil {
 				rs.Abort()
-				a.send(chatID, "🛑 <i>aborted</i>")
+				a.send(chatID, "🛑 *aborted*")
 			} else {
 				a.send(chatID, "no task in progress")
 			}

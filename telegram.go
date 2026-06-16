@@ -18,8 +18,8 @@ type Telegram struct {
 }
 
 type TGUpdate struct {
-	UpdateID      int64 `json:"update_id"`
-	Message       *struct {
+	UpdateID int64 `json:"update_id"`
+	Message  *struct {
 		MessageID int64 `json:"message_id"`
 		From      *struct {
 			ID int64 `json:"id"`
@@ -67,10 +67,7 @@ type TGMe struct {
 }
 
 func NewTelegram(token string) *Telegram {
-	return &Telegram{
-		token:  token,
-		client: &http.Client{Timeout: 35 * time.Second},
-	}
+	return &Telegram{token: token, client: &http.Client{Timeout: 35 * time.Second}}
 }
 
 func (t *Telegram) SetProxyURL(rawURL string) error {
@@ -89,8 +86,7 @@ func (t *Telegram) SetProxyURL(rawURL string) error {
 }
 
 func (t *Telegram) GetMe(ctx context.Context) (*TGMe, error) {
-	req, err := http.NewRequestWithContext(ctx, "GET",
-		"https://api.telegram.org/bot"+t.token+"/getMe", nil)
+	req, err := http.NewRequestWithContext(ctx, "GET", "https://api.telegram.org/bot"+t.token+"/getMe", nil)
 	if err != nil {
 		return nil, err
 	}
@@ -115,13 +111,10 @@ func (t *Telegram) LongPoll(ctx context.Context) (*TGUpdate, error) {
 		v.Set("timeout", "30")
 		v.Set("offset", fmt.Sprintf("%d", t.offset))
 		v.Set("allowed_updates", `["message","callback_query"]`)
-
-		req, err := http.NewRequestWithContext(ctx, "GET",
-			"https://api.telegram.org/bot"+t.token+"/getUpdates?"+v.Encode(), nil)
+		req, err := http.NewRequestWithContext(ctx, "GET", "https://api.telegram.org/bot"+t.token+"/getUpdates?"+v.Encode(), nil)
 		if err != nil {
 			return nil, err
 		}
-
 		resp, err := t.client.Do(req)
 		if err != nil {
 			if ctx.Err() != nil {
@@ -130,7 +123,6 @@ func (t *Telegram) LongPoll(ctx context.Context) (*TGUpdate, error) {
 			time.Sleep(2 * time.Second)
 			continue
 		}
-
 		var tr TGResponse
 		if err := json.NewDecoder(resp.Body).Decode(&tr); err != nil {
 			resp.Body.Close()
@@ -138,12 +130,10 @@ func (t *Telegram) LongPoll(ctx context.Context) (*TGUpdate, error) {
 			continue
 		}
 		resp.Body.Close()
-
 		if !tr.OK {
 			time.Sleep(2 * time.Second)
 			continue
 		}
-
 		if len(tr.Result) > 0 {
 			t.offset = tr.Result[len(tr.Result)-1].UpdateID + 1
 			for _, u := range tr.Result {
@@ -163,9 +153,7 @@ func (t *Telegram) SendChatAction(chatID int64, action string) error {
 	v := url.Values{}
 	v.Set("chat_id", fmt.Sprintf("%d", chatID))
 	v.Set("action", action)
-
-	req, err := http.NewRequest("POST",
-		"https://api.telegram.org/bot"+t.token+"/sendChatAction", strings.NewReader(v.Encode()))
+	req, err := http.NewRequest("POST", "https://api.telegram.org/bot"+t.token+"/sendChatAction", strings.NewReader(v.Encode()))
 	if err != nil {
 		return err
 	}
@@ -200,13 +188,12 @@ func (t *Telegram) sendMessage(chatID int64, text string, silent bool) error {
 	}
 	v := url.Values{}
 	v.Set("chat_id", fmt.Sprintf("%d", chatID))
-	v.Set("text", text)
+	v.Set("text", mdToTelegramHTML(text))
+	v.Set("parse_mode", "HTML")
 	if silent {
 		v.Set("disable_notification", "true")
 	}
-
-	req, err := http.NewRequest("POST",
-		"https://api.telegram.org/bot"+t.token+"/sendMessage", strings.NewReader(v.Encode()))
+	req, err := http.NewRequest("POST", "https://api.telegram.org/bot"+t.token+"/sendMessage", strings.NewReader(v.Encode()))
 	if err != nil {
 		return err
 	}
@@ -231,14 +218,11 @@ func (t *Telegram) SendButtons(chatID int64, text string, rows [][]InlineButton)
 		kb, _ := json.Marshal(map[string]any{"inline_keyboard": rows})
 		v.Set("reply_markup", string(kb))
 	}
-
-	req, err := http.NewRequest("POST",
-		"https://api.telegram.org/bot"+t.token+"/sendMessage", strings.NewReader(v.Encode()))
+	req, err := http.NewRequest("POST", "https://api.telegram.org/bot"+t.token+"/sendMessage", strings.NewReader(v.Encode()))
 	if err != nil {
 		return err
 	}
 	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
-
 	resp, err := t.client.Do(req)
 	if err != nil {
 		return err
@@ -254,8 +238,7 @@ func (t *Telegram) AnswerCallback(callbackID, text string) error {
 		v.Set("text", text)
 		v.Set("show_alert", "false")
 	}
-	req, err := http.NewRequest("POST",
-		"https://api.telegram.org/bot"+t.token+"/answerCallbackQuery", strings.NewReader(v.Encode()))
+	req, err := http.NewRequest("POST", "https://api.telegram.org/bot"+t.token+"/answerCallbackQuery", strings.NewReader(v.Encode()))
 	if err != nil {
 		return err
 	}
@@ -274,16 +257,11 @@ type BotCommand struct {
 }
 
 func (t *Telegram) SetMyCommands(commands []BotCommand) error {
-	payload, err := json.Marshal(map[string]any{
-		"commands": commands,
-		"scope":    map[string]any{"type": "default"},
-	})
+	payload, err := json.Marshal(map[string]any{"commands": commands, "scope": map[string]any{"type": "default"}})
 	if err != nil {
 		return err
 	}
-	req, err := http.NewRequest("POST",
-		"https://api.telegram.org/bot"+t.token+"/setMyCommands",
-		strings.NewReader(string(payload)))
+	req, err := http.NewRequest("POST", "https://api.telegram.org/bot"+t.token+"/setMyCommands", strings.NewReader(string(payload)))
 	if err != nil {
 		return err
 	}
@@ -312,8 +290,7 @@ func (t *Telegram) EditMessageText(chatID int64, messageID int64, text string, r
 		kb, _ := json.Marshal(map[string]any{"inline_keyboard": rows})
 		v.Set("reply_markup", string(kb))
 	}
-	req, err := http.NewRequest("POST",
-		"https://api.telegram.org/bot"+t.token+"/editMessageText", strings.NewReader(v.Encode()))
+	req, err := http.NewRequest("POST", "https://api.telegram.org/bot"+t.token+"/editMessageText", strings.NewReader(v.Encode()))
 	if err != nil {
 		return err
 	}
