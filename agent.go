@@ -52,9 +52,10 @@ type injectedMsg struct {
 
 func NewAgent(cfg *Config, llm *LLM, store *Store, tg *Telegram, tools *ToolRegistry) *Agent {
 	return &Agent{
-		cfg:      cfg, llm: llm, store: store, tg: tg, tools: tools,
+		cfg: cfg, llm: llm, store: store, tg: tg, tools: tools,
 		inject: make(chan injectedMsg, 16), maxSteps: make(map[int64]int),
 		traceBuf: make(map[int64][]string), runs: make(map[int64]*runState),
+		verbose: true,
 	}
 }
 

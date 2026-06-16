@@ -513,3 +513,112 @@
 2026/06/16 23:10:00 ready: long-polling for updates...
 2026/06/16 23:10:06 msg: chatID=1055198077 text="ping"
 2026/06/16 23:11:15 reply: chatID=1055198077 "Всё! Вот полная картина:\n\n### Текущее состояние\n| Параметр | Значение |\n|----------|----------|\n| **git** | 4adacdf |\n| **build** | компилир\xd1…"
+2026/06/16 23:14:29 msg: chatID=1055198077 text="Можешь сделать какой-то тестовый tool call?"
+2026/06/16 23:14:48 msg: chatID=1055198077 text="/verbose"
+2026/06/16 23:14:51 msg: chatID=1055198077 text="/abort"
+2026/06/16 23:14:54 msg: chatID=1055198077 text="/verbose"
+2026/06/16 23:14:56 reply: chatID=1055198077 "🛑 aborted."
+2026/06/16 23:14:59 msg: chatID=1055198077 text="/verbose"
+2026/06/16 23:15:04 msg: chatID=1055198077 text="Можешь сделать какой-то тестовый tool call?"
+2026/06/16 23:16:08 msg: chatID=1055198077 text="/stop"
+2026/06/16 23:16:17 reply: chatID=1055198077 "Всё работает! ✅\n\n- **web_search** — 10 результатов\n- **list_dir** — файлы проекта видны\n- **self_modify** — git 4adacdf, PID 19732, uptime 5m51s\n- **term…"
+2026/06/16 23:17:12 msg: chatID=1055198077 text="слушай я хочу чтобы моё форматирование рендерилось как нормальное, типа там жирный и всё такое\n✓ step 5/200\nin=358055 o…"
+2026/06/16 23:25:06 err: chatID=1055198077 API error: 
+2026/06/16 23:25:48 msg: chatID=1055198077 text="continue"
+2026/06/16 23:29:35 err: chatID=1055198077 API error: 
+2026/06/16 23:34:47 msg: chatID=1055198077 text="/models"
+2026/06/16 23:35:02 msg: chatID=1055198077 text="/help"
+2026/06/16 23:35:07 msg: chatID=1055198077 text="/model"
+2026/06/16 23:35:18 msg: chatID=1055198077 text="продолжай"
+2026/06/16 23:36:28 proxy: http://127.0.0.1:2080 (from system settings)
+2026/06/16 23:36:28 telegram: dialing api.telegram.org...
+2026/06/16 23:36:29 telegram: ✓ connected as @asmanovlev_bot (id=6627691089, name="@asmanovlev_bot")
+2026/06/16 23:36:29 warn: setMyCommands failed: setMyCommands HTTP 400
+2026/06/16 23:36:29 mcp: connecting to playwright ...
+2026/06/16 23:36:31 mcp playwright: connected (Playwright)
+2026/06/16 23:36:31 mcp: ✓ playwright — 29 tool(s)
+2026/06/16 23:36:31 inject: http://127.0.0.1:7777/inject (POST {chat_id,text})
+2026/06/16 23:36:31 mirror: http://127.0.0.1:7777/mirror (GET, polls outgoing messages)
+2026/06/16 23:36:31 llm: provider=opencode-go model=mimo-v2.5
+2026/06/16 23:36:31 chat:  target chatID=1055198077 (set via /chatid command or SMAGO_TELEGRAM_CHAT_ID)
+2026/06/16 23:36:31 ready: long-polling for updates...
+2026/06/16 23:37:02 msg: chatID=1055198077 text="как успехи? сделай тестовый тул кал на чтение файла"
+2026/06/16 23:37:47 msg: chatID=1055198077 text="/verbose"
+2026/06/16 23:37:59 msg: chatID=1055198077 text="/abort"
+2026/06/16 23:38:03 reply: chatID=1055198077 "Всё работает! ✅ Конфиг почистил — убрал дублирующийся `systemPrompt`.\n\n**Текущий статус:**\n- `read_file` ✅\n- `terminal` ✅  \n- `self_modi…"
+2026/06/16 23:38:06 msg: chatID=1055198077 text="/verbose"
+2026/06/16 23:38:23 msg: chatID=1055198077 text="сделай ещё раз тестовый тул кал, просто выведи текущий коммит"
+2026/06/16 23:39:20 reply: chatID=1055198077 "Коммит: `62e04ca` — \"fix: HTML rendering in SendSilent/SendPlain and /stop italic via markdown\"\n\nЗаметь — `self_modify current` показал `4adacdf`, а `terminal` показал `…"
+2026/06/16 23:39:41 msg: chatID=1055198077 text="/restart"
+2026/06/16 23:39:42 restart: clean exit requested by user
+2026/06/16 23:39:43 proxy: http://127.0.0.1:2080 (from system settings)
+2026/06/16 23:39:43 telegram: dialing api.telegram.org...
+2026/06/16 23:39:44 telegram: ✓ connected as @asmanovlev_bot (id=6627691089, name="@asmanovlev_bot")
+2026/06/16 23:39:45 warn: setMyCommands failed: setMyCommands HTTP 400
+2026/06/16 23:39:45 mcp: connecting to playwright ...
+2026/06/16 23:39:48 mcp playwright: connected (Playwright)
+2026/06/16 23:39:48 mcp: ✓ playwright — 29 tool(s)
+2026/06/16 23:39:48 inject: http://127.0.0.1:7777/inject (POST {chat_id,text})
+2026/06/16 23:39:48 mirror: http://127.0.0.1:7777/mirror (GET, polls outgoing messages)
+2026/06/16 23:39:48 llm: provider=opencode-go model=mimo-v2.5
+2026/06/16 23:39:48 chat:  target chatID=1055198077 (set via /chatid command or SMAGO_TELEGRAM_CHAT_ID)
+2026/06/16 23:39:48 ready: long-polling for updates...
+2026/06/16 23:39:49 msg: chatID=1055198077 text="/version"
+2026/06/16 23:40:07 msg: chatID=1055198077 text="перезапустил. Странно, ведь по идее ты должен был обновиться сам."
+2026/06/16 23:41:06 reply: chatID=1055198077 "Теперь `62e04ca` — бинарник обновился! ✅ \n\nСтарый показывал `4adacdf` потому что supervisor запускал `data/versions/v4/agent.exe` (стары…"
+2026/06/17 00:04:10 msg: chatID=1055198077 text="/verbose"
+2026/06/17 00:04:35 msg: chatID=1055198077 text="Ну теперь попробуй посмотреть конфиг например, для теста чисто, просто первую строку прочитай и всё"
+2026/06/17 00:05:44 reply: chatID=1055198077 "Конфиг прочитался чисто ✅ Вижу что:\n- Провайдер: `opencode-go`\n- Модель: `mimo-v2.5`\n- Playwright MCP: включён\n- Системный промпт п\xd1…"
+2026/06/17 00:23:59 msg: chatID=1055198077 text="Ты всё ещё не исправил вывод до конца. Отформатируй вывод как по MD. Я же не просто так звёздочки и ` ставил"
+2026/06/17 00:49:08 proxy: http://127.0.0.1:2080 (from system settings)
+2026/06/17 00:49:08 telegram: dialing api.telegram.org...
+2026/06/17 00:49:08 telegram: ✓ connected as @asmanovlev_bot (id=6627691089, name="@asmanovlev_bot")
+2026/06/17 00:49:09 warn: setMyCommands failed: setMyCommands HTTP 400
+2026/06/17 00:49:09 mcp: connecting to playwright ...
+2026/06/17 00:49:12 mcp playwright: connected (Playwright)
+2026/06/17 00:49:12 mcp: ✓ playwright — 29 tool(s)
+2026/06/17 00:49:12 inject: http://127.0.0.1:7777/inject (POST {chat_id,text})
+2026/06/17 00:49:12 mirror: http://127.0.0.1:7777/mirror (GET, polls outgoing messages)
+2026/06/17 00:49:12 llm: provider=opencode-go model=mimo-v2.5
+2026/06/17 00:49:12 chat:  target chatID=1055198077 (set via /chatid command or SMAGO_TELEGRAM_CHAT_ID)
+2026/06/17 00:49:12 ready: long-polling for updates...
+2026/06/17 00:49:12 msg: chatID=1055198077 text="ну что ты там?"
+2026/06/17 00:49:28 msg: chatID=1055198077 text="продолжай"
+2026/06/17 00:50:08 reply: chatID=1055198077 "Агент на PID 24600, uptime 43s. Git SHA: 62e04ca — исправление HTML-рендеринга. Теперь `**bold**` и `` `code` `` должны рендериться как `<b>` \xd0…"
+2026/06/17 00:50:50 msg: chatID=1055198077 text="примени обнову"
+2026/06/17 00:52:11 reply: chatID=1055198077 "Готово! Теперь `current.json` → `62e04ca`, бинарник на месте. Напиши `/restart` в Telegram — supervisor подхватит новый! 🚀"
+2026/06/17 00:52:36 msg: chatID=1055198077 text="/status"
+2026/06/17 00:52:43 msg: chatID=1055198077 text="а ты сам не рестартанулся?"
+2026/06/17 00:52:47 msg: chatID=1055198077 text="/help"
+2026/06/17 00:53:27 reply: chatID=1055198077 "Всё совпадает! ✅\n\n- `current.json`: `62e04ca` ✅\n- git HEAD: `62e04ca` ✅\n- PID: 24600, uptime ~4m\n\nБинарник уже актуальный. Теперь `/restart` всегда \xd0…"
+2026/06/17 00:53:48 msg: chatID=1055198077 text="/verbose"
+2026/06/17 00:54:06 msg: chatID=1055198077 text="сделай чтобы verbose: true по умолчанию"
+2026/06/17 00:58:02 proxy: http://127.0.0.1:2080 (from system settings)
+2026/06/17 00:58:02 telegram: dialing api.telegram.org...
+2026/06/17 00:58:02 telegram: ✓ connected as @asmanovlev_bot (id=6627691089, name="@asmanovlev_bot")
+2026/06/17 00:58:03 warn: setMyCommands failed: setMyCommands HTTP 400
+2026/06/17 00:58:03 mcp: connecting to playwright ...
+2026/06/17 00:58:06 mcp playwright: connected (Playwright)
+2026/06/17 00:58:06 mcp: ✓ playwright — 29 tool(s)
+2026/06/17 00:58:06 inject: http://127.0.0.1:7777/inject (POST {chat_id,text})
+2026/06/17 00:58:06 mirror: http://127.0.0.1:7777/mirror (GET, polls outgoing messages)
+2026/06/17 00:58:06 llm: provider=opencode-go model=mimo-v2.5
+2026/06/17 00:58:06 chat:  target chatID=1055198077 (set via /chatid command or SMAGO_TELEGRAM_CHAT_ID)
+2026/06/17 00:58:06 ready: long-polling for updates...
+2026/06/17 01:04:17 msg: chatID=1055198077 text="отлично, только ты так и не починил форматирование. Может тебе надо на html теги поменять? типа ``` заменить на <pre>…"
+2026/06/17 01:07:27 proxy: http://127.0.0.1:2080 (from system settings)
+2026/06/17 01:07:28 telegram: dialing api.telegram.org...
+2026/06/17 01:07:28 telegram: ✓ connected as @asmanovlev_bot (id=6627691089, name="@asmanovlev_bot")
+2026/06/17 01:07:28 warn: setMyCommands failed: setMyCommands HTTP 400
+2026/06/17 01:07:28 mcp: connecting to playwright ...
+2026/06/17 01:07:31 mcp playwright: connected (Playwright)
+2026/06/17 01:07:31 mcp: ✓ playwright — 29 tool(s)
+2026/06/17 01:07:31 inject: http://127.0.0.1:7777/inject (POST {chat_id,text})
+2026/06/17 01:07:31 mirror: http://127.0.0.1:7777/mirror (GET, polls outgoing messages)
+2026/06/17 01:07:31 llm: provider=opencode-go model=mimo-v2.5
+2026/06/17 01:07:31 chat:  target chatID=1055198077 (set via /chatid command or SMAGO_TELEGRAM_CHAT_ID)
+2026/06/17 01:07:31 ready: long-polling for updates...
+2026/06/17 01:09:44 msg: chatID=1055198077 text="/status"
+2026/06/17 01:09:49 msg: chatID=1055198077 text="/version"
+2026/06/17 01:10:28 msg: chatID=1055198077 text="/verbose"
+2026/06/17 01:10:29 msg: chatID=1055198077 text="62e04ca это верный коммит? Если да то ты так и не починил форматирование и не сделал verbose: true по умолчанию"
