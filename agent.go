@@ -23,9 +23,6 @@ const defaultMaxSteps = 200
 var startedAt = time.Now()
 
 // runState is the per-chat handle on the currently-running Handle() call.
-// It carries:
-//   - a cancellable context (so /abort can kill in-flight tools)
-//   - a stop channel (so /stop can request a graceful exit between steps)
 type runState struct {
 	ctx    context.Context
 	cancel context.CancelFunc
@@ -44,24 +41,20 @@ type Agent struct {
 	tools    *ToolRegistry
 	inject   chan injectedMsg
 	record   func(chatID int64, text string)
-	maxSteps map[int64]int      // per-chat override
-	verbose  bool               // send tool-call traces inline in Telegram
-	traceBuf map[int64][]string // last 20 tool-call lines per chat (for /trace)
+	maxSteps map[int64]int
+	verbose  bool
+	traceBuf map[int64][]string
 
 	runMu sync.Mutex
 	runs  map[int64]*runState
 
-	// Stash for the /rollback "force" flow — when the user taps a version
-	// while the working tree is dirty, we remember which version they meant
-	// so the subsequent "Force" tap knows what to roll back to.
 	pendingForceVersion string
 }
 
-// injectedMsg is a message pushed into the agent loop from outside Telegram.
 type injectedMsg struct {
 	ChatID  int64
 	Text    string
-	trusted bool // injected messages skip the trusted-id check
+	trusted bool
 }
 
 func NewAgent(cfg *Config, llm *LLM, store *Store, tg *Telegram, tools *ToolRegistry) *Agent {
@@ -75,27 +68,22 @@ func NewAgent(cfg *Config, llm *LLM, store *Store, tg *Telegram, tools *ToolRegi
 		maxSteps: make(map[int64]int),
 		traceBuf: make(map[int64][]string),
 		runs:     make(map[int64]*runState),
-		verbose:  true, // send tool-call traces inline by default
+		verbose:  true,
 	}
 }
 
-// getRun returns the runState for chatID, or nil if no run is active.
 func (a *Agent) getRun(chatID int64) *runState {
 	a.runMu.Lock()
 	defer a.runMu.Unlock()
 	return a.runs[chatID]
 }
 
-// registerRun stores rs in the per-chat slot and returns a func that
-// removes it. Use as `defer a.registerRun(chatID, rs)()` in Handle.
 func (a *Agent) registerRun(chatID int64, rs *runState) func() {
 	a.runMu.Lock()
 	a.runs[chatID] = rs
 	a.runMu.Unlock()
 	return func() {
 		a.runMu.Lock()
-		// Only delete the slot if it's still ours — a concurrent
-		// /stop+restart could have replaced it.
 		if a.runs[chatID] == rs {
 			delete(a.runs, chatID)
 		}
@@ -103,8 +91,6 @@ func (a *Agent) registerRun(chatID int64, rs *runState) func() {
 	}
 }
 
-// recordTrace appends one line to the per-chat trace buffer and
-// returns it. If verbose is on, the same line is also sent to the chat.
 func (a *Agent) recordTrace(chatID int64, line string) string {
 	a.traceBuf[chatID] = append(a.traceBuf[chatID], line)
 	if len(a.traceBuf[chatID]) > 20 {
@@ -116,9 +102,6 @@ func (a *Agent) recordTrace(chatID int64, line string) string {
 	return line
 }
 
-// Push submits a synthetic message as if it came from Telegram.
-// Injected messages bypass the trusted-ChatID gate so local debug
-// tools and HTTP /inject can drive the agent without one.
 func (a *Agent) Push(chatID int64, text string) error {
 	select {
 	case a.inject <- injectedMsg{ChatID: chatID, Text: text, trusted: true}:
@@ -128,13 +111,10 @@ func (a *Agent) Push(chatID int64, text string) error {
 	}
 }
 
-// SetRecorder wires a callback that gets every outgoing Telegram message.
-// Used by the debug HTTP /mirror endpoint.
 func (a *Agent) SetRecorder(fn func(chatID int64, text string)) {
 	a.record = fn
 }
 
-// send mirrors a Telegram send to the local /mirror endpoint.
 func (a *Agent) send(chatID int64, text string) {
 	_ = a.tg.Send(chatID, text)
 	if a.record != nil {
@@ -149,7 +129,6 @@ func (a *Agent) sendButtons(chatID int64, text string, rows [][]InlineButton) {
 	}
 }
 
-// sendPlain sends raw text without HTML conversion (for code, logs, diffs).
 func (a *Agent) sendPlain(chatID int64, text string) {
 	_ = a.tg.SendPlain(chatID, text)
 	if a.record != nil {
@@ -157,9 +136,6 @@ func (a *Agent) sendPlain(chatID int64, text string) {
 	}
 }
 
-// trace sends a short "agent is doing X" message to the chat. It is
-// best-effort and never returns an error. The flag `a.verbose` controls
-// whether the user sees tool calls inline or only the final answer.
 func (a *Agent) trace(chatID int64, text string) {
 	if !a.verbose {
 		return
@@ -167,7 +143,6 @@ func (a *Agent) trace(chatID int64, text string) {
 	a.sendPlain(chatID, text)
 }
 
-// typing sends the "typing..." indicator to the chat. Fire-and-forget.
 func (a *Agent) typing(chatID int64) {
 	_ = a.tg.Typing(chatID)
 }
@@ -201,7 +176,6 @@ func (a *Agent) Handle(chatID int64, userText string) (string, error) {
 		maxSteps = v
 	}
 
-	// Register a per-chat run state so /stop and /abort can reach us.
 	runCtx, runCancel := context.WithCancel(context.Background())
 	rs := &runState{ctx: runCtx, cancel: runCancel, stop: make(chan struct{})}
 	cleanup := a.registerRun(chatID, rs)
@@ -211,7 +185,6 @@ func (a *Agent) Handle(chatID int64, userText string) (string, error) {
 		truncateLog(userText, 100), a.cfg.DefaultModel, maxSteps, len(tools)))
 
 	for i := 0; i < maxSteps; i++ {
-		// /stop check at the top of every step.
 		select {
 		case <-rs.stop:
 			a.recordTrace(chatID, "⏹ stopped by user")
@@ -223,7 +196,6 @@ func (a *Agent) Handle(chatID int64, userText string) (string, error) {
 			return "🛑 aborted.", nil
 		}
 
-		// Show typing indicator before each LLM call (expires after ~5s, so refresh each step)
 		a.typing(chatID)
 
 		stepStart := time.Now()
@@ -234,12 +206,10 @@ func (a *Agent) Handle(chatID int64, userText string) (string, error) {
 			return "", err
 		}
 
-		// Collect tool result lines so we can emit one multi-line trace
-		// message at the end of the step instead of one message per line.
 		var toolLines []string
 
 		if len(resp.ToolCalls) == 0 {
-			a.recordStep(chatID, i+1, maxSteps, a.cfg.DefaultModel, usage, stepDur,
+			a.recordStep(chatID, i+1, maxSteps, usage, stepDur,
 				nil, len(resp.Content))
 			_ = sess.Append(ChatMessage{Role: "assistant", Content: resp.Content})
 			return resp.Content, nil
@@ -248,7 +218,6 @@ func (a *Agent) Handle(chatID int64, userText string) (string, error) {
 		_ = sess.Append(ChatMessage{Role: "assistant", Content: resp.Content, ToolCalls: resp.ToolCalls})
 
 		for _, tc := range resp.ToolCalls {
-			// Show typing again while executing each tool
 			a.typing(chatID)
 
 			tdef, ok := a.tools.Get(tc.Function.Name)
@@ -272,12 +241,9 @@ func (a *Agent) Handle(chatID int64, userText string) (string, error) {
 			argStr := truncateLog(fmt.Sprintf("%v", args), 150)
 			out, err := tdef.Execute(runCtx, args)
 			if err != nil {
-				// /abort returns a context.Canceled error from the tool.
 				if errors.Is(err, context.Canceled) || errors.Is(err, context.DeadlineExceeded) {
-					// Emit the step trace first so the user sees the tools
-					// that ran, then bail.
 					toolLines = append(toolLines, fmt.Sprintf("  🛑 %s(%s) cancelled", tc.Function.Name, argStr))
-					a.recordStep(chatID, i+1, maxSteps, a.cfg.DefaultModel, usage, stepDur, toolLines, -1)
+					a.recordStep(chatID, i+1, maxSteps, usage, stepDur, toolLines, -1)
 					return "🛑 aborted.", nil
 				}
 				toolLines = append(toolLines, fmt.Sprintf("  ✗ %s(%s) → error: %v", tc.Function.Name, argStr, err))
@@ -291,10 +257,9 @@ func (a *Agent) Handle(chatID int64, userText string) (string, error) {
 				ChatMessage{Role: "tool", ToolCallID: tc.ID, Name: tc.Function.Name, Content: out},
 			)
 		}
-		// One trace message per step, with all tool lines baked in.
-		a.recordStep(chatID, i+1, maxSteps, a.cfg.DefaultModel, usage, stepDur, toolLines, -1)
+		a.recordStep(chatID, i+1, maxSteps, usage, stepDur, toolLines, -1)
 	}
-	// Hit the step cap. Ask the model for a best-effort text answer.
+
 	a.recordTrace(chatID, fmt.Sprintf("✗ hit %d-step cap, asking for best-effort text", maxSteps))
 	messages = append(messages, ChatMessage{
 		Role:    "system",
@@ -308,18 +273,8 @@ func (a *Agent) Handle(chatID int64, userText string) (string, error) {
 	return resp.Content, nil
 }
 
-// recordStep emits the per-step trace as a single multi-line Telegram
-// message. The header (step, model, tokens, rates, duration) is followed
-// by one line per tool call (or a single "(text reply, N chars)" line if
-// the model returned no tool calls).
-//
-// All numeric fields are best-effort — providers that don't return usage
-// just show 0.
-//
-// textReplyLen is used only when toolLines is empty; pass -1 when there
-// were tool calls (otherwise the "(text reply, N chars)" line is appended
-// after the tool lines, which is not what you want).
-func (a *Agent) recordStep(chatID int64, step, max int, model string, usage *Usage, dur time.Duration, toolLines []string, textReplyLen int) {
+// recordStep emits the per-step trace as a single multi-line Telegram message.
+func (a *Agent) recordStep(chatID int64, step, max int, usage *Usage, dur time.Duration, toolLines []string, textReplyLen int) {
 	in, out, total := 0, 0, 0
 	if usage != nil {
 		in, out, total = usage.PromptTokens, usage.CompletionTokens, usage.TotalTokens
@@ -339,7 +294,6 @@ func (a *Agent) recordStep(chatID int64, step, max int, model string, usage *Usa
 	}
 	var b strings.Builder
 	fmt.Fprintf(&b, "✓ step %d/%d\n", step, max)
-	fmt.Fprintf(&b, "model=%s\n", model)
 	fmt.Fprintf(&b, "in=%d out=%d total=%d\n", in, out, total)
 	fmt.Fprintf(&b, "tps=%.1f itps=%.1f otps=%.1f\n", tps, itps, otps)
 	fmt.Fprintf(&b, "dur=%.1fs", secs)
@@ -354,8 +308,6 @@ func (a *Agent) recordStep(chatID int64, step, max int, model string, usage *Usa
 	a.recordTrace(chatID, b.String())
 }
 
-// sendModelGrid sends a message with one inline button per available model.
-// Each button carries a callback_data like "model:deepseek-reasoner".
 func (a *Agent) sendModelGrid(chatID int64) {
 	prov, ok := a.cfg.Providers[a.cfg.Provider]
 	if !ok {
@@ -393,7 +345,6 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 		a.send(a.cfg.TelegramChatID, "🤖 SMAGo started. /models to pick, /help for commands.")
 	}
 
-	// Drain Telegram long-poll in a background goroutine; results land in pollCh.
 	pollCh := make(chan *TGUpdate, 4)
 	go func() {
 		defer close(pollCh)
@@ -428,7 +379,6 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 			inj = &m
 		}
 
-		// Convert injected message into a TGUpdate-shaped value to share handling.
 		if inj != nil {
 			upd = &TGUpdate{
 				Message: &struct {
@@ -450,8 +400,6 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 			continue
 		}
 
-		// Trusted-ChatID gate. Empty list = open (backwards compat).
-		// Injected messages always pass.
 		isTrusted := inj != nil && inj.trusted
 		if !isTrusted && len(a.cfg.TrustedChatIDs) > 0 {
 			allowed := false
@@ -472,7 +420,6 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 			}
 		}
 
-		// Inline button tap (callback_query).
 		if upd.CallbackQuery != nil {
 			cq := upd.CallbackQuery
 			data := cq.Data
@@ -704,7 +651,7 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 		case text == "/restart":
 			a.send(upd.Message.Chat.ID, "🔄 restarting — supervisor will bring me back in a moment")
 			go func() {
-				time.Sleep(500 * time.Millisecond) // let the message flush
+				time.Sleep(500 * time.Millisecond)
 				log.Println("restart: clean exit requested by user")
 				os.Exit(0)
 			}()
@@ -793,7 +740,6 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 			continue
 		}
 
-		// Show typing indicator while the agent processes the message
 		a.typing(upd.Message.Chat.ID)
 
 		reply, err := a.Handle(upd.Message.Chat.ID, text)
@@ -807,9 +753,6 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 	}
 }
 
-// showRollbackMenu lists the available versions as inline buttons.
-// Each button's callback_data is "rollback:vN" — tapping it kicks off the
-// rollback flow for that version.
 func (a *Agent) showRollbackMenu(chatID int64) {
 	versions, err := listVersions()
 	if err != nil {
@@ -828,7 +771,6 @@ func (a *Agent) showRollbackMenu(chatID int64) {
 		if v.IsCurrent {
 			marker = " ✅ current"
 		}
-		// e.g. "v3 abc1234 (2h ago)"
 		label := fmt.Sprintf("%s %s (%s)%s", v.Version, v.ShortSHA, humanAge(v.BuiltAt), marker)
 		if len(label) > 60 {
 			label = label[:60] + "…"
@@ -841,9 +783,6 @@ func (a *Agent) showRollbackMenu(chatID int64) {
 	a.sendButtons(chatID, b.String(), rows)
 }
 
-// runRollback is the callback-driven rollback path. It checks for a dirty
-// working tree first; if dirty, it edits the originating message to show a
-// single "force" button instead of attempting the rollback.
 func (a *Agent) runRollback(chatID, msgID int64, version string, force bool) {
 	if !force {
 		dirty, err := gitTrackedDirty()
@@ -862,7 +801,6 @@ func (a *Agent) runRollback(chatID, msgID int64, version string, force bool) {
 				{Text: "⚠️ Force rollback", CallbackData: "rollback:force"},
 			}}
 			_ = a.tg.EditMessageText(chatID, msgID, text, rows)
-			// Stash the intended version on the agent for the force handler.
 			a.pendingForceVersion = version
 			return
 		}
@@ -870,8 +808,6 @@ func (a *Agent) runRollback(chatID, msgID int64, version string, force bool) {
 	a.executeRollback(chatID, msgID, version, force)
 }
 
-// runRollbackFromDirty is the "force" callback after a dirty tree was
-// detected. Pulls the version off the agent's pending slot.
 func (a *Agent) runRollbackFromDirty(chatID, msgID int64) {
 	v := a.pendingForceVersion
 	a.pendingForceVersion = ""
@@ -882,8 +818,6 @@ func (a *Agent) runRollbackFromDirty(chatID, msgID int64) {
 	a.executeRollback(chatID, msgID, v, true)
 }
 
-// executeRollback shells out to a fresh `agent rollback` and reports the
-// result via the message that the user clicked.
 func (a *Agent) executeRollback(chatID, msgID int64, version string, force bool) {
 	a.send(chatID, "⏪ rolling back to "+version+"…")
 	go func() {
@@ -898,8 +832,6 @@ func (a *Agent) executeRollback(chatID, msgID int64, version string, force bool)
 	}()
 }
 
-// humanAge returns a short, human-friendly age string ("just now", "5m ago",
-// "2h ago", "3d ago") suitable for inline-button labels.
 func humanAge(t time.Time) string {
 	d := time.Since(t)
 	switch {
