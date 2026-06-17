@@ -104,8 +104,21 @@ func execCompress(_ context.Context, args map[string]any, dcp *DCPState, sessLen
 
 	dcp.TotalPrunedTokens += totalSaved
 
-	return fmt.Sprintf("Compressed %d ranges into summary (%d tokens saved)\n%s",
-		len(ca.Ranges), totalSaved, strings.Join(summaries, "\n")), nil
+	var out strings.Builder
+	out.WriteString("\U0001f4e6 *Context compressed*\n")
+	out.WriteString(fmt.Sprintf("\u251c Ranges: %d\n", len(ca.Ranges)))
+	out.WriteString(fmt.Sprintf("\u251c Saved: ~%d tokens\n", totalSaved))
+	if len(dcp.CompressedRanges) > 0 {
+		out.WriteString(fmt.Sprintf("\u2514 Total compressed: %d ranges\n\n", len(dcp.CompressedRanges)))
+	}
+	for i, s := range summaries {
+		icon := "\u251c"
+		if i == len(summaries)-1 {
+			icon = "\u2514"
+		}
+		out.WriteString(fmt.Sprintf("%s %s\n", icon, s))
+	}
+	return out.String(), nil
 }
 
 func truncateStr(s string, n int) string {

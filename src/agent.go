@@ -364,11 +364,22 @@ func (a *Agent) Handle(chatID int64, userText string) (string, error) {
 
 		_ = sess.Append(ChatMessage{Role: "assistant", Content: resp.Content, ToolCalls: resp.ToolCalls})
 
+		compressedThisStep := false
+		compressCount := 0
 		for _, tc := range resp.ToolCalls {
 			a.typing(chatID)
 
-			// Intercept compress tool
+			// Intercept compress tool — only allow once per step to prevent loops
 			if tc.Function.Name == "compress" && a.cfg.DCP.Enabled {
+				if compressedThisStep || compressCount >= 3 {
+					msg := "Compression already done this step. Continue with your main task."
+					if compressCount >= 3 {
+						msg = "Maximum compressions reached for this turn (3). Continue with your main task."
+					}
+					_ = sess.Append(ChatMessage{Role: "tool", ToolCallID: tc.ID, Name: "compress",
+						Content: msg})
+					continue
+				}
 				var args map[string]any
 				if err := json.Unmarshal([]byte(tc.Function.Arguments), &args); err != nil {
 					toolLines = append(toolLines, fmt.Sprintf("  ✗ compress: bad args: %v", err))
@@ -382,9 +393,13 @@ func (a *Agent) Handle(chatID int64, userText string) (string, error) {
 					continue
 				}
 				dcp.LastCompressStep = i + 1
+				compressedThisStep = true
+				compressCount++
 				_ = sess.Append(ChatMessage{Role: "tool", ToolCallID: tc.ID, Name: "compress", Content: result})
 				toolLines = append(toolLines, formatToolCall("compress", args, resp.Content, len(result), nil))
 				a.recordTrace(chatID, "📦 DCP: "+result)
+				// Rebuild messages so LLM sees compressed context and stops compressing
+				messages = a.buildDCPMessages(sess, dcp, i+1)
 				continue
 			}
 
