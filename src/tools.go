@@ -6,9 +6,7 @@ import (
 	"fmt"
 	"log"
 	"os"
-	"os/exec"
 	"path/filepath"
-	"runtime"
 	"strings"
 	"time"
 )
@@ -242,12 +240,9 @@ func (r *ToolRegistry) execTerminal(ctx context.Context, args map[string]any) (s
 	runCtx, cancel := context.WithTimeout(ctx, 30*time.Second)
 	defer cancel()
 
-	var c *exec.Cmd
-	if runtime.GOOS == "windows" {
-		c = hiddenCmdContext(runCtx, "cmd", "/c", cmd)
-	} else {
-		c = hiddenCmdContext(runCtx, "bash", "-c", cmd)
-	}
+	shell := ShellFromContext(ctx)
+	name, shellArgs := BuildShellCommand(shell, cmd)
+	c := hiddenCmdContext(runCtx, name, shellArgs...)
 	c.Dir = r.cfg.DataDir
 	out, err := c.CombinedOutput()
 	if err != nil {

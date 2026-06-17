@@ -969,3 +969,26 @@
 2026/06/17 13:45:43 msg: chatID=1055198077 text="я если что запускаю через supervisor_bg.exe, я закрыл супервизор теперь все файлы кроме agent должны быть разблокирован\xd1…"
 2026/06/17 13:54:52 reply: chatID=1055198077 "Готово! Чистая сборка. Структура теперь:\n\n```\nSMAGo/\n├── src/              # все .go исходники + go.mod + cmd/\n├── bin/              # exe фа…"
 2026/06/17 13:56:26 msg: chatID=1055198077 text="ну теперь запусти апгрейд"
+2026/06/17 13:57:52 upgrade: git HEAD = 277f076
+2026/06/17 13:57:52 upgrade: building data\versions\277f076\agent.exe from .
+2026/06/17 13:58:42 msg: chatID=1055198077 text="гипервизор выключен"
+2026/06/17 13:58:47 msg: chatID=1055198077 text="/abort"
+2026/06/17 13:58:52 shutdown signal
+2026/06/17 13:58:52 mcp[playwright] ^C
+2026/06/17 14:17:43 shells: [powershell admin cmd wsl gitbash]
+2026/06/17 14:17:43 proxy: http://127.0.0.1:2080 (from system settings)
+2026/06/17 14:17:43 migrate: sessions.name (expected if already exists): SQL logic error: duplicate column name: name (1)
+2026/06/17 14:17:43 migrate: sessions.name: SQL logic error: duplicate column name: name (1)
+2026/06/17 14:17:43 telegram: dialing api.telegram.org...
+2026/06/17 14:17:43 telegram: ✓ connected as @asmanovlev_bot (id=6627691089, name="@asmanovlev_bot")
+2026/06/17 14:17:43 warn: setMyCommands failed: setMyCommands HTTP 400
+2026/06/17 14:17:43 mcp: connecting to playwright ...
+2026/06/17 14:17:46 mcp playwright: connected (Playwright)
+2026/06/17 14:17:46 mcp: ✓ playwright — 29 tool(s)
+2026/06/17 14:17:46 inject: http://127.0.0.1:7777/inject (POST {chat_id,text})
+2026/06/17 14:17:46 mirror: http://127.0.0.1:7777/mirror (GET, polls outgoing messages)
+2026/06/17 14:17:46 llm: provider=opencode-go model=mimo-v2.5
+2026/06/17 14:17:46 chat:  target chatID=1055198077 (set via /chatid command or SMAGO_TELEGRAM_CHAT_ID)
+2026/06/17 14:17:46 ready: long-polling for updates...
+2026/06/17 14:34:49 msg: chatID=1055198077 text="проверка"
+2026/06/17 14:34:50 err: chatID=1055198077 HTTP 401: {"type":"error","error":{"type":"AuthError","message":"Missing API key."}}

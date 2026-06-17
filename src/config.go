@@ -54,6 +54,7 @@ func LoadConfig(path string) (*Config, error) {
 		SystemPrompt: "You are a helpful AI assistant. Be concise. Use tools when helpful.",
 		DefaultShell: "powershell",
 		DCP: DCPConfig{
+			Enabled:            true,
 			MaxContextTokens:   80000,
 			MinContextTokens:   40000,
 			NudgeFrequency:     5,

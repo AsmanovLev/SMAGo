@@ -44,6 +44,15 @@ func NewStore(dataDir string) (*Store, error) {
 		return nil, err
 	}
 
+	// ── Schema migration ──────────────────────────────
+	// Older DBs created before the `name` column existed.
+	if _, err := db.Exec("ALTER TABLE sessions ADD COLUMN name TEXT NOT NULL DEFAULT 'default'"); err != nil {
+		log.Printf("migrate: sessions.name (expected if already exists): %v", err)
+	}
+	if _, err := db.Exec("CREATE UNIQUE INDEX IF NOT EXISTS idx_sessions_chat_name ON sessions(chat_id, name)"); err != nil {
+		log.Printf("migrate: unique index: %v", err)
+	}
+
 	if _, err := db.Exec(`
 		CREATE TABLE IF NOT EXISTS dcp_state (
 			chat_id    INTEGER PRIMARY KEY,
@@ -51,13 +60,6 @@ func NewStore(dataDir string) (*Store, error) {
 			updated_at INTEGER NOT NULL
 		)`); err != nil {
 		return nil, err
-	}
-
-	if _, err := db.Exec("ALTER TABLE sessions ADD COLUMN name TEXT NOT NULL DEFAULT 'default'"); err != nil {
-		log.Printf("migrate: sessions.name: %v", err)
-	}
-	if _, err := db.Exec("CREATE UNIQUE INDEX IF NOT EXISTS idx_sessions_chat_name ON sessions(chat_id, name)"); err != nil {
-		log.Printf("migrate: unique index: %v", err)
 	}
 
 	return &Store{db: db}, nil

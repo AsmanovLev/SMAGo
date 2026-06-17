@@ -29,11 +29,6 @@ var bannerLines = []string{
 	`╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═══╝   ╚═╝`,
 }
 
-var bannerSubtext = []string{
-	"           Self  ·  Modifying  ·  Agent  ·  written in Go",
-	"           v" + version,
-}
-
 type rgb struct{ r, g, b uint8 }
 
 func lerpRGB(a, b rgb, t float64) rgb {
@@ -66,8 +61,6 @@ func printBanner(v string, w io.Writer) {
 		c := lerpRGB(start, end, t)
 		fmt.Fprintf(w, "%s%s%s%s\n", ansiBold, ansiFg(c), line, ansiReset)
 	}
-	for _, s := range bannerSubtext {
-		fmt.Fprintf(w, "%s%s%s\n", ansiFg(rgb{148, 163, 184}), s, ansiReset)
-	}
+	fmt.Fprintf(w, "%s%s%s\n", ansiFg(rgb{148, 163, 184}), "           v"+v, ansiReset)
 	fmt.Fprintln(w)
 }

@@ -12,8 +12,6 @@ import (
 	"time"
 )
 
-var version = "dev"
-
 func main() {
 	if len(os.Args) >= 2 {
 		switch os.Args[1] {
@@ -43,7 +41,7 @@ func main() {
 func run() error {
 	logLaunchFlags()
 	enableWindowsVT()
-	printBanner(version, os.Stderr)
+	printBanner(shaFromGit(), os.Stderr)
 
 	cfgPath, err := findConfig()
 	if err != nil {
@@ -142,7 +140,7 @@ func run() error {
 		{Command: "stop", Description: "Stop the current task after this step"},
 		{Command: "abort", Description: "Force-stop the current task (kills tools)"},
 		{Command: "rollback", Description: "Roll back to a previous version"},
-		{Command: "list-versions", Description: "List all built versions"},
+		{Command: "versions", Description: "List all built versions"},
 		{Command: "upgrade", Description: "Build a new version and ask supervisor to swap"},
 		{Command: "restart", Description: "Restart the agent (supervisor respawns)"},
 		{Command: "version", Description: "Show build version"},
