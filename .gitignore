@@ -23,6 +23,9 @@ data/fix*.py
 data/patch*.py
 data/swap.py
 
+# Reference repos / submodules
+opencode-ref/
+
 # Config with secrets
 config.json
 *.local.json
@@ -33,12 +36,7 @@ config.json
 Thumbs.db
 .DS_Store
 
-# Playwright MCP snapshots
-.playwright-mcp/
-
 # Temp files
 _counttemp.go
 _gofiles.txt
-count_test.go
-
 count_test.go

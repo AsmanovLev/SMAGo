@@ -4,6 +4,8 @@ A lightweight Go agent that communicates via Telegram, calls any OpenAI-compatib
 
 SMAGo runs as a Windows system tray application with a supervisor that auto-restarts on crash and manages hot-swap upgrades.
 
+> **Built entirely by AI.** The codebase was written by Minimax M3 and DeepSeek. MiMo V2.5 (vision) and the OpenCode agent iterated on it, tested features, and refined the architecture. Human role: idea, direction, code review.
+
 ## Features
 
 - **Telegram bot** — long-polling, no webhooks needed
@@ -243,14 +245,13 @@ The supervisor watches for `next.json` and swaps binaries gracefully. If a versi
 
 ---
 
-## License
 ## Changelog / History
 
-The project started on **June 16, 2026** and evolved rapidly over a few days.
+This project was **coded entirely by AI** — Minimax M3 and DeepSeek wrote the codebase, MiMo V2.5 (vision) and the OpenCode agent iterated on it. Started on **June 16, 2026** and evolved rapidly over a few days.
 
-### MVP — Day 1 (`2850fcb`)
+### Boilerplate (`2850fcb`)
 
-The very first commit was a fully working prototype built in a single session:
+The initial working prototype, written in a single session:
 
 - **Telegram bot** via long-polling (stdlib `net/http`, zero external deps)
 - **LLM** — OpenAI-compatible chat completions (talked to local llama.cpp, self-hosted endpoints, OpenCode)
@@ -262,7 +263,7 @@ The very first commit was a fully working prototype built in a single session:
 - **Supervisor** — system tray app with auto-restart on crash
 - **Single binary** — no Docker, no WSL, no external services
 
-Providers were migrated directly from the author's `opencode.json`: local llama.cpp, a home server, and a self-hosted DeepSeek proxy.
+Providers were migrated from the author's `opencode.json`: local llama.cpp, a home server, and a self-hosted DeepSeek proxy.
 
 ### Git integration & self-upgrade (`34ede0a`)
 
@@ -305,9 +306,10 @@ The biggest feature: automatic context management to stay within model token lim
 - Command whitelist during active tasks
 - Rich `/help` with descriptions
 
-### Cleanup & documentation (`ebca1ae` — `535e0f0`)
+### Cleanup & documentation (`ebca1ae` — `0001437`)
 
 - Removed ~300 MB of binaries from git history (filter-repo)
+- Removed `opencode-ref` submodule (full OpenCode clone, no longer needed)
 - Added `.gitignore` for build artifacts, logs, databases
 - Added `README.md` (EN) and `README.ru.md` (RU)
 - Removed Playwright browser, MCP client, and Node.js dependency
@@ -316,8 +318,5 @@ The biggest feature: automatic context management to stay within model token lim
 ---
 
 ## License
-
-Not yet specified. Contact the author for usage terms.
-
 
 Not yet specified. Contact the author for usage terms.
