@@ -281,13 +281,6 @@ From this point on, **SMAGo developed itself**. Each feature, fix, and refactor 
 - **Multi-session management** (`9d94ad8`) — multiple named sessions per chat, tool-call annotations, self-upgrade confirmation prompt
 - **DCP — Dynamic Context Pruning** (`3d081b5`) — the biggest feature: `/compress`, pruning strategies (dedup, error purge, system nudge), auto-calculated limits based on model context window, retry on HTTP 503/502/429/500 with exponential backoff
 - **Session management polish** (`b8bc85a` — `c6eff72`) — `/rename` with LLM auto-naming, `/sessions`, `/switch`, `/delete`, command whitelist during active tasks, rich `/help`
-### Self-driven development (`34ede0a` — `0001437`)
-
-**What SMAGo built on its own:**
-
-
-- Supervised three recovery sessions where the agent's self-modifications caused build failures or runtime crashes, restoring the codebase each time
-
 ### Cleanup & documentation (`ebca1ae` — current)
 
 - Removed ~300 MB of binaries from git history (filter-repo)
