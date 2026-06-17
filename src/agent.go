@@ -1103,36 +1103,38 @@ func (a *Agent) handleSwitchSession(chatID int64, text string) {
 func (a *Agent) handleRenameSession(chatID int64, text string) {
 	newName := strings.TrimSpace(strings.TrimPrefix(text, "/rename"))
 	if newName == "" {
-		// Auto-generate name for the active session
+		// Ask LLM to generate a session name from conversation context
 		sess, err := a.store.GetActive(chatID)
 		if err != nil {
 			a.send(chatID, "❌ no active session: "+err.Error())
 			return
 		}
-		sessions, _ := a.store.ListSessions(chatID)
-		n := len(sessions) + 1
-		for {
-			candidate := fmt.Sprintf("renamed-%d", n)
-			found := false
-			for _, s := range sessions {
-				if s.Name == candidate {
-					found = true
-					break
-				}
-			}
-			if !found {
-				newName = candidate
-				break
-			}
-			n++
-		}
-		oldName := sess.Name()
-		if err := a.store.RenameSession(chatID, oldName, newName); err != nil {
-			a.send(chatID, "❌ "+err.Error())
+		msgs := sess.Messages()
+		if len(msgs) == 0 {
+			a.send(chatID, "❌ session is empty — nothing to base a name on")
 			return
 		}
-		a.send(chatID, fmt.Sprintf("✅ renamed: %s → %s", oldName, newName))
-		return
+		a.typing(chatID)
+		prompt := []ChatMessage{
+			{Role: "system", Content: "You are a naming assistant. Given the first few messages of a conversation, suggest a short, lowercase, hyphenated session name (2-4 words, e.g. 'bug-fix-503-retry' or 'tomsk-bus-routes'). Reply with ONLY the name, nothing else."},
+		}
+		n := len(msgs)
+		if n > 5 { n = 5 }
+		prompt = append(prompt, msgs[:n]...)
+		resp, _, llmErr := a.llm.Chat(prompt, nil)
+		if llmErr != nil {
+			a.send(chatID, "❌ failed to generate name: "+llmErr.Error())
+			return
+		}
+		newName = strings.TrimSpace(resp.Content)
+		newName = strings.ToLower(newName)
+		newName = strings.ReplaceAll(newName, " ", "-")
+		newName = strings.Trim(newName, "\x22\x27")
+		if len(newName) > 40 { newName = newName[:40] }
+		if newName == "" {
+			a.send(chatID, "❌ LLM returned empty name")
+			return
+		}
 	}
 	// Rename active session to the given name
 	sess, err := a.store.GetActive(chatID)
