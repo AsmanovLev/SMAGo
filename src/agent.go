@@ -250,6 +250,9 @@ func isRetryableError(err error) bool {
 		strings.Contains(msg, "502") ||
 		strings.Contains(msg, "429") ||
 		strings.Contains(msg, "500") ||
+		strings.Contains(msg, "deadline exceeded") ||
+		strings.Contains(msg, "Client.Timeout") ||
+		strings.Contains(msg, "i/o timeout") ||
 		strings.Contains(msg, "connection reset") ||
 		strings.Contains(msg, "EOF")
 }

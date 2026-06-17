@@ -274,6 +274,7 @@ func runOne(target, exePath, current string) (string, bool) {
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
 	cmd.Env = augmentPath(os.Environ())
+	hideWindow(cmd)
 	if err := cmd.Start(); err != nil {
 		setStatus("start failed: " + err.Error())
 		return current, false
