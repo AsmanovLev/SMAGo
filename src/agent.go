@@ -775,12 +775,6 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 
 		chatID := upd.Message.Chat.ID
 
-		// Debug: log all non-text message fields
-		if upd.Message.Document != nil || len(upd.Message.Photo) > 0 {
-			log.Printf("DEBUG: file message received: doc=%v photo_count=%d caption=%q text=%q",
-				upd.Message.Document != nil, len(upd.Message.Photo), upd.Message.Caption, upd.Message.Text)
-		}
-
 		// Handle incoming files (documents, photos)
 		if (upd.Message.Document != nil && upd.Message.Document.FileID != "") || len(upd.Message.Photo) > 0 {
 			if err := a.handleIncomingFile(chatID, upd.Message); err != nil {
