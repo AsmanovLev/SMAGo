@@ -23,7 +23,7 @@ func (s *SelfModifyTool) Definition() ToolDef {
 			"properties": map[string]any{
 				"action": map[string]any{
 					"type":        "string",
-					"enum":        []string{"list", "current", "upgrade", "upgrade-resume", "rollback", "restart"},
+					"enum":        []string{"list", "current", "upgrade-stop", "upgrade", "rollback", "restart"},
 					"description": "What to do",
 				},
 				"version": map[string]any{
@@ -45,7 +45,8 @@ const selfModifyDescription = "Manage this agent's own version. Use sparingly - 
 	"these actions change the running binary and may interrupt the current task. " +
 	"Versions are identified by git commit SHA (short form). " +
 	"Actions: list (show all built versions), current (show running version + git SHA), " +
-	"upgrade (build a new version from current HEAD and ask the supervisor to swap to it), " +
+	"upgrade-stop (build new version and ask supervisor to swap), " +
+	"upgrade (same as upgrade-stop but also resumes the previous task after restart), " +
 	"rollback (revert the working tree to a previous version's commit and rebuild; version required, pass force=true to " +
 	"skip the dirty-tree check), restart (exit cleanly so the supervisor brings a fresh " +
 	"process up; same binary, no rebuild)."
@@ -53,17 +54,17 @@ const selfModifyDescription = "Manage this agent's own version. Use sparingly - 
 func (s *SelfModifyTool) Execute(ctx context.Context, args map[string]any) (string, error) {
 	action, _ := args["action"].(string)
 	if action == "" {
-		return "", fmt.Errorf("action is required (list, current, upgrade, rollback, restart)")
+		return "", fmt.Errorf("action is required (list, current, upgrade, upgrade-stop, rollback, restart)")
 	}
 	switch action {
 	case "list":
 		return s.actionList()
 	case "current":
 		return s.actionCurrent()
+	case "upgrade-stop":
+		return s.actionUpgradeStop(ctx, args)
 	case "upgrade":
 		return s.actionUpgrade(ctx, args)
-	case "upgrade-resume":
-		return s.actionUpgradeResume(ctx, args)
 
 	case "rollback":
 		return s.actionRollback(ctx, args)
@@ -104,7 +105,7 @@ func (s *SelfModifyTool) actionCurrent() (string, error) {
 	return b.String(), nil
 }
 
-func (s *SelfModifyTool) actionUpgrade(ctx context.Context, args map[string]any) (string, error) {
+func (s *SelfModifyTool) actionUpgradeStop(ctx context.Context, args map[string]any) (string, error) {
 	version, _ := args["version"].(string)
 	if version == "" {
 		sha, err := gitHead()
@@ -117,12 +118,12 @@ func (s *SelfModifyTool) actionUpgrade(ctx context.Context, args map[string]any)
 		return "", err
 	}
 	if err := cmdUpgrade([]string{"--version=" + version}); err != nil {
-		return "", fmt.Errorf("upgrade %s: %w", version, err)
+		return "", fmt.Errorf("upgrade-stop %s: %w", version, err)
 	}
 	return fmt.Sprintf("upgrade %s sent to supervisor", version), nil
 }
 
-func (s *SelfModifyTool) actionUpgradeResume(ctx context.Context, args map[string]any) (string, error) {
+func (s *SelfModifyTool) actionUpgrade(ctx context.Context, args map[string]any) (string, error) {
 	version, _ := args["version"].(string)
 	if version == "" {
 		sha, err := gitHead()
@@ -143,9 +144,9 @@ func (s *SelfModifyTool) actionUpgradeResume(ctx context.Context, args map[strin
 		return "", err
 	}
 	if err := cmdUpgrade([]string{"--version=" + version}); err != nil {
-		return "", fmt.Errorf("upgrade-resume %s: %w", version, err)
+		return "", fmt.Errorf("upgrade %s: %w", version, err)
 	}
-	return fmt.Sprintf("upgrade-resume %s sent to supervisor", version), nil
+	return fmt.Sprintf("upgrade %s sent to supervisor", version), nil
 }
 
 

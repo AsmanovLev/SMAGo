@@ -946,7 +946,7 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 			}()
 			continue
 
-		case text == "/upgrade-resume" || text == "/resume":
+		case text == "/upgrade":
 		a.handleUpgradeResume(chatID)
 		continue
 		case text == "/health":
