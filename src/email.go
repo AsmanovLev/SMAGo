@@ -224,8 +224,6 @@ func (e *EmailBackend) Poll() ([]EmailMessage, error) {
 func (e *EmailBackend) SendMail(to, subject, body, inReplyTo string) error {
 	if e.cfg.SMTPHost == "" { return fmt.Errorf("smtp not configured") }
 
-	boundary := fmt.Sprintf("--=_Part_%d", time.Now().UnixNano())
-
 	var buf bytes.Buffer
 	buf.WriteString("MIME-Version: 1.0\r\n")
 	buf.WriteString(fmt.Sprintf("From: %s\r\n", e.cfg.Address))
@@ -235,7 +233,7 @@ func (e *EmailBackend) SendMail(to, subject, body, inReplyTo string) error {
 	buf.WriteString("Chat-User-Agent: SMAGo/1.0\r\n")
 	buf.WriteString(fmt.Sprintf("Date: %s\r\n", time.Now().UTC().Format(time.RFC1123Z)))
 
-	// Autocrypt header with public key
+	// Autocrypt header - Delta Chat picks up the key from here
 	if e.publicKey != "" {
 		keyB64 := base64.StdEncoding.EncodeToString([]byte(e.publicKey))
 		buf.WriteString(fmt.Sprintf("Autocrypt: addr=%s; prefer-encrypt=mutual; keydata=\r\n", e.cfg.Address))
@@ -251,30 +249,12 @@ func (e *EmailBackend) SendMail(to, subject, body, inReplyTo string) error {
 		buf.WriteString(fmt.Sprintf("References: %s\r\n", inReplyTo))
 	}
 
-	// Multipart: text + PGP key attachment
-	buf.WriteString(fmt.Sprintf("Content-Type: multipart/mixed; boundary=\"%s\"\r\n", boundary))
-	buf.WriteString("\r\n")
-
-	// Text part
-	buf.WriteString(fmt.Sprintf("%s\r\n", boundary))
 	buf.WriteString("Content-Type: text/plain; charset=utf-8; format=flowed\r\n")
-	buf.WriteString("Content-Transfer-Encoding: quoted-printable\r\n\r\n")
+	buf.WriteString("Content-Transfer-Encoding: quoted-printable\r\n")
+	buf.WriteString("\r\n")
 	qp := quotedprintable.NewWriter(&buf)
 	qp.Write([]byte(body))
 	qp.Close()
-	buf.WriteString("\r\n")
-
-	// PGP key attachment
-	if e.publicKey != "" {
-		buf.WriteString(fmt.Sprintf("\r\n%s\r\n", boundary))
-		buf.WriteString("Content-Type: application/pgp-keys; name=\"autocrypt.asc\"\r\n")
-		buf.WriteString("Content-Disposition: attachment; filename=\"autocrypt.asc\"\r\n")
-		buf.WriteString("Content-Transfer-Encoding: 7bit\r\n\r\n")
-		buf.WriteString(e.publicKey)
-		buf.WriteString("\r\n")
-	}
-
-	buf.WriteString(fmt.Sprintf("\r\n%s--\r\n", boundary))
 
 	// Send via SMTP
 	addr := fmt.Sprintf("%s:%d", e.cfg.SMTPHost, e.cfg.SMTPPort)
