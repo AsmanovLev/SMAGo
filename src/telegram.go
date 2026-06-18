@@ -1,14 +1,50 @@
 package main
 
 import (
+	"bytes"
 	"context"
 	"encoding/json"
 	"fmt"
+	"io"
 	"net/http"
 	"net/url"
+	"os"
+	"path/filepath"
 	"strings"
 	"time"
 )
+
+// progressReader wraps an io.Reader and reports progress periodically (every ~5s).
+type progressReader struct {
+	r        io.Reader
+	total    int64
+	read     int64
+	fn       func(downloaded, total int64, done bool, err error)
+	lastTime time.Time
+	minDelta int64
+}
+
+func newProgressReader(r io.Reader, total int64, fn func(downloaded, total int64, done bool, err error)) *progressReader {
+	// Min 1% or 256KB, whichever is larger
+	minDelta := total / 100
+	if minDelta < 256*1024 {
+		minDelta = 256 * 1024
+	}
+	return &progressReader{r: r, total: total, fn: fn, lastTime: time.Now().Add(-10 * time.Second), minDelta: minDelta}
+}
+
+func (pr *progressReader) Read(p []byte) (int, error) {
+	n, err := pr.r.Read(p)
+	pr.read += int64(n)
+	if pr.fn != nil && pr.total > 0 && time.Since(pr.lastTime) >= 5*time.Second {
+		// Throttle: at most once per 5 seconds
+		if pr.read >= pr.minDelta {
+			pr.lastTime = time.Now()
+			pr.fn(pr.read, pr.total, false, nil)
+		}
+	}
+	return n, err
+}
 
 type Telegram struct {
 	token  string
@@ -20,14 +56,27 @@ type Telegram struct {
 type TGUpdate struct {
 	UpdateID int64 `json:"update_id"`
 	Message  *struct {
-		MessageID int64 `json:"message_id"`
+		MessageID int64  `json:"message_id"`
 		From      *struct {
 			ID int64 `json:"id"`
 		} `json:"from"`
 		Chat struct {
 			ID int64 `json:"id"`
 		} `json:"chat"`
-		Text string `json:"text"`
+		Text    string `json:"text"`
+		Caption string `json:"caption"`
+		Document *struct {
+			FileID   string `json:"file_id"`
+			FileName string `json:"file_name"`
+			FileSize int64  `json:"file_size"`
+			MimeType string `json:"mime_type"`
+		} `json:"document"`
+		Photo []struct {
+			FileID   string `json:"file_id"`
+			FileSize int64  `json:"file_size"`
+			Width    int    `json:"width"`
+			Height   int    `json:"height"`
+		} `json:"photo"`
 	} `json:"message"`
 	CallbackQuery *struct {
 		ID      string `json:"id"`
@@ -399,3 +448,144 @@ func (t *Telegram) SetReplyKeyboard(chatID int64, buttons [][]string) error {
 	return nil
 }
 
+const MaxFileSize = 50 * 1024 * 1024 // 50 MB
+
+// DownloadFile downloads a Telegram file by file_id to destPath.
+// progress is called periodically with (downloaded, total, done, err).
+func (t *Telegram) DownloadFile(fileID string, destPath string, progress func(downloaded, total int64, done bool, err error)) error {
+	v := url.Values{}
+	v.Set("file_id", fileID)
+	req, err := http.NewRequest("GET", "https://api.telegram.org/bot"+t.token+"/getFile?"+v.Encode(), nil)
+	if err != nil {
+		if progress != nil { progress(0, 0, true, err) }
+		return err
+	}
+	resp, err := t.client.Do(req)
+	if err != nil {
+		if progress != nil { progress(0, 0, true, err) }
+		return err
+	}
+	defer resp.Body.Close()
+	var result struct {
+		OK     bool `json:"ok"`
+		Result struct {
+			FilePath string `json:"file_path"`
+			FileSize int64  `json:"file_size"`
+		} `json:"result"`
+	}
+	if err := json.NewDecoder(resp.Body).Decode(&result); err != nil {
+		if progress != nil { progress(0, 0, true, err) }
+		return err
+	}
+	if !result.OK {
+		err := fmt.Errorf("getFile failed")
+		if progress != nil { progress(0, 0, true, err) }
+		return err
+	}
+	total := result.Result.FileSize
+	if total > MaxFileSize {
+		err := fmt.Errorf("file too large: %d bytes (limit %d MB)", total, MaxFileSize/(1024*1024))
+		if progress != nil { progress(0, total, true, err) }
+		return err
+	}
+	fileURL := "https://api.telegram.org/file/bot" + t.token + "/" + result.Result.FilePath
+	dlReq, err := http.NewRequest("GET", fileURL, nil)
+	if err != nil {
+		if progress != nil { progress(0, total, true, err) }
+		return err
+	}
+	dlResp, err := t.client.Do(dlReq)
+	if err != nil {
+		if progress != nil { progress(0, total, true, err) }
+		return err
+	}
+	defer dlResp.Body.Close()
+	if dlResp.StatusCode >= 400 {
+		err := fmt.Errorf("download HTTP %d", dlResp.StatusCode)
+		if progress != nil { progress(0, total, true, err) }
+		return err
+	}
+	if err := os.MkdirAll(filepath.Dir(destPath), 0755); err != nil {
+		if progress != nil { progress(0, total, true, err) }
+		return err
+	}
+	f, err := os.Create(destPath)
+	if err != nil {
+		if progress != nil { progress(0, total, true, err) }
+		return err
+	}
+	defer f.Close()
+	// Wrap body with progress tracking
+	var downloaded int64
+	pr := newProgressReader(dlResp.Body, total, progress)
+	n, err := io.Copy(f, pr)
+	if err != nil {
+		if progress != nil { progress(downloaded, total, true, err) }
+		return err
+	}
+	if n > MaxFileSize {
+		os.Remove(destPath)
+		err := fmt.Errorf("file too large: %d bytes", n)
+		if progress != nil { progress(n, total, true, err) }
+		return err
+	}
+	if progress != nil { progress(total, total, true, nil) }
+	return nil
+}
+
+// SendDocument sends a file to a Telegram chat.
+// progress is called periodically with (sent, total, done, err).
+func (t *Telegram) SendDocument(chatID int64, filePath string, caption string, progress func(sent, total int64, done bool, err error)) error {
+	f, err := os.Open(filePath)
+	if err != nil {
+		if progress != nil { progress(0, 0, true, err) }
+		return err
+	}
+	defer f.Close()
+	info, err := f.Stat()
+	if err != nil {
+		if progress != nil { progress(0, 0, true, err) }
+		return err
+	}
+	total := info.Size()
+	if total > MaxFileSize {
+		err := fmt.Errorf("file too large: %d bytes (limit %d MB)", total, MaxFileSize/(1024*1024))
+		if progress != nil { progress(0, total, true, err) }
+		return err
+	}
+	// Build multipart body with progress tracking
+	var body bytes.Buffer
+	boundary := "----SMAGoBoundary"
+	fmt.Fprintf(&body, "--%s\r\n", boundary)
+	fmt.Fprintf(&body, "Content-Disposition: form-data; name=\"chat_id\"\r\n\r\n")
+	fmt.Fprintf(&body, "%d\r\n", chatID)
+	if caption != "" {
+		fmt.Fprintf(&body, "--%s\r\n", boundary)
+		fmt.Fprintf(&body, "Content-Disposition: form-data; name=\"caption\"\r\n\r\n")
+		fmt.Fprintf(&body, "%s\r\n", caption)
+	}
+	fileName := filepath.Base(filePath)
+	fmt.Fprintf(&body, "--%s\r\n", boundary)
+	fmt.Fprintf(&body, "Content-Disposition: form-data; name=\"document\"; filename=\"%s\"\r\n", fileName)
+	fmt.Fprintf(&body, "Content-Type: application/octet-stream\r\n\r\n")
+	io.Copy(&body, f)
+	fmt.Fprintf(&body, "\r\n--%s--\r\n", boundary)
+	if progress != nil {
+		progress(0, total, false, nil) // starting upload
+	}
+	req, err := http.NewRequest("POST", "https://api.telegram.org/bot"+t.token+"/sendDocument", bytes.NewReader(body.Bytes()))
+	if err != nil {
+		if progress != nil { progress(0, total, true, err) }
+		return err
+	}
+	req.Header.Set("Content-Type", "multipart/form-data; boundary="+boundary)
+	req.ContentLength = int64(body.Len())
+	resp, err := t.client.Do(req)
+	if err != nil {
+		if progress != nil { progress(0, total, true, err) }
+		return err
+	}
+	defer resp.Body.Close()
+	if progress != nil { progress(total, total, true, nil) }
+	return nil
+}

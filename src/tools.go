@@ -188,6 +188,11 @@ func (r *ToolRegistry) Close() {
 	r.mcpClients = nil
 }
 
+// Register adds a tool after defaults are registered.
+func (r *ToolRegistry) Register(name string, def ToolDef) {
+	r.tools[name] = def
+}
+
 func (r *ToolRegistry) All() []ToolDef {
 	out := make([]ToolDef, 0, len(r.tools))
 	for _, t := range r.tools {

@@ -7,6 +7,7 @@ import (
 	"fmt"
 	"log"
 	"os"
+	"path/filepath"
 	"strconv"
 	"strings"
 	"sync"
@@ -664,7 +665,20 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 					Chat struct {
 						ID int64 `json:"id"`
 					} `json:"chat"`
-					Text string `json:"text"`
+					Text     string `json:"text"`
+					Caption  string `json:"caption"`
+					Document *struct {
+						FileID   string `json:"file_id"`
+						FileName string `json:"file_name"`
+						FileSize int64  `json:"file_size"`
+						MimeType string `json:"mime_type"`
+					} `json:"document"`
+					Photo []struct {
+						FileID   string `json:"file_id"`
+						FileSize int64  `json:"file_size"`
+						Width    int    `json:"width"`
+						Height   int    `json:"height"`
+					} `json:"photo"`
 				}{Text: inj.Text, Chat: struct {
 					ID int64 `json:"id"`
 				}{ID: inj.ChatID}},
@@ -759,13 +773,22 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 			}
 		}
 
+		chatID := upd.Message.Chat.ID
+
+		// Handle incoming files (documents, photos)
+		if (upd.Message.Document != nil && upd.Message.Document.FileID != "") || len(upd.Message.Photo) > 0 {
+			if err := a.handleIncomingFile(chatID, upd.Message); err != nil {
+				a.send(chatID, "❌ file error: "+err.Error())
+			}
+			continue
+		}
+
 		text := strings.TrimSpace(upd.Message.Text)
 		if text == "" {
 			continue
 		}
 
-		log.Printf("msg: chatID=%d text=%q", upd.Message.Chat.ID, truncateLog(text, 200))
-		chatID := upd.Message.Chat.ID
+		log.Printf("msg: chatID=%d text=%q", chatID, truncateLog(text, 200))
 
 		// Reply keyboard button aliases
 		switch text {
@@ -1333,4 +1356,128 @@ func humanAge(t time.Time) string {
 	default:
 		return t.Format("2006-01-02")
 	}
+}
+
+// ── File handling ─────────────────────────────────────
+
+func (a *Agent) handleIncomingFile(chatID int64, msg *struct {
+	MessageID int64  `json:"message_id"`
+	From      *struct { ID int64 `json:"id"` } `json:"from"`
+	Chat      struct { ID int64 `json:"id"` } `json:"chat"`
+	Text      string `json:"text"`
+	Caption   string `json:"caption"`
+	Document  *struct {
+		FileID   string `json:"file_id"`
+		FileName string `json:"file_name"`
+		FileSize int64  `json:"file_size"`
+		MimeType string `json:"mime_type"`
+	} `json:"document"`
+	Photo []struct {
+		FileID   string `json:"file_id"`
+		FileSize int64  `json:"file_size"`
+		Width    int    `json:"width"`
+		Height   int    `json:"height"`
+	} `json:"photo"`
+}) error {
+	// Determine file_id and name
+	var fileID, fileName string
+	var fileSize int64
+	if msg.Document != nil {
+		fileID = msg.Document.FileID
+		fileName = msg.Document.FileName
+		fileSize = msg.Document.FileSize
+	} else if len(msg.Photo) > 0 {
+		// Pick largest photo
+		best := msg.Photo[0]
+		for _, p := range msg.Photo {
+			if p.FileSize > best.FileSize {
+				best = p
+			}
+		}
+		fileID = best.FileID
+		fileName = fmt.Sprintf("photo_%d.jpg", msg.MessageID)
+		fileSize = best.FileSize
+	}
+	if fileID == "" {
+		return fmt.Errorf("no file found")
+	}
+	if fileSize > MaxFileSize {
+		return fmt.Errorf("file too large: %d MB (limit 50 MB)", fileSize/(1024*1024))
+	}
+
+	caption := msg.Caption
+	a.typing(chatID)
+
+	// Save to data/inbox/
+	inboxDir := a.cfg.DataDir + "/inbox"
+	os.MkdirAll(inboxDir, 0755)
+	destPath := inboxDir + "/" + fileName
+	progressMsgID := a.tg.SendButtonsWithID(chatID, fmt.Sprintf("⬇ downloading %s...", fileName), nil)
+	if err := a.tg.DownloadFile(fileID, destPath, func(downloaded, total int64, done bool, err error) {
+		if done {
+			return // final update handled below
+		}
+		if total > 0 && downloaded > 0 {
+			pct := downloaded * 100 / total
+			mb := float64(downloaded) / 1024 / 1024
+			totalMB := float64(total) / 1024 / 1024
+			_ = a.tg.EditMessageText(chatID, progressMsgID, fmt.Sprintf("⬇ %s\n%.1f / %.1f MB (%d%%)", fileName, mb, totalMB, pct), nil)
+		}
+	}); err != nil {
+		a.tg.EditMessageText(chatID, progressMsgID, fmt.Sprintf("❌ download failed: %v", err), nil)
+		return fmt.Errorf("download failed: %w", err)
+	}
+
+	info, _ := os.Stat(destPath)
+	sizeMB := float64(0)
+	if info != nil {
+		sizeMB = float64(info.Size()) / 1024 / 1024
+	}
+
+	msgText := fmt.Sprintf("[user sent file: %s (%.1f MB)]", fileName, sizeMB)
+	if caption != "" {
+		msgText += "\n" + caption
+	}
+
+	a.send(chatID, fmt.Sprintf("📎 received %s (%.1f MB) → inbox/%s", fileName, sizeMB, fileName))
+	return nil
+}
+
+// send_file tool handler — sends a file from data/ to the Telegram chat.
+func (a *Agent) execSendFile(ctx context.Context, args map[string]any) (string, error) {
+	p, _ := args["path"].(string)
+	if p == "" {
+		return "", fmt.Errorf("path required")
+	}
+	caption, _ := args["caption"].(string)
+	full := filepath.Join(a.cfg.DataDir, p)
+	info, err := os.Stat(full)
+	if err != nil {
+		return "", fmt.Errorf("file not found: %s", p)
+	}
+	if info.Size() > MaxFileSize {
+		return "", fmt.Errorf("file too large: %d bytes (limit 50MB)", info.Size())
+	}
+	chatID := ChatIDFromContext(ctx)
+	if chatID == 0 {
+		return "", fmt.Errorf("no chat_id in context")
+	}
+	progressMsgID := a.tg.SendButtonsWithID(chatID, fmt.Sprintf("⬆ sending %s...", filepath.Base(p)), nil)
+	err = a.tg.SendDocument(chatID, full, caption, func(sent, total int64, done bool, err error) {
+		if done {
+			return
+		}
+		if total > 0 && sent > 0 {
+			pct := sent * 100 / total
+			mb := float64(sent) / 1024 / 1024
+			totalMB := float64(total) / 1024 / 1024
+			_ = a.tg.EditMessageText(chatID, progressMsgID, fmt.Sprintf("⬆ %s\n%.1f / %.1f MB (%d%%)", filepath.Base(p), mb, totalMB, pct), nil)
+		}
+	})
+	if err != nil {
+		a.tg.EditMessageText(chatID, progressMsgID, fmt.Sprintf("❌ send failed: %v", err), nil)
+		return "", err
+	}
+	sizeMB := float64(info.Size()) / 1024 / 1024
+	return fmt.Sprintf("sent %s (%.1f MB) to chat", filepath.Base(p), sizeMB), nil
 }

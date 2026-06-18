@@ -141,6 +141,26 @@ func run() error {
 	defer tools.Close()
 	agent := NewAgent(cfg, llm, store, tg, tools)
 
+	// Register send_file tool (needs access to agent for send)
+	rtools := map[string]ToolDef{
+		"send_file": {
+			Name:        "send_file",
+			Description: "Send a file to the user via Telegram. Path is relative to working directory. Max 50MB.",
+			Parameters: map[string]any{
+				"type": "object",
+				"properties": map[string]any{
+					"path":    map[string]any{"type": "string", "description": "File path to send (relative to working dir)"},
+					"caption": map[string]any{"type": "string", "description": "Optional caption"},
+				},
+				"required": []string{"path"},
+			},
+			Execute: agent.execSendFile,
+		},
+	}
+	for name, def := range rtools {
+		tools.Register(name, def)
+	}
+
 	injectAddr := os.Getenv("SMAGO_INJECT_ADDR")
 	if injectAddr == "" {
 		injectAddr = "127.0.0.1:7777"
