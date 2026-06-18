@@ -93,3 +93,42 @@ func (a *Agent) handlePendingCancel(chatID int64, callbackID string) {
 	_ = a.tg.AnswerCallback(callbackID, "cancelled")
 	_ = a.tg.EditMessageText(chatID, msg.MessageID, "❌ cancelled: "+msg.Text, nil)
 }
+
+// refreshSessionList edits an existing session list message to show the new active session.
+func (a *Agent) refreshSessionList(chatID int64, msgID int64) {
+	sessions, err := a.store.ListSessions(chatID)
+	if err != nil {
+		a.send(chatID, "❌ "+err.Error())
+		return
+	}
+	var b strings.Builder
+	fmt.Fprintf(&b, "📂 %d session(s):\n\n", len(sessions))
+	for _, s := range sessions {
+		marker := "  "
+		if s.Active {
+			marker = "✅"
+		}
+		age := humanAge(s.UpdatedAt)
+		fmt.Fprintf(&b, "%s %s — %d msgs, %s\n", marker, s.Name, s.Messages, age)
+	}
+	b.WriteString("\ntap a session to switch:")
+	var rows [][]InlineButton
+	for _, s := range sessions {
+		label := s.Name
+		if s.Active {
+			label += " ✅"
+		}
+		if s.Messages > 0 {
+			label += fmt.Sprintf(" (%d)", s.Messages)
+		}
+		if len(label) > 40 {
+			label = label[:40] + "…"
+		}
+		cb := "switch:" + s.Name
+		if s.Active {
+			cb = "noop"
+		}
+		rows = append(rows, []InlineButton{{Text: label, CallbackData: cb}})
+	}
+	_ = a.tg.EditMessageText(chatID, msgID, b.String(), rows)
+}

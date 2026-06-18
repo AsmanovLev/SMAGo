@@ -715,7 +715,7 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 				} else {
 					a.dcpStates[chatID] = NewDCPState()
 					a.saveDCPState(chatID, a.dcpStates[chatID])
-					a.send(chatID, "✅ session → "+name)
+					a.refreshSessionList(chatID, msgID)
 				}
 				_ = a.tg.AnswerCallback(cq.ID, "switched")
 			default:
