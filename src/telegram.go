@@ -186,7 +186,7 @@ func (t *Telegram) LongPoll(ctx context.Context) (*TGUpdate, error) {
 		if len(tr.Result) > 0 {
 			t.offset = tr.Result[len(tr.Result)-1].UpdateID + 1
 			for _, u := range tr.Result {
-				if u.Message != nil && u.Message.Text != "" {
+				if u.Message != nil && (u.Message.Text != "" || u.Message.Document != nil || len(u.Message.Photo) > 0) {
 					return &u, nil
 				}
 				if u.CallbackQuery != nil {
