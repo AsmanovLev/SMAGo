@@ -1508,46 +1508,21 @@ func (a *Agent) emailPoll() {
 			continue
 		}
 
-		chatID := a.cfg.TelegramChatID
-		log.Printf("email: from=%s subject=%s", m.From, truncateLog(m.Subject, 80))
+		log.Printf("email: from=%s subject=%s body=%d bytes", m.From, truncateLog(m.Subject, 80), len(m.Body))
 
-		// Save attachments
+		// Save attachments to inbox
 		if len(m.Attachments) > 0 {
 			inboxDir := a.cfg.DataDir + "/inbox"
 			os.MkdirAll(inboxDir, 0755)
 			for _, att := range m.Attachments {
-				destPath := inboxDir + "/" + att.Filename
+				destPath := filepath.Join(inboxDir, att.Filename)
 				os.WriteFile(destPath, att.Data, 0644)
-				a.send(chatID, fmt.Sprintf("📧 email attachment from %s: %s (%.1f MB)", m.From, att.Filename, float64(att.Size)/1024/1024))
+				log.Printf("email: attachment saved: %s (%.1f MB)", att.Filename, float64(att.Size)/1024/1024)
 			}
 		}
 
-		// Process email body
-		if m.Body != "" {
-			userText := fmt.Sprintf("[email from %s, subject: %s]\n\n%s", m.From, m.Subject, m.Body)
-
-			// Queue or process based on whether agent is busy
-			if rs := a.getRun(chatID); rs != nil {
-				a.sendQueued(chatID, userText)
-				a.send(chatID, fmt.Sprintf("📧 queued email from %s", m.From))
-			} else {
-				go func(from, body, subject, msgID string) {
-					reply, err := a.Handle(chatID, body)
-					if err != nil {
-						a.send(chatID, "❌ email error: "+err.Error())
-						return
-					}
-					a.send(chatID, fmt.Sprintf("📧 reply to %s: %s", from, truncateLog(reply, 200)))
-
-					// Send email reply
-					if err := a.email.SendMail(from, "Re: "+subject, reply, msgID); err != nil {
-						a.send(chatID, "❌ email send failed: "+err.Error())
-					} else {
-						a.send(chatID, "✅ email reply sent")
-					}
-				}(m.From, userText, m.Subject, m.MessageID)
-			}
-		}
+		// TODO: process email body through LLM and reply
+		// For now just log — Telegram channel only
 	}
 }
 
