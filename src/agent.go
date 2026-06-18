@@ -364,7 +364,7 @@ func (a *Agent) Handle(chatID int64, userText string) (string, error) {
 				continue
 			}
 			emptyResponses = 0
-			a.recordStep(chatID, i+1, maxSteps, usage, stepDur, nil, len(resp.Content), resp.Content)
+			a.recordStep(chatID, i+1, maxSteps, usage, stepDur, nil, len(resp.Content), "")
 			_ = sess.Append(ChatMessage{Role: "assistant", Content: resp.Content})
 			a.saveDCPState(chatID, dcp)
 			return resp.Content, nil
