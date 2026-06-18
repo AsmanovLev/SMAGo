@@ -127,6 +127,15 @@ func run() error {
 		log.Printf("telegram: ✓ cleared bot menu")
 	}
 
+	// Show persistent reply keyboard (bottom bar)
+	if cfg.TelegramChatID != 0 {
+		if err := tg.SetReplyKeyboard(cfg.TelegramChatID, [][]string{{"📋 Sessions", "🆕 New", "❓ Help"}}); err != nil {
+			log.Printf("warn: setReplyKeyboard failed: %v", err)
+		} else {
+			log.Printf("telegram: ✓ reply keyboard set")
+		}
+	}
+
 	tools := NewToolRegistry(cfg)
 	tools.registerDefaults()
 	defer tools.Close()

@@ -340,3 +340,62 @@ func (t *Telegram) EditMessageText(chatID int64, messageID int64, text string, r
 	defer resp.Body.Close()
 	return nil
 }
+
+// SetReplyKeyboard shows a persistent reply keyboard (bottom bar) for a chat.
+// It sends a "." dot message with the keyboard attached, then deletes it,
+// leaving just the keyboard visible.
+func (t *Telegram) SetReplyKeyboard(chatID int64, buttons [][]string) error {
+	kb := map[string]any{
+		"keyboard":          buttons,
+		"resize_keyboard":   true,
+		"one_time_keyboard": false,
+	}
+	if buttons == nil {
+		kb = map[string]any{
+			"keyboard":        [][]string{},
+			"resize_keyboard": true,
+			"remove_keyboard": true,
+		}
+	}
+	kbJSON, _ := json.Marshal(kb)
+
+	// Send a dot message with the keyboard
+	v := url.Values{}
+	v.Set("chat_id", fmt.Sprintf("%d", chatID))
+	v.Set("text", ".")
+	v.Set("reply_markup", string(kbJSON))
+	req, err := http.NewRequest("POST", "https://api.telegram.org/bot"+t.token+"/sendMessage", strings.NewReader(v.Encode()))
+	if err != nil {
+		return err
+	}
+	req.Header.Set("Content-Type", "application/x-www-form-urlencoded")
+	resp, err := t.client.Do(req)
+	if err != nil {
+		return err
+	}
+	var result struct {
+		OK     bool `json:"ok"`
+		Result struct {
+			MessageID int64 `json:"message_id"`
+		} `json:"result"`
+	}
+	_ = json.NewDecoder(resp.Body).Decode(&result)
+	resp.Body.Close()
+
+	// Delete the dot message so only the keyboard remains
+	if result.OK && result.Result.MessageID != 0 {
+		dv := url.Values{}
+		dv.Set("chat_id", fmt.Sprintf("%d", chatID))
+		dv.Set("message_id", fmt.Sprintf("%d", result.Result.MessageID))
+		dreq, _ := http.NewRequest("POST", "https://api.telegram.org/bot"+t.token+"/deleteMessage", strings.NewReader(dv.Encode()))
+		if dreq != nil {
+			dreq.Header.Set("Content-Type", "application/x-www-form-urlencoded")
+			dresp, derr := t.client.Do(dreq)
+			if derr == nil {
+				dresp.Body.Close()
+			}
+		}
+	}
+	return nil
+}
+

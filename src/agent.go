@@ -767,6 +767,16 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 		log.Printf("msg: chatID=%d text=%q", upd.Message.Chat.ID, truncateLog(text, 200))
 		chatID := upd.Message.Chat.ID
 
+		// Reply keyboard button aliases
+		switch text {
+		case "📋 Sessions":
+			text = "/sessions"
+		case "🆕 New":
+			text = "/new"
+		case "❓ Help":
+			text = "/help"
+		}
+
 		switch {
 		case text == "/stop":
 			if rs := a.getRun(chatID); rs != nil {
