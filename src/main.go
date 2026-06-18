@@ -191,6 +191,14 @@ func run() error {
 	log.Printf("chat:  target chatID=%d (set via /chatid command or SMAGO_TELEGRAM_CHAT_ID)", cfg.TelegramChatID)
 	log.Println("ready: long-polling for updates...")
 
+	// Email greeting
+	if agent.email != nil && cfg.Email.Enabled {
+		sha, _ := gitHead()
+		greeting := "SMAGo online. Version: " + sha
+		if err := agent.email.SendMail(cfg.Email.Address, "SMAGo started", greeting, ""); err != nil {
+			log.Printf("email: startup greeting failed: %v", err)
+		}
+	}
 	go agent.emailPollLoop(ctx)
 
 	if err := agent.RunLoop(ctx); err != nil && err != context.Canceled {

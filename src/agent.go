@@ -158,9 +158,20 @@ func (a *Agent) Push(chatID int64, text string) error {
 func (a *Agent) SetRecorder(fn func(chatID int64, text string)) { a.record = fn }
 
 func (a *Agent) send(chatID int64, text string) {
+	// Default: telegram
 	_ = a.tg.Send(chatID, text)
 	if a.record != nil {
 		a.record(chatID, text)
+	}
+}
+
+func (a *Agent) sendToChannel(chatID int64, text string, channel string) {
+	switch channel {
+	case "email":
+		// Email responses are sent via emailPoll's goroutine, not here
+		return
+	default:
+		a.send(chatID, text)
 	}
 }
 
@@ -260,6 +271,12 @@ func isRetryableError(err error) bool {
 // ──────────────────────────────────────────────────────
 
 func (a *Agent) Handle(chatID int64, userText string) (string, error) {
+	return a.HandleOnChannel(chatID, userText, "")
+}
+
+// HandleOnChannel processes a message and routes responses to the originating channel.
+// channel: "" = default (telegram), "email" = email only
+func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (string, error) {
 	sess, err := a.store.GetActive(chatID)
 	if err != nil {
 		return "", err
@@ -1503,26 +1520,39 @@ func (a *Agent) emailPoll() {
 		return
 	}
 	for _, m := range msgs {
-		// Skip bounces and system mail
 		if strings.HasPrefix(m.From, "MAILER-DAEMON") || strings.HasPrefix(m.From, "noreply@") {
 			continue
 		}
+		if m.Body == "" {
+			continue
+		}
+		log.Printf("email: from=%s subject=%s", m.From, truncateLog(m.Subject, 80))
 
-		log.Printf("email: from=%s subject=%s body=%d bytes", m.From, truncateLog(m.Subject, 80), len(m.Body))
-
-		// Save attachments to inbox
+		// Save attachments
 		if len(m.Attachments) > 0 {
 			inboxDir := a.cfg.DataDir + "/inbox"
 			os.MkdirAll(inboxDir, 0755)
 			for _, att := range m.Attachments {
-				destPath := filepath.Join(inboxDir, att.Filename)
-				os.WriteFile(destPath, att.Data, 0644)
-				log.Printf("email: attachment saved: %s (%.1f MB)", att.Filename, float64(att.Size)/1024/1024)
+				os.WriteFile(filepath.Join(inboxDir, att.Filename), att.Data, 0644)
 			}
 		}
 
-		// TODO: process email body through LLM and reply
-		// For now just log — Telegram channel only
+		go func(from, subject, body, msgID string) {
+			messages := []ChatMessage{
+				{Role: "system", Content: a.cfg.SystemPrompt},
+				{Role: "user", Content: body},
+			}
+			resp, _, llmErr := a.llm.Chat(messages, nil)
+			if llmErr != nil {
+				log.Printf("email: llm error: %v", llmErr)
+				return
+			}
+			if err := a.email.SendMail(from, "Re: "+subject, resp.Content, msgID); err != nil {
+				log.Printf("email: send error: %v", err)
+			} else {
+				log.Printf("email: reply sent to %s (%d chars)", from, len(resp.Content))
+			}
+		}(m.From, m.Subject, m.Body, m.MessageID)
 	}
 }
 
