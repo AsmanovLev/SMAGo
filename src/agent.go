@@ -1101,37 +1101,24 @@ func (a *Agent) showSessionList(chatID int64) {
 		return
 	}
 
-	var b strings.Builder
-	fmt.Fprintf(&b, "📂 %d session(s):\n\n", len(sessions))
-	for _, s := range sessions {
-		marker := "  "
-		if s.Active {
-			marker = "✅"
-		}
-		age := humanAge(s.UpdatedAt)
-		fmt.Fprintf(&b, "%s %s — %d msgs, %s\n", marker, s.Name, s.Messages, age)
-	}
-	b.WriteString("\ntap a session to switch:")
-
 	var rows [][]InlineButton
 	for _, s := range sessions {
-		label := s.Name
+		icon := "⚪"
 		if s.Active {
-			label += " ✅"
+			icon = "🔘"
 		}
-		if s.Messages > 0 {
-			label += fmt.Sprintf(" (%d)", s.Messages)
-		}
-		if len(label) > 40 {
-			label = label[:40] + "…"
+		label := fmt.Sprintf("%s (%d)", s.Name, s.Messages)
+		if len(label) > 36 {
+			label = label[:36] + "…"
 		}
 		cb := "switch:" + s.Name
 		if s.Active {
 			cb = "noop"
 		}
-		rows = append(rows, []InlineButton{{Text: label, CallbackData: cb}})
+		rows = append(rows, []InlineButton{{Text: icon + " " + label, CallbackData: cb}})
 	}
-	a.sendButtons(chatID, b.String(), rows)
+	msg := fmt.Sprintf("📂 %d session(s)", len(sessions))
+	a.sendButtons(chatID, msg, rows)
 }
 
 func (a *Agent) handleNewSession(chatID int64, text string) {
