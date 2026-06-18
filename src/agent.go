@@ -571,6 +571,21 @@ func (a *Agent) handleDCPCommand(chatID int64, text string) {
 // RunLoop — Telegram polling + command dispatch.
 // ──────────────────────────────────────────────────────
 
+func (a *Agent) handleUpgradeResume(chatID int64) {
+	version, _ := gitHead()
+	err := saveResumeMarker(chatID, version)
+	if err != nil {
+		a.send(chatID, "failed to save resume marker: "+err.Error())
+		return
+	}
+	a.send(chatID, "upgrading and resuming at "+version+"...")
+	go func() {
+		time.Sleep(500 * time.Millisecond)
+		log.Println("upgrade-resume: clean exit requested")
+		os.Exit(0)
+	}()
+}
+
 func (a *Agent) RunLoop(ctx context.Context) error {
 	if a.cfg.TelegramChatID != 0 {
 		sha, _ := gitHead()
@@ -913,6 +928,10 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 				os.Exit(0)
 			}()
 			continue
+
+		case text == "/upgrade-resume" || text == "/resume":
+		a.handleUpgradeResume(chatID)
+		continue
 		case text == "/health":
 			a.send(chatID, "✅ ok")
 			continue

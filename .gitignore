@@ -13,6 +13,7 @@ data/current.json
 data/next.json
 data/bad.json
 data/smago.log
+data/resume.json
 
 # Versions directory (local build artifacts)
 data/versions/

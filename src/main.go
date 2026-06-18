@@ -145,6 +145,9 @@ func run() error {
 	defer inject.Stop()
 	agent.SetRecorder(inject.Record)
 
+	// Check if we are resuming after upgrade-resume
+	checkResumeMarker(agent)
+
 	ctx, cancel := context.WithCancel(context.Background())
 	sigCh := make(chan os.Signal, 1)
 	signal.Notify(sigCh, syscall.SIGINT, syscall.SIGTERM)
