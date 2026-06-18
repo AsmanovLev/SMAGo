@@ -149,8 +149,9 @@ func (e *EmailBackend) Poll() ([]EmailMessage, error) {
 
 	var fromSeq, toSeq uint32
 	if e.lastSeq == 0 {
-		if mbox.Messages > 10 { fromSeq = mbox.Messages - 9 } else { fromSeq = 1 }
-		toSeq = mbox.Messages
+		// First run: skip to current position, don't process old mail
+		e.lastSeq = mbox.Messages
+		return nil, nil
 	} else if e.lastSeq < mbox.Messages {
 		fromSeq = e.lastSeq + 1
 		toSeq = mbox.Messages
@@ -196,9 +197,16 @@ func (e *EmailBackend) Poll() ([]EmailMessage, error) {
 		}
 		if len(msg.Envelope.InReplyTo) > 0 { em.InReplyTo = string(msg.Envelope.InReplyTo) }
 		if !e.processed[em.MessageID] {
-				e.processed[em.MessageID] = true
+			e.processed[em.MessageID] = true
+			// Loop detection: skip subjects with excessive Re: prefixes
+			reCount := 0
+			for s := em.Subject; strings.HasPrefix(s, "Re: "); s = strings.TrimPrefix(s, "Re: ") {
+				reCount++
+			}
+			if reCount <= 5 {
 				emails = append(emails, em)
 			}
+		}
 	}
 	if err := <-fetchDone; err != nil { return nil, fmt.Errorf("imap fetch: %w", err) }
 	e.lastSeq = toSeq
