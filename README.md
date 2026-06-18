@@ -8,7 +8,7 @@ SMAGo runs as a Windows system tray application with a supervisor that auto-rest
 
 ### Demo
 
-https://github.com/AsmanovLev/SMAGo/raw/main/demo.webm
+<video src="https://github.com/AsmanovLev/SMAGo/raw/main/demo.mp4" controls width="400"></video>
 
 > 🇷🇺 *Читать на русском: [README.ru.md](README.ru.md)*
 
