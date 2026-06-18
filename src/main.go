@@ -191,6 +191,8 @@ func run() error {
 	log.Printf("chat:  target chatID=%d (set via /chatid command or SMAGO_TELEGRAM_CHAT_ID)", cfg.TelegramChatID)
 	log.Println("ready: long-polling for updates...")
 
+	go agent.emailPollLoop(ctx)
+
 	if err := agent.RunLoop(ctx); err != nil && err != context.Canceled {
 		return fmt.Errorf("agent: %w", err)
 	}

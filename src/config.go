@@ -42,6 +42,7 @@ type Config struct {
 	MagickExe      string                    `json:"magickExe"`
 	DefaultShell   string                    `json:"defaultShell"`
 	DCP            DCPConfig                 `json:"dcp"`
+	Email          EmailConfig               `json:"email"`
 }
 
 func LoadConfig(path string) (*Config, error) {

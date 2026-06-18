@@ -45,6 +45,7 @@ type Agent struct {
 	runs                map[int64]*runState
 	shellOverride       map[int64]ShellType
 	dcpStates           map[int64]*DCPState
+	email              *EmailBackend
 }
 
 type injectedMsg struct {
@@ -54,12 +55,14 @@ type injectedMsg struct {
 }
 
 func NewAgent(cfg *Config, llm *LLM, store *Store, tg *Telegram, tools *ToolRegistry) *Agent {
+	emailBE := NewEmailBackend(cfg.Email, cfg.DataDir)
 	return &Agent{
 		cfg: cfg, llm: llm, store: store, tg: tg, tools: tools,
 		inject: make(chan injectedMsg, 16), maxSteps: make(map[int64]int), pending: newPendingQueue(),
 		traceBuf: make(map[int64][]string), runs: make(map[int64]*runState),
 		shellOverride: make(map[int64]ShellType),
 		dcpStates:     make(map[int64]*DCPState),
+		email:         emailBE,
 		verbose: true,
 	}
 }
@@ -1485,4 +1488,82 @@ func (a *Agent) execSendFile(ctx context.Context, args map[string]any) (string, 
 	}
 	sizeMB := float64(info.Size()) / 1024 / 1024
 	return fmt.Sprintf("sent %s (%.1f MB) to chat", filepath.Base(p), sizeMB), nil
+}
+
+
+// ── Email backend (Delta Chat / Arcane Chat) ───────────
+
+func (a *Agent) emailPoll() {
+	if a.email == nil || !a.cfg.Email.Enabled {
+		return
+	}
+	msgs, err := a.email.Poll()
+	if err != nil {
+		log.Printf("email: poll error: %v", err)
+		return
+	}
+	for _, m := range msgs {
+		// Skip bounces and system mail
+		if strings.HasPrefix(m.From, "MAILER-DAEMON") || strings.HasPrefix(m.From, "noreply@") {
+			continue
+		}
+
+		chatID := a.cfg.TelegramChatID
+		log.Printf("email: from=%s subject=%s", m.From, truncateLog(m.Subject, 80))
+
+		// Save attachments
+		if len(m.Attachments) > 0 {
+			inboxDir := a.cfg.DataDir + "/inbox"
+			os.MkdirAll(inboxDir, 0755)
+			for _, att := range m.Attachments {
+				destPath := inboxDir + "/" + att.Filename
+				os.WriteFile(destPath, att.Data, 0644)
+				a.send(chatID, fmt.Sprintf("📧 email attachment from %s: %s (%.1f MB)", m.From, att.Filename, float64(att.Size)/1024/1024))
+			}
+		}
+
+		// Process email body
+		if m.Body != "" {
+			userText := fmt.Sprintf("[email from %s, subject: %s]\n\n%s", m.From, m.Subject, m.Body)
+
+			// Queue or process based on whether agent is busy
+			if rs := a.getRun(chatID); rs != nil {
+				a.sendQueued(chatID, userText)
+				a.send(chatID, fmt.Sprintf("📧 queued email from %s", m.From))
+			} else {
+				go func(from, body, subject, msgID string) {
+					reply, err := a.Handle(chatID, body)
+					if err != nil {
+						a.send(chatID, "❌ email error: "+err.Error())
+						return
+					}
+					a.send(chatID, fmt.Sprintf("📧 reply to %s: %s", from, truncateLog(reply, 200)))
+
+					// Send email reply
+					if err := a.email.SendMail(from, "Re: "+subject, reply, msgID); err != nil {
+						a.send(chatID, "❌ email send failed: "+err.Error())
+					} else {
+						a.send(chatID, "✅ email reply sent")
+					}
+				}(m.From, userText, m.Subject, m.MessageID)
+			}
+		}
+	}
+}
+
+func (a *Agent) emailPollLoop(ctx context.Context) {
+	if a.email == nil || !a.cfg.Email.Enabled {
+		return
+	}
+	log.Printf("email: enabled, polling %s every 30s", a.cfg.Email.IMAPHost)
+	ticker := time.NewTicker(30 * time.Second)
+	defer ticker.Stop()
+	for {
+		select {
+		case <-ctx.Done():
+			return
+		case <-ticker.C:
+			a.emailPoll()
+		}
+	}
 }
