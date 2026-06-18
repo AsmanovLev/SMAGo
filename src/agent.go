@@ -307,6 +307,19 @@ func (a *Agent) Handle(chatID int64, userText string) (string, error) {
 			return "🛑 aborted.", nil
 		}
 
+		// Flush any messages queued while we were busy
+		if pendingText := a.drainPending(chatID); pendingText != "" {
+			_ = sess.Append(ChatMessage{Role: "user", Content: pendingText})
+			if a.cfg.DCP.Enabled {
+				messages = a.buildDCPMessages(sess, dcp, i+1)
+			} else {
+				messages = append(messages, ChatMessage{Role: "user", Content: pendingText})
+			}
+			a.recordTrace(chatID, fmt.Sprintf("\u2b05 flushed queued messages"))
+			// Reset empty response counter since new user input arrived
+			emptyResponses = 0
+		}
+
 		a.typing(chatID)
 		stepStart := time.Now()
 
@@ -658,30 +671,7 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 			}
 		}
 
-		if upd.Message == nil {
-			continue
-		}
-
-		isTrusted := inj != nil && inj.trusted
-		if !isTrusted && len(a.cfg.TrustedChatIDs) > 0 {
-			allowed := false
-			fromID := upd.Message.Chat.ID
-			if upd.Message.From != nil {
-				fromID = upd.Message.From.ID
-			}
-			for _, id := range a.cfg.TrustedChatIDs {
-				if id == fromID {
-					allowed = true
-					break
-				}
-			}
-			if !allowed {
-				log.Printf("blocked message from chatID=%d (not in trusted list)", fromID)
-				a.send(upd.Message.Chat.ID, "⛔ not authorized. your chat.id is "+fmt.Sprintf("%d", upd.Message.Chat.ID))
-				continue
-			}
-		}
-
+		// ── Callback queries (must be before upd.Message==nil check) ──
 		if upd.CallbackQuery != nil {
 			cq := upd.CallbackQuery
 			data := cq.Data
@@ -691,6 +681,27 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 				chatID = cq.Message.Chat.ID
 				msgID = cq.Message.MessageID
 			}
+
+			isTrusted := inj != nil && inj.trusted
+			if !isTrusted && len(a.cfg.TrustedChatIDs) > 0 {
+				allowed := false
+				fromID := int64(0)
+				if cq.From != nil {
+					fromID = cq.From.ID
+				}
+				for _, id := range a.cfg.TrustedChatIDs {
+					if id == fromID {
+						allowed = true
+						break
+					}
+				}
+				if !allowed {
+					log.Printf("blocked callback from userID=%d (not in trusted list)", fromID)
+					_ = a.tg.AnswerCallback(cq.ID, "⛔ not authorized")
+					continue
+				}
+			}
+
 			switch {
 			case strings.HasPrefix(data, "model:"):
 				name := strings.TrimPrefix(data, "model:")
@@ -722,6 +733,30 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 				_ = a.tg.AnswerCallback(cq.ID, "")
 			}
 			continue
+		}
+
+		if upd.Message == nil {
+			continue
+		}
+
+		isTrusted := inj != nil && inj.trusted
+		if !isTrusted && len(a.cfg.TrustedChatIDs) > 0 {
+			allowed := false
+			fromID := upd.Message.Chat.ID
+			if upd.Message.From != nil {
+				fromID = upd.Message.From.ID
+			}
+			for _, id := range a.cfg.TrustedChatIDs {
+				if id == fromID {
+					allowed = true
+					break
+				}
+			}
+			if !allowed {
+				log.Printf("blocked message from chatID=%d (not in trusted list)", fromID)
+				a.send(upd.Message.Chat.ID, "⛔ not authorized. your chat.id is "+fmt.Sprintf("%d", upd.Message.Chat.ID))
+				continue
+			}
 		}
 
 		text := strings.TrimSpace(upd.Message.Text)
