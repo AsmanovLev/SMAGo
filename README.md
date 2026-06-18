@@ -6,6 +6,10 @@ SMAGo runs as a Windows system tray application with a supervisor that auto-rest
 
 > **Written entirely by AI.** Minimax M3 and DeepSeek via OpenCode created the architecture and initial boilerplate. Then SMAGo via MiMo V2.5 (vision) developed itself. Human role: idea, direction, code review.
 
+### Demo
+
+https://github.com/AsmanovLev/SMAGo/raw/main/demo.webm
+
 > 🇷🇺 *Читать на русском: [README.ru.md](README.ru.md)*
 
 
