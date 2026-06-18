@@ -184,7 +184,13 @@ func (e *EmailBackend) Poll() ([]EmailMessage, error) {
 		for _, lit := range msg.Body {
 			raw, _ := io.ReadAll(lit)
 			body, attachments = parseEmailBody(raw)
-			// Try decrypt PGP
+			// Import any attached PGP keys
+			for _, att := range attachments {
+				if att.ContentType == "application/pgp-keys" || strings.HasSuffix(att.Filename, ".asc") {
+					e.importKey(string(att.Data))
+				}
+			}
+			// Try decrypt PGP message
 			if strings.Contains(body, "-----BEGIN PGP MESSAGE-----") {
 				if dec, ok := e.decrypt(body); ok { body = dec }
 			}
@@ -375,4 +381,20 @@ func decodeHeader(s string) string {
 func encodeHeader(s string) string {
 	if strings.ContainsAny(s, "=?\r\n") { return mime.QEncoding.Encode("utf-8", s) }
 	return s
+}
+
+
+func (e *EmailBackend) importKey(armored string) {
+	key, err := crypto.NewKeyFromArmored(armored)
+	if err != nil { return }
+	if e.keyRing == nil {
+		ring, err := crypto.NewKeyRing(key)
+		if err == nil {
+			e.keyRing = ring
+			log.Printf("email: imported key for %s (fp: %s)", key.GetEntity().PrimaryIdentity().UserId.Email, key.GetFingerprint()[:16])
+		}
+		return
+	}
+	_ = e.keyRing.AddKey(key)
+	log.Printf("email: added key for %s (fp: %s)", key.GetEntity().PrimaryIdentity().UserId.Email, key.GetFingerprint()[:16])
 }
