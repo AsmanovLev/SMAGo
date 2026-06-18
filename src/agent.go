@@ -1520,7 +1520,10 @@ func (a *Agent) emailPoll() {
 		return
 	}
 	for _, m := range msgs {
-		if strings.HasPrefix(m.From, "MAILER-DAEMON") || strings.HasPrefix(m.From, "noreply@") {
+		// Skip our own messages, bounces, and system mail
+		if m.From == a.cfg.Email.Address ||
+			strings.HasPrefix(m.From, "MAILER-DAEMON") ||
+			strings.HasPrefix(m.From, "noreply@") {
 			continue
 		}
 		if m.Body == "" {
