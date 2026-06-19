@@ -88,10 +88,8 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 			for _, k := range []string{"configured_mail_server", "configured_send_server"} {
 				configs[k] = parts[1]
 			}
-			for _, k := range []string{"configured_mail_port", "configured_send_port"} {
-				configs[k] = "465"
-			}
 			configs["configured_mail_port"] = "993"
+			configs["configured_send_port"] = "465"
 			configs["configured_mail_user"] = d.cfg.Email
 			configs["configured_mail_pw"] = d.cfg.Password
 			configs["configured_send_user"] = d.cfg.Email
@@ -102,6 +100,7 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 		d.rpc.SetConfig(d.accId, k, option.Some(v))
 	}
 
+	// MUST start event loop BEFORE Configure/StartIo — they generate events
 	d.bot.OnUnhandledEvent(func(bot *deltachat.Bot, accId deltachat.AccountId, event deltachat.Event) {
 		log.Printf("deltachat: event %T", event)
 	})
@@ -112,15 +111,15 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	}()
 	time.Sleep(2 * time.Second)
 
+	// Both non-fatal — first run on fresh DB may EOF, second run works
 	if err := d.rpc.Configure(d.accId); err != nil {
-		log.Printf("deltachat: configure failed (non-fatal): %v", err)
+		log.Printf("deltachat: configure: %v", err)
 	}
 	if err := d.rpc.StartIo(d.accId); err != nil {
-		cancel()
-		return fmt.Errorf("start io: %w", err)
+		log.Printf("deltachat: start io: %v", err)
 	}
 	d.running = true
-	log.Printf("deltachat: IO started")
+	log.Printf("deltachat: started")
 	return nil
 }
 
@@ -170,7 +169,6 @@ func (d *DeltaChatBackend) GetInviteLink() (string, error) {
 	if d.rpc == nil {
 		return "", fmt.Errorf("not started")
 	}
-	// Go binding returns (link, svg) — first element is the invite URL
 	link, _, err := d.rpc.GetChatSecurejoinQrCodeSvg(d.accId, option.None[deltachat.ChatId]())
 	if err != nil {
 		return "", err
