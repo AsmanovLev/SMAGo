@@ -120,8 +120,7 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	time.Sleep(2 * time.Second)
 
 	if err := d.rpc.Configure(d.accId); err != nil {
-		cancel()
-		return fmt.Errorf("configure: %w", err)
+		log.Printf("deltachat: configure failed (non-fatal): %v", err)
 	}
 	if err := d.rpc.StartIo(d.accId); err != nil {
 		cancel()
