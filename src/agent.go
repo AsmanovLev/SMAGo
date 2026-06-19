@@ -1041,7 +1041,8 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 		a.handleUpgradeResume(chatID)
 		continue
 		case text == "/dc":
-			if a.deltachat != nil && a.deltachat.IsRunning() {
+			log.Printf("/dc handler: deltachat=%v", a.deltachat != nil)
+			if a.deltachat != nil {
 				a.send(chatID, fmt.Sprintf("Delta Chat: search %s in contacts\nE2E encryption is automatic.", a.cfg.DeltaChat.Email))
 			} else {
 				a.send(chatID, "Delta Chat backend not available")
