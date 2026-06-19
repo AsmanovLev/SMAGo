@@ -27,8 +27,7 @@ func checkResumeMarker(agent *Agent) {
 	}
 
 	msg := fmt.Sprintf("Upgrade to %s successful. Continue your previous task.", m.Version)
-	agent.send(m.ChatID, msg)
-	log.Printf("resume: sent resume message to chat %d for version %s", m.ChatID, m.Version)
+	log.Printf("resume: sending resume to chat %d for version %s", m.ChatID, m.Version)
 
 	// Delay the push so RunLoop has time to start reading from inject channel
 	go func() {

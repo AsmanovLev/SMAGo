@@ -346,7 +346,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 			emptyResponses = 0
 		}
 
-		a.chooseSticker(chatID)
+		thinking := a.beginThinking(chatID)
 		stepStart := time.Now()
 
 		// LLM call with retry on transient errors (up to 4 retries, 15s intervals)
@@ -381,6 +381,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 			break
 		}
 		stepDur := time.Since(stepStart)
+		thinking.stop()
 		if llmErr != nil {
 			a.recordTrace(chatID, fmt.Sprintf("  ✗ LLM error: %v", llmErr))
 			return "", llmErr
@@ -418,7 +419,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 		compressedThisStep := false
 		compressCount := 0
 		for _, tc := range resp.ToolCalls {
-			a.playing(chatID)
+			toolLoop := a.beginToolCall(chatID)
 
 			// Intercept compress tool — only allow once per step to prevent loops
 			if tc.Function.Name == "compress" && a.cfg.DCP.Enabled {
@@ -498,6 +499,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 				)
 			}
 		}
+		toolLoop.stop()
 		a.recordStep(chatID, i+1, maxSteps, usage, stepDur, toolLines, -1, resp.Content)
 	}
 

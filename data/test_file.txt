@@ -1,0 +1,6 @@
+﻿line1
+REPLACED_LINE_2
+REPLACED_LINE_3
+ADDED_LINE
+line4
+line5
