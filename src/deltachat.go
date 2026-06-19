@@ -117,7 +117,7 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 		d.bot.Run()
 		d.running = false
 	}()
-	time.Sleep(500 * time.Millisecond)
+	time.Sleep(2 * time.Second)
 
 	if err := d.rpc.Configure(d.accId); err != nil {
 		cancel()
