@@ -9,14 +9,15 @@ import (
 type ResumeMarker struct {
 	ChatID  int64  `json:"chat_id"`
 	Version string `json:"version"`
+	Steps   int    `json:"steps,omitempty"`
 }
 
 func resumePath() string {
 	return filepath.Join(projectRoot(), "data", "resume.json")
 }
 
-func saveResumeMarker(chatID int64, version string) error {
-	m := ResumeMarker{ChatID: chatID, Version: version}
+func saveResumeMarker(chatID int64, version string, steps int) error {
+	m := ResumeMarker{ChatID: chatID, Version: version, Steps: steps}
 	data, err := json.Marshal(m)
 	if err != nil {
 		return err

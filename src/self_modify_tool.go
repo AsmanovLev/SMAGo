@@ -137,7 +137,7 @@ func (s *SelfModifyTool) actionUpgrade(ctx context.Context, args map[string]any)
 		// fallback: try config
 		chatID = s.cfg.TelegramChatID
 	}
-	if err := saveResumeMarker(chatID, version); err != nil {
+	if err := saveResumeMarker(chatID, version, 0); err != nil {
 		return "", fmt.Errorf("save resume marker: %w", err)
 	}
 	if err := ctx.Err(); err != nil {

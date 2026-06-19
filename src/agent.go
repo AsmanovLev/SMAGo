@@ -47,6 +47,7 @@ type Agent struct {
 	dcpStates           map[int64]*DCPState
 	email              *EmailBackend
 	deltachat          *DeltaChatBackend
+	currentStep        map[int64]int
 }
 
 type injectedMsg struct {
@@ -66,6 +67,7 @@ func NewAgent(cfg *Config, llm *LLM, store *Store, tg *Telegram, tools *ToolRegi
 		dcpStates:     make(map[int64]*DCPState),
 		email:         emailBE,
 		deltachat:     dcBE,
+		currentStep:  make(map[int64]int),
 		verbose: true,
 	}
 }
@@ -382,6 +384,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 		}
 		stepDur := time.Since(stepStart)
 		thinking.stop()
+		thinking.stop()
 		if llmErr != nil {
 			a.recordTrace(chatID, fmt.Sprintf("  ✗ LLM error: %v", llmErr))
 			return "", llmErr
@@ -399,7 +402,8 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 				if emptyResponses >= 3 {
 					a.recordTrace(chatID, "ERROR: 3 empty responses in a row, giving up")
 					a.saveDCPState(chatID, dcp)
-					return "ERROR: model returned 3 empty responses in a row", nil
+					a.currentStep[chatID] = i
+				return "ERROR: model returned 3 empty responses in a row", nil
 				}
 				a.recordTrace(chatID, fmt.Sprintf("empty response from LLM (attempt %d/3), retrying...", emptyResponses))
 				_ = sess.Append(ChatMessage{Role: "assistant", Content: resp.Content})
@@ -418,8 +422,8 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 
 		compressedThisStep := false
 		compressCount := 0
+		toolLoop := a.beginToolCall(chatID)
 		for _, tc := range resp.ToolCalls {
-			toolLoop := a.beginToolCall(chatID)
 
 			// Intercept compress tool — only allow once per step to prevent loops
 			if tc.Function.Name == "compress" && a.cfg.DCP.Enabled {
@@ -501,6 +505,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 		}
 		toolLoop.stop()
 		a.recordStep(chatID, i+1, maxSteps, usage, stepDur, toolLines, -1, resp.Content)
+		toolLoop.stop()
 	}
 
 	a.recordTrace(chatID, fmt.Sprintf("✗ hit %d-step cap", maxSteps))
@@ -629,7 +634,7 @@ func (a *Agent) handleDCPCommand(chatID int64, text string) {
 
 func (a *Agent) handleUpgradeResume(chatID int64) {
 	version, _ := gitHead()
-	err := saveResumeMarker(chatID, version)
+	err := saveResumeMarker(chatID, version, a.currentStep[chatID])
 	if err != nil {
 		a.send(chatID, "failed to save resume marker: "+err.Error())
 		return

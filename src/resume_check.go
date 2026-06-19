@@ -23,10 +23,10 @@ func checkResumeMarker(agent *Agent) {
 	}
 	if err == nil {
 		_ = sess.Append(ChatMessage{Role: "system",
-			Content: fmt.Sprintf("Upgrade to %s successful. Continue your previous task.", m.Version)})
+			Content: fmt.Sprintf("Upgrade to %s successful. Continue your previous task. (Step %d)", m.Version, m.Steps)})
 	}
 
-	msg := fmt.Sprintf("Upgrade to %s successful. Continue your previous task.", m.Version)
+	msg := fmt.Sprintf("Upgrade to %s successful. Continue your previous task. (Step %d)", m.Version, m.Steps)
 	log.Printf("resume: sending resume to chat %d for version %s", m.ChatID, m.Version)
 
 	// Delay the push so RunLoop has time to start reading from inject channel
