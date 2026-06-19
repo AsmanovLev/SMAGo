@@ -192,7 +192,9 @@ func (a *Agent) sendPlain(chatID int64, text string) {
 	}
 }
 
-func (a *Agent) typing(chatID int64) { _ = a.tg.Typing(chatID) }
+func (a *Agent) typing(chatID int64)       { _ = a.tg.Typing(chatID) }
+func (a *Agent) chooseSticker(chatID int64) { _ = a.tg.SendChatAction(chatID, "choose_sticker") }
+func (a *Agent) playing(chatID int64)       { _ = a.tg.SendChatAction(chatID, "playing") }
 
 func truncateLog(s string, n int) string {
 	if len(s) <= n {
@@ -344,7 +346,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 			emptyResponses = 0
 		}
 
-		a.typing(chatID)
+		a.chooseSticker(chatID)
 		stepStart := time.Now()
 
 		// LLM call with retry on transient errors (up to 4 retries, 15s intervals)
@@ -416,7 +418,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 		compressedThisStep := false
 		compressCount := 0
 		for _, tc := range resp.ToolCalls {
-			a.typing(chatID)
+			a.playing(chatID)
 
 			// Intercept compress tool — only allow once per step to prevent loops
 			if tc.Function.Name == "compress" && a.cfg.DCP.Enabled {
