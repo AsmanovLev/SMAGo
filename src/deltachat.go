@@ -102,15 +102,6 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 		d.rpc.SetConfig(d.accId, k, option.Some(v))
 	}
 
-	// Generate invite link BEFORE starting bot.Run() — RPC calls work here
-	link, _, qrErr := d.rpc.GetChatSecurejoinQrCodeSvg(d.accId, option.None[deltachat.ChatId]())
-	if qrErr != nil {
-		log.Printf("deltachat: QR code error: %v", qrErr)
-	} else {
-		d.inviteLink = link
-		log.Printf("deltachat: invite link: %s", link)
-	}
-
 	// Start event loop AFTER generating QR
 	d.bot.OnUnhandledEvent(func(bot *deltachat.Bot, accId deltachat.AccountId, event deltachat.Event) {
 		log.Printf("deltachat: event %T", event)
@@ -139,6 +130,17 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	}
 	d.running = true
 	log.Printf("deltachat: started")
+	// Generate invite link after bot.Run consumes events
+	go func() {
+		time.Sleep(5 * time.Second)
+		link, _, qrErr := d.rpc.GetChatSecurejoinQrCodeSvg(d.accId, option.None[deltachat.ChatId]())
+		if qrErr != nil {
+			log.Printf("deltachat: QR error: %v", qrErr)
+		} else {
+			d.inviteLink = link
+			log.Printf("deltachat: invite link: %s", link)
+		}
+	}()
 	return nil
 }
 
