@@ -384,7 +384,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 		}
 		stepDur := time.Since(stepStart)
 		thinking.stop()
-		thinking.stop()
+
 		if llmErr != nil {
 			a.recordTrace(chatID, fmt.Sprintf("  ✗ LLM error: %v", llmErr))
 			return "", llmErr
@@ -505,7 +505,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 		}
 		toolLoop.stop()
 		a.recordStep(chatID, i+1, maxSteps, usage, stepDur, toolLines, -1, resp.Content)
-		toolLoop.stop()
+
 	}
 
 	a.recordTrace(chatID, fmt.Sprintf("✗ hit %d-step cap", maxSteps))
@@ -894,7 +894,6 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 			a.handleDeleteSession(chatID, text)
 			continue
 
-
 		// ── Model / provider ──────────────────────────
 		case text == "/models":
 			a.sendModelGrid(chatID)
@@ -1139,7 +1138,6 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 			continue
 		}
 
-		a.typing(chatID)
 		go func(cid int64, msg string) {
 			reply, err := a.Handle(cid, msg)
 			if err != nil {
@@ -1530,7 +1528,6 @@ func (a *Agent) execSendFile(ctx context.Context, args map[string]any) (string, 
 	sizeMB := float64(info.Size()) / 1024 / 1024
 	return fmt.Sprintf("sent %s (%.1f MB) to chat", filepath.Base(p), sizeMB), nil
 }
-
 
 // ── Email backend (Delta Chat / Arcane Chat) ───────────
 
