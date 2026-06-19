@@ -108,6 +108,17 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 		d.rpc.SetConfig(d.accId, k, option.Some(v))
 	}
 
+	// Start event loop BEFORE Configure — generates events that fill the RPC buffer
+	d.bot.OnUnhandledEvent(func(bot *deltachat.Bot, accId deltachat.AccountId, event deltachat.Event) {
+		log.Printf("deltachat: event %T", event)
+	})
+	d.bot.OnNewMsg(d.handleNewMessage)
+	go func() {
+		d.bot.Run()
+		d.running = false
+	}()
+	time.Sleep(500 * time.Millisecond)
+
 	if err := d.rpc.Configure(d.accId); err != nil {
 		cancel()
 		return fmt.Errorf("configure: %w", err)
@@ -118,15 +129,6 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	}
 	d.running = true
 	log.Printf("deltachat: IO started")
-
-	d.bot.OnUnhandledEvent(func(bot *deltachat.Bot, accId deltachat.AccountId, event deltachat.Event) {
-		log.Printf("deltachat: event %T", event)
-	})
-	d.bot.OnNewMsg(d.handleNewMessage)
-	go func() {
-		d.bot.Run()
-		d.running = false
-	}()
 
 	return nil
 }
