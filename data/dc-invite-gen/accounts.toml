@@ -1,8 +1,0 @@
-selected_account = 1
-next_id = 2
-accounts_order = [1]
-
-[[accounts]]
-id = 1
-dir = "30d62783-d6d6-4cca-ae39-c8ec56691db2"
-uuid = "30d62783-d6d6-4cca-ae39-c8ec56691db2"
