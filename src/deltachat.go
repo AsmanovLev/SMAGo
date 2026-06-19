@@ -8,7 +8,6 @@ import (
 	"os/exec"
 	"path/filepath"
 	"strings"
-	"sync"
 	"time"
 
 	"github.com/deltachat/deltachat-rpc-client-go/deltachat"
@@ -28,13 +27,11 @@ var globalAgent *Agent
 type DeltaChatBackend struct {
 	cfg        DeltaChatConfig
 	rpc        *deltachat.Rpc
-	bot        *deltachat.Bot
 	accId      deltachat.AccountId
 	dataDir    string
 	running    bool
 	cancel     context.CancelFunc
 	inviteLink string
-	inviteOnce sync.Once
 }
 
 func NewDeltaChatBackend(cfg DeltaChatConfig, dataDir string) *DeltaChatBackend {
@@ -63,7 +60,6 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	rpcCtx, cancel := context.WithCancel(ctx)
 	d.cancel = cancel
 	d.rpc = &deltachat.Rpc{Context: rpcCtx, Transport: t}
-	d.bot = deltachat.NewBot(d.rpc)
 
 	accIds, _ := d.rpc.GetAllAccountIds()
 	if len(accIds) == 0 {
@@ -102,17 +98,7 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 		d.rpc.SetConfig(d.accId, k, option.Some(v))
 	}
 
-	// Start event loop AFTER generating QR
-	d.bot.OnUnhandledEvent(func(bot *deltachat.Bot, accId deltachat.AccountId, event deltachat.Event) {
-		log.Printf("deltachat: event %T", event)
-	})
-	d.bot.OnNewMsg(d.handleNewMessage)
-	go func() {
-		d.bot.Run()
-		d.running = false
-	}()
-	time.Sleep(2 * time.Second)
-
+	// Configure + StartIo
 	for attempt := 0; attempt < 3; attempt++ {
 		if err := d.rpc.Configure(d.accId); err != nil {
 			log.Printf("deltachat: configure attempt %d: %v", attempt+1, err)
@@ -126,39 +112,71 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 		}
 		d.running = true
 		log.Printf("deltachat: IO started (attempt %d)", attempt+1)
-		return nil
+		break
 	}
-	d.running = true
-	log.Printf("deltachat: started")
-	// Generate invite link after bot.Run consumes events
-	go func() {
-		time.Sleep(5 * time.Second)
-		link, _, qrErr := d.rpc.GetChatSecurejoinQrCodeSvg(d.accId, option.None[deltachat.ChatId]())
-		if qrErr != nil {
-			log.Printf("deltachat: QR error: %v", qrErr)
-		} else {
-			d.inviteLink = link
-			log.Printf("deltachat: invite link: %s", link)
-		}
-	}()
+
+	if !d.running {
+		d.running = true
+		log.Printf("deltachat: started (configure/startio failed, will retry)")
+	}
+
+	// Generate invite link (no bot.Run running, so RPC works)
+	link, _, qrErr := d.rpc.GetChatSecurejoinQrCodeSvg(d.accId, option.None[deltachat.ChatId]())
+	if qrErr != nil {
+		log.Printf("deltachat: QR error: %v", qrErr)
+	} else {
+		d.inviteLink = link
+		log.Printf("deltachat: invite link: %s", link)
+	}
+
+	// Start event loop (our own, using GetNextEvent)
+	go d.eventLoop(rpcCtx)
+
 	return nil
 }
 
-func (d *DeltaChatBackend) handleNewMessage(bot *deltachat.Bot, accId deltachat.AccountId, msgId deltachat.MsgId) {
-	msg, err := d.rpc.GetMessage(accId, msgId)
-	if err != nil || msg == nil || msg.FromId == 0 || msg.ViewType != deltachat.MsgText {
+func (d *DeltaChatBackend) eventLoop(ctx context.Context) {
+	for {
+		select {
+		case <-ctx.Done():
+			return
+		default:
+		}
+		accId, event, err := d.rpc.GetNextEvent()
+		if err != nil {
+			log.Printf("deltachat: GetNextEvent error: %v", err)
+			time.Sleep(time.Second)
+			continue
+		}
+		_ = accId
+		switch e := event.(type) {
+		case deltachat.EventIncomingMsg:
+			d.handleIncoming(e)
+		case deltachat.EventConnectivityChanged:
+			// could log connectivity
+		case deltachat.EventWarning:
+			log.Printf("deltachat: warning")
+		default:
+			_ = e
+		}
+	}
+}
+
+func (d *DeltaChatBackend) handleIncoming(e deltachat.EventIncomingMsg) {
+	msg, err := d.rpc.GetMessage(d.accId, e.MsgId)
+	if err != nil || msg == nil || msg.ViewType != deltachat.MsgText {
 		return
 	}
 	from := ""
-	contacts, _ := d.rpc.GetChatContacts(accId, msg.ChatId)
+	contacts, _ := d.rpc.GetChatContacts(d.accId, e.ChatId)
 	if len(contacts) > 0 {
-		cs, _ := d.rpc.GetContact(accId, contacts[0])
+		cs, _ := d.rpc.GetContact(d.accId, contacts[0])
 		if cs != nil {
 			from = cs.Address
 		}
 	}
-	log.Printf("deltachat: from=%s chat=%d text=%s", from, msg.ChatId, truncateLog(msg.Text, 100))
-	d.injectToAgent(msg.Text, msg.ChatId)
+	log.Printf("deltachat: from=%s chat=%d text=%s", from, e.ChatId, truncateLog(msg.Text, 100))
+	d.injectToAgent(msg.Text, e.ChatId)
 }
 
 func (d *DeltaChatBackend) injectToAgent(text string, chatId deltachat.ChatId) {
@@ -195,9 +213,6 @@ func (d *DeltaChatBackend) IsRunning() bool { return d.running }
 func (d *DeltaChatBackend) Stop() {
 	if d.cancel != nil {
 		d.cancel()
-	}
-	if d.bot != nil {
-		d.bot.Stop()
 	}
 	if d.rpc != nil {
 		d.rpc.StopIo(d.accId)
