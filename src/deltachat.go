@@ -78,17 +78,31 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	if d.cfg.Name != "" {
 		configs["display_name"] = d.cfg.Name
 	}
-	// Chatmail: no imap./smtp. subdomains, force via configured_* keys
+	// Chatmail relays: no imap./smtp. subdomains, force via configured_* keys
+	// Standard providers (Rambler, Gmail, etc.) are auto-detected by DC core
+	chatmailRelays := map[string]bool{
+		"chatmail.email": true,
+		"nine.testrun.org": true,
+		"mehl.cloud": true,
+		"chatmail.woodpeckersnest.space": true,
+		"chat.adminforge.de": true,
+		"tarpit.fun": true,
+		"chtml.ca": true,
+		"danneskjold.de": true,
+		"chat.vim.wtf": true,
+	}
 	if parts := strings.SplitN(d.cfg.Email, "@", 2); len(parts) == 2 {
 		relay := parts[1]
-		configs["configured_mail_server"] = relay
-		configs["configured_mail_port"] = "993"
-		configs["configured_mail_user"] = d.cfg.Email
-		configs["configured_mail_pw"] = d.cfg.Password
-		configs["configured_send_server"] = relay
-		configs["configured_send_port"] = "465"
-		configs["configured_send_user"] = d.cfg.Email
-		configs["configured_send_pw"] = d.cfg.Password
+		if chatmailRelays[relay] {
+			configs["configured_mail_server"] = relay
+			configs["configured_mail_port"] = "993"
+			configs["configured_mail_user"] = d.cfg.Email
+			configs["configured_mail_pw"] = d.cfg.Password
+			configs["configured_send_server"] = relay
+			configs["configured_send_port"] = "465"
+			configs["configured_send_user"] = d.cfg.Email
+			configs["configured_send_pw"] = d.cfg.Password
+		}
 	}
 	for k, v := range configs {
 		d.rpc.SetConfig(d.accId, k, option.Some(v))
