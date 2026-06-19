@@ -1041,7 +1041,7 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 		a.handleUpgradeResume(chatID)
 		continue
 		case text == "/dc":
-			log.Printf("/dc handler: deltachat=%v", a.deltachat != nil)
+			log.Printf("DC: /dc called, deltachat=%v", a.deltachat != nil)
 			if a.deltachat != nil {
 				a.send(chatID, fmt.Sprintf("Delta Chat: search %s in contacts\nE2E encryption is automatic.", a.cfg.DeltaChat.Email))
 			} else {
