@@ -72,17 +72,23 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	}
 
 	configs := map[string]string{
-		"addr":        d.cfg.Email,
-		"mail_pw":     d.cfg.Password,
-		"mail_server": "imap.rambler.ru",
-		"mail_port":   "993",
-		"send_server": "smtp.rambler.ru",
-		"send_port":   "465",
-		"send_user":   d.cfg.Email,
-		"send_pw":     d.cfg.Password,
+		"addr":    d.cfg.Email,
+		"mail_pw": d.cfg.Password,
 	}
 	if d.cfg.Name != "" {
 		configs["display_name"] = d.cfg.Name
+	}
+	// Chatmail: no imap./smtp. subdomains, force via configured_* keys
+	if parts := strings.SplitN(d.cfg.Email, "@", 2); len(parts) == 2 {
+		relay := parts[1]
+		configs["configured_mail_server"] = relay
+		configs["configured_mail_port"] = "993"
+		configs["configured_mail_user"] = d.cfg.Email
+		configs["configured_mail_pw"] = d.cfg.Password
+		configs["configured_send_server"] = relay
+		configs["configured_send_port"] = "465"
+		configs["configured_send_user"] = d.cfg.Email
+		configs["configured_send_pw"] = d.cfg.Password
 	}
 	for k, v := range configs {
 		d.rpc.SetConfig(d.accId, k, option.Some(v))
