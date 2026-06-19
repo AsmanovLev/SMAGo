@@ -15,6 +15,7 @@ require (
 	github.com/ProtonMail/go-crypto v1.4.1 // indirect
 	github.com/ProtonMail/go-mime v0.0.0-20230322103455-7d82a3887f2f // indirect
 	github.com/cloudflare/circl v1.6.2 // indirect
+	github.com/deltachat/deltachat-rpc-client-go v1.134.0 // indirect
 	github.com/dustin/go-humanize v1.0.1 // indirect
 	github.com/emersion/go-sasl v0.0.0-20200509203442-7bfe0ed36a21 // indirect
 	github.com/godbus/dbus/v5 v5.1.0 // indirect

@@ -233,9 +233,21 @@ func (e *EmailBackend) SendMail(to, subject, body, inReplyTo string) error {
 	buf.WriteString("Chat-User-Agent: SMAGo/1.0\r\n")
 	buf.WriteString(fmt.Sprintf("Date: %s\r\n", time.Now().UTC().Format(time.RFC1123Z)))
 
-	// Autocrypt header - Delta Chat picks up the key from here
+	// Autocrypt header - keydata must be base64 of binary PUBLIC key
 	if e.publicKey != "" {
-		keyB64 := base64.StdEncoding.EncodeToString([]byte(e.publicKey))
+		// De-armor the public key to get binary
+		pubKey, err := crypto.NewKeyFromArmored(e.publicKey)
+		var keyB64 string
+		if err == nil {
+			binKey, err2 := pubKey.Serialize()
+			if err2 == nil {
+				keyB64 = base64.StdEncoding.EncodeToString(binKey)
+			}
+		}
+		if keyB64 == "" {
+			// fallback: encode armored text
+			keyB64 = base64.StdEncoding.EncodeToString([]byte(e.publicKey))
+		}
 		buf.WriteString(fmt.Sprintf("Autocrypt: addr=%s; prefer-encrypt=mutual; keydata=\r\n", e.cfg.Address))
 		for i := 0; i < len(keyB64); i += 72 {
 			end := i + 72
@@ -294,6 +306,24 @@ func parseEmailBody(raw []byte) (string, []EmailAttachment) {
 	ct := msg.Header.Get("Content-Type")
 	var body string
 	var attachments []EmailAttachment
+	// Handle multipart/encrypted (Delta Chat E2E)
+	if strings.HasPrefix(ct, "multipart/encrypted") {
+		_, params, parseErr := mime.ParseMediaType(ct)
+		if parseErr != nil { return "", nil }
+		boundary := params["boundary"]
+		if boundary == "" { return "", nil }
+		mr := multipart.NewReader(bytes.NewReader(raw), boundary)
+		for {
+			part, partErr := mr.NextPart()
+			if partErr != nil { break }
+			partCT := part.Header.Get("Content-Type")
+			if partCT == "application/octet-stream" || strings.Contains(partCT, "encrypted.asc") {
+				data, _ := io.ReadAll(part)
+				body = string(data)
+			}
+		}
+		return body, attachments
+	}
 	if strings.HasPrefix(ct, "multipart/") {
 		_, params, parseErr := mime.ParseMediaType(ct)
 		if parseErr != nil { return string(raw), nil }
