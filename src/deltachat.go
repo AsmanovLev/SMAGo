@@ -99,53 +99,62 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 		d.rpc.SetConfig(d.accId, k, option.Some(v))
 	}
 
-	// Start bot.Run BEFORE Configure/StartIo — consumes events
+	// 1. Start bot.Run() first — it consumes events from the pipe
 	d.bot = deltachat.NewBot(d.rpc)
+	d.bot.OnUnhandledEvent(func(bot *deltachat.Bot, accId deltachat.AccountId, event deltachat.Event) {
+		log.Printf("deltachat: event %T", event)
+	})
+	d.bot.OnNewMsg(d.handleNewMessage)
 	go func() {
 		d.bot.Run()
 		d.running = false
 	}()
-	time.Sleep(2 * time.Second)
 
-	for attempt := 0; attempt < 3; attempt++ {
-		if err := d.rpc.Configure(d.accId); err != nil {
-			log.Printf("deltachat: configure attempt %d: %v", attempt+1, err)
-			time.Sleep(3 * time.Second)
-			continue
-		}
-		if err := d.rpc.StartIo(d.accId); err != nil {
-			log.Printf("deltachat: start io attempt %d: %v", attempt+1, err)
-			time.Sleep(3 * time.Second)
-			continue
+	// 2. Wait for bot.Run to start consuming
+	time.Sleep(3 * time.Second)
+
+	// 3. Configure + StartIo in goroutine with retries
+	// Fresh DB: Configure floods pipe with events, bot.Run needs time
+	go func() {
+		for attempt := 1; attempt <= 30; attempt++ {
+			if ctx.Err() != nil {
+				return
+			}
+			wait := time.Duration(attempt) * time.Second
+			if wait > 20*time.Second {
+				wait = 20 * time.Second
+			}
+			time.Sleep(wait)
+
+			if err := d.rpc.Configure(d.accId); err != nil {
+				log.Printf("deltachat: configure %d: %v", attempt, err)
+				continue
+			}
+			if err := d.rpc.StartIo(d.accId); err != nil {
+				log.Printf("deltachat: start io %d: %v", attempt, err)
+				continue
+			}
+			d.running = true
+			log.Printf("deltachat: IO started (attempt %d)", attempt)
+			go d.generateInviteLink(d.cfg.Email, d.cfg.Password, rpcDir)
+			return
 		}
 		d.running = true
-		log.Printf("deltachat: IO started (attempt %d)", attempt+1)
-		break
-	}
-
-	if !d.running {
-		d.running = true
-		log.Printf("deltachat: started (configure/startio failed)")
-	}
-
-	// Register message handler
-	d.bot.OnNewMsg(d.handleNewMessage)
-
-	// Generate invite link in a SEPARATE process (RPC calls conflict with bot.Run)
-	go d.generateInviteLink(d.cfg.Email, d.cfg.Password, rpcDir)
+		log.Printf("deltachat: started (configure failed after retries)")
+		go d.generateInviteLink(d.cfg.Email, d.cfg.Password, rpcDir)
+	}()
 
 	return nil
 }
 
 func (d *DeltaChatBackend) generateInviteLink(email, password, rpcDir string) {
-	// Use a separate rpc-server process to generate invite link
 	tmpDir := filepath.Join(d.dataDir, "dc-invite-gen")
 	os.MkdirAll(tmpDir, 0755)
 
 	t := transport.NewIOTransport()
 	t.AccountsDir = tmpDir
 	if err := t.Open(); err != nil {
-		log.Printf("deltachat: invite gen transport error: %v", err)
+		log.Printf("deltachat: invite gen error: %v", err)
 		return
 	}
 	defer t.Close()
@@ -156,7 +165,7 @@ func (d *DeltaChatBackend) generateInviteLink(email, password, rpcDir string) {
 	rpc.SetConfig(accId, "mail_pw", option.Some(password))
 
 	if err := rpc.Configure(accId); err != nil {
-		log.Printf("deltachat: invite gen configure error: %v", err)
+		log.Printf("deltachat: invite gen configure: %v", err)
 		return
 	}
 	rpc.StartIo(accId)
@@ -164,7 +173,7 @@ func (d *DeltaChatBackend) generateInviteLink(email, password, rpcDir string) {
 
 	link, _, err := rpc.GetChatSecurejoinQrCodeSvg(accId, option.None[deltachat.ChatId]())
 	if err != nil {
-		log.Printf("deltachat: invite gen QR error: %v", err)
+		log.Printf("deltachat: invite gen QR: %v", err)
 		return
 	}
 	d.inviteLink = link
