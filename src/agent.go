@@ -46,6 +46,7 @@ type Agent struct {
 	shellOverride       map[int64]ShellType
 	dcpStates           map[int64]*DCPState
 	email              *EmailBackend
+	deltachat          *DeltaChatBackend
 }
 
 type injectedMsg struct {
@@ -56,6 +57,7 @@ type injectedMsg struct {
 
 func NewAgent(cfg *Config, llm *LLM, store *Store, tg *Telegram, tools *ToolRegistry) *Agent {
 	emailBE := NewEmailBackend(cfg.Email, cfg.DataDir)
+	dcBE := NewDeltaChatBackend(cfg.DeltaChat, cfg.DataDir)
 	return &Agent{
 		cfg: cfg, llm: llm, store: store, tg: tg, tools: tools,
 		inject: make(chan injectedMsg, 16), maxSteps: make(map[int64]int), pending: newPendingQueue(),
@@ -63,6 +65,7 @@ func NewAgent(cfg *Config, llm *LLM, store *Store, tg *Telegram, tools *ToolRegi
 		shellOverride: make(map[int64]ShellType),
 		dcpStates:     make(map[int64]*DCPState),
 		email:         emailBE,
+		deltachat:     dcBE,
 		verbose: true,
 	}
 }

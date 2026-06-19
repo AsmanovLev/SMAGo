@@ -43,6 +43,7 @@ type Config struct {
 	DefaultShell   string                    `json:"defaultShell"`
 	DCP            DCPConfig                 `json:"dcp"`
 	Email          EmailConfig               `json:"email"`
+	DeltaChat      DeltaChatConfig           `json:"deltachat"`
 }
 
 func LoadConfig(path string) (*Config, error) {

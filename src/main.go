@@ -191,6 +191,18 @@ func run() error {
 	log.Printf("chat:  target chatID=%d (set via /chatid command or SMAGO_TELEGRAM_CHAT_ID)", cfg.TelegramChatID)
 	log.Println("ready: long-polling for updates...")
 
+	// Set global agent reference for Delta Chat callbacks
+	globalAgent = agent
+
+	// Start Delta Chat backend if configured
+	if agent.deltachat != nil {
+		if err := agent.deltachat.Start(ctx); err != nil {
+			log.Printf("deltachat: start failed: %v", err)
+		} else {
+			log.Printf("deltachat: backend running")
+		}
+	}
+
 	go agent.emailPollLoop(ctx)
 
 	if err := agent.RunLoop(ctx); err != nil && err != context.Canceled {
