@@ -30,10 +30,8 @@ func checkResumeMarker(agent *Agent) {
 	agent.send(m.ChatID, msg)
 	log.Printf("resume: sent resume message to chat %d for version %s", m.ChatID, m.Version)
 
-	// Delay the push so RunLoop has time to start reading from inject channel
-	go func() {
-		time.Sleep(2 * time.Second)
-		if err := agent.Push(m.ChatID, "Upgrade completed successfully. Continue your previous task."); err != nil {
+	msg := fmt.Sprintf("Upgrade to %s successful. Continue your previous task.", m.Version)
+		if err := agent.Push(m.ChatID, msg); err != nil {
 			log.Printf("resume: push failed: %v", err)
 		}
 	}()
