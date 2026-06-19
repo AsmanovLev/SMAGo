@@ -131,6 +131,7 @@ func (r *ToolRegistry) registerDefaults() {
 		Execute:     nil,
 	}
 
+	r.registerGrep()
 	r.connectMCPServers()
 }
 
