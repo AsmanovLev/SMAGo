@@ -78,28 +78,22 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	if d.cfg.Name != "" {
 		configs["display_name"] = d.cfg.Name
 	}
-	// Chatmail relays: no imap./smtp. subdomains, force via configured_* keys
-	// Standard providers (Rambler, Gmail, etc.) are auto-detected by DC core
 	chatmailRelays := map[string]bool{
-		"chatmail.email": true,
-		"nine.testrun.org": true,
-		"mehl.cloud": true,
-		"chatmail.woodpeckersnest.space": true,
-		"chat.adminforge.de": true,
-		"tarpit.fun": true,
-		"chtml.ca": true,
-		"danneskjold.de": true,
-		"chat.vim.wtf": true,
+		"chatmail.email": true, "nine.testrun.org": true, "mehl.cloud": true,
+		"chatmail.woodpeckersnest.space": true, "chat.adminforge.de": true,
+		"tarpit.fun": true, "chtml.ca": true, "danneskjold.de": true, "chat.vim.wtf": true,
 	}
 	if parts := strings.SplitN(d.cfg.Email, "@", 2); len(parts) == 2 {
-		relay := parts[1]
-		if chatmailRelays[relay] {
-			configs["configured_mail_server"] = relay
+		if chatmailRelays[parts[1]] {
+			for _, k := range []string{"configured_mail_server", "configured_send_server"} {
+				configs[k] = parts[1]
+			}
+			for _, k := range []string{"configured_mail_port", "configured_send_port"} {
+				configs[k] = "465"
+			}
 			configs["configured_mail_port"] = "993"
 			configs["configured_mail_user"] = d.cfg.Email
 			configs["configured_mail_pw"] = d.cfg.Password
-			configs["configured_send_server"] = relay
-			configs["configured_send_port"] = "465"
 			configs["configured_send_user"] = d.cfg.Email
 			configs["configured_send_pw"] = d.cfg.Password
 		}
@@ -108,7 +102,6 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 		d.rpc.SetConfig(d.accId, k, option.Some(v))
 	}
 
-	// Start event loop BEFORE Configure — generates events that fill the RPC buffer
 	d.bot.OnUnhandledEvent(func(bot *deltachat.Bot, accId deltachat.AccountId, event deltachat.Event) {
 		log.Printf("deltachat: event %T", event)
 	})
@@ -128,7 +121,6 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	}
 	d.running = true
 	log.Printf("deltachat: IO started")
-
 	return nil
 }
 
@@ -137,7 +129,6 @@ func (d *DeltaChatBackend) handleNewMessage(bot *deltachat.Bot, accId deltachat.
 	if err != nil || msg == nil || msg.FromId == 0 || msg.ViewType != deltachat.MsgText {
 		return
 	}
-
 	from := ""
 	contacts, _ := d.rpc.GetChatContacts(accId, msg.ChatId)
 	if len(contacts) > 0 {
@@ -146,7 +137,6 @@ func (d *DeltaChatBackend) handleNewMessage(bot *deltachat.Bot, accId deltachat.
 			from = cs.Address
 		}
 	}
-
 	log.Printf("deltachat: from=%s chat=%d text=%s", from, msg.ChatId, truncateLog(msg.Text, 100))
 	d.injectToAgent(msg.Text, msg.ChatId)
 }
@@ -176,28 +166,16 @@ func (d *DeltaChatBackend) Send(chatId deltachat.ChatId, text string) error {
 	return err
 }
 
-func (d *DeltaChatBackend) StartChat(email, name string) (deltachat.ChatId, error) {
+func (d *DeltaChatBackend) GetInviteLink() (string, error) {
 	if d.rpc == nil {
-		return 0, fmt.Errorf("not started")
+		return "", fmt.Errorf("not started")
 	}
-	contactId, err := d.rpc.CreateContact(d.accId, email, name)
+	// Go binding returns (link, svg) — first element is the invite URL
+	link, _, err := d.rpc.GetChatSecurejoinQrCodeSvg(d.accId, option.None[deltachat.ChatId]())
 	if err != nil {
-		return 0, fmt.Errorf("create contact: %w", err)
+		return "", err
 	}
-	log.Printf("deltachat: contact created id=%d addr=%s", contactId, email)
-	chatId, err := d.rpc.CreateChatByContactId(d.accId, contactId)
-	if err != nil {
-		return 0, fmt.Errorf("create chat: %w", err)
-	}
-	log.Printf("deltachat: chat created id=%d", chatId)
-	return chatId, nil
-}
-
-func (d *DeltaChatBackend) GetQRCode(chatId deltachat.ChatId) (string, string, error) {
-	if d.rpc == nil {
-		return "", "", fmt.Errorf("not started")
-	}
-	return d.rpc.GetChatSecurejoinQrCodeSvg(d.accId, option.Some(chatId))
+	return link, nil
 }
 
 func (d *DeltaChatBackend) IsRunning() bool { return d.running }
@@ -230,19 +208,6 @@ func findDeltachatRPCServer() (string, error) {
 		return p, nil
 	}
 	return "", fmt.Errorf("deltachat-rpc-server not found")
-}
-
-func (d *DeltaChatBackend) GetInviteLink() (string, error) {
-	if d.rpc == nil {
-		return "", fmt.Errorf("not started")
-	}
-	_, qrdata, err := d.rpc.GetChatSecurejoinQrCodeSvg(d.accId, option.None[deltachat.ChatId]())
-	if err != nil {
-		return "", err
-	}
-	link := "https://i.delta.chat/#" + qrdata
-	log.Printf("deltachat: invite link generated")
-	return link, nil
 }
 
 func isDeltaChatMessage(headers string) bool {
