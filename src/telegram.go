@@ -125,6 +125,15 @@ func (t *Telegram) SetProxyURL(rawURL string) error {
 		t.proxy = ""
 		return nil
 	}
+	if isSOCKS5(rawURL) {
+		dial, err := dialContextForProxy(rawURL)
+		if err != nil {
+			return err
+		}
+		t.client.Transport = &http.Transport{DialContext: dial}
+		t.proxy = rawURL
+		return nil
+	}
 	u, err := url.Parse(rawURL)
 	if err != nil {
 		return err

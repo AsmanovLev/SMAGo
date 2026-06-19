@@ -37,15 +37,19 @@ func detectWindowsProxy() (string, bool) {
 	return exportProxy(server, override)
 }
 
+// ponytail: registry format socks=host:port → return socks5://host:port
+// so setGlobalProxy can pick it up via x/net/proxy SOCKS5 dialer.
+
 func exportProxy(server, override string) (string, bool) {
 	scheme := "http://"
 	host := server
 	if !strings.Contains(server, "=") {
 		// Plain "host:port" — apply to both http and https
 	} else {
-		// Form "http=h:1;https=h:2" — pick the https one (or http fallback)
+		// Form "http=h:1;https=h:2;socks=h:3" — pick the best fit.
+		// Preference: https (HTTP CONNECT) > http > socks5 (tunneled).
 		parts := strings.Split(server, ";")
-		var httpP, httpsP string
+		var httpP, httpsP, socksP string
 		for _, p := range parts {
 			kv := strings.SplitN(p, "=", 2)
 			if len(kv) != 2 {
@@ -56,14 +60,20 @@ func exportProxy(server, override string) (string, bool) {
 				httpP = strings.TrimSpace(kv[1])
 			case "https":
 				httpsP = strings.TrimSpace(kv[1])
+			case "socks", "socks5":
+				socksP = strings.TrimSpace(kv[1])
 			}
 		}
-		if httpsP != "" {
+		switch {
+		case httpsP != "":
 			host = httpsP
 			scheme = "https://"
-		} else if httpP != "" {
+		case httpP != "":
 			host = httpP
-		} else {
+		case socksP != "":
+			host = socksP
+			scheme = "socks5://"
+		default:
 			return "", false
 		}
 	}

@@ -18,12 +18,25 @@ func setGlobalProxy(rawURL string) {
 		defaultHTTP = &http.Client{Timeout: 300 * time.Second}
 		return
 	}
+	timeout := 300 * time.Second
+	if isSOCKS5(rawURL) {
+		dial, err := dialContextForProxy(rawURL)
+		if err != nil || dial == nil {
+			defaultHTTP = &http.Client{Timeout: timeout}
+			return
+		}
+		defaultHTTP = &http.Client{
+			Timeout:   timeout,
+			Transport: &http.Transport{DialContext: dial},
+		}
+		return
+	}
 	u, err := url.Parse(rawURL)
 	if err != nil {
 		return
 	}
 	defaultHTTP = &http.Client{
-		Timeout: 300 * time.Second,
+		Timeout:   timeout,
 		Transport: &http.Transport{Proxy: http.ProxyURL(u)},
 	}
 }
