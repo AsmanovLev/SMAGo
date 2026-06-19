@@ -1040,22 +1040,12 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 		case text == "/upgrade":
 		a.handleUpgradeResume(chatID)
 		continue
-		case text == "/health":
-		case text == "/dc", text == "/dclink":
-			if a.deltachat == nil {
-				a.send(chatID, "Delta Chat not configured")
-				continue
+		case text == "/dc":
+			if a.deltachat != nil && a.deltachat.IsRunning() {
+				a.send(chatID, fmt.Sprintf("Delta Chat: search %s in contacts\nE2E encryption is automatic.", a.cfg.DeltaChat.Email))
+			} else {
+				a.send(chatID, "Delta Chat backend not available")
 			}
-			if !a.deltachat.IsRunning() {
-				a.send(chatID, "Delta Chat not running")
-				continue
-			}
-			link, err := a.deltachat.GetInviteLink()
-			if err != nil {
-				a.send(chatID, fmt.Sprintf("Error: %v\nAddress: %s", err, a.cfg.DeltaChat.Email))
-				continue
-			}
-			a.send(chatID, fmt.Sprintf("Delta Chat invite:\n%s\n\nOr search: %s", link, a.cfg.DeltaChat.Email))
 			continue
 		case text == "/chatid":
 			a.send(chatID, fmt.Sprintf("chat.id = %d", chatID))
