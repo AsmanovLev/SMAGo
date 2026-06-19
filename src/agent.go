@@ -1051,6 +1051,9 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 		case text == "/chatid":
 			a.send(chatID, fmt.Sprintf("chat.id = %d", chatID))
 			continue
+		case text == "/health":
+			a.send(chatID, "ok")
+			continue
 
 		// ── Git ───────────────────────────────────────
 		case text == "/gitsha" || text == "/githead":
