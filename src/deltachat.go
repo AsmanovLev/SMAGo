@@ -8,6 +8,7 @@ import (
 	"os/exec"
 	"path/filepath"
 	"strings"
+	"sync"
 	"time"
 
 	"github.com/deltachat/deltachat-rpc-client-go/deltachat"
@@ -25,13 +26,15 @@ type DeltaChatConfig struct {
 var globalAgent *Agent
 
 type DeltaChatBackend struct {
-	cfg     DeltaChatConfig
-	rpc     *deltachat.Rpc
-	bot     *deltachat.Bot
-	accId   deltachat.AccountId
-	dataDir string
-	running bool
-	cancel  context.CancelFunc
+	cfg        DeltaChatConfig
+	rpc        *deltachat.Rpc
+	bot        *deltachat.Bot
+	accId      deltachat.AccountId
+	dataDir    string
+	running    bool
+	cancel     context.CancelFunc
+	inviteLink string
+	inviteOnce sync.Once
 }
 
 func NewDeltaChatBackend(cfg DeltaChatConfig, dataDir string) *DeltaChatBackend {
@@ -99,7 +102,16 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 		d.rpc.SetConfig(d.accId, k, option.Some(v))
 	}
 
-	// Start event loop BEFORE Configure/StartIo
+	// Generate invite link BEFORE starting bot.Run() — RPC calls work here
+	link, _, qrErr := d.rpc.GetChatSecurejoinQrCodeSvg(d.accId, option.None[deltachat.ChatId]())
+	if qrErr != nil {
+		log.Printf("deltachat: QR code error: %v", qrErr)
+	} else {
+		d.inviteLink = link
+		log.Printf("deltachat: invite link: %s", link)
+	}
+
+	// Start event loop AFTER generating QR
 	d.bot.OnUnhandledEvent(func(bot *deltachat.Bot, accId deltachat.AccountId, event deltachat.Event) {
 		log.Printf("deltachat: event %T", event)
 	})
@@ -110,7 +122,6 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	}()
 	time.Sleep(2 * time.Second)
 
-	// Configure + StartIo with retries (first run on fresh DB may EOF)
 	for attempt := 0; attempt < 3; attempt++ {
 		if err := d.rpc.Configure(d.accId); err != nil {
 			log.Printf("deltachat: configure attempt %d: %v", attempt+1, err)
@@ -126,10 +137,8 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 		log.Printf("deltachat: IO started (attempt %d)", attempt+1)
 		return nil
 	}
-
-	// Even if all failed, mark as running — events will keep flowing
 	d.running = true
-	log.Printf("deltachat: started (configure/startio all failed, will retry)")
+	log.Printf("deltachat: started")
 	return nil
 }
 
@@ -175,15 +184,8 @@ func (d *DeltaChatBackend) Send(chatId deltachat.ChatId, text string) error {
 	return err
 }
 
-func (d *DeltaChatBackend) GetInviteLink() (string, error) {
-	if d.rpc == nil {
-		return "", fmt.Errorf("not started")
-	}
-	link, _, err := d.rpc.GetChatSecurejoinQrCodeSvg(d.accId, option.None[deltachat.ChatId]())
-	if err != nil {
-		return "", err
-	}
-	return link, nil
+func (d *DeltaChatBackend) GetInviteLink() string {
+	return d.inviteLink
 }
 
 func (d *DeltaChatBackend) IsRunning() bool { return d.running }

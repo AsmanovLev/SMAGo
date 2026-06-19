@@ -1042,14 +1042,14 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 		continue
 		case text == "/dc":
 			if a.deltachat != nil {
-				link, err := a.deltachat.GetInviteLink()
-				if err != nil {
-					a.send(chatID, fmt.Sprintf("Error: %v, Address: %s", err, a.cfg.DeltaChat.Email))
-				} else {
+				link := a.deltachat.GetInviteLink()
+				if link != "" {
 					a.send(chatID, link)
+				} else {
+					a.send(chatID, fmt.Sprintf("Address: %s (link not ready)", a.cfg.DeltaChat.Email))
 				}
 			} else {
-				a.send(chatID, a.cfg.DeltaChat.Email)
+				a.send(chatID, fmt.Sprintf("Address: %s", a.cfg.DeltaChat.Email))
 			}
 			continue
 		case text == "/chatid":
