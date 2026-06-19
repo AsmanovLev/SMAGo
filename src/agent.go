@@ -1041,6 +1041,20 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 		a.handleUpgradeResume(chatID)
 		continue
 		case text == "/health":
+		case text == "/chatid":
+			a.send(chatID, fmt.Sprintf("chat.id = %d", chatID))
+			continue
+		case text == "/dc":
+			if a.deltachat == nil {
+				a.send(chatID, "❌ Delta Chat backend not configured")
+				continue
+			}
+			if !a.deltachat.IsRunning() {
+				a.send(chatID, "❌ Delta Chat backend not running")
+				continue
+			}
+			a.send(chatID, fmt.Sprintf("📧 Delta Chat: напиши `%s` из Delta Chat\nE2E шифрование автоматическое.\nАдрес: %s", a.cfg.DeltaChat.Email, a.cfg.DeltaChat.Email))
+			continue
 			a.send(chatID, "✅ ok")
 			continue
 		case text == "/chatid":
