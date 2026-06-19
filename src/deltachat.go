@@ -119,6 +119,9 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	d.running = true
 	log.Printf("deltachat: IO started")
 
+	d.bot.OnUnhandledEvent(func(bot *deltachat.Bot, accId deltachat.AccountId, event deltachat.Event) {
+		log.Printf("deltachat: event %T", event)
+	})
 	d.bot.OnNewMsg(d.handleNewMessage)
 	go func() {
 		d.bot.Run()
