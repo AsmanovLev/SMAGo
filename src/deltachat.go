@@ -233,6 +233,19 @@ func findDeltachatRPCServer() (string, error) {
 	return "", fmt.Errorf("deltachat-rpc-server not found")
 }
 
+func (d *DeltaChatBackend) GetInviteLink() (string, error) {
+	if d.rpc == nil {
+		return "", fmt.Errorf("not started")
+	}
+	_, qrdata, err := d.rpc.GetChatSecurejoinQrCodeSvg(d.accId, option.None[deltachat.ChatId]())
+	if err != nil {
+		return "", err
+	}
+	link := "https://i.delta.chat/#" + qrdata
+	log.Printf("deltachat: invite link generated")
+	return link, nil
+}
+
 func isDeltaChatMessage(headers string) bool {
 	return strings.Contains(headers, "Chat-Version:")
 }

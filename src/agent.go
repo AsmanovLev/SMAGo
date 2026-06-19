@@ -1041,21 +1041,21 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 		a.handleUpgradeResume(chatID)
 		continue
 		case text == "/health":
-		case text == "/chatid":
-			a.send(chatID, fmt.Sprintf("chat.id = %d", chatID))
-			continue
-		case text == "/dc":
+		case text == "/dc", text == "/dclink":
 			if a.deltachat == nil {
-				a.send(chatID, "❌ Delta Chat backend not configured")
+				a.send(chatID, "Delta Chat not configured")
 				continue
 			}
 			if !a.deltachat.IsRunning() {
-				a.send(chatID, "❌ Delta Chat backend not running")
+				a.send(chatID, "Delta Chat not running")
 				continue
 			}
-			a.send(chatID, fmt.Sprintf("📧 Delta Chat: напиши `%s` из Delta Chat\nE2E шифрование автоматическое.\nАдрес: %s", a.cfg.DeltaChat.Email, a.cfg.DeltaChat.Email))
-			continue
-			a.send(chatID, "✅ ok")
+			link, err := a.deltachat.GetInviteLink()
+			if err != nil {
+				a.send(chatID, fmt.Sprintf("Error: %v\nAddress: %s", err, a.cfg.DeltaChat.Email))
+				continue
+			}
+			a.send(chatID, fmt.Sprintf("Delta Chat invite:\n%s\n\nOr search: %s", link, a.cfg.DeltaChat.Email))
 			continue
 		case text == "/chatid":
 			a.send(chatID, fmt.Sprintf("chat.id = %d", chatID))
