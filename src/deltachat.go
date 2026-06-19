@@ -152,6 +152,30 @@ func (d *DeltaChatBackend) Send(chatId deltachat.ChatId, text string) error {
 	return err
 }
 
+func (d *DeltaChatBackend) StartChat(email, name string) (deltachat.ChatId, error) {
+	if d.rpc == nil {
+		return 0, fmt.Errorf("not started")
+	}
+	contactId, err := d.rpc.CreateContact(d.accId, email, name)
+	if err != nil {
+		return 0, fmt.Errorf("create contact: %w", err)
+	}
+	log.Printf("deltachat: contact created id=%d addr=%s", contactId, email)
+	chatId, err := d.rpc.CreateChatByContactId(d.accId, contactId)
+	if err != nil {
+		return 0, fmt.Errorf("create chat: %w", err)
+	}
+	log.Printf("deltachat: chat created id=%d", chatId)
+	return chatId, nil
+}
+
+func (d *DeltaChatBackend) GetQRCode(chatId deltachat.ChatId) (string, string, error) {
+	if d.rpc == nil {
+		return "", "", fmt.Errorf("not started")
+	}
+	return d.rpc.GetChatSecurejoinQrCodeSvg(d.accId, option.Some(chatId))
+}
+
 func (d *DeltaChatBackend) IsRunning() bool { return d.running }
 
 func (d *DeltaChatBackend) Stop() {
