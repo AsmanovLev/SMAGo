@@ -99,7 +99,7 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 		d.rpc.SetConfig(d.accId, k, option.Some(v))
 	}
 
-	// 1. Start bot.Run() first — it consumes events from the pipe
+	// Start bot.Run() BEFORE Configure — it consumes events from pipe
 	d.bot = deltachat.NewBot(d.rpc)
 	d.bot.OnUnhandledEvent(func(bot *deltachat.Bot, accId deltachat.AccountId, event deltachat.Event) {
 		log.Printf("deltachat: event %T", event)
@@ -110,11 +110,7 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 		d.running = false
 	}()
 
-	// 2. Wait for bot.Run to start consuming
-	time.Sleep(3 * time.Second)
-
-	// 3. Configure + StartIo in goroutine with retries
-	// Fresh DB: Configure floods pipe with events, bot.Run needs time
+	// Configure + StartIo with retries
 	go func() {
 		for attempt := 1; attempt <= 30; attempt++ {
 			if ctx.Err() != nil {
@@ -136,44 +132,25 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 			}
 			d.running = true
 			log.Printf("deltachat: IO started (attempt %d)", attempt)
-			go d.generateInviteLink(d.cfg.Email, d.cfg.Password, rpcDir)
+
+			// Generate invite link from SAME account (bot.Run consumes events, RPC works)
+			go d.fetchInviteLink()
 			return
 		}
 		d.running = true
 		log.Printf("deltachat: started (configure failed after retries)")
-		go d.generateInviteLink(d.cfg.Email, d.cfg.Password, rpcDir)
+		go d.fetchInviteLink()
 	}()
 
 	return nil
 }
 
-func (d *DeltaChatBackend) generateInviteLink(email, password, rpcDir string) {
-	tmpDir := filepath.Join(d.dataDir, "dc-invite-gen")
-	os.MkdirAll(tmpDir, 0755)
-
-	t := transport.NewIOTransport()
-	t.AccountsDir = tmpDir
-	if err := t.Open(); err != nil {
-		log.Printf("deltachat: invite gen error: %v", err)
-		return
-	}
-	defer t.Close()
-
-	rpc := &deltachat.Rpc{Context: context.Background(), Transport: t}
-	accId, _ := rpc.AddAccount()
-	rpc.SetConfig(accId, "addr", option.Some(email))
-	rpc.SetConfig(accId, "mail_pw", option.Some(password))
-
-	if err := rpc.Configure(accId); err != nil {
-		log.Printf("deltachat: invite gen configure: %v", err)
-		return
-	}
-	rpc.StartIo(accId)
-	time.Sleep(5 * time.Second)
-
-	link, _, err := rpc.GetChatSecurejoinQrCodeSvg(accId, option.None[deltachat.ChatId]())
+// fetchInviteLink generates invite from the running account.
+func (d *DeltaChatBackend) fetchInviteLink() {
+	time.Sleep(2 * time.Second)
+	link, _, err := d.rpc.GetChatSecurejoinQrCodeSvg(d.accId, option.None[deltachat.ChatId]())
 	if err != nil {
-		log.Printf("deltachat: invite gen QR: %v", err)
+		log.Printf("deltachat: QR error: %v", err)
 		return
 	}
 	d.inviteLink = link
