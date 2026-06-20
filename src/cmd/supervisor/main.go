@@ -506,6 +506,14 @@ func doRollback(sha, summary string) error {
 	outPath := filepath.Join(outDir, exeName)
 
 	src := sourceRoot()
+	goMod := exec.Command("go", "mod", "tidy")
+	goMod.Dir = src
+	goMod.Stdout = os.Stdout
+	goMod.Stderr = os.Stderr
+	goMod.Env = augmentPath(os.Environ())
+	if err := goMod.Run(); err != nil {
+		log.Printf("rollback: go mod tidy: %v", err)
+	}
 	build := exec.Command("go", "build", "-o", outPath, "./"+src)
 	build.Stdout = os.Stdout
 	build.Stderr = os.Stderr
