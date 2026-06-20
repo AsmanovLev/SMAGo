@@ -414,6 +414,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 			a.recordStep(chatID, i+1, maxSteps, usage, stepDur, nil, len(resp.Content), "")
 			_ = sess.Append(ChatMessage{Role: "assistant", Content: resp.Content})
 			a.saveDCPState(chatID, dcp)
+			a.stepStore.Set(chatID, i + 1)
 			return resp.Content, nil
 		}
 
@@ -503,6 +504,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 				)
 			}
 		}
+		a.stepStore.Set(chatID, i + 1)
 		toolLoop.stop()
 		a.recordStep(chatID, i+1, maxSteps, usage, stepDur, toolLines, -1, resp.Content)
 

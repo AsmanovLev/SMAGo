@@ -20,24 +20,24 @@ func stepsPath() string {
 	return filepath.Join(projectRoot(), "data", "steps.json")
 }
 
-func loadSteps() map[int64]int {
+func readStepFromStore(chatID int64) int {
 	data, err := os.ReadFile(stepsPath())
 	if err != nil {
-		return nil
+		return 0
 	}
 	var d struct {
-		Steps map[int64]int `json:"steps"`
+		Steps map[int64]int
 	}
-	json.Unmarshal(data, &d)
-	return d.Steps
+	if err := json.Unmarshal(data, &d); err != nil || d.Steps == nil {
+		return 0
+	}
+	return d.Steps[chatID]
 }
 
 func saveResumeMarker(chatID int64, version string, steps int) error {
-	// If steps not provided (0), try to read from steps.json
+	// If caller passed 0, try reading from persistent step store
 	if steps == 0 {
-		if sm := loadSteps(); sm != nil {
-			steps = sm[chatID]
-		}
+		steps = readStepFromStore(chatID)
 	}
 	m := ResumeMarker{ChatID: chatID, Version: version, Steps: steps}
 	data, err := json.Marshal(m)
