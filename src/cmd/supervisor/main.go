@@ -35,6 +35,7 @@ var (
 	currentTag  = "—"
 	statusItem  *systray.MenuItem
 	versionItem *systray.MenuItem
+	rollbackItem *systray.MenuItem
 )
 
 // chdirToProjectRoot changes the working directory to the project root
@@ -117,8 +118,8 @@ func onReady() {
 	mRestart := systray.AddMenuItem("Restart agent", "restart agent")
 	systray.AddSeparator()
 
-	mRollback := systray.AddMenuItem("Rollback...", "pick a previous commit to roll back to")
-	rebuildRollbackMenu(mRollback)
+	rollbackItem = systray.AddMenuItem("Rollback...", "pick a previous commit to roll back to")
+	rebuildRollbackMenu(rollbackItem)
 	systray.AddSeparator()
 
 	mQuit := systray.AddMenuItem("Quit supervisor", "stop everything")
