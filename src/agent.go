@@ -806,7 +806,7 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 				name := strings.TrimPrefix(data, "model:")
 				a.cfg.DefaultModel = name
 				a.refreshModelGrid(chatID, msgID)
-				a.refreshProviderGrid(chatID, msgID)
+				time.Sleep(200 * time.Millisecond)
 				_ = a.tg.AnswerCallback(cq.ID, "model: "+name)
 			case strings.HasPrefix(data, "provider:"):
 				name := strings.TrimPrefix(data, "provider:")
@@ -816,13 +816,13 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 						a.cfg.DefaultModel = mName
 						break
 					}
-					a.refreshModelGrid(chatID, msgID)
 					a.refreshProviderGrid(chatID, msgID)
 				} else {
 					if chatID != 0 {
 						a.send(chatID, "❌ unknown provider: "+name)
 					}
 				}
+				time.Sleep(200 * time.Millisecond)
 				_ = a.tg.AnswerCallback(cq.ID, "provider: "+name)
 			case strings.HasPrefix(data, "rollback:"):
 				version := strings.TrimPrefix(data, "rollback:")
