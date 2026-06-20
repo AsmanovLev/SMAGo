@@ -6,6 +6,7 @@ import (
 	"encoding/json"
 	"fmt"
 	"io"
+	"log"
 	"net/http"
 	"net/url"
 	"os"
@@ -164,6 +165,7 @@ func (t *Telegram) GetMe(ctx context.Context) (*TGMe, error) {
 }
 
 func (t *Telegram) LongPoll(ctx context.Context) (*TGUpdate, error) {
+	consecutiveErrors := 0
 	for ctx.Err() == nil {
 		v := url.Values{}
 		v.Set("timeout", "30")
@@ -178,20 +180,47 @@ func (t *Telegram) LongPoll(ctx context.Context) (*TGUpdate, error) {
 			if ctx.Err() != nil {
 				return nil, ctx.Err()
 			}
-			time.Sleep(2 * time.Second)
-			continue
+			consecutiveErrors++
+			wait := backoffDuration(consecutiveErrors)
+			log.Printf("telegram: poll error (#%d): %v -- retrying in %v", consecutiveErrors, err, wait.Truncate(time.Millisecond))
+			if consecutiveErrors >= 5 {
+				log.Printf("telegram: resetting transport after %d consecutive errors", consecutiveErrors)
+				t.ResetTransport()
+				consecutiveErrors = 0
+			}
+			select {
+			case <-ctx.Done():
+				return nil, ctx.Err()
+			case <-time.After(wait):
+				continue
+			}
 		}
 		var tr TGResponse
 		if err := json.NewDecoder(resp.Body).Decode(&tr); err != nil {
 			resp.Body.Close()
-			time.Sleep(2 * time.Second)
-			continue
+			consecutiveErrors++
+			wait := backoffDuration(consecutiveErrors)
+			log.Printf("telegram: decode error (#%d): %v -- retrying in %v", consecutiveErrors, err, wait.Truncate(time.Millisecond))
+			select {
+			case <-ctx.Done():
+				return nil, ctx.Err()
+			case <-time.After(wait):
+				continue
+			}
 		}
 		resp.Body.Close()
 		if !tr.OK {
-			time.Sleep(2 * time.Second)
-			continue
+			consecutiveErrors++
+			wait := backoffDuration(consecutiveErrors)
+			log.Printf("telegram: API error (#%d): retrying in %v", consecutiveErrors, wait.Truncate(time.Millisecond))
+			select {
+			case <-ctx.Done():
+				return nil, ctx.Err()
+			case <-time.After(wait):
+				continue
+			}
 		}
+		consecutiveErrors = 0
 		if len(tr.Result) > 0 {
 			t.offset = tr.Result[len(tr.Result)-1].UpdateID + 1
 			for _, u := range tr.Result {
@@ -205,6 +234,14 @@ func (t *Telegram) LongPoll(ctx context.Context) (*TGUpdate, error) {
 		}
 	}
 	return nil, ctx.Err()
+}
+
+func backoffDuration(n int) time.Duration {
+	d := time.Duration(1<<uint(n)) * time.Second
+	if d > 30*time.Second {
+		d = 30 * time.Second
+	}
+	return d
 }
 
 func (t *Telegram) SendChatAction(chatID int64, action string) error {
