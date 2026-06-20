@@ -47,7 +47,7 @@ type Agent struct {
 	dcpStates           map[int64]*DCPState
 	email              *EmailBackend
 	deltachat          *DeltaChatBackend
-	currentStep        map[int64]int
+	stepStore          *StepStore
 }
 
 type injectedMsg struct {
@@ -67,7 +67,7 @@ func NewAgent(cfg *Config, llm *LLM, store *Store, tg *Telegram, tools *ToolRegi
 		dcpStates:     make(map[int64]*DCPState),
 		email:         emailBE,
 		deltachat:     dcBE,
-		currentStep:  make(map[int64]int),
+		stepStore:    NewStepStore(cfg.DataDir),
 		verbose: true,
 	}
 }
@@ -402,7 +402,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 				if emptyResponses >= 3 {
 					a.recordTrace(chatID, "ERROR: 3 empty responses in a row, giving up")
 					a.saveDCPState(chatID, dcp)
-					a.currentStep[chatID] = i
+					a.stepStore.Set(chatID, i)
 				return "ERROR: model returned 3 empty responses in a row", nil
 				}
 				a.recordTrace(chatID, fmt.Sprintf("empty response from LLM (attempt %d/3), retrying...", emptyResponses))
@@ -634,7 +634,7 @@ func (a *Agent) handleDCPCommand(chatID int64, text string) {
 
 func (a *Agent) handleUpgradeResume(chatID int64) {
 	version, _ := gitHead()
-	err := saveResumeMarker(chatID, version, a.currentStep[chatID])
+	err := saveResumeMarker(chatID, version, a.stepStore.Get(chatID))
 	if err != nil {
 		a.send(chatID, "failed to save resume marker: "+err.Error())
 		return

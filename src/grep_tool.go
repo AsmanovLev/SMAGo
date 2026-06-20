@@ -8,10 +8,6 @@ import (
 	"strings"
 )
 
-func init() {
-	// Registration happens in registerDefaults via a separate function
-}
-
 func (r *ToolRegistry) registerGrep() {
 	r.tools["grep"] = ToolDef{
 		Name:        "grep",

@@ -1,4 +1,4 @@
-﻿package main
+package main
 
 import (
 	"encoding/json"
@@ -11,7 +11,7 @@ type StepStore struct {
 }
 
 type StepData struct {
-	Steps map[int64]int json:"steps"
+	Steps map[int64]int
 }
 
 func NewStepStore(dataDir string) *StepStore {
