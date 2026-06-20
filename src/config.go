@@ -3,6 +3,7 @@ package main
 import (
 	"encoding/json"
 	"os"
+	"path/filepath"
 )
 
 type Provider struct {
@@ -71,9 +72,16 @@ func LoadConfig(path string) (*Config, error) {
 }
 
 func (c *Config) Save(path string) error {
-	data, err := json.MarshalIndent(c, "", "  ")
-	if err != nil {
-		return err
+	if err := json.Unmarshal(data, cfg); err != nil {
+		return nil, err
 	}
-	return os.WriteFile(path, data, 0600)
+	// Make DataDir absolute so all callers resolve to the same path
+	// regardless of process CWD (avoids steps.json / resume.json drift)
+	if cfg.DataDir == "" {
+		cfg.DataDir = "./data"
+	}
+	if abs, err := filepath.Abs(cfg.DataDir); err == nil {
+		cfg.DataDir = abs
+	}
+	return cfg, nil
 }
