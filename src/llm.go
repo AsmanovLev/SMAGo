@@ -88,6 +88,13 @@ func NewLLM(cfg *Config) (*LLM, error) {
 }
 
 func (l *LLM) Chat(messages []ChatMessage, tools []Tool) (*ChatMessage, *Usage, error) {
+	// Resolve provider dynamically so /providers switch takes effect immediately.
+	prov, ok := l.cfg.Providers[l.cfg.Provider]
+	if !ok {
+		return nil, nil, fmt.Errorf("provider %q not found in config", l.cfg.Provider)
+	}
+	l.provider = &prov
+
 	req := ChatRequest{
 		Model:    l.cfg.DefaultModel,
 		Messages: messages,
