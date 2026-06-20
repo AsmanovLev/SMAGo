@@ -62,6 +62,19 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	d.cancel = cancel
 	d.rpc = &deltachat.Rpc{Context: rpcCtx, Transport: t}
 
+d.bot = deltachat.NewBot(d.rpc)
+	d.bot.OnUnhandledEvent(func(bot *deltachat.Bot, accId deltachat.AccountId, event deltachat.Event) {
+		log.Printf("deltachat: event %T", event)
+	})
+	d.bot.OnNewMsg(d.handleNewMessage)
+	go func() {
+		d.bot.Run()
+		d.running = false
+	}()
+
+	// 2. Wait for bot.Run to start consuming
+	time.Sleep(5 * time.Second)
+
 	accIds, _ := d.rpc.GetAllAccountIds()
 	if len(accIds) == 0 {
 		d.accId, _ = d.rpc.AddAccount()
@@ -100,19 +113,6 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	}
 
 	// 1. Start bot.Run() first - it consumes events from the pipe
-	d.bot = deltachat.NewBot(d.rpc)
-	d.bot.OnUnhandledEvent(func(bot *deltachat.Bot, accId deltachat.AccountId, event deltachat.Event) {
-		log.Printf("deltachat: event %T", event)
-	})
-	d.bot.OnNewMsg(d.handleNewMessage)
-	go func() {
-		d.bot.Run()
-		d.running = false
-	}()
-
-	// 2. Wait for bot.Run to start consuming
-	time.Sleep(5 * time.Second)
-
 	// 3. Configure + StartIo in goroutine with retries
 	go func() {
 		for attempt := 1; attempt <= 30; attempt++ {
