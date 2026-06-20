@@ -111,7 +111,7 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 	}()
 
 	// 2. Wait for bot.Run to start consuming
-	time.Sleep(3 * time.Second)
+	time.Sleep(5 * time.Second)
 
 	// 3. Configure + StartIo in goroutine with retries
 	go func() {
@@ -149,7 +149,7 @@ func (d *DeltaChatBackend) Start(ctx context.Context) error {
 }
 
 func (d *DeltaChatBackend) fetchInviteLink() {
-	time.Sleep(2 * time.Second)
+	time.Sleep(5 * time.Second)
 	link, _, err := d.rpc.GetChatSecurejoinQrCodeSvg(d.accId, option.None[deltachat.ChatId]())
 	if err != nil {
 		log.Printf("deltachat: QR error: %v", err)
