@@ -323,7 +323,12 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 	a.recordTrace(chatID, fmt.Sprintf("→ %s\nmax=%d tools=%d", truncateLog(userText, 100), maxSteps, len(tools)))
 	emptyResponses := 0
 	prevSteps := a.stepStore.Get(chatID)
-	for i := 0; i < maxSteps; i++ {
+	remainingSteps := maxSteps - prevSteps
+	if remainingSteps <= 0 {
+		a.recordTrace(chatID, fmt.Sprintf("ERROR: hit %d-step cap (all used in previous calls)", maxSteps))
+		return "ERROR: step limit exhausted. Use /maxsteps to increase.", nil
+	}
+	for i := 0; i < remainingSteps; i++ {
 		select {
 		case <-rs.stop:
 			a.recordTrace(chatID, "⏹ stopped by user")
@@ -411,7 +416,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 				continue
 			}
 			emptyResponses = 0
-			a.recordStep(chatID, i+1, maxSteps, usage, stepDur, nil, len(resp.Content), "")
+			a.recordStep(chatID, prevSteps+i+1, maxSteps, usage, stepDur, nil, len(resp.Content), "")
 			_ = sess.Append(ChatMessage{Role: "assistant", Content: resp.Content})
 			a.saveDCPState(chatID, dcp)
 			a.stepStore.Set(chatID, prevSteps+i+1)
@@ -481,7 +486,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 			if err != nil {
 				if errors.Is(err, context.Canceled) || errors.Is(err, context.DeadlineExceeded) {
 					toolLines = append(toolLines, fmt.Sprintf("  🛑 %s cancelled", tc.Function.Name))
-					a.recordStep(chatID, i+1, maxSteps, usage, stepDur, toolLines, -1, "")
+					a.recordStep(chatID, prevSteps+i+1, maxSteps, usage, stepDur, toolLines, -1, "")
 					a.saveDCPState(chatID, dcp)
 					return "🛑 aborted.", nil
 				}
@@ -505,7 +510,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 		}
 		a.stepStore.Set(chatID, prevSteps+i+1)
 		toolLoop.stop()
-		a.recordStep(chatID, i+1, maxSteps, usage, stepDur, toolLines, -1, resp.Content)
+		a.recordStep(chatID, prevSteps+i+1, maxSteps, usage, stepDur, toolLines, -1, resp.Content)
 
 	}
 
