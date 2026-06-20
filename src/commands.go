@@ -36,6 +36,7 @@ var cmdRegistry = []CmdDef{
 	{"/abort", "Force-stop the current task (kills tools)", "Control", false},
 
 	// Configuration
+	{"/providers", "Pick a provider (inline buttons)", "Configuration", false},
 	{"/models", "Pick a model (inline buttons)", "Configuration", false},
 	{"/model", "Show or set the current model", "Configuration", false},
 	{"/provider", "Show or set the current provider", "Configuration", false},

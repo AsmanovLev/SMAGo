@@ -583,7 +583,35 @@ func (a *Agent) sendModelGrid(chatID int64) {
 	a.sendButtons(chatID, info, rows)
 }
 
-// ──────────────────────────────────────────────────────
+func (a *Agent) providerList() string {
+	names := make([]string, 0, len(a.cfg.Providers))
+	for name := range a.cfg.Providers {
+		names = append(names, name)
+	}
+	return strings.Join(names, ", ")
+}
+
+func (a *Agent) sendProviderGrid(chatID int64) {
+	if len(a.cfg.Providers) == 0 {
+		a.send(chatID, "no providers configured")
+		return
+	}
+	var rows [][]InlineButton
+	for name, p := range a.cfg.Providers {
+		modelCount := len(p.Models)
+		current := ""
+		if name == a.cfg.Provider {
+			current = " ✅"
+		}
+		label := fmt.Sprintf("• %s — %d model(s)%s", p.Name, modelCount, current)
+		if len(label) > 60 {
+			label = label[:60] + "…"
+		}
+		rows = append(rows, []InlineButton{{Text: label, CallbackData: "provider:" + name}})
+	}
+	a.sendButtons(chatID, "🤖 pick a provider:", rows)
+}
+
 // DCP commands
 // ──────────────────────────────────────────────────────
 
@@ -757,7 +785,25 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 				if chatID != 0 {
 					a.send(chatID, "✅ model → "+name)
 				}
-				_ = a.tg.AnswerCallback(cq.ID, "model: "+name)
+			_ = a.tg.AnswerCallback(cq.ID, "model: "+name)
+			case strings.HasPrefix(data, "provider:"):
+				name := strings.TrimPrefix(data, "provider:")
+				if _, ok := a.cfg.Providers[name]; ok {
+					a.cfg.Provider = name
+					for mName := range a.cfg.Providers[name].Models {
+						a.cfg.DefaultModel = mName
+						break
+					}
+					if chatID != 0 {
+						a.send(chatID, fmt.Sprintf("✅ provider → %s\n✅ model → %s", name, a.cfg.DefaultModel))
+					}
+				} else {
+					if chatID != 0 {
+						a.send(chatID, "❌ unknown provider: "+name)
+					}
+				}
+				_ = a.tg.AnswerCallback(cq.ID, "provider: "+name)
+			case strings.HasPrefix(data, "rollback:"):
 			case strings.HasPrefix(data, "rollback:"):
 				version := strings.TrimPrefix(data, "rollback:")
 				_ = a.tg.AnswerCallback(cq.ID, "rolling back to "+version)
@@ -909,18 +955,20 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 				a.send(chatID, "✅ model → "+args)
 			}
 			continue
+		case text == "/providers":
+			a.sendProviderGrid(chatID)
+			continue
 		case text == "/provider" || strings.HasPrefix(text, "/provider "):
 			args := strings.TrimSpace(strings.TrimPrefix(text, "/provider"))
 			if args == "" {
-				var b strings.Builder
-				b.WriteString("provider: " + a.cfg.Provider + "\navailable:\n")
-				for name := range a.cfg.Providers {
-					b.WriteString("  • " + name + "\n")
-				}
-				a.send(chatID, b.String())
+				a.sendProviderGrid(chatID)
 			} else if _, ok := a.cfg.Providers[args]; ok {
 				a.cfg.Provider = args
-				a.send(chatID, "✅ provider → "+args)
+				for mName := range a.cfg.Providers[args].Models {
+					a.cfg.DefaultModel = mName
+					break
+				}
+				a.send(chatID, fmt.Sprintf("✅ provider → %s\n✅ model → %s", args, a.cfg.DefaultModel))
 			} else {
 				a.send(chatID, "❌ unknown provider: "+args)
 			}
