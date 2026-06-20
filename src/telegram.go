@@ -598,3 +598,9 @@ func (t *Telegram) SendDocument(chatID int64, filePath string, caption string, p
 	if progress != nil { progress(total, total, true, nil) }
 	return nil
 }
+
+// ResetTransport creates a fresh http.Transport, discarding stale connections.
+func (t *Telegram) ResetTransport() {
+	t.client.Transport = nil
+	t.proxy = ""
+}

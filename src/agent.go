@@ -684,24 +684,29 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 	}
 
 	pollCh := make(chan *TGUpdate, 4)
-	go func() {
-		defer close(pollCh)
-		for {
-			upd, err := a.tg.LongPoll(ctx)
-			if err != nil {
-				return
+	startPolling := func() {
+		go func() {
+			defer close(pollCh)
+			for {
+				upd, err := a.tg.LongPoll(ctx)
+				if err != nil {
+					log.Printf("poll: error: %v", err)
+					return
+				}
+				if upd == nil {
+					continue
+				}
+				select {
+				case pollCh <- upd:
+				case <-ctx.Done():
+					return
+				}
 			}
-			if upd == nil {
-				continue
-			}
-			select {
-			case pollCh <- upd:
-			case <-ctx.Done():
-				return
-			}
-		}
-	}()
+		}()
+	}
+	startPolling()
 
+	backoff := 5 * time.Second
 	for {
 		var upd *TGUpdate
 		var inj *injectedMsg
@@ -710,8 +715,22 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 			return ctx.Err()
 		case u, ok := <-pollCh:
 			if !ok {
-				return nil
+				log.Printf("poll: disconnected, reconnecting in %v...", backoff)
+				select {
+				case <-ctx.Done():
+					return ctx.Err()
+				case <-time.After(backoff):
+				}
+				if backoff < 60*time.Second {
+					backoff *= 2
+				}
+				pollCh = make(chan *TGUpdate, 4)
+				a.tg.ResetTransport()
+				startPolling()
+				log.Printf("poll: reconnected")
+				continue
 			}
+			backoff = 5 * time.Second
 			upd = u
 		case m := <-a.inject:
 			inj = &m
