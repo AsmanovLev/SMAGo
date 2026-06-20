@@ -140,7 +140,7 @@ func (s *SelfModifyTool) actionUpgrade(ctx context.Context, args map[string]any)
 	// Read accumulated step count from the step store
 	steps := 0
 	if chatID != 0 {
-		steps = readStepFromStore(chatID)
+		steps = NewStepStore(s.cfg.DataDir).Get(chatID)
 	}
 	if err := saveResumeMarker(chatID, version, steps); err != nil {
 	}
