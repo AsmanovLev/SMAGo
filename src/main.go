@@ -65,9 +65,6 @@ func run() error {
 		}
 	}
 
-	// Sync global data dir for resume/steps files so they always use the same
-	// path as the agent's StepStore (avoids drift between CWDs)
-	SetResumeDataDir(cfg.DataDir)
 	if err := os.MkdirAll(cfg.DataDir, 0755); err != nil {
 		return fmt.Errorf("data dir: %w", err)
 	}

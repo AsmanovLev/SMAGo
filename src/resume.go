@@ -5,20 +5,21 @@ import (
 	"os"
 	"path/filepath"
 )
+
 type ResumeMarker struct {
 	ChatID  int64  `json:"chat_id"`
 	Version string `json:"version"`
 	Steps   int    `json:"steps,omitempty"`
 }
-func SetResumeDataDir(dir string) { dataDirForResume = dir }
 
 func resumePath() string {
-	return filepath.Join(dataDirForResume, "resume.json")
+	return filepath.Join(projectRoot(), "data", "resume.json")
 }
 
 func stepsPath() string {
-	return filepath.Join(dataDirForResume, "steps.json")
+	return filepath.Join(projectRoot(), "data", "steps.json")
 }
+
 func readStepFromStore(chatID int64) int {
 	data, err := os.ReadFile(stepsPath())
 	if err != nil {
