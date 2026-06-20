@@ -1,4 +1,4 @@
-﻿package main
+package main
 
 import (
 	"encoding/json"
@@ -16,7 +16,29 @@ func resumePath() string {
 	return filepath.Join(projectRoot(), "data", "resume.json")
 }
 
+func stepsPath() string {
+	return filepath.Join(projectRoot(), "data", "steps.json")
+}
+
+func loadSteps() map[int64]int {
+	data, err := os.ReadFile(stepsPath())
+	if err != nil {
+		return nil
+	}
+	var d struct {
+		Steps map[int64]int `json:"steps"`
+	}
+	json.Unmarshal(data, &d)
+	return d.Steps
+}
+
 func saveResumeMarker(chatID int64, version string, steps int) error {
+	// If steps not provided (0), try to read from steps.json
+	if steps == 0 {
+		if sm := loadSteps(); sm != nil {
+			steps = sm[chatID]
+		}
+	}
 	m := ResumeMarker{ChatID: chatID, Version: version, Steps: steps}
 	data, err := json.Marshal(m)
 	if err != nil {
@@ -40,4 +62,3 @@ func loadResumeMarker() (*ResumeMarker, error) {
 func clearResumeMarker() {
 	_ = os.Remove(resumePath())
 }
-
