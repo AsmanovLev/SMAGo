@@ -321,8 +321,8 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 		_ = sess.Append(ChatMessage{Role: "user", Content: pendingText})
 	}
 	a.recordTrace(chatID, fmt.Sprintf("→ %s\nmax=%d tools=%d", truncateLog(userText, 100), maxSteps, len(tools)))
-
 	emptyResponses := 0
+	prevSteps := a.stepStore.Get(chatID)
 	for i := 0; i < maxSteps; i++ {
 		select {
 		case <-rs.stop:
@@ -402,8 +402,8 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 				if emptyResponses >= 3 {
 					a.recordTrace(chatID, "ERROR: 3 empty responses in a row, giving up")
 					a.saveDCPState(chatID, dcp)
-					a.stepStore.Set(chatID, i)
-				return "ERROR: model returned 3 empty responses in a row", nil
+					a.stepStore.Set(chatID, prevSteps+i)
+					return "ERROR: model returned 3 empty responses in a row", nil
 				}
 				a.recordTrace(chatID, fmt.Sprintf("empty response from LLM (attempt %d/3), retrying...", emptyResponses))
 				_ = sess.Append(ChatMessage{Role: "assistant", Content: resp.Content})
@@ -414,10 +414,9 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 			a.recordStep(chatID, i+1, maxSteps, usage, stepDur, nil, len(resp.Content), "")
 			_ = sess.Append(ChatMessage{Role: "assistant", Content: resp.Content})
 			a.saveDCPState(chatID, dcp)
-			a.stepStore.Set(chatID, i + 1)
+			a.stepStore.Set(chatID, prevSteps+i+1)
 			return resp.Content, nil
 		}
-
 		emptyResponses = 0
 		_ = sess.Append(ChatMessage{Role: "assistant", Content: resp.Content, ToolCalls: resp.ToolCalls})
 
@@ -504,7 +503,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 				)
 			}
 		}
-		a.stepStore.Set(chatID, i + 1)
+		a.stepStore.Set(chatID, prevSteps+i+1)
 		toolLoop.stop()
 		a.recordStep(chatID, i+1, maxSteps, usage, stepDur, toolLines, -1, resp.Content)
 
