@@ -805,10 +805,9 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 			case strings.HasPrefix(data, "model:"):
 				name := strings.TrimPrefix(data, "model:")
 				a.cfg.DefaultModel = name
-				if chatID != 0 {
-					a.send(chatID, "✅ model → "+name)
-				}
-			_ = a.tg.AnswerCallback(cq.ID, "model: "+name)
+				a.refreshModelGrid(chatID, msgID)
+				a.refreshProviderGrid(chatID, msgID)
+				_ = a.tg.AnswerCallback(cq.ID, "model: "+name)
 			case strings.HasPrefix(data, "provider:"):
 				name := strings.TrimPrefix(data, "provider:")
 				if _, ok := a.cfg.Providers[name]; ok {
@@ -817,16 +816,14 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 						a.cfg.DefaultModel = mName
 						break
 					}
-					if chatID != 0 {
-						a.send(chatID, fmt.Sprintf("✅ provider → %s\n✅ model → %s", name, a.cfg.DefaultModel))
-					}
+					a.refreshModelGrid(chatID, msgID)
+					a.refreshProviderGrid(chatID, msgID)
 				} else {
 					if chatID != 0 {
 						a.send(chatID, "❌ unknown provider: "+name)
 					}
 				}
 				_ = a.tg.AnswerCallback(cq.ID, "provider: "+name)
-			case strings.HasPrefix(data, "rollback:"):
 			case strings.HasPrefix(data, "rollback:"):
 				version := strings.TrimPrefix(data, "rollback:")
 				_ = a.tg.AnswerCallback(cq.ID, "rolling back to "+version)

@@ -94,6 +94,60 @@ func (a *Agent) handlePendingCancel(chatID int64, callbackID string) {
 	_ = a.tg.EditMessageText(chatID, msg.MessageID, "❌ cancelled: "+msg.Text, nil)
 }
 
+
+// refreshModelGrid edits an existing model grid message to show the new active model.
+func (a *Agent) refreshModelGrid(chatID int64, msgID int64) {
+	prov, ok := a.cfg.Providers[a.cfg.Provider]
+	if !ok {
+		return
+	}
+	var rows [][]InlineButton
+	for name, m := range prov.Models {
+		label := "• " + name
+		if name == a.cfg.DefaultModel {
+			label += " ✅"
+		}
+		if m.ContextWindow > 0 {
+			label += fmt.Sprintf("  (%dk ctx)", m.ContextWindow/1000)
+		}
+		if len(label) > 60 {
+			label = label[:60] + "…"
+		}
+		rows = append(rows, []InlineButton{{Text: label, CallbackData: "model:" + name}})
+	}
+	cw := a.getModelContextWindow()
+	dcpStatus := "OFF"
+	if a.cfg.DCP.Enabled {
+		dcpStatus = "ON"
+	}
+	info := fmt.Sprintf("🤖 provider: %s\npick a model:\n\n📦 DCP: %s", a.cfg.Provider, dcpStatus)
+	if cw > 0 {
+		info += fmt.Sprintf("\ncontext: %dk | min 20%%: %dk | max 80%%: %dk", cw/1000, a.cfg.DCP.MinContextTokens/1000, a.cfg.DCP.MaxContextTokens/1000)
+	}
+	_ = a.tg.EditMessageText(chatID, msgID, info, rows)
+}
+
+// refreshProviderGrid edits an existing provider grid message to show the new active provider.
+func (a *Agent) refreshProviderGrid(chatID int64, msgID int64) {
+	if len(a.cfg.Providers) == 0 {
+		return
+	}
+	var rows [][]InlineButton
+	for name, p := range a.cfg.Providers {
+		modelCount := len(p.Models)
+		current := ""
+		if name == a.cfg.Provider {
+			current = " ✅"
+		}
+		label := fmt.Sprintf("• %s — %d model(s)%s", p.Name, modelCount, current)
+		if len(label) > 60 {
+			label = label[:60] + "…"
+		}
+		rows = append(rows, []InlineButton{{Text: label, CallbackData: "provider:" + name}})
+	}
+	_ = a.tg.EditMessageText(chatID, msgID, "🤖 pick a provider:", rows)
+}
+
 // refreshSessionList edits an existing session list message to show the new active session.
 func (a *Agent) refreshSessionList(chatID int64, msgID int64) {
 	sessions, err := a.store.ListSessions(chatID)
