@@ -1,5 +1,11 @@
 # SMAGo — Self-Modifying AI Agent
 
+> ⚠️ **DEPRECATED.** The Go implementation of SMAGo is no longer developed. Active work continues in the Elixir rewrite: **[SMAXr](https://github.com/AsmanovLev/SMAXr)**. See the link for the multi-messenger, hot-reloading, eval-based self-modifying agent that came out of this codebase.
+
+---
+
+## About (legacy)
+
 A lightweight Go agent that communicates via Telegram, calls any OpenAI-compatible LLM, stores conversation history in SQLite, and can modify its own source code and binary at runtime.
 
 SMAGo runs as a Windows system tray application with a supervisor that auto-restarts on crash and manages hot-swap upgrades.
