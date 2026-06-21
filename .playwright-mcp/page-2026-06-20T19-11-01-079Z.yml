@@ -1,0 +1,402 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-FI
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - generic:
+          - generic:
+            - generic:
+              - img
+        - 'link "World Cup 2026: The art of the penalty kick" [ref=e13] [cursor=pointer]':
+          - /url: https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0QPQgK
+          - 'img "World Cup 2026: The art of the penalty kick" [ref=e14]'
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - combobox "Search" [ref=e19]: elixir messenger abstraction library telegram discord hex package elixir messenger abstraction library telegram discord hex package
+            - generic [ref=e20]:
+              - button "Clear" [ref=e22] [cursor=pointer]:
+                - img [ref=e24]
+              - generic [ref=e27]:
+                - button "Search by voice" [ref=e28] [cursor=pointer]:
+                  - img [ref=e29]
+                - button "Search by image" [ref=e31] [cursor=pointer]:
+                  - img [ref=e32]
+          - button "Search" [ref=e34] [cursor=pointer]:
+            - img [ref=e37]
+    - generic [ref=e39]:
+      - button "Share" [ref=e40] [cursor=pointer]:
+        - img [ref=e44]
+      - generic [ref=e46]:
+        - button "Google apps" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+        - 'button "Google Account: Lev Asmanov (asmanovlev@gmail.com)" [ref=e53] [cursor=pointer]':
+          - img [ref=e55]
+          - img [ref=e60]
+  - generic [ref=e62]:
+    - navigation [ref=e68]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "AI Mode" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBJP_8s1JrXgV7_edZdNiJisLCUzXkik5RMqtveKIdmxaGb48YyjJXOAFu1Y71e_zdrUwIHsAyKs8JTsW98igcleJcWl-hkwfo_sPceqCpU09yBzR4&aep=1&ntc=1&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q2J8OegQIEhAD
+              - generic [ref=e82]: AI Mode
+          - listitem [ref=e83]:
+            - link "All" [disabled] [ref=e84]:
+              - generic [ref=e86]: All
+          - listitem [ref=e87]:
+            - link "Images" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBJP_8s1JrXgV7_edZdNiJisLCUzXkik5RMqtveKIdmxaGb48YyjJXOAFu1Y71e_zdrUwIHsAyKs8JTsW98igcleJcWl-hkwfo_sPceqCpU09yBzR4&q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0QtKgLegQIGhAB
+              - generic [ref=e90]: Images
+          - listitem [ref=e91]:
+            - link "Videos" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBJP_8s1JrXgV7_edZdNiJisLCUzXkik5RMqtveKIdmxaGb48YyjJXOAFu1Y71e_zdrUwIHsAyKs8JTsW98igcleJcWl-hkwfo_sPceqCpU09yBzR4&q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0QtKgLegQIGxAB
+              - generic [ref=e94]: Videos
+          - listitem [ref=e95]:
+            - link "Forums" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&udm=18&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBJP_8s1JrXgV7_edZdNiJisLCUzXkik5RMqtveKIdmxaGb48YyjJXOAFu1Y71e_zdrUwIHsAyKs8JTsW98igcleJcWl-hkwfo_sPceqCpU09yBzR4&q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Qs6gLegQIHBAB
+              - generic [ref=e98]: Forums
+          - listitem [ref=e99]:
+            - link "Short videos" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBJP_8s1JrXgV7_edZdNiJisLCUzXkik5RMqtveKIdmxaGb48YyjJXOAFu1Y71e_zdrUwIHsAyKs8JTsW98igcleJcWl-hkwfo_sPceqCpU09yBzR4&q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Qs6gLegQIGBAB
+              - generic [ref=e102]: Short videos
+          - listitem [ref=e103]:
+            - link "Web" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&udm=web&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBJP_8s1JrXgV7_edZdNiJisLCUzXkik5RMqtveKIdmxaGb48YyjJXOAFu1Y71e_zdrUwIHsAyKs8JTsW98igcleJcWl-hkwfo_sPceqCpU09yBzR4&q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Qs6gLegQIFxAB
+              - generic [ref=e106]: Web
+          - listitem [ref=e107]:
+            - button "More filters" [ref=e108] [cursor=pointer]:
+              - generic "More filters" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: More
+                  - img [ref=e113]
+        - button "Tools" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Tools
+            - img [ref=e121]
+    - navigation [ref=e124]:
+      - navigation [ref=e127]:
+        - list [ref=e134]:
+          - listitem [ref=e135]:
+            - link "Add Code" [ref=e136] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&q=Elixir+messenger+abstraction+library+telegram+discord+hex+package+code&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rKByHFiO-vg4up0AkpG5DpQT0EaBZnZEwU-ZvrlAcH-bLyJCCqQAdfIrVgKCUwch_pDjvuVxIlpVScAs2XtWbFKDj0ujJmTjI2ClIKT4Wk_Kpp1-MncAYdVHK34TZJlcDmko4J-iiwOReCXhmWmnNiLT3eGQ3NV3glTqe5Mxqy07YeZVlQqHblzWzrjr3FL07Z6at20kBTDA6BxZBz8bUb6A3thPSvn1bxBkbtLf2l1tPMuuTprtYFJdShSUbkNIkx2VvY1SQiAnvSOBkoWVPb49ccBM&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0QxKsJKAB6BAgUEAE&ictx=0
+              - generic [ref=e138]: Code
+          - listitem [ref=e139]:
+            - link "Add Download" [ref=e140] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&q=Elixir+messenger+abstraction+library+telegram+discord+hex+package+download&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rql_TqvizOdWnyERV1GAgJkihhgd3qoiTbykDF4x-q6B_-vEnyHyy4AFWK76sR7aXN9Iw05-Lt60xaX8BSaoV9EclbjkuDaHYinBrfs18ES8Q7uEgfquB0LVatFZPSWF9TMB2HLJITDNtiO-1n_zCO6K10nIvZZKdOei3lDebf_MoLhE3c-LvVpr1mSYKEnMvjJUhBiATC_sxnfhIhCzafAYtJt4sUvRF4DtyC7qX7WhIxxWp0g4yBAiyHr7434DQ-a6FP5tdTqq0eLbrBGSyfO-kQ4s&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0QxKsJKAF6BAgVEAE&ictx=0
+              - generic [ref=e142]: Download
+          - listitem [ref=e143]:
+            - link "Add Github" [ref=e144] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&q=Elixir+messenger+abstraction+library+telegram+discord+hex+package+github&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rnK7IC0uqg0IY1n6JimD4WhvAXIGk91S9aSSpuetD2qtwpGFegSpmfba7da1mFGKCQ8s_ziBHcqDPOcwH_XwhN0VUv-3tNuNJuVNQKuQ5jf4hXz2Tz4pdVpo1x0se0cOijOo_uRMyqVm07CNI8BWVWCoIvrRCb43ychXb7QVkoJX-ZwySNEJyRdYMr1l7ngp6O3ADfRtNCS6SIXjVWZvluXYvqQoz591y10mT4pmWjTfly1qXmq-Hv5huWNUUWfnZr03xdZdweVfSlAuFhNIBhQ2doCE&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0QxKsJKAJ6BAgWEAE&ictx=0
+              - generic [ref=e146]: Github
+    - heading "Search Results" [level=1] [ref=e147]
+    - main [ref=e153]:
+      - generic [ref=e157]:
+        - generic [ref=e160]:
+          - heading "Web results" [level=2] [ref=e161]
+          - generic [ref=e162]:
+            - generic [ref=e165]:
+              - link "pingpong - Hex.pm hex.pm https://hex.pm › packages › pingpong" [ref=e167] [cursor=pointer]:
+                - /url: https://hex.pm/packages/pingpong
+                - heading "pingpong - Hex.pm" [level=3] [ref=e168]
+                - generic [ref=e174]:
+                  - generic [ref=e176]: hex.pm
+                  - generic [ref=e178]: https://hex.pm › packages › pingpong
+              - button "About this result" [ref=e179] [cursor=pointer]:
+                - img [ref=e182]
+            - generic [ref=e185]:
+              - generic [ref=e186]: 10 Jun 2026 —
+              - generic [ref=e187]:
+                - text: PingPong is a small
+                - emphasis [ref=e188]: Elixir
+                - text: notification
+                - emphasis [ref=e189]: library
+                - text: for sending messages through multiple services with one consistent API.
+                - emphasis [ref=e190]: HexDocs HexPreview
+                - text: .
+              - link "Read more" [ref=e191] [cursor=pointer]:
+                - /url: https://hex.pm/packages/pingpong#:~:text=PingPong%20is%20a%20small%20Elixir,HexPreview
+            - generic [ref=e193]: "Missing: messenger ‎abstraction"
+        - generic [ref=e197]:
+          - generic [ref=e200]:
+            - 'link "lsdrfrx/telegram_ex: Elixir library for building Telegram bots ... GitHub https://github.com › lsdrfrx › telegram_ex" [ref=e202] [cursor=pointer]':
+              - /url: https://github.com/lsdrfrx/telegram_ex
+              - 'heading "lsdrfrx/telegram_ex: Elixir library for building Telegram bots ..." [level=3] [ref=e203]'
+              - generic [ref=e209]:
+                - generic [ref=e211]: GitHub
+                - generic [ref=e213]: https://github.com › lsdrfrx › telegram_ex
+            - button "About this result" [ref=e214] [cursor=pointer]:
+              - img [ref=e217]
+          - generic [ref=e220]:
+            - generic [ref=e221]: 19 May 2026 —
+            - generic [ref=e222]:
+              - emphasis [ref=e223]: Elixir library for building Telegram bots
+              - text: with macro-based API. GitHub Actions Workflow Status Hex Version Last commit Stars License Hex.pm ...
+            - link "Read more" [ref=e224] [cursor=pointer]:
+              - /url: https://github.com/lsdrfrx/telegram_ex#:~:text=Elixir%20library%20for%20building%20Telegram,bots%20with%20macro%2Dbased%20API.
+          - generic [ref=e226]: "Missing: messenger ‎abstraction ‎discord"
+        - generic [ref=e230]:
+          - generic [ref=e233]:
+            - link "Discord Ex - Discord Elixir Library Hexdocs https://hexdocs.pm › discord_ex › readme" [ref=e235] [cursor=pointer]:
+              - /url: https://hexdocs.pm/discord_ex/readme.html
+              - heading "Discord Ex - Discord Elixir Library" [level=3] [ref=e236]
+              - generic [ref=e242]:
+                - generic [ref=e244]: Hexdocs
+                - generic [ref=e246]: https://hexdocs.pm › discord_ex › readme
+            - button "About this result" [ref=e247] [cursor=pointer]:
+              - img [ref=e250]
+          - generic [ref=e253]:
+            - generic [ref=e254]:
+              - emphasis [ref=e255]: Discord library for Elixir
+              - text: . I needed it and figured I'd share. This library is useful for making calls and implementing a bot as well.
+            - link "Read more" [ref=e256] [cursor=pointer]:
+              - /url: https://hexdocs.pm/discord_ex/readme.html#:~:text=Discord%20library%20for%20Elixir.%20I,implementing%20a%20bot%20as%20well.
+          - generic [ref=e258]: "Missing: messenger ‎abstraction ‎telegram"
+        - generic [ref=e262]:
+          - generic [ref=e265]:
+            - link "Where can I learn how to release my own library as a hex ... elixirforum.com https://elixirforum.com › Questions & Help › Questions" [ref=e267] [cursor=pointer]:
+              - /url: https://elixirforum.com/t/where-can-i-learn-how-to-release-my-own-library-as-a-hex-package/56900
+              - heading "Where can I learn how to release my own library as a hex ..." [level=3] [ref=e268]
+              - generic [ref=e274]:
+                - generic [ref=e276]: elixirforum.com
+                - generic [ref=e278]: https://elixirforum.com › Questions & Help › Questions
+            - button "About this result" [ref=e279] [cursor=pointer]:
+              - img [ref=e282]
+          - generic [ref=e285]:
+            - generic [ref=e286]: 6 Jul 2023 —
+            - generic [ref=e287]:
+              - text: I'd suggest starting with the official publishing guide. It's pretty straight forward. You can test your build process with mix
+              - emphasis [ref=e288]: hex
+              - text: .build.
+            - link "Read more" [ref=e289] [cursor=pointer]:
+              - /url: https://elixirforum.com/t/where-can-i-learn-how-to-release-my-own-library-as-a-hex-package/56900#:~:text=I'd%20suggest%20starting%20with%20the,process%20with%20mix%20hex.build%20.
+          - generic [ref=e291]: "Missing: messenger ‎abstraction ‎telegram ‎discord"
+        - generic [ref=e295]:
+          - generic [ref=e298]:
+            - link "ex_tdlib - Hex.pm hex.pm https://hex.pm › packages › ex_tdlib" [ref=e300] [cursor=pointer]:
+              - /url: https://hex.pm/packages/ex_tdlib
+              - heading "ex_tdlib - Hex.pm" [level=3] [ref=e301]
+              - generic [ref=e307]:
+                - generic [ref=e309]: hex.pm
+                - generic [ref=e311]: https://hex.pm › packages › ex_tdlib
+            - button "About this result" [ref=e312] [cursor=pointer]:
+              - img [ref=e315]
+          - generic [ref=e318]:
+            - generic [ref=e319]: 13 Jan 2024 —
+            - generic [ref=e320]:
+              - emphasis [ref=e321]: Elixir
+              - text: TDLib. This
+              - emphasis [ref=e322]: elixir library
+              - text: binds
+              - emphasis [ref=e323]: telegram's
+              - text: TDLib, allowing you to interact with
+              - emphasis [ref=e324]: Telegram
+              - text: as a full-fledged client (not as a bot!)
+            - link "Read more" [ref=e325] [cursor=pointer]:
+              - /url: https://hex.pm/packages/ex_tdlib#:~:text=Elixir%20TDLib,client%20(not%20as%20a%20bot!).
+          - generic [ref=e327]: "Missing: messenger ‎abstraction ‎discord"
+        - generic [ref=e331]:
+          - generic [ref=e334]:
+            - link "Telegex GitHub https://github.com › telegex › telegex" [ref=e336] [cursor=pointer]:
+              - /url: https://github.com/telegex/telegex
+              - heading "Telegex" [level=3] [ref=e337]
+              - generic [ref=e343]:
+                - generic [ref=e345]: GitHub
+                - generic [ref=e347]: https://github.com › telegex › telegex
+            - button "About this result" [ref=e348] [cursor=pointer]:
+              - img [ref=e351]
+          - generic [ref=e354]:
+            - generic [ref=e355]:
+              - emphasis [ref=e356]: Telegram
+              - text: bot framework and API client written in
+              - emphasis [ref=e357]: Elixir
+              - text: "- telegex ... A new"
+              - emphasis [ref=e358]: Telegram
+              - text: bot framework, which is also a perfect Bot API client
+              - emphasis [ref=e359]: library
+              - text: .
+            - link "Read more" [ref=e360] [cursor=pointer]:
+              - /url: https://github.com/telegex/telegex#:~:text=A%20new%20Telegram%20bot%20framework%2C,perfect%20Bot%20API%20client%20library.
+          - generic [ref=e362]: "Missing: messenger ‎abstraction ‎discord"
+        - generic [ref=e366]:
+          - generic [ref=e369]:
+            - link "Overview — telegraph v0.8.3 Hexdocs https://hexdocs.pm › telegraph" [ref=e371] [cursor=pointer]:
+              - /url: https://hexdocs.pm/telegraph/
+              - heading "Overview — telegraph v0.8.3" [level=3] [ref=e372]
+              - generic [ref=e378]:
+                - generic [ref=e380]: Hexdocs
+                - generic [ref=e382]: https://hexdocs.pm › telegraph
+            - button "About this result" [ref=e383] [cursor=pointer]:
+              - img [ref=e386]
+          - generic [ref=e389]:
+            - generic [ref=e390]:
+              - text: Modern
+              - emphasis [ref=e391]: Telegram
+              - text: "Bot API framework based on Nadia project. Document: https://"
+              - emphasis [ref=e392]: hexdocs
+              - text: .pm/
+              - emphasis [ref=e393]: telegraph
+              - text: /,
+              - emphasis [ref=e394]: Telegram
+              - text: "Bot API: https://core."
+              - emphasis [ref=e395]: telegram
+              - text: .org/bots/api)
+            - link "Read more" [ref=e396] [cursor=pointer]:
+              - /url: https://hexdocs.pm/telegraph/#:~:text=Modern%20Telegram%20Bot%20API%20framework,project%20(%5Bdocument%5D(https%3A%2F%2Fhexdocs.pm%2Ftelegraph%2F)%2C%20%5BTelegram%20Bot%20API%5D(https%3A%2F%2Fcore.telegram.org%2Fbots%2Fapi
+          - generic [ref=e398]: "Missing: messenger ‎abstraction ‎discord"
+        - generic [ref=e402]:
+          - generic [ref=e405]:
+            - link "How to create and publish Hex.pm package (Elixir) Medium · Krzysztof Kempiński 160+ likes · 8 years ago" [ref=e407] [cursor=pointer]:
+              - /url: https://medium.com/kkempin/how-to-create-and-publish-hex-pm-package-elixir-90cb33e2592d
+              - heading "How to create and publish Hex.pm package (Elixir)" [level=3] [ref=e408]
+              - generic [ref=e414]:
+                - generic [ref=e416]: Medium · Krzysztof Kempiński
+                - generic [ref=e418]: 160+ likes · 8 years ago
+            - button "About this result" [ref=e419] [cursor=pointer]:
+              - img [ref=e422]
+          - generic [ref=e425]:
+            - generic [ref=e426]:
+              - text: In that article I'm going to show you
+              - emphasis [ref=e427]: how to create your own Elixir package
+              - text: from scratch and how to upload it to Hex.pm website which is a package manager for ...
+            - link "Read more" [ref=e428] [cursor=pointer]:
+              - /url: https://medium.com/kkempin/how-to-create-and-publish-hex-pm-package-elixir-90cb33e2592d#:~:text=In%20that%20article%20I'm%20going,for%20Elixir%20(and%20Erlang)%20ecosystem.
+          - generic [ref=e430]: "Missing: messenger ‎abstraction ‎telegram ‎discord"
+        - generic [ref=e434]:
+          - generic [ref=e437]:
+            - link "Curated HEX packages - Chat / Discussions - Elixir Forum elixirforum.com https://elixirforum.com › ... › Chat / Discussions" [ref=e439] [cursor=pointer]:
+              - /url: https://elixirforum.com/t/curated-hex-packages/1713
+              - heading "Curated HEX packages - Chat / Discussions - Elixir Forum" [level=3] [ref=e440]
+              - generic [ref=e446]:
+                - generic [ref=e448]: elixirforum.com
+                - generic [ref=e450]: https://elixirforum.com › ... › Chat / Discussions
+            - button "About this result" [ref=e451] [cursor=pointer]:
+              - img [ref=e454]
+          - generic [ref=e457]:
+            - generic [ref=e458]: 19 Sept 2016 —
+            - generic [ref=e459]:
+              - text: I would like to see a little badge in
+              - emphasis [ref=e460]: HEX packages
+              - text: ", that means that those"
+              - emphasis [ref=e461]: packages
+              - text: are well supported and maintained. Also I will group the
+              - emphasis [ref=e462]: packages
+              - text: in ...
+            - link "Read more" [ref=e463] [cursor=pointer]:
+              - /url: https://elixirforum.com/t/curated-hex-packages/1713#:~:text=I%20would%20like%20to%20see,Also%20I%20will%20group%20the
+          - generic [ref=e465]: "Missing: messenger ‎abstraction ‎telegram ‎discord"
+        - generic [ref=e469]:
+          - generic [ref=e472]:
+            - link "ex_gram - Hex.pm hex.pm https://hex.pm › packages › ex_gram" [ref=e474] [cursor=pointer]:
+              - /url: https://hex.pm/packages/ex_gram
+              - heading "ex_gram - Hex.pm" [level=3] [ref=e475]
+              - generic [ref=e481]:
+                - generic [ref=e483]: hex.pm
+                - generic [ref=e485]: https://hex.pm › packages › ex_gram
+            - button "About this result" [ref=e486] [cursor=pointer]:
+              - img [ref=e489]
+          - generic [ref=e492]:
+            - generic [ref=e493]: 12 Jun 2026 —
+            - generic [ref=e494]:
+              - emphasis [ref=e495]: ExGram is a powerful Elixir library for building Telegram Bots
+              - text: . Use ... Links. Telegram Bot API Documentation · HexDocs · Hex Package ...
+            - link "Read more" [ref=e496] [cursor=pointer]:
+              - /url: https://hex.pm/packages/ex_gram#:~:text=ExGram%20is%20a%20powerful%20Elixir,framework%20for%20rapid%20bot%20development.&text=Links,Hex%20Package
+          - generic [ref=e498]: "Missing: messenger ‎abstraction ‎discord"
+      - generic [ref=e500]:
+        - generic [ref=e505]:
+          - heading "People also search for" [level=2] [ref=e507]
+          - generic [ref=e509]:
+            - generic [ref=e510]:
+              - link "Elixir messenger abstraction library telegram discord hex package code" [ref=e514] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&q=Elixir+messenger+abstraction+library+telegram+discord+hex+package+code&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q1QJ6BAg_EAE
+                - generic [ref=e515]:
+                  - generic [ref=e520]: Elixir messenger abstraction library telegram discord hex package code
+                  - img [ref=e524]
+              - link "Elixir messenger abstraction library telegram discord hex package download" [ref=e529] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&q=Elixir+messenger+abstraction+library+telegram+discord+hex+package+download&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q1QJ6BAhCEAE
+                - generic [ref=e530]:
+                  - generic [ref=e535]: Elixir messenger abstraction library telegram discord hex package download
+                  - img [ref=e539]
+              - link "Elixir messenger abstraction library telegram discord hex package github" [ref=e544] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&q=Elixir+messenger+abstraction+library+telegram+discord+hex+package+github&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q1QJ6BAhBEAE
+                - generic [ref=e545]:
+                  - generic [ref=e550]: Elixir messenger abstraction library telegram discord hex package github
+                  - img [ref=e554]
+            - generic [ref=e556]:
+              - link "Elixir telegram" [ref=e560] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&q=Elixir+telegram&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q1QJ6BAhAEAE
+                - generic [ref=e561]:
+                  - generic [ref=e566]: Elixir telegram
+                  - img [ref=e570]
+              - link "Visciang telegram" [ref=e575] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&q=Visciang+telegram&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q1QJ6BAg9EAE
+                - generic [ref=e576]:
+                  - generic [ref=e581]: Visciang telegram
+                  - img [ref=e585]
+              - link "Exgram github" [ref=e590] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&q=Exgram+github&sa=X&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q1QJ6BAg-EAE
+                - generic [ref=e591]:
+                  - generic [ref=e596]: Exgram github
+                  - img [ref=e600]
+        - navigation [ref=e602]:
+          - heading "Page navigation" [level=1] [ref=e603]
+          - text: "1"
+          - link "Page 2" [ref=e606] [cursor=pointer]:
+            - /url: /search?q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&ei=weU2auqpGJ7DwPAP3eqa6Ao&start=10&sa=N&sstk=AU9db-CxPcdavRNCWRxX3X8FcE58w5-WYqN3hpx1FDsMqfyxN0F0AJ61bEn8G9cKwPlBQgd5bqR4dbXEXB83VBPfWZyMSZTHCdmQQQ&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q8tMDegQINhAE
+            - text: "2"
+          - link "Page 3" [ref=e608] [cursor=pointer]:
+            - /url: /search?q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&ei=weU2auqpGJ7DwPAP3eqa6Ao&start=20&sa=N&sstk=AU9db-CxPcdavRNCWRxX3X8FcE58w5-WYqN3hpx1FDsMqfyxN0F0AJ61bEn8G9cKwPlBQgd5bqR4dbXEXB83VBPfWZyMSZTHCdmQQQ&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q8tMDegQINhAG
+            - text: "3"
+          - link "Page 4" [ref=e610] [cursor=pointer]:
+            - /url: /search?q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&ei=weU2auqpGJ7DwPAP3eqa6Ao&start=30&sa=N&sstk=AU9db-CxPcdavRNCWRxX3X8FcE58w5-WYqN3hpx1FDsMqfyxN0F0AJ61bEn8G9cKwPlBQgd5bqR4dbXEXB83VBPfWZyMSZTHCdmQQQ&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q8tMDegQINhAI
+            - text: "4"
+          - link "Page 5" [ref=e612] [cursor=pointer]:
+            - /url: /search?q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&ei=weU2auqpGJ7DwPAP3eqa6Ao&start=40&sa=N&sstk=AU9db-CxPcdavRNCWRxX3X8FcE58w5-WYqN3hpx1FDsMqfyxN0F0AJ61bEn8G9cKwPlBQgd5bqR4dbXEXB83VBPfWZyMSZTHCdmQQQ&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q8tMDegQINhAK
+            - text: "5"
+          - link "Page 6" [ref=e614] [cursor=pointer]:
+            - /url: /search?q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&ei=weU2auqpGJ7DwPAP3eqa6Ao&start=50&sa=N&sstk=AU9db-CxPcdavRNCWRxX3X8FcE58w5-WYqN3hpx1FDsMqfyxN0F0AJ61bEn8G9cKwPlBQgd5bqR4dbXEXB83VBPfWZyMSZTHCdmQQQ&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q8tMDegQINhAM
+            - text: "6"
+          - link "Page 7" [ref=e616] [cursor=pointer]:
+            - /url: /search?q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&ei=weU2auqpGJ7DwPAP3eqa6Ao&start=60&sa=N&sstk=AU9db-CxPcdavRNCWRxX3X8FcE58w5-WYqN3hpx1FDsMqfyxN0F0AJ61bEn8G9cKwPlBQgd5bqR4dbXEXB83VBPfWZyMSZTHCdmQQQ&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q8tMDegQINhAO
+            - text: "7"
+          - link "Page 8" [ref=e618] [cursor=pointer]:
+            - /url: /search?q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&ei=weU2auqpGJ7DwPAP3eqa6Ao&start=70&sa=N&sstk=AU9db-CxPcdavRNCWRxX3X8FcE58w5-WYqN3hpx1FDsMqfyxN0F0AJ61bEn8G9cKwPlBQgd5bqR4dbXEXB83VBPfWZyMSZTHCdmQQQ&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q8tMDegQINhAQ
+            - text: "8"
+          - link "Page 9" [ref=e620] [cursor=pointer]:
+            - /url: /search?q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&ei=weU2auqpGJ7DwPAP3eqa6Ao&start=80&sa=N&sstk=AU9db-CxPcdavRNCWRxX3X8FcE58w5-WYqN3hpx1FDsMqfyxN0F0AJ61bEn8G9cKwPlBQgd5bqR4dbXEXB83VBPfWZyMSZTHCdmQQQ&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q8tMDegQINhAS
+            - text: "9"
+          - link "Page 10" [ref=e622] [cursor=pointer]:
+            - /url: /search?q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&ei=weU2auqpGJ7DwPAP3eqa6Ao&start=90&sa=N&sstk=AU9db-CxPcdavRNCWRxX3X8FcE58w5-WYqN3hpx1FDsMqfyxN0F0AJ61bEn8G9cKwPlBQgd5bqR4dbXEXB83VBPfWZyMSZTHCdmQQQ&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q8tMDegQINhAU
+            - text: "10"
+          - heading "Next" [level=2] [ref=e624]:
+            - link "Next" [ref=e625] [cursor=pointer]:
+              - /url: /search?q=elixir+messenger+abstraction+library+telegram+discord+hex+package&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnsTav_K5WNOOidrA9Hx4NbSxfTVKA:1781982657405&ei=weU2auqpGJ7DwPAP3eqa6Ao&start=10&sa=N&sstk=AU9db-CxPcdavRNCWRxX3X8FcE58w5-WYqN3hpx1FDsMqfyxN0F0AJ61bEn8G9cKwPlBQgd5bqR4dbXEXB83VBPfWZyMSZTHCdmQQQ&ved=2ahUKEwiqjqnawpaVAxWeIRAIHV21Bq0Q8NMDegQINhAW
+              - generic [ref=e627]: Next
+      - navigation
+    - contentinfo [ref=e628]:
+      - heading "Footer links" [level=1] [ref=e629]
+      - generic [ref=e633]:
+        - generic [ref=e637]: Results are not personalised
+        - generic [ref=e639]:
+          - text: Finland
+          - generic [ref=e641]:
+            - button "Helsinki - From your IP address" [ref=e643] [cursor=pointer]:
+              - generic [ref=e644]: Helsinki
+              - generic [ref=e646]:
+                - text: "-"
+                - generic [ref=e647]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=e649] [cursor=pointer]: Update location
+        - generic [ref=e652]:
+          - link "Help" [ref=e653] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-FI&fg=1
+          - link "Send feedback" [ref=e654] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e655] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-FI&fg=1
+          - link "Terms" [ref=e656] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-FI&fg=1

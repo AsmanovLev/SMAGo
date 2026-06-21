@@ -1,0 +1,23 @@
+[   46247ms] [ERROR] {type: api_error, error: Object} @ https://static.vk.ru/vkid/1.1.1357/auth.js:1
+[   52548ms] [INFO] Connecting to 'https://api.business.max.ru/method/statEvents.addVKIDAnonymously?v=5.245&client_id=53774493' violates the following Content Security Policy directive: "connect-src 'self' *.vk.com *.vk.ru persiq.vk.com persiq.vk.ru stacks.vk-portal.net sdk-api.apptracer.ru". The policy is report-only, so the violation has been logged but no further action has been taken. @ https://static.vk.ru/vkid/1.1.1357/authorize.js:1
+[   52548ms] [INFO] Connecting to 'https://api.business.max.ru/method/statEvents.addVKIDAnonymously?v=5.245&client_id=53774493' violates the following Content Security Policy directive: "connect-src 'self' *.vk.com *.vk.ru persiq.vk.com persiq.vk.ru stacks.vk-portal.net sdk-api.apptracer.ru". The policy is report-only, so the violation has been logged but no further action has been taken. @ https://static.vk.ru/vkid/1.1.1357/authorize.js:1
+[   94748ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[   95299ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://esia.gosuslugi.ru/login/:0
+[   95740ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[  101185ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://sfd.gosuslugi.ru/session:0
+[  101185ms] [WARNING] sendFingerprint NetworkError: unauthorizedNetworkError @ https://esia.gosuslugi.ru/resources/js/af_fl.js:10
+[  101195ms] [ERROR] Failed to load resource: the server responded with a status of 401 (Unauthorized) @ https://sfd.gosuslugi.ru/session:0
+[  101195ms] [WARNING] sendFingerprint NetworkError: unauthorizedNetworkError @ https://esia.gosuslugi.ru/resources/js/af_fl.js:10
+[  102534ms] [WARNING] Server response is empty:  SyntaxError: Failed to execute 'json' on 'Response': Unexpected end of JSON input
+    at https://esia.gosuslugi.ru/resources/js/af_fl.js:11:12736
+    at v.invoke (https://esia.gosuslugi.ru/login/polyfills.f726bece464182d2.js:1:7624)
+    at v.run (https://esia.gosuslugi.ru/login/polyfills.f726bece464182d2.js:1:2702)
+    at https://esia.gosuslugi.ru/login/polyfills.f726bece464182d2.js:1:18533
+    at v.invokeTask (https://esia.gosuslugi.ru/login/polyfills.f726bece464182d2.js:1:8308)
+    at v.runTask (https://esia.gosuslugi.ru/login/polyfills.f726bece464182d2.js:1:3367)
+    at A (https://esia.gosuslugi.ru/login/polyfills.f726bece464182d2.js:1:10692) @ https://esia.gosuslugi.ru/resources/js/af_fl.js:10
+[  126996ms] [ERROR] Failed to load resource: the server responded with a status of 504 (Gateway Time-out) @ https://esia.gosuslugi.ru/qr-delegate/qr/subscribe/3a3c7032-580e-2f64-9d95-15d0794bdf39:0
+[  175582ms] [VERBOSE] [DOM] Input elements should have autocomplete attributes (suggested: "current-password"): (More info: https://goo.gl/9p2vKq) %o @ https://esia.gosuslugi.ru/login/:0
+[  193237ms] [ERROR] Failed to load resource: net::ERR_FAILED @ chrome-extension://invalid/:0
+[  236544ms] [ERROR] Failed to load resource: the server responded with a status of 424 () @ https://business.max.ru/self/api/v1/verification/auth/doc_diff?provider_type=esia_self_max:0
+[  263847ms] [ERROR] Failed to load resource: the server responded with a status of 424 () @ https://business.max.ru/self/api/v1/verification/auth/doc_diff?provider_type=esia_self_max:0

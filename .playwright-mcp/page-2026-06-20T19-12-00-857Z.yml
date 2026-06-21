@@ -1,0 +1,497 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - link "hex logo Hex" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "hex logo" [ref=e8]
+          - generic [ref=e9]: Hex
+        - generic [ref=e10]:
+          - search [ref=e14]:
+            - generic [ref=e15]:
+              - generic:
+                - img
+              - combobox "Find packages" [ref=e16]
+              - generic [ref=e17]: Find packages
+          - link "Packages" [ref=e18] [cursor=pointer]:
+            - /url: /packages
+          - link "Pricing" [ref=e19] [cursor=pointer]:
+            - /url: /pricing
+          - link "Docs" [ref=e20] [cursor=pointer]:
+            - /url: /docs
+          - button "Change theme" [ref=e22] [cursor=pointer]:
+            - generic [ref=e23]: Change color theme
+            - img [ref=e25]
+          - link "Log In" [ref=e28] [cursor=pointer]:
+            - /url: /login
+    - main [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - link "Packages" [ref=e34] [cursor=pointer]:
+              - /url: /packages
+              - img [ref=e35]
+              - text: Packages
+            - generic [ref=e38]:
+              - heading "hedwig" [level=1] [ref=e39]:
+                - link "hedwig" [ref=e40] [cursor=pointer]:
+                  - /url: /packages/hedwig
+              - group [ref=e41]:
+                - generic "1.0.1" [ref=e42] [cursor=pointer]:
+                  - img [ref=e43]
+                  - generic [ref=e47]: 1.0.1
+                  - img [ref=e48]
+            - paragraph [ref=e51]: An adapter-based chat bot framework
+          - generic [ref=e52]:
+            - link "HexDocs" [ref=e53] [cursor=pointer]:
+              - /url: https://hedwig.hexdocs.pm/
+              - img [ref=e54]
+              - generic [ref=e57]: HexDocs
+            - link "HexPreview" [ref=e58] [cursor=pointer]:
+              - /url: https://preview.hex.pm/preview/hedwig/1.0.1
+              - img [ref=e59]
+              - generic [ref=e62]: HexPreview
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - link "Readme" [ref=e66] [cursor=pointer]:
+              - /url: /packages/hedwig
+              - img [ref=e67]
+              - generic [ref=e70]: Readme
+            - link "11 Versions" [ref=e71] [cursor=pointer]:
+              - /url: /packages/hedwig/versions
+              - img [ref=e72]
+              - generic [ref=e76]: 11 Versions
+            - link "0 Dependencies" [ref=e77] [cursor=pointer]:
+              - /url: /packages/hedwig/dependencies
+              - img [ref=e78]
+              - generic [ref=e81]: 0 Dependencies
+            - link "21 Dependants" [ref=e82] [cursor=pointer]:
+              - /url: /packages/hedwig/dependents
+              - img [ref=e83]
+              - generic [ref=e86]: 21 Dependants
+            - link "Activity" [ref=e87] [cursor=pointer]:
+              - /url: /packages/hedwig/audit-logs
+              - img [ref=e88]
+              - generic [ref=e91]: Activity
+          - generic [ref=e92]:
+            - iframe [ref=e96]:
+              - article [ref=f24e2]:
+                - heading "Hedwig" [level=1] [ref=f24e3]
+                - blockquote [ref=f24e4]:
+                  - paragraph [ref=f24e5]: An Adapter-based Bot Framework for Elixir Applications
+                - paragraph [ref=f24e6]:
+                  - link "Build Status" [ref=f24e7] [cursor=pointer]:
+                    - /url: https://travis-ci.org/hedwig-im/hedwig
+                    - img "Build Status" [ref=f24e8]
+                  - link "Coverage Status" [ref=f24e9] [cursor=pointer]:
+                    - /url: https://coveralls.io/github/hedwig-im/hedwig?branch=master
+                    - img "Coverage Status" [ref=f24e10]
+                - paragraph [ref=f24e11]:
+                  - img "Hedwig" [ref=f24e12]
+                - paragraph [ref=f24e13]:
+                  - text: Hedwig is a chat bot, highly inspired by GitHub's
+                  - link "Hubot" [ref=f24e14] [cursor=pointer]:
+                    - /url: https://hubot.github.com/
+                  - text: .
+                - paragraph [ref=f24e15]:
+                  - text: See the
+                  - link "online documentation" [ref=f24e16] [cursor=pointer]:
+                    - /url: https://hexdocs.pm/hedwig
+                  - text: for more information.
+                - paragraph [ref=f24e17]: "Hedwig was designed for 2 use-cases:"
+                - list [ref=f24e18]:
+                  - listitem [ref=f24e19]: A single, stand-alone OTP application.
+                  - listitem [ref=f24e20]: Included as a dependency of other OTP applications (or an umbrella).
+                - paragraph [ref=f24e21]: You can spawn multiple bots at run-time with different configurations.
+                - heading "Adapters" [level=2] [ref=f24e22]
+                - list [ref=f24e23]:
+                  - listitem [ref=f24e24]:
+                    - link "XMPP" [ref=f24e25] [cursor=pointer]:
+                      - /url: https://github.com/hedwig-im/hedwig_xmpp
+                    - text: (Official)
+                  - listitem [ref=f24e26]:
+                    - link "Slack" [ref=f24e27] [cursor=pointer]:
+                      - /url: https://github.com/hedwig-im/hedwig_slack
+                    - text: (Official)
+                  - listitem [ref=f24e28]:
+                    - link "Flowdock" [ref=f24e29] [cursor=pointer]:
+                      - /url: https://github.com/supernullset/hedwig_flowdock
+                - paragraph [ref=f24e30]:
+                  - text: Check out
+                  - link "enilsen16/awesome-hedwig" [ref=f24e31] [cursor=pointer]:
+                    - /url: https://github.com/enilsen16/awesome-hedwig
+                  - text: for a curated list of adapters, responders, and other resources.
+                - heading "Getting started" [level=2] [ref=f24e32]
+                - paragraph [ref=f24e33]: Hedwig ships with a console adapter to get you up and running quickly. It's great for testing how your bot will respond to the messages it receives.
+                - paragraph [ref=f24e34]:
+                  - text: To add Hedwig to an existing Elixir application, add
+                  - code [ref=f24e35]: :hedwig
+                  - text: to your list of dependencies in your
+                  - code [ref=f24e36]: mix.exs
+                  - text: "file:"
+                - code [ref=f24e38]:
+                  - generic [ref=f24e39]: defp deps do
+                  - generic [ref=f24e40]: "[{:hedwig, \"~> 1.0\"}]"
+                  - generic [ref=f24e41]: end
+                - paragraph [ref=f24e42]:
+                  - text: Update your applications list to include
+                  - code [ref=f24e43]: :hedwig
+                  - text: . This will ensure that the Hedwig application, along with it's supervision tree is started when you start your application.
+                - code [ref=f24e45]:
+                  - generic [ref=f24e46]: def applications do
+                  - generic [ref=f24e47]: "[applications: [:hedwig]]"
+                  - generic [ref=f24e48]: end
+                - paragraph [ref=f24e49]: "Fetch the dependencies:"
+                - code [ref=f24e51]:
+                  - generic [ref=f24e52]: $ mix deps.get
+                - heading "Create a robot module" [level=2] [ref=f24e53]
+                - paragraph [ref=f24e54]: Hedwig provides a convenient mix task to help you generate a basic robot module.
+                - paragraph [ref=f24e55]: "Run the following and follow the prompts:"
+                - code [ref=f24e57]:
+                  - generic [ref=f24e58]: $ mix hedwig.gen.robot
+                  - generic [ref=f24e60]: Welcome to the Hedwig Robot Generator!
+                  - generic [ref=f24e62]: Let's get started.
+                  - generic [ref=f24e64]: "What would you like to name your bot?: alfred"
+                  - generic [ref=f24e66]: Available adapters
+                  - generic [ref=f24e68]: 1. Hedwig.Adapters.Console
+                  - generic [ref=f24e70]: "Please select an adapter: 1"
+                  - generic [ref=f24e72]: "* creating lib/alfred"
+                  - generic [ref=f24e73]: "* creating lib/alfred/robot.ex"
+                  - generic [ref=f24e74]: "* updating config/config.exs"
+                  - generic [ref=f24e76]: Don't forget to add your new robot to your supervision tree
+                  - generic [ref=f24e77]: "(typically in lib/alfred.ex):"
+                  - generic [ref=f24e79]: worker(Alfred.Robot, [])
+                - code [ref=f24e81]:
+                  - generic [ref=f24e82]: defmodule Alfred.Robot do
+                  - generic [ref=f24e83]: "use Hedwig.Robot, otp_app: :alfred"
+                  - generic [ref=f24e85]: ...
+                  - generic [ref=f24e86]: end
+                - heading "Configuration" [level=2] [ref=f24e87]
+                - paragraph [ref=f24e88]:
+                  - text: The generator will automatically generate a default configuration in
+                  - code [ref=f24e89]: config/config.exs
+                  - text: . You will need to customize it further depending on the adapter you will use.
+                - paragraph [ref=f24e90]: This is mainly to setup the module to be compiled along with the adapter. An adapter can inject functionality into your module if needed.
+                - code [ref=f24e92]:
+                  - generic [ref=f24e93]: "# config/config.exs"
+                  - generic [ref=f24e95]: config :alfred, Alfred.Robot,
+                  - generic [ref=f24e96]: "adapter: Hedwig.Adapters.Console,"
+                  - generic [ref=f24e97]: "name: \"alfred\","
+                  - generic [ref=f24e98]: "aka: \"/\","
+                  - generic [ref=f24e99]: "responders: ["
+                  - generic [ref=f24e100]: "{Hedwig.Responders.Help, []},"
+                  - generic [ref=f24e101]: "{Hedwig.Responders.Ping, []}"
+                  - generic [ref=f24e102]: "]"
+                - heading "Start a bot." [level=3] [ref=f24e103]
+                - paragraph [ref=f24e104]: You can start your bot as part of your application's supervision tree or by using the supervision tree provided by Hedwig.
+                - heading "Starting as part of your supervision tree:" [level=3] [ref=f24e105]
+                - code [ref=f24e107]:
+                  - generic [ref=f24e108]: "# add this to the list of your supervisor's children"
+                  - generic [ref=f24e109]: worker(Alfred.Robot, [])
+                - heading "Trying out the console adapter:" [level=3] [ref=f24e110]
+                - code [ref=f24e112]:
+                  - generic [ref=f24e113]: mix run --no-halt
+                  - generic [ref=f24e115]: Hedwig Console - press Ctrl+C to exit.
+                  - generic [ref=f24e117]: The console adapter is useful for quickly verifying how your
+                  - generic [ref=f24e118]: bot will respond based on the current installed responders.
+                  - generic [ref=f24e120]: scrogson> alfred help
+                  - generic [ref=f24e121]: alfred> alfred help <query> - Displays all help commands that match <query>.
+                  - generic [ref=f24e122]: alfred help - Displays all of the help commands that alfred knows about.
+                  - generic [ref=f24e123]: "alfred: ping - Responds with 'pong'"
+                  - generic [ref=f24e124]: scrogson>
+                - heading "Starting bots manually:" [level=3] [ref=f24e125]
+                - code [ref=f24e127]:
+                  - generic [ref=f24e128]: "# Start the bot via the module. The configuration options will be read in from"
+                  - generic [ref=f24e129]: "# config.exs"
+                  - generic [ref=f24e130]: "{:ok, pid} = Hedwig.start_robot(Alfred.Robot)"
+                  - generic [ref=f24e132]: "# You can also pass in a list of options that will override the configuration"
+                  - generic [ref=f24e133]: "# provided in config.exs (except for the adapter as that is compiled into the"
+                  - generic [ref=f24e134]: "# module)."
+                  - generic [ref=f24e135]: "{:ok, pid} = Hedwig.start_robot(Alfred.Robot, [name: \"jeeves\"])"
+                - heading "Registering your robot process" [level=3] [ref=f24e136]
+                - paragraph [ref=f24e137]:
+                  - text: If you want to start, stop, and send messages to your bot without keeping track of its
+                  - code [ref=f24e138]: pid
+                  - text: ", you can register your robot in the"
+                  - code [ref=f24e139]: handle_connect/1
+                  - text: "callback in your robot module like so:"
+                - code [ref=f24e141]:
+                  - generic [ref=f24e142]: defmodule Alfred.Robot do
+                  - generic [ref=f24e143]: "use Hedwig.Robot, otp_app: :alfred"
+                  - generic [ref=f24e145]: "def handle_connect(%{name: name} = state) do"
+                  - generic [ref=f24e146]: if :undefined == :global.whereis_name(name) do
+                  - generic [ref=f24e147]: :yes = :global.register_name(name, self())
+                  - generic [ref=f24e148]: end
+                  - generic [ref=f24e149]: "{:ok, state}"
+                  - generic [ref=f24e150]: end
+                  - generic [ref=f24e151]: end
+                - paragraph [ref=f24e152]:
+                  - text: Process registration via
+                  - code [ref=f24e153]: Process.register/2
+                  - text: "is simple. However, since the name can only be an atom it may not work for all use-cases. If you are using the same module for many robots, you'll need to reach for something more flexible like:"
+                - list [ref=f24e154]:
+                  - listitem [ref=f24e155]:
+                    - link "global" [ref=f24e156] [cursor=pointer]:
+                      - /url: http://erlang.org/doc/man/global.html
+                  - listitem [ref=f24e157]:
+                    - link "gproc" [ref=f24e158] [cursor=pointer]:
+                      - /url: https://github.com/uwiger/gproc
+                  - listitem [ref=f24e159]:
+                    - link "swarm" [ref=f24e160] [cursor=pointer]:
+                      - /url: https://github.com/bitwalker/swarm
+                - heading "Finding your robot" [level=4] [ref=f24e161]
+                - code [ref=f24e163]:
+                  - generic [ref=f24e164]: "# Start the robot"
+                  - generic [ref=f24e165]: Hedwig.start_robot(Alfred.Robot)
+                  - generic [ref=f24e166]: "# Get the pid of the robot by name"
+                  - generic [ref=f24e167]: pid = :global.whereis_name("alfred")
+                  - generic [ref=f24e169]: "# Start a new robot with a different name"
+                  - generic [ref=f24e170]: "Hedwig.start_robot(Alfred.Robot, [name: \"jeeves\"])"
+                  - generic [ref=f24e171]: "# Get the pid"
+                  - generic [ref=f24e172]: pid = :global.whereis_name("jeeves")
+                  - generic [ref=f24e173]: "# Stop the robot"
+                  - generic [ref=f24e174]: Hedwig.stop_robot(pid)
+                - heading "Sending Messages" [level=2] [ref=f24e175]
+                - code [ref=f24e177]:
+                  - generic [ref=f24e178]: "# Get the pid of the robot"
+                  - generic [ref=f24e179]: pid = :global.whereis_name("alfred")
+                  - generic [ref=f24e181]: "# Create a Hedwig message"
+                  - generic [ref=f24e182]: "msg = %Hedwig.Message{"
+                  - generic [ref=f24e183]: "type: \"groupchat\","
+                  - generic [ref=f24e184]: "room: \"my_room@example.com\","
+                  - generic [ref=f24e185]: "text: \"hello world\""
+                  - generic [ref=f24e186]: "}"
+                  - generic [ref=f24e188]: "# Send the message"
+                  - generic [ref=f24e189]: Hedwig.Robot.send(pid, msg)
+                - heading "Building Responders" [level=2] [ref=f24e190]
+                - paragraph [ref=f24e191]: Responders are processes that will handle incoming messages.
+                - paragraph [ref=f24e192]:
+                  - text: All that's needed is to
+                  - code [ref=f24e193]: use Hedwig.Responder
+                  - text: and use the
+                  - code [ref=f24e194]: hear/2
+                  - text: ", or"
+                  - code [ref=f24e195]: respond/2
+                  - text: macros to define a pattern to listen for and how to respond in the block when a message matches.
+                - paragraph [ref=f24e196]: "Here is an example:"
+                - code [ref=f24e198]:
+                  - generic [ref=f24e199]: defmodule MyApp.Responders.GreatSuccess do
+                  - generic [ref=f24e200]: "@moduledoc \"\"\""
+                  - generic [ref=f24e201]: Borat, Great Success!
+                  - generic [ref=f24e203]: Replies with a random link to a Borat image when a message contains
+                  - generic [ref=f24e204]: "'great success'."
+                  - generic [ref=f24e205]: "\"\"\""
+                  - generic [ref=f24e207]: use Hedwig.Responder
+                  - generic [ref=f24e209]: "@links ["
+                  - generic [ref=f24e210]: "\"http://mjanja.co.ke/wordpress/wp-content/uploads/2013/09/borat_great_success.jpg\","
+                  - generic [ref=f24e211]: "\"http://s2.quickmeme.com/img/13/1324dfd733535e58dba70264e6d05c9b70346204d2cacef65abef9c702746d1c.jpg\","
+                  - generic [ref=f24e212]: "\"https://www.youtube.com/watch?v=r13riaRKGo0\""
+                  - generic [ref=f24e213]: "]"
+                  - generic [ref=f24e215]: "@usage \"\"\""
+                  - generic [ref=f24e216]: <text> (great success) - Replies with a random Borat image.
+                  - generic [ref=f24e217]: "\"\"\""
+                  - generic [ref=f24e218]: hear ~r/great success(!)?/i, msg do
+                  - generic [ref=f24e219]: reply msg, random(@links)
+                  - generic [ref=f24e220]: end
+                  - generic [ref=f24e221]: end
+                - heading "Hear vs. Respond" [level=2] [ref=f24e222]
+                - paragraph [ref=f24e223]: "The two responder macros are use for different reasons:"
+                - list [ref=f24e224]:
+                  - listitem [ref=f24e225]:
+                    - code [ref=f24e226]: hear
+                    - text: "- matches messages containing the regular expression"
+                  - listitem [ref=f24e227]:
+                    - code [ref=f24e228]: respond
+                    - text: "- matches only when prefixed by your robot's configured"
+                    - code [ref=f24e229]: name
+                    - text: or
+                    - code [ref=f24e230]: aka
+                    - text: value.
+                - heading "Testing responders:" [level=2] [ref=f24e231]
+                - paragraph [ref=f24e232]:
+                  - text: "Hedwig ships with a ExUnit-based module sepecifically made to test responders:"
+                  - code [ref=f24e233]: Hedwig.RobotCase
+                  - text: .
+                - paragraph [ref=f24e234]: "In order to test the above responder, you need to create an ExUnit test case:"
+                - code [ref=f24e236]:
+                  - generic [ref=f24e238]: "# test/my_app/responders/great_success_test.exs"
+                  - generic [ref=f24e240]: defmodule MyApp.Responders.GreatSuccessTest do
+                  - generic [ref=f24e241]: use Hedwig.RobotCase
+                  - generic [ref=f24e243]: "@tag start_robot: true, name: \"alfred\", responders: [{MyApp.Responders.GreatSuccess, []}]"
+                  - generic [ref=f24e244]: "test \"great success - responds with a borat url\", %{adapter: adapter, msg: msg} do"
+                  - generic [ref=f24e245]: "send adapter, {:message, %{msg | text: \"great success\"}}"
+                  - generic [ref=f24e246]: "assert_receive {:message, %{text: text}}"
+                  - generic [ref=f24e247]: assert String.contains?(text, "http")
+                  - generic [ref=f24e248]: end
+                  - generic [ref=f24e249]: end
+                - paragraph [ref=f24e250]:
+                  - text: To run the tests, use
+                  - code [ref=f24e251]: mix test
+                - heading "@usage" [level=2] [ref=f24e252]
+                - paragraph [ref=f24e253]:
+                  - text: The
+                  - code [ref=f24e254]: "@usage"
+                  - text: module attribute works nicely with
+                  - code [ref=f24e255]: Hedwig.Responders.Help
+                  - text: . If you install the help handler, your bot will listen for
+                  - code [ref=f24e256]: <your-bots-nickname> help
+                  - text: and respond with a message containing all of the installed handlers
+                  - code [ref=f24e257]: "@usage"
+                  - text: text.
+                - heading "License" [level=2] [ref=f24e258]
+                - paragraph [ref=f24e259]: The MIT License (MIT)
+                - paragraph [ref=f24e260]: Copyright (c) 2015 Sonny Scroggin
+                - paragraph [ref=f24e261]: "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:"
+                - paragraph [ref=f24e262]: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+                - paragraph [ref=f24e263]: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - heading "Checksum" [level=3] [ref=e99]
+                - generic [ref=e100]:
+                  - textbox [ref=e101]: 0a9d0278877f2ec868238efd648ea4a201bef0b15d702c376329d9cb0bf636f1
+                  - button [ref=e102]:
+                    - img [ref=e103]
+              - generic [ref=e106]:
+                - heading "Dependency Config" [level=3] [ref=e107]
+                - generic [ref=e108]:
+                  - paragraph [ref=e109]: mix.exs
+                  - generic [ref=e110]:
+                    - textbox [ref=e111]: "{:hedwig, \"~> 1.0\"}"
+                    - button [ref=e112]:
+                      - img [ref=e113]
+                - generic [ref=e116]:
+                  - paragraph [ref=e117]: rebar.config
+                  - generic [ref=e118]:
+                    - textbox [ref=e119]: "{hedwig, \"1.0.1\"}"
+                    - button [ref=e120]:
+                      - img [ref=e121]
+                - generic [ref=e124]:
+                  - paragraph [ref=e125]: Gleam
+                  - generic [ref=e126]:
+                    - textbox [ref=e127]: gleam add hedwig@1.0.1
+                    - button [ref=e128]:
+                      - img [ref=e129]
+                - generic [ref=e132]:
+                  - paragraph [ref=e133]: erlang.mk
+                  - generic [ref=e134]:
+                    - textbox [ref=e135]: dep_hedwig = hex 1.0.1
+                    - button [ref=e136]:
+                      - img [ref=e137]
+              - generic [ref=e140]:
+                - heading "Package Details" [level=3] [ref=e141]
+                - generic [ref=e142]:
+                  - generic [ref=e143]:
+                    - generic [ref=e144]: Downloads
+                    - generic [ref=e145]: Last 30 days, all versions
+                  - img "Downloads over the last 30 days" [ref=e146]:
+                    - generic [ref=e147]: "0"
+                    - generic [ref=e148]: "10"
+                    - generic [ref=e149]: "20"
+                    - generic [ref=e150]: "30"
+                    - generic [ref=e151]: "40"
+                - generic [ref=e155]:
+                  - generic [ref=e156]:
+                    - paragraph [ref=e157]: this version
+                    - paragraph [ref=e158]: 23 313
+                  - generic [ref=e159]:
+                    - paragraph [ref=e160]: yesterday
+                    - paragraph [ref=e161]: "6"
+                  - generic [ref=e162]:
+                    - paragraph [ref=e163]: last 7 days
+                    - paragraph [ref=e164]: "33"
+                  - generic [ref=e165]:
+                    - paragraph [ref=e166]: all time
+                    - paragraph [ref=e167]: 40 398
+                - generic [ref=e168]:
+                  - generic [ref=e169]:
+                    - paragraph [ref=e170]: Last Updated
+                    - paragraph [ref=e171]: Jan 26, 2018
+                  - generic [ref=e172]:
+                    - paragraph [ref=e173]: License
+                    - paragraph [ref=e175]: MIT
+                  - generic [ref=e176]:
+                    - paragraph [ref=e177]: Build Tools
+                    - generic [ref=e179]: mix
+                  - generic [ref=e180]:
+                    - paragraph [ref=e181]: Publisher
+                    - link "scrogson scrogson" [ref=e182] [cursor=pointer]:
+                      - /url: /users/scrogson
+                      - img "scrogson" [ref=e183]
+                      - generic [ref=e184]: scrogson
+              - generic [ref=e185]:
+                - heading "Links" [level=3] [ref=e186]
+                - list [ref=e187]:
+                  - listitem [ref=e188]:
+                    - link "Docs" [ref=e189] [cursor=pointer]:
+                      - /url: https://hexdocs.pm/hedwig
+                  - listitem [ref=e190]:
+                    - link "GitHub" [ref=e191] [cursor=pointer]:
+                      - /url: https://github.com/hedwig-im/hedwig
+              - generic [ref=e192]:
+                - heading "Owners" [level=3] [ref=e194]
+                - list [ref=e195]:
+                  - listitem [ref=e196]:
+                    - link "scrogson scrogson" [ref=e197] [cursor=pointer]:
+                      - /url: /users/scrogson
+                      - img "scrogson" [ref=e198]
+                      - generic [ref=e199]: scrogson
+  - contentinfo [ref=e200]:
+    - generic [ref=e202]:
+      - generic [ref=e203]:
+        - generic [ref=e204]:
+          - img "hex logo" [ref=e205]
+          - generic [ref=e206]: Hex
+        - generic [ref=e207]:
+          - link "GitHub" [ref=e208] [cursor=pointer]:
+            - /url: https://github.com/hexpm
+            - img [ref=e209]
+          - link "X" [ref=e211] [cursor=pointer]:
+            - /url: https://x.com/hexpm
+            - img [ref=e212]
+      - generic [ref=e215]:
+        - generic [ref=e216]:
+          - link "About" [ref=e217] [cursor=pointer]:
+            - /url: /about
+          - link "Blog" [ref=e218] [cursor=pointer]:
+            - /url: /blog
+          - link "Sponsors" [ref=e219] [cursor=pointer]:
+            - /url: /sponsors
+          - link "Status" [ref=e220] [cursor=pointer]:
+            - /url: https://status.hex.pm
+          - link "Advisories" [ref=e221] [cursor=pointer]:
+            - /url: https://osv.dev/list?ecosystem=Hex
+        - generic [ref=e222]:
+          - link "Documentation" [ref=e223] [cursor=pointer]:
+            - /url: /docs
+          - link "FAQ" [ref=e224] [cursor=pointer]:
+            - /url: /docs/faq
+          - link "Specifications" [ref=e225] [cursor=pointer]:
+            - /url: https://github.com/hexpm/specifications
+          - link "Report Client Issue" [ref=e226] [cursor=pointer]:
+            - /url: https://github.com/hexpm/hex/issues
+          - link "Report General Issue" [ref=e227] [cursor=pointer]:
+            - /url: https://github.com/hexpm/hexpm/issues
+          - link "Report Security Issue" [ref=e228] [cursor=pointer]:
+            - /url: mailto:security@hex.pm
+          - link "Contact Support" [ref=e229] [cursor=pointer]:
+            - /url: mailto:support@hex.pm
+        - generic [ref=e230]:
+          - link "Code of Conduct" [ref=e231] [cursor=pointer]:
+            - /url: /policies/codeofconduct
+          - link "Terms of Service" [ref=e232] [cursor=pointer]:
+            - /url: /policies/termsofservice
+          - link "Privacy Policy" [ref=e233] [cursor=pointer]:
+            - /url: /policies/privacy
+          - link "Copyright Policy" [ref=e234] [cursor=pointer]:
+            - /url: /policies/copyright
+          - link "Dispute Policy" [ref=e235] [cursor=pointer]:
+            - /url: /policies/dispute
+    - generic [ref=e237]:
+      - paragraph [ref=e238]: Copyright 2015. Six Colors AB.
+      - paragraph [ref=e239]:
+        - text: Powered by the
+        - link "Erlang VM" [ref=e240] [cursor=pointer]:
+          - /url: https://www.erlang.org/
+        - text: and the
+        - link "Elixir Programming Language" [ref=e241] [cursor=pointer]:
+          - /url: https://elixir-lang.org/

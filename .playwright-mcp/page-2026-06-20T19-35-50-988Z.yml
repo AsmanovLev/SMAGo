@@ -1,0 +1,475 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-FI
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - generic:
+          - generic:
+            - generic:
+              - img
+        - 'link "World Cup 2026: The art of the penalty kick" [ref=e13] [cursor=pointer]':
+          - /url: https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQPQgK
+          - 'img "World Cup 2026: The art of the penalty kick" [ref=e14]'
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - combobox "Search" [ref=e19]: "\"VK\" \"Telegram\" \"WhatsApp\" \"Viber\" месячная аудитория Россия 2025 миллионов \"VK\" \"Telegram\" \"WhatsApp\" \"Viber\" месячная аудитория Россия 2025 миллионов"
+            - generic [ref=e20]:
+              - button "Clear" [ref=e22] [cursor=pointer]:
+                - img [ref=e24]
+              - generic [ref=e27]:
+                - button "Search by voice" [ref=e28] [cursor=pointer]:
+                  - img [ref=e29]
+                - button "Search by image" [ref=e31] [cursor=pointer]:
+                  - img [ref=e32]
+          - button "Search" [ref=e34] [cursor=pointer]:
+            - img [ref=e37]
+    - generic [ref=e39]:
+      - button "Share" [ref=e40] [cursor=pointer]:
+        - img [ref=e44]
+      - generic [ref=e46]:
+        - button "Google apps" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+        - 'button "Google Account: Lev Asmanov (asmanovlev@gmail.com)" [ref=e53] [cursor=pointer]':
+          - img [ref=e55]
+          - img [ref=e60]
+  - generic [ref=e62]:
+    - navigation [ref=e68]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "AI Mode" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9y513h_dJNevWM0LJgfK9j1Vvlz6It0tSfbVov3E-VOkryIEvL1z5AkkBpbmExjd3luLlCC4KL4uz7_0S6dU874XxpVaRFVAyRTJk4IJDK4fST9xTQ&aep=1&ntc=1&sa=X&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQ2J8OegQIEhAD
+              - generic [ref=e82]: AI Mode
+          - listitem [ref=e83]:
+            - link "All" [disabled] [ref=e84]:
+              - generic [ref=e86]: All
+          - listitem [ref=e87]:
+            - link "Images" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9y513h_dJNevWM0LJgfK9j1Vvlz6It0tSfbVov3E-VOkryIEvL1z5AkkBpbmExjd3luLlCC4KL4uz7_0S6dU874XxpVaRFVAyRTJk4IJDK4fST9xTQ&q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&sa=X&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQtKgLegQIFBAB
+              - generic [ref=e90]: Images
+          - listitem [ref=e91]:
+            - link "News" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9y513h_dJNevWM0LJgfK9j1Vvlz6It0tSfbVov3E-VOkryIEvL1z5AkkBpbmExjd3luLlCC4KL4uz7_0S6dU874XxpVaRFVAyRTJk4IJDK4fST9xTQ&sa=X&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQ0pQJegQIFRAB
+              - generic [ref=e94]: News
+          - listitem [ref=e95]:
+            - link "Videos" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9y513h_dJNevWM0LJgfK9j1Vvlz6It0tSfbVov3E-VOkryIEvL1z5AkkBpbmExjd3luLlCC4KL4uz7_0S6dU874XxpVaRFVAyRTJk4IJDK4fST9xTQ&q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&sa=X&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQtKgLegQIFhAB
+              - generic [ref=e98]: Videos
+          - listitem [ref=e99]:
+            - link "Short videos" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9y513h_dJNevWM0LJgfK9j1Vvlz6It0tSfbVov3E-VOkryIEvL1z5AkkBpbmExjd3luLlCC4KL4uz7_0S6dU874XxpVaRFVAyRTJk4IJDK4fST9xTQ&q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&sa=X&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQs6gLegQIFxAB
+              - generic [ref=e102]: Short videos
+          - listitem [ref=e103]:
+            - link "Books" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&udm=36&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832QGGMdFXpDyzkQgEdtB8w9y513h_dJNevWM0LJgfK9j1Vvlz6It0tSfbVov3E-VOkryIEvL1z5AkkBpbmExjd3luLlCC4KL4uz7_0S6dU874XxpVaRFVAyRTJk4IJDK4fST9xTQ&sa=X&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQ0pQJegQIGBAB
+              - generic [ref=e106]: Books
+          - listitem [ref=e107]:
+            - button "More filters" [ref=e108] [cursor=pointer]:
+              - generic "More filters" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: More
+                  - img [ref=e113]
+        - button "Tools" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Tools
+            - img [ref=e121]
+    - heading "Search Results" [level=1] [ref=e123]
+    - generic [ref=e128]:
+      - generic [ref=e147]:
+        - heading "Searching Thinking a little longer" [level=2] [ref=e151]:
+          - generic [ref=e152]:
+            - generic [ref=e159]: Searching
+            - generic [ref=e169]: Thinking a little longer
+        - progressbar "Generating" [ref=e171]
+      - main [ref=e222]:
+        - generic [ref=e226]:
+          - generic [ref=e229]:
+            - heading "Результаты поиска" [level=2] [ref=e230]
+            - generic [ref=e231]:
+              - generic [ref=e234]:
+                - 'link "Социальные сети в России в 2026 году: список, ... eLama https://elama.ru › blog › socialnye-s..." [ref=e236] [cursor=pointer]':
+                  - /url: https://elama.ru/blog/socialnye-seti-v-rossii/
+                  - 'heading "Социальные сети в России в 2026 году: список, ..." [level=3] [ref=e237]'
+                  - generic [ref=e243]:
+                    - generic [ref=e245]: eLama
+                    - generic [ref=e247]: https://elama.ru › blog › socialnye-s...
+                - generic [ref=e248]:
+                  - generic [ref=e249]: ·
+                  - link "Translate this page" [ref=e250] [cursor=pointer]:
+                    - /url: https://elama.ru/blog/socialnye-seti-v-rossii/
+                - button "About this result" [ref=e251] [cursor=pointer]:
+                  - img [ref=e254]
+              - generic [ref=e257]:
+                - generic [ref=e258]: 3 Apr 2026 —
+                - generic [ref=e259]:
+                  - text: "Эксперты Ассоциации блогеров и агентств констатируют: 65–70% рекламных бюджетов остаются на проверенных платформах ("
+                  - emphasis [ref=e260]: VK
+                  - text: ","
+                  - emphasis [ref=e261]: Telegram
+                  - text: ", YouTube), а 20 ..."
+                - link "Read more" [ref=e262] [cursor=pointer]:
+                  - /url: https://elama.ru/blog/socialnye-seti-v-rossii/#:~:text=%D0%AD%D0%BA%D1%81%D0%BF%D0%B5%D1%80%D1%82%D1%8B%20%D0%90%D1%81%D1%81%D0%BE%D1%86%D0%B8%D0%B0%D1%86%D0%B8%D0%B8%20%D0%B1%D0%BB%D0%BE%D0%B3%D0%B5%D1%80%D0%BE%D0%B2%20%D0%B8%20%D0%B0%D0%B3%D0%B5%D0%BD%D1%82%D1%81%D1%82%D0%B2,%D1%80%D0%B0%D0%B7%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BE%D0%BA%20%E2%80%94%20Max%2C%20%D0%94%D0%B7%D0%B5%D0%BD%2C%20Wibes.
+          - generic [ref=e267]:
+            - heading "People also ask" [level=2] [ref=e269]
+            - generic [ref=e270]:
+              - button "Какова аудитория Telegram и WhatsApp в России?" [ref=e276] [cursor=pointer]:
+                - generic [ref=e278]: Какова аудитория Telegram и WhatsApp в России?
+                - img [ref=e281]
+              - button "Какова аудитория Telegram в России в 2026 году?" [ref=e290] [cursor=pointer]:
+                - generic [ref=e292]: Какова аудитория Telegram в России в 2026 году?
+                - img [ref=e295]
+              - button "Какова аудитория ВКонтакте в России?" [ref=e304] [cursor=pointer]:
+                - generic [ref=e306]: Какова аудитория ВКонтакте в России?
+                - img [ref=e309]
+              - button "Сколько пользователей из РФ в месяц в ТГ?" [ref=e318] [cursor=pointer]:
+                - generic [ref=e320]: Сколько пользователей из РФ в месяц в ТГ?
+                - img [ref=e323]
+          - generic [ref=e328]:
+            - heading "Результаты поиска" [level=2] [ref=e329]
+            - generic [ref=e330]:
+              - generic [ref=e333]:
+                - link "Telegram обошел WhatsApp по популярности в России Forbes.ru https://www.forbes.ru › tekhnologii" [ref=e335] [cursor=pointer]:
+                  - /url: https://www.forbes.ru/tekhnologii/556595-i-vtorye-stanut-pervymi-telegram-obosel-whatsapp-po-popularnosti-v-rossii
+                  - heading "Telegram обошел WhatsApp по популярности в России" [level=3] [ref=e336]
+                  - generic [ref=e342]:
+                    - generic [ref=e344]: Forbes.ru
+                    - generic [ref=e346]: https://www.forbes.ru › tekhnologii
+                - generic [ref=e347]:
+                  - generic [ref=e348]: ·
+                  - link "Translate this page" [ref=e349] [cursor=pointer]:
+                    - /url: https://www.forbes.ru/tekhnologii/556595-i-vtorye-stanut-pervymi-telegram-obosel-whatsapp-po-popularnosti-v-rossii
+                - button "About this result" [ref=e350] [cursor=pointer]:
+                  - img [ref=e353]
+              - generic [ref=e356]:
+                - generic [ref=e357]: 4 Mar 2026 —
+                - generic [ref=e358]:
+                  - text: В январе этого года
+                  - emphasis [ref=e359]: Telegram
+                  - text: стал самым популярным мессенджером в
+                  - emphasis [ref=e360]: России
+                  - text: ", сместив с первой позиции многолетнего лидера"
+                  - emphasis [ref=e361]: WhatsApp
+                  - text: ", ..."
+          - generic [ref=e365]:
+            - generic [ref=e368]:
+              - link "Россияне нашли рабочую альтернативу WhatsApp* и Telegram Новости России и мира сегодня - Рамблер/новости https://news.rambler.ru › tech › 55..." [ref=e370] [cursor=pointer]:
+                - /url: https://news.rambler.ru/tech/55988746-rossiyane-nashli-rabochuyu-alternativu-whatsapp-i-telegram/
+                - heading "Россияне нашли рабочую альтернативу WhatsApp* и Telegram" [level=3] [ref=e371]
+                - generic [ref=e377]:
+                  - generic [ref=e379]: Новости России и мира сегодня - Рамблер/новости
+                  - generic [ref=e381]: https://news.rambler.ru › tech › 55...
+              - generic [ref=e382]:
+                - generic [ref=e383]: ·
+                - link "Translate this page" [ref=e384] [cursor=pointer]:
+                  - /url: https://news.rambler.ru/tech/55988746-rossiyane-nashli-rabochuyu-alternativu-whatsapp-i-telegram/
+              - button "About this result" [ref=e385] [cursor=pointer]:
+                - img [ref=e388]
+            - generic [ref=e392]:
+              - text: ...
+              - emphasis [ref=e393]: России
+              - text: ...
+              - emphasis [ref=e394]: млн
+              - text: ) и «
+              - emphasis [ref=e395]: VK
+              - text: Мессенджер» (15,7
+              - emphasis [ref=e396]: млн
+              - text: ). Продолжение ...
+              - emphasis [ref=e397]: Viber
+              - text: ", а в августе Роскомнадзор ограничил голосовую и видеосвязь в"
+              - emphasis [ref=e398]: WhatsApp
+              - text: и
+              - emphasis [ref=e399]: Telegram
+              - text: .
+          - generic [ref=e403]:
+            - generic [ref=e406]:
+              - link "Американский мессенджер вырос в России на 2900% ... Русская служба The Moscow Times https://ru.themoscowtimes.com › a..." [ref=e408] [cursor=pointer]:
+                - /url: https://ru.themoscowtimes.com/2026/02/04/amerikanskii-messendzher-viros-v-rossii-na-2900-posle-nachala-blokirovok-whatsapp-i-telegram-a186357
+                - heading "Американский мессенджер вырос в России на 2900% ..." [level=3] [ref=e409]
+                - generic [ref=e415]:
+                  - generic [ref=e417]: Русская служба The Moscow Times
+                  - generic [ref=e419]: https://ru.themoscowtimes.com › a...
+              - generic [ref=e420]:
+                - generic [ref=e421]: ·
+                - link "Translate this page" [ref=e422] [cursor=pointer]:
+                  - /url: https://ru.themoscowtimes.com/2026/02/04/amerikanskii-messendzher-viros-v-rossii-na-2900-posle-nachala-blokirovok-whatsapp-i-telegram-a186357
+              - button "About this result" [ref=e423] [cursor=pointer]:
+                - img [ref=e426]
+            - generic [ref=e429]:
+              - generic [ref=e430]: 4 Feb 2026 —
+              - generic [ref=e431]:
+                - text: На первом месте по количеству пользователей в декабре
+                - emphasis [ref=e432]: "2025"
+                - text: года оставался
+                - emphasis [ref=e433]: WhatsApp
+                - text: с 94,5
+                - emphasis [ref=e434]: млн
+                - text: в месяц. На второй позиции
+                - emphasis [ref=e435]: Telegram
+                - text: — 93,6
+                - emphasis [ref=e436]: млн
+                - text: ...
+              - link "Read more" [ref=e437] [cursor=pointer]:
+                - /url: https://ru.themoscowtimes.com/2026/02/04/amerikanskii-messendzher-viros-v-rossii-na-2900-posle-nachala-blokirovok-whatsapp-i-telegram-a186357#:~:text=%D0%9D%D0%B0%20%D0%BF%D0%B5%D1%80%D0%B2%D0%BE%D0%BC%20%D0%BC%D0%B5%D1%81%D1%82%D0%B5%20%D0%BF%D0%BE%20%D0%BA%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D1%83,%C2%ABVK%20%D0%9C%D0%B5%D1%81%D1%81%D0%B5%D0%BD%D0%B4%D0%B6%D0%B5%D1%80%C2%BB%20%D1%81%2015%2C7%20%D0%BC%D0%BB%D0%BD.
+          - generic [ref=e441]:
+            - generic [ref=e444]:
+              - link "Telegram впервые стал популярнее WhatsApp в России Hi-Tech Mail https://hi-tech.mail.ru › news › 14..." [ref=e446] [cursor=pointer]:
+                - /url: https://hi-tech.mail.ru/news/143717-telegram-vpervye-stal-populyarnee-whatsapp-v-rossii/
+                - heading "Telegram впервые стал популярнее WhatsApp в России" [level=3] [ref=e447]
+                - generic [ref=e453]:
+                  - generic [ref=e455]: Hi-Tech Mail
+                  - generic [ref=e457]: https://hi-tech.mail.ru › news › 14...
+              - generic [ref=e458]:
+                - generic [ref=e459]: ·
+                - link "Translate this page" [ref=e460] [cursor=pointer]:
+                  - /url: https://hi-tech.mail.ru/news/143717-telegram-vpervye-stal-populyarnee-whatsapp-v-rossii/
+              - button "About this result" [ref=e461] [cursor=pointer]:
+                - img [ref=e464]
+            - generic [ref=e467]:
+              - generic [ref=e468]: 5 Mar 2026 —
+              - generic [ref=e469]:
+                - text: К началу
+                - emphasis [ref=e470]: "2025"
+                - text: года уже заблокировали Signal, Discord и
+                - emphasis [ref=e471]: Viber
+                - text: . Во второй половине
+                - emphasis [ref=e472]: "2025"
+                - text: года в
+                - emphasis [ref=e473]: России
+                - text: ограничили звонки в
+                - emphasis [ref=e474]: WhatsApp
+                - text: и
+                - emphasis [ref=e475]: Telegram
+                - text: .
+              - link "Read more" [ref=e476] [cursor=pointer]:
+                - /url: https://hi-tech.mail.ru/news/143717-telegram-vpervye-stal-populyarnee-whatsapp-v-rossii/#:~:text=%D0%9A%20%D0%BD%D0%B0%D1%87%D0%B0%D0%BB%D1%83%202025%20%D0%B3%D0%BE%D0%B4%D0%B0%20%D1%83%D0%B6%D0%B5,%D0%B7%D0%B2%D0%BE%D0%BD%D0%BA%D0%B8%20%D0%B2%20WhatsApp%20%D0%B8%20Telegram.
+            - generic [ref=e479]:
+              - img "Rated 4,8 out of 5, (12 486) user reviews" [ref=e481]:
+                - text: 4,8
+                - img [ref=e482]
+                - text: (12 486)
+              - button [ref=e487]:
+                - img [ref=e489]
+          - generic [ref=e494]:
+            - generic [ref=e497]:
+              - link "Названы самые популярные мессенджеры в России Лайфхакер https://lifehacker.ru › ... › Новости" [ref=e499] [cursor=pointer]:
+                - /url: https://lifehacker.ru/top-messendzherov-2025/
+                - heading "Названы самые популярные мессенджеры в России" [level=3] [ref=e500]
+                - generic [ref=e506]:
+                  - generic [ref=e508]: Лайфхакер
+                  - generic [ref=e510]: https://lifehacker.ru › ... › Новости
+              - generic [ref=e511]:
+                - generic [ref=e512]: ·
+                - link "Translate this page" [ref=e513] [cursor=pointer]:
+                  - /url: https://lifehacker.ru/top-messendzherov-2025/
+              - button "About this result" [ref=e514] [cursor=pointer]:
+                - img [ref=e517]
+            - generic [ref=e520]:
+              - generic [ref=e521]: 23 Sept 2025 —
+              - generic [ref=e522]:
+                - text: Аналитики прогнозируют дальнейшее увеличение пользовательской базы
+                - emphasis [ref=e523]: WhatsApp
+                - text: ","
+                - emphasis [ref=e524]: VK
+                - text: ","
+                - emphasis [ref=e525]: Telegram
+                - text: и Max. ...
+                - emphasis [ref=e526]: Telegram
+                - text: ВКонтактеTwitter
+                - emphasis [ref=e527]: Viber
+                - text: YouTube ...
+              - link "Read more" [ref=e528] [cursor=pointer]:
+                - /url: https://lifehacker.ru/top-messendzherov-2025/#:~:text=%D0%90%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D0%BA%D0%B8%20%D0%BF%D1%80%D0%BE%D0%B3%D0%BD%D0%BE%D0%B7%D0%B8%D1%80%D1%83%D1%8E%D1%82%20%D0%B4%D0%B0%D0%BB%D1%8C%D0%BD%D0%B5%D0%B9%D1%88%D0%B5%D0%B5%20%D1%83%D0%B2%D0%B5%D0%BB%D0%B8%D1%87%D0%B5%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D1%8C%D1%81%D0%BA%D0%BE%D0%B9,WhatsApp%2C%20VK%2C%20Telegram%20%D0%B8%20Max.&text=Telegram%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5TwitterViberYouTube%D0%98%D0%BD%D0%B8%D1%86%D0%B8%D0%B0%D0%BBRSS
+          - generic [ref=e532]:
+            - generic [ref=e535]:
+              - 'link "Имя ему — Imo: американский мессенджер вошел в топ-5 ... adpass.ru https://adpass.ru › imo-voshel-v-to..." [ref=e537] [cursor=pointer]':
+                - /url: https://adpass.ru/imo-voshel-v-top5-messengerov-v-rossii/
+                - 'heading "Имя ему — Imo: американский мессенджер вошел в топ-5 ..." [level=3] [ref=e538]'
+                - generic [ref=e544]:
+                  - generic [ref=e546]: adpass.ru
+                  - generic [ref=e548]: https://adpass.ru › imo-voshel-v-to...
+              - generic [ref=e549]:
+                - generic [ref=e550]: ·
+                - link "Translate this page" [ref=e551] [cursor=pointer]:
+                  - /url: https://adpass.ru/imo-voshel-v-top5-messengerov-v-rossii/
+              - button "About this result" [ref=e552] [cursor=pointer]:
+                - img [ref=e555]
+            - generic [ref=e558]:
+              - generic [ref=e559]: 4 Feb 2026 —
+              - generic [ref=e560]:
+                - text: Переломным моментом для Imo в
+                - emphasis [ref=e561]: России
+                - text: стало лето
+                - emphasis [ref=e562]: "2025"
+                - text: года. В августе Роскомнадзор заблокировал голосовые вызовы в
+                - emphasis [ref=e563]: Telegram
+                - text: и
+                - emphasis [ref=e564]: WhatsApp
+                - text: .
+              - link "Read more" [ref=e565] [cursor=pointer]:
+                - /url: https://adpass.ru/imo-voshel-v-top5-messengerov-v-rossii/#:~:text=%D0%9F%D0%B5%D1%80%D0%B5%D0%BB%D0%BE%D0%BC%D0%BD%D1%8B%D0%BC%20%D0%BC%D0%BE%D0%BC%D0%B5%D0%BD%D1%82%D0%BE%D0%BC%20%D0%B4%D0%BB%D1%8F%20Imo%20%D0%B2,%D0%B2%D1%8B%D0%B7%D0%BE%D0%B2%D1%8B%20%D0%B2%20Telegram%20%D0%B8%20WhatsApp.
+          - generic [ref=e569]:
+            - generic [ref=e572]:
+              - link "В России нашли замену WhatsApp и Telegram, и это не ... Главный Региональный https://glavny.tv › ... › Россия" [ref=e574] [cursor=pointer]:
+                - /url: https://glavny.tv/last-news/russia/v-rossii-nashli-zamenu-whatsapp-i-telegram-i-eto-ne-viber-ili-max/
+                - heading "В России нашли замену WhatsApp и Telegram, и это не ..." [level=3] [ref=e575]
+                - generic [ref=e581]:
+                  - generic [ref=e583]: Главный Региональный
+                  - generic [ref=e585]: https://glavny.tv › ... › Россия
+              - generic [ref=e586]:
+                - generic [ref=e587]: ·
+                - link "Translate this page" [ref=e588] [cursor=pointer]:
+                  - /url: https://glavny.tv/last-news/russia/v-rossii-nashli-zamenu-whatsapp-i-telegram-i-eto-ne-viber-ili-max/
+              - button "About this result" [ref=e589] [cursor=pointer]:
+                - img [ref=e592]
+            - generic [ref=e595]:
+              - generic [ref=e596]: 10 Feb 2026 —
+              - generic [ref=e597]:
+                - text: В
+                - emphasis [ref=e598]: России
+                - text: нашли замену
+                - emphasis [ref=e599]: WhatsApp
+                - text: и
+                - emphasis [ref=e600]: Telegram
+                - text: ", и это не"
+                - emphasis [ref=e601]: Viber
+                - text: или MAX ... В конце
+                - emphasis [ref=e602]: "2025"
+                - text: года imo обошел
+                - emphasis [ref=e603]: Viber
+                - text: "*, став пятым по популярности ..."
+              - link "Read more" [ref=e604] [cursor=pointer]:
+                - /url: https://glavny.tv/last-news/russia/v-rossii-nashli-zamenu-whatsapp-i-telegram-i-eto-ne-viber-ili-max/#:~:text=%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%BD%D0%B0%D1%88%D0%BB%D0%B8%20%D0%B7%D0%B0%D0%BC%D0%B5%D0%BD%D1%83%20WhatsApp,%D1%8D%D1%82%D0%BE%20%D0%BD%D0%B5%20Viber%20%D0%B8%D0%BB%D0%B8%20MAX&text=%D0%92%20%D0%BA%D0%BE%D0%BD%D1%86%D0%B5%202025%20%D0%B3%D0%BE%D0%B4%D0%B0%20imo,%D1%81%D0%B2%D1%8F%D0%B7%D1%8C%20%D0%BF%D0%BE%D1%81%D1%80%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%BE%D0%BC%20%D0%B0%D1%83%D0%B4%D0%B8%D0%BE%2D%20%D0%B8%20%D0%B2%D0%B8%D0%B4%D0%B5%D0%BE%D0%B7%D0%B2%D0%BE%D0%BD%D0%BA%D0%BE%D0%B2.
+          - generic [ref=e608]:
+            - generic [ref=e611]:
+              - link "Аудитория мессенджера imo в России выросла в ... Московские новости https://www.mn.ru › short › audit..." [ref=e613] [cursor=pointer]:
+                - /url: https://www.mn.ru/short/auditoriya-messendzhera-imo-v-rossii-vyrosla-v-desyatki-raz-za-neskolko-mesyaczev
+                - heading "Аудитория мессенджера imo в России выросла в ..." [level=3] [ref=e614]
+                - generic [ref=e620]:
+                  - generic [ref=e622]: Московские новости
+                  - generic [ref=e624]: https://www.mn.ru › short › audit...
+              - generic [ref=e625]:
+                - generic [ref=e626]: ·
+                - link "Translate this page" [ref=e627] [cursor=pointer]:
+                  - /url: https://www.mn.ru/short/auditoriya-messendzhera-imo-v-rossii-vyrosla-v-desyatki-raz-za-neskolko-mesyaczev
+              - button "About this result" [ref=e628] [cursor=pointer]:
+                - img [ref=e631]
+            - generic [ref=e634]:
+              - generic [ref=e635]: 4 Feb 2026 —
+              - generic [ref=e636]:
+                - text: ...
+                - emphasis [ref=e637]: аудиторией
+                - text: 94,5
+                - emphasis [ref=e638]: млн
+                - text: пользователей в месяц и
+                - emphasis [ref=e639]: Telegram
+                - text: с 93,6
+                - emphasis [ref=e640]: млн
+                - text: . Далее идут Max с 70
+                - emphasis [ref=e641]: млн
+                - text: и «
+                - emphasis [ref=e642]: VK
+                - text: Мессенджер» с 15,7
+                - emphasis [ref=e643]: млн
+                - text: человек. Взлет imo как ...
+              - link "Read more" [ref=e644] [cursor=pointer]:
+                - /url: https://www.mn.ru/short/auditoriya-messendzhera-imo-v-rossii-vyrosla-v-desyatki-raz-za-neskolko-mesyaczev#:~:text=%D0%9B%D0%B8%D0%B4%D0%B5%D1%80%D0%B0%D0%BC%D0%B8%20%D1%80%D1%8B%D0%BD%D0%BA%D0%B0%20%D0%BF%D0%BE%2D%D0%BF%D1%80%D0%B5%D0%B6%D0%BD%D0%B5%D0%BC%D1%83%20%D0%BE%D1%81%D1%82%D0%B0%D1%8E%D1%82%D1%81%D1%8F%20WhatsApp,%D0%BA%D0%B0%D0%BA%20%D1%81%D0%BB%D0%B5%D0%B4%D1%81%D1%82%D0%B2%D0%B8%D0%B5%20%D0%B1%D0%BB%D0%BE%D0%BA%D0%B8%D1%80%D0%BE%D0%B2%D0%BE%D0%BA%20%D0%B4%D1%80%D1%83%D0%B3%D0%B8%D1%85%20%D0%BF%D0%BB%D0%B0%D1%82%D1%84%D0%BE%D1%80%D0%BC
+          - generic [ref=e648]:
+            - generic [ref=e651]:
+              - link "Мессенджер imo стал пятым по популярности в России 3DNews https://3dnews.ru › messendger-imo..." [ref=e653] [cursor=pointer]:
+                - /url: https://3dnews.ru/1136320/messendger-imo-stal-pyatim-po-populyarnosti-v-rossii-auditoriya-vzletela-v-23-raza-posle-blokirovok-telegram-i-whatsapp
+                - heading "Мессенджер imo стал пятым по популярности в России" [level=3] [ref=e654]
+                - generic [ref=e660]:
+                  - generic [ref=e662]: 3DNews
+                  - generic [ref=e664]: https://3dnews.ru › messendger-imo...
+              - generic [ref=e665]:
+                - generic [ref=e666]: ·
+                - link "Translate this page" [ref=e667] [cursor=pointer]:
+                  - /url: https://3dnews.ru/1136320/messendger-imo-stal-pyatim-po-populyarnosti-v-rossii-auditoriya-vzletela-v-23-raza-posle-blokirovok-telegram-i-whatsapp
+              - button "About this result" [ref=e668] [cursor=pointer]:
+                - img [ref=e671]
+            - generic [ref=e674]:
+              - generic [ref=e675]: 4 Feb 2026 —
+              - generic [ref=e676]:
+                - text: ...
+                - emphasis [ref=e677]: WhatsApp
+                - text: и
+                - emphasis [ref=e678]: Telegram
+                - text: ", она уменьшилась до 333 800 человек. К началу"
+                - emphasis [ref=e679]: "2025"
+                - text: года в
+                - emphasis [ref=e680]: России
+                - text: уже были заблокированы Signal, Discord и
+                - emphasis [ref=e681]: Viber
+                - text: ; в ...
+              - link "Read more" [ref=e682] [cursor=pointer]:
+                - /url: https://3dnews.ru/1136320/messendger-imo-stal-pyatim-po-populyarnosti-v-rossii-auditoriya-vzletela-v-23-raza-posle-blokirovok-telegram-i-whatsapp#:~:text=%D0%92%20%D0%B4%D0%B5%D0%BA%D0%B0%D0%B1%D1%80%D0%B5%202024%20%D0%B3%D0%BE%D0%B4%D0%B0%20%D1%80%D0%BE%D1%81%D1%81%D0%B8%D0%B9%D1%81%D0%BA%D0%B0%D1%8F,%D1%81%D0%B5%D0%B9%D1%87%D0%B0%D1%81%20%D0%BF%D0%BE%D0%BF%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D0%BE%D1%81%D1%82%D1%8C%20%D0%BD%D0%B0%D0%B1%D0%B8%D1%80%D0%B0%D0%B5%D1%82%20%D0%BE%D1%82%D0%B5%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D1%8B%D0%B9%20Max.
+        - generic [ref=e684]:
+          - generic [ref=e685]:
+            - heading "Notices about Filtered Results" [level=2] [ref=e686]
+            - generic [ref=e689]:
+              - text: In response to a legal request submitted to Google, we have removed 10 result(s) from this page. If you wish, you may
+              - link "read more about the request" [ref=e690] [cursor=pointer]:
+                - /url: https://lumendatabase.org/notices/86271817
+              - text: at LumenDatabase.org.
+          - navigation [ref=e691]:
+            - heading "Page navigation" [level=1] [ref=e692]
+            - text: "1"
+            - link "Page 2" [ref=e695] [cursor=pointer]:
+              - /url: /search?q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&ei=les2av3rB6y_wPAPx_6CuQg&start=10&sa=N&sstk=AU9db-C--t5V3MvnyN2LOsqByWRPIMMHO0SiGysj8MgY5NkmOtR9h8pK9_tnsgJDwep00Q1gBqQ_scNrgWtQEleUrbIDYqxZMqnYIA&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQ8tMDegQILRAG
+              - text: "2"
+            - link "Page 3" [ref=e697] [cursor=pointer]:
+              - /url: /search?q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&ei=les2av3rB6y_wPAPx_6CuQg&start=20&sa=N&sstk=AU9db-C--t5V3MvnyN2LOsqByWRPIMMHO0SiGysj8MgY5NkmOtR9h8pK9_tnsgJDwep00Q1gBqQ_scNrgWtQEleUrbIDYqxZMqnYIA&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQ8tMDegQILRAI
+              - text: "3"
+            - link "Page 4" [ref=e699] [cursor=pointer]:
+              - /url: /search?q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&ei=les2av3rB6y_wPAPx_6CuQg&start=30&sa=N&sstk=AU9db-C--t5V3MvnyN2LOsqByWRPIMMHO0SiGysj8MgY5NkmOtR9h8pK9_tnsgJDwep00Q1gBqQ_scNrgWtQEleUrbIDYqxZMqnYIA&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQ8tMDegQILRAK
+              - text: "4"
+            - link "Page 5" [ref=e701] [cursor=pointer]:
+              - /url: /search?q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&ei=les2av3rB6y_wPAPx_6CuQg&start=40&sa=N&sstk=AU9db-C--t5V3MvnyN2LOsqByWRPIMMHO0SiGysj8MgY5NkmOtR9h8pK9_tnsgJDwep00Q1gBqQ_scNrgWtQEleUrbIDYqxZMqnYIA&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQ8tMDegQILRAM
+              - text: "5"
+            - link "Page 6" [ref=e703] [cursor=pointer]:
+              - /url: /search?q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&ei=les2av3rB6y_wPAPx_6CuQg&start=50&sa=N&sstk=AU9db-C--t5V3MvnyN2LOsqByWRPIMMHO0SiGysj8MgY5NkmOtR9h8pK9_tnsgJDwep00Q1gBqQ_scNrgWtQEleUrbIDYqxZMqnYIA&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQ8tMDegQILRAO
+              - text: "6"
+            - link "Page 7" [ref=e705] [cursor=pointer]:
+              - /url: /search?q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&ei=les2av3rB6y_wPAPx_6CuQg&start=60&sa=N&sstk=AU9db-C--t5V3MvnyN2LOsqByWRPIMMHO0SiGysj8MgY5NkmOtR9h8pK9_tnsgJDwep00Q1gBqQ_scNrgWtQEleUrbIDYqxZMqnYIA&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQ8tMDegQILRAQ
+              - text: "7"
+            - link "Page 8" [ref=e707] [cursor=pointer]:
+              - /url: /search?q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&ei=les2av3rB6y_wPAPx_6CuQg&start=70&sa=N&sstk=AU9db-C--t5V3MvnyN2LOsqByWRPIMMHO0SiGysj8MgY5NkmOtR9h8pK9_tnsgJDwep00Q1gBqQ_scNrgWtQEleUrbIDYqxZMqnYIA&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQ8tMDegQILRAS
+              - text: "8"
+            - link "Page 9" [ref=e709] [cursor=pointer]:
+              - /url: /search?q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&ei=les2av3rB6y_wPAPx_6CuQg&start=80&sa=N&sstk=AU9db-C--t5V3MvnyN2LOsqByWRPIMMHO0SiGysj8MgY5NkmOtR9h8pK9_tnsgJDwep00Q1gBqQ_scNrgWtQEleUrbIDYqxZMqnYIA&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQ8tMDegQILRAU
+              - text: "9"
+            - link "Page 10" [ref=e711] [cursor=pointer]:
+              - /url: /search?q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&ei=les2av3rB6y_wPAPx_6CuQg&start=90&sa=N&sstk=AU9db-C--t5V3MvnyN2LOsqByWRPIMMHO0SiGysj8MgY5NkmOtR9h8pK9_tnsgJDwep00Q1gBqQ_scNrgWtQEleUrbIDYqxZMqnYIA&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQ8tMDegQILRAW
+              - text: "10"
+            - heading "Next" [level=2] [ref=e713]:
+              - link "Next" [ref=e714] [cursor=pointer]:
+                - /url: /search?q=%22VK%22+%22Telegram%22+%22WhatsApp%22+%22Viber%22+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F+%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D1%8F+2025+%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2&sca_esv=d3289bdb09452055&sxsrf=APpeQnu_JkXEC6-bTYAzgVL8d805bF1Yeg:1781984149135&ei=les2av3rB6y_wPAPx_6CuQg&start=10&sa=N&sstk=AU9db-C--t5V3MvnyN2LOsqByWRPIMMHO0SiGysj8MgY5NkmOtR9h8pK9_tnsgJDwep00Q1gBqQ_scNrgWtQEleUrbIDYqxZMqnYIA&ved=2ahUKEwi9itGhyJaVAxWsHxAIHUe_IIcQ8NMDegQILRAY
+                - generic [ref=e716]: Next
+        - navigation
+    - contentinfo [ref=e717]:
+      - heading "Footer links" [level=1] [ref=e718]
+      - generic [ref=e722]:
+        - generic [ref=e726]: Results are not personalised
+        - generic [ref=e728]:
+          - text: Finland
+          - generic [ref=e730]:
+            - button "Helsinki - From your IP address" [ref=e732] [cursor=pointer]:
+              - generic [ref=e733]: Helsinki
+              - generic [ref=e735]:
+                - text: "-"
+                - generic [ref=e736]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=e738] [cursor=pointer]: Update location
+        - generic [ref=e741]:
+          - link "Help" [ref=e742] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-FI&fg=1
+          - link "Send feedback" [ref=e743] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e744] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-FI&fg=1
+          - link "Terms" [ref=e745] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-FI&fg=1

@@ -1,0 +1,404 @@
+- generic [active] [ref=e1]:
+  - dialog [ref=e2]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - paragraph [ref=e9]: Корпорация Майкрософт и наши сторонние поставщики используют файлы cookie и аналогичные технологии для предоставления, поддержки и улучшения наших услуг и рекламных объявлений. С вашего согласия мы будем использовать эти данные для персонализации объявлений и связанной с ними аналитики.
+        - paragraph [ref=e10]:
+          - text: Выберите "Принять", чтобы согласиться с этими видами использования, "Отклонить", чтобы отклонить их, или выберите "Другие варианты", чтобы увидеть все доступные варианты. Изменить выбор можно в разделе "Управление файлами cookie" в нижней части этой страницы.
+          - link "Заявление о конфиденциальности" [ref=e11] [cursor=pointer]:
+            - /url: https://go.microsoft.com/fwlink/?LinkId=521839
+      - generic [ref=e12]:
+        - link "Принимаю" [ref=e14] [cursor=pointer]:
+          - /url: "javascript: void(0)"
+        - link "Отклонить" [ref=e16] [cursor=pointer]:
+          - /url: "javascript: void(0)"
+      - link "Дополнительные параметры" [ref=e18] [cursor=pointer]:
+        - /url: "javascript: void(0)"
+  - banner [ref=e19]:
+    - button "Перейти к контенту" [ref=e20] [cursor=pointer]:
+      - generic [ref=e22]: Перейти к контенту
+    - button "Отзыв о доступности" [ref=e23] [cursor=pointer]:
+      - generic [ref=e25]: Отзыв о доступности
+    - generic [ref=e26]:
+      - link "Вернуться к Поиску Bing" [ref=e27] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Вернуться к Поиску Bing" [level=1] [ref=e28]
+      - search [ref=e29]:
+        - button "Поиск" [ref=e32] [cursor=pointer]
+        - searchbox "Введите свой поисковый запрос здесь — пока вы печатаете, будут отображаться предлагаемые варианты" [ref=e33]: microsoft teams bot api 2025 adaptive cards capabilities
+        - button "Поиск с использованием изображения" [ref=e39] [cursor=pointer]
+    - complementary "Награды и предпочтения учетной записи" [ref=e41]:
+      - button "Microsoft Rewards" [ref=e42] [cursor=pointer]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: Rewards
+          - img [ref=e47]
+      - link "Войти" [ref=e59] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic "Войти" [ref=e60]
+    - navigation "Фильтр поиска" [ref=e61]:
+      - list [ref=e62]:
+        - listitem [ref=e63]:
+          - link "Все" [ref=e64] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=e65]:
+          - link "Поиск" [ref=e66] [cursor=pointer]:
+            - /url: /copilotsearch?q=microsoft+teams+bot+api+2025+adaptive+cards+capabilities&FORM=CSSCOP
+            - img [ref=e67]
+            - text: Поиск
+        - listitem [ref=e69]:
+          - link "Видео" [ref=e70] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=634d5911f2977b49da7575e87f2e4399cf1129b618d0a74cb44cf7fcba60e7caJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1taWNyb3NvZnQrdGVhbXMrYm90K2FwaSsyMDI1K2FkYXB0aXZlK2NhcmRzK2NhcGFiaWxpdGllcyZGT1JNPUhEUlNDNA&ntb=1
+        - listitem [ref=e71]:
+          - link "Изображения" [ref=e72] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=9323019d41e78448e918b2899a71e419890f680fdb9d980c397570fe313db1b1JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2ltYWdlcy9zZWFyY2g_cT1taWNyb3NvZnQrdGVhbXMrYm90K2FwaSsyMDI1K2FkYXB0aXZlK2NhcmRzK2NhcGFiaWxpdGllcyZGT1JNPUhEUlNDMw&ntb=1
+        - listitem [ref=e73]:
+          - link "Карты" [ref=e74] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=13d522d7e1344c85735513578b7a9a393177071f9f8385a971bf2d69c08a5ca5JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L21hcHM_cT1taWNyb3NvZnQrdGVhbXMrYm90K2FwaSsyMDI1K2FkYXB0aXZlK2NhcmRzK2NhcGFiaWxpdGllcyZGT1JNPUhEUlNDNg&ntb=1
+        - listitem [ref=e75]:
+          - link "Новости" [ref=e76] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=55c1f007227b91d8ff6d72b78a51406c338ecb0d1a2e04ebaa1b7579e68fec89JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L25ld3Mvc2VhcmNoP3E9bWljcm9zb2Z0K3RlYW1zK2JvdCthcGkrMjAyNSthZGFwdGl2ZStjYXJkcytjYXBhYmlsaXRpZXMmRk9STT1IRFJTQzc&ntb=1
+        - listitem [ref=e77]:
+          - link "Copilot" [ref=e78] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=dbb69f0964e3c17289f5fc687287f6eb0fd7879976ac9768c2ba25f712cb04f1JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2NoYXQ_cHJvbXB0PW1pY3Jvc29mdCt0ZWFtcytib3QrYXBpKzIwMjUrYWRhcHRpdmUrY2FyZHMrY2FwYWJpbGl0aWVzJnNlbmRxdWVyeT0xJkZPUk09U0NDT0RY&ntb=1
+        - listitem [ref=e79]:
+          - button "Еще" [ref=e80] [cursor=pointer]:
+            - img [ref=e82]
+            - text: Еще
+  - generic [ref=e84]:
+    - main "Результаты поиска" [ref=e85]:
+      - generic [ref=e87]: "Приблизительное число результатов: 962"
+      - list [ref=e97]:
+        - listitem [ref=e98]:
+          - generic [ref=e106]:
+            - generic [ref=e109]:
+              - generic [ref=e111]:
+                - button "Нравится" [ref=e112]:
+                  - img [ref=e113]
+                - button "Не нравится" [ref=e115]:
+                  - img [ref=e116]
+              - generic [ref=e120]:
+                - link "An image showing the capabilities required before and after the Teams AI Library v2, including Botbuilder, Adaptive Cards, Teams JS, and more." [ref=e124] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=39d49c0f28b919b6733bc44ad549026bc2e24de4ddcaf4a08cc57082b404281bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2ltYWdlcy9zZWFyY2g_cT1taWNyb3NvZnQrdGVhbXMrYm90K2FwaSsyMDI1K2FkYXB0aXZlK2NhcmRzK2NhcGFiaWxpdGllcyZpZD1DQTQzRkEzQTk0N0YyNDZCNzhFOTZDQkJEQUMyN0JBRTI2NEZFNDlF&ntb=1
+                  - img "An image showing the capabilities required before and after the Teams AI Library v2, including Botbuilder, Adaptive Cards, Teams JS, and more." [ref=e125]
+                - generic [ref=e127]:
+                  - text: It features advanced AI
+                  - strong [ref=e128]: capabilities
+                  - text: ", such as Model Context Protocol (MCP) and Agent-to-Agent communication (A2A), as well as"
+                  - strong [ref=e129]: adaptive cards
+                  - text: ", all of which enable more versatile and powerful agents."
+              - link "Microsoft Announcing the Microsoft Teams SDK (Formerly the Teams AI Library) It features advanced AI capabilities, such as Model Context Protocol (MCP) and Agent-to-Agent communication (A2A), as well as adaptive cards, all of which enable more versatile and…" [ref=e133] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=460a2c24687d9b55f34a3f5181005f6f233943c69a3f00eb942fbb7249e07ad8JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXZibG9ncy5taWNyb3NvZnQuY29tL21pY3Jvc29mdDM2NWRldi9hbm5vdW5jaW5nLXRoZS11cGRhdGVkLXRlYW1zLWFpLWxpYnJhcnktYW5kLW1jcC1zdXBwb3J0LyM6fjp0ZXh0PUl0JTIwZmVhdHVyZXMlMjBhZHZhbmNlZCUyMEFJJTIwY2FwYWJpbGl0aWVzJTJDJTIwc3VjaCUyMGFzJTIwTW9kZWwsb2YlMjB3aGljaCUyMGVuYWJsZSUyMG1vcmUlMjB2ZXJzYXRpbGUlMjBhbmQlMjBwb3dlcmZ1bCUyMGFnZW50cy4&ntb=1
+                - generic [ref=e134]:
+                  - generic [ref=e138]: Microsoft
+                  - generic [ref=e140]: Announcing the Microsoft Teams SDK (Formerly the Teams AI Library)
+                  - generic [ref=e141]: It features advanced AI capabilities, such as Model Context Protocol (MCP) and Agent-to-Agent communication (A2A), as well as adaptive cards, all of which enable more versatile and…
+            - status
+        - listitem [ref=e142]:
+          - link "Microsoft Learn" [ref=e144] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=4fc44065501f5d42d281462ff3f85200eb4b0347214c7c87ea0b9869a7500f15JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL3RlYW1zLXNkay9pbi1kZXB0aC1ndWlkZXMvYWRhcHRpdmUtY2FyZHMvb3ZlcnZpZXc&ntb=1
+            - generic [ref=e149]:
+              - generic [ref=e150]: Microsoft Learn
+              - generic [ref=e152]:
+                - generic [ref=e153]: https://learn.microsoft.com › en-us › microsoftteams › ...
+                - generic [ref=e154]: Перевести этот результат
+          - heading "Adaptive Cards | Microsoft Learn" [level=2] [ref=e155]:
+            - link "Adaptive Cards | Microsoft Learn" [ref=e156] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=4fc44065501f5d42d281462ff3f85200eb4b0347214c7c87ea0b9869a7500f15JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL3RlYW1zLXNkay9pbi1kZXB0aC1ndWlkZXMvYWRhcHRpdmUtY2FyZHMvb3ZlcnZpZXc&ntb=1
+          - paragraph [ref=e158]: 11 июн. 2026 г. · Mastering Adaptive Cards is essential for creating sophisticated, engaging experiences that leverage the full capabilities of the Teams platform. This guide will help you learn how to use …
+          - generic [ref=e159]:
+            - list [ref=e160]:
+              - listitem [ref=e161]:
+                - link "Adaptive Cards for Bot Deve…" [ref=e162] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=04ed8383cf564568e9f422cf456464da1860dc2c6d014bd43e257970069e12d1JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL2FkYXB0aXZlLWNhcmRzL2dldHRpbmctc3RhcnRlZC9ib3Rz&ntb=1
+                - paragraph [ref=e163]: Adaptive Cards are a great fit for Bots. They let you author a card once and have it …
+            - list [ref=e164]:
+              - listitem [ref=e165]:
+                - link "Adaptive Cards Overview" [ref=e166] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=8308530055872f0d12cc74a5de71ef2d6a642686e06c2a2fccedfef86a0f177fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL2FkYXB0aXZlLWNhcmRzLw&ntb=1
+                - paragraph [ref=e167]: "Teams Adaptive Cards: As the digital hub for many modern workers, Teams offers …"
+          - link "Смотреть только результаты от learn.microsoft.com" [ref=e168] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=5bc9b1fd94388a1333cb144e1bdc27408c02f288fe0271dd01616acd58e71df6JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPXNpdGU6bGVhcm4ubWljcm9zb2Z0LmNvbSttaWNyb3NvZnQrdGVhbXMrYm90K2FwaSsyMDI1K2FkYXB0aXZlK2NhcmRzK2NhcGFiaWxpdGllcyZmb3JtPURMSU5LUg&ntb=1
+        - listitem [ref=e169]:
+          - link "Github" [ref=e171] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=3d194f58bbe2b1f0914a837ba5f8196d27706df1fa7fd5d573cfa3a1127fec11JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL01pY3Jvc29mdERvY3MvdGVhbXMtYWktbGlicmFyeS9ibG9iL21haW4vZG9jcy9pbi1kZXB0aC1ndWlkZXMvYWRhcHRpdmUtY2FyZHMvb3ZlcnZpZXcubWQ&ntb=1
+            - generic [ref=e176]:
+              - generic [ref=e177]: Github
+              - generic [ref=e179]:
+                - generic [ref=e180]: https://github.com › MicrosoftDocs › teams-ai-library › ...
+                - generic [ref=e181]: Перевести этот результат
+          - heading "teams-ai-library/docs/in-depth-guides/adaptive-cards/overview" [level=2] [ref=e182]:
+            - link "teams-ai-library/docs/in-depth-guides/adaptive-cards/overview" [ref=e183] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=3d194f58bbe2b1f0914a837ba5f8196d27706df1fa7fd5d573cfa3a1127fec11JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL01pY3Jvc29mdERvY3MvdGVhbXMtYWktbGlicmFyeS9ibG9iL21haW4vZG9jcy9pbi1kZXB0aC1ndWlkZXMvYWRhcHRpdmUtY2FyZHMvb3ZlcnZpZXcubWQ&ntb=1
+          - paragraph [ref=e185]: Adaptive Cards provide a flexible, cross-platform content format for creating rich, interactive experiences. They consist of a customizable body of card elements combined with optional action …
+        - listitem [ref=e186]:
+          - generic [ref=e188]:
+            - heading "Видео Microsoft Teams Bot Api 2025 Adaptive Cards Capabilities" [level=2] [ref=e190]:
+              - link "Видео Microsoft Teams Bot Api 2025 Adaptive Cards Capabilities" [ref=e191] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=306ae118b9f38a77e2338ef471aecc3950b291617601136274e0edef28667decJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1NaWNyb3NvZnQrVGVhbXMrYm90K2FwaSsyMDI1K0FkYXB0aXZlK0NhcmRzK2NhcGFiaWxpdGllcyZxcHZ0PW1pY3Jvc29mdCt0ZWFtcytib3QrYXBpKzIwMjUrYWRhcHRpdmUrY2FyZHMrY2FwYWJpbGl0aWVzJkZPUk09VkRSRQ&ntb=1
+            - generic [ref=e193]:
+              - 'link "Use Adaptive Card Templates to Build Bots in Microsoft Teamsиз YouTube · Длительность: 12 мин8 с · Просмотров: 8тыс. · отправлено: 25 июн. 2020 г. · кем отправлено: Microsoft 365 Developer · Щелкните для воспроизведения. · Gabo Gilabert on the Bot Framework team walks through how to use the Adaptive Cards templates to build a bot in Microsoft Teams and shows the code used. Resources Microsoft Teams docs http://aka.ms/teamsdevdocs Adaptive Cards https://adaptivecards.io Demo is taken from the June Microsoft Teams community call https://youtu.be/ylry3aSd2Oo Stay ..." [ref=e196] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=1dc67737f3b708669e74368d00b3ec338f1269b11ab29b8b12ea627842ec6911JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9bWljcm9zb2Z0K3RlYW1zK2JvdCthcGkrMjAyNSthZGFwdGl2ZStjYXJkcytjYXBhYmlsaXRpZXMmbWlkPTc3MTAxNDVGMjMwOUQwNUUyRUY1NzcxMDE0NUYyMzA5RDA1RTJFRjUmY2h1cmw9aHR0cHMlM2ElMmYlMmZ3d3cueW91dHViZS5jb20lMmZjaGFubmVsJTJmVUNWXzZIT2h3eFlMWEFHZC1KT3FLUG9RJkZPUk09VklSRQ&ntb=1
+                - generic [ref=e197]:
+                  - generic [ref=e206]: 12:08
+                  - generic [ref=e207]:
+                    - generic "Use Adaptive Card Templates to Build Bots in Microsoft Teams" [ref=e208]:
+                      - text: Use
+                      - strong [ref=e209]: Adaptive
+                      - text: Card Templates to Build Bots in
+                      - strong [ref=e210]: Microsoft
+                      - strong [ref=e211]: Teams
+                    - generic [ref=e212]:
+                      - generic [ref=e213]:
+                        - img "Сайт источника видео" [ref=e214]
+                        - text: YouTube · Microsoft 365 Developer
+                      - generic [ref=e215]: "Просмотров: 8тыс. · 25 июн. 2020 г."
+              - 'link "Create Adaptive Cards in MINUTES with Power Automate and Microsoft Teamsиз YouTube · Длительность: 17 мин56 с · Просмотров: 3,5тыс. · отправлено: 11 мес. назад · кем отправлено: Solution Bridge Network · Щелкните для воспроизведения. · Learn how to create Adaptive Cards, integrate them seamlessly into Microsoft Teams, and automate the entire workflow using Power Automate. In this detailed tutorial, we walk you through building dynamic Adaptive Cards, setting up a flow in Power Automate, and sending those cards directly into Teams for approval, feedback, and interaction. If ..." [ref=e218] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=f211ce94ae5fccab082f74182e1497dc277f71abcdaff648d5f60e2023b02f83JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9bWljcm9zb2Z0K3RlYW1zK2JvdCthcGkrMjAyNSthZGFwdGl2ZStjYXJkcytjYXBhYmlsaXRpZXMmbWlkPUQ1QTk0MDNEMDM5QzU0RTAzRkQ4RDVBOTQwM0QwMzlDNTRFMDNGRDgmY2h1cmw9aHR0cHMlM2ElMmYlMmZ3d3cueW91dHViZS5jb20lMmZjaGFubmVsJTJmVUNUWWFaT2ktcWJhcHhkZ3V4MWJOTXp3JkZPUk09VklSRQ&ntb=1
+                - generic [ref=e219]:
+                  - generic [ref=e228]: 17:56
+                  - generic [ref=e229]:
+                    - generic "Create Adaptive Cards in MINUTES with Power Automate and Microsoft Teams" [ref=e230]:
+                      - text: Create
+                      - strong [ref=e231]: Adaptive
+                      - strong [ref=e232]: Cards
+                      - text: in MINUTES with Power Automate and
+                      - strong [ref=e233]: Microsoft
+                      - strong [ref=e234]: Teams
+                    - generic [ref=e235]:
+                      - generic [ref=e236]:
+                        - img "Сайт источника видео" [ref=e237]
+                        - text: YouTube · Solution Bridge Network
+                      - generic [ref=e238]: "Просмотров: 3,5тыс. · 11 мес. назад"
+              - 'link "Feedback bot using the new Adaptive Card capabilitiesиз YouTube · Длительность: 12 мин24 с · Просмотров: 2,5тыс. · отправлено: 4 нояб. 2021 г. · кем отправлено: Microsoft Community Learning · Щелкните для воспроизведения. · In this 12-minute developer-focused demo, Rabia Williams introduces viewers to a bot that operates across Microsoft Teams and Outlook thanks to Universal actions. She showcases 3 Adaptive Card features - Sequential workflow (concurrently awaits/tracks action from initiator and each participant), Up-to-date cards (real-time refresh across all ..." [ref=e241] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=8f86aa2c7b755c7b37b558f45550eb9888c41b8a8e97ac52b1156ef845b49fcaJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9bWljcm9zb2Z0K3RlYW1zK2JvdCthcGkrMjAyNSthZGFwdGl2ZStjYXJkcytjYXBhYmlsaXRpZXMmbWlkPTRBNkZCQjg1MTA2MUI0RUU0RjUzNEE2RkJCODUxMDYxQjRFRTRGNTMmY2h1cmw9aHR0cHMlM2ElMmYlMmZ3d3cueW91dHViZS5jb20lMmZjaGFubmVsJTJmVUNfbUtkaHctVjZDZUNNN2dUb19JeTd3JkZPUk09VklSRQ&ntb=1
+                - generic [ref=e242]:
+                  - generic [ref=e251]: 12:24
+                  - generic [ref=e252]:
+                    - generic "Feedback bot using the new Adaptive Card capabilities" [ref=e253]:
+                      - text: Feedback
+                      - strong [ref=e254]: bot
+                      - text: using the new
+                      - strong [ref=e255]: Adaptive
+                      - text: Card
+                      - strong [ref=e256]: capabilities
+                    - generic [ref=e257]:
+                      - generic [ref=e258]:
+                        - img "Сайт источника видео" [ref=e259]
+                        - text: YouTube · Microsoft Community Learning
+                      - generic [ref=e260]: "Просмотров: 2,5тыс. · 4 нояб. 2021 г."
+        - listitem [ref=e261]:
+          - link "Microsoft Learn" [ref=e263] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=04ed8383cf564568e9f422cf456464da1860dc2c6d014bd43e257970069e12d1JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL2FkYXB0aXZlLWNhcmRzL2dldHRpbmctc3RhcnRlZC9ib3Rz&ntb=1
+            - generic [ref=e268]:
+              - generic [ref=e269]: Microsoft Learn
+              - generic [ref=e271]:
+                - generic [ref=e272]: https://learn.microsoft.com › en-us › adaptive-cards › ...
+                - generic [ref=e273]: Перевести этот результат
+          - heading "Adaptive Cards for Bot Developers - Adaptive Cards | Microsoft Learn" [level=2] [ref=e274]:
+            - link "Adaptive Cards for Bot Developers - Adaptive Cards | Microsoft Learn" [ref=e275] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=04ed8383cf564568e9f422cf456464da1860dc2c6d014bd43e257970069e12d1JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL2FkYXB0aXZlLWNhcmRzL2dldHRpbmctc3RhcnRlZC9ib3Rz&ntb=1
+          - generic [ref=e279]:
+            - generic [ref=e280]:
+              - img [ref=e282] [cursor=pointer]
+              - tablist [ref=e285]:
+                - tab "Overview" [selected] [ref=e286]
+                - tab "Try it out" [ref=e287] [cursor=pointer]
+                - tab "Bot Framework Integration" [ref=e288] [cursor=pointer]
+                - tab "Walkthrough" [ref=e289] [cursor=pointer]
+                - tab "Platform SDKs" [ref=e290] [cursor=pointer]
+                - tab "Channel status" [ref=e291] [cursor=pointer]
+                - tab "Dive in!" [ref=e292] [cursor=pointer]
+              - img [ref=e294] [cursor=pointer]
+            - tabpanel "Overview" [ref=e297]:
+              - list [ref=e298]:
+                - listitem [ref=e299]:
+                  - generic [ref=e300]:
+                    - strong [ref=e301]: Adaptive
+                    - strong [ref=e302]: Cards
+                    - text: are a great fit for
+                    - strong [ref=e303]: Bots
+                    - text: . They let you author a card once and have it render beautifully inside multiple apps, like
+                    - strong [ref=e304]: Microsoft
+                    - strong [ref=e305]: Teams
+                    - text: ", your own website, and more."
+              - 'link "Дополнительно: learn.microsoft.com" [ref=e306] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=04ed8383cf564568e9f422cf456464da1860dc2c6d014bd43e257970069e12d1JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL2FkYXB0aXZlLWNhcmRzL2dldHRpbmctc3RhcnRlZC9ib3Rz&ntb=1
+          - generic [ref=e307]:
+            - generic [ref=e308]:
+              - heading "Пример кода" [level=3] [ref=e309]
+              - generic [ref=e311]:
+                - generic [ref=e312]: "{"
+                - generic [ref=e313]: "\"type\": \"message\","
+                - generic [ref=e314]: "\"text\": \"Plain text is ok, but sometimes I long for more...\""
+                - generic [ref=e315]: "}"
+            - generic [ref=e317]:
+              - 'link "Подробности: Microsoft Docs Подробности: Microsoft Docs" [ref=e318] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=bfc3cf3bebd38952c9cde1240512f5c522a47641eef2714542a6635edcac4830JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kb2NzLm1pY3Jvc29mdC5jb20vdmktdm4vYWRhcHRpdmUtY2FyZHMvZ2V0dGluZy1zdGFydGVkL2JvdHM&ntb=1
+                - text: "Подробности: Microsoft Docs"
+              - generic [ref=e319]:
+                - generic [ref=e320]: Обратная связь
+                - button "Отзыв \"Нравится\"" [ref=e321] [cursor=pointer]
+                - button "Отзыв \"Не нравится\"" [ref=e322] [cursor=pointer]
+        - listitem [ref=e323]:
+          - generic [ref=e324]:
+            - link "Исследуйте это изображение" [ref=e327] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=69k9koGr&id=5D1D5F17C0502B581CFB497C3C26A2CE1E401608&thid=OIP.69k9koGr925aqD2uujSQpgHaEK&mediaurl=https://microsoft.github.io/teams-sdk/img/teams.png&q=microsoft+teams+bot+api+2025+adaptive+cards+capabilities&ck=7B80D75EA8DAEF9663A692382F17C73D&idpp=rc&expw=3840&exph=2160&form=rc2idp
+            - generic [ref=e329]:
+              - link "microsoft.github.io" [ref=e331] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=7b66d22f608772aca65fa4ffb2dfc8503f082625f6dc6a5f99c1327805eaa6c6JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9taWNyb3NvZnQuZ2l0aHViLmlvL3RlYW1zLXNkay9jc2hhcnAvaW4tZGVwdGgtZ3VpZGVzL2FkYXB0aXZlLWNhcmRzLw&ntb=1
+                - generic [ref=e336]:
+                  - generic [ref=e337]: microsoft.github.io
+                  - generic [ref=e339]:
+                    - generic [ref=e340]: https://microsoft.github.io › ... › adaptive-cards
+                    - generic [ref=e341]: Перевести этот результат
+              - heading "Adaptive Cards | Teams SDK - microsoft.github.io" [level=2] [ref=e342]:
+                - link "Adaptive Cards | Teams SDK - microsoft.github.io" [ref=e343] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=7b66d22f608772aca65fa4ffb2dfc8503f082625f6dc6a5f99c1327805eaa6c6JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9taWNyb3NvZnQuZ2l0aHViLmlvL3RlYW1zLXNkay9jc2hhcnAvaW4tZGVwdGgtZ3VpZGVzL2FkYXB0aXZlLWNhcmRzLw&ntb=1
+              - paragraph [ref=e344]: Mastering Adaptive Cards is essential for creating sophisticated, engaging experiences that leverage the full capabilities of the Teams platform. This guide …
+        - listitem [ref=e346]:
+          - generic [ref=e347]:
+            - link "Исследуйте это изображение" [ref=e350] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=GCoYVcDZ&id=ED164DE19E8B30A05094A651EB247AA00E6E05DC&thid=OIP.GCoYVcDZgpx6Vk7paIfGVAHaEK&mediaurl=https://media.licdn.com/dms/image/v2/D5612AQHuHapve9IZHg/article-cover_image-shrink_720_1280/B56ZhNVy2JHkAI-/0/1753644221093?e=2147483647&v=beta&t=zD135R6eLADwI3uL1mbTODStyCLyfPhVzru8BLlSZVs&q=microsoft+teams+bot+api+2025+adaptive+cards+capabilities&ck=2EA293351991E3062DFE6E79329BCE07&idpp=rc&expw=474&exph=266&form=rc2idp
+            - generic [ref=e352]:
+              - link "LinkedIn" [ref=e354] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=d94133d2962c398a7f5d3caded06beeafd4155335f1db6780ac95464eb535c24JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL3B1bHNlL2Zyb20tYm90cy1zY3JvbGxzLXVubGVhc2hpbmctYWRhcHRpdmUtY2FyZHMtbWljcm9zb2Z0LWdhbm5hbWFuZW5pLThucmZj&ntb=1
+                - generic [ref=e359]:
+                  - generic [ref=e360]: LinkedIn
+                  - generic [ref=e362]:
+                    - generic [ref=e363]: https://www.linkedin.com › pulse › from-bots-sc…
+                    - generic [ref=e364]: Перевести этот результат
+              - heading "From Bots to Scrolls — Unleashing Adaptive Cards in …" [level=2] [ref=e365]:
+                - link "From Bots to Scrolls — Unleashing Adaptive Cards in …" [ref=e366] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=d94133d2962c398a7f5d3caded06beeafd4155335f1db6780ac95464eb535c24JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cubGlua2VkaW4uY29tL3B1bHNlL2Zyb20tYm90cy1zY3JvbGxzLXVubGVhc2hpbmctYWRhcHRpdmUtY2FyZHMtbWljcm9zb2Z0LWdhbm5hbWFuZW5pLThucmZj&ntb=1
+              - paragraph [ref=e367]: 28 июл. 2025 г. · “Messages whisper. Cards speak. Adaptive Cards… command.” In a world where flows are silent executors, Adaptive Cards become their voice …
+        - listitem [ref=e369]:
+          - generic [ref=e370]:
+            - link "Исследуйте это изображение" [ref=e373] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=U4mwEdl5&id=CA43FA3A947F246B78E96CBBDAC27BAE264FE49E&thid=OIP.U4mwEdl5qskFr4aYCUl2QgHaEK&mediaurl=https://devblogs.microsoft.com/microsoft365dev/wp-content/uploads/sites/73/2025/05/word-image-24149-1.jpeg&q=microsoft+teams+bot+api+2025+adaptive+cards+capabilities&ck=772613776CC4629919B171E1A905F2FF&idpp=rc&expw=1280&exph=720&form=rc2idp
+            - generic [ref=e375]:
+              - link "Microsoft Developer Blogs" [ref=e377] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=f1623130f2719d98354855364d76cbbc8f5ffafcfce3fd3b6b2d47251bc3d1ecJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXZibG9ncy5taWNyb3NvZnQuY29tL21pY3Jvc29mdDM2NWRldi9hbm5vdW5jaW5nLXRoZS11cGRhdGVkLXRlYW1zLWFpLWxpYnJhcnktYW5kLW1jcC1zdXBwb3J0Lw&ntb=1
+                - generic [ref=e382]:
+                  - generic [ref=e383]: Microsoft Developer Blogs
+                  - generic [ref=e385]:
+                    - generic [ref=e386]: https://devblogs.microsoft.com › ...
+                    - generic [ref=e387]: Перевести этот результат
+              - heading "Announcing the Microsoft Teams SDK (Formerly the …" [level=2] [ref=e388]:
+                - link "Announcing the Microsoft Teams SDK (Formerly the …" [ref=e389] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=f1623130f2719d98354855364d76cbbc8f5ffafcfce3fd3b6b2d47251bc3d1ecJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXZibG9ncy5taWNyb3NvZnQuY29tL21pY3Jvc29mdDM2NWRldi9hbm5vdW5jaW5nLXRoZS11cGRhdGVkLXRlYW1zLWFpLWxpYnJhcnktYW5kLW1jcC1zdXBwb3J0Lw&ntb=1
+              - paragraph [ref=e390]: 18 нояб. 2025 г. · This update makes it easy to generate and send adaptive cards, allowing your agent’s responses to include tables, charts, buttons, and …
+        - listitem [ref=e392]:
+          - generic [ref=e394]:
+            - heading "Люди также спрашивают" [level=2] [ref=e395]:
+              - generic [ref=e396]: Люди также спрашивают
+            - list [ref=e399]:
+              - listitem [ref=e400]:
+                - heading "What are adaptive cards in Microsoft Teams?" [level=3] [ref=e401]:
+                  - button "What are adaptive cards in Microsoft Teams?" [ref=e402] [cursor=pointer]:
+                    - generic [ref=e403]: What are adaptive cards in Microsoft Teams?
+                    - generic:
+                      - img
+              - listitem [ref=e404]:
+                - heading "What are adaptive cards in teams SDK?" [level=3] [ref=e405]:
+                  - button "What are adaptive cards in teams SDK?" [ref=e406] [cursor=pointer]:
+                    - generic [ref=e407]: What are adaptive cards in teams SDK?
+                    - generic:
+                      - img
+              - listitem [ref=e408]:
+                - heading "Are adaptive cards a good fit for bots?" [level=3] [ref=e409]:
+                  - button "Are adaptive cards a good fit for bots?" [ref=e410] [cursor=pointer]:
+                    - generic [ref=e411]: Are adaptive cards a good fit for bots?
+                    - generic:
+                      - img
+              - listitem [ref=e412]:
+                - heading "What are adaptive cards in Python teams SDK?" [level=3] [ref=e413]:
+                  - button "What are adaptive cards in Python teams SDK?" [ref=e414] [cursor=pointer]:
+                    - generic [ref=e415]: What are adaptive cards in Python teams SDK?
+                    - generic:
+                      - img
+        - listitem [ref=e417]:
+          - generic [ref=e418]:
+            - link "Исследуйте это изображение" [ref=e421] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=69k9koGr&id=5D1D5F17C0502B581CFB497C3C26A2CE1E401608&thid=OIP.69k9koGr925aqD2uujSQpgHaEK&mediaurl=https://microsoft.github.io/teams-sdk/img/teams.png&q=microsoft+teams+bot+api+2025+adaptive+cards+capabilities&ck=7B80D75EA8DAEF9663A692382F17C73D&idpp=rc&expw=3840&exph=2160&form=rc2idp
+            - generic [ref=e423]:
+              - link "microsoft.github.io" [ref=e425] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=793d80e016418ff8cc17c3b9add1a552aacc82942a40f651405200427c44d7d0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9taWNyb3NvZnQuZ2l0aHViLmlvL3RlYW1zLXNkay9weXRob24vaW4tZGVwdGgtZ3VpZGVzLw&ntb=1
+                - generic [ref=e430]:
+                  - generic [ref=e431]: microsoft.github.io
+                  - generic [ref=e433]:
+                    - generic [ref=e434]: https://microsoft.github.io › teams-sdk › python …
+                    - generic [ref=e435]: Перевести этот результат
+              - heading "In-Depth Guides | Teams SDK - microsoft.github.io" [level=2] [ref=e436]:
+                - link "In-Depth Guides | Teams SDK - microsoft.github.io" [ref=e437] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=793d80e016418ff8cc17c3b9add1a552aacc82942a40f651405200427c44d7d0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9taWNyb3NvZnQuZ2l0aHViLmlvL3RlYW1zLXNkay9weXRob24vaW4tZGVwdGgtZ3VpZGVzLw&ntb=1
+              - paragraph [ref=e438]: Learn how to implement AI-powered bots, create adaptive cards, manage authentication flows, and build sophisticated message extensions. Each guide …
+        - listitem [ref=e440]:
+          - link "Microsoft Learn" [ref=e442] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=8308530055872f0d12cc74a5de71ef2d6a642686e06c2a2fccedfef86a0f177fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL2FkYXB0aXZlLWNhcmRzLw&ntb=1
+            - generic [ref=e447]:
+              - generic [ref=e448]: Microsoft Learn
+              - generic [ref=e450]:
+                - generic [ref=e451]: https://learn.microsoft.com › en-us › adaptive-cards
+                - generic [ref=e452]: Перевести этот результат
+          - heading "Adaptive Cards Overview - Adaptive Cards | Microsoft Learn" [level=2] [ref=e453]:
+            - link "Adaptive Cards Overview - Adaptive Cards | Microsoft Learn" [ref=e514] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=8308530055872f0d12cc74a5de71ef2d6a642686e06c2a2fccedfef86a0f177fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL2FkYXB0aXZlLWNhcmRzLw&ntb=1
+          - paragraph [ref=e455]: "9 дек. 2025 г. · Teams Adaptive Cards: As the digital hub for many modern workers, Teams offers multiple extensibilty points for apps to integrate with. A conversational agent powered by Adaptive …"
+        - listitem [ref=e456]:
+          - generic [ref=e457]:
+            - link "Исследуйте это изображение" [ref=e460] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=JRdtDK25&id=B7B12D1BAD8F14754A9056B443FE377033DD5640&thid=OIP.JRdtDK25oGOTblNFIqQy9wHaEK&mediaurl=https://strprdomnicon.blob.core.windows.net/7f395a6e-b4e5-420c-881f-b82cc24bdb9c/91347767-fb61-43a2-ac10-09d82c3dc334.png&q=microsoft+teams+bot+api+2025+adaptive+cards+capabilities&ck=9EB44C5FB4B9F7EC933728C04E58D910&idpp=rc&expw=1280&exph=720&form=rc2idp
+            - generic [ref=e462]:
+              - link "receiptroller.co" [ref=e464] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=2e7c35cb5394f6a711ae1da9cd14db7a35968446c1732d5adcb0cc43bfe92ad7JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9yZWNlaXB0cm9sbGVyLmNvL2VuL3RlY2hub3Rlcy9wL3RlYW1zLWJvdC1jYXBhYmlsaXRpZXM&ntb=1
+                - generic [ref=e469]:
+                  - generic [ref=e470]: receiptroller.co
+                  - generic [ref=e472]:
+                    - generic [ref=e473]: https://receiptroller.co › ... › teams-bot-capabilit…
+                    - generic [ref=e474]: Перевести этот результат
+              - heading "Overview of Microsoft Teams Bot …" [level=2] [ref=e475]:
+                - link "Overview of Microsoft Teams Bot …" [ref=e476] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=2e7c35cb5394f6a711ae1da9cd14db7a35968446c1732d5adcb0cc43bfe92ad7JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9yZWNlaXB0cm9sbGVyLmNvL2VuL3RlY2hub3Rlcy9wL3RlYW1zLWJvdC1jYXBhYmlsaXRpZXM&ntb=1
+              - paragraph [ref=e477]: Explore the full range of capabilities bots can offer in Microsoft Teams. This section breaks down interactive contexts, features like Adaptive Cards, proactive …
+        - listitem [ref=e479]:
+          - link "Github" [ref=e481] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=d6225fe0661c95f18dcfe7c8ec98350b700405c8c60775e543cc811697c2a018JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL21pY3Jvc29mdC90ZWFtcy1zZGsvdHJlZS9tYWluL3RlYW1zLm1kL3NyYy9wYWdlcy90ZW1wbGF0ZXMvaW4tZGVwdGgtZ3VpZGVzL2FkYXB0aXZlLWNhcmRz&ntb=1
+            - generic [ref=e486]:
+              - generic [ref=e487]: Github
+              - generic [ref=e489]:
+                - generic [ref=e490]: https://github.com › microsoft › teams-sdk › tree › main › ...
+                - generic [ref=e491]: Перевести этот результат
+          - heading "teams-sdk/teams.md/src/pages/templates/in-depth-guides/adaptive …" [level=2] [ref=e492]:
+            - link "teams-sdk/teams.md/src/pages/templates/in-depth-guides/adaptive …" [ref=e515] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=d6225fe0661c95f18dcfe7c8ec98350b700405c8c60775e543cc811697c2a018JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL21pY3Jvc29mdC90ZWFtcy1zZGsvdHJlZS9tYWluL3RlYW1zLm1kL3NyYy9wYWdlcy90ZW1wbGF0ZXMvaW4tZGVwdGgtZ3VpZGVzL2FkYXB0aXZlLWNhcmRz&ntb=1
+          - paragraph [ref=e494]: Mastering Adaptive Cards is essential for creating sophisticated, engaging experiences that leverage the full capabilities of the Teams platform. This guide will help you learn how to use them in this SDK. …
+        - listitem [ref=e495]:
+          - link "Некоторые результаты удалены" [ref=e497] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=344d5a01c9020ae0f64570329c97724738ffd487613df9d1570aabd450329c84JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9NjE3MzUw&ntb=1
+        - listitem [ref=e498]:
+          - navigation "Другие результаты по запросу microsoft teams bot api 2025 adaptive cards capabilities":
+            - list:
+              - listitem [ref=e499]:
+                - generic "Страница 1" [ref=e500]: "1"
+              - listitem [ref=e501]:
+                - link "Страница 2" [ref=e502] [cursor=pointer]:
+                  - /url: /search?q=microsoft+teams+bot+api+2025+adaptive+cards+capabilities&FPIG=6A1BB8DAEC504ECEBF77C02E7A4E6DC2&first=11&FORM=PERE
+                  - text: "2"
+              - listitem [ref=e503]:
+                - link "Страница 3" [ref=e504] [cursor=pointer]:
+                  - /url: /search?q=microsoft+teams+bot+api+2025+adaptive+cards+capabilities&FPIG=6A1BB8DAEC504ECEBF77C02E7A4E6DC2&first=21&FORM=PERE1
+                  - text: "3"
+              - listitem [ref=e505]:
+                - link "Следующая страница" [ref=e506] [cursor=pointer]:
+                  - /url: /search?q=microsoft+teams+bot+api+2025+adaptive+cards+capabilities&FPIG=6A1BB8DAEC504ECEBF77C02E7A4E6DC2&first=11&FORM=PORE
+    - complementary "Дополнительные результаты" [ref=e507]:
+      - list
+  - contentinfo [ref=e508]:
+    - generic [ref=e509]:
+      - list:
+        - listitem [ref=e510]:
+          - link "Конфиденциальность" [ref=e511] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=21b033e4690739c4b00c739e1cf31e392a048d8ccb3ae7bae1d3804b0b25c834JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=e512]:
+          - link "Условия" [ref=e513] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=35dbb4284fed750b180ae689312f45529a3b13fc05a5d31d6bb10222597c960fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1

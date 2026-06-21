@@ -1,0 +1,524 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button "Перейти к контенту" [ref=e3] [cursor=pointer]:
+      - generic [ref=e5]: Перейти к контенту
+    - button "Отзыв о доступности" [ref=e6] [cursor=pointer]:
+      - generic [ref=e8]: Отзыв о доступности
+    - generic [ref=e9]:
+      - link "Вернуться к Поиску Bing" [ref=e10] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Вернуться к Поиску Bing" [level=1] [ref=e11]
+      - search [ref=e12]:
+        - button "Поиск" [ref=e15] [cursor=pointer]
+        - searchbox "Введите свой поисковый запрос здесь — пока вы печатаете, будут отображаться предлагаемые варианты" [ref=e16]: telegram bot api methods list inline keyboard payments file size limit
+        - button "Поиск с использованием изображения" [ref=e22] [cursor=pointer]
+    - complementary "Награды и предпочтения учетной записи" [ref=e24]:
+      - button "Microsoft Rewards"
+      - link "Войти" [ref=e25] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic "Войти" [ref=e26]
+    - navigation "Фильтр поиска" [ref=e27]:
+      - list [ref=e28]:
+        - listitem [ref=e29]:
+          - link "Все" [ref=e30] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=e31]:
+          - link "Поиск" [ref=e32] [cursor=pointer]:
+            - /url: /copilotsearch?q=telegram+bot+api+methods+list+inline+keyboard+payments+file+size+limit&FORM=CSSCOP
+            - img [ref=e33]
+            - text: Поиск
+        - listitem [ref=e35]:
+          - link "Изображения" [ref=e36] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=66eba47281354fffcb38318e5c51d72859cd5dce046d0bd8065e94fad57c16cbJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2ltYWdlcy9zZWFyY2g_cT10ZWxlZ3JhbStib3QrYXBpK21ldGhvZHMrbGlzdCtpbmxpbmUra2V5Ym9hcmQrcGF5bWVudHMrZmlsZStzaXplK2xpbWl0JkZPUk09SERSU0Mz&ntb=1
+        - listitem [ref=e37]:
+          - link "Видео" [ref=e38] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=b3d249cd2457ebfc81b32c2d3eeb50000184e5687321d87d11da6c4bce005d48JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9zZWFyY2g_cT10ZWxlZ3JhbStib3QrYXBpK21ldGhvZHMrbGlzdCtpbmxpbmUra2V5Ym9hcmQrcGF5bWVudHMrZmlsZStzaXplK2xpbWl0JkZPUk09SERSU0M0&ntb=1
+        - listitem [ref=e39]:
+          - link "Карты" [ref=e40] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=8b391748f8dbb0c97a6556f55fb1319183f6f1c580c821985b1cfaa496de2b24JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L21hcHM_cT10ZWxlZ3JhbStib3QrYXBpK21ldGhvZHMrbGlzdCtpbmxpbmUra2V5Ym9hcmQrcGF5bWVudHMrZmlsZStzaXplK2xpbWl0JkZPUk09SERSU0M2&ntb=1
+        - listitem [ref=e41]:
+          - link "Новости" [ref=e42] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=4aa9580ef072cc6c1f99b640060ec3633fa3f1ea6d7a5ae5c4af3427a312aa30JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L25ld3Mvc2VhcmNoP3E9dGVsZWdyYW0rYm90K2FwaSttZXRob2RzK2xpc3QraW5saW5lK2tleWJvYXJkK3BheW1lbnRzK2ZpbGUrc2l6ZStsaW1pdCZGT1JNPUhEUlNDNw&ntb=1
+        - listitem [ref=e43]:
+          - link "Copilot" [ref=e44] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=eaa446f0280cf704208474738309ce5d12c599de22d404538e1c1a9a1e04d6d1JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2NoYXQ_cHJvbXB0PXRlbGVncmFtK2JvdCthcGkrbWV0aG9kcytsaXN0K2lubGluZStrZXlib2FyZCtwYXltZW50cytmaWxlK3NpemUrbGltaXQmc2VuZHF1ZXJ5PTEmRk9STT1TQ0NPRFg&ntb=1
+        - listitem [ref=e45]:
+          - button "Еще" [ref=e46] [cursor=pointer]:
+            - img [ref=e48]
+            - text: Еще
+  - main "Результаты поиска" [ref=e51]:
+    - generic [ref=e52]:
+      - list [ref=e53]:
+        - listitem [ref=e54]:
+          - generic [ref=e56]:
+            - region "Поиск Copilot" [ref=e57]:
+              - list [ref=e64]:
+                - listitem [ref=e65]:
+                  - generic [ref=e91]:
+                    - status
+                    - generic [ref=e92]:
+                      - button "Отменить" [disabled] [ref=e94]:
+                        - generic:
+                          - img
+                        - generic [ref=e95]: Отменить
+                      - button "Повторить" [disabled] [ref=e97]:
+                        - generic:
+                          - img
+                        - generic [ref=e98]: Повторить
+                      - button "Копировать" [disabled] [ref=e100]:
+                        - generic:
+                          - img
+                        - generic [ref=e101]: Копировать
+                      - button "Экспортировать" [disabled] [ref=e103]:
+                        - generic:
+                          - img
+                        - generic [ref=e104]: Экспортировать
+                      - generic [ref=e105]:
+                        - generic:
+                          - img
+                        - textbox "Что вы хотите изменить?" [disabled] [ref=e106]
+                      - button "Переписать" [disabled] [ref=e108]:
+                        - generic:
+                          - img
+                        - generic [ref=e109]: Переписать
+                      - group [ref=e110]:
+                        - group [ref=e111]:
+                          - button "Инструменты тестирования" [disabled] [ref=e113]:
+                            - generic [ref=e114]: Инструменты тестирования
+                            - generic:
+                              - img
+                      - group [ref=e115]:
+                        - group [ref=e116]:
+                          - button "Дополнительные действия" [disabled] [ref=e118]:
+                            - generic [ref=e119]: Дополнительные действия
+                            - generic:
+                              - img
+                      - generic [ref=e122]:
+                        - generic [ref=e123]: Попробовать другие шаблоны
+                        - combobox "Попробовать другие шаблоны" [ref=e124] [cursor=pointer]:
+                          - generic [ref=e126]: Попробовать другие шаблоны
+                          - generic:
+                            - img
+            - generic [ref=e133]:
+              - button [ref=e134]
+              - button [ref=e137]
+              - list "Используйте клавиши со стрелками для навигации" [ref=e142]:
+                - listitem [ref=e143]:
+                  - link "Best practices for Telegram bots" [ref=e144] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=cd2ab12c80f2a0330e61eddf534b9895bb7b3b448da9f41c5f5d67ac34298569JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2NvcGlsb3RzZWFyY2g_cT1CZXN0K3ByYWN0aWNlcytmb3IrVGVsZWdyYW0rYm90cyZmb3JtPUNTU0FOUw&ntb=1
+                    - generic [ref=e146]: Best practices for Telegram bots
+                - listitem [ref=e147]:
+                  - link "AI-powered Telegram bot features" [ref=e148] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=f5de7cfc725a03f9e4839d611e33527487daa1820bb5467fc0aab7e303a289d9JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2NvcGlsb3RzZWFyY2g_cT1BSS1wb3dlcmVkK1RlbGVncmFtK2JvdCtmZWF0dXJlcyZmb3JtPUNTU0FOUw&ntb=1
+                    - generic [ref=e150]: AI-powered Telegram bot features
+                - listitem [ref=e151]:
+                  - link "Interactive Telegram bot examples" [ref=e152] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=078325360fca2fbd83b0b3baf198f357706205c250f70e3e25f92d2e5c845ec9JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2NvcGlsb3RzZWFyY2g_cT1JbnRlcmFjdGl2ZStUZWxlZ3JhbStib3QrZXhhbXBsZXMmZm9ybT1DU1NBTlM&ntb=1
+                    - generic [ref=e154]: Interactive Telegram bot examples
+      - list [ref=e157]:
+        - listitem [ref=e158]:
+          - generic [ref=e159]:
+            - generic [ref=e165]:
+              - heading "Telegram Bot API File Size Limit" [level=2] [ref=e167]:
+                - link "Telegram Bot API File Size Limit" [ref=e168] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=d9d797fbae6e6ee5b8984c133dfc6c581bae511a23cf78b6712b96b92131ccacJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9zdGFja292ZXJmbG93Lm9yZy5jbi9xdWVzdGlvbnMvNjM0MTA0MDg&ntb=1
+              - generic [ref=e169]:
+                - superscript [ref=e170]:
+                  - link "1" [ref=e171] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=d9d797fbae6e6ee5b8984c133dfc6c581bae511a23cf78b6712b96b92131ccacJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9zdGFja292ZXJmbG93Lm9yZy5jbi9xdWVzdGlvbnMvNjM0MTA0MDg&ntb=1
+                - superscript [ref=e172]:
+                  - link "2" [ref=e173] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=d2ad7fc0e8315a9e97ca7a7758c474c95e2650027e8d04c17bc9db84919d5c97JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvNzY2MzQ4MjkvaG93LWktY2FuLWRvd25sb2FkLWZpbGUtbW9yZS10aGFuLTIwLW1iLWZyb20tYm90LXVzaW5nLXB5dGhvbg&ntb=1
+                - superscript [ref=e174]:
+                  - link "3" [ref=e175] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=a3b4a94ed40c70592c985caf0ddd3ea39df879edab2673c910497853aa1aa45eJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuamF2YXRoaW5raW5nLmNvbS9ibG9nL2hvdy10by1zZW5kLWxhcmdlLWZpbGUtd2l0aC10ZWxlZ3JhbS1ib3QtYXBpLw&ntb=1
+              - generic [ref=e176]:
+                - paragraph [ref=e179]:
+                  - text: Telegram’s
+                  - strong [ref=e180]: official Bot API
+                  - text: enforces strict file size limits —
+                  - strong [ref=e181]: 20 MB for downloads
+                  - text: and
+                  - strong [ref=e182]: 50 MB for uploads
+                  - text: via its HTTP endpoints. This restriction exists because the Bot API acts as a simplified HTTP layer over Telegram’s core MTProto protocol, optimized for lightweight bot operations.
+                - paragraph [ref=e185]:
+                  - text: If you try to download a file larger than 20 MB using the standard
+                  - emphasis [ref=e186]: getFile
+                  - text: "method, you’ll receive an error like:"
+                - generic [ref=e187]:
+                  - generic [ref=e191]: "{\"ok\": false, \"error_code\": 400, \"description\": \"Bad Request: file is too big\"}"
+                  - button "Копировать" [ref=e196] [cursor=pointer]:
+                    - img "Копировать" [ref=e197]
+                - paragraph [ref=e200]:
+                  - strong [ref=e201]: Bypassing the 20 MB Limit
+                - paragraph [ref=e204]:
+                  - text: To work with larger files (up to
+                  - strong [ref=e205]: 2 GB
+                  - text: ", same as regular Telegram clients), you must bypass the HTTP Bot API and use the"
+                  - strong [ref=e206]: Telegram Core API
+                  - text: "directly via the MTProto protocol. This can be done with libraries such as:"
+                - list [ref=e209]:
+                  - listitem [ref=e210]:
+                    - paragraph [ref=e211]:
+                      - strong [ref=e212]: Telethon
+                      - text: (Python)
+                  - listitem [ref=e213]:
+                    - paragraph [ref=e214]:
+                      - strong [ref=e215]: Pyrogram
+                      - text: (Python)
+                  - listitem [ref=e216]:
+                    - paragraph [ref=e217]:
+                      - strong [ref=e218]: MadelineProto
+                      - text: (PHP)
+                  - listitem [ref=e219]:
+                    - paragraph [ref=e220]:
+                      - strong [ref=e221]: Kotlogram
+                      - text: (Kotlin)
+                  - listitem [ref=e222]:
+                    - paragraph [ref=e223]:
+                      - strong [ref=e224]: tdlib
+                      - text: (C++/Python bindings)
+                - paragraph [ref=e227]: These libraries connect as a full Telegram client (bot or user) and are not bound by the Bot API’s file size limits.
+                - paragraph [ref=e230]:
+                  - strong [ref=e231]: Example with Pyrogram (Python)
+            - generic [ref=e233]:
+              - generic [ref=e234]: Обратная связь
+              - button "Отзыв \"Нравится\"" [ref=e235] [cursor=pointer]
+              - button "Отзыв \"Не нравится\"" [ref=e236] [cursor=pointer]
+        - listitem [ref=e237]:
+          - link "Telegram APIs" [ref=e239] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=5055b1095b22dbb71ce975b44c6603b3a557fb3ed63fd4a1b34153b594cabb4fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jb3JlLnRlbGVncmFtLm9yZy9ib3RzL2FwaQ&ntb=1
+            - generic [ref=e244]:
+              - generic [ref=e245]: Telegram APIs
+              - generic [ref=e247]:
+                - generic [ref=e248]: https://core.telegram.org › bots › api
+                - generic [ref=e249]: Перевести этот результат
+          - heading "Telegram Bot API" [level=2] [ref=e250]:
+            - link "Telegram Bot API" [ref=e251] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=5055b1095b22dbb71ce975b44c6603b3a557fb3ed63fd4a1b34153b594cabb4fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jb3JlLnRlbGVncmFtLm9yZy9ib3RzL2FwaQ&ntb=1
+          - paragraph [ref=e253]: The Bot API is an HTTP-based interface created for developers keen on building bots for Telegram. To learn how to create and set up a bot, please consult our Introduction to Bots and Bot FAQ.
+          - generic [ref=e254]:
+            - list [ref=e255]:
+              - listitem [ref=e256]:
+                - link "Inline Bots" [ref=e257] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=463e5603cc5cb076edac622c09918b459079a5341996eb53173aee2f66ae7fb7JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jb3JlLnRlbGVncmFtLm9yZy9ib3RzL2lubGluZQ&ntb=1
+                - paragraph [ref=e258]: "Inline bots: A new way to interact with bots and send bot-generated content to any …"
+              - listitem [ref=e259]:
+                - link "Apps" [ref=e260] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=48246a094eb0a1fe59d58d363198c47fdb011f507f202ffc08edb2ad291ae60aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly90ZWxlZ3JhbS5vcmcvYXBwcw&ntb=1
+                - paragraph [ref=e261]: Telegram apps are open source and support reproducible builds. Anyone can …
+              - listitem [ref=e262]:
+                - link "Authorization" [ref=e263] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=f3d05d89d9911900328148dd59b7c3d403cf1725137e52044160b2699a377140JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9teS50ZWxlZ3JhbS5vcmcvYXV0aA&ntb=1
+                - paragraph [ref=e264]: Delete Account or Manage Apps Log in here to manage your apps using …
+              - listitem [ref=e265]:
+                - link "Animated" [ref=e266] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=b8d0f7eb69c7004e2b5c6345223dd63aef2371a549ef5688a0a797b5901cd5deJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly90ZWxlZ3JhbS5vcmcvYmxvZy9hbmltYXRlZC1zdGlja2Vycw&ntb=1
+                - paragraph [ref=e267]: We launched stickers back in January 2015. Since then, the Telegram sticker format …
+            - list [ref=e268]:
+              - listitem [ref=e269]:
+                - link "Bot FAQ" [ref=e270] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=017a68640caf4dc18bc30d1bb1cf83e6eaebfb179c4982faa830fcd483a1ca7fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jb3JlLnRlbGVncmFtLm9yZy9ib3RzL2ZhcQ&ntb=1
+                - paragraph [ref=e271]: Bots with increased limits are only charged for messages that are broadcasted …
+              - listitem [ref=e272]:
+                - link "Amazing Guide to Webhooks" [ref=e273] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=02f92a4ba2a72aa27d98e898c60160f70204a07ed98bbdcf4d3990082d3fd7b2JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jb3JlLnRlbGVncmFtLm9yZy9ib3RzL3dlYmhvb2tz&ntb=1
+                - paragraph [ref=e274]: We currently support two ways of processing bot updates, getUpdates and …
+              - listitem [ref=e275]:
+                - link "Bot API Changelog" [ref=e276] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=8d876427f58a2575b3907e983721bab03ab422c81ca18070cdc30de81cd5a56cJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jb3JlLnRlbGVncmFtLm9yZy9ib3RzL2FwaS1jaGFuZ2Vsb2c&ntb=1
+                - paragraph [ref=e277]: Bot API 8.2 Added the methods verifyUser, verifyChat, removeUserVerification and …
+              - listitem [ref=e278]:
+                - link "Live Locations" [ref=e279] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=e698d85b26c170e7931876d1c1ffee531a084f2e8fa5352ae05f2503cf529d7fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly90ZWxlZ3JhbS5vcmcvYmxvZy9saXZlLWxvY2F0aW9ucw&ntb=1
+                - paragraph [ref=e280]: Live Locations, Media Player and Languages Starting with Telegram 4.4, …
+          - link "Смотреть только результаты от core.telegram.org" [ref=e281] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=47647db979619bfb96b4d9dfcc5e2f0a9d99804338ce8144dda75309cb9fc8e4JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPXNpdGU6Y29yZS50ZWxlZ3JhbS5vcmcrdGVsZWdyYW0rYm90K2FwaSttZXRob2RzK2xpc3QraW5saW5lK2tleWJvYXJkK3BheW1lbnRzK2ZpbGUrc2l6ZStsaW1pdCZmb3JtPURMSU5LUg&ntb=1
+        - listitem [ref=e282]:
+          - link "bot-market.net" [ref=e284] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=84eea68229957a8589e13bba659b3b899c73a3c8bce78d7fac438dff654b281aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9ib3QtbWFya2V0Lm5ldC9oZWxwL3RlbGVncmFtLWxpbWl0Lw&ntb=1
+            - generic [ref=e289]:
+              - generic [ref=e290]: bot-market.net
+              - generic [ref=e292]:
+                - generic [ref=e293]: https://bot-market.net › help › telegram-limit
+                - generic [ref=e294]: Перевести этот результат
+          - 'heading "Telegram limits and restrictions: reference for users and bot" [level=2] [ref=e295]':
+            - 'link "Telegram limits and restrictions: reference for users and bot" [ref=e296] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=84eea68229957a8589e13bba659b3b899c73a3c8bce78d7fac438dff654b281aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9ib3QtbWFya2V0Lm5ldC9oZWxwL3RlbGVncmFtLWxpbWl0Lw&ntb=1
+          - paragraph [ref=e298]: "This page collects the main Telegram limits and restrictions: message and caption length, file sizes, how many channels and groups you can be in, bot and Bot API limits, stories, stars, and more. Use the …"
+        - listitem [ref=e299]:
+          - link "javathinking.com" [ref=e301] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=a3b4a94ed40c70592c985caf0ddd3ea39df879edab2673c910497853aa1aa45eJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuamF2YXRoaW5raW5nLmNvbS9ibG9nL2hvdy10by1zZW5kLWxhcmdlLWZpbGUtd2l0aC10ZWxlZ3JhbS1ib3QtYXBpLw&ntb=1
+            - generic [ref=e306]:
+              - generic [ref=e307]: javathinking.com
+              - generic [ref=e309]:
+                - generic [ref=e310]: https://www.javathinking.com › blog › how-to-send...
+                - generic [ref=e311]: Перевести этот результат
+          - 'heading "How to Send Large Files with Telegram Bot API: Bypass 50MB Limit …" [level=2] [ref=e312]':
+            - 'link "How to Send Large Files with Telegram Bot API: Bypass 50MB Limit …" [ref=e313] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=a3b4a94ed40c70592c985caf0ddd3ea39df879edab2673c910497853aa1aa45eJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuamF2YXRoaW5raW5nLmNvbS9ibG9nL2hvdy10by1zZW5kLWxhcmdlLWZpbGUtd2l0aC10ZWxlZ3JhbS1ib3QtYXBpLw&ntb=1
+          - paragraph [ref=e315]: "16 янв. 2026 г. · In this guide, we’ll walk through the entire process: from understanding the limitations to setting up your environment, authenticating with Telegram’s core API, and sending large files …"
+        - listitem [ref=e316]:
+          - link "Stack Overflow" [ref=e318] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=0929fea5d9bbbdcf306f5730d1ee66f7b94f98cd5623a4979e065e5e39558bb8JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvNTIyODgyMzEvaG93LXRvLXNlbmQtbGFyZ2UtZmlsZS13aXRoLXRlbGVncmFtLWJvdC1hcGk&ntb=1
+            - generic [ref=e323]:
+              - generic [ref=e324]: Stack Overflow
+              - generic [ref=e326]:
+                - generic [ref=e327]: https://stackoverflow.com › questions
+                - generic [ref=e328]: Перевести этот результат
+          - heading "How to send large file with Telegram Bot API? - Stack Overflow" [level=2] [ref=e329]:
+            - link "How to send large file with Telegram Bot API? - Stack Overflow" [ref=e330] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=0929fea5d9bbbdcf306f5730d1ee66f7b94f98cd5623a4979e065e5e39558bb8JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvNTIyODgyMzEvaG93LXRvLXNlbmQtbGFyZ2UtZmlsZS13aXRoLXRlbGVncmFtLWJvdC1hcGk&ntb=1
+          - generic [ref=e331]:
+            - paragraph [ref=e332]: 12 сент. 2018 г. · Telegram bot has a file size limit for sending in 50MB. I need to send large files. Is there any way around this? I know about this project https://github.com/pwrtelegram/pwrtelegram but …
+            - generic [ref=e334]:
+              - list [ref=e335]:
+                - listitem [ref=e336]:
+                  - generic [ref=e337]: "Отзывы: 3"
+              - list
+        - listitem [ref=e338]:
+          - link "deepwiki.com" [ref=e340] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=d08ec016a1d3dede5516b8449c61c7c2d723fd836a920b94099030c3f39bb834JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZWVwd2lraS5jb20vVGVsZWdyYW1Cb3QvQXBpLzUtYXBpLW1ldGhvZHMtcmVmZXJlbmNl&ntb=1
+            - generic [ref=e345]:
+              - generic [ref=e346]: deepwiki.com
+              - generic [ref=e348]:
+                - generic [ref=e349]: https://deepwiki.com › TelegramBot › Api
+                - generic [ref=e350]: Перевести этот результат
+          - heading "API Methods Reference | TelegramBot/Api | DeepWiki" [level=2] [ref=e351]:
+            - link "API Methods Reference | TelegramBot/Api | DeepWiki" [ref=e352] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=d08ec016a1d3dede5516b8449c61c7c2d723fd836a920b94099030c3f39bb834JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZWVwd2lraS5jb20vVGVsZWdyYW1Cb3QvQXBpLzUtYXBpLW1ldGhvZHMtcmVmZXJlbmNl&ntb=1
+          - paragraph [ref=e354]: 27 мая 2025 г. · This page provides a comprehensive reference for all API methods available in the TelegramBot/Api library. These methods correspond directly to the Telegram Bot API endpoints and …
+        - listitem [ref=e355]:
+          - link "gramio.dev" [ref=e357] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=06c04a67981e8e0718efb004b0e93c0e0ea693d000bc42482282343883b9e08aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9ncmFtaW8uZGV2L3RlbGVncmFtLw&ntb=1
+            - generic [ref=e362]:
+              - generic [ref=e363]: gramio.dev
+              - generic [ref=e365]:
+                - generic [ref=e366]: https://gramio.dev › telegram
+                - generic [ref=e367]: Перевести этот результат
+          - heading "Telegram Bot API Reference | GramIO | GramIO" [level=2] [ref=e368]:
+            - link "Telegram Bot API Reference | GramIO | GramIO":
+              - /url: https://www.bing.com/ck/a?!&&p=06c04a67981e8e0718efb004b0e93c0e0ea693d000bc42482282343883b9e08aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9ncmFtaW8uZGV2L3RlbGVncmFtLw&ntb=1
+          - paragraph [ref=e370]: 4 июн. 2026 г. · A developer-friendly reference for the Telegram Bot API, with GramIO TypeScript examples for every method.
+        - listitem [ref=e371]:
+          - generic [ref=e373]:
+            - heading "Люди также спрашивают" [level=2] [ref=e374]:
+              - generic [ref=e375]: Люди также спрашивают
+            - list [ref=e378]:
+              - listitem [ref=e379]:
+                - heading "Does Telegram have a bot API?" [level=3] [ref=e380]:
+                  - button "Does Telegram have a bot API?" [ref=e381] [cursor=pointer]:
+                    - generic [ref=e382]: Does Telegram have a bot API?
+                    - generic:
+                      - img
+              - listitem [ref=e383]:
+                - heading "What is the telegram API & how does it work?" [level=3] [ref=e384]:
+                  - button "What is the telegram API & how does it work?" [ref=e385] [cursor=pointer]:
+                    - generic [ref=e386]: What is the telegram API & how does it work?
+                    - generic:
+                      - img
+              - listitem [ref=e387]:
+                - heading "Can telegram & kotlogram be used to send large files?" [level=3] [ref=e388]:
+                  - button "Can telegram & kotlogram be used to send large files?" [ref=e389] [cursor=pointer]:
+                    - generic [ref=e390]: Can telegram & kotlogram be used to send large files?
+                    - generic:
+                      - img
+              - listitem [ref=e391]:
+                - heading "How many MB can a telegram bot send?" [level=3] [ref=e392]:
+                  - button "How many MB can a telegram bot send?" [ref=e393] [cursor=pointer]:
+                    - generic [ref=e394]: How many MB can a telegram bot send?
+                    - generic:
+                      - img
+        - listitem [ref=e396]:
+          - generic [ref=e397]:
+            - link "Исследуйте это изображение" [ref=e400] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=g9CK9pfT&id=104040A8040257567F2E57D1E2D3195BDF3C3E90&thid=OIP.g9CK9pfT2btrHqFPgRgT8wHaHa&mediaurl=https://docs.python-telegram-bot.org/en/stable/_static/ptb-logo_1024.png&q=telegram+bot+api+methods+list+inline+keyboard+payments+file+size+limit&ck=BDD3125A5DCF81B8FEBDD7031C4C63C1&idpp=rc&expw=1024&exph=1024&form=rc2idp
+            - generic [ref=e402]:
+              - link "python-telegram-bot" [ref=e404] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=72b4aa9ebdc01e0e9f8cd36afd559035e943205e9d236b63ee141d37f4097c1aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kb2NzLnB5dGhvbi10ZWxlZ3JhbS1ib3Qub3JnL2VuL3N0YWJsZS90ZWxlZ3JhbS5pbmxpbmVrZXlib2FyZGJ1dHRvbi5odG1s&ntb=1
+                - generic [ref=e409]:
+                  - generic [ref=e410]: python-telegram-bot
+                  - generic [ref=e412]:
+                    - generic [ref=e413]: https://docs.python-telegram-bot.org › en › sta…
+                    - generic [ref=e414]: Перевести этот результат
+              - heading "InlineKeyboardButton - python-telegram-bot v22.8" [level=2] [ref=e415]:
+                - link "InlineKeyboardButton - python-telegram-bot v22.8" [ref=e416] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=72b4aa9ebdc01e0e9f8cd36afd559035e943205e9d236b63ee141d37f4097c1aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kb2NzLnB5dGhvbi10ZWxlZ3JhbS1ib3Qub3JnL2VuL3N0YWJsZS90ZWxlZ3JhbS5pbmxpbmVrZXlib2FyZGJ1dHRvbi5odG1s&ntb=1
+              - paragraph [ref=e417]: This offers a quick way for the user to open your bot in inline mode in the same chat - good for selecting something from multiple options. Not supported in channels …
+        - listitem [ref=e419]:
+          - link "Telegram APIs" [ref=e421] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=7dc27885bb8e179c53c9a7ebf3bb51b4c0b78633842209262cd1035e2e426c38JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jb3JlLnRlbGVncmFtLm9yZy9hcGkvYm90cy9idXR0b25z&ntb=1
+            - generic [ref=e426]:
+              - generic [ref=e427]: Telegram APIs
+              - generic [ref=e429]:
+                - generic [ref=e430]: https://core.telegram.org › api › bots › buttons
+                - generic [ref=e431]: Перевести этот результат
+          - heading "Buttons - Telegram APIs" [level=2] [ref=e432]:
+            - link "Buttons - Telegram APIs":
+              - /url: https://www.bing.com/ck/a?!&&p=7dc27885bb8e179c53c9a7ebf3bb51b4c0b78633842209262cd1035e2e426c38JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jb3JlLnRlbGVncmFtLm9yZy9hcGkvYm90cy9idXR0b25z&ntb=1
+          - paragraph [ref=e434]: Users can interact with your bot via buttons or even inline buttons, straight from inline messages in any chat. This article describes the full button flow, using the MTProto API.
+        - listitem [ref=e435]:
+          - link "Telegram APIs" [ref=e437] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=017a68640caf4dc18bc30d1bb1cf83e6eaebfb179c4982faa830fcd483a1ca7fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jb3JlLnRlbGVncmFtLm9yZy9ib3RzL2ZhcQ&ntb=1
+            - generic [ref=e442]:
+              - generic [ref=e443]: Telegram APIs
+              - generic [ref=e445]:
+                - generic [ref=e446]: https://core.telegram.org › bots › faq
+                - generic [ref=e447]: Перевести этот результат
+          - heading "Bots FAQ - Telegram APIs" [level=2] [ref=e448]:
+            - link "Bots FAQ - Telegram APIs":
+              - /url: https://www.bing.com/ck/a?!&&p=017a68640caf4dc18bc30d1bb1cf83e6eaebfb179c4982faa830fcd483a1ca7fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jb3JlLnRlbGVncmFtLm9yZy9ib3RzL2ZhcQ&ntb=1
+          - paragraph [ref=e450]: Bots with increased limits are only charged for messages that are broadcasted successfully. If you do not wish to enable paid broadcasts, consider spreading them over longer intervals (e.g. 8-12 hours) …
+        - listitem [ref=e451]:
+          - generic [ref=e452]:
+            - link "Исследуйте это изображение" [ref=e455] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=I9+04rcX&id=5004E4608581C9C2959CBCFE62222496D78F7762&thid=OIP.I9-04rcXDkHWXFzmXskQ0QHaFo&mediaurl=https://core.telegram.org/file/811140423/1/6BVlO7dWPeo/64d0d842ff73ff3dc8&q=telegram+bot+api+methods+list+inline+keyboard+payments+file+size+limit&ck=DFC871501CF0F0C4DC0F367E70160ECB&idpp=rc&expw=750&exph=570&form=rc2idp
+            - generic [ref=e457]:
+              - link "Telegram APIs" [ref=e459] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=6ae06fa99c01c47240c2461f445af78d866c40c4b4f3237e2e9bd1dc65a3f935JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jb3JlLnRlbGVncmFtLm9yZy9ib3RzLzItMC1pbnRybw&ntb=1
+                - generic [ref=e464]:
+                  - generic [ref=e465]: Telegram APIs
+                  - generic [ref=e467]:
+                    - generic [ref=e468]: https://core.telegram.org › bots
+                    - generic [ref=e469]: Перевести этот результат
+              - heading "Introducing Bot API 2.0 - Telegram APIs" [level=2] [ref=e470]:
+                - link "Introducing Bot API 2.0 - Telegram APIs" [ref=e471] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=6ae06fa99c01c47240c2461f445af78d866c40c4b4f3237e2e9bd1dc65a3f935JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jb3JlLnRlbGVncmFtLm9yZy9ib3RzLzItMC1pbnRybw&ntb=1
+              - paragraph [ref=e472]: Inline bots now support all types of content available in Telegram (19 in all), they are now capable of sending stickers, videos, music, locations, documents and …
+        - listitem [ref=e474]:
+          - generic [ref=e475]:
+            - heading "Глубокий анализ telegram bot api methods list inline keyboard payme…" [level=2] [ref=e476]:
+              - text: Глубокий анализ
+              - strong [ref=e477]: telegram bot api methods list inline keyboard payme
+              - text: …
+            - list [ref=e478]:
+              - listitem [ref=e479]:
+                - link "Telegram bot api download" [ref=e480] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=58c77cfb0dd869c218f56e221d1c860dcbe807546f6790d7c951a1508e639cb1JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPVRlbGVncmFtK2JvdCthcGkrZG93bmxvYWQmRk9STT1RU1JFMQ&ntb=1
+                  - generic [ref=e482]:
+                    - text: Telegram bot api
+                    - strong [ref=e483]: download
+              - listitem [ref=e484]:
+                - link "Telegram bot download" [ref=e485] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=9aafde2703392036c57717bca7415cbf150d8f3aba5c3d091643d5c7dea02b0bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPVRlbGVncmFtK2JvdCtkb3dubG9hZCZGT1JNPVFTUkUy&ntb=1
+                  - generic [ref=e487]:
+                    - text: Telegram bot
+                    - strong [ref=e488]: download
+              - listitem [ref=e489]:
+                - link "Telegram bot opener" [ref=e490] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=0e5c3bc8249df1751465106c2e2661c5d6423814bbe219a23e0cae59b646a603JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPVRlbGVncmFtK2JvdCtvcGVuZXImRk9STT1RU1JFMw&ntb=1
+                  - generic [ref=e492]:
+                    - text: Telegram bot
+                    - strong [ref=e493]: opener
+              - listitem [ref=e494]:
+                - link "Telegram chat bot" [ref=e495] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=9d65eb944b3ce80dd8a96998654cee43b011a9e197ece36e80625958847246f7JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPVRlbGVncmFtK2NoYXQrYm90JkZPUk09UVNSRTQ&ntb=1
+                  - generic [ref=e497]:
+                    - text: Telegram
+                    - strong [ref=e498]: chat
+                    - text: bot
+              - listitem [ref=e499]:
+                - link "Telegram bot api token" [ref=e500] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=5871815cd11027f668b98dd3e2af0f532cc82c2ac48dce18cbe9777337129a22JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPVRlbGVncmFtK2JvdCthcGkrdG9rZW4mRk9STT1RU1JFNQ&ntb=1
+                  - generic [ref=e502]:
+                    - text: Telegram bot api
+                    - strong [ref=e503]: token
+              - listitem [ref=e504]:
+                - link "Telegram bot example" [ref=e505] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=7ea4bd7483df85cb74f19cf441035096e1a1c72703148335aa9113ded1d969f0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPVRlbGVncmFtK2JvdCtleGFtcGxlJkZPUk09UVNSRTY&ntb=1
+                  - generic [ref=e507]:
+                    - text: Telegram bot
+                    - strong [ref=e508]: example
+              - listitem [ref=e509]:
+                - link "Telegram bot inline query" [ref=e510] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=5383fca9c2a2c8f487446663a2967a6a24f337cb8560d15605f3515f910c074aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPVRlbGVncmFtK2JvdCtpbmxpbmUrcXVlcnkmRk9STT1RU1JFNw&ntb=1
+                  - generic [ref=e512]:
+                    - text: Telegram bot inline
+                    - strong [ref=e513]: query
+              - listitem [ref=e514]:
+                - link "inline query Telegram" [ref=e515] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=e1412612c9c94c44a5f5333dbca82eb478fcf9fab156daacf24f69151fd603b0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPWlubGluZStxdWVyeStUZWxlZ3JhbSZGT1JNPVFTUkU4&ntb=1
+                  - generic [ref=e517]:
+                    - text: inline
+                    - strong [ref=e518]: query
+                    - text: Telegram
+        - listitem [ref=e519]:
+          - link "Некоторые результаты удалены" [ref=e521] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=344d5a01c9020ae0f64570329c97724738ffd487613df9d1570aabd450329c84JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9NjE3MzUw&ntb=1
+        - listitem [ref=e522]:
+          - navigation "Другие результаты по запросу telegram bot api methods list inline keyboard payments file size limit":
+            - list:
+              - listitem [ref=e523]:
+                - generic "Страница 1" [ref=e524]: "1"
+              - listitem [ref=e525]:
+                - link "Страница 2" [ref=e526] [cursor=pointer]:
+                  - /url: /search?q=telegram+bot+api+methods+list+inline+keyboard+payments+file+size+limit&FPIG=01AF7A1608354526B6026586CE43BC9B&first=11&FORM=PERE
+                  - text: "2"
+              - listitem [ref=e527]:
+                - link "Страница 3" [ref=e528] [cursor=pointer]:
+                  - /url: /search?q=telegram+bot+api+methods+list+inline+keyboard+payments+file+size+limit&FPIG=01AF7A1608354526B6026586CE43BC9B&first=21&FORM=PERE1
+                  - text: "3"
+              - listitem [ref=e529]:
+                - link "Следующая страница" [ref=e530] [cursor=pointer]:
+                  - /url: /search?q=telegram+bot+api+methods+list+inline+keyboard+payments+file+size+limit&FPIG=01AF7A1608354526B6026586CE43BC9B&first=11&FORM=PORE
+      - complementary "Дополнительные результаты" [ref=e531]:
+        - list [ref=e532]:
+          - listitem [ref=e533]:
+            - generic "Похожие поисковые запросы" [ref=e534]:
+              - generic [ref=e536]:
+                - heading "Глубокий анализ telegram bot api methods list inline keyboard payme…" [level=2] [ref=e538]:
+                  - text: Глубокий анализ
+                  - strong [ref=e539]: telegram bot api methods list inline keyboard payme
+                  - text: …
+                - generic [ref=e540]:
+                  - link "Telegram bot api download" [ref=e542] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=3e611c2d94f1c0d45ccd5dc8ee2e0d6e4baf4fdd5b55df3d92ec943c101d5907JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPVRlbGVncmFtK2JvdCthcGkrZG93bmxvYWQmRk9STT1SNUZE&ntb=1
+                    - generic [ref=e544]:
+                      - text: Telegram bot api
+                      - strong [ref=e545]: download
+                  - link "Telegram bot download" [ref=e547] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=970cb56f40ea4c07ecd0394b74202f2f9938319f830e6f00eed9a76f37d68043JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPVRlbGVncmFtK2JvdCtkb3dubG9hZCZGT1JNPVI1RkQx&ntb=1
+                    - generic [ref=e549]:
+                      - text: Telegram bot
+                      - strong [ref=e550]: download
+                  - link "Telegram bot opener" [ref=e552] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=c31b64f226a64bb612150fc7419d78cd28e704ed5215decb64880d7c6185ed9cJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPVRlbGVncmFtK2JvdCtvcGVuZXImRk9STT1SNUZEMg&ntb=1
+                    - generic [ref=e554]:
+                      - text: Telegram bot
+                      - strong [ref=e555]: opener
+                  - link "Telegram chat bot" [ref=e557] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=636d9b7ae0582ac24f003793519039720a455b1b2f978b0275ab0c09916a456fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPVRlbGVncmFtK2NoYXQrYm90JkZPUk09UjVGRDM&ntb=1
+                    - generic [ref=e559]:
+                      - text: Telegram
+                      - strong [ref=e560]: chat
+                      - text: bot
+                  - link "Telegram bot api token" [ref=e562] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=c3eb4eb1a8473dff6d1a06429397d3af5534929b9873df683552b06d88a342c2JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPVRlbGVncmFtK2JvdCthcGkrdG9rZW4mRk9STT1SNUZENA&ntb=1
+                    - generic [ref=e564]:
+                      - text: Telegram bot api
+                      - strong [ref=e565]: token
+                  - link "Telegram bot example" [ref=e567] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=1369cdad14e57336c8aa14ffc7506f248d868d158d307a80911dc8dca084ada2JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPVRlbGVncmFtK2JvdCtleGFtcGxlJkZPUk09UjVGRDU&ntb=1
+                    - generic [ref=e569]:
+                      - text: Telegram bot
+                      - strong [ref=e570]: example
+                  - link "Telegram bot inline query" [ref=e572] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=bc216050bbeea35eaf79bf4aa647315e2c71ba69bb691db747bd2d8eb1058083JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPVRlbGVncmFtK2JvdCtpbmxpbmUrcXVlcnkmRk9STT1SNUZENg&ntb=1
+                    - generic [ref=e574]:
+                      - text: Telegram bot inline
+                      - strong [ref=e575]: query
+                  - link "inline query Telegram" [ref=e577] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=d5b25cb02c84d06ab4811e1f139d63840a32b12d2ed2361686e462ab5ec5f26eJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPWlubGluZStxdWVyeStUZWxlZ3JhbSZGT1JNPVI1RkQ3&ntb=1
+                    - generic [ref=e579]:
+                      - text: inline
+                      - strong [ref=e580]: query
+                      - text: Telegram
+  - contentinfo [ref=e581]:
+    - generic [ref=e582]:
+      - list:
+        - listitem [ref=e583]:
+          - link "Конфиденциальность" [ref=e584] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=21b033e4690739c4b00c739e1cf31e392a048d8ccb3ae7bae1d3804b0b25c834JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=e585]:
+          - link "Условия" [ref=e586] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=35dbb4284fed750b180ae689312f45529a3b13fc05a5d31d6bb10222597c960fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1

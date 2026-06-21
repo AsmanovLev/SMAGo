@@ -1,0 +1,479 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-FI
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - generic:
+          - generic:
+            - generic:
+              - img
+        - 'link "World Cup 2026: The art of the penalty kick" [ref=e13] [cursor=pointer]':
+          - /url: https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQPQgK
+          - 'img "World Cup 2026: The art of the penalty kick" [ref=e14]'
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - combobox "Search" [ref=e19]: developers.viber.com rest bot api 2025 developers.viber.com rest bot api 2025
+            - generic [ref=e20]:
+              - button "Clear" [ref=e22] [cursor=pointer]:
+                - img [ref=e24]
+              - generic [ref=e27]:
+                - button "Search by voice" [ref=e28] [cursor=pointer]:
+                  - img [ref=e29]
+                - button "Search by image" [ref=e31] [cursor=pointer]:
+                  - img [ref=e32]
+          - button "Search" [ref=e34] [cursor=pointer]:
+            - img [ref=e37]
+    - generic [ref=e39]:
+      - button "Share" [ref=e40] [cursor=pointer]:
+        - img [ref=e44]
+      - generic [ref=e46]:
+        - button "Google apps" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+        - 'button "Google Account: Lev Asmanov (asmanovlev@gmail.com)" [ref=e53] [cursor=pointer]':
+          - img [ref=e55]
+          - img [ref=e60]
+  - generic [ref=e62]:
+    - navigation [ref=e68]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "AI Mode" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=developers.viber.com+rest+bot+api+2025&sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE0Jef6Hr5r5I4H40S9RuxcQrUo4wJfIIaYzgPYuyZxt-Pp_GMVayGhwPvvW9GdN4IFxxLn7xf0eRMRcKL31utTrCMETzu_TDL-L3zNnP4ei-E5CW2b1_6SjKNW8einVziNQYV6WVAGBxOJqz6IHx8UqN8oRl&aep=1&ntc=1&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ2J8OegQIEBAD
+              - generic [ref=e82]: AI Mode
+          - listitem [ref=e83]:
+            - link "All" [disabled] [ref=e84]:
+              - generic [ref=e86]: All
+          - listitem [ref=e87]:
+            - link "Videos" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE0Jef6Hr5r5I4H40S9RuxcQrUo4wJfIIaYzgPYuyZxt-Pp_GMVayGhwPvvW9GdN4IFxxLn7xf0eRMRcKL31utTrCMETzu_TDL-L3zNnP4ei-E5CW2b1_6SjKNW8einVziNQYV6WVAGBxOJqz6IHx8UqN8oRl&q=developers.viber.com+rest+bot+api+2025&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQtKgLegQIFRAB
+              - generic [ref=e90]: Videos
+          - listitem [ref=e91]:
+            - link "Forums" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&udm=18&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE0Jef6Hr5r5I4H40S9RuxcQrUo4wJfIIaYzgPYuyZxt-Pp_GMVayGhwPvvW9GdN4IFxxLn7xf0eRMRcKL31utTrCMETzu_TDL-L3zNnP4ei-E5CW2b1_6SjKNW8einVziNQYV6WVAGBxOJqz6IHx8UqN8oRl&q=developers.viber.com+rest+bot+api+2025&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQs6gLegQIFhAB
+              - generic [ref=e94]: Forums
+          - listitem [ref=e95]:
+            - link "News" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=developers.viber.com+rest+bot+api+2025&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE0Jef6Hr5r5I4H40S9RuxcQrUo4wJfIIaYzgPYuyZxt-Pp_GMVayGhwPvvW9GdN4IFxxLn7xf0eRMRcKL31utTrCMETzu_TDL-L3zNnP4ei-E5CW2b1_6SjKNW8einVziNQYV6WVAGBxOJqz6IHx8UqN8oRl&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ0pQJegQIFBAB
+              - generic [ref=e98]: News
+          - listitem [ref=e99]:
+            - link "Images" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE0Jef6Hr5r5I4H40S9RuxcQrUo4wJfIIaYzgPYuyZxt-Pp_GMVayGhwPvvW9GdN4IFxxLn7xf0eRMRcKL31utTrCMETzu_TDL-L3zNnP4ei-E5CW2b1_6SjKNW8einVziNQYV6WVAGBxOJqz6IHx8UqN8oRl&q=developers.viber.com+rest+bot+api+2025&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQtKgLegQIExAB
+              - generic [ref=e102]: Images
+          - listitem [ref=e103]:
+            - link "Short videos" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE0Jef6Hr5r5I4H40S9RuxcQrUo4wJfIIaYzgPYuyZxt-Pp_GMVayGhwPvvW9GdN4IFxxLn7xf0eRMRcKL31utTrCMETzu_TDL-L3zNnP4ei-E5CW2b1_6SjKNW8einVziNQYV6WVAGBxOJqz6IHx8UqN8oRl&q=developers.viber.com+rest+bot+api+2025&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQs6gLegQIEhAB
+              - generic [ref=e106]: Short videos
+          - listitem [ref=e107]:
+            - button "More filters" [ref=e108] [cursor=pointer]:
+              - generic "More filters" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: More
+                  - img [ref=e113]
+        - button "Tools" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Tools
+            - img [ref=e121]
+    - navigation [ref=e124]:
+      - navigation [ref=e127]:
+        - list [ref=e134]:
+          - listitem [ref=e135]:
+            - link "Add Not working" [ref=e136] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=Developers+viber+com+rest+bot+api+2025+not+working&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4r8jfErxUceOwCNECdT22hXY6m34BxUdMzJc3OT6H74pkC6yFfOUxmWScPZ5ksuhgNnY8dGU5ip-__5yNHICkJ4dSiq15pMlGfuBKy34XnmKJx1RFX0-IR6n1p9GEzLF7nxTc1iExfalnt6G9MWxWx-wyKfx-kqno9In-nkm-nE3ExqS8BRsUpR8Dyaej_LSXcRybMR4tC6b8PWhTali12Ex3QIjqfNglPWgHtTFFkI63tzRsb&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQxKsJKAB6BAgXEAE&ictx=0
+              - generic [ref=e138]: Not working
+          - listitem [ref=e139]:
+            - link "Add Free" [ref=e140] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=Developers+viber+com+rest+bot+api+2025+free&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rMmf0nfRZdSyzf37FZ9D2DKU1xldi9Y7zF0px0qsQ0ScHOIX9gGiDjyVyVZOFYYuE2QTU3nB3IPjA-LzzUSqeIWTyAq6icsB5AmjQN3y-YmhYDWDPFihYjTBfJrrmPU9G-JEWwE9_UN64r9Wf3ZFbiNwxiivSoK8XI6rSWl5IyZ-_JALTCxbHQPcbrdP86nEldsl7_7T1jG6T_ilvMfS0ZVFF0Q1p7JXiHlo8CJXW5WBBrGWj&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQxKsJKAF6BAgbEAE&ictx=0
+              - generic [ref=e142]: Free
+          - listitem [ref=e143]:
+            - link "Add Github" [ref=e144] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=Developers+viber+com+rest+bot+api+2025+github&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rePriBL00kr1ZLubbePKdmnfTAdnhGcqLWQ_7xUqFu0tMhwwN3jS9PHmVw1X3HNCm1KbBZUHEQwRK-3vF3TDCYtXfiaM5rJIPcn60CqL_gE7eTdPsyTPkhET5FvJHRfabcSgsMk7p01x2eOXrCAiQNwE8E4MbhHa5T1wl9Y2xl5kTtz9PmElFXAumGaa3ezwXISKTTk7YOaKTJ-oF5z9hbXwuDk34iLTBcOaeTV2OM5k4SXgX&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQxKsJKAJ6BAgZEAE&ictx=0
+              - generic [ref=e146]: Github
+          - listitem [ref=e147]:
+            - link "Add Android" [ref=e148] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=Developers+viber+com+rest+bot+api+2025+android&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rVbuCF5KEzxSUpMPlk8rBN6-JIufFLZFWX3faQpa0Bao75jfIHd4_vfOS3Xbs7JNKSUyWKvJZZzZXsV-8R65gbPX8VF47lQC2iqRRknPGQ4OCTLcKSGwE8hTHSpuQtoTzUgSJXzJ9gkCJ-2YWFQl0rcvek2Q1y9fyQpuC3Kayo8zNGU_PFloomAdZArllHVHE7XrC6vy-oKmuv3yC2OMUn2kvWfjvUHV2P78uvOahpTH_ES3j&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQxKsJKAN6BAgaEAE&ictx=0
+              - generic [ref=e150]: Android
+          - listitem [ref=e151]:
+            - link "Add Download" [ref=e152] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=Developers+viber+com+rest+bot+api+2025+download&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4riXyLJI4RN991rtsH3xJwknIT2XOauikm8Lm_F26pjHMRugwDc7-puM4HvK9FAYb9zXBE-MgDqWIOra65Q0CwjsyjqzSi54MGxHV4uaEAUpj2DId9xOacrSULWO7Jmg_fHGNC3IDdoSSLPpRgln96Tmhr1YUcqUpAJ7jqk9IaqghtOQP0xHooys08_-0wm8JGOUGwB-FbN3e1257s2Lcsitxwz9EyNdDn_XLS5uyQUds-jdcd&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQxKsJKAR6BAgYEAE&ictx=0
+              - generic [ref=e154]: Download
+    - heading "Search Results" [level=1] [ref=e155]
+    - main [ref=e161]:
+      - generic [ref=e165]:
+        - generic [ref=e168]:
+          - heading "Web results" [level=2] [ref=e169]
+          - generic [ref=e170]:
+            - generic [ref=e173]:
+              - link "Viber REST API Viber Developers Hub https://developers.viber.com › docs › api › rest-bot-api" [ref=e175] [cursor=pointer]:
+                - /url: https://developers.viber.com/docs/api/rest-bot-api/
+                - heading "Viber REST API" [level=3] [ref=e176]
+                - generic [ref=e182]:
+                  - generic [ref=e184]: Viber Developers Hub
+                  - generic [ref=e186]: https://developers.viber.com › docs › api › rest-bot-api
+              - button "About this result" [ref=e187] [cursor=pointer]:
+                - img [ref=e190]
+            - generic [ref=e193]:
+              - generic [ref=e194]:
+                - emphasis [ref=e195]: Viber REST API
+                - text: ". Get Started. To implement the API, you will need the following: An Active Viber account on a platform that supports bots (iOS/Android)."
+              - link "Read more" [ref=e196] [cursor=pointer]:
+                - /url: https://developers.viber.com/docs/api/rest-bot-api/#:~:text=Viber%20REST%20API,platform%20that%20supports%20bots%20(iOS%2FAndroid).
+        - generic [ref=e207]:
+          - generic [ref=e209]:
+            - generic [ref=e211]:
+              - generic [ref=e212]:
+                - img [ref=e213]
+                - heading "AI Overview" [level=2] [ref=e215]
+              - generic [ref=e216]:
+                - button "View corroboration link" [ref=e219] [cursor=pointer]
+                - button "About this result" [ref=e224]:
+                  - img [ref=e226]
+            - generic [ref=e249]:
+              - generic [ref=e250]:
+                - text: Viber requires you to apply for bot creation on commercial terms. Review the
+                - link "Viber Python Bot API" [ref=e252] [cursor=pointer]:
+                  - /url: https://developers.viber.com/docs/api/python-bot-api/
+                - text: for prerequisites. Then,
+                - mark [ref=e253]:
+                  - text: use the
+                  - link "Viber REST API" [ref=e255] [cursor=pointer]:
+                    - /url: https://developers.viber.com/docs/api/rest-bot-api/
+                  - text: or
+                  - link "Viber Developer Hub" [ref=e257] [cursor=pointer]:
+                    - /url: https://developers.viber.com/
+                  - text: to build secure, 1-on-1 private messaging channels
+                - text: .
+              - heading "Getting Started Checklist" [level=3] [ref=e258]
+              - list [ref=e260]:
+                - listitem [ref=e261]:
+                  - generic [ref=e262]:
+                    - strong [ref=e263]: "Account Requirement:"
+                    - text: You must have an active Viber account on a supported
+                    - generic [ref=e264]: iOS/Android
+                    - text: device.
+                - listitem [ref=e265]:
+                  - generic [ref=e266]:
+                    - strong [ref=e267]: "Authentication Token:"
+                    - text: Generated automatically upon bot registration, which you will need to validate all API requests.
+                - listitem [ref=e268]:
+                  - generic [ref=e269]:
+                    - strong [ref=e270]: "Webhook Setup:"
+                    - text: You must configure an HTTPS server endpoint and register it via the
+                    - code [ref=e271]: set_webhook
+                    - text: request to start receiving events (e.g., delivered, seen, messages)
+                    - link [ref=e273] [cursor=pointer]:
+                      - /url: https://developers.viber.com/docs/general/api-access-white-paper/
+                      - text: API Access White Paper
+                    - text: .
+              - heading [level=3] [ref=e275]: Key Features & Integrations
+              - list [ref=e277]:
+                - listitem [ref=e278]:
+                  - generic [ref=e279]:
+                    - strong [ref=e280]: "Message Types:"
+                    - text: Send text, rich media, location, contact, stickers, and file messages directly to users
+                    - link [ref=e282] [cursor=pointer]:
+                      - /url: https://developers.viber.com/docs/api/
+                      - text: API Reference
+                    - text: .
+                - listitem [ref=e283]:
+                  - generic [ref=e284]:
+                    - strong [ref=e285]: "Chat Extensions:"
+                    - text: Leverage a similar API architecture to create extensions that users can trigger inside regular chats
+                    - link [ref=e287] [cursor=pointer]:
+                      - /url: https://developers.viber.com/docs/tools/chatex/
+                      - text: Chat Extensions
+                    - text: .
+                - listitem [ref=e288]:
+                  - generic [ref=e289]:
+                    - strong [ref=e290]: "Bot Payments:"
+                    - text: Send order details to subscribers and collect checkout details via callbacks
+                    - link [ref=e292] [cursor=pointer]:
+                      - /url: https://developers.viber.com/docs/api/bot-payment-api/
+                      - text: Bot Payment API
+                    - text: .
+              - generic [ref=e295]:
+                - text: Would you like help with setting up the
+                - strong [ref=e296]: Node.js or Python SDK
+                - text: ", or do you need assistance configuring your"
+                - strong [ref=e297]: HTTPS webhook
+                - text: "?"
+          - button "Show more AI Overview" [ref=e303]:
+            - generic [ref=e305] [cursor=pointer]:
+              - generic [ref=e306]: Show more
+              - img [ref=e308]
+        - generic [ref=e313]:
+          - heading "Web results" [level=2] [ref=e314]
+          - generic [ref=e315]:
+            - generic [ref=e318]:
+              - link "Viber REST API Viber Developers Hub https://developers.viber.com › rest" [ref=e320] [cursor=pointer]:
+                - /url: https://developers.viber.com/rest/
+                - heading "Viber REST API" [level=3] [ref=e321]
+                - generic [ref=e327]:
+                  - generic [ref=e329]: Viber Developers Hub
+                  - generic [ref=e331]: https://developers.viber.com › rest
+              - button "About this result" [ref=e332] [cursor=pointer]:
+                - img [ref=e335]
+            - generic [ref=e338]:
+              - generic [ref=e339]:
+                - text: Public Accounts/
+                - emphasis [ref=e340]: bots
+                - text: are currently supported on iOS and Android devices running
+                - emphasis [ref=e341]: Viber
+                - text: version 6.5 and above and on desktop from version 6.5.3. Send and receive ...
+              - link "Read more" [ref=e342] [cursor=pointer]:
+                - /url: https://developers.viber.com/rest/#:~:text=Public%20Accounts%2F%20bots%20are%20currently,Send%20and%20receive%20message%20flow
+        - generic [ref=e346]:
+          - generic [ref=e349]:
+            - link "Viber Developers Hub | Viber lets everyone in the world ... Viber Developers Hub https://developers.viber.com" [ref=e351] [cursor=pointer]:
+              - /url: https://developers.viber.com/
+              - heading "Viber Developers Hub | Viber lets everyone in the world ..." [level=3] [ref=e352]
+              - generic [ref=e358]:
+                - generic [ref=e360]: Viber Developers Hub
+                - generic [ref=e362]: https://developers.viber.com
+            - button "About this result" [ref=e363] [cursor=pointer]:
+              - img [ref=e366]
+          - generic [ref=e369]:
+            - generic [ref=e370]:
+              - emphasis [ref=e371]: Use Viber's API to connect a bot
+              - text: ", or team up with a trusted partner to develop the solution that suits you. Check our NodeJS sample to see Viber bot in action."
+            - link "Read more" [ref=e372] [cursor=pointer]:
+              - /url: https://developers.viber.com/#:~:text=Use%20Viber's%20API%20to%20connect,see%20Viber%20bot%20in%20action
+        - generic [ref=e376]:
+          - generic [ref=e379]:
+            - link "API Reference Viber Developers Hub https://developers.viber.com › docs › api" [ref=e381] [cursor=pointer]:
+              - /url: https://developers.viber.com/docs/api/
+              - heading "API Reference" [level=3] [ref=e382]
+              - generic [ref=e388]:
+                - generic [ref=e390]: Viber Developers Hub
+                - generic [ref=e392]: https://developers.viber.com › docs › api
+            - button "About this result" [ref=e393] [cursor=pointer]:
+              - img [ref=e396]
+          - generic [ref=e399]:
+            - generic [ref=e400]:
+              - text: JS Bot API · Viber Python Bot API ·
+              - emphasis [ref=e401]: Viber REST API
+              - text: · Home Docs Releases Contact About Terms & Policies. © 2025 Viber Media S.à r.l. with by Viber.
+            - link "Read more" [ref=e402] [cursor=pointer]:
+              - /url: https://developers.viber.com/docs/api/#:~:text=Viber%20Node.JS%20Bot%20API,S.%C3%A0%20r.l.%20with%20by%20Viber
+        - generic [ref=e406]:
+          - generic [ref=e409]:
+            - link "All of the Documentation | Viber Developers Hub Viber Developers Hub https://developers.viber.com › docs › all" [ref=e411] [cursor=pointer]:
+              - /url: https://developers.viber.com/docs/all/
+              - heading "All of the Documentation | Viber Developers Hub" [level=3] [ref=e412]
+              - generic [ref=e418]:
+                - generic [ref=e420]: Viber Developers Hub
+                - generic [ref=e422]: https://developers.viber.com › docs › all
+            - button "About this result" [ref=e423] [cursor=pointer]:
+              - img [ref=e426]
+          - generic [ref=e429]:
+            - generic [ref=e430]:
+              - emphasis [ref=e431]: Use this library to develop a bot for the Viber platform
+              - text: . The library is available on GitHub as well as a package on npm.
+            - link "Read more" [ref=e432] [cursor=pointer]:
+              - /url: https://developers.viber.com/docs/all/#:~:text=Use%20this%20library%20to%20develop,as%20a%20package%20on%20npm.
+        - generic [ref=e436]:
+          - generic [ref=e439]:
+            - link "Documentation | Viber Developers Hub Viber Developers Hub https://developers.viber.com › docs" [ref=e441] [cursor=pointer]:
+              - /url: https://developers.viber.com/docs/
+              - heading "Documentation | Viber Developers Hub" [level=3] [ref=e442]
+              - generic [ref=e448]:
+                - generic [ref=e450]: Viber Developers Hub
+                - generic [ref=e452]: https://developers.viber.com › docs
+            - button "About this result" [ref=e453] [cursor=pointer]:
+              - img [ref=e456]
+          - generic [ref=e460]:
+            - emphasis [ref=e461]: Guides and API reference documentation
+            - text: for the latest Viber Public Account API.
+        - generic [ref=e465]:
+          - generic [ref=e468]:
+            - link "Viber Python Bot API GitHub https://github.com › Viber › viber-bot-python" [ref=e470] [cursor=pointer]:
+              - /url: https://github.com/Viber/viber-bot-python
+              - heading "Viber Python Bot API" [level=3] [ref=e471]
+              - generic [ref=e477]:
+                - generic [ref=e479]: GitHub
+                - generic [ref=e481]: https://github.com › Viber › viber-bot-python
+            - button "About this result" [ref=e482] [cursor=pointer]:
+              - img [ref=e485]
+          - generic [ref=e489]:
+            - text: The Viber bot python library provides just what you need to develop
+            - emphasis [ref=e490]: intelligent bots that interact naturally with your Viber users
+            - text: .
+          - generic [ref=e492]: "Missing: rest ‎2025"
+        - generic [ref=e496]:
+          - generic [ref=e499]:
+            - link "Viber API Community Viber Developers Hub https://developers.viber.com › community" [ref=e501] [cursor=pointer]:
+              - /url: https://developers.viber.com/community/
+              - heading "Viber API Community" [level=3] [ref=e502]
+              - generic [ref=e508]:
+                - generic [ref=e510]: Viber Developers Hub
+                - generic [ref=e512]: https://developers.viber.com › community
+            - button "About this result" [ref=e513] [cursor=pointer]:
+              - img [ref=e516]
+          - generic [ref=e520]:
+            - emphasis [ref=e521]: Viber
+            - text: lets everyone in the world connect. Freely. Millions of Viber users call, text, and send photos to each other, worldwide - for free.
+          - generic [ref=e523]:
+            - text: "Missing: rest ‎| Show results with:"
+            - link "rest" [ref=e524] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=developers.viber.com+%22rest%22+bot+api+2025&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ5t4CegQIUhAB
+        - generic [ref=e529]:
+          - heading "People also ask" [level=2] [ref=e531]
+          - generic [ref=e532]:
+            - generic [ref=e536]:
+              - button "How to create Viber bot 2025?" [ref=e538] [cursor=pointer]:
+                - generic [ref=e540]: How to create Viber bot 2025?
+                - img [ref=e543]
+              - text: "\"... ...\" \"... ...\""
+            - button "Is Viber API free?" [ref=e552] [cursor=pointer]:
+              - generic [ref=e554]: Is Viber API free?
+              - img [ref=e557]
+            - button "Is Viber bot free?" [ref=e566] [cursor=pointer]:
+              - generic [ref=e568]: Is Viber bot free?
+              - img [ref=e571]
+            - button "How to get Viber bot token?" [ref=e580] [cursor=pointer]:
+              - generic [ref=e582]: How to get Viber bot token?
+              - img [ref=e585]
+        - generic [ref=e590]:
+          - heading "Web results" [level=2] [ref=e591]
+          - generic [ref=e592]:
+            - generic [ref=e595]:
+              - link "Viber API | 400+ ready-made API integrations available Apix-Drive https://apix-drive.com › Home › Integration Viber" [ref=e597] [cursor=pointer]:
+                - /url: https://apix-drive.com/en/viber-api
+                - heading "Viber API | 400+ ready-made API integrations available" [level=3] [ref=e598]
+                - generic [ref=e604]:
+                  - generic [ref=e606]: Apix-Drive
+                  - generic [ref=e608]: https://apix-drive.com › Home › Integration Viber
+              - button "About this result" [ref=e609] [cursor=pointer]:
+                - img [ref=e612]
+            - generic [ref=e616]:
+              - emphasis [ref=e617]: Connect the Viber API
+              - text: to the services and applications you use every day. API integration Viber with other systems via ApiX-Drive is a simple and fast way ...
+            - generic [ref=e620]:
+              - img "Rated 4,6 out of 5, (445) user reviews" [ref=e622]:
+                - text: 4,6
+                - img [ref=e623]
+                - text: (445)
+              - button [ref=e628]:
+                - img [ref=e630]
+            - generic [ref=e633]:
+              - text: "Missing: 2025 ‎| Show results with:"
+              - link "2025" [ref=e634] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=developers.viber.com+rest+bot+api+%222025%22&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ5t4CegQIVxAB
+        - generic [ref=e638]:
+          - generic [ref=e641]:
+            - link "Viber Node.JS Bot API Viber Developers Hub https://developers.viber.com › docs › api › nodejs-bot-api" [ref=e643] [cursor=pointer]:
+              - /url: https://developers.viber.com/docs/api/nodejs-bot-api/
+              - heading "Viber Node.JS Bot API" [level=3] [ref=e644]
+              - generic [ref=e650]:
+                - generic [ref=e652]: Viber Developers Hub
+                - generic [ref=e654]: https://developers.viber.com › docs › api › nodejs-bot-api
+            - button "About this result" [ref=e655] [cursor=pointer]:
+              - img [ref=e658]
+          - generic [ref=e661]:
+            - generic [ref=e662]:
+              - emphasis [ref=e663]: Viber Node.JS Bot API
+              - text: . Use this library to develop a bot for the Viber platform. The library is available on GitHub as well as a package on npm.
+            - link "Read more" [ref=e664] [cursor=pointer]:
+              - /url: https://developers.viber.com/docs/api/nodejs-bot-api/#:~:text=Viber%20Node.JS%20Bot%20API,as%20a%20package%20on%20npm.
+          - generic [ref=e666]:
+            - text: "Missing: rest ‎| Show results with:"
+            - link "rest" [ref=e667] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=developers.viber.com+%22rest%22+bot+api+2025&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ5t4CegQIVhAB
+      - generic [ref=e669]:
+        - generic [ref=e674]:
+          - heading "People also search for" [level=2] [ref=e676]
+          - generic [ref=e678]:
+            - generic [ref=e679]:
+              - link "Developers viber com rest bot api 2025 not working" [ref=e683] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=Developers+viber+com+rest+bot+api+2025+not+working&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ1QJ6BAhEEAE
+                - generic [ref=e684]:
+                  - generic [ref=e689]: Developers viber com rest bot api 2025 not working
+                  - img [ref=e693]
+              - link "Viber API pricing" [ref=e698] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=Viber+API+pricing&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ1QJ6BAhbEAE
+                - generic [ref=e699]:
+                  - generic [ref=e704]: Viber API pricing
+                  - img [ref=e708]
+              - link "Developers viber com rest bot api 2025 free" [ref=e713] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=Developers+viber+com+rest+bot+api+2025+free&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ1QJ6BAhcEAE
+                - generic [ref=e714]:
+                  - generic [ref=e719]: Developers viber com rest bot api 2025 free
+                  - img [ref=e723]
+              - link "Developers viber com rest bot api 2025 github" [ref=e728] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=Developers+viber+com+rest+bot+api+2025+github&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ1QJ6BAhaEAE
+                - generic [ref=e729]:
+                  - generic [ref=e734]: Developers viber com rest bot api 2025 github
+                  - img [ref=e738]
+            - generic [ref=e740]:
+              - link "Developers viber com rest bot api 2025 android" [ref=e744] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=Developers+viber+com+rest+bot+api+2025+android&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ1QJ6BAhZEAE
+                - generic [ref=e745]:
+                  - generic [ref=e750]: Developers viber com rest bot api 2025 android
+                  - img [ref=e754]
+              - link "Developers viber com rest bot api 2025 download" [ref=e759] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=Developers+viber+com+rest+bot+api+2025+download&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ1QJ6BAhUEAE
+                - generic [ref=e760]:
+                  - generic [ref=e765]: Developers viber com rest bot api 2025 download
+                  - img [ref=e769]
+              - link "Viber Admin Panel" [ref=e774] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=Viber+Admin+Panel&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ1QJ6BAhMEAE
+                - generic [ref=e775]:
+                  - generic [ref=e780]: Viber Admin Panel
+                  - img [ref=e784]
+              - link "Viber bot" [ref=e789] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&q=Viber+bot&sa=X&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ1QJ6BAhFEAE
+                - generic [ref=e790]:
+                  - generic [ref=e795]: Viber bot
+                  - img [ref=e799]
+        - navigation [ref=e801]:
+          - heading "Page navigation" [level=1] [ref=e802]
+          - text: "1"
+          - link "Page 2" [ref=e805] [cursor=pointer]:
+            - /url: /search?q=developers.viber.com+rest+bot+api+2025&sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&ei=PvE2apvXA-CxwPAPityzIQ&start=10&sa=N&sstk=AU9db-BV-YvhdJNteXk8dDNN72ug00hxbTIT14lYaBx-YfVz17QU9XsbO7j90Y9VYowKHr2_mAKYMjuSePgzCCIksRP_PWSWyxEZ3g&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ8tMDegQIPBAE
+            - text: "2"
+          - link "Page 3" [ref=e807] [cursor=pointer]:
+            - /url: /search?q=developers.viber.com+rest+bot+api+2025&sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&ei=PvE2apvXA-CxwPAPityzIQ&start=20&sa=N&sstk=AU9db-BV-YvhdJNteXk8dDNN72ug00hxbTIT14lYaBx-YfVz17QU9XsbO7j90Y9VYowKHr2_mAKYMjuSePgzCCIksRP_PWSWyxEZ3g&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ8tMDegQIPBAG
+            - text: "3"
+          - link "Page 4" [ref=e809] [cursor=pointer]:
+            - /url: /search?q=developers.viber.com+rest+bot+api+2025&sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&ei=PvE2apvXA-CxwPAPityzIQ&start=30&sa=N&sstk=AU9db-BV-YvhdJNteXk8dDNN72ug00hxbTIT14lYaBx-YfVz17QU9XsbO7j90Y9VYowKHr2_mAKYMjuSePgzCCIksRP_PWSWyxEZ3g&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ8tMDegQIPBAI
+            - text: "4"
+          - link "Page 5" [ref=e811] [cursor=pointer]:
+            - /url: /search?q=developers.viber.com+rest+bot+api+2025&sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&ei=PvE2apvXA-CxwPAPityzIQ&start=40&sa=N&sstk=AU9db-BV-YvhdJNteXk8dDNN72ug00hxbTIT14lYaBx-YfVz17QU9XsbO7j90Y9VYowKHr2_mAKYMjuSePgzCCIksRP_PWSWyxEZ3g&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ8tMDegQIPBAK
+            - text: "5"
+          - link "Page 6" [ref=e813] [cursor=pointer]:
+            - /url: /search?q=developers.viber.com+rest+bot+api+2025&sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&ei=PvE2apvXA-CxwPAPityzIQ&start=50&sa=N&sstk=AU9db-BV-YvhdJNteXk8dDNN72ug00hxbTIT14lYaBx-YfVz17QU9XsbO7j90Y9VYowKHr2_mAKYMjuSePgzCCIksRP_PWSWyxEZ3g&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ8tMDegQIPBAM
+            - text: "6"
+          - link "Page 7" [ref=e815] [cursor=pointer]:
+            - /url: /search?q=developers.viber.com+rest+bot+api+2025&sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&ei=PvE2apvXA-CxwPAPityzIQ&start=60&sa=N&sstk=AU9db-BV-YvhdJNteXk8dDNN72ug00hxbTIT14lYaBx-YfVz17QU9XsbO7j90Y9VYowKHr2_mAKYMjuSePgzCCIksRP_PWSWyxEZ3g&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ8tMDegQIPBAO
+            - text: "7"
+          - heading "Next" [level=2] [ref=e817]:
+            - link "Next" [ref=e818] [cursor=pointer]:
+              - /url: /search?q=developers.viber.com+rest+bot+api+2025&sca_esv=d3289bdb09452055&sxsrf=APpeQnuV9jlG1GkGFZVOkmtulyLPO2PJcg:1781985598067&ei=PvE2apvXA-CxwPAPityzIQ&start=10&sa=N&sstk=AU9db-BV-YvhdJNteXk8dDNN72ug00hxbTIT14lYaBx-YfVz17QU9XsbO7j90Y9VYowKHr2_mAKYMjuSePgzCCIksRP_PWSWyxEZ3g&ved=2ahUKEwib7sTUzZaVAxXgGBAIHQruLAQQ8NMDegQIPBAQ
+              - generic [ref=e820]: Next
+      - navigation
+    - contentinfo [ref=e821]:
+      - heading "Footer links" [level=1] [ref=e822]
+      - generic [ref=e826]:
+        - generic [ref=e830]: Results are not personalised
+        - generic [ref=e832]:
+          - text: Finland
+          - generic [ref=e834]:
+            - button "Helsinki - From your IP address" [ref=e836] [cursor=pointer]:
+              - generic [ref=e837]: Helsinki
+              - generic [ref=e839]:
+                - text: "-"
+                - generic [ref=e840]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=e842] [cursor=pointer]: Update location
+        - generic [ref=e845]:
+          - link "Help" [ref=e846] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-FI&fg=1
+          - link "Send feedback" [ref=e847] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e848] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-FI&fg=1
+          - link "Terms" [ref=e849] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-FI&fg=1

@@ -1,0 +1,324 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - link "hex logo Hex" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "hex logo" [ref=e8]
+          - generic [ref=e9]: Hex
+        - generic [ref=e10]:
+          - search [ref=e14]:
+            - generic [ref=e15]:
+              - generic:
+                - img
+              - combobox "Find packages" [ref=e16]
+              - generic [ref=e17]: Find packages
+          - link "Packages" [ref=e18] [cursor=pointer]:
+            - /url: /packages
+          - link "Pricing" [ref=e19] [cursor=pointer]:
+            - /url: /pricing
+          - link "Docs" [ref=e20] [cursor=pointer]:
+            - /url: /docs
+          - button "Change theme" [ref=e22] [cursor=pointer]:
+            - generic [ref=e23]: Change color theme
+            - img [ref=e25]
+          - link "Log In" [ref=e28] [cursor=pointer]:
+            - /url: /login
+    - main [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - link "Packages" [ref=e34] [cursor=pointer]:
+              - /url: /packages
+              - img [ref=e35]
+              - text: Packages
+            - generic [ref=e38]:
+              - heading "piper" [level=1] [ref=e39]:
+                - link "piper" [ref=e40] [cursor=pointer]:
+                  - /url: /packages/piper
+              - group [ref=e41]:
+                - generic "0.0.4" [ref=e42] [cursor=pointer]:
+                  - img [ref=e43]
+                  - generic [ref=e47]: 0.0.4
+                  - img [ref=e48]
+            - paragraph [ref=e51]: Simple task router similar to Phoenix.Router and Plug
+          - generic [ref=e52]:
+            - link "HexDocs" [ref=e53] [cursor=pointer]:
+              - /url: https://piper.hexdocs.pm/
+              - img [ref=e54]
+              - generic [ref=e57]: HexDocs
+            - link "HexPreview" [ref=e58] [cursor=pointer]:
+              - /url: https://preview.hex.pm/preview/piper/0.0.4
+              - img [ref=e59]
+              - generic [ref=e62]: HexPreview
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - link "Readme" [ref=e66] [cursor=pointer]:
+              - /url: /packages/piper
+              - img [ref=e67]
+              - generic [ref=e70]: Readme
+            - link "4 Versions" [ref=e71] [cursor=pointer]:
+              - /url: /packages/piper/versions
+              - img [ref=e72]
+              - generic [ref=e76]: 4 Versions
+            - link "0 Dependencies" [ref=e77] [cursor=pointer]:
+              - /url: /packages/piper/dependencies
+              - img [ref=e78]
+              - generic [ref=e81]: 0 Dependencies
+            - link "0 Dependants" [ref=e82] [cursor=pointer]:
+              - /url: /packages/piper/dependents
+              - img [ref=e83]
+              - generic [ref=e86]: 0 Dependants
+            - link "Activity" [ref=e87] [cursor=pointer]:
+              - /url: /packages/piper/audit-logs
+              - img [ref=e88]
+              - generic [ref=e91]: Activity
+          - generic [ref=e92]:
+            - iframe [ref=e96]:
+              - article [ref=f28e2]:
+                - heading "Piper" [level=1] [ref=f28e3]
+                - paragraph [ref=f28e4]: Plug-like data processing library.
+                - heading "Installation" [level=2] [ref=f28e5]
+                - paragraph [ref=f28e6]:
+                  - text: If
+                  - link "available in Hex" [ref=f28e7] [cursor=pointer]:
+                    - /url: https://hex.pm/docs/publish
+                  - text: ", the package can be installed as:"
+                - list [ref=f28e8]:
+                  - listitem [ref=f28e9]:
+                    - text: Add
+                    - code [ref=f28e10]: piper
+                    - text: to your list of dependencies in
+                    - code [ref=f28e11]: mix.exs
+                    - text: ":"
+                - code [ref=f28e13]:
+                  - generic [ref=f28e14]: "```elixir"
+                  - generic [ref=f28e15]: def deps do
+                  - generic [ref=f28e16]: "[{:piper, \"~> 0.1.0\"}]"
+                  - generic [ref=f28e17]: end
+                  - generic [ref=f28e18]: "```"
+                - list [ref=f28e19]:
+                  - listitem [ref=f28e20]:
+                    - text: Ensure
+                    - code [ref=f28e21]: piper
+                    - text: "is started before your application:"
+                - code [ref=f28e23]:
+                  - generic [ref=f28e24]: "```elixir"
+                  - generic [ref=f28e25]: def application do
+                  - generic [ref=f28e26]: "[applications: [:piper]]"
+                  - generic [ref=f28e27]: end
+                  - generic [ref=f28e28]: "```"
+                - heading "Usage" [level=2] [ref=f28e29]
+                - paragraph [ref=f28e30]: "Piper pipeline can be built using either functions or modules. This way you can provide deencapsulation and processing data in pipeline-like way. Example:"
+                - code [ref=f28e32]:
+                  - generic [ref=f28e33]: defmodule FetchFromRepoPipe do
+                  - generic [ref=f28e34]: alias MyApp.Repo
+                  - generic [ref=f28e36]: "def init(opts), do: opts"
+                  - generic [ref=f28e38]: "def call(%Piper.Data{data: %{\"id\" => id}}, _opts) do"
+                  - generic [ref=f28e39]: data
+                  - generic [ref=f28e40]: "|> assign(:user, Repo.get(User, id))"
+                  - generic [ref=f28e41]: end
+                  - generic [ref=f28e42]: end
+                  - generic [ref=f28e44]: defmodule UpdatePassword do
+                  - generic [ref=f28e45]: use Piper.Builder
+                  - generic [ref=f28e47]: alias MyApp.Repo
+                  - generic [ref=f28e49]: pipe FetchFromRepoPipe
+                  - generic [ref=f28e50]: "pipe :encrypt, module: Comeoin.Bcrypt"
+                  - generic [ref=f28e51]: pipe :set
+                  - generic [ref=f28e52]: pipe :save
+                  - generic [ref=f28e54]: "def encrypt(%{data: %{\"password\" => password}} = data, [module: module]) do"
+                  - generic [ref=f28e55]: data
+                  - generic [ref=f28e56]: "|> assign(:password, module.hashpw(password))"
+                  - generic [ref=f28e57]: end
+                  - generic [ref=f28e59]: "def set(%{assigns: %{user: user, password: password}} = data, _opts) do"
+                  - generic [ref=f28e60]: data
+                  - generic [ref=f28e61]: "|> assign(:user, %{user | password: password})"
+                  - generic [ref=f28e62]: end
+                  - generic [ref=f28e64]: "def save(%{assigns: %{user: user}} = data, _opts) do"
+                  - generic [ref=f28e65]: data
+                  - generic [ref=f28e66]: "|> assign(:user, Repo.update(user))"
+                  - generic [ref=f28e67]: end
+                  - generic [ref=f28e68]: end
+                - heading "Special thanks" [level=2] [ref=f28e69]
+                - list [ref=f28e70]:
+                  - listitem [ref=f28e71]:
+                    - text: For initial idea Rafał Radziszewski (
+                    - link "@rafal-radziszewski" [ref=f28e72] [cursor=pointer]:
+                      - /url: https://github.com/rafal-radziszewski
+                    - text: )
+                  - listitem [ref=f28e73]:
+                    - text: Jose Valim (
+                    - link "@josevalim" [ref=f28e74] [cursor=pointer]:
+                      - /url: https://github.com/josevalim
+                    - text: )
+                  - listitem [ref=f28e75]:
+                    - text: Andrea Leopardi (
+                    - link "@whatyouhide" [ref=f28e76] [cursor=pointer]:
+                      - /url: https://github.com/whatyouhide
+                    - text: )
+                  - listitem [ref=f28e77]:
+                    - text: Sonny Scroggin (
+                    - link "@scrogson" [ref=f28e78] [cursor=pointer]:
+                      - /url: https://github.com/scrogson
+                    - text: )
+                  - listitem [ref=f28e79]:
+                    - text: Gabriel Jaldon (
+                    - link "@gjaldon" [ref=f28e80] [cursor=pointer]:
+                      - /url: https://github.com/gjaldon
+                    - text: )
+                  - listitem [ref=f28e81]:
+                    - text: and other contributors to
+                    - link "elixir-lang/plug" [ref=f28e82] [cursor=pointer]:
+                      - /url: https://github.com/elixir-lang/plug
+                    - text: for your work on Plug which allowed us to create this library.
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - heading "Checksum" [level=3] [ref=e99]
+                - generic [ref=e100]:
+                  - textbox [ref=e101]: ddf2a124116d4dd6ba3946737450c572fbff44752f9caf6d92c1f459fc886a57
+                  - button [ref=e102]:
+                    - img [ref=e103]
+              - generic [ref=e106]:
+                - heading "Dependency Config" [level=3] [ref=e107]
+                - generic [ref=e108]:
+                  - paragraph [ref=e109]: mix.exs
+                  - generic [ref=e110]:
+                    - textbox [ref=e111]: "{:piper, \"~> 0.0.4\"}"
+                    - button [ref=e112]:
+                      - img [ref=e113]
+                - generic [ref=e116]:
+                  - paragraph [ref=e117]: rebar.config
+                  - generic [ref=e118]:
+                    - textbox [ref=e119]: "{piper, \"0.0.4\"}"
+                    - button [ref=e120]:
+                      - img [ref=e121]
+                - generic [ref=e124]:
+                  - paragraph [ref=e125]: Gleam
+                  - generic [ref=e126]:
+                    - textbox [ref=e127]: gleam add piper@0.0.4
+                    - button [ref=e128]:
+                      - img [ref=e129]
+                - generic [ref=e132]:
+                  - paragraph [ref=e133]: erlang.mk
+                  - generic [ref=e134]:
+                    - textbox [ref=e135]: dep_piper = hex 0.0.4
+                    - button [ref=e136]:
+                      - img [ref=e137]
+              - generic [ref=e140]:
+                - heading "Package Details" [level=3] [ref=e141]
+                - generic [ref=e142]:
+                  - generic [ref=e143]:
+                    - generic [ref=e144]: Downloads
+                    - generic [ref=e145]: Last 30 days, all versions
+                  - img "Downloads over the last 30 days" [ref=e146]:
+                    - generic [ref=e147]: "0"
+                    - generic [ref=e148]: "5"
+                    - generic [ref=e149]: "10"
+                    - generic [ref=e150]: "15"
+                    - generic [ref=e151]: "20"
+                - generic [ref=e155]:
+                  - generic [ref=e156]:
+                    - paragraph [ref=e157]: this version
+                    - paragraph [ref=e158]: 26 598
+                  - generic [ref=e159]:
+                    - paragraph [ref=e160]: yesterday
+                    - paragraph [ref=e161]: "2"
+                  - generic [ref=e162]:
+                    - paragraph [ref=e163]: last 7 days
+                    - paragraph [ref=e164]: "2"
+                  - generic [ref=e165]:
+                    - paragraph [ref=e166]: all time
+                    - paragraph [ref=e167]: 27 506
+                - generic [ref=e168]:
+                  - generic [ref=e169]:
+                    - paragraph [ref=e170]: Last Updated
+                    - paragraph [ref=e171]: Jun 08, 2017
+                  - generic [ref=e172]:
+                    - paragraph [ref=e173]: License
+                    - paragraph [ref=e175]: MIT
+                  - generic [ref=e176]:
+                    - paragraph [ref=e177]: Build Tools
+                    - generic [ref=e179]: mix
+                  - generic [ref=e180]:
+                    - paragraph [ref=e181]: Publisher
+                    - link "hauleth hauleth" [ref=e182] [cursor=pointer]:
+                      - /url: /users/hauleth
+                      - img "hauleth" [ref=e183]
+                      - generic [ref=e184]: hauleth
+              - generic [ref=e185]:
+                - heading "Links" [level=3] [ref=e186]
+                - list [ref=e187]:
+                  - listitem [ref=e188]:
+                    - link "Docs" [ref=e189] [cursor=pointer]:
+                      - /url: https://hexdocs.pm/piper
+                  - listitem [ref=e190]:
+                    - link "GitHub" [ref=e191] [cursor=pointer]:
+                      - /url: https://github.com/appunite/piper
+              - generic [ref=e192]:
+                - heading "Owners" [level=3] [ref=e194]
+                - list [ref=e195]:
+                  - listitem [ref=e196]:
+                    - link "hauleth hauleth" [ref=e197] [cursor=pointer]:
+                      - /url: /users/hauleth
+                      - img "hauleth" [ref=e198]
+                      - generic [ref=e199]: hauleth
+  - contentinfo [ref=e200]:
+    - generic [ref=e202]:
+      - generic [ref=e203]:
+        - generic [ref=e204]:
+          - img "hex logo" [ref=e205]
+          - generic [ref=e206]: Hex
+        - generic [ref=e207]:
+          - link "GitHub" [ref=e208] [cursor=pointer]:
+            - /url: https://github.com/hexpm
+            - img [ref=e209]
+          - link "X" [ref=e211] [cursor=pointer]:
+            - /url: https://x.com/hexpm
+            - img [ref=e212]
+      - generic [ref=e215]:
+        - generic [ref=e216]:
+          - link "About" [ref=e217] [cursor=pointer]:
+            - /url: /about
+          - link "Blog" [ref=e218] [cursor=pointer]:
+            - /url: /blog
+          - link "Sponsors" [ref=e219] [cursor=pointer]:
+            - /url: /sponsors
+          - link "Status" [ref=e220] [cursor=pointer]:
+            - /url: https://status.hex.pm
+          - link "Advisories" [ref=e221] [cursor=pointer]:
+            - /url: https://osv.dev/list?ecosystem=Hex
+        - generic [ref=e222]:
+          - link "Documentation" [ref=e223] [cursor=pointer]:
+            - /url: /docs
+          - link "FAQ" [ref=e224] [cursor=pointer]:
+            - /url: /docs/faq
+          - link "Specifications" [ref=e225] [cursor=pointer]:
+            - /url: https://github.com/hexpm/specifications
+          - link "Report Client Issue" [ref=e226] [cursor=pointer]:
+            - /url: https://github.com/hexpm/hex/issues
+          - link "Report General Issue" [ref=e227] [cursor=pointer]:
+            - /url: https://github.com/hexpm/hexpm/issues
+          - link "Report Security Issue" [ref=e228] [cursor=pointer]:
+            - /url: mailto:security@hex.pm
+          - link "Contact Support" [ref=e229] [cursor=pointer]:
+            - /url: mailto:support@hex.pm
+        - generic [ref=e230]:
+          - link "Code of Conduct" [ref=e231] [cursor=pointer]:
+            - /url: /policies/codeofconduct
+          - link "Terms of Service" [ref=e232] [cursor=pointer]:
+            - /url: /policies/termsofservice
+          - link "Privacy Policy" [ref=e233] [cursor=pointer]:
+            - /url: /policies/privacy
+          - link "Copyright Policy" [ref=e234] [cursor=pointer]:
+            - /url: /policies/copyright
+          - link "Dispute Policy" [ref=e235] [cursor=pointer]:
+            - /url: /policies/dispute
+    - generic [ref=e237]:
+      - paragraph [ref=e238]: Copyright 2015. Six Colors AB.
+      - paragraph [ref=e239]:
+        - text: Powered by the
+        - link "Erlang VM" [ref=e240] [cursor=pointer]:
+          - /url: https://www.erlang.org/
+        - text: and the
+        - link "Elixir Programming Language" [ref=e241] [cursor=pointer]:
+          - /url: https://elixir-lang.org/

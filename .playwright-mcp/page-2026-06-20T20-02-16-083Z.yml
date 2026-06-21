@@ -1,0 +1,377 @@
+- generic [active] [ref=e1]:
+  - dialog [ref=e2]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - paragraph [ref=e9]: Корпорация Майкрософт и наши сторонние поставщики используют файлы cookie и аналогичные технологии для предоставления, поддержки и улучшения наших услуг и рекламных объявлений. С вашего согласия мы будем использовать эти данные для персонализации объявлений и связанной с ними аналитики.
+        - paragraph [ref=e10]:
+          - text: Выберите "Принять", чтобы согласиться с этими видами использования, "Отклонить", чтобы отклонить их, или выберите "Другие варианты", чтобы увидеть все доступные варианты. Изменить выбор можно в разделе "Управление файлами cookie" в нижней части этой страницы.
+          - link "Заявление о конфиденциальности" [ref=e11] [cursor=pointer]:
+            - /url: https://go.microsoft.com/fwlink/?LinkId=521839
+      - generic [ref=e12]:
+        - link "Принимаю" [ref=e14] [cursor=pointer]:
+          - /url: "javascript: void(0)"
+        - link "Отклонить" [ref=e16] [cursor=pointer]:
+          - /url: "javascript: void(0)"
+      - link "Дополнительные параметры" [ref=e18] [cursor=pointer]:
+        - /url: "javascript: void(0)"
+  - banner [ref=e19]:
+    - button "Перейти к контенту" [ref=e20] [cursor=pointer]:
+      - generic [ref=e22]: Перейти к контенту
+    - button "Отзыв о доступности" [ref=e23] [cursor=pointer]:
+      - generic [ref=e25]: Отзыв о доступности
+    - generic [ref=e26]:
+      - link "Вернуться к Поиску Bing" [ref=e27] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Вернуться к Поиску Bing" [level=1] [ref=e28]
+      - search [ref=e29]:
+        - button "Поиск" [ref=e32] [cursor=pointer]
+        - searchbox "Введите свой поисковый запрос здесь — пока вы печатаете, будут отображаться предлагаемые варианты" [ref=e33]: discord bot api capabilities 2025 components buttons slash commands embeds
+        - button "Поиск с использованием изображения" [ref=e39] [cursor=pointer]
+    - complementary "Награды и предпочтения учетной записи" [ref=e41]:
+      - button "Microsoft Rewards" [ref=e42] [cursor=pointer]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: Rewards
+          - img [ref=e47]
+      - link "Войти" [ref=e59] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic "Войти" [ref=e60]
+    - navigation "Фильтр поиска" [ref=e61]:
+      - list [ref=e62]:
+        - listitem [ref=e63]:
+          - link "Все" [ref=e64] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=e65]:
+          - link "Поиск" [ref=e66] [cursor=pointer]:
+            - /url: /copilotsearch?q=discord+bot+api+capabilities+2025+components+buttons+slash+commands+embeds&FORM=CSSCOP
+            - img [ref=e67]
+            - text: Поиск
+        - listitem [ref=e69]:
+          - link "Видео" [ref=e70] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=2efe52721b855c206e5e680d62a20d52f2e7a4361f07cf5a9aa3704e9cd73afaJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1kaXNjb3JkK2JvdCthcGkrY2FwYWJpbGl0aWVzKzIwMjUrY29tcG9uZW50cytidXR0b25zK3NsYXNoK2NvbW1hbmRzK2VtYmVkcyZGT1JNPUhEUlNDNA&ntb=1
+        - listitem [ref=e71]:
+          - link "Изображения" [ref=e72] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=a2b6b163208910d898f400b84f2dade63a39070e276281aec5beacb0b6fe761dJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2ltYWdlcy9zZWFyY2g_cT1kaXNjb3JkK2JvdCthcGkrY2FwYWJpbGl0aWVzKzIwMjUrY29tcG9uZW50cytidXR0b25zK3NsYXNoK2NvbW1hbmRzK2VtYmVkcyZGT1JNPUhEUlNDMw&ntb=1
+        - listitem [ref=e73]:
+          - link "Карты" [ref=e74] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=962c7811aefe5894180de9a049f84fe4e4efa08199629ce84fa87af3225d4c2dJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L21hcHM_cT1kaXNjb3JkK2JvdCthcGkrY2FwYWJpbGl0aWVzKzIwMjUrY29tcG9uZW50cytidXR0b25zK3NsYXNoK2NvbW1hbmRzK2VtYmVkcyZGT1JNPUhEUlNDNg&ntb=1
+        - listitem [ref=e75]:
+          - link "Новости" [ref=e76] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=8d01e44539c2f1f00e1468babef878abaff545502319ca1459203e2722cb49b2JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L25ld3Mvc2VhcmNoP3E9ZGlzY29yZCtib3QrYXBpK2NhcGFiaWxpdGllcysyMDI1K2NvbXBvbmVudHMrYnV0dG9ucytzbGFzaCtjb21tYW5kcytlbWJlZHMmRk9STT1IRFJTQzc&ntb=1
+        - listitem [ref=e77]:
+          - link "Copilot" [ref=e78] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=991063bffe77e1692d56190748a1add66e5340ac86e7a01dafb495a51acfd524JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2NoYXQ_cHJvbXB0PWRpc2NvcmQrYm90K2FwaStjYXBhYmlsaXRpZXMrMjAyNStjb21wb25lbnRzK2J1dHRvbnMrc2xhc2grY29tbWFuZHMrZW1iZWRzJnNlbmRxdWVyeT0xJkZPUk09U0NDT0RY&ntb=1
+        - listitem [ref=e79]:
+          - button "Еще" [ref=e80] [cursor=pointer]:
+            - img [ref=e82]
+            - text: Еще
+  - generic [ref=e84]:
+    - main "Результаты поиска" [ref=e85]:
+      - generic [ref=e87]: "Приблизительное число результатов: 46 400"
+      - list [ref=e98]:
+        - listitem [ref=e99]:
+          - generic [ref=e100]:
+            - link "Исследуйте это изображение" [ref=e103] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=4SSKVc/S&id=D25D440DDE6BC3510E8F3752DFCA589432F17378&thid=OIP.4SSKVc_S51FA69WknBwB5QHaD4&mediaurl=https://discord.mintlify.app/mintlify-assets/_next/image?url=%2F_mintlify%2Fapi%2Fog%3Fdivision%3DComponents%26appearance%3Ddark%26title%3DComponent%2BReference%26logoLight%3Dhttps%253A%252F%252Fmintcdn.com%252Fdiscord%252FCoUXJJtPEdmG4KWD%252Flogo%252Fdocs-light.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DCoUXJJtPEdmG4KWD%2526q%253D85%2526s%253D285b335b09d978db85c5965b2836deeb%26logoDark%3Dhttps%253A%252F%252Fmintcdn.com%252Fdiscord%252FCoUXJJtPEdmG4KWD%252Flogo%252Fdocs-dark.svg%253Ffit%253Dmax%2526auto%253Dformat%2526n%253DCoUXJJtPEdmG4KWD%2526q%253D85%2526s%253D4f680c860d33609aadb33111a6567646%26primaryColor%3D%25235865f2%26lightColor%3D%2523798df9%26darkColor%3D%25235865f2%26backgroundLight%3D%2523ffffff%26backgroundDark%3D%2523202024&w=1200&q=100&q=discord+bot+api+capabilities+2025+components+buttons+slash+commands+embeds&ck=C082B236107D2B1F42BBFE7FF3A439AE&idpp=rc&expw=1200&exph=630&form=rc2idp
+            - generic [ref=e105]:
+              - link "discord.com" [ref=e107] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=5d2245186cf9afcfb313c0b99730d9391ae40ffcd53cefe9af81007f2a7b8ec4JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kb2NzLmRpc2NvcmQuY29tL2RldmVsb3BlcnMvY29tcG9uZW50cy9yZWZlcmVuY2U&ntb=1
+                - generic [ref=e112]:
+                  - generic [ref=e113]: discord.com
+                  - generic [ref=e115]:
+                    - generic [ref=e116]: https://docs.discord.com › developers › compo…
+                    - generic [ref=e117]: Перевести этот результат
+              - heading "Component Reference - Documentation - Discord" [level=2] [ref=e118]:
+                - link "Component Reference - Documentation - Discord" [ref=e119] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=5d2245186cf9afcfb313c0b99730d9391ae40ffcd53cefe9af81007f2a7b8ec4JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kb2NzLmRpc2NvcmQuY29tL2RldmVsb3BlcnMvY29tcG9uZW50cy9yZWZlcmVuY2U&ntb=1
+              - paragraph [ref=e120]: Legacy component behavior will continue to work but provide less flexibility and control over the message layout. For a practical guide on implementing these …
+        - listitem [ref=e122]:
+          - generic [ref=e124]:
+            - heading "Видео Discord Bot API Capabilities 2025 Components Buttons Slash …" [level=2] [ref=e126]:
+              - link "Видео Discord Bot API Capabilities 2025 Components Buttons Slash …" [ref=e127] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=d365bc93fabfce513e32fe1f561812d368231ee5f8f0e0cdc54cfc2531749b74JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1EaXNjb3JkK2JvdCthcGkrY2FwYWJpbGl0aWVzKzIwMjUrY29tcG9uZW50cytidXR0b25zK3NsYXNoK2NvbW1hbmRzK2VtYmVkcyZxcHZ0PWRpc2NvcmQrYm90K2FwaStjYXBhYmlsaXRpZXMrMjAyNStjb21wb25lbnRzK2J1dHRvbnMrc2xhc2grY29tbWFuZHMrZW1iZWRzJkZPUk09VkRSRQ&ntb=1
+            - 'link "Build a Modern Discord Bot in 2025 (Full Crash Course | Discord.js v14, Prisma, Components V2)из YouTube · Длительность: 1 час16 мин8 с · Просмотров: 2,8тыс. · отправлено: 8 мес. назад · кем отправлено: Zyren Development · Щелкните для воспроизведения. · 🚀 Build a Modern Discord Bot in 2025 using Discord.js v15, Sapphire Framework, and Prisma! In this crash course, I’ll show you how to create a fully interactive bot with Components V2, modals, select menus, and database integration — step-by-step, from setup to deployment. 📚 What You’ll Learn: - Modern Discord.js v15 setup (Node.js ..." [ref=e130] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=c462473f8d4d2c3bae043d5ff6adfeb8f8902217362cf61903d3528f4487c9a0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9ZGlzY29yZCtib3QrYXBpK2NhcGFiaWxpdGllcysyMDI1K2NvbXBvbmVudHMrYnV0dG9ucytzbGFzaCtjb21tYW5kcytlbWJlZHMmbWlkPTk1OUNGN0YzRDEwMzUzOTE2NzNEOTU5Q0Y3RjNEMTAzNTM5MTY3M0QmY2h1cmw9aHR0cHMlM2ElMmYlMmZ3d3cueW91dHViZS5jb20lMmZjaGFubmVsJTJmVUNJWUsyaFFSS3FqbjRmbkFMT1BYSl9BJkZPUk09VklSRQ&ntb=1
+              - generic [ref=e131]:
+                - generic [ref=e132]:
+                  - img "Build a Modern Discord Bot in 2025 (Full Crash Course | Discord.js v14, Prisma, Components V2)" [ref=e134]
+                  - generic [ref=e140]: 1:16:08
+                - generic [ref=e143]:
+                  - generic "Build a Modern Discord Bot in 2025 (Full Crash Course | Discord.js v14, Prisma, Components V2)" [ref=e144]:
+                    - text: Build a Modern
+                    - strong [ref=e145]: Discord
+                    - strong [ref=e146]: Bot
+                    - text: in
+                    - strong [ref=e147]: "2025"
+                    - text: (Full Crash Course |
+                    - strong [ref=e148]: Discord
+                    - text: .js v14, Prisma,
+                    - strong [ref=e149]: Components
+                    - text: V2)
+                  - generic [ref=e151]:
+                    - generic [ref=e152]:
+                      - img "Сайт источника видео" [ref=e153]
+                      - text: YouTube · Zyren Development
+                    - generic [ref=e154]: "Просмотров: 2,8тыс. · 8 мес. назад"
+            - generic [ref=e156]:
+              - 'link "How to Use Embeds & Buttons in Discord Bot (Python 2025) | Interactive UI with discord.py!из YouTube · Длительность: 9 мин10 с · Просмотров: 297 · отправлено: 11 мес. назад · кем отправлено: Dynexus · Щелкните для воспроизведения. · 🧠 In Part 4 of our Discord Bot series (Python 2025), we’re adding Embeds and interactive Buttons using discord.py! This video will level up your bot''s UI and help it stand out in any server. Perfect for beginners and intermediate devs! In this tutorial, you’ll learn: How to create rich Discord Embeds with titles, descriptions & colors ..." [ref=e159] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=9725b97f7a94a4b00c3f05cce5a72f9ce94576e883383f6891012e27314393e6JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9ZGlzY29yZCtib3QrYXBpK2NhcGFiaWxpdGllcysyMDI1K2NvbXBvbmVudHMrYnV0dG9ucytzbGFzaCtjb21tYW5kcytlbWJlZHMmbWlkPUQ3NjdEM0UwMUJFMjI3NDhDMDAyRDc2N0QzRTAxQkUyMjc0OEMwMDImY2h1cmw9aHR0cHMlM2ElMmYlMmZ3d3cueW91dHViZS5jb20lMmZjaGFubmVsJTJmVUN5bnFiLWZUODdNWkE0b2JrMXBlbm9RJkZPUk09VklSRQ&ntb=1
+                - generic [ref=e160]:
+                  - generic [ref=e161]:
+                    - img "How to Use Embeds & Buttons in Discord Bot (Python 2025) | Interactive UI with discord.py!" [ref=e163]
+                    - generic [ref=e169]: 9:10
+                  - generic [ref=e170]:
+                    - generic "How to Use Embeds & Buttons in Discord Bot (Python 2025) | Interactive UI with discord.py!" [ref=e171]:
+                      - text: How to Use
+                      - strong [ref=e172]: Embeds
+                      - text: "&"
+                      - strong [ref=e173]: Buttons
+                      - text: in
+                      - strong [ref=e174]: Discord
+                      - strong [ref=e175]: Bot
+                      - text: (Python
+                      - strong [ref=e176]: "2025"
+                      - text: ) | Interactive UI with
+                      - strong [ref=e177]: discord
+                      - text: .py!
+                    - generic [ref=e178]:
+                      - generic [ref=e179]:
+                        - img "Сайт источника видео" [ref=e180]
+                        - text: YouTube · Dynexus
+                      - generic [ref=e181]: "Просмотров: 297 · 11 мес. назад"
+              - 'link "Discord Bot Tutorial for Beginners (2025) — Part 1: Slash Commands & Setupиз YouTube · Длительность: 14 мин40 с · Просмотров: 90 · отправлено: 6 мес. назад · кем отправлено: Claredon Bot Network · Щелкните для воспроизведения. · In this Discord bot tutorial series, I show you how to build a Discord bot using Node.js and discord.js v14. In Part 1, we create the bot project, set up the slash command builder, and build our first slash command: /ping. Visual Studio Code: https://code.visualstudio.com/ Node.js Downlaod: https://nodejs.org/en/download Discord.js: https ..." [ref=e184] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=fb523bed0261641dabfd1f7224bb29baf963a6201e7a5fbbf5c2a86fe22f1b6eJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9ZGlzY29yZCtib3QrYXBpK2NhcGFiaWxpdGllcysyMDI1K2NvbXBvbmVudHMrYnV0dG9ucytzbGFzaCtjb21tYW5kcytlbWJlZHMmbWlkPTY4NTBFNDQzQkFBRDQxNTY2MzE3Njg1MEU0NDNCQUFENDE1NjYzMTcmY2h1cmw9aHR0cHMlM2ElMmYlMmZ3d3cueW91dHViZS5jb20lMmZjaGFubmVsJTJmVUN1Tk9fRC1ualVlZkFCLVJWTDEwaXZ3JkZPUk09VklSRQ&ntb=1
+                - generic [ref=e185]:
+                  - generic [ref=e186]:
+                    - 'img "Discord Bot Tutorial for Beginners (2025) — Part 1: Slash Commands & Setup" [ref=e188]'
+                    - generic [ref=e194]: 14:40
+                  - generic [ref=e195]:
+                    - 'generic "Discord Bot Tutorial for Beginners (2025) — Part 1: Slash Commands & Setup" [ref=e196]':
+                      - strong [ref=e197]: Discord
+                      - strong [ref=e198]: Bot
+                      - text: Tutorial for Beginners (
+                      - strong [ref=e199]: "2025"
+                      - text: ") — Part 1:"
+                      - strong [ref=e200]: Slash
+                      - strong [ref=e201]: Commands
+                      - text: "& Setup"
+                    - generic [ref=e202]:
+                      - generic [ref=e203]:
+                        - img "Сайт источника видео" [ref=e204]
+                        - text: YouTube · Claredon Bot Network
+                      - generic [ref=e205]: "Просмотров: 90 · 6 мес. назад"
+              - 'link "How to Add Buttons to Your Discord Bot in Python (2025) | Episode 5из YouTube · Длительность: 11 мин43 с · Просмотров: 14,3тыс. · отправлено: 3 февр. 2025 г. · кем отправлено: James S · Щелкните для воспроизведения. · Make your Discord bot more interactive with buttons! In this tutorial, I''ll show you how to add clickable buttons to your Discord bot using Python and discord.py. Buttons can enhance your bot’s user experience, making commands more intuitive and engaging. 🚀 *In this episode, you will learn:* 1. What Buttons are 2. How to make a Button 3 ..." [ref=e208] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=2226a5b802563572c4fcfb3d575789cf71c478f6c0cfdb30f84ac2e694337373JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9ZGlzY29yZCtib3QrYXBpK2NhcGFiaWxpdGllcysyMDI1K2NvbXBvbmVudHMrYnV0dG9ucytzbGFzaCtjb21tYW5kcytlbWJlZHMmbWlkPThFMjg5NEYwMjIzQ0Y1NkREODUxOEUyODk0RjAyMjNDRjU2REQ4NTEmY2h1cmw9aHR0cHMlM2ElMmYlMmZ3d3cueW91dHViZS5jb20lMmZjaGFubmVsJTJmVUN3QmpSUFV1T2VmaDZpRnZHNnpMaHJnJkZPUk09VklSRQ&ntb=1
+                - generic [ref=e209]:
+                  - generic [ref=e210]:
+                    - img "How to Add Buttons to Your Discord Bot in Python (2025) | Episode 5" [ref=e212]
+                    - generic [ref=e218]: 11:43
+                  - generic [ref=e219]:
+                    - generic "How to Add Buttons to Your Discord Bot in Python (2025) | Episode 5" [ref=e220]:
+                      - text: How to Add
+                      - strong [ref=e221]: Buttons
+                      - text: to Your
+                      - strong [ref=e222]: Discord
+                      - strong [ref=e223]: Bot
+                      - text: in Python (
+                      - strong [ref=e224]: "2025"
+                      - text: ) | Episode 5
+                    - generic [ref=e225]:
+                      - generic [ref=e226]:
+                        - img "Сайт источника видео" [ref=e227]
+                        - text: YouTube · James S
+                      - generic [ref=e228]: "Просмотров: 14,3тыс. · 3 февр. 2025 г."
+        - listitem [ref=e229]:
+          - generic [ref=e230]:
+            - link "Исследуйте это изображение" [ref=e233] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=qGdTziwe&id=6C59AFED707F249461FD0870430C1002D24DF83A&thid=OIP.qGdTziweIz_f_IdyQxidSgHaD4&mediaurl=https://discordjs.guide/og/legacy/interactive-components/buttons/image.png&q=discord+bot+api+capabilities+2025+components+buttons+slash+commands+embeds&ck=9371BE6266EDA6D3B7C48F874339CDD9&idpp=rc&expw=1200&exph=630&form=rc2idp
+            - generic [ref=e235]:
+              - link "discord.js Guide" [ref=e237] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=c6af881294d752dc3b2f8d64d46a22dc295e7987a1e135d688574ace0e31ae4fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kaXNjb3JkanMuZ3VpZGUvaW50ZXJhY3RpdmUtY29tcG9uZW50cy9idXR0b25z&ntb=1
+                - generic [ref=e242]:
+                  - generic [ref=e243]: discord.js Guide
+                  - generic [ref=e245]:
+                    - generic [ref=e246]: https://discordjs.guide › interactive-component…
+                    - generic [ref=e247]: Перевести этот результат
+              - heading "Buttons | discord.js" [level=2] [ref=e248]:
+                - link "Buttons | discord.js" [ref=e249] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=c6af881294d752dc3b2f8d64d46a22dc295e7987a1e135d688574ace0e31ae4fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kaXNjb3JkanMuZ3VpZGUvaW50ZXJhY3RpdmUtY29tcG9uZW50cy9idXR0b25z&ntb=1
+              - paragraph [ref=e250]: This page is a follow-up to the slash commands section and action rows page. Please carefully read those pages first so that you can understand the methods …
+        - listitem [ref=e252]:
+          - generic [ref=e253]:
+            - link "Исследуйте это изображение" [ref=e256] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=4IXP9fJX&id=D756B1DED84B3AD7A1DD9B00E1A21A57220C258B&thid=OIP.4IXP9fJXFBJ3voBhmv3fowHaEs&mediaurl=https://cybrancee.com/blog/wp-content/uploads/2025/06/unnamed-13.png&q=discord+bot+api+capabilities+2025+components+buttons+slash+commands+embeds&ck=30D94C13785E65316E5188EB1C208B73&idpp=rc&expw=904&exph=574&form=rc2idp
+            - generic [ref=e258]:
+              - link "cybrancee.com" [ref=e260] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=803985060f764f0631fbd64b12092ada5338a7183d04eaa69ad13f4f7b1808d2JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jeWJyYW5jZWUuY29tL2Jsb2cvdGhlLWZ1dHVyZS1vZi1kaXNjb3JkLWNvbXBvbmVudHMtdjIv&ntb=1
+                - generic [ref=e265]:
+                  - generic [ref=e266]: cybrancee.com
+                  - generic [ref=e268]:
+                    - generic [ref=e269]: https://cybrancee.com › blog
+                    - generic [ref=e270]: Перевести этот результат
+              - 'heading "The Future of Discord: Components V2 - cybrancee.com" [level=2] [ref=e271]':
+                - 'link "The Future of Discord: Components V2 - cybrancee.com" [ref=e272] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=803985060f764f0631fbd64b12092ada5338a7183d04eaa69ad13f4f7b1808d2JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jeWJyYW5jZWUuY29tL2Jsb2cvdGhlLWZ1dHVyZS1vZi1kaXNjb3JkLWNvbXBvbmVudHMtdjIv&ntb=1
+              - paragraph [ref=e273]: 4 июл. 2025 г. · If you have been using Discord for a long time, you have likely tried to code a Discord bot. Now here comes the interesting part, in your journey, you …
+        - listitem [ref=e275]:
+          - generic [ref=e276]:
+            - link "Исследуйте это изображение" [ref=e279] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=VcLZXmbF&id=3C5C0C753FAE1BB42339D33D571CF4C4A717FA13&thid=OIP.VcLZXmbFl-O6oubzxsKUIAHaD4&mediaurl=https://repository-images.githubusercontent.com/54995014/f8a350c6-6710-438f-97c4-ee691e8731e1&q=discord+bot+api+capabilities+2025+components+buttons+slash+commands+embeds&ck=613422BA4FD7334DD8CABE920B561501&idpp=rc&expw=2400&exph=1256&form=rc2idp
+            - generic [ref=e281]:
+              - link "Github" [ref=e283] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=2db20fdfc58844a70e5fa5c6a00dfe6f7e069fe53c9b756865ded470890c5e55JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL2Rpc2NvcmQvZGlzY29yZC1hcGktZG9jcw&ntb=1
+                - generic [ref=e288]:
+                  - generic [ref=e289]: Github
+                  - generic [ref=e291]:
+                    - generic [ref=e292]: https://github.com › discord › discord-api-docs
+                    - generic [ref=e293]: Перевести этот результат
+              - 'heading "discord/discord-api-docs: Official Discord Developer …" [level=2] [ref=e294]':
+                - 'link "discord/discord-api-docs: Official Discord Developer …" [ref=e295] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=2db20fdfc58844a70e5fa5c6a00dfe6f7e069fe53c9b756865ded470890c5e55JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL2Rpc2NvcmQvZGlzY29yZC1hcGktZG9jcw&ntb=1
+              - paragraph [ref=e296]: "Строк: 27 · This repository reflects the Discord Developer Platform as it is meant to be accessed by third-party applications. It omits features and capabilities that …"
+        - listitem [ref=e298]:
+          - link "discord-media.com" [ref=e300] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=bd244f1af7f19a2e3851ee0d4e6a998785f5ea9de41330b91cf0cd6f3aef0259JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kaXNjb3JkLW1lZGlhLmNvbS9lbi9uZXdzL2RldmVsb3BtZW50LTIwMjUtdGhlLWNvbXBsZXRlLXllYXItaW4tcmV2aWV3LWFwaS1taWdyYXRpb24tZ3VpZGUuaHRtbA&ntb=1
+            - generic [ref=e305]:
+              - generic [ref=e306]: discord-media.com
+              - generic [ref=e308]:
+                - generic [ref=e309]: https://discord-media.com › en › news
+                - generic [ref=e310]: Перевести этот результат
+          - 'heading "Discord Development 2025: The Complete Year-in-Review & API …" [level=2] [ref=e311]':
+            - 'link "Discord Development 2025: The Complete Year-in-Review & API …" [ref=e312] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=bd244f1af7f19a2e3851ee0d4e6a998785f5ea9de41330b91cf0cd6f3aef0259JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kaXNjb3JkLW1lZGlhLmNvbS9lbi9uZXdzL2RldmVsb3BtZW50LTIwMjUtdGhlLWNvbXBsZXRlLXllYXItaW4tcmV2aWV3LWFwaS1taWdyYXRpb24tZ3VpZGUuaHRtbA&ntb=1
+          - paragraph [ref=e314]: "7 дек. 2025 г. · The Verdict: 2025 was the year Discord ceased to be just a “chat tool” and fully metamorphosed into an App Platform. The era of passive text bots is dead. The era of the Discord …"
+        - listitem [ref=e315]:
+          - generic [ref=e316]:
+            - link "Исследуйте это изображение" [ref=e319] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=6ZtN7i3H&id=E16F2FE54624C2A2C683A8296289E53E6138B37D&thid=OIP.sctu4Pi54Q5FKZox-3JzeAHaC_&mediaurl=https://mintcdn.com/discord/KbTJiI51tEBr5wj-/images/headers/docs-botsapp-hero.png?fit=max&auto=format&n=KbTJiI51tEBr5wj-&q=85&s=4f01a5c758f18470eaeed3d9cb5335d4&q=discord+bot+api+capabilities+2025+components+buttons+slash+commands+embeds&ck=CF97BC711708576F901B8A0EB6F87A05&idpp=rc&expw=1336&exph=540&form=rc2idp
+            - generic [ref=e321]:
+              - link "discord.com" [ref=e323] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=e84b80c6ed30c55a9c0b6ca075b4f7c2d1d1808731480faaa66da2aa83d17b8aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kb2NzLmRpc2NvcmQuY29tL2RldmVsb3BlcnMvYm90cy9vdmVydmlldw&ntb=1
+                - generic [ref=e328]:
+                  - generic [ref=e329]: discord.com
+                  - generic [ref=e331]:
+                    - generic [ref=e332]: https://docs.discord.com › developers › bots
+                    - generic [ref=e333]: Перевести этот результат
+              - heading "Discord Bots & Companion Apps - Documentation" [level=2] [ref=e334]:
+                - link "Discord Bots & Companion Apps - Documentation" [ref=e335] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=e84b80c6ed30c55a9c0b6ca075b4f7c2d1d1808731480faaa66da2aa83d17b8aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kb2NzLmRpc2NvcmQuY29tL2RldmVsb3BlcnMvYm90cy9vdmVydmlldw&ntb=1
+              - paragraph [ref=e336]: Interactions — Slash commands, context menu commands, buttons, select menus, and modals that let users interact with your bot. Components — Layout, content, …
+        - listitem [ref=e338]:
+          - generic [ref=e340]:
+            - heading "Люди также спрашивают" [level=2] [ref=e341]:
+              - generic [ref=e342]: Люди также спрашивают
+            - list [ref=e345]:
+              - listitem [ref=e346]:
+                - heading "What is a discord bot?" [level=3] [ref=e347]:
+                  - button "What is a discord bot?" [ref=e348] [cursor=pointer]:
+                    - generic [ref=e349]: What is a discord bot?
+                    - generic:
+                      - img
+              - listitem [ref=e350]:
+                - heading "Does my discord bot support components V2?" [level=3] [ref=e351]:
+                  - button "Does my discord bot support components V2?" [ref=e352] [cursor=pointer]:
+                    - generic [ref=e353]: Does my discord bot support components V2?
+                    - generic:
+                      - img
+              - listitem [ref=e354]:
+                - heading "What is discord components V2?" [level=3] [ref=e355]:
+                  - button "What is discord components V2?" [ref=e356] [cursor=pointer]:
+                    - generic [ref=e357]: What is discord components V2?
+                    - generic:
+                      - img
+              - listitem [ref=e358]:
+                - heading "What's new in discord V2?" [level=3] [ref=e359]:
+                  - button "What's new in discord V2?" [ref=e360] [cursor=pointer]:
+                    - generic [ref=e361]: What's new in discord V2?
+                    - generic:
+                      - img
+        - listitem [ref=e363]:
+          - link "discordlabs.org" [ref=e365] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=2cd7f51bb4595ae7c87a17136163563df72a3f1b122d9af0ef4eb2b44f588f2dJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kaXNjb3JkbGFicy5vcmcvdG9vbHMvY29tcG9uZW50LWJ1aWxkZXI&ntb=1
+            - generic [ref=e370]:
+              - generic [ref=e371]: discordlabs.org
+              - generic [ref=e373]:
+                - generic [ref=e374]: https://discordlabs.org › tools › component-builder
+                - generic [ref=e375]: Перевести этот результат
+          - heading "Discord Components v2 Builder" [level=2] [ref=e376]:
+            - link "Discord Components v2 Builder" [ref=e377] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=2cd7f51bb4595ae7c87a17136163563df72a3f1b122d9af0ef4eb2b44f588f2dJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kaXNjb3JkbGFicy5vcmcvdG9vbHMvY29tcG9uZW50LWJ1aWxkZXI&ntb=1
+          - paragraph [ref=e379]: Build Discord embeds, buttons & components visually. Send via webhook instantly. No coding needed. Free!
+        - listitem [ref=e380]:
+          - generic [ref=e381]:
+            - link "Исследуйте это изображение" [ref=e384] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=hpmKeTWd&id=1DC0D2F4D299C7DFB68930A95043AE4747876C7C&thid=OIP.hpmKeTWd3vyWQP5cYggcEAHaHa&mediaurl=https://raw.githubusercontent.com/Discord-Net/Discord.Net/dev/docs/marketing/logo/PackageLogo.png&q=discord+bot+api+capabilities+2025+components+buttons+slash+commands+embeds&ck=840F4B9EFF7C290DFC78A1FD6F70F070&idpp=rc&expw=1000&exph=1000&form=rc2idp
+            - generic [ref=e386]:
+              - link "discordnet.dev" [ref=e388] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=d12ee3140e2751331385f7c29efb395e912fcac17b6b3f9d8491b24f6a7ddaf6JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kb2NzLmRpc2NvcmRuZXQuZGV2L2d1aWRlcy9jb21wb25lbnRzX3YyL2ludHJvLmh0bWw&ntb=1
+                - generic [ref=e393]:
+                  - generic [ref=e394]: discordnet.dev
+                  - generic [ref=e396]:
+                    - generic [ref=e397]: https://docs.discordnet.dev › guides › intro.html
+                    - generic [ref=e398]: Перевести этот результат
+              - heading "Start using Components V2 | Discord.Net Documentation" [level=2] [ref=e399]:
+                - link "Start using Components V2 | Discord.Net Documentation" [ref=e400] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=d12ee3140e2751331385f7c29efb395e912fcac17b6b3f9d8491b24f6a7ddaf6JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kb2NzLmRpc2NvcmRuZXQuZGV2L2d1aWRlcy9jb21wb25lbnRzX3YyL2ludHJvLmh0bWw&ntb=1
+              - paragraph [ref=e401]: Let's create a simple component (array) to start with. First thing we need is a way to trigger the message, this can be done via commands or simply a ready event.
+        - listitem [ref=e403]:
+          - generic [ref=e404]:
+            - link "Исследуйте это изображение" [ref=e407] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=vFUfM6Or&id=AF0DC68FAD8305462F5490F9E53CAC82C6B26DAD&thid=OIP.vFUfM6Or-ekOI-s4wN1v2gHaFS&mediaurl=https://embedinator.net/assets/images/image23.jpg&q=discord+bot+api+capabilities+2025+components+buttons+slash+commands+embeds&ck=A1D531921AB06A20A7A98489F2F21366&idpp=rc&expw=834&exph=595&form=rc2idp
+            - generic [ref=e409]:
+              - link "Embedinator" [ref=e411] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=096815721a82f63cc44c52dfb069a7f4b4897cf24788cb48bdd271352b2750caJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9lbWJlZGluYXRvci5uZXQv&ntb=1
+                - generic [ref=e416]:
+                  - generic [ref=e417]: Embedinator
+                  - generic [ref=e419]:
+                    - generic [ref=e420]: https://embedinator.net
+                    - generic [ref=e421]: Перевести этот результат
+              - heading "Embedinator | Discord Bot" [level=2] [ref=e422]:
+                - link "Embedinator | Discord Bot" [ref=e423] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=096815721a82f63cc44c52dfb069a7f4b4897cf24788cb48bdd271352b2750caJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9lbWJlZGluYXRvci5uZXQv&ntb=1
+              - paragraph [ref=e424]: You can create embeds and preview them in real time! Everything is very self-explanatory and user friendly thanks to Discord's latest interactive buttons, slash …
+        - listitem [ref=e426]:
+          - generic [ref=e427]:
+            - link "Исследуйте это изображение" [ref=e430] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=oRsswhCz&id=8A444E07EF05CEB3815041E05BE5EB5F29362A69&thid=OIP.oRsswhCzbWC3dKprkAZvkgHaD4&mediaurl=https://discord.js.org/opengraph-image?7668c39b9d024453&q=discord+bot+api+capabilities+2025+components+buttons+slash+commands+embeds&ck=75D567A9ECB13D1A742A33792EB25417&idpp=rc&expw=1200&exph=630&form=rc2idp
+            - generic [ref=e432]:
+              - link "discord.js" [ref=e434] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=3adbc8271348a510d3224391947514fdd1197cd238b8a054d1e9f7ae7fe5329bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kaXNjb3JkLmpzLm9yZy8&ntb=1
+                - generic [ref=e439]:
+                  - generic [ref=e440]: discord.js
+                  - generic [ref=e442]:
+                    - generic [ref=e443]: https://discord.js.org
+                    - generic [ref=e444]: Перевести этот результат
+              - heading "discord.js" [level=2] [ref=e445]:
+                - link "discord.js" [ref=e446] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=3adbc8271348a510d3224391947514fdd1197cd238b8a054d1e9f7ae7fe5329bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kaXNjb3JkLmpzLm9yZy8&ntb=1
+              - paragraph [ref=e447]: discord.js is a powerful Node.js module that allows you to interact with the Discord API very easily. It takes a much more object-oriented approach than most other …
+        - listitem [ref=e449]:
+          - link "Некоторые результаты удалены" [ref=e451] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=344d5a01c9020ae0f64570329c97724738ffd487613df9d1570aabd450329c84JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9NjE3MzUw&ntb=1
+        - listitem [ref=e452]:
+          - navigation "Другие результаты по запросу discord bot api capabilities 2025 components buttons slash commands embeds":
+            - list:
+              - listitem [ref=e453]:
+                - generic "Страница 1" [ref=e454]: "1"
+              - listitem [ref=e455]:
+                - link "Страница 2" [ref=e456] [cursor=pointer]:
+                  - /url: /search?q=discord+bot+api+capabilities+2025+components+buttons+slash+commands+embeds&FPIG=2DE96566F19D45708F9DCDA83133A851&first=11&FORM=PERE
+                  - text: "2"
+              - listitem [ref=e457]:
+                - link "Страница 3" [ref=e458] [cursor=pointer]:
+                  - /url: /search?q=discord+bot+api+capabilities+2025+components+buttons+slash+commands+embeds&FPIG=2DE96566F19D45708F9DCDA83133A851&first=21&FORM=PERE1
+                  - text: "3"
+              - listitem [ref=e459]:
+                - link "Следующая страница" [ref=e460] [cursor=pointer]:
+                  - /url: /search?q=discord+bot+api+capabilities+2025+components+buttons+slash+commands+embeds&FPIG=2DE96566F19D45708F9DCDA83133A851&first=11&FORM=PORE
+    - complementary "Дополнительные результаты" [ref=e461]:
+      - list
+  - contentinfo [ref=e462]:
+    - generic [ref=e463]:
+      - list:
+        - listitem [ref=e464]:
+          - link "Конфиденциальность" [ref=e465] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=21b033e4690739c4b00c739e1cf31e392a048d8ccb3ae7bae1d3804b0b25c834JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=e466]:
+          - link "Условия" [ref=e467] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=35dbb4284fed750b180ae689312f45529a3b13fc05a5d31d6bb10222597c960fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1

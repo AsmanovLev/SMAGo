@@ -1,0 +1,305 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button "Перейти к контенту" [ref=e3] [cursor=pointer]:
+      - generic [ref=e5]: Перейти к контенту
+    - button "Отзыв о доступности" [ref=e6] [cursor=pointer]:
+      - generic [ref=e8]: Отзыв о доступности
+    - generic [ref=e9]:
+      - link "Вернуться к Поиску Bing" [ref=e10] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Вернуться к Поиску Bing" [level=1] [ref=e11]
+      - search [ref=e12]:
+        - button "Поиск" [ref=e15] [cursor=pointer]
+        - searchbox "Введите свой поисковый запрос здесь — пока вы печатаете, будут отображаться предлагаемые варианты" [ref=e16]: dev.max.ru bot api documentation 2025
+        - button "Поиск с использованием изображения" [ref=e22] [cursor=pointer]
+    - complementary "Награды и предпочтения учетной записи" [ref=e24]:
+      - button "Microsoft Rewards"
+      - link "Войти" [ref=e25] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic "Войти" [ref=e26]
+    - navigation "Фильтр поиска" [ref=e27]:
+      - list [ref=e28]:
+        - listitem [ref=e29]:
+          - link "Все" [ref=e30] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=e31]:
+          - link "Поиск" [ref=e32] [cursor=pointer]:
+            - /url: /copilotsearch?q=dev.max.ru+bot+api+documentation+2025&FORM=CSSCOP
+            - img [ref=e33]
+            - text: Поиск
+        - listitem [ref=e35]:
+          - link "Изображения" [ref=e36] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=5c1e38a2ced6ff3e6a3bedc3f7c28275720a0fa5f5decb308ea8848faf235356JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2ltYWdlcy9zZWFyY2g_cT1kZXYubWF4LnJ1K2JvdCthcGkrZG9jdW1lbnRhdGlvbisyMDI1JkZPUk09SERSU0Mz&ntb=1
+        - listitem [ref=e37]:
+          - link "Видео" [ref=e38] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=69f43f0a52424006c35b17f09f6a3a44e0cd628c460e1904d77ffefa8b984b7aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1kZXYubWF4LnJ1K2JvdCthcGkrZG9jdW1lbnRhdGlvbisyMDI1JkZPUk09SERSU0M0&ntb=1
+        - listitem [ref=e39]:
+          - link "Карты" [ref=e40] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=f77b12d1d4bb46f9dc86371899fe5eaf2a713f56e646abcfcb39d5f317a5a28bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L21hcHM_cT1kZXYubWF4LnJ1K2JvdCthcGkrZG9jdW1lbnRhdGlvbisyMDI1JkZPUk09SERSU0M2&ntb=1
+        - listitem [ref=e41]:
+          - link "Новости" [ref=e42] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=976d03322a6c536a16f0c98566f287e3dff6fe21b19a6c46ff31374417b1973fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L25ld3Mvc2VhcmNoP3E9ZGV2Lm1heC5ydStib3QrYXBpK2RvY3VtZW50YXRpb24rMjAyNSZGT1JNPUhEUlNDNw&ntb=1
+        - listitem [ref=e43]:
+          - link "Copilot" [ref=e44] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=aef03a706152341cce8c57fb21ebc4803e27a043645b010a4616557e5378db59JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2NoYXQ_cHJvbXB0PWRldi5tYXgucnUrYm90K2FwaStkb2N1bWVudGF0aW9uKzIwMjUmc2VuZHF1ZXJ5PTEmRk9STT1TQ0NPRFg&ntb=1
+        - listitem [ref=e45]:
+          - button "Еще" [ref=e46] [cursor=pointer]:
+            - img [ref=e48]
+            - text: Еще
+  - main "Результаты поиска" [ref=e51]:
+    - generic [ref=e52]:
+      - list [ref=e53]:
+        - listitem [ref=e54]:
+          - region "Поиск Copilot" [ref=e57]:
+            - list [ref=e64]:
+              - listitem [ref=e65]:
+                - generic [ref=e91]:
+                  - status
+                  - generic [ref=e92]:
+                    - button "Отменить" [disabled] [ref=e94]:
+                      - generic:
+                        - img
+                      - generic [ref=e95]: Отменить
+                    - button "Повторить" [disabled] [ref=e97]:
+                      - generic:
+                        - img
+                      - generic [ref=e98]: Повторить
+                    - button "Копировать" [disabled] [ref=e100]:
+                      - generic:
+                        - img
+                      - generic [ref=e101]: Копировать
+                    - button "Экспортировать" [disabled] [ref=e103]:
+                      - generic:
+                        - img
+                      - generic [ref=e104]: Экспортировать
+                    - generic [ref=e105]:
+                      - generic:
+                        - img
+                      - textbox "Что вы хотите изменить?" [disabled] [ref=e106]
+                    - button "Переписать" [disabled] [ref=e108]:
+                      - generic:
+                        - img
+                      - generic [ref=e109]: Переписать
+                    - group [ref=e110]:
+                      - group [ref=e111]:
+                        - button "Инструменты тестирования" [disabled] [ref=e113]:
+                          - generic [ref=e114]: Инструменты тестирования
+                          - generic:
+                            - img
+                    - group [ref=e115]:
+                      - group [ref=e116]:
+                        - button "Дополнительные действия" [disabled] [ref=e118]:
+                          - generic [ref=e119]: Дополнительные действия
+                          - generic:
+                            - img
+                    - generic [ref=e122]:
+                      - generic [ref=e123]: Попробовать другие шаблоны
+                      - combobox "Попробовать другие шаблоны" [ref=e124] [cursor=pointer]:
+                        - generic [ref=e126]: Попробовать другие шаблоны
+                        - generic:
+                          - img
+      - list [ref=e128]:
+        - listitem [ref=e129]:
+          - link "max.ru" [ref=e131] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=c9797f246dff04e4af13a3176a2b98e8dc36d0fe7392718ccb7e5bb3a4ef7439JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXYubWF4LnJ1L2RvY3MtYXBp&ntb=1
+            - generic [ref=e136]:
+              - generic [ref=e137]: max.ru
+              - generic [ref=e140]: https://dev.max.ru › docs-api
+          - heading "MAX для разработчиков" [level=2] [ref=e141]:
+            - link "MAX для разработчиков" [ref=e142] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=c9797f246dff04e4af13a3176a2b98e8dc36d0fe7392718ccb7e5bb3a4ef7439JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXYubWF4LnJ1L2RvY3MtYXBp&ntb=1
+          - paragraph [ref=e144]: API MAX — это интерфейс, который позволяет ботам взаимодействовать с платформой и получать необходимые данные с помощью HTTPS-запросов к серверу. В этом разделе …
+          - generic [ref=e145]:
+            - list [ref=e146]:
+              - listitem [ref=e147]:
+                - link "Update" [ref=e148] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=725d1f6f731a1242eee50385573175b88b004f6f76ce1267fe6b5e57ebf85c67JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXYubWF4LnJ1L2RvY3MtYXBpL29iamVjdHMvVXBkYXRl&ntb=1
+                - paragraph [ref=e149]: "- bot_stopped — пользователь остановил или удалил бота через настройки …"
+              - listitem [ref=e150]:
+                - link "NewMessageBody" [ref=e151] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=4f852b60d73f84233954a998abb293db5f33908bc60498382a20cacfb49e1b1dJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXYubWF4LnJ1L2RvY3MtYXBpL29iamVjdHMvTmV3TWVzc2FnZUJvZHk&ntb=1
+                - paragraph [ref=e152]: "По умолчанию: true Если false, участники чата не будут уведомлены (по …"
+              - listitem [ref=e153]:
+                - link "Chat" [ref=e154] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=0f99eb5a07474b7712f87d3e4dd6b2d8ba18d5b2c0c97ec3700f8b2cdae83bafJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXYubWF4LnJ1L2RvY3MtYXBpL29iamVjdHMvQ2hhdA&ntb=1
+                - paragraph [ref=e155]: Chat Объект содержит общую информацию о групповом чате или …
+            - list [ref=e156]:
+              - listitem [ref=e157]:
+                - link "Message" [ref=e158] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=244323beb7ded72edf6a0db35c180ee8c42f4290418e96664cbeab57dd59a4b0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXYubWF4LnJ1L2RvY3MtYXBpL29iamVjdHMvTWVzc2FnZQ&ntb=1
+                - paragraph [ref=e159]: Публичная ссылка на пост в канале. Отсутствует для диалогов и …
+              - listitem [ref=e160]:
+                - link "User" [ref=e161] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=9a93c298d51e871debc3854acfe1b01f94484f19512ef37a2ed235c1362c0c5cJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXYubWF4LnJ1L2RvY3MtYXBpL29iamVjdHMvVXNlcg&ntb=1
+                - paragraph [ref=e162]: Время последней активности пользователя или бота в MAX (Unix …
+              - listitem [ref=e163]:
+                - link "BotCommand" [ref=e164] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=a93fa0e72dc28fe26035d628b9a94e788441aaedd79c69234424f0e00cf1c33eJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXYubWF4LnJ1L2RvY3MtYXBpL29iamVjdHMvQm90Q29tbWFuZA&ntb=1
+                - paragraph [ref=e165]: API MAX — это интерфейс, который позволяет ботам взаимодействовать …
+          - link "Смотреть только результаты от dev.max.ru" [ref=e166] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=fa5a4cab5b666dffccefe8977a215b55ceef034f5562294720aca9c34a1e8d91JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPXNpdGU6ZGV2Lm1heC5ydStkZXYubWF4LnJ1K2JvdCthcGkrZG9jdW1lbnRhdGlvbisyMDI1JmZvcm09RExJTktS&ntb=1
+        - listitem [ref=e167]:
+          - link "messangermax.ru" [ref=e169] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=be4d0c89a59d9852bdf7da9334aa9a26a342b5d3d2063ccd4fe2146490b41067JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9tZXNzYW5nZXJtYXgucnUvby1tZXNzZW5kemhlcmUvYXBpLw&ntb=1
+            - generic [ref=e174]:
+              - generic [ref=e175]: messangermax.ru
+              - generic [ref=e178]: https://messangermax.ru › o-messendzhere › api
+          - 'heading "MAX Bot API: создать бота за 15 минут — документация и SDK" [level=2] [ref=e179]':
+            - 'link "MAX Bot API: создать бота за 15 минут — документация и SDK" [ref=e180] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=be4d0c89a59d9852bdf7da9334aa9a26a342b5d3d2063ccd4fe2146490b41067JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9tZXNzYW5nZXJtYXgucnUvby1tZXNzZW5kemhlcmUvYXBpLw&ntb=1
+          - paragraph [ref=e182]: 21 мар. 2026 г. · Создайте бота для мессенджера Макс с нуля. Документация API, готовые SDK на JS, Go, Java, PHP — и пошаговый гайд с примерами кода.
+        - listitem [ref=e183]:
+          - link "max-osnova.ru" [ref=e185] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=a9479865d67bc251f1b41a8de0304647179667b5959ca4c7d7a34a6e2359a8dcJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9tYXgtb3Nub3ZhLnJ1L2RldmVsb3BlcnMvYXBp&ntb=1
+            - generic [ref=e190]:
+              - generic [ref=e191]: max-osnova.ru
+              - generic [ref=e194]: https://max-osnova.ru › developers › api
+          - heading "MAX Bot API — документация, примеры, интеграция" [level=2] [ref=e195]:
+            - link "MAX Bot API — документация, примеры, интеграция" [ref=e196] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=a9479865d67bc251f1b41a8de0304647179667b5959ca4c7d7a34a6e2359a8dcJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9tYXgtb3Nub3ZhLnJ1L2RldmVsb3BlcnMvYXBp&ntb=1
+          - paragraph [ref=e198]: "Полная документация MAX Bot API: примеры на Python, Node.js, PHP. Вебхуки, inline-клавиатуры, мини-приложения. Интеграция api max мессенджер за 15 минут."
+        - listitem [ref=e199]:
+          - link "api-max.ru" [ref=e201] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=06eb637fad4be8ed652d38626d0f865fc75c8588be8d03e96c091bbca400f9e2JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9hcGktbWF4LnJ1L2RvY3M&ntb=1
+            - generic [ref=e206]:
+              - generic [ref=e207]: api-max.ru
+              - generic [ref=e210]: https://api-max.ru › docs
+          - heading "Документация API - api-max.ru" [level=2] [ref=e211]:
+            - link "Документация API - api-max.ru" [ref=e212] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=06eb637fad4be8ed652d38626d0f865fc75c8588be8d03e96c091bbca400f9e2JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9hcGktbWF4LnJ1L2RvY3M&ntb=1
+          - paragraph [ref=e214]: Специализированная документация по API для массовых рассылок в мессенджере MAX. Оптимизирована для задач маркетинга и уведомлений.
+        - listitem [ref=e215]:
+          - link "webappdev.ru" [ref=e217] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=5bfdd67d287a7f73404d721777bb8fd083150dc964d8ede5973b998021af884aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93ZWJhcHBkZXYucnUvbWF4L2JvdC1hcGkv&ntb=1
+            - generic [ref=e222]:
+              - generic [ref=e223]: webappdev.ru
+              - generic [ref=e226]: https://webappdev.ru › max › bot-api
+          - heading "MAX Bot API - Документация и возможности интеграции (2026)" [level=2] [ref=e227]:
+            - link "MAX Bot API - Документация и возможности интеграции (2026)" [ref=e228] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=5bfdd67d287a7f73404d721777bb8fd083150dc964d8ede5973b998021af884aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93ZWJhcHBkZXYucnUvbWF4L2JvdC1hcGkv&ntb=1
+          - paragraph [ref=e230]: Полное руководство по API для ботов в мессенджере MAX. Webhooks, Long Polling, платежи, безопасность и архитектура высоконагруженных решений.
+        - listitem [ref=e231]:
+          - link "maxmessengerapi.ru" [ref=e233] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=c5fd45065740b82f38597c5fc9bc9b89d915d4005f677d2e2385f85a348128adJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9tYXhtZXNzZW5nZXJhcGkucnUv&ntb=1
+            - generic [ref=e238]:
+              - generic [ref=e239]: maxmessengerapi.ru
+              - generic [ref=e241]:
+                - generic [ref=e242]: https://maxmessengerapi.ru
+                - generic [ref=e243]: Перевести этот результат
+          - heading "MAX Messenger API Documentation" [level=2] [ref=e244]:
+            - link "MAX Messenger API Documentation" [ref=e245] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=c5fd45065740b82f38597c5fc9bc9b89d915d4005f677d2e2385f85a348128adJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9tYXhtZXNzZW5nZXJhcGkucnUv&ntb=1
+          - paragraph [ref=e247]: To make sure your bot will get the right info, we strongly recommend adding API version number to each request. You can add it as v parameter to each HTTP-request.
+        - listitem [ref=e248]:
+          - generic [ref=e249]:
+            - link "Исследуйте это изображение" [ref=e252] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=UQP4PulO&id=DC11948E69908602CD933579709AB42EE7938131&thid=OIP.UQP4PulOf0tRXaU1HtqDtwAAAA&mediaurl=https://avatars.githubusercontent.com/u/201088336?s=280&v=4&q=dev.max.ru+bot+api+documentation+2025&ck=DA299EC8402468429952971FB8181A26&idpp=rc&expw=280&exph=280&form=rc2idp
+            - generic [ref=e254]:
+              - link "Github" [ref=e256] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=d61a60995938268733ec042f817f4977a72ea338ad85ddde623518c83d69e260JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL21heC1tZXNzZW5nZXI&ntb=1
+                - generic [ref=e261]:
+                  - generic [ref=e262]: Github
+                  - generic [ref=e264]:
+                    - generic [ref=e265]: https://github.com › max-messenger
+                    - generic [ref=e266]: Перевести этот результат
+              - heading "Max Messenger - GitHub" [level=2] [ref=e267]:
+                - link "Max Messenger - GitHub" [ref=e268] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=d61a60995938268733ec042f817f4977a72ea338ad85ddde623518c83d69e260JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL21heC1tZXNzZW5nZXI&ntb=1
+              - paragraph [ref=e269]: Max Messenger has 5 repositories available. Follow their code on GitHub.
+        - listitem [ref=e271]:
+          - link "love-apples.github.io" [ref=e273] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=f5aa8911b3f833a2201a5a68e796a8f4cbd4a4e44b7ce4eefb6200e110c9ac96JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sb3ZlLWFwcGxlcy5naXRodWIuaW8vbWF4YXBpL2JvdC8&ntb=1
+            - generic [ref=e278]:
+              - generic [ref=e279]: love-apples.github.io
+              - generic [ref=e281]:
+                - generic [ref=e282]: https://love-apples.github.io › maxapi › bot
+                - generic [ref=e283]: Перевести этот результат
+          - heading "Bot - Документация библиотеки maxapi" [level=2] [ref=e284]:
+            - link "Bot - Документация библиотеки maxapi" [ref=e285] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=f5aa8911b3f833a2201a5a68e796a8f4cbd4a4e44b7ce4eefb6200e110c9ac96JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sb3ZlLWFwcGxlcy5naXRodWIuaW8vbWF4YXBpL2JvdC8&ntb=1
+          - paragraph [ref=e287]: "Предоставляет методы для взаимодействия с чатами, сообщениями, пользователями и другими функциями бота. Инициализирует экземпляр бота. Parameters: Токен доступа к API бота. При …"
+        - listitem [ref=e288]:
+          - link "bothost.ru" [ref=e290] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=de80bd71882d01fd2b623d5cadf70885690cd814f5a8b3c90d8a03259e8ab446JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9ib3Rob3N0LnJ1L2Jsb2cvcG9zdC9tYXgtYm90LWRldmVsb3BtZW50LWd1aWRl&ntb=1
+            - generic [ref=e295]:
+              - generic [ref=e296]: bothost.ru
+              - generic [ref=e299]: https://bothost.ru › blog › post › max-bot-development-guide
+          - 'heading "Создание бота для Max Messenger: Полное руководство 2025" [level=2] [ref=e300]':
+            - 'link "Создание бота для Max Messenger: Полное руководство 2025" [ref=e301] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=de80bd71882d01fd2b623d5cadf70885690cd814f5a8b3c90d8a03259e8ab446JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9ib3Rob3N0LnJ1L2Jsb2cvcG9zdC9tYXgtYm90LWRldmVsb3BtZW50LWd1aWRl&ntb=1
+          - paragraph [ref=e303]: 22 окт. 2025 г. · В этом подробном руководстве мы покажем, как создать полнофункционального бота для Max с использованием платформы Bothost — лучшего хостинга для ботов в 2025 году.
+        - listitem [ref=e304]:
+          - link "max.ru" [ref=e306] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=f94d264dd02245eef76a8987f54e1c2896321ec21085784315606a27a67d7c12JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXYubWF4LnJ1L2RvY3MvY2hhdGJvdHMvYm90cy1jb2RpbmcvbGlicmFyeS9qcw&ntb=1
+            - generic [ref=e311]:
+              - generic [ref=e312]: max.ru
+              - generic [ref=e315]: https://dev.max.ru › docs › chatbots › bots-coding › library › js
+          - heading "MAX для разработчиков" [level=2] [ref=e316]:
+            - link "MAX для разработчиков" [ref=e317] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=f94d264dd02245eef76a8987f54e1c2896321ec21085784315606a27a67d7c12JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXYubWF4LnJ1L2RvY3MvY2hhdGJvdHMvYm90cy1jb2RpbmcvbGlicmFyeS9qcw&ntb=1
+          - paragraph [ref=e319]: Чтобы установить библиотеку MAX Bot API, зарегистрируйте бота на платформе и подключитесь к API MAX — следуйте подсказкам в разделе «Подготовка и настройка бота»
+        - listitem [ref=e320]:
+          - generic [ref=e321]:
+            - heading "Глубокий анализ dev.max.ru bot api documentation 2025" [level=2] [ref=e322]:
+              - text: Глубокий анализ
+              - strong [ref=e323]: dev.max.ru bot api documentation 2025
+            - list [ref=e324]:
+              - listitem [ref=e325]:
+                - link "api для разработчиков" [ref=e326] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=71eed66911624362a99e39474c1020f380438034cc631ab8948a7d2d256cd445JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPWFwaSslZDAlYjQlZDAlYmIlZDElOGYrJWQxJTgwJWQwJWIwJWQwJWI3JWQxJTgwJWQwJWIwJWQwJWIxJWQwJWJlJWQxJTgyJWQxJTg3JWQwJWI4JWQwJWJhJWQwJWJlJWQwJWIyJkZPUk09UVNSRTE&ntb=1
+                  - generic [ref=e328]:
+                    - text: api
+                    - strong [ref=e329]: для разработчиков
+              - listitem [ref=e330]:
+                - link "что такое api max" [ref=e331] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=a44e7b8c379be2e9df428435a3de6be377662ff06707cde4c0b5387d7ec59a4bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPSVkMSU4NyVkMSU4MiVkMCViZSslZDElODIlZDAlYjAlZDAlYmElZDAlYmUlZDAlYjUrYXBpK21heCZGT1JNPVFTUkUy&ntb=1
+                  - generic [ref=e333]:
+                    - strong [ref=e334]: что такое
+                    - text: api max
+        - listitem [ref=e335]:
+          - link "Некоторые результаты удалены" [ref=e337] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=344d5a01c9020ae0f64570329c97724738ffd487613df9d1570aabd450329c84JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9NjE3MzUw&ntb=1
+        - listitem [ref=e338]:
+          - navigation "Другие результаты по запросу dev.max.ru bot api documentation 2025":
+            - list:
+              - listitem [ref=e339]:
+                - generic "Страница 1" [ref=e340]: "1"
+              - listitem [ref=e341]:
+                - link "Страница 2" [ref=e342] [cursor=pointer]:
+                  - /url: /search?q=dev.max.ru+bot+api+documentation+2025&FPIG=31BF172D1B364FFCB4A44A02F442C09C&first=11&FORM=PERE
+                  - text: "2"
+              - listitem [ref=e343]:
+                - link "Страница 3" [ref=e344] [cursor=pointer]:
+                  - /url: /search?q=dev.max.ru+bot+api+documentation+2025&FPIG=31BF172D1B364FFCB4A44A02F442C09C&first=21&FORM=PERE1
+                  - text: "3"
+              - listitem [ref=e345]:
+                - link "Следующая страница" [ref=e346] [cursor=pointer]:
+                  - /url: /search?q=dev.max.ru+bot+api+documentation+2025&FPIG=31BF172D1B364FFCB4A44A02F442C09C&first=11&FORM=PORE
+      - complementary "Дополнительные результаты" [ref=e347]:
+        - list [ref=e348]:
+          - listitem [ref=e349]:
+            - generic "Похожие поисковые запросы" [ref=e350]:
+              - generic [ref=e352]:
+                - heading "Глубокий анализ dev.max.ru bot api documentation 2025" [level=2] [ref=e354]:
+                  - text: Глубокий анализ
+                  - strong [ref=e355]: dev.max.ru bot api documentation 2025
+                - generic [ref=e356]:
+                  - link "api для разработчиков" [ref=e358] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=8c876b4b70a1d90e3a9aacbcae126680998ed8d71949cba2571f465a978429c6JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPWFwaSslZDAlYjQlZDAlYmIlZDElOGYrJWQxJTgwJWQwJWIwJWQwJWI3JWQxJTgwJWQwJWIwJWQwJWIxJWQwJWJlJWQxJTgyJWQxJTg3JWQwJWI4JWQwJWJhJWQwJWJlJWQwJWIyJkZPUk09UjVGRA&ntb=1
+                    - generic [ref=e360]:
+                      - text: api
+                      - strong [ref=e361]: для разработчиков
+                  - link "что такое api max" [ref=e363] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=ebd46ea5a4a4bf478986168a431c25c273e682e5617b7184d2f66e682f345e68JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPSVkMSU4NyVkMSU4MiVkMCViZSslZDElODIlZDAlYjAlZDAlYmElZDAlYmUlZDAlYjUrYXBpK21heCZGT1JNPVI1RkQx&ntb=1
+                    - generic [ref=e365]:
+                      - strong [ref=e366]: что такое
+                      - text: api max
+  - contentinfo [ref=e367]:
+    - generic [ref=e368]:
+      - list:
+        - listitem [ref=e369]:
+          - link "Конфиденциальность" [ref=e370] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=21b033e4690739c4b00c739e1cf31e392a048d8ccb3ae7bae1d3804b0b25c834JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=e371]:
+          - link "Условия" [ref=e372] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=35dbb4284fed750b180ae689312f45529a3b13fc05a5d31d6bb10222597c960fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1

@@ -1,0 +1,4 @@
+[   31975ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://vos.line-scdn.net/line-developers/docs/assets/fonts/line-seed-sans/WOFF/LINESeedSans_W_XBd.woff @ https://developers.line.biz/en/docs/messaging-api/overview/:96
+[   32027ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://vos.line-scdn.net/line-developers/docs/assets/fonts/line-seed-sans/WOFF/LINESeedSans_W_Bd.woff @ https://developers.line.biz/en/docs/messaging-api/overview/:96
+[   33466ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://developers.line.biz/_nuxt/DsimbLi8.js:0
+[   33467ms] [ERROR] Failed to load resource: net::ERR_CONNECTION_CLOSED @ https://developers.line.biz/_nuxt/DTV-UxhH.js:0

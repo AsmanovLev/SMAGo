@@ -1,0 +1,266 @@
+- generic [active] [ref=e1]:
+  - dialog [ref=e2]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - paragraph [ref=e9]: Корпорация Майкрософт и наши сторонние поставщики используют файлы cookie и аналогичные технологии для предоставления, поддержки и улучшения наших услуг и рекламных объявлений. С вашего согласия мы будем использовать эти данные для персонализации объявлений и связанной с ними аналитики.
+        - paragraph [ref=e10]:
+          - text: Выберите "Принять", чтобы согласиться с этими видами использования, "Отклонить", чтобы отклонить их, или выберите "Другие варианты", чтобы увидеть все доступные варианты. Изменить выбор можно в разделе "Управление файлами cookie" в нижней части этой страницы.
+          - link "Заявление о конфиденциальности" [ref=e11] [cursor=pointer]:
+            - /url: https://go.microsoft.com/fwlink/?LinkId=521839
+      - generic [ref=e12]:
+        - link "Принимаю" [ref=e14] [cursor=pointer]:
+          - /url: "javascript: void(0)"
+        - link "Отклонить" [ref=e16] [cursor=pointer]:
+          - /url: "javascript: void(0)"
+      - link "Дополнительные параметры" [ref=e18] [cursor=pointer]:
+        - /url: "javascript: void(0)"
+  - banner [ref=e19]:
+    - button "Перейти к контенту" [ref=e20] [cursor=pointer]:
+      - generic [ref=e22]: Перейти к контенту
+    - button "Отзыв о доступности" [ref=e23] [cursor=pointer]:
+      - generic [ref=e25]: Отзыв о доступности
+    - generic [ref=e26]:
+      - link "Вернуться к Поиску Bing" [ref=e27] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Вернуться к Поиску Bing" [level=1] [ref=e28]
+      - search [ref=e29]:
+        - button "Поиск" [ref=e32] [cursor=pointer]
+        - searchbox "Введите свой поисковый запрос здесь — пока вы печатаете, будут отображаться предлагаемые варианты" [ref=e33]: popular messengers russia 2025 VK Telegram Whatsapp market share
+        - button "Поиск с использованием изображения" [ref=e39] [cursor=pointer]
+    - complementary "Награды и предпочтения учетной записи" [ref=e41]:
+      - button "Microsoft Rewards"
+      - link "Войти" [ref=e42] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic "Войти" [ref=e43]
+    - navigation "Фильтр поиска" [ref=e44]:
+      - list [ref=e45]:
+        - listitem [ref=e46]:
+          - link "Все" [ref=e47] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=e48]:
+          - link "Поиск" [ref=e49] [cursor=pointer]:
+            - /url: /copilotsearch?q=popular+messengers+russia+2025+VK+Telegram+Whatsapp+market+share&FORM=CSSCOP
+            - img [ref=e50]
+            - text: Поиск
+        - listitem [ref=e52]:
+          - link "Изображения" [ref=e53] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=3047de425be96535561ca2c0137004297aa924d3db3128bc11382932bb404eb5JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2ltYWdlcy9zZWFyY2g_cT1wb3B1bGFyK21lc3NlbmdlcnMrcnVzc2lhKzIwMjUrVksrVGVsZWdyYW0rV2hhdHNhcHArbWFya2V0K3NoYXJlJkZPUk09SERSU0Mz&ntb=1
+        - listitem [ref=e54]:
+          - link "Видео" [ref=e55] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=0342f959dd880c0d662801c9e840b6dac11db3552ac5cb93d5663a5582b45f14JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1wb3B1bGFyK21lc3NlbmdlcnMrcnVzc2lhKzIwMjUrVksrVGVsZWdyYW0rV2hhdHNhcHArbWFya2V0K3NoYXJlJkZPUk09SERSU0M0&ntb=1
+        - listitem [ref=e56]:
+          - link "Карты" [ref=e57] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=cd30d3405c9f8e9a085c9dc811c6b457467b7dd22bb1393d0c971045b8a83bd9JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L21hcHM_cT1wb3B1bGFyK21lc3NlbmdlcnMrcnVzc2lhKzIwMjUrVksrVGVsZWdyYW0rV2hhdHNhcHArbWFya2V0K3NoYXJlJkZPUk09SERSU0M2&ntb=1
+        - listitem [ref=e58]:
+          - link "Новости" [ref=e59] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=086bfba5bea4b0c88e0df634648cf1c8f2b333c16c0001c72fef2620e1c162d1JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L25ld3Mvc2VhcmNoP3E9cG9wdWxhcittZXNzZW5nZXJzK3J1c3NpYSsyMDI1K1ZLK1RlbGVncmFtK1doYXRzYXBwK21hcmtldCtzaGFyZSZGT1JNPUhEUlNDNw&ntb=1
+        - listitem [ref=e60]:
+          - link "Copilot" [ref=e61] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=823f8881f264a0c7bfb7f3bfbaaae2bf7b115d357862290d2da32c2269f35964JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2NoYXQ_cHJvbXB0PXBvcHVsYXIrbWVzc2VuZ2VycytydXNzaWErMjAyNStWSytUZWxlZ3JhbStXaGF0c2FwcCttYXJrZXQrc2hhcmUmc2VuZHF1ZXJ5PTEmRk9STT1TQ0NPRFg&ntb=1
+        - listitem [ref=e62]:
+          - button "Еще" [ref=e63] [cursor=pointer]:
+            - img [ref=e65]
+            - text: Еще
+  - generic [ref=e67]:
+    - main "Результаты поиска" [ref=e68]:
+      - generic [ref=e70]: "Приблизительное число результатов: 786"
+      - list [ref=e81]:
+        - listitem [ref=e82]:
+          - link "Statista" [ref=e84] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=7d8288d825c35f6b6677d404f4831cd637103b954c43ac3e287797682405ba17JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuc3RhdGlzdGEuY29tL3N0YXRpc3RpY3MvMTExNjAxMS9wb2xsLW9uLW1vc3QtcG9wdWxhci1tZXNzZW5nZXJzLXJ1c3NpYS8&ntb=1
+            - generic [ref=e89]:
+              - generic [ref=e90]: Statista
+              - generic [ref=e92]:
+                - generic [ref=e93]: https://www.statista.com › statistics › poll...
+                - generic [ref=e94]: Перевести этот результат
+          - heading "Most popular messenger apps Russia 2025| Statista" [level=2] [ref=e95]:
+            - link "Most popular messenger apps Russia 2025| Statista" [ref=e96] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=7d8288d825c35f6b6677d404f4831cd637103b954c43ac3e287797682405ba17JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuc3RhdGlzdGEuY29tL3N0YXRpc3RpY3MvMTExNjAxMS9wb2xsLW9uLW1vc3QtcG9wdWxhci1tZXNzZW5nZXJzLXJ1c3NpYS8&ntb=1
+          - paragraph [ref=e98]: 3 дек. 2025 г. · WhatsApp and Telegram were among the most popular chat apps in Russia as of 2025. Unlike some other Meta Platforms' networks, WhatsApp is not banned in Russia.
+          - generic [ref=e99]:
+            - list [ref=e100]:
+              - listitem [ref=e101]:
+                - link "Login" [ref=e102] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=7d8288d825c35f6b6677d404f4831cd637103b954c43ac3e287797682405ba17JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuc3RhdGlzdGEuY29tL3N0YXRpc3RpY3MvMTExNjAxMS9wb2xsLW9uLW1vc3QtcG9wdWxhci1tZXNzZW5nZXJzLXJ1c3NpYS8&ntb=1
+                - paragraph [ref=e103]: WhatsApp and Telegram were among the most popular chat apps in Russia as of …
+              - listitem [ref=e104]:
+                - link "Statista Research Department" [ref=e105] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=cc1f8c50a13778bb8c172476d83e9f1afd412796cd37a7ef4c0497b645074b62JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuc3RhdGlzdGEuY29tL2Fib3V0dXMvb3VyLXJlc2VhcmNoLWNvbW1pdG1lbnQ&ntb=1
+                - paragraph [ref=e106]: Quality as the key driver Statista constantly conducts independent, objective, and …
+              - listitem [ref=e107]:
+                - link "Global Retail E-Commerce …" [ref=e108] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=d0bba213983d5d74645f5c8641683429defd2928e158added1a5b4045fbafe1dJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuc3RhdGlzdGEuY29tL3N0YXRpc3RpY3MvMzc5MDQ2L3dvcmxkd2lkZS1yZXRhaWwtZS1jb21tZXJjZS1zYWxlcy8&ntb=1
+                - paragraph [ref=e109]: E-commerce as share of total retail sales worldwide 2017-2030 Global social …
+              - listitem [ref=e110]:
+                - link "Most Used Social Networks …" [ref=e111] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=da3f63d1a325b91df39d22071c14ae5c054d36ae6a62edc7d27811ba0a5fb5aaJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuc3RhdGlzdGEuY29tL3N0YXRpc3RpY3MvMjcyMDE0L2dsb2JhbC1zb2NpYWwtbmV0d29ya3MtcmFua2VkLWJ5LW51bWJlci1vZi11c2Vycy8&ntb=1
+                - paragraph [ref=e112]: Market leader Facebook was the first social network to surpass one billion registered …
+            - list [ref=e113]:
+              - listitem [ref=e114]:
+                - link "Basic Account" [ref=e115] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=6ec18f0781d1828a0b23c1443f34012e162918342731352aa654f61cc94fc2efJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuc3RhdGlzdGEuY29tL2FjY291bnRzL2luZGl2aWR1YWxzP3JlY29tbWVuZGF0aW9uPWRpc2NvdmVyeQ&ntb=1
+                - paragraph [ref=e116]: Find statistics, consumer survey results and industry studies from over 22,500 …
+              - listitem [ref=e117]:
+                - link "South Korea" [ref=e118] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=c432b0a9eb672a902308e21d312650228ebbaa93a9cccf1a2b6f28ec50b289d4JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuc3RhdGlzdGEuY29tL3N0YXRpc3RpY3MvODk4MjQ1L3NvdXRoLWtvcmVhLW1vc3QtcG9wdWxhci1mdW5jdGlvbnMtaW5zdGFudC1tZXNzZW5nZXJzLw&ntb=1
+                - paragraph [ref=e119]: Most popular instant messenger functions South Korea 2024 Number of 5G …
+              - listitem [ref=e120]:
+                - link "Countries With The Highest …" [ref=e121] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=e4acd7ce17a4f8ccebc47bfecf67090a8a562f5d4ef9b78813aa192341fff6d0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuc3RhdGlzdGEuY29tL3N0YXRpc3RpY3MvMjYyNzQyL2NvdW50cmllcy13aXRoLXRoZS1oaWdoZXN0LW1pbGl0YXJ5LXNwZW5kaW5nLw&ntb=1
+                - paragraph [ref=e122]: The United States is the country with highest military spending, spending …
+              - listitem [ref=e123]:
+                - link "Car Market Share Worldwide" [ref=e124] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=787f5be81727affb079fef2e7e8b22dd87b0cc3f0ae09217c0ac6707058a7b66JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuc3RhdGlzdGEuY29tL3N0YXRpc3RpY3MvMzE2Nzg2L2dsb2JhbC1tYXJrZXQtc2hhcmUtb2YtdGhlLWxlYWRpbmctYXV0b21ha2Vycy8&ntb=1
+                - paragraph [ref=e125]: In 2022, the five leading brands held around a third of the global car market shares. …
+          - link "Смотреть только результаты от statista.com" [ref=e126] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=72ebe4b4871aeee0371a8ec87864e974e33d6f7639e039aa5d1089524225cdc0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPXNpdGU6c3RhdGlzdGEuY29tK3BvcHVsYXIrbWVzc2VuZ2VycytydXNzaWErMjAyNStWSytUZWxlZ3JhbStXaGF0c2FwcCttYXJrZXQrc2hhcmUmZm9ybT1ETElOS1I&ntb=1
+        - listitem [ref=e127]:
+          - generic [ref=e128]:
+            - link "Исследуйте это изображение" [ref=e131] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=Vsd7w3Nu&id=9A45386A68907D7D71BEA81832B00FA0000D40F9&thid=OIP.Vsd7w3Nug8r-_Vnd7zYCkwHaD4&mediaurl=https://www.wmtips.com/api/og/?t=Social+Media+in+Russia&h=71ab&q=popular+messengers+russia+2025+VK+Telegram+Whatsapp+market+share&ck=D2D7A603D90551E6DFAA85E53CA5D0BD&idpp=rc&expw=1200&exph=630&form=rc2idp
+            - generic [ref=e133]:
+              - link "wmtips.com" [ref=e135] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=ed937521acb9c3402ad040b42c0da4750137675531a60bf390d71d5bd795a3f0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cud210aXBzLmNvbS90ZWNobm9sb2dpZXMvc29jaWFsLW1lZGlhL2NvdW50cnkvcnUv&ntb=1
+                - generic [ref=e140]:
+                  - generic [ref=e141]: wmtips.com
+                  - generic [ref=e143]:
+                    - generic [ref=e144]: https://www.wmtips.com › technologies › socia…
+                    - generic [ref=e145]: Перевести этот результат
+              - heading "Top 25+ Social Media Platforms in Russia by Market …" [level=2] [ref=e146]:
+                - link "Top 25+ Social Media Platforms in Russia by Market …" [ref=e147] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=ed937521acb9c3402ad040b42c0da4750137675531a60bf390d71d5bd795a3f0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cud210aXBzLmNvbS90ZWNobm9sb2dpZXMvc29jaWFsLW1lZGlhL2NvdW50cnkvcnUv&ntb=1
+              - paragraph [ref=e148]: The following chart shows the top social media platforms in Russia in 2026, based on market share. The most popular is VK with an impressive share of 71.5%, …
+        - listitem [ref=e150]:
+          - generic [ref=e151]:
+            - link "Исследуйте это изображение" [ref=e154] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=Hcns7s9a&id=936F675168C20FF35CE31A75C7263C16225FEF42&thid=OIP.Hcns7s9aqq6oaHwKJSSCewHaEQ&mediaurl=https://hlebmedia.ru/wp-content/uploads/2026/02/telegram.jpg&q=popular+messengers+russia+2025+VK+Telegram+Whatsapp+market+share&ck=964D6FADD7F7E6553BCEEFD9F1ECC739&idpp=rc&expw=730&exph=420&form=rc2idp
+            - generic [ref=e156]:
+              - link "hlebmedia.ru" [ref=e158] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=221ad9d906c705c171015cdabf76a02f3251e218ae188bfaf736bf80a3d0c4f2JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9obGVibWVkaWEucnUvdGVsZWdyYW0tdnBlcnZpZS1vYm9zaGVsLXdoYXRzYXBwLXYtcmV5dGluZ2UtcG9wdWx5YXIv&ntb=1
+                - generic [ref=e163]:
+                  - generic [ref=e164]: hlebmedia.ru
+                  - generic [ref=e167]: https://hlebmedia.ru › telegram-vpervie-oboshel...
+              - 'heading "Рейтинг мессенджеров 2026 в России: Telegram …" [level=2] [ref=e168]':
+                - 'link "Рейтинг мессенджеров 2026 в России: Telegram …" [ref=e169] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=221ad9d906c705c171015cdabf76a02f3251e218ae188bfaf736bf80a3d0c4f2JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9obGVibWVkaWEucnUvdGVsZWdyYW0tdnBlcnZpZS1vYm9zaGVsLXdoYXRzYXBwLXYtcmV5dGluZ2UtcG9wdWx5YXIv&ntb=1
+              - paragraph [ref=e170]: 6 мар. 2026 г. · По мнению собеседника Forbes, знакомого с ситуацией, уже к середине 2026 года иностранные мессенджеры (Telegram и WhatsApp) …
+        - listitem [ref=e172]:
+          - generic [ref=e173]:
+            - link "Исследуйте это изображение" [ref=e176] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=9jKjum97&id=FB8A31121F41F5A47CB89D0D4D43DA61B7DCB5C4&thid=OIP.9jKjum97x7DYMZJypShdpAHaE8&mediaurl=https://www.securitylab.ru/upload/iblock/e66/7ow18xe45865alh0nlk3ts646960l493.jpg&q=popular+messengers+russia+2025+VK+Telegram+Whatsapp+market+share&ck=986B4C15C1A9241515AF3D63A6F0967D&idpp=rc&expw=1200&exph=800&form=rc2idp
+            - generic [ref=e178]:
+              - link "SecurityLab.ru" [ref=e180] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=857d0ab9045c82c850a6a023ddb9a512eb72a3e28c1a148161947925b68900e8JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuc2VjdXJpdHlsYWIucnUvbmV3cy81NjM3NTgucGhw&ntb=1
+                - generic [ref=e185]:
+                  - generic [ref=e186]: SecurityLab.ru
+                  - generic [ref=e189]: https://www.securitylab.ru › news
+              - 'heading "WhatsApp, VK и новый Max: Как российские …" [level=2] [ref=e190]':
+                - 'link "WhatsApp, VK и новый Max: Как российские …" [ref=e191] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=857d0ab9045c82c850a6a023ddb9a512eb72a3e28c1a148161947925b68900e8JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuc2VjdXJpdHlsYWIucnUvbmV3cy81NjM3NTgucGhw&ntb=1
+              - paragraph [ref=e192]: "22 сент. 2025 г. · По словам экспертов, рост аудитории WhatsApp объясняется массовостью использования: переписка, семейные и рабочие чаты …"
+        - listitem [ref=e194]:
+          - link "asector.ru" [ref=e196] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=a77b8048094297e3ee4b695ca7b22f9a4e7aaf6b4ffa92bbeb4ff88852e95b96JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9hc2VjdG9yLnJ1L25ld3MvMjAyNV8wOS13aGF0c2FwcF91ZGVyemhpdmFldF9saWRlcnN0dm9fdGVsZWdyYW1fcmFzdHRfYV9tYXhfbmFiaXJhZXQ&ntb=1
+            - generic [ref=e201]:
+              - generic [ref=e202]: asector.ru
+              - generic [ref=e205]: https://asector.ru › news
+          - heading "Асектор - WhatsApp удерживает лидерство, Telegram растёт, а …" [level=2] [ref=e206]:
+            - link "Асектор - WhatsApp удерживает лидерство, Telegram растёт, а …" [ref=e207] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=a77b8048094297e3ee4b695ca7b22f9a4e7aaf6b4ffa92bbeb4ff88852e95b96JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9hc2VjdG9yLnJ1L25ld3MvMjAyNV8wOS13aGF0c2FwcF91ZGVyemhpdmFldF9saWRlcnN0dm9fdGVsZWdyYW1fcmFzdHRfYV9tYXhfbmFiaXJhZXQ&ntb=1
+          - paragraph [ref=e209]: По данным исследования рекламного холдинга Group4Media на основе данных Mediascope, в августе 2025 года мессенджер WhatsApp сохранил лидерство по месячному охвату аудитории …
+        - listitem [ref=e210]:
+          - link "VK" [ref=e212] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=64a36c87620bad145238c3d0a4d4dc718d14e26a76d10d2b3f12189753d399ddJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly92ay5jb20vd2FsbC03NTczMDI2M181NDU5NA&ntb=1
+            - generic [ref=e217]:
+              - generic [ref=e218]: VK
+              - generic [ref=e221]: https://vk.com
+          - heading "⚡ Мессенджеры WhatsApp* и Telegram сохраняют лидерство …" [level=2] [ref=e222]:
+            - link "⚡ Мессенджеры WhatsApp* и Telegram сохраняют лидерство …" [ref=e223] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=64a36c87620bad145238c3d0a4d4dc718d14e26a76d10d2b3f12189753d399ddJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly92ay5jb20vd2FsbC03NTczMDI2M181NDU5NA&ntb=1
+          - paragraph [ref=e225]: 30 янв. 2026 г. · Мессенджеры WhatsApp* и Telegram сохраняют лидерство среди самых популярных мобильных приложений в России по данным Mediascope за декабрь 2025 года.
+        - listitem [ref=e226]:
+          - link "Sensor Tower" [ref=e228] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=c3104d830bb2e03f6f979ab2e99d810212f4e542097e84df4f41bd209bf52400JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9zZW5zb3J0b3dlci5jb20vYmxvZy8yMDI1LXE0LXVuaWZpZWQtdG9wLTUtc29jaWFsLW5ldHdvcmtpbmctdW5pdHMtcnUtNjAwYjMwYTYyNDFiYzE2ZWI4MGJiNTFk&ntb=1
+            - generic [ref=e233]:
+              - generic [ref=e234]: Sensor Tower
+              - generic [ref=e236]:
+                - generic [ref=e237]: https://sensortower.com › blog
+                - generic [ref=e238]: Перевести этот результат
+          - 'heading "Top 5 Social Networking Apps in Russia Q4 2025: Unified Platform …" [level=2] [ref=e239]':
+            - 'link "Top 5 Social Networking Apps in Russia Q4 2025: Unified Platform …" [ref=e240] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=c3104d830bb2e03f6f979ab2e99d810212f4e542097e84df4f41bd209bf52400JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9zZW5zb3J0b3dlci5jb20vYmxvZy8yMDI1LXE0LXVuaWZpZWQtdG9wLTUtc29jaWFsLW5ldHdvcmtpbmctdW5pdHMtcnUtNjAwYjMwYTYyNDFiYzE2ZWI4MGJiNTFk&ntb=1
+          - paragraph [ref=e242]: Explore the performance trends of the top social networking apps in Russia during Q4 2025, with data sourced from Sensor Tower.
+        - listitem [ref=e243]:
+          - link "DataReportal" [ref=e245] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=78137be4243cb873b5a6b4928c4ffe23c6cd6ae3aa95303e55580c3d64cee41fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kYXRhcmVwb3J0YWwuY29tL3JlcG9ydHMvZGlnaXRhbC0yMDI1LXJ1c3NpYW4tZmVkZXJhdGlvbg&ntb=1
+            - generic [ref=e250]:
+              - generic [ref=e251]: DataReportal
+              - generic [ref=e253]:
+                - generic [ref=e254]: https://datareportal.com › reports
+                - generic [ref=e255]: Перевести этот результат
+          - 'heading "Digital 2025: The Russian Federation - DataReportal" [level=2] [ref=e256]':
+            - 'link "Digital 2025: The Russian Federation - DataReportal" [ref=e257] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=78137be4243cb873b5a6b4928c4ffe23c6cd6ae3aa95303e55580c3d64cee41fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kYXRhcmVwb3J0YWwuY29tL3JlcG9ydHMvZGlnaXRhbC0yMDI1LXJ1c3NpYW4tZmVkZXJhdGlvbg&ntb=1
+          - paragraph [ref=e259]: 3 мар. 2025 г. · All the data, insights, and trends you need to help you make sense of the “state of digital” in the Russian Federation in 2025, including detailed statistics for internet use, social media …
+        - listitem [ref=e260]:
+          - generic [ref=e261]:
+            - link "Исследуйте это изображение" [ref=e264] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=otDU1tF/&id=CCC85A12D4A3F4CBD211C65560A61EF2FDD8301E&thid=OIP.otDU1tF_kGdUjLeVpqlM0QHaHa&mediaurl=https://expandedramblings.com/wp-content/uploads/2013/07/Gemini_Generated_Image_rlg6fsrlg6fsrlg6.png&q=popular+messengers+russia+2025+VK+Telegram+Whatsapp+market+share&ck=948EF464652FA75D937E15ABC7E77C81&idpp=rc&expw=1024&exph=1024&form=rc2idp
+            - generic [ref=e266]:
+              - link "DMR" [ref=e268] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=353e8c839432d118fc913e0ff82582f39d864e0f9e4c82ba01aac77cb2f80d54JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9leHBhbmRlZHJhbWJsaW5ncy5jb20vaW5kZXgucGhwL3J1c3NpYW4tc29jaWFsLW1lZGlhLXN0YXRzLXlhbmRleC12a29udGFrdGUv&ntb=1
+                - generic [ref=e273]:
+                  - generic [ref=e274]: DMR
+                  - generic [ref=e276]:
+                    - generic [ref=e277]: https://expandedramblings.com › index.php › r…
+                    - generic [ref=e278]: Перевести этот результат
+              - 'heading "Russian Social Media Stats (2026): VK, Telegram, …" [level=2] [ref=e279]':
+                - 'link "Russian Social Media Stats (2026): VK, Telegram, …" [ref=e280] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=353e8c839432d118fc913e0ff82582f39d864e0f9e4c82ba01aac77cb2f80d54JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9leHBhbmRlZHJhbWJsaW5ncy5jb20vaW5kZXgucGhwL3J1c3NpYW4tc29jaWFsLW1lZGlhLXN0YXRzLXlhbmRleC12a29udGFrdGUv&ntb=1
+              - paragraph [ref=e281]: "26 февр. 2026 г. · Updated Russian social network stats for 2026: Yandex search share, VK audience metrics, Odnoklassniki reach, messenger trends, and how …"
+        - listitem [ref=e283]:
+          - generic [ref=e284]:
+            - link "Исследуйте это изображение" [ref=e287] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=6GS5jdFe&id=2405D6EF3D314C4AC698725319A0D8C5FD255775&thid=OIP.6GS5jdFeJGZzl9trGOXAxAHaD4&mediaurl=https://static.themoscowtimes.com/image/og/0a/90584__0ae41d6e471d81f4707c78a5c610fddd.jpg&q=popular+messengers+russia+2025+VK+Telegram+Whatsapp+market+share&ck=201AAC060647CB50F8336F5C6F073849&idpp=rc&expw=1200&exph=630&form=rc2idp
+            - generic [ref=e289]:
+              - link "The Moscow Times" [ref=e291] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=6fdcf31a123d2221af5f3dcd5ac956e78ecfe2fa5f248de3415229052d01b4a9JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cudGhlbW9zY293dGltZXMuY29tLzIwMjUvMDkvMjIvd2hhdHNhcHAtc3RpbGwtcnVzc2lhcy1tb3N0LXdpZGVseS11c2VkLW1lc3Nlbmdlci1kZXNwaXRlLXZpZGVvLWNhbGwtcmVzdHJpY3Rpb25zLWE5MDU4NA&ntb=1
+                - generic [ref=e296]:
+                  - generic [ref=e297]: The Moscow Times
+                  - generic [ref=e299]:
+                    - generic [ref=e300]: https://www.themoscowtimes.com › whatsapp...
+                    - generic [ref=e301]: Перевести этот результат
+              - heading "WhatsApp Still Russia’s Most Widely Used Messenger …" [level=2] [ref=e302]:
+                - link "WhatsApp Still Russia’s Most Widely Used Messenger …" [ref=e303] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=6fdcf31a123d2221af5f3dcd5ac956e78ecfe2fa5f248de3415229052d01b4a9JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cudGhlbW9zY293dGltZXMuY29tLzIwMjUvMDkvMjIvd2hhdHNhcHAtc3RpbGwtcnVzc2lhcy1tb3N0LXdpZGVseS11c2VkLW1lc3Nlbmdlci1kZXNwaXRlLXZpZGVvLWNhbGwtcmVzdHJpY3Rpb25zLWE5MDU4NA&ntb=1
+              - paragraph [ref=e304]: 22 сент. 2025 г. · WhatsApp remains deeply embedded in family and workplace chats, while VK and Telegram have attracted users by integrating news, …
+        - listitem [ref=e306]:
+          - link "Некоторые результаты удалены" [ref=e308] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=344d5a01c9020ae0f64570329c97724738ffd487613df9d1570aabd450329c84JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9NjE3MzUw&ntb=1
+        - listitem [ref=e309]:
+          - navigation "Другие результаты по запросу popular messengers russia 2025 VK Telegram Whatsapp market share":
+            - list:
+              - listitem [ref=e310]:
+                - generic "Страница 1" [ref=e311]: "1"
+              - listitem [ref=e312]:
+                - link "Страница 2" [ref=e313] [cursor=pointer]:
+                  - /url: /search?q=popular+messengers+russia+2025+VK+Telegram+Whatsapp+market+share&FPIG=A7061A3338C744E0B17B4F1C167D3C8C&first=11&FORM=PERE
+                  - text: "2"
+              - listitem [ref=e314]:
+                - link "Страница 3" [ref=e315] [cursor=pointer]:
+                  - /url: /search?q=popular+messengers+russia+2025+VK+Telegram+Whatsapp+market+share&FPIG=A7061A3338C744E0B17B4F1C167D3C8C&first=21&FORM=PERE1
+                  - text: "3"
+              - listitem [ref=e316]:
+                - link "Следующая страница" [ref=e317] [cursor=pointer]:
+                  - /url: /search?q=popular+messengers+russia+2025+VK+Telegram+Whatsapp+market+share&FPIG=A7061A3338C744E0B17B4F1C167D3C8C&first=11&FORM=PORE
+    - complementary "Дополнительные результаты" [ref=e318]:
+      - list
+  - contentinfo [ref=e319]:
+    - generic [ref=e320]:
+      - list:
+        - listitem [ref=e321]:
+          - link "Конфиденциальность" [ref=e322] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=21b033e4690739c4b00c739e1cf31e392a048d8ccb3ae7bae1d3804b0b25c834JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=e323]:
+          - link "Условия" [ref=e324] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=35dbb4284fed750b180ae689312f45529a3b13fc05a5d31d6bb10222597c960fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1

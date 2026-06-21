@@ -1,0 +1,550 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-FI
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - generic:
+          - generic:
+            - generic:
+              - img
+        - 'link "World Cup 2026: The art of the penalty kick" [ref=e13] [cursor=pointer]':
+          - /url: https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQPQgK
+          - 'img "World Cup 2026: The art of the penalty kick" [ref=e14]'
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - combobox "Search" [ref=e19]: elixir bot framework modern 2024 2025 telegram discord adapter elixir bot framework modern 2024 2025 telegram discord adapter
+            - generic [ref=e20]:
+              - button "Clear" [ref=e22] [cursor=pointer]:
+                - img [ref=e24]
+              - generic [ref=e27]:
+                - button "Search by voice" [ref=e28] [cursor=pointer]:
+                  - img [ref=e29]
+                - button "Search by image" [ref=e31] [cursor=pointer]:
+                  - img [ref=e32]
+          - button "Search" [ref=e34] [cursor=pointer]:
+            - img [ref=e37]
+    - generic [ref=e39]:
+      - button "Share" [ref=e40] [cursor=pointer]:
+        - img [ref=e44]
+      - generic [ref=e46]:
+        - button "Google apps" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+        - 'button "Google Account: Lev Asmanov (asmanovlev@gmail.com)" [ref=e53] [cursor=pointer]':
+          - img [ref=e55]
+          - img [ref=e60]
+  - generic [ref=e62]:
+    - navigation [ref=e68]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "AI Mode" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=elixir+bot+framework+modern+2024+2025+telegram+discord+adapter&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&aep=1&ntc=1&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ2J8OegQIEBAD
+              - generic [ref=e82]: AI Mode
+          - listitem [ref=e83]:
+            - link "All" [disabled] [ref=e84]:
+              - generic [ref=e86]: All
+          - listitem [ref=e87]:
+            - link "Images" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&q=elixir+bot+framework+modern+2024+2025+telegram+discord+adapter&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQtKgLegQIFRAB
+              - generic [ref=e90]: Images
+          - listitem [ref=e91]:
+            - link "Videos" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&q=elixir+bot+framework+modern+2024+2025+telegram+discord+adapter&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQtKgLegQIFxAB
+              - generic [ref=e94]: Videos
+          - listitem [ref=e95]:
+            - link "Forums" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&udm=18&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&q=elixir+bot+framework+modern+2024+2025+telegram+discord+adapter&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQs6gLegQIFhAB
+              - generic [ref=e98]: Forums
+          - listitem [ref=e99]:
+            - link "Short videos" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&q=elixir+bot+framework+modern+2024+2025+telegram+discord+adapter&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQs6gLegQIExAB
+              - generic [ref=e102]: Short videos
+          - listitem [ref=e103]:
+            - link "News" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&q=elixir+bot+framework+modern+2024+2025+telegram+discord+adapter&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7vnQU6QWmnWBznGVLK1G8Rykll-s04_elOQbRleKreNqN6HKk20ZyZ-d8SXGwXAN8EIvObbF33JhfJkDoGbxHTj31od_&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ0pQJegQIFBAB
+              - generic [ref=e106]: News
+          - listitem [ref=e107]:
+            - button "More filters" [ref=e108] [cursor=pointer]:
+              - generic "More filters" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: More
+                  - img [ref=e113]
+        - button "Tools" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Tools
+            - img [ref=e121]
+    - navigation [ref=e124]:
+      - navigation [ref=e127]:
+        - list [ref=e134]:
+          - listitem [ref=e135]:
+            - link "Add Free" [ref=e136] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&q=Elixir+bot+framework+modern+2024+2025+telegram+discord+adapter+free&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rftxHgD8_xPOO44xuiOdWxiS7A_xRM9vSI2lMguDDL_lD5es_0Uc56TA0gP2Fq8cP2x7CR3xTXV8TFKXDDlb_vb_H8uVDmy3Mwl7K71SoX3cT-oS613WlMw3lVNXCVwvDUVzvUq4T3gW6E6Zj-SUEhcgILCiSjJHwuTq2XaXcyYpbLlNrQVORDUQm8oxW2wzwWJFVOTjBI4XZN-IL1zdy0wCBM2via3UWwunzrz28vmX3o5jCp41n5fp2LuK3n1sv8-UaSg&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQxKsJKAB6BAgYEAE&ictx=0
+              - generic [ref=e138]: Free
+          - listitem [ref=e139]:
+            - link "Add Not" [ref=e140] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&q=Elixir+bot+framework+modern+2024+2025+telegram+discord+adapter+not&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4r0UYI9sg5hRyJGVX7TTbbrzRVQzNNvgTws_Dvb2wBBApsOy9rqJ6c9Bmuq713z6VPmt69KkMXZw5TQg8akR3D3QqG9qVRpANy-lzwWAt5Sl5tUx8izQ4UYNhtobox0_W4GjMAY1kJaPcJsHwsyuYs8u0FmF532zxeY9mXiJbpFFG6s8l8OLrlfWBoCwZ3EVXRsJCkt05ILcJ-nmlaW_RYIqaZOQ0aVF9yl0CK1i1trMBxUGL7ThsCmDbPQFqlb6X3gxugBQ&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQxKsJKAF6BAgcEAE&ictx=0
+              - generic [ref=e142]: Not
+          - listitem [ref=e143]:
+            - link "Add Github" [ref=e144] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&q=Elixir+bot+framework+modern+2024+2025+telegram+discord+adapter+github&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4re33kQlxF9AIipvnfkt_9Y-KjhSG-TV7gfk0ZD4oe2Y81jtUTXdNjdzotOpzHRYgPgKqtFGJggVgcSypQm72L7BH7JqgOU9fCiO3PNy1w7qcS_HiAlr2ps43d8WdqQS6HCWt0xhRr1LXJH6Fm5Mdeedbn9JMRa4dJ9Ma5ZIlEYc1nFA8BmAxayjxNnfojK7J1JFvpNMUFI6woG0jkIKocrYoI03fBCgCLwGR5WvMpixkRj41Vij9xJAG2-Xz8g9XuvDIfsA&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQxKsJKAJ6BAgaEAE&ictx=0
+              - generic [ref=e146]: Github
+          - listitem [ref=e147]:
+            - link "Add Download" [ref=e148] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&q=Elixir+bot+framework+modern+2024+2025+telegram+discord+adapter+download&uds=AJ5uw1_a2D0D09lxm8gpKKOTUn4rCNzROfEZonPSOFLjkE0uDbYlk4RWCBRe7KhAlXkloyZTxncBeVp8SHGjNTa3aoSG4yfIDW4rxvRcd5Ko9pgs9kmGMHbHgQ5uA1FCkD1gA80NtQkzSuMcv7IFUuGH0z16TygPKsVANmtGUElQ1iITdJOc5vpEd-bSpaw52QJH3sLDduIQvbgXE45kLP82mT2hVF_9_PV7Qed9PwOmlh5zlkQHpYW0S9ea1TTuuB4741kKf9p2iYhmUiRnXgldLtM2FotTaA&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQxKsJKAN6BAgZEAE&ictx=0
+              - generic [ref=e150]: Download
+    - heading "Search Results" [level=1] [ref=e151]
+    - generic [ref=e156]:
+      - generic [ref=e175]:
+        - generic [ref=e177]:
+          - generic [ref=e179]:
+            - generic [ref=e180]:
+              - img [ref=e181]
+              - heading "AI Overview" [level=2] [ref=e183]
+            - button "About this result" [ref=e187]:
+              - img [ref=e189]
+          - generic [ref=e209]:
+            - generic [ref=e212]:
+              - generic [ref=e213]: Elixir doesn't have a single "official" framework with plug-and-play Telegram and Discord adapters. Instead, the ecosystem relies on specialized libraries that provide clean, process-based bot architectures. You can link these together in a custom OTP application to route messages across both platforms.
+              - heading "Modern Telegram Libraries" [level=3] [ref=e214]
+              - list [ref=e216]:
+                - listitem [ref=e217]:
+                  - generic [ref=e218]:
+                    - strong [ref=e219]:
+                      - link "ExGram" [ref=e221] [cursor=pointer]:
+                        - /url: https://github.com/rockneurotiko/ex_gram
+                    - text: ": A powerful, highly active library that supports both low-level API interactions and an opinionated, rapid-development framework with middleware."
+                - listitem [ref=e222]:
+                  - generic [ref=e223]:
+                    - strong [ref=e224]:
+                      - link [ref=e226] [cursor=pointer]:
+                        - /url: https://github.com/telegex/telegex
+                        - text: Telegex
+                    - text: ": A popular framework where API methods and types are automatically generated from documents. It features an advanced \"chains\" processing model for message updates."
+                - listitem [ref=e227]:
+                  - generic [ref=e228]:
+                    - strong [ref=e229]:
+                      - generic [ref=e230]: Telegram
+                    - text: ": A robust Hex package offering bot behaviors, chat bots, and support for both webhooks and polling."
+                  - generic [ref=e232]:
+                    - link [ref=e234] [cursor=pointer]:
+                      - /url: https://github.com/telegex/telegex
+                    - button [disabled] [ref=e235]:
+                      - generic [ref=e237]:
+                        - generic [ref=e238]: GitHub
+                        - generic [ref=e239]: "+3"
+                      - img [ref=e242]
+              - heading [level=3] [ref=e245]: Modern Discord Libraries
+              - list [ref=e247]:
+                - listitem [ref=e248]:
+                  - generic [ref=e249]:
+                    - strong [ref=e250]:
+                      - link [ref=e252] [cursor=pointer]:
+                        - /url: https://github.com/kraigie/nostrum
+                        - text: Nostrum
+                    - text: ": The most comprehensive, actively maintained Elixir Discord library. It provides clean REST implementation, automatic local caching, and voice support."
+                - listitem [ref=e253]:
+                  - generic [ref=e254]:
+                    - strong [ref=e255]:
+                      - link [ref=e257] [cursor=pointer]:
+                        - /url: https://github.com/cronokirby/alchemy
+                        - text: Alchemy
+                    - text: ": A framework that prioritizes easy command definitions and event hooks instead of dealing with raw consumers and handlers."
+                - listitem [ref=e258]:
+                  - generic [ref=e259]:
+                    - strong [ref=e260]:
+                      - generic [ref=e261]: Discord Interactions
+                    - text: ": Because maintaining a continuous WebSocket connection is often resource-heavy, many modern architectures in Elixir utilize outbound webhooks and Plug to handle interactions directly from Discord’s servers."
+                  - generic [ref=e263]:
+                    - link [ref=e265] [cursor=pointer]:
+                      - /url: https://github.com/cronokirby/alchemy
+                    - button [disabled] [ref=e266]:
+                      - generic [ref=e268]:
+                        - generic [ref=e269]: GitHub
+                        - generic [ref=e270]: "+2"
+                      - img [ref=e273]
+              - heading [level=3] [ref=e276]: Building an Adapter Pattern
+              - generic [ref=e278]:
+                - text: To create a unified bot framework with adapters for both platforms, developers typically build an Elixir
+                - strong [ref=e279]: Supervisor tree
+                - text: . Each platform's library acts as a consumer for incoming events, which are then normalized into internal structs (e.g.,
+                - code [ref=e280]: "%Message{text: string, user_id: string}"
+                - text: ) and passed to a central GenServer or event manager (like Elixir's built-in
+                - code [ref=e281]: Registry
+                - text: or
+                - code [ref=e282]: PartitionSupervisor
+                - text: ). This allows you to write your bot logic once and easily swap out or append platform adapters.
+              - generic [ref=e285]:
+                - text: If you can tell me
+                - strong [ref=e286]: which specific features you need
+                - text: (e.g., text commands, slash commands, inline buttons, or voice chat), I can help you
+                - strong [ref=e287]: choose the best library pairing
+                - text: and
+                - strong [ref=e288]: sketch a Supervisor setup
+                - text: for your app.
+            - generic [ref=e293]:
+              - generic [ref=e295]:
+                - button "6 sites" [ref=e296] [cursor=pointer]:
+                  - generic [ref=e303]: 6 sites
+                - button "About this result" [ref=e308] [cursor=pointer]:
+                  - img [ref=e310]
+              - list [ref=e313]:
+                - listitem [ref=e314]:
+                  - generic [ref=e315]:
+                    - link "Telegex - GitHub. Opens in new tab." [ref=e316] [cursor=pointer]:
+                      - /url: https://github.com/telegex/telegex
+                    - generic [ref=e317]:
+                      - generic [ref=e319]:
+                        - generic [ref=e320]: Telegex - GitHub
+                        - generic [ref=e321]: 18 Sept 2024 — Telegex is not only a client for Bot API, but also a framework for building bots. It provides convenient support for receiving upd...
+                      - generic [ref=e323]:
+                        - generic [ref=e328]: GitHub
+                        - button "About this result" [ref=e332] [cursor=pointer]:
+                          - img [ref=e334]
+                - listitem [ref=e338]:
+                  - generic [ref=e339]:
+                    - 'link "visciang/telegram: Telegram library for the Elixir language - GitHub. Opens in new tab." [ref=e340] [cursor=pointer]':
+                      - /url: https://github.com/visciang/telegram
+                    - generic [ref=e341]:
+                      - generic [ref=e343]:
+                        - generic [ref=e344]: "visciang/telegram: Telegram library for the Elixir language - GitHub"
+                        - generic [ref=e345]: "Telegram library for the Elixir language. It provides: an inteface to the Telegram Bot HTTP-based APIs ( Telegram. Api ) a couple ..."
+                      - generic [ref=e347]:
+                        - generic [ref=e352]: GitHub
+                        - button [ref=e356] [cursor=pointer]:
+                          - img [ref=e358]
+                - listitem [ref=e362]:
+                  - generic [ref=e363]:
+                    - link [ref=e364] [cursor=pointer]:
+                      - /url: https://github.com/rockneurotiko/ex_gram
+                    - generic [ref=e365]:
+                      - generic [ref=e367]:
+                        - generic [ref=e368]: "rockneurotiko/ex_gram: Telegram Bot API low level API and framework"
+                        - generic [ref=e369]: 7 Apr 2026 — ExGram. ExGram is a powerful Elixir library for building Telegram Bots. Use the low-level API for fine-grained control, or leverag...
+                      - generic [ref=e371]:
+                        - generic [ref=e376]: GitHub
+                        - button [ref=e380] [cursor=pointer]:
+                          - img [ref=e382]
+        - button "Show more AI Overview" [ref=e388]:
+          - generic [ref=e390] [cursor=pointer]:
+            - generic [ref=e391]: Show more
+            - img [ref=e393]
+      - main [ref=e396]:
+        - generic [ref=e400]:
+          - generic [ref=e403]:
+            - heading "Web results" [level=2] [ref=e404]
+            - generic [ref=e405]:
+              - generic [ref=e408]:
+                - link "Telegex GitHub https://github.com › telegex › telegex" [ref=e410] [cursor=pointer]:
+                  - /url: https://github.com/telegex/telegex
+                  - heading "Telegex" [level=3] [ref=e411]
+                  - generic [ref=e417]:
+                    - generic [ref=e419]: GitHub
+                    - generic [ref=e421]: https://github.com › telegex › telegex
+                - button "About this result" [ref=e422] [cursor=pointer]:
+                  - img [ref=e425]
+              - generic [ref=e428]:
+                - generic [ref=e429]:
+                  - emphasis [ref=e430]: Telegex
+                  - text: is not only a client for Bot API, but also a framework for building bots. It provides convenient support for receiving updates and implements an ...
+                - link "Read more" [ref=e431] [cursor=pointer]:
+                  - /url: https://github.com/telegex/telegex#:~:text=Telegex%20is%20not%20only%20a,processing%20model%20based%20on%20%22chains%22.
+              - generic [ref=e433]: "Missing: 2025 ‎discord"
+          - generic [ref=e437]:
+            - generic [ref=e440]:
+              - link "Elixir library for building Telegram bots with a GenServer- ... Reddit · r/elixir 9 comments · 3 months ago" [ref=e442] [cursor=pointer]:
+                - /url: https://www.reddit.com/r/elixir/comments/1rnko8f/telegram_ex_elixir_library_for_building_telegram/
+                - heading "Elixir library for building Telegram bots with a GenServer- ..." [level=3] [ref=e443]
+                - generic [ref=e449]:
+                  - generic [ref=e451]: Reddit · r/elixir
+                  - generic [ref=e453]: 9 comments · 3 months ago
+              - button "About this result" [ref=e454] [cursor=pointer]:
+                - img [ref=e457]
+            - generic [ref=e460]:
+              - generic [ref=e461]:
+                - text: "Features:"
+                - emphasis [ref=e462]: Simple use TelegramEx macro for defining bots
+                - text: . Built-in handlers for messages and callbacks. Automatic polling.
+              - link "Read more" [ref=e463] [cursor=pointer]:
+                - /url: https://www.reddit.com/r/elixir/comments/1rnko8f/telegram_ex_elixir_library_for_building_telegram/#:~:text=Features%3A,Automatic%20polling
+            - generic [ref=e466]:
+              - generic [ref=e467]:
+                - 'link "Building a Discord bot with Ash AI : r/elixir - Reddit" [ref=e470] [cursor=pointer]':
+                  - /url: https://www.reddit.com/r/elixir/comments/1lz9g5b/building_a_discord_bot_with_ash_ai/
+                  - generic [ref=e471]:
+                    - text: Building a
+                    - emphasis [ref=e472]: Discord bot
+                    - text: "with Ash AI : r/"
+                    - emphasis [ref=e473]: elixir
+                    - text: "- Reddit"
+                - generic [ref=e475]: 1 post
+                - generic [ref=e477]: 14 Jul 2025
+              - generic [ref=e478]:
+                - link "Writing a Telegram-bot in Elixir - Reddit" [ref=e481] [cursor=pointer]:
+                  - /url: https://www.reddit.com/r/elixir/comments/6r2g5i/writing_a_telegrambot_in_elixir/
+                  - generic [ref=e482]:
+                    - text: Writing a
+                    - emphasis [ref=e483]: Telegram
+                    - text: "-"
+                    - emphasis [ref=e484]: bot
+                    - text: in
+                    - emphasis [ref=e485]: Elixir
+                    - text: "- Reddit"
+                - generic [ref=e487]: 9 posts
+                - generic [ref=e489]: 2 Aug 2017
+              - link "More results from www.reddit.com" [ref=e493] [cursor=pointer]:
+                - /url: /search?q=elixir+bot+framework+modern+2024+2025+telegram+discord+adapter+site:www.reddit.com&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQrQIoAnoECCMQAw
+            - generic [ref=e495]: "Missing: 2024 ‎2025 ‎discord ‎adapter"
+          - generic [ref=e499]:
+            - generic [ref=e502]:
+              - link "Overview — telegraph v0.8.3 Hexdocs https://hexdocs.pm › telegraph" [ref=e504] [cursor=pointer]:
+                - /url: https://hexdocs.pm/telegraph/
+                - heading "Overview — telegraph v0.8.3" [level=3] [ref=e505]
+                - generic [ref=e511]:
+                  - generic [ref=e513]: Hexdocs
+                  - generic [ref=e515]: https://hexdocs.pm › telegraph
+              - button "About this result" [ref=e516] [cursor=pointer]:
+                - img [ref=e519]
+            - generic [ref=e522]:
+              - generic [ref=e523]:
+                - emphasis [ref=e524]: Modern Telegram Bot API framework
+                - text: "based on Nadia project. Document: https://hexdocs.pm/telegraph/, Telegram Bot API: https://core.telegram.org/bots/api)"
+              - link "Read more" [ref=e525] [cursor=pointer]:
+                - /url: https://hexdocs.pm/telegraph/#:~:text=Modern%20Telegram%20Bot%20API%20framework,project%20(%5Bdocument%5D(https%3A%2F%2Fhexdocs.pm%2Ftelegraph%2F)%2C%20%5BTelegram%20Bot%20API%5D(https%3A%2F%2Fcore.telegram.org%2Fbots%2Fapi
+            - generic [ref=e527]: "Missing: 2024 ‎2025 ‎discord ‎adapter"
+          - generic [ref=e531]:
+            - generic [ref=e534]:
+              - link "Telegex - The perfect Telegram bot API client, and an easy-to ... elixirforum.com https://elixirforum.com › ... › Libraries" [ref=e536] [cursor=pointer]:
+                - /url: https://elixirforum.com/t/telegex-the-perfect-telegram-bot-api-client-and-an-easy-to-use-framework-for-building-bots/56639
+                - heading "Telegex - The perfect Telegram bot API client, and an easy-to ..." [level=3] [ref=e537]
+                - generic [ref=e543]:
+                  - generic [ref=e545]: elixirforum.com
+                  - generic [ref=e547]: https://elixirforum.com › ... › Libraries
+              - button "About this result" [ref=e548] [cursor=pointer]:
+                - img [ref=e551]
+            - generic [ref=e554]:
+              - generic [ref=e555]: 22 Jun 2023 —
+              - generic [ref=e556]:
+                - emphasis [ref=e557]: Telegex
+                - text: "- The perfect Telegram bot API client, and an easy-to-use framework for building bots ... Bot methods are in the Telegex module."
+              - link "Read more" [ref=e558] [cursor=pointer]:
+                - /url: https://elixirforum.com/t/telegex-the-perfect-telegram-bot-api-client-and-an-easy-to-use-framework-for-building-bots/56639#:~:text=Telegex%20%2D%20The%20perfect%20Telegram,easy%2Dto%2Duse%20framework%20for%20building%20bots&text=As%20a%20client%20of%20the,are%20in%20the%20Telegex%20module.
+            - generic [ref=e560]: "Missing: 2024 ‎2025 ‎discord ‎adapter"
+          - generic [ref=e565]:
+            - heading "People also ask" [level=2] [ref=e567]
+            - button "How do I add a bot to my Telegram?" [ref=e574] [cursor=pointer]:
+              - generic [ref=e576]: How do I add a bot to my Telegram?
+              - img [ref=e579]
+          - generic [ref=e584]:
+            - heading "Web results" [level=2] [ref=e585]
+            - generic [ref=e586]:
+              - generic [ref=e589]:
+                - link "Packages - Hex.pm hex.pm https://hex.pm › packages › search=Buy+WINSTROL+i..." [ref=e591] [cursor=pointer]:
+                  - /url: https://hex.pm/packages?search=Buy+WINSTROL+in+Ankara+%7C+Telegram%3A+%E2%86%AA+%40RoidTG+%E2%86%A9+K4L9M7R.exgS&sort=inserted_at
+                  - heading "Packages - Hex.pm" [level=3] [ref=e592]
+                  - generic [ref=e598]:
+                    - generic [ref=e600]: hex.pm
+                    - generic [ref=e602]: https://hex.pm › packages › search=Buy+WINSTROL+i...
+                - button "About this result" [ref=e603] [cursor=pointer]:
+                  - img [ref=e606]
+              - generic [ref=e609]:
+                - generic [ref=e610]:
+                  - text: A pluggable
+                  - emphasis [ref=e611]: Elixir
+                  - text: Logger backend for routing exceptions and logs directly to team chat platforms like Slack,
+                  - emphasis [ref=e612]: Discord
+                  - text: ","
+                  - emphasis [ref=e613]: Telegram
+                  - text: ", and Zulip. Published 1 month ..."
+                - link "Read more" [ref=e614] [cursor=pointer]:
+                  - /url: https://hex.pm/packages?search=Buy+WINSTROL+in+Ankara+%7C+Telegram:+%E2%86%AA+@RoidTG+%E2%86%A9+K4L9M7R.exgS&sort=inserted_at#:~:text=A%20pluggable%20Elixir%20Logger%20backend,Published%201%20month%20ago
+              - generic [ref=e616]: "Missing: 2024 ‎2025"
+          - generic [ref=e620]:
+            - generic [ref=e623]:
+              - 'link "lsdrfrx/telegram_ex: Elixir library for building Telegram bots ... GitHub https://github.com › lsdrfrx › telegram_ex" [ref=e625] [cursor=pointer]':
+                - /url: https://github.com/lsdrfrx/telegram_ex
+                - 'heading "lsdrfrx/telegram_ex: Elixir library for building Telegram bots ..." [level=3] [ref=e626]'
+                - generic [ref=e632]:
+                  - generic [ref=e634]: GitHub
+                  - generic [ref=e636]: https://github.com › lsdrfrx › telegram_ex
+              - button "About this result" [ref=e637] [cursor=pointer]:
+                - img [ref=e640]
+            - generic [ref=e643]:
+              - generic [ref=e644]: 19 May 2026 —
+              - generic [ref=e645]:
+                - text: TelegramEx.
+                - emphasis [ref=e646]: Elixir library for building Telegram bots
+                - text: with macro-based API. GitHub Actions Workflow Status Hex Version Last ...
+              - link "Read more" [ref=e647] [cursor=pointer]:
+                - /url: https://github.com/lsdrfrx/telegram_ex#:~:text=TelegramEx,Telegram%20bots%20with%20macro%2Dbased%20API.
+            - generic [ref=e649]: "Missing: 2024 ‎2025 ‎discord ‎adapter"
+          - generic [ref=e656]:
+            - generic [ref=e659]:
+              - 'link "LT: Telegram Bots with Elixir: Shipping Faster, Sleeping Better ... YouTube · Code Sync 190+ views · 1 month ago" [ref=e661] [cursor=pointer]':
+                - /url: https://www.youtube.com/watch?v=nAAZNLa86sU
+                - 'heading "LT: Telegram Bots with Elixir: Shipping Faster, Sleeping Better ..." [level=3] [ref=e662]'
+                - generic [ref=e668]:
+                  - generic [ref=e670]: YouTube · Code Sync
+                  - generic [ref=e672]: 190+ views · 1 month ago
+              - button "About this result" [ref=e673] [cursor=pointer]:
+                - img [ref=e676]
+            - generic [ref=e678]:
+              - 'button "LT: Telegram Bots with Elixir: Shipping Faster, Sleeping Better ... by Code Sync on YouTube. Play on Google. 5:02" [ref=e679] [cursor=pointer]':
+                - generic [ref=e681]:
+                  - img [ref=e687]
+                  - generic [ref=e690]:
+                    - generic [ref=e691]: 5:02
+                    - img [ref=e694]
+              - generic [ref=e697]: "LT: Telegram Bots with Elixir: Shipping Faster, Sleeping Better - Max Gorin | ElixirConf EU 2026. 195 views · 3 weeks ago ...more ..."
+            - generic [ref=e699]: "Missing: framework ‎2024 ‎2025 ‎discord ‎adapter"
+          - generic [ref=e703]:
+            - generic [ref=e706]:
+              - 'link "Open Source Discord Interactions SDK for Elixir: Build Bots ... profiq https://www.profiq.com › Blog" [ref=e708] [cursor=pointer]':
+                - /url: https://www.profiq.com/open-source-discord-interactions-sdk-for-elixir-build-bots-with-outbound-webhooks/
+                - 'heading "Open Source Discord Interactions SDK for Elixir: Build Bots ..." [level=3] [ref=e709]'
+                - generic [ref=e715]:
+                  - generic [ref=e717]: profiq
+                  - generic [ref=e719]: https://www.profiq.com › Blog
+              - button "About this result" [ref=e720] [cursor=pointer]:
+                - img [ref=e723]
+            - generic [ref=e726]:
+              - generic [ref=e727]: 17 Jun 2025 —
+              - generic [ref=e728]:
+                - emphasis [ref=e729]: Discord
+                - text: is a communication platform designed for creating communities, allowing users to chat via text, voice, or video.
+              - link "Read more" [ref=e730] [cursor=pointer]:
+                - /url: https://www.profiq.com/open-source-discord-interactions-sdk-for-elixir-build-bots-with-outbound-webhooks/#:~:text=Discord%20is%20a%20communication%20platform,via%20text%2C%20voice%2C%20or%20video.
+            - generic [ref=e732]: "Missing: 2024 ‎telegram ‎adapter"
+          - generic [ref=e736]:
+            - generic [ref=e739]:
+              - link "Telegram bots and Elixir. Well hello!! | by Ironjanowar Medium · Ironjanowar 260+ likes · 8 years ago" [ref=e741] [cursor=pointer]:
+                - /url: https://medium.com/@ironjanowar/telegram-bots-and-elixir-705909102496
+                - heading "Telegram bots and Elixir. Well hello!! | by Ironjanowar" [level=3] [ref=e742]
+                - generic [ref=e748]:
+                  - generic [ref=e750]: Medium · Ironjanowar
+                  - generic [ref=e752]: 260+ likes · 8 years ago
+              - button "About this result" [ref=e753] [cursor=pointer]:
+                - img [ref=e756]
+            - generic [ref=e759]:
+              - generic [ref=e760]:
+                - text: A little
+                - emphasis [ref=e761]: Telegram Bot
+                - text: guide in
+                - emphasis [ref=e762]: Elixir
+                - text: with TELEX (awesome
+                - emphasis [ref=e763]: bot
+                - text: api made by Rock Neurotiko , check his GitHub rather than his Medium profile)
+              - link "Read more" [ref=e764] [cursor=pointer]:
+                - /url: https://medium.com/@ironjanowar/telegram-bots-and-elixir-705909102496#:~:text=I've%20been%20looking%20forward%20for,(awesome%20bot%20api%20made%20by&text=Rock%20Neurotiko,rather%20than%20his%20Medium%20profile%E2%80%A6
+            - generic [ref=e766]: "Missing: framework ‎2024 ‎2025 ‎discord ‎adapter"
+          - generic [ref=e770]:
+            - generic [ref=e773]:
+              - link "A Telegram Bot in Elixir feat. LiveView - Underjord underjord.io https://underjord.io › a-telegram-bot-in-elixir" [ref=e775] [cursor=pointer]:
+                - /url: https://underjord.io/a-telegram-bot-in-elixir.html
+                - heading "A Telegram Bot in Elixir feat. LiveView - Underjord" [level=3] [ref=e776]
+                - generic [ref=e782]:
+                  - generic [ref=e784]: underjord.io
+                  - generic [ref=e786]: https://underjord.io › a-telegram-bot-in-elixir
+              - button "About this result" [ref=e787] [cursor=pointer]:
+                - img [ref=e790]
+            - generic [ref=e793]:
+              - generic [ref=e794]:
+                - text: A note-taking system using
+                - emphasis [ref=e795]: Telegram
+                - text: for ingesting quick notes. And I want to share the satisfaction I felt with seeing the near real-time way that it works.
+              - link "Read more" [ref=e796] [cursor=pointer]:
+                - /url: https://underjord.io/a-telegram-bot-in-elixir.html#:~:text=So%20I%20started%20on%20the,real%2Dtime%20way%20that%20it%20works.
+            - generic [ref=e798]: "Missing: framework ‎2024 ‎2025 ‎discord ‎adapter"
+        - generic [ref=e800]:
+          - generic [ref=e805]:
+            - heading "People also search for" [level=2] [ref=e807]
+            - generic [ref=e809]:
+              - generic [ref=e810]:
+                - link "Elixir bot framework modern 2024 2025 telegram discord adapter free" [ref=e814] [cursor=pointer]:
+                  - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&q=Elixir+bot+framework+modern+2024+2025+telegram+discord+adapter+free&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ1QJ6BAhDEAE
+                  - generic [ref=e815]:
+                    - generic [ref=e820]: Elixir bot framework modern 2024 2025 telegram discord adapter free
+                    - img [ref=e824]
+                - link "Elixir bot framework modern 2024 2025 telegram discord adapter not" [ref=e829] [cursor=pointer]:
+                  - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&q=Elixir+bot+framework+modern+2024+2025+telegram+discord+adapter+not&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ1QJ6BAhbEAE
+                  - generic [ref=e830]:
+                    - generic [ref=e835]: Elixir bot framework modern 2024 2025 telegram discord adapter not
+                    - img [ref=e839]
+                - link "Elixir bot framework modern 2024 2025 telegram discord adapter github" [ref=e844] [cursor=pointer]:
+                  - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&q=Elixir+bot+framework+modern+2024+2025+telegram+discord+adapter+github&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ1QJ6BAhVEAE
+                  - generic [ref=e845]:
+                    - generic [ref=e850]: Elixir bot framework modern 2024 2025 telegram discord adapter github
+                    - img [ref=e854]
+                - link "Elixir bot framework modern 2024 2025 telegram discord adapter download" [ref=e859] [cursor=pointer]:
+                  - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&q=Elixir+bot+framework+modern+2024+2025+telegram+discord+adapter+download&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ1QJ6BAhSEAE
+                  - generic [ref=e860]:
+                    - generic [ref=e865]: Elixir bot framework modern 2024 2025 telegram discord adapter download
+                    - img [ref=e869]
+              - generic [ref=e871]:
+                - link "Elixir telegram bot" [ref=e875] [cursor=pointer]:
+                  - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&q=Elixir+telegram+bot&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ1QJ6BAhOEAE
+                  - generic [ref=e876]:
+                    - generic [ref=e881]: Elixir telegram bot
+                    - img [ref=e885]
+                - link "Visciang telegram" [ref=e890] [cursor=pointer]:
+                  - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&q=Visciang+telegram&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ1QJ6BAhNEAE
+                  - generic [ref=e891]:
+                    - generic [ref=e896]: Visciang telegram
+                    - img [ref=e900]
+                - link "Exgram github" [ref=e905] [cursor=pointer]:
+                  - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&q=Exgram+github&sa=X&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ1QJ6BAhJEAE
+                  - generic [ref=e906]:
+                    - generic [ref=e911]: Exgram github
+                    - img [ref=e915]
+          - navigation [ref=e917]:
+            - heading "Page navigation" [level=1] [ref=e918]
+            - text: "1"
+            - link "Page 2" [ref=e921] [cursor=pointer]:
+              - /url: /search?q=elixir+bot+framework+modern+2024+2025+telegram+discord+adapter&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&ei=IOY2ao7hLZqwwPAP1azhwQY&start=10&sa=N&sstk=AU9db-BfEBsUUsa6CjEHLQTDeFHL4HoQ5vlXiIXblaKjo_uWZiWC9GWFrPA0an7bTH8T1pzQRcmawtZ4f2CcDcxHHxxJT4SzUndBAg&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ8tMDegQIQBAE
+              - text: "2"
+            - link "Page 3" [ref=e923] [cursor=pointer]:
+              - /url: /search?q=elixir+bot+framework+modern+2024+2025+telegram+discord+adapter&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&ei=IOY2ao7hLZqwwPAP1azhwQY&start=20&sa=N&sstk=AU9db-BfEBsUUsa6CjEHLQTDeFHL4HoQ5vlXiIXblaKjo_uWZiWC9GWFrPA0an7bTH8T1pzQRcmawtZ4f2CcDcxHHxxJT4SzUndBAg&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ8tMDegQIQBAG
+              - text: "3"
+            - link "Page 4" [ref=e925] [cursor=pointer]:
+              - /url: /search?q=elixir+bot+framework+modern+2024+2025+telegram+discord+adapter&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&ei=IOY2ao7hLZqwwPAP1azhwQY&start=30&sa=N&sstk=AU9db-BfEBsUUsa6CjEHLQTDeFHL4HoQ5vlXiIXblaKjo_uWZiWC9GWFrPA0an7bTH8T1pzQRcmawtZ4f2CcDcxHHxxJT4SzUndBAg&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ8tMDegQIQBAI
+              - text: "4"
+            - link "Page 5" [ref=e927] [cursor=pointer]:
+              - /url: /search?q=elixir+bot+framework+modern+2024+2025+telegram+discord+adapter&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&ei=IOY2ao7hLZqwwPAP1azhwQY&start=40&sa=N&sstk=AU9db-BfEBsUUsa6CjEHLQTDeFHL4HoQ5vlXiIXblaKjo_uWZiWC9GWFrPA0an7bTH8T1pzQRcmawtZ4f2CcDcxHHxxJT4SzUndBAg&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ8tMDegQIQBAK
+              - text: "5"
+            - link "Page 6" [ref=e929] [cursor=pointer]:
+              - /url: /search?q=elixir+bot+framework+modern+2024+2025+telegram+discord+adapter&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&ei=IOY2ao7hLZqwwPAP1azhwQY&start=50&sa=N&sstk=AU9db-BfEBsUUsa6CjEHLQTDeFHL4HoQ5vlXiIXblaKjo_uWZiWC9GWFrPA0an7bTH8T1pzQRcmawtZ4f2CcDcxHHxxJT4SzUndBAg&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ8tMDegQIQBAM
+              - text: "6"
+            - link "Page 7" [ref=e931] [cursor=pointer]:
+              - /url: /search?q=elixir+bot+framework+modern+2024+2025+telegram+discord+adapter&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&ei=IOY2ao7hLZqwwPAP1azhwQY&start=60&sa=N&sstk=AU9db-BfEBsUUsa6CjEHLQTDeFHL4HoQ5vlXiIXblaKjo_uWZiWC9GWFrPA0an7bTH8T1pzQRcmawtZ4f2CcDcxHHxxJT4SzUndBAg&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ8tMDegQIQBAO
+              - text: "7"
+            - heading "Next" [level=2] [ref=e933]:
+              - link "Next" [ref=e934] [cursor=pointer]:
+                - /url: /search?q=elixir+bot+framework+modern+2024+2025+telegram+discord+adapter&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnu6gf9bdILhZhMEsI3HANSYRjk5HQ:1781982752757&ei=IOY2ao7hLZqwwPAP1azhwQY&start=10&sa=N&sstk=AU9db-BfEBsUUsa6CjEHLQTDeFHL4HoQ5vlXiIXblaKjo_uWZiWC9GWFrPA0an7bTH8T1pzQRcmawtZ4f2CcDcxHHxxJT4SzUndBAg&ved=2ahUKEwiO8eSHw5aVAxUaGBAIHVVWOGgQ8NMDegQIQBAQ
+                - generic [ref=e936]: Next
+        - navigation
+    - contentinfo [ref=e937]:
+      - heading "Footer links" [level=1] [ref=e938]
+      - generic [ref=e942]:
+        - generic [ref=e946]: Results are not personalised
+        - generic [ref=e948]:
+          - text: Finland
+          - generic [ref=e950]:
+            - button "Helsinki - From your IP address" [ref=e952] [cursor=pointer]:
+              - generic [ref=e953]: Helsinki
+              - generic [ref=e955]:
+                - text: "-"
+                - generic [ref=e956]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=e958] [cursor=pointer]: Update location
+        - generic [ref=e961]:
+          - link "Help" [ref=e962] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-FI&fg=1
+          - link "Send feedback" [ref=e963] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e964] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-FI&fg=1
+          - link "Terms" [ref=e965] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-FI&fg=1

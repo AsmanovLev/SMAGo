@@ -1,0 +1,511 @@
+- generic [ref=e10]:
+  - navigation "Главная" [ref=e12]:
+    - generic [ref=e19]:
+      - link "Главная страница Meta" [ref=e22] [cursor=pointer]:
+        - /url: https://developers.facebook.com/
+        - img "Логотип навигации" [ref=e23]
+      - list [ref=e27]:
+        - listitem [ref=e28]:
+          - generic [ref=e30]:
+            - button "Создавайте с нами" [ref=e31] [cursor=pointer]:
+              - generic [ref=e32]: Создавайте с нами
+            - generic:
+              - img
+        - listitem [ref=e33]:
+          - link "Документы" [ref=e36] [cursor=pointer]:
+            - /url: /docs/
+            - generic [ref=e37]: Документы
+        - listitem [ref=e38]:
+          - link "Блог" [ref=e41] [cursor=pointer]:
+            - /url: /blog/
+            - generic [ref=e42]: Блог
+        - listitem [ref=e43]:
+          - generic [ref=e45]:
+            - button "Ресурсы" [ref=e46] [cursor=pointer]:
+              - generic [ref=e47]: Ресурсы
+            - generic:
+              - img
+        - listitem [ref=e48]:
+          - generic [ref=e50]:
+            - button "Центры разработчиков" [ref=e51] [cursor=pointer]:
+              - generic [ref=e52]: Центры разработчиков
+            - generic:
+              - img
+      - generic [ref=e56]:
+        - link "Login" [ref=e57] [cursor=pointer]:
+          - /url: https://business.facebook.com/business/loginpage/?next=https%3A%2F%2Fdevelopers.facebook.com%2Fdocumentation%2Fbusiness-messaging%2Fmessenger-platform%2Foverview
+        - button "Поиск" [ref=e58] [cursor=pointer]:
+          - img "Поиск" [ref=e59]
+  - generic [ref=e65]:
+    - navigation [ref=e66]:
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - generic [ref=e69]: Платформа Messenger
+          - generic [ref=e70]:
+            - button "Раскрывающееся меню" [ref=e72] [cursor=pointer]:
+              - generic [ref=e73]:
+                - generic [ref=e75]: Business Messaging
+                - img [ref=e76]
+            - button "Раскрывающееся меню" [ref=e79] [cursor=pointer]:
+              - generic [ref=e80]:
+                - generic [ref=e82]: Messenger Platform
+                - img [ref=e83]
+            - textbox "Фильтр" [ref=e86]
+        - generic [ref=e88]:
+          - generic "Платформа Messenger" [ref=e89]:
+            - link "Платформа Messenger" [ref=e90] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform
+              - generic [ref=e93]: Платформа Messenger
+          - generic "Обзор" [ref=e94]:
+            - link "Обзор" [ref=e95] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform/overview
+              - generic [ref=e98]: Обзор
+          - generic "Ограничения числа обращений" [ref=e99]:
+            - link "Ограничения числа обращений" [ref=e100] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform/overview/rate-limiting
+              - generic [ref=e103]: Ограничения числа обращений
+          - generic "Создание приложения" [ref=e104]:
+            - link "Создание приложения" [ref=e105] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform/create-an-app
+              - generic [ref=e108]: Создание приложения
+          - generic "Начать" [ref=e110]:
+            - link "Начать" [ref=e111] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e112]:
+                - generic [ref=e114]: Начать
+                - img [ref=e116]
+          - generic "Webhooks" [ref=e119]:
+            - link "Webhooks" [ref=e120] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e121]:
+                - generic [ref=e123]: Webhooks
+                - img [ref=e125]
+          - generic "Звонки" [ref=e128]:
+            - link "Звонки" [ref=e129] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e130]:
+                - generic [ref=e132]: Звонки
+                - img [ref=e134]
+          - generic "Маршрутизация переписок" [ref=e137]:
+            - link "Маршрутизация переписок" [ref=e138] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e139]:
+                - generic [ref=e141]: Маршрутизация переписок
+                - img [ref=e143]
+          - generic "Узнаваемость и вовлеченность" [ref=e146]:
+            - link "Узнаваемость и вовлеченность" [ref=e147] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e148]:
+                - generic [ref=e150]: Узнаваемость и вовлеченность
+                - img [ref=e152]
+          - generic "Реклама" [ref=e155]:
+            - link "Реклама" [ref=e156] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e157]:
+                - generic [ref=e159]: Реклама
+                - img [ref=e161]
+          - generic "Обмен сообщениями" [ref=e164]:
+            - link "Обмен сообщениями" [ref=e165] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e166]:
+                - generic [ref=e168]: Обмен сообщениями
+                - img [ref=e170]
+          - generic "Conversations API" [ref=e172]:
+            - link "Conversations API" [ref=e173] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform/conversations
+              - generic [ref=e176]: Conversations API
+          - generic "Функции торговли на основе каталога" [ref=e177]:
+            - link "Функции торговли на основе каталога" [ref=e178] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform/catalog-powered-shopping-features
+              - generic [ref=e181]: Функции торговли на основе каталога
+          - generic "Веб-просмотр" [ref=e183]:
+            - link "Веб-просмотр" [ref=e184] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e185]:
+                - generic [ref=e187]: Веб-просмотр
+                - img [ref=e189]
+          - generic "ID и профиль" [ref=e192]:
+            - link "ID и профиль" [ref=e193] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e194]:
+                - generic [ref=e196]: ID и профиль
+                - img [ref=e198]
+          - generic "Обработка естественного языка" [ref=e200]:
+            - link "Обработка естественного языка" [ref=e201] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform/built-in-nlp
+              - generic [ref=e204]: Обработка естественного языка
+          - generic "Аналитика и отзывы" [ref=e206]:
+            - link "Аналитика и отзывы" [ref=e207] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e208]:
+                - generic [ref=e210]: Аналитика и отзывы
+                - img [ref=e212]
+          - generic "Messaging Feature Review API" [ref=e214]:
+            - link "Messaging Feature Review API" [ref=e215] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform/send-messages/messaging-feature-review-api
+              - generic [ref=e218]: Messaging Feature Review API
+          - generic "Политика и руководство по использованию" [ref=e219]:
+            - link "Политика и руководство по использованию" [ref=e220] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform/policy
+              - generic [ref=e223]: Политика и руководство по использованию
+          - generic "Общие рекомендации" [ref=e224]:
+            - link "Общие рекомендации" [ref=e225] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform/introduction/general-best-practices
+              - generic [ref=e228]: Общие рекомендации
+          - generic "Проверка приложения" [ref=e229]:
+            - link "Проверка приложения" [ref=e230] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform/app-review
+              - generic [ref=e233]: Проверка приложения
+          - generic "Ресурсы поддержки" [ref=e234]:
+            - link "Ресурсы поддержки" [ref=e235] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform/support-resources
+              - generic [ref=e238]: Ресурсы поддержки
+          - generic "Часто задаваемые вопросы" [ref=e239]:
+            - link "Часто задаваемые вопросы" [ref=e240] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform/faq
+              - generic [ref=e243]: Часто задаваемые вопросы
+          - generic [ref=e244]:
+            - separator [ref=e245]
+            - generic [ref=e246]: Ресурсы
+          - generic "Справка по API" [ref=e248]:
+            - link "Справка по API" [ref=e249] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e250]:
+                - generic [ref=e252]: Справка по API
+                - img [ref=e254]
+          - generic "Коды ошибок" [ref=e256]:
+            - link "Коды ошибок" [ref=e257] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform/error-codes
+              - generic [ref=e260]: Коды ошибок
+          - generic "Журнал изменений" [ref=e261]:
+            - link "Журнал изменений" [ref=e262] [cursor=pointer]:
+              - /url: /documentation/business-messaging/messenger-platform/changelog/
+              - generic [ref=e265]: Журнал изменений
+    - generic [ref=e267]:
+      - main [ref=e268]:
+        - navigation "Хлебные крошки" [ref=e270]:
+          - list [ref=e271]:
+            - listitem [ref=e272]:
+              - generic [ref=e273]:
+                - link "Документы" [ref=e274] [cursor=pointer]:
+                  - /url: /docs
+                  - generic [ref=e276]: Документы
+                - img [ref=e277]
+            - listitem [ref=e279]:
+              - generic [ref=e280]:
+                - link "Обзор" [ref=e281] [cursor=pointer]:
+                  - /url: /documentation/business-messaging/whatsapp/overview
+                  - generic [ref=e283]: Обзор
+                - img [ref=e284]
+            - listitem [ref=e286]:
+              - generic [ref=e289]: Обзор платформы Messenger
+        - article [ref=e290]:
+          - heading "Обзор платформы Messenger" [level=1] [ref=e291]
+          - generic [ref=e293]: "Обновлено: 23 мар 2026 г."
+          - generic [ref=e294]: С помощью Messenger from Meta Страница Facebook компании или ее профессиональный аккаунт Instagram может отвечать пользователям, которые отправляют сообщения через Facebook, Instagram или плагин Meta в вашем мобильном приложении или на сайте. Переписку должен начать человек. Вы можете пользоваться платформой Messenger бесплатно.
+          - generic [ref=e297]:
+            - heading "Принципы работы" [level=2] [ref=e298]
+            - button [ref=e299] [cursor=pointer]:
+              - img [ref=e300]
+          - generic [ref=e303]: Когда человек отправляет сообщение Странице вашей компании или вашему профессиональному аккаунту Instagram, активируется уведомление Webhooks. Ваше приложение выполняет вызов к социальному графу Meta, чтобы получить переписку, определить подходящую реакцию и отправить его в течение 24 часов. Вы можете отправить автоматический ответ, перенаправить запрос на оператора или использовать комбинацию этих вариантов.
+          - generic [ref=e304]: Платформа позволяет масштабировать этот процесс, а также предоставляет целый ряд типов сообщений и точек входа для переписки.
+          - generic [ref=e307]:
+            - heading "ID пользователей внутри организации" [level=3] [ref=e308]
+            - button [ref=e309] [cursor=pointer]:
+              - img [ref=e310]
+          - generic [ref=e313]: Каждый пользователь, отправляющий сообщение вашей Странице Facebook или профессиональному аккаунту Instagram, получает уникальный ID, действующий в пределах этого аккаунта. Благодаря этому ID вы можете сопоставлять взаимодействия с одним и тем же человеком в разных приложениях для обмена сообщениями.
+          - list [ref=e314]:
+            - listitem [ref=e316]:
+              - strong [ref=e317]: ID внутри Страницы
+              - text: создается, когда человек отправляет сообщение вашей Странице Facebook.
+            - listitem [ref=e319]:
+              - strong [ref=e320]: ID в Instagram
+              - text: создается, когда кто-то отправляет сообщение вашему профессиональному аккаунту Instagram.
+          - generic [ref=e323]:
+            - heading "Ограничения" [level=3] [ref=e324]
+            - button [ref=e325] [cursor=pointer]:
+              - img [ref=e326]
+          - list [ref=e329]:
+            - listitem [ref=e331]: Пользователь, вошедший в аккаунт Facebook, не может отправлять сообщения вашему профессиональному аккаунту Instagram. Аналогично, пользователь, вошедший в Instagram, не сможет с помощью платформы Messenger отправить сообщение вашей Странице Facebook.
+            - listitem [ref=e333]: Обмен сообщениями в Instagram доступен для всех профессиональных аккаунтов Instagram, принадлежащих компаниям или авторам.
+          - generic [ref=e336]:
+            - heading "Основные концепции" [level=2] [ref=e337]
+            - button [ref=e338] [cursor=pointer]:
+              - img [ref=e339]
+          - table [ref=e343]:
+            - rowgroup [ref=e344]:
+              - row "Концепция Описание" [ref=e345]:
+                - columnheader "Концепция" [ref=e346]
+                - columnheader "Описание" [ref=e347]
+            - rowgroup [ref=e348]:
+              - row "Маркеры доступа Неструктурированные строки, которые обеспечивают временный безопасный доступ к конечным точкам социального графа Meta для отправки и получения сообщений." [ref=e349]:
+                - cell "Маркеры доступа" [ref=e350]:
+                  - link "Маркеры доступа" [ref=e352] [cursor=pointer]:
+                    - /url: /documentation/facebook-login/guides/access-tokens
+                - cell "Неструктурированные строки, которые обеспечивают временный безопасный доступ к конечным точкам социального графа Meta для отправки и получения сообщений." [ref=e353]:
+                  - generic [ref=e354]: Неструктурированные строки, которые обеспечивают временный безопасный доступ к конечным точкам социального графа Meta для отправки и получения сообщений.
+              - row "Маркеры доступа к Странице Тип маркера доступа, который используется для выполнения вызовов API от имени Страницы Facebook. Требуется для отправки и получения сообщений на платформе Messenger. Генерируется после того, как администратор Страницы предоставит вашему приложению необходимые разрешения." [ref=e355]:
+                - cell "Маркеры доступа к Странице" [ref=e356]:
+                  - link "Маркеры доступа к Странице" [ref=e358] [cursor=pointer]:
+                    - /url: /documentation/facebook-login/guides/access-tokens#page-access-tokens
+                - cell "Тип маркера доступа, который используется для выполнения вызовов API от имени Страницы Facebook. Требуется для отправки и получения сообщений на платформе Messenger. Генерируется после того, как администратор Страницы предоставит вашему приложению необходимые разрешения." [ref=e359]:
+                  - generic [ref=e360]: Тип маркера доступа, который используется для выполнения вызовов API от имени Страницы Facebook. Требуется для отправки и получения сообщений на платформе Messenger. Генерируется после того, как администратор Страницы предоставит вашему приложению необходимые разрешения.
+              - row "Уровни доступа Стандартный доступ (по умолчанию) — доступ к данным есть только у пользователей с ролью в вашем приложении или на вашей Странице. Расширенный доступ — дает доступ к данным любому пользователю приложения и требует проверки приложения." [ref=e361]:
+                - cell "Уровни доступа" [ref=e362]:
+                  - link "Уровни доступа" [ref=e364] [cursor=pointer]:
+                    - /url: /docs/graph-api/overview/access-levels
+                - cell "Стандартный доступ (по умолчанию) — доступ к данным есть только у пользователей с ролью в вашем приложении или на вашей Странице. Расширенный доступ — дает доступ к данным любому пользователю приложения и требует проверки приложения." [ref=e365]:
+                  - generic [ref=e366]:
+                    - strong [ref=e367]: Стандартный доступ
+                    - text: (по умолчанию) — доступ к данным есть только у пользователей с ролью в вашем приложении или на вашей Странице.
+                    - strong [ref=e368]: Расширенный доступ
+                    - text: — дает доступ к данным любому пользователю приложения и требует
+                    - link "проверки приложения" [ref=e369] [cursor=pointer]:
+                      - /url: /docs/app-review
+                    - text: .
+              - row "Вход через Facebook для компаний Требуется для запроса у пользователей приложения разрешений на отправку и получение сообщений от их имени." [ref=e370]:
+                - cell "Вход через Facebook для компаний" [ref=e371]:
+                  - link "Вход через Facebook для компаний" [ref=e373] [cursor=pointer]:
+                    - /url: /documentation/facebook-login/facebook-login-for-business
+                - cell "Требуется для запроса у пользователей приложения разрешений на отправку и получение сообщений от их имени." [ref=e374]:
+                  - generic [ref=e375]: Требуется для запроса у пользователей приложения разрешений на отправку и получение сообщений от их имени.
+              - row "Webhooks Уведомления в режиме реального времени о сообщениях, отправленных вашей Странице или профессиональному аккаунту Instagram. Отправка таких уведомлений позволяет не выполнять опрос социального графа Meta." [ref=e376]:
+                - cell "Webhooks" [ref=e377]:
+                  - link "Webhooks" [ref=e379] [cursor=pointer]:
+                    - /url: /documentation/business-messaging/messenger-platform/webhooks
+                - cell "Уведомления в режиме реального времени о сообщениях, отправленных вашей Странице или профессиональному аккаунту Instagram. Отправка таких уведомлений позволяет не выполнять опрос социального графа Meta." [ref=e380]:
+                  - generic [ref=e381]: Уведомления в режиме реального времени о сообщениях, отправленных вашей Странице или профессиональному аккаунту Instagram. Отправка таких уведомлений позволяет не выполнять опрос социального графа Meta.
+              - row "Ограничение числа обращений Ограничения на количество вызовов API и пропускную способность сообщений. При интенсивной переписке функция входящих сообщений может временно отключаться." [ref=e382]:
+                - cell "Ограничение числа обращений" [ref=e383]:
+                  - link "Ограничение числа обращений" [ref=e385] [cursor=pointer]:
+                    - /url: /docs/messenger-platform/send-messages/rate-limiting
+                - cell "Ограничения на количество вызовов API и пропускную способность сообщений. При интенсивной переписке функция входящих сообщений может временно отключаться." [ref=e386]:
+                  - generic [ref=e387]: Ограничения на количество вызовов API и пропускную способность сообщений. При интенсивной переписке функция входящих сообщений может временно отключаться.
+              - row "Правила Правила платформы, требования к скорости реагирования и стандарты сообщества, которые вы должны соблюдать, чтобы сохранить доступ к API." [ref=e388]:
+                - cell "Правила" [ref=e389]:
+                  - link "Правила" [ref=e391] [cursor=pointer]:
+                    - /url: /documentation/business-messaging/messenger-platform/policy
+                - cell "Правила платформы, требования к скорости реагирования и стандарты сообщества, которые вы должны соблюдать, чтобы сохранить доступ к API." [ref=e392]:
+                  - generic [ref=e393]: Правила платформы, требования к скорости реагирования и стандарты сообщества, которые вы должны соблюдать, чтобы сохранить доступ к API.
+              - row "URL CDN URL сети доставки контента с учетом конфиденциальности для получения мультимедийных материалов, которыми делятся пользователи Instagram. После удаления контента или истечения его срока действия URL перестает возвращать медиафайл." [ref=e394]:
+                - cell "URL CDN" [ref=e395]:
+                  - generic [ref=e396]: URL CDN
+                - cell "URL сети доставки контента с учетом конфиденциальности для получения мультимедийных материалов, которыми делятся пользователи Instagram. После удаления контента или истечения его срока действия URL перестает возвращать медиафайл." [ref=e397]:
+                  - generic [ref=e398]: URL сети доставки контента с учетом конфиденциальности для получения мультимедийных материалов, которыми делятся пользователи Instagram. После удаления контента или истечения его срока действия URL перестает возвращать медиафайл.
+          - generic [ref=e401]:
+            - heading "Прежде чем начать" [level=2] [ref=e402]
+            - button [ref=e403] [cursor=pointer]:
+              - img [ref=e404]
+          - generic [ref=e407]: "Для реализации обмена сообщениями через платформу Messenger вам потребуются:"
+          - list [ref=e408]:
+            - listitem [ref=e410]:
+              - link "Зарегистрированный аккаунт разработчика Meta." [ref=e411] [cursor=pointer]:
+                - /url: /docs/development
+            - listitem [ref=e413]:
+              - link "Приложение Meta" [ref=e414] [cursor=pointer]:
+                - /url: /docs/development/create-an-app
+              - text: ", для которого выбран"
+              - link "сценарий использования Messenger" [ref=e415] [cursor=pointer]:
+                - /url: /docs/development/create-an-app/messenger-use-case
+              - text: .
+            - listitem [ref=e417]:
+              - link "Страница Facebook⁠ Ссылка откроется на новой вкладке или в новом окне" [ref=e418] [cursor=pointer]:
+                - /url: https://www.facebook.com/business/help/461775097570076
+                - text: Страница Facebook
+                - generic [ref=e419]:
+                  - text: ⁠
+                  - img "Ссылка откроется на новой вкладке или в новом окне" [ref=e420]
+              - text: ", связанная с вашим приложением."
+            - listitem [ref=e424]:
+              - link "профессиональный аккаунт Instagram⁠ Ссылка откроется на новой вкладке или в новом окне" [ref=e425] [cursor=pointer]:
+                - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fhelp.instagram.com%2F502981923235522&h=AUCfy-06uv2o_s11zQ9ekcvo7Y7zSvI4zhCxgRDuDQgx73X82KOs4jzdfcxoRumDb0a3Y5V46B3nzK4V-BE1ZLqZKcXbUNhyeRm5Kg3_SuMCcHYg_XxE8pLm6iWytl087cWfUiRK409k_ueO7OGZNw
+                - text: профессиональный аккаунт Instagram
+                - generic [ref=e426]:
+                  - text: ⁠
+                  - img "Ссылка откроется на новой вкладке или в новом окне" [ref=e427]
+              - text: (для обмена сообщениями в Instagram);
+            - listitem [ref=e431]:
+              - link "Подтверждение компании" [ref=e432] [cursor=pointer]:
+                - /url: /docs/development/release/business-verification
+              - text: (если ваше приложение используют люди, не имеющие роли в приложении).
+            - listitem [ref=e434]:
+              - link "Проверка приложения" [ref=e435] [cursor=pointer]:
+                - /url: /docs/app-review
+              - text: (если вашему приложению требуется расширенный доступ). Не требуется, если вы отправляете и получаете сообщения только для своей Страницы Facebook.
+          - generic [ref=e438]:
+            - heading "Разрешения" [level=3] [ref=e439]
+            - button [ref=e440] [cursor=pointer]:
+              - img [ref=e441]
+          - generic [ref=e444]: "Запросите через вход Facebook для компаний следующие разрешения для переписок в Messenger:"
+          - list [ref=e445]:
+            - listitem [ref=e447]:
+              - code [ref=e448]: pages_show_list
+            - listitem [ref=e450]:
+              - code [ref=e451]: pages_manage_metadata
+            - listitem [ref=e453]:
+              - code [ref=e454]: pages_messaging
+            - listitem [ref=e456]:
+              - code [ref=e457]: pages_read_engagement
+            - listitem [ref=e459]:
+              - code [ref=e460]: business_management
+          - generic [ref=e461]: "Для обмена сообщениями в Instagram также необходимо запросить:"
+          - list [ref=e462]:
+            - listitem [ref=e464]:
+              - code [ref=e465]: instagram_basic
+            - listitem [ref=e467]:
+              - code [ref=e468]: instagram_manage_messages
+          - generic [ref=e469]:
+            - text: Разрешение
+            - code [ref=e470]: business_management
+            - text: является зависимостью для
+            - code [ref=e471]: pages_messaging
+            - text: ","
+            - code [ref=e472]: pages_show_list
+            - text: и
+            - code [ref=e473]: instagram_manage_messages
+            - text: . Обратите на это внимание в заявке
+            - link "на проверку приложения" [ref=e474] [cursor=pointer]:
+              - /url: /docs/app-review
+            - text: . Пользователь приложения, запрашивающий маркер доступа к Странице, должен иметь возможность выполнять задачи
+            - code [ref=e475]: MESSAGING
+            - text: ","
+            - code [ref=e476]: MODERATE
+            - text: и
+            - link "задачи на Странице" [ref=e477] [cursor=pointer]:
+              - /url: /docs/pages/overview/permissions-features#tasks
+            - text: .
+          - generic [ref=e480]:
+            - heading "Дальнейшие действия" [level=2] [ref=e481]
+            - button [ref=e482] [cursor=pointer]:
+              - img [ref=e483]
+          - list [ref=e486]:
+            - listitem [ref=e488]:
+              - text: Отправьте первое сообщение с помощью
+              - link "руководства по началу работы" [ref=e489] [cursor=pointer]:
+                - /url: /documentation/business-messaging/messenger-platform/get-started
+              - text: .
+            - listitem [ref=e491]:
+              - link "Настройте Webhooks" [ref=e492] [cursor=pointer]:
+                - /url: /documentation/business-messaging/messenger-platform/webhooks
+              - text: для получения HTTP-уведомлений о сообщениях, отправленных и полученных вашим приложением, в режиме реального времени.
+            - listitem [ref=e494]:
+              - link "Найдите партнера⁠ Ссылка откроется на новой вкладке или в новом окне" [ref=e495] [cursor=pointer]:
+                - /url: https://www.facebook.com/business/partner-directory/search?solution_type=messaging
+                - text: Найдите партнера
+                - generic [ref=e496]:
+                  - text: ⁠
+                  - img "Ссылка откроется на новой вкладке или в новом окне" [ref=e497]
+              - text: по работе с платформой Messenger в Партнерском каталоге Meta.
+            - listitem [ref=e501]:
+              - text: Посмотрите
+              - link "видео для разработчиков" [ref=e502] [cursor=pointer]:
+                - /url: https://developers.facebook.com/videos/?filters%5B1%5D=messenger
+              - text: с пошаговыми руководствами, рекомендациями и записями мероприятий.
+      - complementary [ref=e503]
+  - generic [ref=e505]:
+    - separator [ref=e506]
+    - contentinfo [ref=e507]:
+      - generic [ref=e508]:
+        - separator [ref=e509]
+        - generic [ref=e511]:
+          - generic [ref=e513]:
+            - generic [ref=e515]:
+              - img "Meta" [ref=e517]
+              - list [ref=e519]:
+                - listitem [ref=e520]:
+                  - link "Facebook" [ref=e521] [cursor=pointer]:
+                    - /url: https://www.facebook.com/MetaforDevelopers
+                    - img "Facebook" [ref=e522]
+                - listitem [ref=e523]:
+                  - link "Instagram" [ref=e524] [cursor=pointer]:
+                    - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.instagram.com%2Fmetafordevelopers%2F&h=AUCfy-06uv2o_s11zQ9ekcvo7Y7zSvI4zhCxgRDuDQgx73X82KOs4jzdfcxoRumDb0a3Y5V46B3nzK4V-BE1ZLqZKcXbUNhyeRm5Kg3_SuMCcHYg_XxE8pLm6iWytl087cWfUiRK409k_ueO7OGZNw
+                    - img "Instagram" [ref=e525]
+                - listitem [ref=e526]:
+                  - link "X" [ref=e527] [cursor=pointer]:
+                    - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Ftwitter.com%2Fmetafordevs&h=AUCfy-06uv2o_s11zQ9ekcvo7Y7zSvI4zhCxgRDuDQgx73X82KOs4jzdfcxoRumDb0a3Y5V46B3nzK4V-BE1ZLqZKcXbUNhyeRm5Kg3_SuMCcHYg_XxE8pLm6iWytl087cWfUiRK409k_ueO7OGZNw
+                    - img "X" [ref=e528]
+                - listitem [ref=e529]:
+                  - link "LinkedIn" [ref=e530] [cursor=pointer]:
+                    - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.linkedin.com%2Fshowcase%2Fmeta-for-developers%2F&h=AUCfy-06uv2o_s11zQ9ekcvo7Y7zSvI4zhCxgRDuDQgx73X82KOs4jzdfcxoRumDb0a3Y5V46B3nzK4V-BE1ZLqZKcXbUNhyeRm5Kg3_SuMCcHYg_XxE8pLm6iWytl087cWfUiRK409k_ueO7OGZNw
+                    - img "LinkedIn" [ref=e531]
+                - listitem [ref=e532]:
+                  - link "YouTube" [ref=e533] [cursor=pointer]:
+                    - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.youtube.com%2FMetaDevelopers%2F&h=AUCfy-06uv2o_s11zQ9ekcvo7Y7zSvI4zhCxgRDuDQgx73X82KOs4jzdfcxoRumDb0a3Y5V46B3nzK4V-BE1ZLqZKcXbUNhyeRm5Kg3_SuMCcHYg_XxE8pLm6iWytl087cWfUiRK409k_ueO7OGZNw
+                    - img "YouTube" [ref=e534]
+            - generic [ref=e536]:
+              - generic [ref=e539]:
+                - heading "Создавайте с Meta" [level=2] [ref=e540]:
+                  - generic [ref=e541]: Создавайте с Meta
+                - list [ref=e542]:
+                  - listitem [ref=e543]:
+                    - link "ИИ" [ref=e545] [cursor=pointer]:
+                      - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fai%2F&h=AUCfy-06uv2o_s11zQ9ekcvo7Y7zSvI4zhCxgRDuDQgx73X82KOs4jzdfcxoRumDb0a3Y5V46B3nzK4V-BE1ZLqZKcXbUNhyeRm5Kg3_SuMCcHYg_XxE8pLm6iWytl087cWfUiRK409k_ueO7OGZNw
+                  - listitem [ref=e546]:
+                    - link "Meta Horizon" [ref=e548] [cursor=pointer]:
+                      - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fhorizon%2F&h=AUCfy-06uv2o_s11zQ9ekcvo7Y7zSvI4zhCxgRDuDQgx73X82KOs4jzdfcxoRumDb0a3Y5V46B3nzK4V-BE1ZLqZKcXbUNhyeRm5Kg3_SuMCcHYg_XxE8pLm6iWytl087cWfUiRK409k_ueO7OGZNw
+                  - listitem [ref=e549]:
+                    - link "Социальные технологии" [ref=e551] [cursor=pointer]:
+                      - /url: /social-technologies/
+              - generic [ref=e554]:
+                - heading "Новости" [level=2] [ref=e555]:
+                  - generic [ref=e556]: Новости
+                - list [ref=e557]:
+                  - listitem [ref=e558]:
+                    - link "Meta for Developers" [ref=e560] [cursor=pointer]:
+                      - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fdevelopers.meta.com%2Fblog%2F&h=AUCfy-06uv2o_s11zQ9ekcvo7Y7zSvI4zhCxgRDuDQgx73X82KOs4jzdfcxoRumDb0a3Y5V46B3nzK4V-BE1ZLqZKcXbUNhyeRm5Kg3_SuMCcHYg_XxE8pLm6iWytl087cWfUiRK409k_ueO7OGZNw
+                  - listitem [ref=e561]:
+                    - link "Блог" [ref=e563] [cursor=pointer]:
+                      - /url: /blog/
+                  - listitem [ref=e564]:
+                    - link "Истории успеха" [ref=e566] [cursor=pointer]:
+                      - /url: /success-stories/
+              - generic [ref=e569]:
+                - heading "Поддержка" [level=2] [ref=e570]:
+                  - generic [ref=e571]: Поддержка
+                - list [ref=e572]:
+                  - listitem [ref=e573]:
+                    - link "Поддержка разработчиков" [ref=e575] [cursor=pointer]:
+                      - /url: /support/
+                  - listitem [ref=e576]:
+                    - link "Инструмент отслеживания ошибок" [ref=e578] [cursor=pointer]:
+                      - /url: /support/bugs/
+                  - listitem [ref=e579]:
+                    - link "Статус платформы" [ref=e581] [cursor=pointer]:
+                      - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fmetastatus.com%2F&h=AUCfy-06uv2o_s11zQ9ekcvo7Y7zSvI4zhCxgRDuDQgx73X82KOs4jzdfcxoRumDb0a3Y5V46B3nzK4V-BE1ZLqZKcXbUNhyeRm5Kg3_SuMCcHYg_XxE8pLm6iWytl087cWfUiRK409k_ueO7OGZNw
+                  - listitem [ref=e582]:
+                    - link "Форум сообщества разработчиков" [ref=e584] [cursor=pointer]:
+                      - /url: https://www.facebook.com/groups/fbdevelopers/
+                  - listitem [ref=e585]:
+                    - link "Сообщить о происшествии" [ref=e587] [cursor=pointer]:
+                      - /url: /incident/report/
+              - generic [ref=e590]:
+                - heading "О нас" [level=2] [ref=e591]:
+                  - generic [ref=e592]: О нас
+                - list [ref=e593]:
+                  - listitem [ref=e594]:
+                    - link "Информация" [ref=e596] [cursor=pointer]:
+                      - /url: https://l.facebook.com/l.php?u=https%3A%2F%2Fabout.fb.com%2F&h=AUCfy-06uv2o_s11zQ9ekcvo7Y7zSvI4zhCxgRDuDQgx73X82KOs4jzdfcxoRumDb0a3Y5V46B3nzK4V-BE1ZLqZKcXbUNhyeRm5Kg3_SuMCcHYg_XxE8pLm6iWytl087cWfUiRK409k_ueO7OGZNw
+                  - listitem [ref=e597]:
+                    - link "Вакансии" [ref=e599] [cursor=pointer]:
+                      - /url: https://www.facebook.com/careers
+              - generic [ref=e602]:
+                - heading "Условия и правила" [level=2] [ref=e603]:
+                  - generic [ref=e604]: Условия и правила
+                - list [ref=e605]:
+                  - listitem [ref=e606]:
+                    - link "Инициативы платформы в отношении ответственности" [ref=e608] [cursor=pointer]:
+                      - /url: /products/responsible-platform-initiatives/
+                  - listitem [ref=e609]:
+                    - link "Условия использования платформы" [ref=e611] [cursor=pointer]:
+                      - /url: /terms/dfc_platform_terms/
+                  - listitem [ref=e612]:
+                    - link "Правила для разработчиков" [ref=e614] [cursor=pointer]:
+                      - /url: /devpolicy/
+                  - listitem [ref=e615]:
+                    - link "Политика конфиденциальности" [ref=e617] [cursor=pointer]:
+                      - /url: https://www.facebook.com/about/privacy
+                  - listitem [ref=e618]:
+                    - link "Файлы cookie" [ref=e620] [cursor=pointer]:
+                      - /url: https://www.facebook.com/help/cookies
+          - button "Изменить язык" [ref=e625] [cursor=pointer]:
+            - generic [ref=e627]: Русский

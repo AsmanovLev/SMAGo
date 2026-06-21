@@ -1,0 +1,7 @@
+[    1931ms] [ERROR] Refused to get unsafe header "X-Sg-Cs" @ https://www.google.com/search?q=statista+messenger+apps+monthly+active+users+2025+whatsapp+telegram+wechat+rankings:53
+[    1932ms] [ERROR] Refused to get unsafe header "X-Sorry-Redirect" @ https://www.google.com/search?q=statista+messenger+apps+monthly+active+users+2025+whatsapp+telegram+wechat+rankings:53
+[    2690ms] [ERROR] Refused to get unsafe header "X-Sg-Cs" @ https://www.google.com/search?q=statista+messenger+apps+monthly+active+users+2025+whatsapp+telegram+wechat+rankings:53
+[    2690ms] [ERROR] Refused to get unsafe header "X-Sorry-Redirect" @ https://www.google.com/search?q=statista+messenger+apps+monthly+active+users+2025+whatsapp+telegram+wechat+rankings:53
+[    3567ms] [ERROR] Refused to get unsafe header "X-Sg-Cs" @ https://www.google.com/search?q=statista+messenger+apps+monthly+active+users+2025+whatsapp+telegram+wechat+rankings:53
+[    3568ms] [ERROR] Refused to get unsafe header "X-Sorry-Redirect" @ https://www.google.com/search?q=statista+messenger+apps+monthly+active+users+2025+whatsapp+telegram+wechat+rankings:53
+[    4228ms] [WARNING] A speculation rule set was inserted into the document but will be ignored. This might happen, for example, if it was previously inserted into another document, or if it was created using the innerHTML setter. @ https://www.google.com/search?q=statista+messenger+apps+monthly+active+users+2025+whatsapp+telegram+wechat+rankings:33

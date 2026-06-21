@@ -1,0 +1,402 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-FI
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - generic:
+          - generic:
+            - generic:
+              - img
+        - 'link "World Cup 2026: The art of the penalty kick" [ref=e13] [cursor=pointer]':
+          - /url: https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwi1-__HwpaVAxXWExAIHb7TFP0QPQgK
+          - 'img "World Cup 2026: The art of the penalty kick" [ref=e14]'
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - combobox "Search" [ref=e19]: telegram bot api editMessageText method documentation telegram bot api editMessageText method documentation
+            - generic [ref=e20]:
+              - button "Clear" [ref=e22] [cursor=pointer]:
+                - img [ref=e24]
+              - generic [ref=e27]:
+                - button "Search by voice" [ref=e28] [cursor=pointer]:
+                  - img [ref=e29]
+                - button "Search by image" [ref=e31] [cursor=pointer]:
+                  - img [ref=e32]
+          - button "Search" [ref=e34] [cursor=pointer]:
+            - img [ref=e37]
+    - generic [ref=e39]:
+      - button "Share" [ref=e40] [cursor=pointer]:
+        - img [ref=e44]
+      - generic [ref=e46]:
+        - button "Google apps" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+        - 'button "Google Account: Lev Asmanov (asmanovlev@gmail.com)" [ref=e53] [cursor=pointer]':
+          - img [ref=e55]
+          - img [ref=e60]
+  - generic [ref=e62]:
+    - navigation [ref=e68]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "AI Mode" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=telegram+bot+api+editMessageText+method+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&aep=1&ntc=1&sa=X&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q2J8OegQIDxAD
+              - generic [ref=e82]: AI Mode
+          - listitem [ref=e83]:
+            - link "All" [disabled] [ref=e84]:
+              - generic [ref=e86]: All
+          - listitem [ref=e87]:
+            - link "Videos" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&q=telegram+bot+api+editMessageText+method+documentation&sa=X&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0QtKgLegQIExAB
+              - generic [ref=e90]: Videos
+          - listitem [ref=e91]:
+            - link "Images" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&q=telegram+bot+api+editMessageText+method+documentation&sa=X&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0QtKgLegQIFRAB
+              - generic [ref=e94]: Images
+          - listitem [ref=e95]:
+            - link "Forums" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&udm=18&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&q=telegram+bot+api+editMessageText+method+documentation&sa=X&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Qs6gLegQIFhAB
+              - generic [ref=e98]: Forums
+          - listitem [ref=e99]:
+            - link "Short videos" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&q=telegram+bot+api+editMessageText+method+documentation&sa=X&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Qs6gLegQIFxAB
+              - generic [ref=e102]: Short videos
+          - listitem [ref=e103]:
+            - link "News" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&q=telegram+bot+api+editMessageText+method+documentation&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&sa=X&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q0pQJegQIFBAB
+              - generic [ref=e106]: News
+          - listitem [ref=e107]:
+            - button "More filters" [ref=e108] [cursor=pointer]:
+              - generic "More filters" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: More
+                  - img [ref=e113]
+        - button "Tools" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Tools
+            - img [ref=e121]
+    - heading "Search Results" [level=1] [ref=e123]
+    - main [ref=e129]:
+      - generic [ref=e133]:
+        - generic [ref=e136]:
+          - heading "Web results" [level=2] [ref=e137]
+          - generic [ref=e138]:
+            - generic [ref=e141]:
+              - 'link "TDLib: editMessageText Class Reference Telegram APIs https://core.telegram.org › tdlib › docs › classtd_1_1td_..." [ref=e143] [cursor=pointer]':
+                - /url: https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1edit_message_text.html
+                - 'heading "TDLib: editMessageText Class Reference" [level=3] [ref=e144]'
+                - generic [ref=e150]:
+                  - generic [ref=e152]: Telegram APIs
+                  - generic [ref=e154]: https://core.telegram.org › tdlib › docs › classtd_1_1td_...
+              - button "About this result" [ref=e155] [cursor=pointer]:
+                - img [ref=e158]
+            - generic [ref=e161]:
+              - generic [ref=e162]:
+                - emphasis [ref=e163]: Edits the text of a message
+                - text: (or a text of a game message). Returns the edited message after the edit is completed on the server side.
+              - link "Read more" [ref=e164] [cursor=pointer]:
+                - /url: https://core.telegram.org/tdlib/docs/classtd_1_1td__api_1_1edit_message_text.html#:~:text=Edits%20the%20text%20of%20a,completed%20on%20the%20server%20side.
+        - generic [ref=e168]:
+          - generic [ref=e171]:
+            - link "editMessageText - aiogram 3.21.0 documentation aiogram https://docs.aiogram.dev › methods › edit_message_text" [ref=e173] [cursor=pointer]:
+              - /url: https://docs.aiogram.dev/en/v3.21.0/api/methods/edit_message_text.html
+              - heading "editMessageText - aiogram 3.21.0 documentation" [level=3] [ref=e174]
+              - generic [ref=e180]:
+                - generic [ref=e182]: aiogram
+                - generic [ref=e184]: https://docs.aiogram.dev › methods › edit_message_text
+            - button "About this result" [ref=e185] [cursor=pointer]:
+              - img [ref=e188]
+          - generic [ref=e191]:
+            - generic [ref=e192]:
+              - text: Note that business messages that were not sent by the
+              - emphasis [ref=e193]: bot
+              - text: and do not contain an inline keyboard can only be edited within 48 hours from the time they were sent.
+            - link "Read more" [ref=e194] [cursor=pointer]:
+              - /url: https://docs.aiogram.dev/en/v3.21.0/api/methods/edit_message_text.html#:~:text=Note%20that%20business%20messages%20that,the%20time%20they%20were%20sent.
+        - generic [ref=e198]:
+          - generic [ref=e201]:
+            - link "EditMessageText (Telegram Bots Meta 4.8.1 API) javadoc.io https://javadoc.io › api › methods › updatingmessages" [ref=e203] [cursor=pointer]:
+              - /url: https://javadoc.io/doc/org.telegram/telegrambots-meta/4.8.1/org/telegram/telegrambots/meta/api/methods/updatingmessages/EditMessageText.html
+              - heading "EditMessageText (Telegram Bots Meta 4.8.1 API)" [level=3] [ref=e204]
+              - generic [ref=e210]:
+                - generic [ref=e212]: javadoc.io
+                - generic [ref=e214]: https://javadoc.io › api › methods › updatingmessages
+            - button "About this result" [ref=e215] [cursor=pointer]:
+              - img [ref=e218]
+          - generic [ref=e221]:
+            - generic [ref=e222]:
+              - text: "1.0"
+              - emphasis [ref=e223]: Use this method to edit text messages
+              - text: ". On success, if edited message is sent by the bot, the edited Message is returned, otherwise True is returned. Author: ..."
+            - link "Read more" [ref=e224] [cursor=pointer]:
+              - /url: https://javadoc.io/doc/org.telegram/telegrambots-meta/4.8.1/org/telegram/telegrambots/meta/api/methods/updatingmessages/EditMessageText.html#:~:text=1.0%20Use%20this%20method%20to,Author%3A
+          - generic [ref=e226]:
+            - text: "Missing: documentation ‎| Show results with:"
+            - link "documentation" [ref=e227] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&q=telegram+bot+api+editMessageText+method+%22documentation%22&sa=X&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q5t4CegQIMRAB
+        - generic [ref=e231]:
+          - generic [ref=e234]:
+            - link "telegram_bot_api v3.0.0 Hexdocs https://hexdocs.pm › telegram_bot_api" [ref=e236] [cursor=pointer]:
+              - /url: https://hexdocs.pm/telegram_bot_api/
+              - heading "telegram_bot_api v3.0.0" [level=3] [ref=e237]
+              - generic [ref=e243]:
+                - generic [ref=e245]: Hexdocs
+                - generic [ref=e247]: https://hexdocs.pm › telegram_bot_api
+            - button "About this result" [ref=e248] [cursor=pointer]:
+              - img [ref=e251]
+          - generic [ref=e254]:
+            - generic [ref=e255]:
+              - text: Erlang library for
+              - emphasis [ref=e256]: Telegram Bot API
+              - text: . It contains all
+              - emphasis [ref=e257]: methods
+              - text: and types available in
+              - emphasis [ref=e258]: Telegram Bot API
+              - text: 9.6, released April 3, 2026.
+            - link "Read more" [ref=e259] [cursor=pointer]:
+              - /url: https://hexdocs.pm/telegram_bot_api/#:~:text=Erlang%20library%20for%20Telegram%20Bot,9.6%2C%20released%20April%203%2C%202026.
+        - generic [ref=e263]:
+          - generic [ref=e266]:
+            - link "EditMessageText.php - steelbotfw/telegram-bot-api GitHub https://github.com › blob › master › src › Method › Edit..." [ref=e268] [cursor=pointer]:
+              - /url: https://github.com/steelbotfw/telegram-bot-api/blob/master/src/Method/EditMessageText.php
+              - heading "EditMessageText.php - steelbotfw/telegram-bot-api" [level=3] [ref=e269]
+              - generic [ref=e275]:
+                - generic [ref=e277]: GitHub
+                - generic [ref=e279]: https://github.com › blob › master › src › Method › Edit...
+            - button "About this result" [ref=e280] [cursor=pointer]:
+              - img [ref=e283]
+          - generic [ref=e287]:
+            - emphasis [ref=e288]: Telegram bot API implementation using Icicle
+            - text: . Contribute to steelbotfw/telegram-bot-api development by creating an account on GitHub.
+        - generic [ref=e292]:
+          - generic [ref=e295]:
+            - link "Documentation of Telegram methods for bots? Stack Overflow 1 answer · 5 years ago" [ref=e297] [cursor=pointer]:
+              - /url: https://stackoverflow.com/questions/66238359/documentation-of-telegram-methods-for-bots
+              - heading "Documentation of Telegram methods for bots?" [level=3] [ref=e298]
+              - generic [ref=e304]:
+                - generic [ref=e306]: Stack Overflow
+                - generic [ref=e308]: 1 answer · 5 years ago
+            - button "About this result" [ref=e309] [cursor=pointer]:
+              - img [ref=e312]
+          - generic [ref=e315]:
+            - generic [ref=e316]:
+              - text: You're looking the Telegram core API, you should check the Telegram Rest API Docs. There you'll find the
+              - emphasis [ref=e317]: editmessagetext method
+              - text: ;.
+            - link "Read more" [ref=e318] [cursor=pointer]:
+              - /url: https://stackoverflow.com/questions/66238359/documentation-of-telegram-methods-for-bots#:~:text=You're%20looking%20the%20Telegram%20core,you'll%20find%20the%20editmessagetext%20method%3B
+          - generic [ref=e321]:
+            - generic [ref=e322]:
+              - link "Telegram API - editMessageText seems doesn't work ..." [ref=e325] [cursor=pointer]:
+                - /url: https://stackoverflow.com/questions/71194889/telegram-api-editmessagetext-seems-doesnt-work-with-messages-containing-custo
+                - generic [ref=e326]:
+                  - emphasis [ref=e327]: Telegram API
+                  - text: "-"
+                  - emphasis [ref=e328]: editMessageText
+                  - text: seems doesn't work ...
+              - generic [ref=e330]: 1 answer
+              - generic [ref=e332]: 20 Feb 2022
+            - generic [ref=e333]:
+              - link "Using edit message in a telegram bot - Stack Overflow" [ref=e336] [cursor=pointer]:
+                - /url: https://stackoverflow.com/questions/42354290/using-edit-message-in-a-telegram-bot
+                - generic [ref=e337]:
+                  - text: Using edit message in a
+                  - emphasis [ref=e338]: telegram bot
+                  - text: "- Stack Overflow"
+              - generic [ref=e340]: 3 answers
+              - generic [ref=e342]: 20 Feb 2017
+            - link "More results from stackoverflow.com" [ref=e346] [cursor=pointer]:
+              - /url: /search?q=telegram+bot+api+editMessageText+method+documentation+site:stackoverflow.com&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&sa=X&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0QrQIoAnoECCQQAw
+        - generic [ref=e350]:
+          - generic [ref=e353]:
+            - 'link "editMessageText: Edit a text message in telegram.bot rdrr.io https://rdrr.io › CRAN › telegram.bot" [ref=e355] [cursor=pointer]':
+              - /url: https://rdrr.io/cran/telegram.bot/man/editMessageText.html
+              - 'heading "editMessageText: Edit a text message in telegram.bot" [level=3] [ref=e356]'
+              - generic [ref=e362]:
+                - generic [ref=e364]: rdrr.io
+                - generic [ref=e366]: https://rdrr.io › CRAN › telegram.bot
+            - button "About this result" [ref=e367] [cursor=pointer]:
+              - img [ref=e370]
+          - generic [ref=e373]:
+            - generic [ref=e374]:
+              - text: Description. Use this method to edit text messages. Usage.
+              - emphasis [ref=e375]: editMessageText
+              - text: ( chat_id = NULL, message_id = NULL, inline_message_id = NULL, text ...
+            - link "Read more" [ref=e376] [cursor=pointer]:
+              - /url: https://rdrr.io/cran/telegram.bot/man/editMessageText.html#:~:text=Description,NULL%2C%20reply_markup%20%3D%20NULL%20)
+        - generic [ref=e381]:
+          - heading "People also ask" [level=2] [ref=e383]
+          - generic [ref=e384]:
+            - button "Can a Telegram bot edit a message?" [ref=e390] [cursor=pointer]:
+              - generic [ref=e392]: Can a Telegram bot edit a message?
+              - img [ref=e395]
+            - button "How to use API in Telegram bot?" [ref=e404] [cursor=pointer]:
+              - generic [ref=e406]: How to use API in Telegram bot?
+              - img [ref=e409]
+            - button "What are the tags allowed by the Telegram API?" [ref=e418] [cursor=pointer]:
+              - generic [ref=e420]: What are the tags allowed by the Telegram API?
+              - img [ref=e423]
+            - button "What is the difference between Telegram API and Bot API?" [ref=e432] [cursor=pointer]:
+              - generic [ref=e434]: What is the difference between Telegram API and Bot API?
+              - img [ref=e437]
+        - generic [ref=e442]:
+          - heading "Web results" [level=2] [ref=e443]
+          - generic [ref=e444]:
+            - generic [ref=e447]:
+              - link "Telegram Bot API Telegram APIs https://core.telegram.org › bots › api" [ref=e449] [cursor=pointer]:
+                - /url: https://core.telegram.org/bots/api
+                - heading "Telegram Bot API" [level=3] [ref=e450]
+                - generic [ref=e456]:
+                  - generic [ref=e458]: Telegram APIs
+                  - generic [ref=e460]: https://core.telegram.org › bots › api
+              - button "About this result" [ref=e461] [cursor=pointer]:
+                - img [ref=e464]
+            - generic [ref=e467]:
+              - generic [ref=e468]:
+                - text: Added the parameter rich_message to the
+                - emphasis [ref=e469]: method editMessageText
+                - text: ", allowing"
+                - emphasis [ref=e470]: bots
+                - text: to edit rich messages. ... All
+                - emphasis [ref=e471]: methods
+                - text: in the
+                - emphasis [ref=e472]: Bot API
+                - text: are case-insensitive.
+              - link "Read more" [ref=e473] [cursor=pointer]:
+                - /url: https://core.telegram.org/bots/api#:~:text=Added%20the%20parameter%20rich_message%20to,bots%20to%20edit%20rich%20messages.&text=All%20methods%20in%20the%20Bot,API%20are%20case%2Dinsensitive.
+            - list [ref=e475]:
+              - listitem [ref=e476]:
+                - link "Recent changes" [ref=e477] [cursor=pointer]:
+                  - /url: https://core.telegram.org/bots/api#recent-changes
+                  - generic [ref=e479]: Recent changes
+              - listitem [ref=e480]:
+                - link "Making requests" [ref=e481] [cursor=pointer]:
+                  - /url: https://core.telegram.org/bots/api#making-requests
+                  - generic [ref=e483]: Making requests
+              - listitem [ref=e484]:
+                - link "Using a Local Bot API Server" [ref=e485] [cursor=pointer]:
+                  - /url: https://core.telegram.org/bots/api#using-a-local-bot-api-server
+                  - generic [ref=e487]: Using a Local Bot API Server
+              - listitem [ref=e488]:
+                - link "Getting updates" [ref=e489] [cursor=pointer]:
+                  - /url: https://core.telegram.org/bots/api#getting-updates
+                  - generic [ref=e491]: Getting updates
+        - generic [ref=e495]:
+          - generic [ref=e498]:
+            - link "Telegram node Message operations documentation n8n Docs https://docs.n8n.io › app-nodes › n8n-nodes-base.telegram" [ref=e500] [cursor=pointer]:
+              - /url: https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.telegram/message-operations/
+              - heading "Telegram node Message operations documentation" [level=3] [ref=e501]
+              - generic [ref=e507]:
+                - generic [ref=e509]: n8n Docs
+                - generic [ref=e511]: https://docs.n8n.io › app-nodes › n8n-nodes-base.telegram
+            - button "About this result" [ref=e512] [cursor=pointer]:
+              - img [ref=e515]
+          - generic [ref=e518]:
+            - generic [ref=e519]:
+              - text: Edit Message Text#. Use this operation to
+              - emphasis [ref=e520]: edit the text of an existing message using the Bot API editMessageText method
+              - text: ". Enter these parameters: Credential ..."
+            - link "Read more" [ref=e521] [cursor=pointer]:
+              - /url: https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.telegram/message-operations/#:~:text=Edit%20Message%20Text,select%20an%20existing%20Telegram%20credential.
+        - generic [ref=e525]:
+          - generic [ref=e528]:
+            - link "Api grammy.dev https://grammy.dev › ref › core › api" [ref=e530] [cursor=pointer]:
+              - /url: https://grammy.dev/ref/core/api
+              - heading "Api" [level=3] [ref=e531]
+              - generic [ref=e537]:
+                - generic [ref=e539]: grammy.dev
+                - generic [ref=e541]: https://grammy.dev › ref › core › api
+            - button "About this result" [ref=e542] [cursor=pointer]:
+              - img [ref=e545]
+          - generic [ref=e548]:
+            - generic [ref=e549]:
+              - emphasis [ref=e550]: Provides access to all methods of the Telegram Bot API
+              - text: exactly as documented on the website (https://core.telegram.org/bots/api). No arguments are pulled up ...
+            - link "Read more" [ref=e551] [cursor=pointer]:
+              - /url: https://grammy.dev/ref/core/api#:~:text=Provides%20access%20to%20all%20methods,the%20function%20signature%20for%20convenience.
+      - generic [ref=e553]:
+        - generic [ref=e558]:
+          - heading "People also search for" [level=2] [ref=e560]
+          - generic [ref=e562]:
+            - generic [ref=e563]:
+              - link "Telegram bot api editmessagetext method documentation example" [ref=e567] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&q=Telegram+bot+api+editmessagetext+method+documentation+example&sa=X&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q1QJ6BAg4EAE
+                - generic [ref=e568]:
+                  - generic [ref=e573]: Telegram bot api editmessagetext method documentation example
+                  - img [ref=e577]
+              - link "Telegram bot edit message" [ref=e582] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&q=Telegram+bot+edit+message&sa=X&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q1QJ6BAg7EAE
+                - generic [ref=e583]:
+                  - generic [ref=e588]: Telegram bot edit message
+                  - img [ref=e592]
+            - generic [ref=e594]:
+              - link "Telegram edit message time limit" [ref=e598] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&q=Telegram+edit+message+time+limit&sa=X&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q1QJ6BAg6EAE
+                - generic [ref=e599]:
+                  - generic [ref=e604]: Telegram edit message time limit
+                  - img [ref=e608]
+              - link "Telegram message editor" [ref=e613] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&q=Telegram+message+editor&sa=X&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q1QJ6BAg5EAE
+                - generic [ref=e614]:
+                  - generic [ref=e619]: Telegram message editor
+                  - img [ref=e623]
+        - navigation [ref=e625]:
+          - heading "Page navigation" [level=1] [ref=e626]
+          - text: "1"
+          - link "Page 2" [ref=e629] [cursor=pointer]:
+            - /url: /search?q=telegram+bot+api+editMessageText+method+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&ei=muU2arXGO9anwPAPvqfT6A8&start=10&sa=N&sstk=AU9db-BbVZ5C4EjeQkjq2Gp2CbX7Jcz8wgLTG86IiiwDKGvDh3tZr1nVzbvjqMEKnheZcyUWtaQKKveAJA_Xm5eerCvaeCOWZgGEwg&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q8tMDegQIMhAE
+            - text: "2"
+          - link "Page 3" [ref=e631] [cursor=pointer]:
+            - /url: /search?q=telegram+bot+api+editMessageText+method+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&ei=muU2arXGO9anwPAPvqfT6A8&start=20&sa=N&sstk=AU9db-BbVZ5C4EjeQkjq2Gp2CbX7Jcz8wgLTG86IiiwDKGvDh3tZr1nVzbvjqMEKnheZcyUWtaQKKveAJA_Xm5eerCvaeCOWZgGEwg&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q8tMDegQIMhAG
+            - text: "3"
+          - link "Page 4" [ref=e633] [cursor=pointer]:
+            - /url: /search?q=telegram+bot+api+editMessageText+method+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&ei=muU2arXGO9anwPAPvqfT6A8&start=30&sa=N&sstk=AU9db-BbVZ5C4EjeQkjq2Gp2CbX7Jcz8wgLTG86IiiwDKGvDh3tZr1nVzbvjqMEKnheZcyUWtaQKKveAJA_Xm5eerCvaeCOWZgGEwg&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q8tMDegQIMhAI
+            - text: "4"
+          - link "Page 5" [ref=e635] [cursor=pointer]:
+            - /url: /search?q=telegram+bot+api+editMessageText+method+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&ei=muU2arXGO9anwPAPvqfT6A8&start=40&sa=N&sstk=AU9db-BbVZ5C4EjeQkjq2Gp2CbX7Jcz8wgLTG86IiiwDKGvDh3tZr1nVzbvjqMEKnheZcyUWtaQKKveAJA_Xm5eerCvaeCOWZgGEwg&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q8tMDegQIMhAK
+            - text: "5"
+          - link "Page 6" [ref=e637] [cursor=pointer]:
+            - /url: /search?q=telegram+bot+api+editMessageText+method+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&ei=muU2arXGO9anwPAPvqfT6A8&start=50&sa=N&sstk=AU9db-BbVZ5C4EjeQkjq2Gp2CbX7Jcz8wgLTG86IiiwDKGvDh3tZr1nVzbvjqMEKnheZcyUWtaQKKveAJA_Xm5eerCvaeCOWZgGEwg&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q8tMDegQIMhAM
+            - text: "6"
+          - link "Page 7" [ref=e639] [cursor=pointer]:
+            - /url: /search?q=telegram+bot+api+editMessageText+method+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&ei=muU2arXGO9anwPAPvqfT6A8&start=60&sa=N&sstk=AU9db-BbVZ5C4EjeQkjq2Gp2CbX7Jcz8wgLTG86IiiwDKGvDh3tZr1nVzbvjqMEKnheZcyUWtaQKKveAJA_Xm5eerCvaeCOWZgGEwg&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q8tMDegQIMhAO
+            - text: "7"
+          - link "Page 8" [ref=e641] [cursor=pointer]:
+            - /url: /search?q=telegram+bot+api+editMessageText+method+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&ei=muU2arXGO9anwPAPvqfT6A8&start=70&sa=N&sstk=AU9db-BbVZ5C4EjeQkjq2Gp2CbX7Jcz8wgLTG86IiiwDKGvDh3tZr1nVzbvjqMEKnheZcyUWtaQKKveAJA_Xm5eerCvaeCOWZgGEwg&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q8tMDegQIMhAQ
+            - text: "8"
+          - link "Page 9" [ref=e643] [cursor=pointer]:
+            - /url: /search?q=telegram+bot+api+editMessageText+method+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&ei=muU2arXGO9anwPAPvqfT6A8&start=80&sa=N&sstk=AU9db-BbVZ5C4EjeQkjq2Gp2CbX7Jcz8wgLTG86IiiwDKGvDh3tZr1nVzbvjqMEKnheZcyUWtaQKKveAJA_Xm5eerCvaeCOWZgGEwg&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q8tMDegQIMhAS
+            - text: "9"
+          - link "Page 10" [ref=e645] [cursor=pointer]:
+            - /url: /search?q=telegram+bot+api+editMessageText+method+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&ei=muU2arXGO9anwPAPvqfT6A8&start=90&sa=N&sstk=AU9db-BbVZ5C4EjeQkjq2Gp2CbX7Jcz8wgLTG86IiiwDKGvDh3tZr1nVzbvjqMEKnheZcyUWtaQKKveAJA_Xm5eerCvaeCOWZgGEwg&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q8tMDegQIMhAU
+            - text: "10"
+          - heading "Next" [level=2] [ref=e647]:
+            - link "Next" [ref=e648] [cursor=pointer]:
+              - /url: /search?q=telegram+bot+api+editMessageText+method+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnvde_x4zS9j5bjB4dLC2W_NylsmKw:1781982618982&ei=muU2arXGO9anwPAPvqfT6A8&start=10&sa=N&sstk=AU9db-BbVZ5C4EjeQkjq2Gp2CbX7Jcz8wgLTG86IiiwDKGvDh3tZr1nVzbvjqMEKnheZcyUWtaQKKveAJA_Xm5eerCvaeCOWZgGEwg&ved=2ahUKEwi1-__HwpaVAxXWExAIHb7TFP0Q8NMDegQIMhAW
+              - generic [ref=e650]: Next
+      - navigation
+    - contentinfo [ref=e651]:
+      - heading "Footer links" [level=1] [ref=e652]
+      - generic [ref=e656]:
+        - generic [ref=e660]: Results are not personalised
+        - generic [ref=e662]:
+          - text: Finland
+          - generic [ref=e664]:
+            - button "Helsinki - From your IP address" [ref=e666] [cursor=pointer]:
+              - generic [ref=e667]: Helsinki
+              - generic [ref=e669]:
+                - text: "-"
+                - generic [ref=e670]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=e672] [cursor=pointer]: Update location
+        - generic [ref=e675]:
+          - link "Help" [ref=e676] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-FI&fg=1
+          - link "Send feedback" [ref=e677] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e678] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-FI&fg=1
+          - link "Terms" [ref=e679] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-FI&fg=1

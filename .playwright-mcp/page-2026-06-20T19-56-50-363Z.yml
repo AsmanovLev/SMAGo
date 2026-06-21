@@ -1,0 +1,177 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - link "본문 바로가기" [ref=e2] [cursor=pointer]:
+      - /url: "#mainContent"
+    - link "메인 메뉴 바로가기" [ref=e3] [cursor=pointer]:
+      - /url: "#gnbContent"
+    - link "사이드 메뉴 바로가기" [ref=e4] [cursor=pointer]:
+      - /url: "#sideContent"
+  - generic [ref=e5]:
+    - banner [ref=e6]:
+      - generic [ref=e7]:
+        - heading "kakao developers" [level=1] [ref=e8]:
+          - link "kakao developers" [ref=e9] [cursor=pointer]:
+            - /url: /
+            - img "kakao developers" [ref=e10]
+        - navigation [ref=e12]:
+          - list [ref=e13]:
+            - listitem [ref=e14]:
+              - link "앱" [ref=e15] [cursor=pointer]:
+                - /url: /console/app
+            - listitem [ref=e16]:
+              - link "문서" [ref=e17] [cursor=pointer]:
+                - /url: /docs
+            - listitem [ref=e18]:
+              - link "도구" [ref=e19] [cursor=pointer]:
+                - /url: /tool
+            - listitem [ref=e20]:
+              - link "데브톡" [ref=e21] [cursor=pointer]:
+                - /url: https://devtalk.kakao.com
+        - generic [ref=e22]:
+          - button "검색어를 입력해 주세요." [ref=e23] [cursor=pointer]:
+            - generic [ref=e25]: 검색어를 입력해 주세요.
+          - strong [ref=e26]: 관련사이트
+          - list [ref=e27]:
+            - generic [ref=e28]:
+              - listitem [ref=e29]:
+                - button [ref=e30] [cursor=pointer]
+              - listitem [ref=e32]:
+                - generic [ref=e33] [cursor=pointer]: 언어
+          - button "로그인" [ref=e35] [cursor=pointer]
+    - main [ref=e36]:
+      - article [ref=e37]:
+        - heading "카카오 디벨로퍼스 홈 본문" [level=2] [ref=e38]
+        - heading "카카오 디벨로퍼스 홈 본문" [level=2] [ref=e39]
+        - generic [ref=e40]:
+          - heading "카카오 디벨로퍼스 이용 안내 및 기타 서비스 안내" [level=3] [ref=e42]
+          - generic [ref=e44]:
+            - generic [ref=e46]:
+              - generic [ref=e48]:
+                - generic [ref=e49]:
+                  - generic [ref=e50]: 추천 제품
+                  - link "카카오 SDK로 채널 친구를 빠르게 늘려보세요 채널 추가부터 사용자 혜택 제공과 결과 확인까지! 한 번의 API 호출로 처리할 수 있습니다." [ref=e51] [cursor=pointer]:
+                    - /url: https://developers.kakao.com/docs/ko/kakaotalk-channel/common#channel-follow
+                    - strong [ref=e52]: 카카오 SDK로 채널 친구를 빠르게 늘려보세요
+                    - paragraph [ref=e53]: 채널 추가부터 사용자 혜택 제공과 결과 확인까지! 한 번의 API 호출로 처리할 수 있습니다.
+                - link [ref=e54] [cursor=pointer]:
+                  - /url: https://developers.kakao.com/docs/ko/kakaotalk-channel/common#channel-follow
+              - generic [ref=e57]:
+                - generic [ref=e58]:
+                  - generic [ref=e59]: 공지
+                  - 'link "AGENTIC PLAYER 10 내가 만든 AI 서비스를 카카오톡에서 공개할 기회! 카카오툴즈 개발 공모전에 지금 도전해 보세요. 예선 접수 : 2026/07/14(화) 마감" [ref=e60] [cursor=pointer]':
+                    - /url: https://b.kakao.com/views/PlayMCP/AGENTIC_PlAYER_10?t_src=developers&t_ch=devtalk
+                    - strong [ref=e61]: AGENTIC PLAYER 10
+                    - paragraph [ref=e62]: "내가 만든 AI 서비스를 카카오톡에서 공개할 기회! 카카오툴즈 개발 공모전에 지금 도전해 보세요. 예선 접수 : 2026/07/14(화) 마감"
+                - link [ref=e63] [cursor=pointer]:
+                  - /url: https://b.kakao.com/views/PlayMCP/AGENTIC_PlAYER_10?t_src=developers&t_ch=devtalk
+              - generic [ref=e66]:
+                - generic [ref=e67]:
+                  - generic [ref=e68]: 공지
+                  - link "카카오톡 공유 API 신규 상품 출시 필요한 만큼 사용 한도를 설정할 수 있는 카카오톡 공유 API 유료 상품을 이용해 보세요." [ref=e69] [cursor=pointer]:
+                    - /url: https://devtalk.kakao.com/t/api-change-in-how-to-increase-kakao-talk-share-api-quota/147734
+                    - strong [ref=e70]: 카카오톡 공유 API 신규 상품 출시
+                    - paragraph [ref=e71]: 필요한 만큼 사용 한도를 설정할 수 있는 카카오톡 공유 API 유료 상품을 이용해 보세요.
+                - link [ref=e72] [cursor=pointer]:
+                  - /url: https://devtalk.kakao.com/t/api-change-in-how-to-increase-kakao-talk-share-api-quota/147734
+            - generic [ref=e74]:
+              - progressbar "슬라이드" [ref=e76]
+              - generic [ref=e79]:
+                - generic [ref=e83]: 카카오톡 채널 간편 추가 SDK
+                - generic [ref=e87] [cursor=pointer]: AGENTIC PLAYER 10
+                - generic [ref=e91] [cursor=pointer]: 카카오톡 공유 API 쿼터 상향
+        - generic [ref=e93]:
+          - generic [ref=e94]:
+            - generic [ref=e95]:
+              - heading "API 상태 대시보드" [level=3] [ref=e96]
+              - generic [ref=e97]: 26.06.21 04:55 Updated
+            - generic [ref=e103]:
+              - strong [ref=e104]: 정상
+              - list [ref=e105]:
+                - listitem [ref=e106]: 카카오 로그인
+                - listitem [ref=e107]: 카카오맵
+                - listitem [ref=e108]: Daum 검색
+                - listitem [ref=e109]: 카카오내비
+                - listitem [ref=e110]: 비즈니스 인증
+                - listitem [ref=e111]: 카카오모먼트
+                - listitem [ref=e112]: 카카오톡 공유
+                - listitem [ref=e113]: 카카오톡 메시지
+                - listitem [ref=e114]: 카카오톡 채널 고객파일 관리
+                - listitem [ref=e115]: 카카오톡 채널 조회
+                - listitem [ref=e116]: 카카오톡 친구 목록
+                - listitem [ref=e117]: 카카오톡 프로필
+                - listitem [ref=e118]: 푸시 알림
+            - link "바로가기" [ref=e119] [cursor=pointer]:
+              - /url: /status
+          - generic [ref=e120]:
+            - heading "공지 사항" [level=3] [ref=e121]
+            - list [ref=e122]:
+              - listitem [ref=e123]:
+                - link "카카오맵 API 신규 기능 및 무료 쿼터 운영 방식 변경 안내 / Notice on new Kakao Map API features and free quota policy 신규 글 26.06.16" [ref=e124] [cursor=pointer]:
+                  - /url: https://devtalk.kakao.com/t/topic/150222
+                  - strong [ref=e125]:
+                    - generic [ref=e126]: 카카오맵 API 신규 기능 및 무료 쿼터 운영 방식 변경 안내 / Notice on new Kakao Map API features and free quota policy
+                    - generic [ref=e127]: 신규 글
+                  - generic [ref=e128]: 26.06.16
+              - listitem [ref=e129]:
+                - link "JavaScript SDK 1.43.6 버전 이하 지원 종료 예정 | End of support for JavaScript SDK version 1.43.6 and below 26.05.22" [ref=e130] [cursor=pointer]:
+                  - /url: https://devtalk.kakao.com/t/topic/149873
+                  - strong [ref=e131]:
+                    - generic [ref=e132]: JavaScript SDK 1.43.6 버전 이하 지원 종료 예정 | End of support for JavaScript SDK version 1.43.6 and below
+                  - generic [ref=e133]: 26.05.22
+              - listitem [ref=e134]:
+                - link "사용자 동의화면 UI/UX 개선 안내 / User consent screen UI/UX improvement 26.05.21" [ref=e135] [cursor=pointer]:
+                  - /url: https://devtalk.kakao.com/t/topic/149829
+                  - strong [ref=e136]:
+                    - generic [ref=e137]: 사용자 동의화면 UI/UX 개선 안내 / User consent screen UI/UX improvement
+                  - generic [ref=e138]: 26.05.21
+              - listitem [ref=e139]:
+                - link "카카오비즈니스 이용약관 개정 안내 26.05.13" [ref=e140] [cursor=pointer]:
+                  - /url: https://devtalk.kakao.com/t/topic/149696
+                  - strong [ref=e141]:
+                    - generic [ref=e142]: 카카오비즈니스 이용약관 개정 안내
+                  - generic [ref=e143]: 26.05.13
+              - listitem [ref=e144]:
+                - link "(종합) API 접속 지연 장애 안내 26.04.29" [ref=e145] [cursor=pointer]:
+                  - /url: https://devtalk.kakao.com/t/topic/149508
+                  - strong [ref=e146]:
+                    - generic [ref=e147]: (종합) API 접속 지연 장애 안내
+                  - generic [ref=e148]: 26.04.29
+              - listitem [ref=e149]:
+                - link "카카오비즈니스 파트너 개인정보처리방침 개정 안내 26.04.20" [ref=e150] [cursor=pointer]:
+                  - /url: https://devtalk.kakao.com/t/topic/149343
+                  - strong [ref=e151]:
+                    - generic [ref=e152]: 카카오비즈니스 파트너 개인정보처리방침 개정 안내
+                  - generic [ref=e153]: 26.04.20
+            - link "바로가기" [ref=e154] [cursor=pointer]:
+              - /url: https://devtalk.kakao.com/c/notice
+        - generic [ref=e155]:
+          - heading "배너 영역" [level=3] [ref=e156]
+          - link "카나나 모델 오픈소스 공개" [ref=e159] [cursor=pointer]:
+            - /url: https://huggingface.co/kakaocorp
+            - img "카나나 모델 오픈소스 공개" [ref=e160]
+    - button "맨 위로 이동" [ref=e161] [cursor=pointer]:
+      - generic [ref=e162]: 맨 위로 이동
+    - contentinfo [ref=e164]:
+      - generic [ref=e165]:
+        - link "© Kakao Corp." [ref=e167] [cursor=pointer]:
+          - /url: https://www.kakaocorp.com
+        - generic [ref=e168]:
+          - strong [ref=e169]: 약관 및 정책
+          - list [ref=e170]:
+            - listitem [ref=e171]:
+              - link "카카오비즈니스 이용약관" [ref=e172] [cursor=pointer]:
+                - /url: https://kakaobusiness-policy.kakao.com/SERVICE/
+            - listitem [ref=e173]:
+              - link "서비스 약관" [ref=e174] [cursor=pointer]:
+                - /url: /terms/latest/ko/site-terms
+            - listitem [ref=e175]:
+              - link "운영 정책" [ref=e176] [cursor=pointer]:
+                - /url: /terms/latest/ko/site-policies
+            - listitem [ref=e177]:
+              - link "쿼터" [ref=e178] [cursor=pointer]:
+                - /url: /docs/latest/ko/getting-started/quota
+            - listitem [ref=e179]:
+              - link "개인정보 처리방침" [ref=e180] [cursor=pointer]:
+                - /url: https://business.kakao.com/policy/privacy/
+          - button "Family Site" [ref=e183] [cursor=pointer]: Family Site
+  - list

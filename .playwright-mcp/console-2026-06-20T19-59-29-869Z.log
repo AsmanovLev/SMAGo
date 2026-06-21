@@ -1,0 +1,7 @@
+[   21145ms] [WARNING] A speculation rule set was inserted into the document but will be ignored. This might happen, for example, if it was previously inserted into another document, or if it was created using the innerHTML setter. @ https://www.google.com/search?q=VK+bots+API+2025+documentation:33
+[   21216ms] [ERROR] Refused to get unsafe header "X-Sg-Cs" @ https://www.google.com/search?q=VK+bots+API+2025+documentation:53
+[   21217ms] [ERROR] Refused to get unsafe header "X-Sorry-Redirect" @ https://www.google.com/search?q=VK+bots+API+2025+documentation:53
+[   22042ms] [ERROR] Refused to get unsafe header "X-Sg-Cs" @ https://www.google.com/search?q=VK+bots+API+2025+documentation:53
+[   22042ms] [ERROR] Refused to get unsafe header "X-Sorry-Redirect" @ https://www.google.com/search?q=VK+bots+API+2025+documentation:53
+[   23559ms] [ERROR] Refused to get unsafe header "X-Sg-Cs" @ https://www.google.com/search?q=VK+bots+API+2025+documentation:53
+[   23560ms] [ERROR] Refused to get unsafe header "X-Sorry-Redirect" @ https://www.google.com/search?q=VK+bots+API+2025+documentation:53

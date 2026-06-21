@@ -1,0 +1,388 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#wp--skip-link--target"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - figure [ref=e7]:
+        - img "Meta" [ref=e8]
+      - banner [ref=e9]:
+        - generic [ref=e11]:
+          - link "WhatsApp for Business" [ref=e13] [cursor=pointer]:
+            - /url: https://whatsappbusiness.com/
+            - img "WhatsApp for Business" [ref=e14]
+          - navigation [ref=e19]:
+            - list [ref=e21]:
+              - listitem [ref=e22]:
+                - button "Products" [ref=e23] [cursor=pointer]:
+                  - generic [ref=e24]: Products
+                - generic:
+                  - generic:
+                    - heading [level=2]: Products
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                            - generic: Business Platform
+                          - list:
+                            - listitem:
+                              - link:
+                                - /url: /products/business-platform/
+                                - text: Overview
+                            - listitem:
+                              - link:
+                                - /url: /products/business-platform-features/
+                                - text: Features
+                            - listitem:
+                              - link:
+                                - /url: /products/platform-pricing/
+                                - text: Pricing
+                            - listitem:
+                              - link:
+                                - /url: /products/whatsapp-flows/
+                                - text: WhatsApp Flows
+                          - generic:
+                            - generic:
+                              - generic: "Message categories:"
+                              - list:
+                                - listitem:
+                                  - link:
+                                    - /url: /products/conversation-categories/marketing/
+                                    - text: Marketing messages
+                                - listitem:
+                                  - link:
+                                    - /url: /products/conversation-categories/authentication/
+                                    - text: Authentication messages
+                                - listitem:
+                                  - link:
+                                    - /url: /products/conversation-categories/utility/
+                                    - text: Utility messages
+                                - listitem:
+                                  - link:
+                                    - /url: /products/conversation-categories/service/
+                                    - text: Service messages
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                            - generic: Business App
+                          - list:
+                            - listitem:
+                              - link:
+                                - /url: /products/business-app/
+                                - text: Overview
+                            - listitem:
+                              - link:
+                                - /url: /products/business-app-features/
+                                - text: Features
+                            - listitem:
+                              - link:
+                                - /url: /products/business-app-get-started/
+                                - text: How to get started
+                            - listitem:
+                              - link:
+                                - /url: /products/business-app-ai-agent/
+                                - text: Meta Business Agent
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                            - generic: Ads that click to WhatsApp
+                          - list:
+                            - listitem:
+                              - link:
+                                - /url: /products/ads-that-click-to-whatsapp/
+                                - text: Overview
+                            - listitem:
+                              - link:
+                                - /url: /products/create-ads-that-click-to-whatsapp/
+                                - text: How to create an ad
+                            - listitem:
+                              - link:
+                                - /url: /whatsapp-ads/
+                                - text: Ads in Status and Channels
+              - listitem [ref=e25]:
+                - button "Resources" [ref=e26] [cursor=pointer]:
+                  - generic [ref=e27]: Resources
+                - generic:
+                  - generic:
+                    - heading [level=2]: Resources
+                    - list:
+                      - listitem:
+                        - link:
+                          - /url: https://whatsappbusiness.com/resources/resource-library/
+                          - img
+                          - generic: Resource Library
+                      - listitem:
+                        - link:
+                          - /url: /blog/
+                          - img
+                          - generic: Blog
+                      - listitem:
+                        - link:
+                          - /url: https://whatsappbusiness.com/resources/success-stories/
+                          - img
+                          - generic: Success Stories
+                      - listitem:
+                        - link:
+                          - /url: /resources/faq/
+                          - img
+                          - generic: FAQs
+              - listitem [ref=e28]:
+                - button "Developers" [ref=e29] [cursor=pointer]:
+                  - generic [ref=e30]: Developers
+                - generic:
+                  - generic:
+                    - heading [level=2]: Developers
+                    - generic:
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                            - generic: Platform
+                          - list:
+                            - listitem:
+                              - link:
+                                - /url: /developers/developer-hub/
+                                - text: Developer Hub
+                            - listitem:
+                              - link:
+                                - /url: https://developers.facebook.com/docs/whatsapp/getting-started/signing-up
+                                - text: Get Started
+                      - generic:
+                        - generic:
+                          - generic:
+                            - img
+                            - generic: Developer Links
+                          - list:
+                            - listitem:
+                              - link:
+                                - /url: https://developers.facebook.com/community
+                                - text: Community
+                            - listitem:
+                              - link:
+                                - /url: https://developers.facebook.com/support
+                                - text: Developer Support
+                            - listitem:
+                              - link:
+                                - /url: https://status.fb.com/graph-api?ref=dfc
+                                - text: API Status
+              - listitem [ref=e31]:
+                - button "Partners" [ref=e32] [cursor=pointer]:
+                  - generic [ref=e33]: Partners
+                - generic:
+                  - generic:
+                    - heading [level=2]: Partners
+                    - list:
+                      - listitem:
+                        - link:
+                          - /url: /partners/become-a-partner/
+                          - img
+                          - generic: Become a Partner
+                      - listitem:
+                        - link:
+                          - /url: https://business.facebook.com/messaging/partner-showcase?ref=WAB_MENU
+                          - img
+                          - generic: Find a Partner
+              - generic [ref=e34]:
+                - link "Search" [ref=e36] [cursor=pointer]:
+                  - /url: https://whatsappbusiness.com/search/
+                  - img [ref=e37]
+                  - generic [ref=e39]: Search
+                - link "Get started" [ref=e41] [cursor=pointer]:
+                  - /url: /learn-more/
+                - link "Download app" [ref=e43] [cursor=pointer]:
+                  - /url: /products/business-app/
+    - main [ref=e44]:
+      - generic [ref=e45]:
+        - generic [ref=e48]:
+          - paragraph [ref=e49]: Personalization at scale, in every WhatsApp conversation. Meet Meta Business Agent.
+          - link "Learn more" [ref=e50] [cursor=pointer]:
+            - /url: /blog/introducing-meta-business-agent-ai
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e54]:
+              - heading "Do more with conversations" [level=1] [ref=e55]
+              - paragraph [ref=e56]: Drive AI-enabled customer engagement on the platform with more than 2 billion users around the world.
+            - generic [ref=e58]:
+              - link "Get Started" [ref=e62] [cursor=pointer]:
+                - /url: /learn-more
+              - link "Download App" [ref=e66] [cursor=pointer]:
+                - /url: /products/business-app
+          - figure [ref=e67]:
+            - img "Business AI conversation overlayed on a Mini Pathos plant" [ref=e68]
+        - generic [ref=e69]:
+          - generic [ref=e70]:
+            - paragraph [ref=e71]: WhatsApp business for any company size
+            - heading "WhatsApp business products support businesses from large to small, see which product best fits your needs." [level=2] [ref=e72]:
+              - text: WhatsApp business products
+              - mark [ref=e73]: support businesses from large to small
+              - text: ", see which product best fits your needs."
+          - generic [ref=e74]:
+            - generic [ref=e75]:
+              - img [ref=e76]
+              - heading "WhatsApp Business Platform" [level=3] [ref=e78]
+              - paragraph [ref=e79]: For medium to large businesses communicating with customers at scale through programmatic access
+              - link "Learn more" [ref=e82] [cursor=pointer]:
+                - /url: /products/business-platform
+            - generic [ref=e83]:
+              - img [ref=e84]
+              - heading "WhatsApp Business App" [level=3] [ref=e86]
+              - paragraph [ref=e87]: For small businesses who personally manage conversations with customers
+              - link "Download app" [ref=e90] [cursor=pointer]:
+                - /url: /products/business-app
+        - generic [ref=e92]:
+          - figure [ref=e93]:
+            - img "Woman on the phone managing her business" [ref=e94]
+          - generic [ref=e96]:
+            - heading "Why choose WhatsApp?" [level=2] [ref=e97]
+            - generic [ref=e98]:
+              - generic [ref=e99]:
+                - button "Meet customers where they already are" [ref=e100] [cursor=pointer]:
+                  - generic [ref=e101]: Meet customers where they already are
+                  - img [ref=e103]
+                - paragraph [ref=e105]: WhatsApp’s business solutions give you the power to connect with customers through messaging.
+              - generic [ref=e106]:
+                - button "Drive business outcomes" [ref=e107] [cursor=pointer]:
+                  - generic [ref=e108]: Drive business outcomes
+                  - img [ref=e110]
+                - paragraph [ref=e112]: Use conversations to deliver personal experiences that accelerate the buyer journey.
+              - generic [ref=e113]:
+                - button "Build long-lasting customer relationships" [ref=e114] [cursor=pointer]:
+                  - generic [ref=e115]: Build long-lasting customer relationships
+                  - img [ref=e117]
+                - paragraph [ref=e119]: Keep prospects and customers on the path to purchase and satisfied with your services with rich messaging experiences. Engage and retain your customers.
+        - generic [ref=e120]:
+          - generic [ref=e121]:
+            - heading "Success Stories" [level=4] [ref=e122]
+            - heading "From banking, e-commerce, and more, WhatsApp helps businesses drive results" [level=2] [ref=e123]
+          - region [ref=e124]:
+            - generic [ref=e125]:
+              - group "1 of 3" [ref=e126]:
+                - generic [ref=e129]:
+                  - figure [ref=e130]:
+                    - img "A building displaying the Banco Inter logo and branding" [ref=e131]
+                  - generic [ref=e132]:
+                    - heading "Banco Inter" [level=3] [ref=e133]
+                    - paragraph [ref=e134]: Improving conversion rates by sending OTP authentication messages on WhatsApp
+                    - link "See success story" [ref=e136] [cursor=pointer]:
+                      - /url: /resources/success-stories/banco-inter
+              - group [ref=e137]:
+                - generic [ref=e140]:
+                  - figure [ref=e141]:
+                    - img [ref=e142]
+                  - generic [ref=e143]:
+                    - heading [level=3] [ref=e144]: MadeiraMadeira
+                    - paragraph [ref=e145]: Improving message delivery rates with Marketing Messages API for WhatsApp
+                    - link [ref=e147] [cursor=pointer]:
+                      - /url: /resources/success-stories/madeiramadeira
+                      - text: See success story
+              - group [ref=e148]:
+                - generic [ref=e151]:
+                  - figure [ref=e152]:
+                    - img [ref=e153]
+                  - generic [ref=e154]:
+                    - heading [level=3] [ref=e155]: Vitaldent
+                    - paragraph [ref=e156]: Optimizing patient scheduling and outperforming SMS with utility messages on WhatsApp
+                    - link [ref=e158] [cursor=pointer]:
+                      - /url: /resources/success-stories/vitaldent
+                      - text: See success story
+            - generic [ref=e160]:
+              - button "Previous slide" [disabled] [ref=e161] [cursor=pointer]:
+                - generic [ref=e162]: Previous
+                - img [ref=e163]
+              - button "Next slide" [ref=e165] [cursor=pointer]:
+                - generic [ref=e166]: Next
+                - img [ref=e167]
+        - generic [ref=e170]:
+          - heading "Take the next step" [level=2] [ref=e171]
+          - paragraph [ref=e172]: Start transforming your customer experience on WhatsApp Business Platform.
+          - link "Learn more" [ref=e175] [cursor=pointer]:
+            - /url: /learn-more
+    - contentinfo [ref=e176]:
+      - generic [ref=e178]:
+        - generic [ref=e179]:
+          - generic [ref=e180]:
+            - link "WhatsApp for Business" [ref=e182] [cursor=pointer]:
+              - /url: https://whatsappbusiness.com/
+              - img "WhatsApp for Business" [ref=e183]
+            - list [ref=e188]:
+              - listitem [ref=e189]:
+                - link "LinkedIn" [ref=e190] [cursor=pointer]:
+                  - /url: https://www.linkedin.com/showcase/whatsapp-business
+                  - img [ref=e191]
+                  - generic [ref=e193]: LinkedIn
+              - listitem [ref=e194]:
+                - link "Facebook" [ref=e195] [cursor=pointer]:
+                  - /url: https://www.facebook.com/WhatsAppBiz
+                  - img [ref=e196]
+                  - generic [ref=e198]: Facebook
+              - listitem [ref=e199]:
+                - link "Instagram" [ref=e200] [cursor=pointer]:
+                  - /url: https://www.instagram.com/whatsappforbusiness
+                  - img [ref=e201]
+                  - generic [ref=e203]: Instagram
+          - generic [ref=e204]:
+            - heading "Privacy" [level=6] [ref=e205]
+            - navigation "Footer Privacy" [ref=e206]:
+              - list [ref=e207]:
+                - listitem [ref=e208]:
+                  - link "Trust & Safety" [ref=e209] [cursor=pointer]:
+                    - /url: https://whatsappbusiness.com/trust-and-safety/
+                - listitem [ref=e210]:
+                  - link "Data Policy" [ref=e211] [cursor=pointer]:
+                    - /url: https://www.facebook.com/policy.php
+                - listitem [ref=e212]:
+                  - link "Privacy Protections" [ref=e213] [cursor=pointer]:
+                    - /url: https://whatsappbusiness.com/privacy-protections/
+                - listitem [ref=e214]:
+                  - link "Terms and Conditions" [ref=e215] [cursor=pointer]:
+                    - /url: https://whatsappbusiness.com/terms-and-conditions/
+                - listitem [ref=e216]:
+                  - link "Business Messaging Policy" [ref=e217] [cursor=pointer]:
+                    - /url: https://whatsappbusiness.com/policy/
+                - listitem [ref=e218]:
+                  - link "Terms and Privacy Policy" [ref=e219] [cursor=pointer]:
+                    - /url: https://www.whatsapp.com/legal
+                - listitem [ref=e220]:
+                  - link "Cookie settings" [ref=e221] [cursor=pointer]:
+                    - /url: https://www.facebook.com/policies/cookies
+          - generic [ref=e222]:
+            - heading "Resources" [level=6] [ref=e223]
+            - navigation "Footer Resources" [ref=e224]:
+              - list [ref=e225]:
+                - listitem [ref=e226]:
+                  - link "Blog" [ref=e227] [cursor=pointer]:
+                    - /url: https://whatsappbusiness.com/blog/
+                - listitem [ref=e228]:
+                  - link "FAQ" [ref=e229] [cursor=pointer]:
+                    - /url: https://whatsappbusiness.com/resources/faq/
+                - listitem [ref=e230]:
+                  - link "Help Center" [ref=e231] [cursor=pointer]:
+                    - /url: https://faq.whatsapp.com/
+                - listitem [ref=e232]:
+                  - link "Success Stories" [ref=e233] [cursor=pointer]:
+                    - /url: https://whatsappbusiness.com/resources/success-stories/
+                - listitem [ref=e234]:
+                  - link "Resource Library" [ref=e235] [cursor=pointer]:
+                    - /url: https://whatsappbusiness.com/resources/resource-library/
+                - listitem [ref=e236]:
+                  - link "Compliance Center" [ref=e237] [cursor=pointer]:
+                    - /url: https://www.facebook.com/business/business-messaging/compliance
+                - listitem [ref=e238]:
+                  - link "Ads in Status and Channels" [ref=e239] [cursor=pointer]:
+                    - /url: https://whatsappbusiness.com/whatsapp-ads/
+        - generic [ref=e240]:
+          - generic [ref=e241]: © 2026 WhatsApp Business
+          - generic [ref=e242]:
+            - navigation "Footer Legal / Language"
+            - button "EN" [ref=e244] [cursor=pointer]:
+              - img [ref=e245]
+              - generic [ref=e247]: EN
+              - img [ref=e248]
+  - generic [ref=e252]:
+    - paragraph [ref=e253]:
+      - text: "To help personalize content, tailor and measure ads, and provide a safer experience, we use cookies. By clicking or navigating the site, you agree to allow our collection of information on and off Meta through cookies. Learn more, including about available controls:"
+      - link "Cookie Policy" [ref=e254] [cursor=pointer]:
+        - /url: https://www.facebook.com/policies/cookies
+    - button "I Agree" [ref=e256]

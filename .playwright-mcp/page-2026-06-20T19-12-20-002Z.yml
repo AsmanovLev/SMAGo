@@ -1,0 +1,866 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+              - generic [ref=e53]: Search or jump to...
+              - img [ref=e55]
+            - link "Sign in" [ref=e59] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2Fhedwig-im%2Fhedwig
+            - link "Sign up" [ref=e60] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=hedwig-im%2Fhedwig
+            - button "Appearance settings" [ref=e63] [cursor=pointer]:
+              - img
+  - main [ref=e67]:
+    - generic [ref=e68]:
+      - generic [ref=e69]:
+        - generic [ref=e71]:
+          - img [ref=e72]
+          - link "hedwig-im" [ref=e75] [cursor=pointer]:
+            - /url: /hedwig-im
+          - generic [ref=e76]: /
+          - strong [ref=e77]:
+            - link "hedwig" [ref=e78] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig
+          - generic [ref=e79]: Public
+        - generic [ref=e80]:
+          - list:
+            - listitem [ref=e81]:
+              - link "You must be signed in to change notification settings" [ref=e82] [cursor=pointer]:
+                - /url: /login?return_to=%2Fhedwig-im%2Fhedwig
+                - img [ref=e83]
+                - text: Notifications
+            - listitem [ref=e85]:
+              - link "Fork 68" [ref=e86] [cursor=pointer]:
+                - /url: /login?return_to=%2Fhedwig-im%2Fhedwig
+                - img [ref=e87]
+                - text: Fork
+                - generic "68" [ref=e89]
+            - listitem [ref=e90]:
+              - link "You must be signed in to star a repository" [ref=e92] [cursor=pointer]:
+                - /url: /login?return_to=%2Fhedwig-im%2Fhedwig
+                - img [ref=e93]
+                - text: Star
+                - generic "648 users starred this repository" [ref=e95]: "648"
+      - navigation "Repository" [ref=e96]:
+        - list [ref=e97]:
+          - listitem [ref=e98]:
+            - link "Code" [ref=e99] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig
+              - img [ref=e100]
+              - generic [ref=e102]: Code
+          - listitem [ref=e103]:
+            - link "Issues 9" [ref=e104] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig/issues
+              - img [ref=e105]
+              - generic [ref=e108]: Issues
+              - generic "9" [ref=e109]
+          - listitem [ref=e110]:
+            - link "Pull requests 5" [ref=e111] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig/pulls
+              - img [ref=e112]
+              - generic [ref=e114]: Pull requests
+              - generic "5" [ref=e115]
+          - listitem [ref=e116]:
+            - link "Actions" [ref=e117] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig/actions
+              - img [ref=e118]
+              - generic [ref=e120]: Actions
+          - listitem [ref=e121]:
+            - link "Projects" [ref=e122] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig/projects
+              - img [ref=e123]
+              - generic [ref=e125]: Projects
+          - listitem [ref=e126]:
+            - link "Wiki" [ref=e127] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig/wiki
+              - img [ref=e128]
+              - generic [ref=e130]: Wiki
+          - listitem [ref=e131]:
+            - link "Security and quality" [ref=e132] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig/security
+              - img [ref=e133]
+              - generic [ref=e135]: Security and quality
+          - listitem [ref=e136]:
+            - link "Insights" [ref=e137] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig/pulse
+              - img [ref=e138]
+              - generic [ref=e140]: Insights
+    - generic [ref=e153]:
+      - heading "hedwig-im/hedwig" [level=1] [ref=e155]
+      - generic [ref=e156]:
+        - generic [ref=e159]:
+          - generic [ref=e160]:
+            - generic [ref=e161]:
+              - button "master branch" [ref=e163] [cursor=pointer]:
+                - generic [ref=e164]:
+                  - generic [ref=e166]:
+                    - img [ref=e168]
+                    - generic [ref=e171]: master
+                  - generic:
+                    - img
+              - generic [ref=e172]:
+                - link "6 Branches" [ref=e173] [cursor=pointer]:
+                  - /url: /hedwig-im/hedwig/branches
+                  - generic [ref=e174]:
+                    - generic:
+                      - img
+                    - generic [ref=e176]:
+                      - strong [ref=e177]: "6"
+                      - text: Branches
+                - link "10 Tags" [ref=e178] [cursor=pointer]:
+                  - /url: /hedwig-im/hedwig/tags
+                  - generic [ref=e179]:
+                    - generic:
+                      - img
+                    - generic [ref=e181]:
+                      - strong [ref=e182]: "10"
+                      - text: Tags
+            - generic [ref=e183]:
+              - generic [ref=e187]:
+                - img [ref=e189]
+                - combobox "Go to file" [ref=e191]
+              - button "Code" [ref=e192] [cursor=pointer]:
+                - generic [ref=e193]:
+                  - generic:
+                    - img
+                  - generic [ref=e194]: Code
+                  - generic:
+                    - img
+          - generic [ref=e195]:
+            - generic [ref=e196]:
+              - heading "Folders and files" [level=2] [ref=e197]
+              - table "Folders and files" [ref=e198]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e199]:
+                  - row "Latest commit scrogson commits by scrogson add parens around tmp_path Commit 2f0a996 · Jan 27, 20189 years ago History 450 Commits" [ref=e200]:
+                    - cell "Latest commit scrogson commits by scrogson add parens around tmp_path Commit 2f0a996 · Jan 27, 20189 years ago History 450 Commits" [ref=e201]:
+                      - generic [ref=e202]:
+                        - heading "Latest commit" [level=2] [ref=e203]
+                        - generic [ref=e204]:
+                          - generic [ref=e206]:
+                            - link "scrogson" [ref=e207] [cursor=pointer]:
+                              - /url: /scrogson
+                              - img "scrogson" [ref=e208]
+                            - link "commits by scrogson" [ref=e209] [cursor=pointer]:
+                              - /url: /hedwig-im/hedwig/commits?author=scrogson
+                              - text: scrogson
+                          - link "add parens around tmp_path" [ref=e213] [cursor=pointer]:
+                            - /url: /hedwig-im/hedwig/commit/2f0a996675a9dd4f9a2ae410d6ce29ba435d2159
+                        - generic [ref=e214]:
+                          - generic [ref=e216]:
+                            - link "Commit 2f0a996" [ref=e217] [cursor=pointer]:
+                              - /url: /hedwig-im/hedwig/commit/2f0a996675a9dd4f9a2ae410d6ce29ba435d2159
+                              - text: 2f0a996
+                            - text: ·
+                            - generic "Jan 27, 2018, 03:32 GMT+7" [ref=e218]: Jan 27, 20189 years ago
+                          - generic [ref=e219]:
+                            - heading "History" [level=2] [ref=e220]
+                            - link "450 Commits" [ref=e221] [cursor=pointer]:
+                              - /url: /hedwig-im/hedwig/commits/master/
+                              - generic [ref=e222]:
+                                - generic:
+                                  - img
+                                - generic [ref=e223]: 450 Commits
+                  - row "examples/responders, (Directory) move great_success and ship_it responders to examples Oct 1, 201610 years ago" [ref=e224]:
+                    - cell "examples/responders, (Directory)" [ref=e225]:
+                      - generic [ref=e226]:
+                        - img [ref=e227]
+                        - link "examples/responders, (Directory)" [ref=e232] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/tree/master/examples/responders
+                          - text: examples/responders
+                    - cell "move great_success and ship_it responders to examples" [ref=e233]:
+                      - link "move great_success and ship_it responders to examples" [ref=e236] [cursor=pointer]:
+                        - /url: /hedwig-im/hedwig/commit/dad71cdea77eb1f9efa19a2fe218814f427e4549
+                    - cell "Oct 1, 201610 years ago" [ref=e237]:
+                      - generic [ref=e238]: Oct 1, 201610 years ago
+                  - row "lib, (Directory) fix Hedwig.Adapter doc (#77) Jan 8, 20189 years ago" [ref=e239]:
+                    - cell "lib, (Directory)" [ref=e240]:
+                      - generic [ref=e241]:
+                        - img [ref=e242]
+                        - link "lib, (Directory)" [ref=e247] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/tree/master/lib
+                          - text: lib
+                    - cell "fix Hedwig.Adapter doc (#77)" [ref=e248]:
+                      - generic [ref=e250]:
+                        - link "fix Hedwig.Adapter doc (" [ref=e251] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/commit/550b8623bce6de418093811c1150df0d3317d295
+                        - link "#77" [ref=e252] [cursor=pointer]:
+                          - /url: https://github.com/hedwig-im/hedwig/pull/77
+                        - link ")" [ref=e253] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/commit/550b8623bce6de418093811c1150df0d3317d295
+                    - cell "Jan 8, 20189 years ago" [ref=e254]:
+                      - generic [ref=e255]: Jan 8, 20189 years ago
+                  - row "test, (Directory) add parens around tmp_path Jan 27, 20189 years ago" [ref=e256]:
+                    - cell "test, (Directory)" [ref=e257]:
+                      - generic [ref=e258]:
+                        - img [ref=e259]
+                        - link "test, (Directory)" [ref=e264] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/tree/master/test
+                          - text: test
+                    - cell "add parens around tmp_path" [ref=e265]:
+                      - link "add parens around tmp_path" [ref=e268] [cursor=pointer]:
+                        - /url: /hedwig-im/hedwig/commit/2f0a996675a9dd4f9a2ae410d6ce29ba435d2159
+                    - cell "Jan 27, 20189 years ago" [ref=e269]:
+                      - generic [ref=e270]: Jan 27, 20189 years ago
+                  - row ".credo.exs, (File) add credo check to travis config (#76) Jan 8, 20189 years ago" [ref=e271]:
+                    - cell ".credo.exs, (File)" [ref=e272]:
+                      - generic [ref=e273]:
+                        - img [ref=e274]
+                        - link ".credo.exs, (File)" [ref=e279] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/blob/master/.credo.exs
+                          - text: .credo.exs
+                    - cell "add credo check to travis config (#76)" [ref=e280]:
+                      - generic [ref=e282]:
+                        - link "add credo check to travis config (" [ref=e283] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/commit/9092cb3fcbb5d938e15b85cf28ad3ae251b202f6
+                        - link "#76" [ref=e284] [cursor=pointer]:
+                          - /url: https://github.com/hedwig-im/hedwig/pull/76
+                        - link ")" [ref=e285] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/commit/9092cb3fcbb5d938e15b85cf28ad3ae251b202f6
+                    - cell "Jan 8, 20189 years ago" [ref=e286]:
+                      - generic [ref=e287]: Jan 8, 20189 years ago
+                  - row ".gitignore, (File) Fix Elixir 1.5 compile warnings (#71) Aug 23, 20179 years ago" [ref=e288]:
+                    - cell ".gitignore, (File)" [ref=e289]:
+                      - generic [ref=e290]:
+                        - img [ref=e291]
+                        - link ".gitignore, (File)" [ref=e296] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/blob/master/.gitignore
+                          - text: .gitignore
+                    - cell "Fix Elixir 1.5 compile warnings (#71)" [ref=e297]:
+                      - generic [ref=e299]:
+                        - link "Fix Elixir 1.5 compile warnings (" [ref=e300] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/commit/f95c96b4e4cee8bc07ec7ced50f3ff4fffaac456
+                        - link "#71" [ref=e301] [cursor=pointer]:
+                          - /url: https://github.com/hedwig-im/hedwig/pull/71
+                        - link ")" [ref=e302] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/commit/f95c96b4e4cee8bc07ec7ced50f3ff4fffaac456
+                    - cell "Aug 23, 20179 years ago" [ref=e303]:
+                      - generic [ref=e304]: Aug 23, 20179 years ago
+                  - row ".travis.yml, (File) add elixir 1.6 to the mix Jan 27, 20189 years ago" [ref=e305]:
+                    - cell ".travis.yml, (File)" [ref=e306]:
+                      - generic [ref=e307]:
+                        - img [ref=e308]
+                        - link ".travis.yml, (File)" [ref=e313] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/blob/master/.travis.yml
+                          - text: .travis.yml
+                    - cell "add elixir 1.6 to the mix" [ref=e314]:
+                      - link "add elixir 1.6 to the mix" [ref=e317] [cursor=pointer]:
+                        - /url: /hedwig-im/hedwig/commit/91a342c283609663e9a09d4c8fef1446000de9b8
+                    - cell "Jan 27, 20189 years ago" [ref=e318]:
+                      - generic [ref=e319]: Jan 27, 20189 years ago
+                  - row "CHANGELOG.md, (File) update CHANGELOG Jan 27, 20189 years ago" [ref=e320]:
+                    - cell "CHANGELOG.md, (File)" [ref=e321]:
+                      - generic [ref=e322]:
+                        - img [ref=e323]
+                        - link "CHANGELOG.md, (File)" [ref=e328] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/blob/master/CHANGELOG.md
+                          - text: CHANGELOG.md
+                    - cell "update CHANGELOG" [ref=e329]:
+                      - link "update CHANGELOG" [ref=e332] [cursor=pointer]:
+                        - /url: /hedwig-im/hedwig/commit/f4b9c5f30e137ad9c604e9ad2c616562cd82369f
+                    - cell "Jan 27, 20189 years ago" [ref=e333]:
+                      - generic [ref=e334]: Jan 27, 20189 years ago
+                  - row "LICENSE, (File) MIT LICENSE Aug 3, 201412 years ago" [ref=e335]:
+                    - cell "LICENSE, (File)" [ref=e336]:
+                      - generic [ref=e337]:
+                        - img [ref=e338]
+                        - link "LICENSE, (File)" [ref=e343] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/blob/master/LICENSE
+                          - text: LICENSE
+                    - cell "MIT LICENSE" [ref=e344]:
+                      - link "MIT LICENSE" [ref=e347] [cursor=pointer]:
+                        - /url: /hedwig-im/hedwig/commit/e523c09b5f2a855f15c4bf9cf9a47ef3790b7988
+                    - cell "Aug 3, 201412 years ago" [ref=e348]:
+                      - generic [ref=e349]: Aug 3, 201412 years ago
+                  - row "README.md, (File) Update README.md (#68) Jun 22, 20179 years ago" [ref=e350]:
+                    - cell "README.md, (File)" [ref=e351]:
+                      - generic [ref=e352]:
+                        - img [ref=e353]
+                        - link "README.md, (File)" [ref=e358] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/blob/master/README.md
+                          - text: README.md
+                    - cell "Update README.md (#68)" [ref=e359]:
+                      - generic [ref=e361]:
+                        - link "Update README.md (" [ref=e362] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/commit/bc8dfab94b95b14d56a9dcf133b5a19ace49c911
+                        - link "#68" [ref=e363] [cursor=pointer]:
+                          - /url: https://github.com/hedwig-im/hedwig/pull/68
+                        - link ")" [ref=e364] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/commit/bc8dfab94b95b14d56a9dcf133b5a19ace49c911
+                    - cell "Jun 22, 20179 years ago" [ref=e365]:
+                      - generic [ref=e366]: Jun 22, 20179 years ago
+                  - row "coveralls.json, (File) general code improvements and test coverage Oct 3, 201610 years ago" [ref=e367]:
+                    - cell "coveralls.json, (File)" [ref=e368]:
+                      - generic [ref=e369]:
+                        - img [ref=e370]
+                        - link "coveralls.json, (File)" [ref=e375] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/blob/master/coveralls.json
+                          - text: coveralls.json
+                    - cell "general code improvements and test coverage" [ref=e376]:
+                      - link "general code improvements and test coverage" [ref=e379] [cursor=pointer]:
+                        - /url: /hedwig-im/hedwig/commit/40a1271b0cefc0467596034c6edd5e86a4e237a2
+                    - cell "Oct 3, 201610 years ago" [ref=e380]:
+                      - generic [ref=e381]: Oct 3, 201610 years ago
+                  - row "hedwig.png, (File) Hedwig logo Jun 3, 201412 years ago" [ref=e382]:
+                    - cell "hedwig.png, (File)" [ref=e383]:
+                      - generic [ref=e384]:
+                        - img [ref=e385]
+                        - link "hedwig.png, (File)" [ref=e390] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/blob/master/hedwig.png
+                          - text: hedwig.png
+                    - cell "Hedwig logo" [ref=e391]:
+                      - link "Hedwig logo" [ref=e394] [cursor=pointer]:
+                        - /url: /hedwig-im/hedwig/commit/564cbf6bd45b5672c1970129962b569d729a1325
+                    - cell "Jun 3, 201412 years ago" [ref=e395]:
+                      - generic [ref=e396]: Jun 3, 201412 years ago
+                  - row "mix.exs, (File) bump version Jan 27, 20189 years ago" [ref=e397]:
+                    - cell "mix.exs, (File)" [ref=e398]:
+                      - generic [ref=e399]:
+                        - img [ref=e400]
+                        - link "mix.exs, (File)" [ref=e405] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/blob/master/mix.exs
+                          - text: mix.exs
+                    - cell "bump version" [ref=e406]:
+                      - link "bump version" [ref=e409] [cursor=pointer]:
+                        - /url: /hedwig-im/hedwig/commit/05c8cffb2fe158250e85d191c79dbbcc4b6757bb
+                    - cell "Jan 27, 20189 years ago" [ref=e410]:
+                      - generic [ref=e411]: Jan 27, 20189 years ago
+                  - row "mix.lock, (File) add credo check to travis config (#76) Jan 8, 20189 years ago" [ref=e412]:
+                    - cell "mix.lock, (File)" [ref=e413]:
+                      - generic [ref=e414]:
+                        - img [ref=e415]
+                        - link "mix.lock, (File)" [ref=e420] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/blob/master/mix.lock
+                          - text: mix.lock
+                    - cell "add credo check to travis config (#76)" [ref=e421]:
+                      - generic [ref=e423]:
+                        - link "add credo check to travis config (" [ref=e424] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/commit/9092cb3fcbb5d938e15b85cf28ad3ae251b202f6
+                        - link "#76" [ref=e425] [cursor=pointer]:
+                          - /url: https://github.com/hedwig-im/hedwig/pull/76
+                        - link ")" [ref=e426] [cursor=pointer]:
+                          - /url: /hedwig-im/hedwig/commit/9092cb3fcbb5d938e15b85cf28ad3ae251b202f6
+                    - cell "Jan 8, 20189 years ago" [ref=e427]:
+                      - generic [ref=e428]: Jan 8, 20189 years ago
+            - generic [ref=e430]:
+              - generic [ref=e431]:
+                - heading "Repository files navigation" [level=2] [ref=e432]
+                - navigation "Repository files" [ref=e433]:
+                  - list [ref=e434]:
+                    - listitem [ref=e435]:
+                      - link "README" [ref=e436] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e438]
+                        - generic [ref=e440]: README
+                    - listitem [ref=e441]:
+                      - link "MIT license" [ref=e442] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e444]
+                        - generic [ref=e446]: MIT license
+                - button "Outline" [ref=e447] [cursor=pointer]:
+                  - img [ref=e448]
+              - article [ref=e451]:
+                - generic [ref=e452]:
+                  - heading "Hedwig" [level=1] [ref=e453]
+                  - 'link "Permalink: Hedwig" [ref=e454] [cursor=pointer]':
+                    - /url: "#hedwig"
+                    - img [ref=e455]
+                - blockquote [ref=e457]:
+                  - paragraph [ref=e458]: An Adapter-based Bot Framework for Elixir Applications
+                - paragraph [ref=e459]:
+                  - link "Build Status" [ref=e460] [cursor=pointer]:
+                    - /url: https://travis-ci.org/hedwig-im/hedwig
+                    - img "Build Status" [ref=e461]
+                  - link "Coverage Status" [ref=e462] [cursor=pointer]:
+                    - /url: https://coveralls.io/github/hedwig-im/hedwig?branch=master
+                    - img "Coverage Status" [ref=e463]
+                - paragraph [ref=e464]:
+                  - link "Hedwig" [ref=e465] [cursor=pointer]:
+                    - /url: https://raw.githubusercontent.com/hedwig-im/hedwig/master/hedwig.png
+                    - img "Hedwig" [ref=e466]
+                - paragraph [ref=e467]:
+                  - text: Hedwig is a chat bot, highly inspired by GitHub's
+                  - link "Hubot" [ref=e468] [cursor=pointer]:
+                    - /url: https://hubot.github.com/
+                  - text: .
+                - paragraph [ref=e469]:
+                  - text: See the
+                  - link "online documentation" [ref=e470] [cursor=pointer]:
+                    - /url: https://hexdocs.pm/hedwig
+                  - text: for more information.
+                - paragraph [ref=e471]: "Hedwig was designed for 2 use-cases:"
+                - list [ref=e472]:
+                  - listitem [ref=e473]: A single, stand-alone OTP application.
+                  - listitem [ref=e474]: Included as a dependency of other OTP applications (or an umbrella).
+                - paragraph [ref=e475]: You can spawn multiple bots at run-time with different configurations.
+                - generic [ref=e476]:
+                  - heading "Adapters" [level=2] [ref=e477]
+                  - 'link "Permalink: Adapters" [ref=e478] [cursor=pointer]':
+                    - /url: "#adapters"
+                    - img [ref=e479]
+                - list [ref=e481]:
+                  - listitem [ref=e482]:
+                    - link "XMPP" [ref=e483] [cursor=pointer]:
+                      - /url: https://github.com/hedwig-im/hedwig_xmpp
+                    - text: (Official)
+                  - listitem [ref=e484]:
+                    - link "Slack" [ref=e485] [cursor=pointer]:
+                      - /url: https://github.com/hedwig-im/hedwig_slack
+                    - text: (Official)
+                  - listitem [ref=e486]:
+                    - link "Flowdock" [ref=e487] [cursor=pointer]:
+                      - /url: https://github.com/supernullset/hedwig_flowdock
+                - paragraph [ref=e488]:
+                  - text: Check out
+                  - link "enilsen16/awesome-hedwig" [ref=e489] [cursor=pointer]:
+                    - /url: https://github.com/enilsen16/awesome-hedwig
+                  - text: for a curated list of adapters, responders, and other resources.
+                - generic [ref=e490]:
+                  - heading "Getting started" [level=2] [ref=e491]
+                  - 'link "Permalink: Getting started" [ref=e492] [cursor=pointer]':
+                    - /url: "#getting-started"
+                    - img [ref=e493]
+                - paragraph [ref=e495]: Hedwig ships with a console adapter to get you up and running quickly. It's great for testing how your bot will respond to the messages it receives.
+                - paragraph [ref=e496]:
+                  - text: To add Hedwig to an existing Elixir application, add
+                  - code [ref=e497]: :hedwig
+                  - text: to your list of dependencies in your
+                  - code [ref=e498]: mix.exs
+                  - text: "file:"
+                - generic [ref=e499]:
+                  - generic [ref=e500]: "defp deps do [{:hedwig, \"~> 1.0\"}] end"
+                  - button "Copy code to clipboard" [ref=e502] [cursor=pointer]:
+                    - img [ref=e503]
+                - paragraph [ref=e506]:
+                  - text: Update your applications list to include
+                  - code [ref=e507]: :hedwig
+                  - text: . This will ensure that the Hedwig application, along with it's supervision tree is started when you start your application.
+                - generic [ref=e508]:
+                  - generic [ref=e509]: "def applications do [applications: [:hedwig]] end"
+                  - button "Copy code to clipboard" [ref=e511] [cursor=pointer]:
+                    - img [ref=e512]
+                - paragraph [ref=e515]: "Fetch the dependencies:"
+                - generic [ref=e516]:
+                  - code [ref=e518]: $ mix deps.get
+                  - button "Copy code to clipboard" [ref=e520] [cursor=pointer]:
+                    - img [ref=e521]
+                - generic [ref=e524]:
+                  - heading "Create a robot module" [level=2] [ref=e525]
+                  - 'link "Permalink: Create a robot module" [ref=e526] [cursor=pointer]':
+                    - /url: "#create-a-robot-module"
+                    - img [ref=e527]
+                - paragraph [ref=e529]: Hedwig provides a convenient mix task to help you generate a basic robot module.
+                - paragraph [ref=e530]: "Run the following and follow the prompts:"
+                - generic [ref=e531]:
+                  - code [ref=e533]: "$ mix hedwig.gen.robot Welcome to the Hedwig Robot Generator! Let's get started. What would you like to name your bot?: alfred Available adapters 1. Hedwig.Adapters.Console Please select an adapter: 1 * creating lib/alfred * creating lib/alfred/robot.ex * updating config/config.exs Don't forget to add your new robot to your supervision tree (typically in lib/alfred.ex): worker(Alfred.Robot, [])"
+                  - button "Copy code to clipboard" [ref=e535] [cursor=pointer]:
+                    - img [ref=e536]
+                - generic [ref=e539]:
+                  - generic [ref=e540]: "defmodule Alfred.Robot do use Hedwig.Robot, otp_app: :alfred ... end"
+                  - button "Copy code to clipboard" [ref=e542] [cursor=pointer]:
+                    - img [ref=e543]
+                - generic [ref=e546]:
+                  - heading "Configuration" [level=2] [ref=e547]
+                  - 'link "Permalink: Configuration" [ref=e548] [cursor=pointer]':
+                    - /url: "#configuration"
+                    - img [ref=e549]
+                - paragraph [ref=e551]:
+                  - text: The generator will automatically generate a default configuration in
+                  - code [ref=e552]: config/config.exs
+                  - text: . You will need to customize it further depending on the adapter you will use.
+                - paragraph [ref=e553]: This is mainly to setup the module to be compiled along with the adapter. An adapter can inject functionality into your module if needed.
+                - generic [ref=e554]:
+                  - generic [ref=e555]: "# config/config.exs config :alfred, Alfred.Robot, adapter: Hedwig.Adapters.Console, name: \"alfred\", aka: \"/\", responders: [ {Hedwig.Responders.Help, []}, {Hedwig.Responders.Ping, []} ]"
+                  - button "Copy code to clipboard" [ref=e557] [cursor=pointer]:
+                    - img [ref=e558]
+                - generic [ref=e561]:
+                  - heading "Start a bot." [level=3] [ref=e562]
+                  - 'link "Permalink: Start a bot." [ref=e563] [cursor=pointer]':
+                    - /url: "#start-a-bot"
+                    - img [ref=e564]
+                - paragraph [ref=e566]: You can start your bot as part of your application's supervision tree or by using the supervision tree provided by Hedwig.
+                - generic [ref=e567]:
+                  - heading "Starting as part of your supervision tree:" [level=3] [ref=e568]
+                  - 'link "Permalink: Starting as part of your supervision tree:" [ref=e569] [cursor=pointer]':
+                    - /url: "#starting-as-part-of-your-supervision-tree"
+                    - img [ref=e570]
+                - generic [ref=e572]:
+                  - generic [ref=e573]: "# add this to the list of your supervisor's children worker(Alfred.Robot, [])"
+                  - button "Copy code to clipboard" [ref=e575] [cursor=pointer]:
+                    - img [ref=e576]
+                - generic [ref=e579]:
+                  - heading "Trying out the console adapter:" [level=3] [ref=e580]
+                  - 'link "Permalink: Trying out the console adapter:" [ref=e581] [cursor=pointer]':
+                    - /url: "#trying-out-the-console-adapter"
+                    - img [ref=e582]
+                - generic [ref=e584]:
+                  - code [ref=e586]: "mix run --no-halt Hedwig Console - press Ctrl+C to exit. The console adapter is useful for quickly verifying how your bot will respond based on the current installed responders. scrogson> alfred help alfred> alfred help <query> - Displays all help commands that match <query>. alfred help - Displays all of the help commands that alfred knows about. alfred: ping - Responds with 'pong' scrogson>"
+                  - button "Copy code to clipboard" [ref=e588] [cursor=pointer]:
+                    - img [ref=e589]
+                - generic [ref=e592]:
+                  - heading "Starting bots manually:" [level=3] [ref=e593]
+                  - 'link "Permalink: Starting bots manually:" [ref=e594] [cursor=pointer]':
+                    - /url: "#starting-bots-manually"
+                    - img [ref=e595]
+                - generic [ref=e597]:
+                  - generic [ref=e598]: "# Start the bot via the module. The configuration options will be read in from # config.exs {:ok, pid} = Hedwig.start_robot(Alfred.Robot) # You can also pass in a list of options that will override the configuration # provided in config.exs (except for the adapter as that is compiled into the # module). {:ok, pid} = Hedwig.start_robot(Alfred.Robot, [name: \"jeeves\"])"
+                  - button "Copy code to clipboard" [ref=e600] [cursor=pointer]:
+                    - img [ref=e601]
+                - generic [ref=e604]:
+                  - heading "Registering your robot process" [level=3] [ref=e605]
+                  - 'link "Permalink: Registering your robot process" [ref=e606] [cursor=pointer]':
+                    - /url: "#registering-your-robot-process"
+                    - img [ref=e607]
+                - paragraph [ref=e609]:
+                  - text: If you want to start, stop, and send messages to your bot without keeping track of its
+                  - code [ref=e610]: pid
+                  - text: ", you can register your robot in the"
+                  - code [ref=e611]: handle_connect/1
+                  - text: "callback in your robot module like so:"
+                - generic [ref=e612]:
+                  - generic [ref=e613]: "defmodule Alfred.Robot do use Hedwig.Robot, otp_app: :alfred def handle_connect(%{name: name} = state) do if :undefined == :global.whereis_name(name) do :yes = :global.register_name(name, self()) end {:ok, state} end end"
+                  - button "Copy code to clipboard" [ref=e615] [cursor=pointer]:
+                    - img [ref=e616]
+                - paragraph [ref=e619]:
+                  - text: Process registration via
+                  - code [ref=e620]: Process.register/2
+                  - text: "is simple. However, since the name can only be an atom it may not work for all use-cases. If you are using the same module for many robots, you'll need to reach for something more flexible like:"
+                - list [ref=e621]:
+                  - listitem [ref=e622]:
+                    - link "global" [ref=e623] [cursor=pointer]:
+                      - /url: http://erlang.org/doc/man/global.html
+                  - listitem [ref=e624]:
+                    - link "gproc" [ref=e625] [cursor=pointer]:
+                      - /url: https://github.com/uwiger/gproc
+                  - listitem [ref=e626]:
+                    - link "swarm" [ref=e627] [cursor=pointer]:
+                      - /url: https://github.com/bitwalker/swarm
+                - generic [ref=e628]:
+                  - heading "Finding your robot" [level=4] [ref=e629]
+                  - 'link "Permalink: Finding your robot" [ref=e630] [cursor=pointer]':
+                    - /url: "#finding-your-robot"
+                    - img [ref=e631]
+                - generic [ref=e633]:
+                  - generic [ref=e634]: "# Start the robot Hedwig.start_robot(Alfred.Robot) # Get the pid of the robot by name pid = :global.whereis_name(\"alfred\") # Start a new robot with a different name Hedwig.start_robot(Alfred.Robot, [name: \"jeeves\"]) # Get the pid pid = :global.whereis_name(\"jeeves\") # Stop the robot Hedwig.stop_robot(pid)"
+                  - button "Copy code to clipboard" [ref=e636] [cursor=pointer]:
+                    - img [ref=e637]
+                - generic [ref=e640]:
+                  - heading "Sending Messages" [level=2] [ref=e641]
+                  - 'link "Permalink: Sending Messages" [ref=e642] [cursor=pointer]':
+                    - /url: "#sending-messages"
+                    - img [ref=e643]
+                - generic [ref=e645]:
+                  - generic [ref=e646]: "# Get the pid of the robot pid = :global.whereis_name(\"alfred\") # Create a Hedwig message msg = %Hedwig.Message{ type: \"groupchat\", room: \"my_room@example.com\", text: \"hello world\" } # Send the message Hedwig.Robot.send(pid, msg)"
+                  - button "Copy code to clipboard" [ref=e648] [cursor=pointer]:
+                    - img [ref=e649]
+                - generic [ref=e652]:
+                  - heading "Building Responders" [level=2] [ref=e653]
+                  - 'link "Permalink: Building Responders" [ref=e654] [cursor=pointer]':
+                    - /url: "#building-responders"
+                    - img [ref=e655]
+                - paragraph [ref=e657]: Responders are processes that will handle incoming messages.
+                - paragraph [ref=e658]:
+                  - text: All that's needed is to
+                  - code [ref=e659]: use Hedwig.Responder
+                  - text: and use the
+                  - code [ref=e660]: hear/2
+                  - text: ", or"
+                  - code [ref=e661]: respond/2
+                  - text: macros to define a pattern to listen for and how to respond in the block when a message matches.
+                - paragraph [ref=e662]: "Here is an example:"
+                - generic [ref=e663]:
+                  - generic [ref=e664]:
+                    - text: defmodule MyApp.Responders.GreatSuccess do @moduledoc """ Borat, Great Success!
+                    - text: Replies with a random link to a Borat image when a message contains 'great success'. """ use Hedwig.Responder @links [ "http://mjanja.co.ke/wordpress/wp-content/uploads/2013/09/borat_great_success.jpg", "http://s2.quickmeme.com/img/13/1324dfd733535e58dba70264e6d05c9b70346204d2cacef65abef9c702746d1c.jpg", "https://www.youtube.com/watch?v=r13riaRKGo0" ] @usage """ <text> (great success) - Replies with a random Borat image. """ hear
+                    - generic [ref=e665]: ~r/great success(!)?/i
+                    - text: ", msg do reply msg, random(@links) end end"
+                  - button "Copy code to clipboard" [ref=e667] [cursor=pointer]:
+                    - img [ref=e668]
+                - generic [ref=e671]:
+                  - heading "Hear vs. Respond" [level=2] [ref=e672]
+                  - 'link "Permalink: Hear vs. Respond" [ref=e673] [cursor=pointer]':
+                    - /url: "#hear-vs-respond"
+                    - img [ref=e674]
+                - paragraph [ref=e676]: "The two responder macros are use for different reasons:"
+                - list [ref=e677]:
+                  - listitem [ref=e678]:
+                    - code [ref=e679]: hear
+                    - text: "- matches messages containing the regular expression"
+                  - listitem [ref=e680]:
+                    - code [ref=e681]: respond
+                    - text: "- matches only when prefixed by your robot's configured"
+                    - code [ref=e682]: name
+                    - text: or
+                    - code [ref=e683]: aka
+                    - text: value.
+                - generic [ref=e684]:
+                  - heading "Testing responders:" [level=2] [ref=e685]
+                  - 'link "Permalink: Testing responders:" [ref=e686] [cursor=pointer]':
+                    - /url: "#testing-responders"
+                    - img [ref=e687]
+                - paragraph [ref=e689]:
+                  - text: "Hedwig ships with a ExUnit-based module sepecifically made to test responders:"
+                  - code [ref=e690]: Hedwig.RobotCase
+                  - text: .
+                - paragraph [ref=e691]: "In order to test the above responder, you need to create an ExUnit test case:"
+                - generic [ref=e692]:
+                  - generic [ref=e693]: "# test/my_app/responders/great_success_test.exs defmodule MyApp.Responders.GreatSuccessTest do use Hedwig.RobotCase @tag start_robot: true, name: \"alfred\", responders: [{MyApp.Responders.GreatSuccess, []}] test \"great success - responds with a borat url\", %{adapter: adapter, msg: msg} do send adapter, {:message, %{msg | text: \"great success\"}} assert_receive {:message, %{text: text}} assert String.contains?(text, \"http\") end end"
+                  - button "Copy code to clipboard" [ref=e695] [cursor=pointer]:
+                    - img [ref=e696]
+                - paragraph [ref=e699]:
+                  - text: To run the tests, use
+                  - code [ref=e700]: mix test
+                - generic [ref=e701]:
+                  - heading "@usage" [level=2] [ref=e702]
+                  - 'link "Permalink: @usage" [ref=e703] [cursor=pointer]':
+                    - /url: "#usage"
+                    - img [ref=e704]
+                - paragraph [ref=e706]:
+                  - text: The
+                  - code [ref=e707]: "@usage"
+                  - text: module attribute works nicely with
+                  - code [ref=e708]: Hedwig.Responders.Help
+                  - text: . If you install the help handler, your bot will listen for
+                  - code [ref=e709]: <your-bots-nickname> help
+                  - text: and respond with a message containing all of the installed handlers
+                  - code [ref=e710]: "@usage"
+                  - text: text.
+                - generic [ref=e711]:
+                  - heading "License" [level=2] [ref=e712]
+                  - 'link "Permalink: License" [ref=e713] [cursor=pointer]':
+                    - /url: "#license"
+                    - img [ref=e714]
+                - paragraph [ref=e716]: The MIT License (MIT)
+                - paragraph [ref=e717]: Copyright (c) 2015 Sonny Scroggin
+                - paragraph [ref=e718]: "Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the \"Software\"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:"
+                - paragraph [ref=e719]: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+                - paragraph [ref=e720]: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+        - generic [ref=e724]:
+          - generic [ref=e727]:
+            - heading "About" [level=2] [ref=e728]
+            - paragraph [ref=e729]: An Adapter-based Bot Framework for Elixir Applications
+            - heading "Topics" [level=3] [ref=e730]
+            - generic [ref=e732]:
+              - link "slack" [ref=e733] [cursor=pointer]:
+                - /url: /topics/slack
+              - link "bot" [ref=e734] [cursor=pointer]:
+                - /url: /topics/bot
+              - link "elixir" [ref=e735] [cursor=pointer]:
+                - /url: /topics/elixir
+              - link "otp" [ref=e736] [cursor=pointer]:
+                - /url: /topics/otp
+              - link "xmpp" [ref=e737] [cursor=pointer]:
+                - /url: /topics/xmpp
+            - heading "Resources" [level=3] [ref=e738]
+            - link "Readme" [ref=e740] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e741]
+              - text: Readme
+            - heading "License" [level=3] [ref=e743]
+            - link "MIT license" [ref=e745] [cursor=pointer]:
+              - /url: "#MIT-1-ov-file"
+              - img [ref=e746]
+              - text: MIT license
+            - link "Activity" [ref=e749] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig/activity
+              - img [ref=e750]
+              - text: Activity
+            - link "Custom properties" [ref=e753] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig/custom-properties
+              - img [ref=e754]
+              - text: Custom properties
+            - heading "Stars" [level=3] [ref=e756]
+            - link "648 stars" [ref=e758] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig/stargazers
+              - img [ref=e759]
+              - strong [ref=e761]: "648"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e762]
+            - link "21 watching" [ref=e764] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig/watchers
+              - img [ref=e765]
+              - strong [ref=e767]: "21"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e768]
+            - link "68 forks" [ref=e770] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig/forks
+              - img [ref=e771]
+              - strong [ref=e773]: "68"
+              - text: forks
+            - link "Report repository" [ref=e775] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2Fhedwig-im%2Fhedwig&report=hedwig-im+%28user%29
+          - generic [ref=e777]:
+            - heading "Releases 10" [level=2] [ref=e778]:
+              - link "Releases 10" [ref=e779] [cursor=pointer]:
+                - /url: /hedwig-im/hedwig/releases
+                - text: Releases
+                - generic "10" [ref=e780]
+            - link "v1.0.0 Latest Nov 20, 2016on Nov 21, 2016" [ref=e781] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig/releases/tag/v1.0.0
+              - img [ref=e782]
+              - generic [ref=e784]:
+                - generic [ref=e785]:
+                  - generic [ref=e786]: v1.0.0
+                  - 'generic "Label: Latest" [ref=e787]': Latest
+                - generic [ref=e788]: Nov 20, 2016on Nov 21, 2016
+            - link "+ 9 releases" [ref=e790] [cursor=pointer]:
+              - /url: /hedwig-im/hedwig/releases
+          - generic [ref=e792]:
+            - heading "Packages" [level=2] [ref=e793]:
+              - link "Packages" [ref=e794] [cursor=pointer]:
+                - /url: /orgs/hedwig-im/packages?repo_name=hedwig
+            - generic [ref=e795]: No packages published
+          - generic [ref=e797]:
+            - heading "Contributors 15" [level=2] [ref=e798]:
+              - link "Contributors 15" [ref=e799] [cursor=pointer]:
+                - /url: /hedwig-im/hedwig/graphs/contributors
+                - text: Contributors
+                - generic "15" [ref=e800]
+            - list [ref=e801]:
+              - listitem [ref=e802]:
+                - link "@scrogson" [ref=e803] [cursor=pointer]:
+                  - /url: https://github.com/scrogson
+                  - img "@scrogson" [ref=e804]
+              - listitem [ref=e805]:
+                - link "@jwarlander" [ref=e806] [cursor=pointer]:
+                  - /url: https://github.com/jwarlander
+                  - img "@jwarlander" [ref=e807]
+              - listitem [ref=e808]:
+                - link "@enilsen16" [ref=e809] [cursor=pointer]:
+                  - /url: https://github.com/enilsen16
+                  - img "@enilsen16" [ref=e810]
+              - listitem [ref=e811]:
+                - link "@ayrat555" [ref=e812] [cursor=pointer]:
+                  - /url: https://github.com/ayrat555
+                  - img "@ayrat555" [ref=e813]
+              - listitem [ref=e814]:
+                - link "@schlenks" [ref=e815] [cursor=pointer]:
+                  - /url: https://github.com/schlenks
+                  - img "@schlenks" [ref=e816]
+              - listitem [ref=e817]:
+                - link "@derhackler" [ref=e818] [cursor=pointer]:
+                  - /url: https://github.com/derhackler
+                  - img "@derhackler" [ref=e819]
+              - listitem [ref=e820]:
+                - link "@knewter" [ref=e821] [cursor=pointer]:
+                  - /url: https://github.com/knewter
+                  - img "@knewter" [ref=e822]
+              - listitem [ref=e823]:
+                - link "@wojtekmach" [ref=e824] [cursor=pointer]:
+                  - /url: https://github.com/wojtekmach
+                  - img "@wojtekmach" [ref=e825]
+              - listitem [ref=e826]:
+                - link "@joshuawscott" [ref=e827] [cursor=pointer]:
+                  - /url: https://github.com/joshuawscott
+                  - img "@joshuawscott" [ref=e828]
+              - listitem [ref=e829]:
+                - link "@docteurklein" [ref=e830] [cursor=pointer]:
+                  - /url: https://github.com/docteurklein
+                  - img "@docteurklein" [ref=e831]
+              - listitem [ref=e832]:
+                - link "@vorce" [ref=e833] [cursor=pointer]:
+                  - /url: https://github.com/vorce
+                  - img "@vorce" [ref=e834]
+              - listitem [ref=e835]:
+                - link "@supernullset" [ref=e836] [cursor=pointer]:
+                  - /url: https://github.com/supernullset
+                  - img "@supernullset" [ref=e837]
+              - listitem [ref=e838]:
+                - link "@saiberz" [ref=e839] [cursor=pointer]:
+                  - /url: https://github.com/saiberz
+                  - img "@saiberz" [ref=e840]
+              - listitem [ref=e841]:
+                - link "@lucperkins" [ref=e842] [cursor=pointer]:
+                  - /url: https://github.com/lucperkins
+                  - img "@lucperkins" [ref=e843]
+              - listitem [ref=e844]:
+                - link "@wende" [ref=e845] [cursor=pointer]:
+                  - /url: https://github.com/wende
+                  - img "@wende" [ref=e846]
+          - generic [ref=e848]:
+            - heading "Languages" [level=2] [ref=e849]
+            - list [ref=e853]:
+              - listitem [ref=e854]:
+                - link "Elixir 100.0%" [ref=e855] [cursor=pointer]:
+                  - /url: /hedwig-im/hedwig/search?l=elixir
+                  - img [ref=e856]
+                  - generic [ref=e858]: Elixir
+                  - generic [ref=e859]: 100.0%
+  - contentinfo [ref=e861]:
+    - heading "Footer" [level=2] [ref=e862]
+    - generic [ref=e863]:
+      - generic [ref=e864]:
+        - link "GitHub Homepage" [ref=e865] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e866]
+        - generic [ref=e868]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e869]:
+        - heading "Footer navigation" [level=3] [ref=e870]
+        - list "Footer navigation" [ref=e871]:
+          - listitem [ref=e872]:
+            - link "Terms" [ref=e873] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e874]:
+            - link "Privacy" [ref=e875] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e876]:
+            - link "Security" [ref=e877] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e878]:
+            - link "Status" [ref=e879] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e880]:
+            - link "Community" [ref=e881] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e882]:
+            - link "Docs" [ref=e883] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e884]:
+            - link "Contact" [ref=e885] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e886]:
+            - button "Manage cookies" [ref=e888] [cursor=pointer]
+          - listitem [ref=e889]:
+            - button "Do not share my personal information" [ref=e891] [cursor=pointer]

@@ -1,0 +1,38 @@
+- generic [ref=e2]:
+  - generic [ref=e6]:
+    - generic "Вход с логином и паролем от Госуслуг" [ref=e7]:
+      - banner [ref=e9]:
+        - link "Портал государственных услуг Российской Федерации" [ref=e10] [cursor=pointer]:
+          - /url: https://gosuslugi.ru
+          - text: Портал государственных услуг Российской Федерации
+          - img [ref=e11]
+        - button "'Выбор языка. Выбрано' Русский" [ref=e13] [cursor=pointer]:
+          - generic [ref=e14]: Русский
+      - generic [ref=e53]:
+        - generic [ref=e54]:
+          - generic [ref=e55]: Телефон / Эл. почта / СНИЛС
+          - textbox "Введите номер телефона, СНИЛС или электронную почту в формате example@elpochta.ru" [active] [ref=e58]
+        - generic [ref=e59]:
+          - generic [ref=e60]: Пароль
+          - textbox [ref=e64]
+          - button "Восстановить" [ref=e66] [cursor=pointer]
+        - generic [ref=e67]:
+          - button "Войти" [ref=e68] [cursor=pointer]
+          - button "Не удаётся войти" [ref=e70] [cursor=pointer]
+          - generic [ref=e72]:
+            - separator [ref=e73]
+            - generic [ref=e74]:
+              - generic [ref=e75]:
+                - text: Войти другим способом.
+                - link "Подробнее" [ref=e76] [cursor=pointer]:
+                  - /url: https://www.gosuslugi.ru/help/faq/login/2745
+              - generic [ref=e77]:
+                - button "QR-код" [ref=e79] [cursor=pointer]
+                - button "Эл. подпись" [ref=e81] [cursor=pointer]: Электронная подпись
+    - button "Зарегистрироваться" [ref=e45] [cursor=pointer]
+    - generic [ref=e48]:
+      - img [ref=e50]
+      - link "Куда ещё можно войти с паролем от Госуслуг?" [ref=e52] [cursor=pointer]:
+        - /url: https://www.gosuslugi.ru/landing/esia-help
+  - generic:
+    - status

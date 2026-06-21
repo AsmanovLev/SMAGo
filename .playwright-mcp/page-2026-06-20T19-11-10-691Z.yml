@@ -1,0 +1,389 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-FI
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - generic:
+          - generic:
+            - generic:
+              - img
+        - 'link "World Cup 2026: The art of the penalty kick" [ref=e13] [cursor=pointer]':
+          - /url: https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQPQgK
+          - 'img "World Cup 2026: The art of the penalty kick" [ref=e14]'
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - combobox "Search" [ref=e19]: botpress wechaty botkit cross platform messenger bot framework comparison botpress wechaty botkit cross platform messenger bot framework comparison
+            - generic [ref=e20]:
+              - button "Clear" [ref=e22] [cursor=pointer]:
+                - img [ref=e24]
+              - generic [ref=e27]:
+                - button "Search by voice" [ref=e28] [cursor=pointer]:
+                  - img [ref=e29]
+                - button "Search by image" [ref=e31] [cursor=pointer]:
+                  - img [ref=e32]
+          - button "Search" [ref=e34] [cursor=pointer]:
+            - img [ref=e37]
+    - generic [ref=e39]:
+      - button "Share" [ref=e40] [cursor=pointer]:
+        - img [ref=e44]
+      - generic [ref=e46]:
+        - button "Google apps" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+        - 'button "Google Account: Lev Asmanov (asmanovlev@gmail.com)" [ref=e53] [cursor=pointer]':
+          - img [ref=e55]
+          - img [ref=e60]
+  - generic [ref=e62]:
+    - navigation [ref=e68]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "AI Mode" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE9OqRMKGD2T9lFDfEKBBAAmgw9gjb3JGnW1mggl7S6Ex7eL9gpE6td45Iz6LW7v414IdL7cw_jzUJwYDWFnD3s5hJadK7ufLsH1GpLE2dSR8VocTx6jsBaPW3zgZArWBfLahCfObYSK3kLTnpvOcJu2J1Xie&aep=1&ntc=1&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ2J8OegQIDxAD
+              - generic [ref=e82]: AI Mode
+          - listitem [ref=e83]:
+            - link "All" [disabled] [ref=e84]:
+              - generic [ref=e86]: All
+          - listitem [ref=e87]:
+            - link "Videos" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE9OqRMKGD2T9lFDfEKBBAAmgw9gjb3JGnW1mggl7S6Ex7eL9gpE6td45Iz6LW7v414IdL7cw_jzUJwYDWFnD3s5hJadK7ufLsH1GpLE2dSR8VocTx6jsBaPW3zgZArWBfLahCfObYSK3kLTnpvOcJu2J1Xie&q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQtKgLegQIFRAB
+              - generic [ref=e90]: Videos
+          - listitem [ref=e91]:
+            - link "Forums" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&udm=18&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE9OqRMKGD2T9lFDfEKBBAAmgw9gjb3JGnW1mggl7S6Ex7eL9gpE6td45Iz6LW7v414IdL7cw_jzUJwYDWFnD3s5hJadK7ufLsH1GpLE2dSR8VocTx6jsBaPW3zgZArWBfLahCfObYSK3kLTnpvOcJu2J1Xie&q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQs6gLegQIFBAB
+              - generic [ref=e94]: Forums
+          - listitem [ref=e95]:
+            - link "Short videos" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE9OqRMKGD2T9lFDfEKBBAAmgw9gjb3JGnW1mggl7S6Ex7eL9gpE6td45Iz6LW7v414IdL7cw_jzUJwYDWFnD3s5hJadK7ufLsH1GpLE2dSR8VocTx6jsBaPW3zgZArWBfLahCfObYSK3kLTnpvOcJu2J1Xie&q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQs6gLegQIExAB
+              - generic [ref=e98]: Short videos
+          - listitem [ref=e99]:
+            - link "Images" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE9OqRMKGD2T9lFDfEKBBAAmgw9gjb3JGnW1mggl7S6Ex7eL9gpE6td45Iz6LW7v414IdL7cw_jzUJwYDWFnD3s5hJadK7ufLsH1GpLE2dSR8VocTx6jsBaPW3zgZArWBfLahCfObYSK3kLTnpvOcJu2J1Xie&q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQtKgLegQIEhAB
+              - generic [ref=e102]: Images
+          - listitem [ref=e103]:
+            - link "News" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE9OqRMKGD2T9lFDfEKBBAAmgw9gjb3JGnW1mggl7S6Ex7eL9gpE6td45Iz6LW7v414IdL7cw_jzUJwYDWFnD3s5hJadK7ufLsH1GpLE2dSR8VocTx6jsBaPW3zgZArWBfLahCfObYSK3kLTnpvOcJu2J1Xie&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ0pQJegQIERAB
+              - generic [ref=e106]: News
+          - listitem [ref=e107]:
+            - button "More filters" [ref=e108] [cursor=pointer]:
+              - generic "More filters" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: More
+                  - img [ref=e113]
+        - button "Tools" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Tools
+            - img [ref=e121]
+    - heading "Search Results" [level=1] [ref=e123]
+    - main [ref=e129]:
+      - generic [ref=e133]:
+        - generic [ref=e136]:
+          - heading "Web results" [level=2] [ref=e137]
+          - generic [ref=e138]:
+            - generic [ref=e141]:
+              - link "Which Chatbot Framework Should You Use? | Rasa Blog rasa.com https://rasa.com › blog › chatbot-framework-comparison" [ref=e143] [cursor=pointer]:
+                - /url: https://rasa.com/blog/chatbot-framework-comparison
+                - heading "Which Chatbot Framework Should You Use? | Rasa Blog" [level=3] [ref=e144]
+                - generic [ref=e150]:
+                  - generic [ref=e152]: rasa.com
+                  - generic [ref=e154]: https://rasa.com › blog › chatbot-framework-comparison
+              - button "About this result" [ref=e155] [cursor=pointer]:
+                - img [ref=e158]
+            - generic [ref=e161]:
+              - generic [ref=e162]: 13 Mar 2026 —
+              - generic [ref=e163]:
+                - emphasis [ref=e164]: Compare top chatbot frameworks
+                - text: and see which tools support flexibility, control, and customization for your conversational AI needs.
+        - generic [ref=e168]:
+          - generic [ref=e171]:
+            - link "14 Best Open Source Chatbot Platforms to Use in 2026 Botpress https://botpress.com › blog › open-source-chatbots" [ref=e173] [cursor=pointer]:
+              - /url: https://botpress.com/blog/open-source-chatbots
+              - heading "14 Best Open Source Chatbot Platforms to Use in 2026" [level=3] [ref=e174]
+              - generic [ref=e180]:
+                - generic [ref=e182]: Botpress
+                - generic [ref=e184]: https://botpress.com › blog › open-source-chatbots
+            - button "About this result" [ref=e185] [cursor=pointer]:
+              - img [ref=e188]
+          - generic [ref=e191]:
+            - generic [ref=e192]: 10 Jan 2026 —
+            - generic [ref=e193]:
+              - text: The top open-source chatbot platforms include
+              - emphasis [ref=e194]: Botpress
+              - text: ", Microsoft Bot Framework, BotKit, Rasa.ai, Wit.ai, OpenDialog, Botonic, HubSpot ..."
+            - link "Read more" [ref=e195] [cursor=pointer]:
+              - /url: https://botpress.com/blog/open-source-chatbots#:~:text=The%20top%20open%2Dsource%20chatbot%20platforms,BotMan%2C%20Bottender%2C%20DeepPavlov%2C%20and%20Golem.
+        - generic [ref=e199]:
+          - generic [ref=e202]:
+            - link "15 Best Chatbot Frameworks in 2025 Pixcell.io https://www.pixcell.io › blog › best-chatbot-frameworks" [ref=e204] [cursor=pointer]:
+              - /url: https://www.pixcell.io/blog/best-chatbot-frameworks
+              - heading "15 Best Chatbot Frameworks in 2025" [level=3] [ref=e205]
+              - generic [ref=e211]:
+                - generic [ref=e213]: Pixcell.io
+                - generic [ref=e215]: https://www.pixcell.io › blog › best-chatbot-frameworks
+            - button "About this result" [ref=e216] [cursor=pointer]:
+              - img [ref=e219]
+          - generic [ref=e222]:
+            - generic [ref=e223]: 9 Oct 2025 —
+            - generic [ref=e224]:
+              - text: Discover the 15 best chatbot frameworks in 2025.
+              - emphasis [ref=e225]: Compare top platforms like Dialogflow, Rasa, and Botpress
+              - text: —expert guide to choosing the ...
+          - generic [ref=e227]:
+            - text: "Missing: wechaty ‎| Show results with:"
+            - link "wechaty" [ref=e228] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&q=botpress+%22wechaty%22+botkit+cross+platform+messenger+bot+framework+comparison&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ5t4CegQIJRAB
+        - generic [ref=e232]:
+          - generic [ref=e235]:
+            - link "The Top 10 Open-Source Chatbot Frameworks of 2025 DEV Community https://dev.to › chattermate › the-top-10-open-source-c..." [ref=e237] [cursor=pointer]:
+              - /url: https://dev.to/chattermate/the-top-10-open-source-chatbot-frameworks-of-2025-9jd
+              - heading "The Top 10 Open-Source Chatbot Frameworks of 2025" [level=3] [ref=e238]
+              - generic [ref=e244]:
+                - generic [ref=e246]: DEV Community
+                - generic [ref=e248]: https://dev.to › chattermate › the-top-10-open-source-c...
+            - button "About this result" [ref=e249] [cursor=pointer]:
+              - img [ref=e252]
+          - generic [ref=e255]:
+            - generic [ref=e256]: 18 Mar 2025 —
+            - generic [ref=e257]:
+              - text: We'll explore the top 10 open-source
+              - emphasis [ref=e258]: chatbot
+              - text: providers lighting up the dev world in 2025. Let's dive in and find the perfect
+              - emphasis [ref=e259]: framework
+              - text: for your next project!
+            - link "Read more" [ref=e260] [cursor=pointer]:
+              - /url: https://dev.to/chattermate/the-top-10-open-source-chatbot-frameworks-of-2025-9jd#:~:text=In%20this%20post%2C%20we'll%20explore,framework%20for%20your%20next%20project!
+        - generic [ref=e264]:
+          - generic [ref=e267]:
+            - link "The Ultimate Guide to Chatbot Frameworks in 2025 | by JIN Medium · JIN 1 year ago" [ref=e269] [cursor=pointer]:
+              - /url: https://medium.com/tech-x-humanity/the-ultimate-guide-to-chatbot-frameworks-in-2025-62792e93db71
+              - heading "The Ultimate Guide to Chatbot Frameworks in 2025 | by JIN" [level=3] [ref=e270]
+              - generic [ref=e276]:
+                - generic [ref=e278]: Medium · JIN
+                - generic [ref=e280]: 1 year ago
+            - button "About this result" [ref=e281] [cursor=pointer]:
+              - img [ref=e284]
+          - generic [ref=e287]:
+            - generic [ref=e288]:
+              - emphasis [ref=e289]: Botpress
+              - text: is like that friend who's good at everything. It's a complete conversational AI stack that handles natural language understanding with ...
+            - link "Read more" [ref=e290] [cursor=pointer]:
+              - /url: https://medium.com/tech-x-humanity/the-ultimate-guide-to-chatbot-frameworks-in-2025-62792e93db71#:~:text=Botpress%20is%20like%20that%20friend,language%20understanding%20with%20scary%20accuracy.
+        - generic [ref=e294]:
+          - generic [ref=e297]:
+            - link "The Complete Guide to Chatbot Development Frameworks Heyy.io https://www.heyy.io › blog › chatbot-development-fra..." [ref=e299] [cursor=pointer]:
+              - /url: https://www.heyy.io/blog/chatbot-development-frameworks-business-growth
+              - heading "The Complete Guide to Chatbot Development Frameworks" [level=3] [ref=e300]
+              - generic [ref=e306]:
+                - generic [ref=e308]: Heyy.io
+                - generic [ref=e310]: https://www.heyy.io › blog › chatbot-development-fra...
+            - button "About this result" [ref=e311] [cursor=pointer]:
+              - img [ref=e314]
+          - generic [ref=e317]:
+            - generic [ref=e318]: 20 Feb 2026 —
+            - generic [ref=e319]:
+              - emphasis [ref=e320]: Botkit
+              - text: is a free, open-source JavaScript toolkit for building chatbots across Slack, Facebook Messenger, Microsoft Teams, Twilio, and web chat.
+            - link "Read more" [ref=e321] [cursor=pointer]:
+              - /url: https://www.heyy.io/blog/chatbot-development-frameworks-business-growth#:~:text=Botkit%20is%20a%20free%2C%20open%2Dsource,Teams%2C%20Twilio%2C%20and%20web%20chat.
+        - generic [ref=e325]:
+          - generic [ref=e328]:
+            - link "The Best 13 Open Source Chatbot Platforms to Use in 2024 Miscotech. https://miscotech.co.uk › blogs › The Best 13 Open Sour..." [ref=e330] [cursor=pointer]:
+              - /url: https://miscotech.co.uk/blogs/The%20Best%2013%20Open%20Source%20Chatbot%20Platforms%20to%20Use%20in%202024
+              - heading "The Best 13 Open Source Chatbot Platforms to Use in 2024" [level=3] [ref=e331]
+              - generic [ref=e333]:
+                - img [ref=e338]
+                - generic [ref=e340]:
+                  - generic [ref=e342]: Miscotech.
+                  - generic [ref=e344]: https://miscotech.co.uk › blogs › The Best 13 Open Sour...
+            - button "About this result" [ref=e345] [cursor=pointer]:
+              - img [ref=e348]
+          - generic [ref=e351]:
+            - generic [ref=e352]:
+              - emphasis [ref=e353]: Botpress is a completely open-source conversational AI software
+              - text: and supports many Natural Language Understanding (NLU) libraries. · Microsoft Bot Framework (MBF) ...
+            - link "Read more" [ref=e354] [cursor=pointer]:
+              - /url: https://miscotech.co.uk/blogs/The%20Best%2013%20Open%20Source%20Chatbot%20Platforms%20to%20Use%20in%202024#:~:text=Botpress%20is%20a%20completely%20open%2Dsource,Natural%20Language%20Understanding%20(NLU)%20libraries.&text=Microsoft%20Bot%20Framework%20(MBF)%20offers,open%2Dsource%20platform%20for%20building%20bots.
+        - generic [ref=e358]:
+          - generic [ref=e361]:
+            - 'link "COMPARING CHATBOT FRAMEWORKS: A STUDY OF RASA ... Trepo https://trepo.tuni.fi › handle › PavelImran" [ref=e363] [cursor=pointer]':
+              - /url: https://trepo.tuni.fi/bitstream/handle/10024/132928/PavelImran.pdf
+              - 'heading "COMPARING CHATBOT FRAMEWORKS: A STUDY OF RASA ..." [level=3] [ref=e364]'
+              - generic [ref=e370]:
+                - generic [ref=e372]: Trepo
+                - generic [ref=e374]: https://trepo.tuni.fi › handle › PavelImran
+            - generic [ref=e375]:
+              - generic:
+                - generic: PDF
+            - button "About this result" [ref=e376] [cursor=pointer]:
+              - img [ref=e379]
+          - generic [ref=e381]:
+            - generic [ref=e382]:
+              - generic [ref=e383]: 31 May 2021 —
+              - generic [ref=e384]:
+                - text: Findings suggest, overall RASA
+                - emphasis [ref=e385]: framework
+                - text: would be more suitable for
+                - emphasis [ref=e386]: chatbot
+                - text: development than
+                - emphasis [ref=e387]: Botkit
+                - text: ". Keywords:"
+                - emphasis [ref=e388]: Chatbot
+                - text: ", Conversational Agents, ..."
+              - link "Read more" [ref=e389] [cursor=pointer]:
+                - /url: https://trepo.tuni.fi/bitstream/handle/10024/132928/PavelImran.pdf#:~:text=Findings%20suggest%2C%20overall%20RASA%20framework,Chatbot%20Framework%2C%20Chatbot%20Platform%2C%20Framework
+            - generic [ref=e390]: 69 pages
+        - generic [ref=e395]:
+          - heading "People also ask" [level=2] [ref=e397]
+          - generic [ref=e398]:
+            - button "What are the best AI chatbot frameworks?" [ref=e404] [cursor=pointer]:
+              - generic [ref=e406]: What are the best AI chatbot frameworks?
+              - img [ref=e409]
+            - button "Why were Alice and Bob shut down?" [ref=e418] [cursor=pointer]:
+              - generic [ref=e420]: Why were Alice and Bob shut down?
+              - img [ref=e423]
+            - button "Can Mitsuku have a real conversation?" [ref=e432] [cursor=pointer]:
+              - generic [ref=e434]: Can Mitsuku have a real conversation?
+              - img [ref=e437]
+            - button "Is Messenger bot earning legit?" [ref=e446] [cursor=pointer]:
+              - generic [ref=e448]: Is Messenger bot earning legit?
+              - img [ref=e451]
+        - generic [ref=e456]:
+          - heading "Web results" [level=2] [ref=e457]
+          - generic [ref=e458]:
+            - generic [ref=e461]:
+              - link "Botkit vs Botpress | What are the differences? StackShare https://stackshare.io › stackups › botkit-vs-botpress" [ref=e463] [cursor=pointer]:
+                - /url: https://stackshare.io/stackups/botkit-vs-botpress
+                - heading "Botkit vs Botpress | What are the differences?" [level=3] [ref=e464]
+                - generic [ref=e470]:
+                  - generic [ref=e472]: StackShare
+                  - generic [ref=e474]: https://stackshare.io › stackups › botkit-vs-botpress
+              - button "About this result" [ref=e475] [cursor=pointer]:
+                - img [ref=e478]
+            - generic [ref=e481]:
+              - generic [ref=e482]:
+                - text: In summary,
+                - emphasis [ref=e483]: Botkit and Botpress differ in terms of the programming language used, architecture, N
+                - text: LU capabilities, community support, built-in analytics features ...
+              - link "Read more" [ref=e484] [cursor=pointer]:
+                - /url: https://stackshare.io/stackups/botkit-vs-botpress#:~:text=In%20summary%2C%20Botkit%20and%20Botpress,their%20specific%20requirements%20and%20preferences.
+        - generic [ref=e488]:
+          - generic [ref=e491]:
+            - link "15 Best Open-Source Chatbot Platforms in 2026 pagergpt https://pagergpt.ai › AI Chatbot" [ref=e493] [cursor=pointer]:
+              - /url: https://pagergpt.ai/ai-chatbot/open-source-chatbot-platforms
+              - heading "15 Best Open-Source Chatbot Platforms in 2026" [level=3] [ref=e494]
+              - generic [ref=e500]:
+                - generic [ref=e502]: pagergpt
+                - generic [ref=e504]: https://pagergpt.ai › AI Chatbot
+            - button "About this result" [ref=e505] [cursor=pointer]:
+              - img [ref=e508]
+          - generic [ref=e511]:
+            - generic [ref=e512]: 1 Dec 2025 —
+            - generic [ref=e513]:
+              - emphasis [ref=e514]: Botkit is an open-source toolkit used to build chatbots
+              - text: for platforms like Slack, Facebook Messenger, and Microsoft Teams. It provides simple ...
+            - link "Read more" [ref=e515] [cursor=pointer]:
+              - /url: https://pagergpt.ai/ai-chatbot/open-source-chatbot-platforms#:~:text=Botkit%20is%20an%20open%2Dsource%20toolkit,messages%2C%20conversations%2C%20and%20chatbot%20flows.
+      - generic [ref=e517]:
+        - generic [ref=e522]:
+          - heading "People also search for" [level=2] [ref=e524]
+          - generic [ref=e526]:
+            - generic [ref=e527]:
+              - link "Open source chatbot GitHub" [ref=e531] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&q=Open+source+chatbot+GitHub&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ1QJ6BAgsEAE
+                - generic [ref=e532]:
+                  - generic [ref=e537]: Open source chatbot GitHub
+                  - img [ref=e541]
+              - link "Chatbot framework Python" [ref=e546] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&q=Chatbot+framework+Python&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ1QJ6BAg0EAE
+                - generic [ref=e547]:
+                  - generic [ref=e552]: Chatbot framework Python
+                  - img [ref=e556]
+              - link "Botpress alternatives open source" [ref=e561] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&q=Botpress+alternatives+open+source&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ1QJ6BAgxEAE
+                - generic [ref=e562]:
+                  - generic [ref=e567]: Botpress alternatives open source
+                  - img [ref=e571]
+              - link "Chatbot framework open-source" [ref=e576] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&q=Chatbot+framework+open-source&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ1QJ6BAgwEAE
+                - generic [ref=e577]:
+                  - generic [ref=e582]: Chatbot framework open-source
+                  - img [ref=e586]
+            - generic [ref=e588]:
+              - link "Botpress pricing" [ref=e592] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&q=Botpress+pricing&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ1QJ6BAgvEAE
+                - generic [ref=e593]:
+                  - generic [ref=e598]: Botpress pricing
+                  - img [ref=e602]
+              - link "Is Botpress open-source" [ref=e607] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&q=Is+Botpress+open-source&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ1QJ6BAguEAE
+                - generic [ref=e608]:
+                  - generic [ref=e613]: Is Botpress open-source
+                  - img [ref=e617]
+              - link "Open source chatbot for website" [ref=e622] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&q=Open+source+chatbot+for+website&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ1QJ6BAgrEAE
+                - generic [ref=e623]:
+                  - generic [ref=e628]: Open source chatbot for website
+                  - img [ref=e632]
+              - link "Microsoft Bot Framework" [ref=e637] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&q=Microsoft+Bot+Framework&sa=X&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ1QJ6BAgtEAE
+                - generic [ref=e638]:
+                  - generic [ref=e643]: Microsoft Bot Framework
+                  - img [ref=e647]
+        - navigation [ref=e649]:
+          - heading "Page navigation" [level=1] [ref=e650]
+          - text: "1"
+          - link "Page 2" [ref=e653] [cursor=pointer]:
+            - /url: /search?q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&ei=yeU2aq6AFo28wPAPmbCUgAM&start=10&sa=N&sstk=AU9db-BRdhBuUT6BeRBjRRqxz_gL4AAYjb4-LkJjhhyzl5rrq9-OH_YeDXeytUi9L6kOceYcNjKQQpdw2fNRB1573bmCY6uT66LAgA&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ8tMDegQIKRAE
+            - text: "2"
+          - link "Page 3" [ref=e655] [cursor=pointer]:
+            - /url: /search?q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&ei=yeU2aq6AFo28wPAPmbCUgAM&start=20&sa=N&sstk=AU9db-BRdhBuUT6BeRBjRRqxz_gL4AAYjb4-LkJjhhyzl5rrq9-OH_YeDXeytUi9L6kOceYcNjKQQpdw2fNRB1573bmCY6uT66LAgA&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ8tMDegQIKRAG
+            - text: "3"
+          - link "Page 4" [ref=e657] [cursor=pointer]:
+            - /url: /search?q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&ei=yeU2aq6AFo28wPAPmbCUgAM&start=30&sa=N&sstk=AU9db-BRdhBuUT6BeRBjRRqxz_gL4AAYjb4-LkJjhhyzl5rrq9-OH_YeDXeytUi9L6kOceYcNjKQQpdw2fNRB1573bmCY6uT66LAgA&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ8tMDegQIKRAI
+            - text: "4"
+          - link "Page 5" [ref=e659] [cursor=pointer]:
+            - /url: /search?q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&ei=yeU2aq6AFo28wPAPmbCUgAM&start=40&sa=N&sstk=AU9db-BRdhBuUT6BeRBjRRqxz_gL4AAYjb4-LkJjhhyzl5rrq9-OH_YeDXeytUi9L6kOceYcNjKQQpdw2fNRB1573bmCY6uT66LAgA&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ8tMDegQIKRAK
+            - text: "5"
+          - link "Page 6" [ref=e661] [cursor=pointer]:
+            - /url: /search?q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&ei=yeU2aq6AFo28wPAPmbCUgAM&start=50&sa=N&sstk=AU9db-BRdhBuUT6BeRBjRRqxz_gL4AAYjb4-LkJjhhyzl5rrq9-OH_YeDXeytUi9L6kOceYcNjKQQpdw2fNRB1573bmCY6uT66LAgA&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ8tMDegQIKRAM
+            - text: "6"
+          - link "Page 7" [ref=e663] [cursor=pointer]:
+            - /url: /search?q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&ei=yeU2aq6AFo28wPAPmbCUgAM&start=60&sa=N&sstk=AU9db-BRdhBuUT6BeRBjRRqxz_gL4AAYjb4-LkJjhhyzl5rrq9-OH_YeDXeytUi9L6kOceYcNjKQQpdw2fNRB1573bmCY6uT66LAgA&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ8tMDegQIKRAO
+            - text: "7"
+          - link "Page 8" [ref=e665] [cursor=pointer]:
+            - /url: /search?q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&ei=yeU2aq6AFo28wPAPmbCUgAM&start=70&sa=N&sstk=AU9db-BRdhBuUT6BeRBjRRqxz_gL4AAYjb4-LkJjhhyzl5rrq9-OH_YeDXeytUi9L6kOceYcNjKQQpdw2fNRB1573bmCY6uT66LAgA&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ8tMDegQIKRAQ
+            - text: "8"
+          - link "Page 9" [ref=e667] [cursor=pointer]:
+            - /url: /search?q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&ei=yeU2aq6AFo28wPAPmbCUgAM&start=80&sa=N&sstk=AU9db-BRdhBuUT6BeRBjRRqxz_gL4AAYjb4-LkJjhhyzl5rrq9-OH_YeDXeytUi9L6kOceYcNjKQQpdw2fNRB1573bmCY6uT66LAgA&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ8tMDegQIKRAS
+            - text: "9"
+          - heading "Next" [level=2] [ref=e669]:
+            - link "Next" [ref=e670] [cursor=pointer]:
+              - /url: /search?q=botpress+wechaty+botkit+cross+platform+messenger+bot+framework+comparison&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQnuI21x9xh0OFORdCuJ1MjzuXfLq-A:1781982665368&ei=yeU2aq6AFo28wPAPmbCUgAM&start=10&sa=N&sstk=AU9db-BRdhBuUT6BeRBjRRqxz_gL4AAYjb4-LkJjhhyzl5rrq9-OH_YeDXeytUi9L6kOceYcNjKQQpdw2fNRB1573bmCY6uT66LAgA&ved=2ahUKEwjuiI_ewpaVAxUNHhAIHRkYBTAQ8NMDegQIKRAU
+              - generic [ref=e672]: Next
+      - navigation
+    - contentinfo [ref=e673]:
+      - heading "Footer links" [level=1] [ref=e674]
+      - generic [ref=e678]:
+        - generic [ref=e682]: Results are not personalised
+        - generic [ref=e684]:
+          - text: Finland
+          - generic [ref=e686]:
+            - button "Helsinki - From your IP address" [ref=e688] [cursor=pointer]:
+              - generic [ref=e689]: Helsinki
+              - generic [ref=e691]:
+                - text: "-"
+                - generic [ref=e692]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=e694] [cursor=pointer]: Update location
+        - generic [ref=e697]:
+          - link "Help" [ref=e698] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-FI&fg=1
+          - link "Send feedback" [ref=e699] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e700] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-FI&fg=1
+          - link "Terms" [ref=e701] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-FI&fg=1

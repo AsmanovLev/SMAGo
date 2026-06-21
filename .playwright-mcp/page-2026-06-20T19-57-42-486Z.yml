@@ -1,0 +1,1339 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - link "Skip to content" [ref=e4] [cursor=pointer]:
+      - /url: "#start-of-content"
+    - banner [ref=e6]:
+      - heading "Navigation Menu" [level=2] [ref=e7]
+      - generic [ref=e8]:
+        - link "Homepage" [ref=e10] [cursor=pointer]:
+          - /url: /
+          - img [ref=e11]
+        - generic [ref=e13]:
+          - navigation "Global" [ref=e16]:
+            - list [ref=e17]:
+              - listitem [ref=e18]:
+                - button "Platform" [ref=e20] [cursor=pointer]:
+                  - text: Platform
+                  - img [ref=e21]
+              - listitem [ref=e23]:
+                - button "Solutions" [ref=e25] [cursor=pointer]:
+                  - text: Solutions
+                  - img [ref=e26]
+              - listitem [ref=e28]:
+                - button "Resources" [ref=e30] [cursor=pointer]:
+                  - text: Resources
+                  - img [ref=e31]
+              - listitem [ref=e33]:
+                - button "Open Source" [ref=e35] [cursor=pointer]:
+                  - text: Open Source
+                  - img [ref=e36]
+              - listitem [ref=e38]:
+                - button "Enterprise" [ref=e40] [cursor=pointer]:
+                  - text: Enterprise
+                  - img [ref=e41]
+              - listitem [ref=e43]:
+                - link "Pricing" [ref=e44] [cursor=pointer]:
+                  - /url: https://github.com/pricing
+                  - generic [ref=e45]: Pricing
+          - generic [ref=e46]:
+            - button "Search or jump to…" [ref=e49] [cursor=pointer]:
+              - img [ref=e51]
+              - generic [ref=e53]: Search or jump to...
+              - img [ref=e55]
+            - link "Sign in" [ref=e59] [cursor=pointer]:
+              - /url: /login?return_to=https%3A%2F%2Fgithub.com%2FVKCOM%2Fvk-api-schema
+            - link "Sign up" [ref=e60] [cursor=pointer]:
+              - /url: /signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source_repo=VKCOM%2Fvk-api-schema
+            - button "Appearance settings" [ref=e63] [cursor=pointer]:
+              - img
+  - main [ref=e67]:
+    - generic [ref=e68]:
+      - generic [ref=e69]:
+        - generic [ref=e71]:
+          - img [ref=e72]
+          - link "VKCOM" [ref=e75] [cursor=pointer]:
+            - /url: /VKCOM
+          - generic [ref=e76]: /
+          - strong [ref=e77]:
+            - link "vk-api-schema" [ref=e78] [cursor=pointer]:
+              - /url: /VKCOM/vk-api-schema
+          - generic [ref=e79]: Public
+        - generic [ref=e80]:
+          - list:
+            - listitem [ref=e81]:
+              - link "You must be signed in to change notification settings" [ref=e82] [cursor=pointer]:
+                - /url: /login?return_to=%2FVKCOM%2Fvk-api-schema
+                - img [ref=e83]
+                - text: Notifications
+            - listitem [ref=e85]:
+              - link "Fork 63" [ref=e86] [cursor=pointer]:
+                - /url: /login?return_to=%2FVKCOM%2Fvk-api-schema
+                - img [ref=e87]
+                - text: Fork
+                - generic "63" [ref=e89]
+            - listitem [ref=e90]:
+              - link "You must be signed in to star a repository" [ref=e92] [cursor=pointer]:
+                - /url: /login?return_to=%2FVKCOM%2Fvk-api-schema
+                - img [ref=e93]
+                - text: Star
+                - generic "218 users starred this repository" [ref=e95]: "218"
+      - navigation "Repository" [ref=e96]:
+        - list [ref=e97]:
+          - listitem [ref=e98]:
+            - link "Code" [ref=e99] [cursor=pointer]:
+              - /url: /VKCOM/vk-api-schema
+              - img [ref=e100]
+              - generic [ref=e102]: Code
+          - listitem [ref=e103]:
+            - link "Issues 44" [ref=e104] [cursor=pointer]:
+              - /url: /VKCOM/vk-api-schema/issues
+              - img [ref=e105]
+              - generic [ref=e108]: Issues
+              - generic "44" [ref=e109]
+          - listitem [ref=e110]:
+            - link "Pull requests 1" [ref=e111] [cursor=pointer]:
+              - /url: /VKCOM/vk-api-schema/pulls
+              - img [ref=e112]
+              - generic [ref=e114]: Pull requests
+              - generic "1" [ref=e115]
+          - listitem [ref=e116]:
+            - link "Actions" [ref=e117] [cursor=pointer]:
+              - /url: /VKCOM/vk-api-schema/actions
+              - img [ref=e118]
+              - generic [ref=e120]: Actions
+          - listitem [ref=e121]:
+            - link "Projects" [ref=e122] [cursor=pointer]:
+              - /url: /VKCOM/vk-api-schema/projects
+              - img [ref=e123]
+              - generic [ref=e125]: Projects
+          - listitem [ref=e126]:
+            - link "Security and quality" [ref=e127] [cursor=pointer]:
+              - /url: /VKCOM/vk-api-schema/security
+              - img [ref=e128]
+              - generic [ref=e130]: Security and quality
+          - listitem [ref=e131]:
+            - link "Insights" [ref=e132] [cursor=pointer]:
+              - /url: /VKCOM/vk-api-schema/pulse
+              - img [ref=e133]
+              - generic [ref=e135]: Insights
+    - generic [ref=e148]:
+      - heading "VKCOM/vk-api-schema" [level=1] [ref=e150]
+      - generic [ref=e151]:
+        - generic [ref=e154]:
+          - generic [ref=e155]:
+            - generic [ref=e156]:
+              - button "master branch" [ref=e158] [cursor=pointer]:
+                - generic [ref=e159]:
+                  - generic [ref=e161]:
+                    - img [ref=e163]
+                    - generic [ref=e166]: master
+                  - generic:
+                    - img
+              - generic [ref=e167]:
+                - link "1 Branch" [ref=e168] [cursor=pointer]:
+                  - /url: /VKCOM/vk-api-schema/branches
+                  - generic [ref=e169]:
+                    - generic:
+                      - img
+                    - generic [ref=e171]:
+                      - strong [ref=e172]: "1"
+                      - text: Branch
+                - link "95 Tags" [ref=e173] [cursor=pointer]:
+                  - /url: /VKCOM/vk-api-schema/tags
+                  - generic [ref=e174]:
+                    - generic:
+                      - img
+                    - generic [ref=e176]:
+                      - strong [ref=e177]: "95"
+                      - text: Tags
+            - generic [ref=e178]:
+              - generic [ref=e182]:
+                - img [ref=e184]
+                - combobox "Go to file" [ref=e186]
+              - button "Code" [ref=e187] [cursor=pointer]:
+                - generic [ref=e188]:
+                  - generic:
+                    - img
+                  - generic [ref=e189]: Code
+                  - generic:
+                    - img
+          - generic [ref=e190]:
+            - generic [ref=e191]:
+              - heading "Folders and files" [level=2] [ref=e192]
+              - table "Folders and files" [ref=e193]:
+                - rowgroup:
+                  - row "Name Last commit message Last commit date":
+                    - columnheader "Name"
+                    - columnheader "Last commit message":
+                      - generic "Last commit message"
+                    - columnheader "Last commit date":
+                      - generic "Last commit date"
+                - rowgroup [ref=e194]:
+                  - row "Latest commit author vkcom JSON-schema for public 5.199 Commit 333481b · Apr 14, 2025last year History 261 Commits" [ref=e195]:
+                    - cell "Latest commit author vkcom JSON-schema for public 5.199 Commit 333481b · Apr 14, 2025last year History 261 Commits" [ref=e196]:
+                      - generic [ref=e197]:
+                        - heading "Latest commit" [level=2] [ref=e198]
+                        - generic [ref=e199]:
+                          - generic [ref=e201]:
+                            - img "author" [ref=e202]
+                            - generic "vkcom" [ref=e203]
+                          - link "JSON-schema for public 5.199" [ref=e207] [cursor=pointer]:
+                            - /url: /VKCOM/vk-api-schema/commit/333481bd082ad747d4873ef4a77f9247097eeef0
+                        - generic [ref=e208]:
+                          - generic [ref=e210]:
+                            - link "Commit 333481b" [ref=e211] [cursor=pointer]:
+                              - /url: /VKCOM/vk-api-schema/commit/333481bd082ad747d4873ef4a77f9247097eeef0
+                              - text: 333481b
+                            - text: ·
+                            - generic "Apr 14, 2025, 20:44 GMT+7" [ref=e212]: Apr 14, 2025last year
+                          - generic [ref=e213]:
+                            - heading "History" [level=2] [ref=e214]
+                            - link "261 Commits" [ref=e215] [cursor=pointer]:
+                              - /url: /VKCOM/vk-api-schema/commits/master/
+                              - generic [ref=e216]:
+                                - generic:
+                                  - img
+                                - generic [ref=e217]: 261 Commits
+                  - row ".github, (Directory) JSON-schema for public 5.199 Jan 20, 2025last year" [ref=e218]:
+                    - cell ".github, (Directory)" [ref=e219]:
+                      - generic [ref=e220]:
+                        - img [ref=e221]
+                        - link ".github, (Directory)" [ref=e226] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/.github
+                          - text: .github
+                    - cell "JSON-schema for public 5.199" [ref=e227]:
+                      - link "JSON-schema for public 5.199" [ref=e230] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/08576fa2fab4d76478070fd7c083f01fe60b74dc
+                    - cell "Jan 20, 2025last year" [ref=e231]:
+                      - generic [ref=e232]: Jan 20, 2025last year
+                  - row "account, (Directory) JSON-schema for public 5.199 Dec 19, 20242 years ago" [ref=e233]:
+                    - cell "account, (Directory)" [ref=e234]:
+                      - generic [ref=e235]:
+                        - img [ref=e236]
+                        - link "account, (Directory)" [ref=e241] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/account
+                          - text: account
+                    - cell "JSON-schema for public 5.199" [ref=e242]:
+                      - link "JSON-schema for public 5.199" [ref=e245] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/73dd29ee86d96af3125aefbaf183203ca4d12737
+                    - cell "Dec 19, 20242 years ago" [ref=e246]:
+                      - generic [ref=e247]: Dec 19, 20242 years ago
+                  - row "address, (Directory) JSON-schema for public 5.199 Apr 19, 20242 years ago" [ref=e248]:
+                    - cell "address, (Directory)" [ref=e249]:
+                      - generic [ref=e250]:
+                        - img [ref=e251]
+                        - link "address, (Directory)" [ref=e256] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/address
+                          - text: address
+                    - cell "JSON-schema for public 5.199" [ref=e257]:
+                      - link "JSON-schema for public 5.199" [ref=e260] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/81bd2be682c626d3efa56d5a859e8567c7a76cbd
+                    - cell "Apr 19, 20242 years ago" [ref=e261]:
+                      - generic [ref=e262]: Apr 19, 20242 years ago
+                  - row "ads, (Directory) JSON-schema for public 5.199 Apr 14, 2025last year" [ref=e263]:
+                    - cell "ads, (Directory)" [ref=e264]:
+                      - generic [ref=e265]:
+                        - img [ref=e266]
+                        - link "ads, (Directory)" [ref=e271] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/ads
+                          - text: ads
+                    - cell "JSON-schema for public 5.199" [ref=e272]:
+                      - link "JSON-schema for public 5.199" [ref=e275] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/333481bd082ad747d4873ef4a77f9247097eeef0
+                    - cell "Apr 14, 2025last year" [ref=e276]:
+                      - generic [ref=e277]: Apr 14, 2025last year
+                  - row "appWidgets, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e278]:
+                    - cell "appWidgets, (Directory)" [ref=e279]:
+                      - generic [ref=e280]:
+                        - img [ref=e281]
+                        - link "appWidgets, (Directory)" [ref=e286] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/appWidgets
+                          - text: appWidgets
+                    - cell "JSON-schema for public 5.199" [ref=e287]:
+                      - link "JSON-schema for public 5.199" [ref=e290] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e291]:
+                      - generic [ref=e292]: Apr 18, 20242 years ago
+                  - row "apps, (Directory) JSON-schema for public 5.199 Jan 20, 2025last year" [ref=e293]:
+                    - cell "apps, (Directory)" [ref=e294]:
+                      - generic [ref=e295]:
+                        - img [ref=e296]
+                        - link "apps, (Directory)" [ref=e301] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/apps
+                          - text: apps
+                    - cell "JSON-schema for public 5.199" [ref=e302]:
+                      - link "JSON-schema for public 5.199" [ref=e305] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/08576fa2fab4d76478070fd7c083f01fe60b74dc
+                    - cell "Jan 20, 2025last year" [ref=e306]:
+                      - generic [ref=e307]: Jan 20, 2025last year
+                  - row "audio, (Directory) JSON-schema for public 5.199 Dec 19, 20242 years ago" [ref=e308]:
+                    - cell "audio, (Directory)" [ref=e309]:
+                      - generic [ref=e310]:
+                        - img [ref=e311]
+                        - link "audio, (Directory)" [ref=e316] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/audio
+                          - text: audio
+                    - cell "JSON-schema for public 5.199" [ref=e317]:
+                      - link "JSON-schema for public 5.199" [ref=e320] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/73dd29ee86d96af3125aefbaf183203ca4d12737
+                    - cell "Dec 19, 20242 years ago" [ref=e321]:
+                      - generic [ref=e322]: Dec 19, 20242 years ago
+                  - row "auth, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e323]:
+                    - cell "auth, (Directory)" [ref=e324]:
+                      - generic [ref=e325]:
+                        - img [ref=e326]
+                        - link "auth, (Directory)" [ref=e331] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/auth
+                          - text: auth
+                    - cell "JSON-schema for public 5.199" [ref=e332]:
+                      - link "JSON-schema for public 5.199" [ref=e335] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e336]:
+                      - generic [ref=e337]: Apr 18, 20242 years ago
+                  - row "base, (Directory) JSON-schema for public 5.199 Apr 14, 2025last year" [ref=e338]:
+                    - cell "base, (Directory)" [ref=e339]:
+                      - generic [ref=e340]:
+                        - img [ref=e341]
+                        - link "base, (Directory)" [ref=e346] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/base
+                          - text: base
+                    - cell "JSON-schema for public 5.199" [ref=e347]:
+                      - link "JSON-schema for public 5.199" [ref=e350] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/333481bd082ad747d4873ef4a77f9247097eeef0
+                    - cell "Apr 14, 2025last year" [ref=e351]:
+                      - generic [ref=e352]: Apr 14, 2025last year
+                  - row "board, (Directory) JSON-schema for public 5.199 Apr 19, 20242 years ago" [ref=e353]:
+                    - cell "board, (Directory)" [ref=e354]:
+                      - generic [ref=e355]:
+                        - img [ref=e356]
+                        - link "board, (Directory)" [ref=e361] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/board
+                          - text: board
+                    - cell "JSON-schema for public 5.199" [ref=e362]:
+                      - link "JSON-schema for public 5.199" [ref=e365] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/81bd2be682c626d3efa56d5a859e8567c7a76cbd
+                    - cell "Apr 19, 20242 years ago" [ref=e366]:
+                      - generic [ref=e367]: Apr 19, 20242 years ago
+                  - row "bugtracker, (Directory) JSON-schema for public 5.199 Jan 20, 2025last year" [ref=e368]:
+                    - cell "bugtracker, (Directory)" [ref=e369]:
+                      - generic [ref=e370]:
+                        - img [ref=e371]
+                        - link "bugtracker, (Directory)" [ref=e376] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/bugtracker
+                          - text: bugtracker
+                    - cell "JSON-schema for public 5.199" [ref=e377]:
+                      - link "JSON-schema for public 5.199" [ref=e380] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/08576fa2fab4d76478070fd7c083f01fe60b74dc
+                    - cell "Jan 20, 2025last year" [ref=e381]:
+                      - generic [ref=e382]: Jan 20, 2025last year
+                  - row "callback, (Directory) JSON-schema for public 5.199 Dec 19, 20242 years ago" [ref=e383]:
+                    - cell "callback, (Directory)" [ref=e384]:
+                      - generic [ref=e385]:
+                        - img [ref=e386]
+                        - link "callback, (Directory)" [ref=e391] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/callback
+                          - text: callback
+                    - cell "JSON-schema for public 5.199" [ref=e392]:
+                      - link "JSON-schema for public 5.199" [ref=e395] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/73dd29ee86d96af3125aefbaf183203ca4d12737
+                    - cell "Dec 19, 20242 years ago" [ref=e396]:
+                      - generic [ref=e397]: Dec 19, 20242 years ago
+                  - row "calls, (Directory) JSON-schema for public 5.199 Dec 19, 20242 years ago" [ref=e398]:
+                    - cell "calls, (Directory)" [ref=e399]:
+                      - generic [ref=e400]:
+                        - img [ref=e401]
+                        - link "calls, (Directory)" [ref=e406] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/calls
+                          - text: calls
+                    - cell "JSON-schema for public 5.199" [ref=e407]:
+                      - link "JSON-schema for public 5.199" [ref=e410] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/73dd29ee86d96af3125aefbaf183203ca4d12737
+                    - cell "Dec 19, 20242 years ago" [ref=e411]:
+                      - generic [ref=e412]: Dec 19, 20242 years ago
+                  - row "comment, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e413]:
+                    - cell "comment, (Directory)" [ref=e414]:
+                      - generic [ref=e415]:
+                        - img [ref=e416]
+                        - link "comment, (Directory)" [ref=e421] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/comment
+                          - text: comment
+                    - cell "JSON-schema for public 5.199" [ref=e422]:
+                      - link "JSON-schema for public 5.199" [ref=e425] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e426]:
+                      - generic [ref=e427]: Apr 18, 20242 years ago
+                  - row "database, (Directory) JSON-schema for public 5.199 Jan 20, 2025last year" [ref=e428]:
+                    - cell "database, (Directory)" [ref=e429]:
+                      - generic [ref=e430]:
+                        - img [ref=e431]
+                        - link "database, (Directory)" [ref=e436] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/database
+                          - text: database
+                    - cell "JSON-schema for public 5.199" [ref=e437]:
+                      - link "JSON-schema for public 5.199" [ref=e440] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/08576fa2fab4d76478070fd7c083f01fe60b74dc
+                    - cell "Jan 20, 2025last year" [ref=e441]:
+                      - generic [ref=e442]: Jan 20, 2025last year
+                  - row "docs, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e443]:
+                    - cell "docs, (Directory)" [ref=e444]:
+                      - generic [ref=e445]:
+                        - img [ref=e446]
+                        - link "docs, (Directory)" [ref=e451] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/docs
+                          - text: docs
+                    - cell "JSON-schema for public 5.199" [ref=e452]:
+                      - link "JSON-schema for public 5.199" [ref=e455] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e456]:
+                      - generic [ref=e457]: Apr 18, 20242 years ago
+                  - row "donut, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e458]:
+                    - cell "donut, (Directory)" [ref=e459]:
+                      - generic [ref=e460]:
+                        - img [ref=e461]
+                        - link "donut, (Directory)" [ref=e466] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/donut
+                          - text: donut
+                    - cell "JSON-schema for public 5.199" [ref=e467]:
+                      - link "JSON-schema for public 5.199" [ref=e470] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e471]:
+                      - generic [ref=e472]: Apr 18, 20242 years ago
+                  - row "downloadedGames, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e473]:
+                    - cell "downloadedGames, (Directory)" [ref=e474]:
+                      - generic [ref=e475]:
+                        - img [ref=e476]
+                        - link "downloadedGames, (Directory)" [ref=e481] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/downloadedGames
+                          - text: downloadedGames
+                    - cell "JSON-schema for public 5.199" [ref=e482]:
+                      - link "JSON-schema for public 5.199" [ref=e485] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e486]:
+                      - generic [ref=e487]: Apr 18, 20242 years ago
+                  - row "events, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e488]:
+                    - cell "events, (Directory)" [ref=e489]:
+                      - generic [ref=e490]:
+                        - img [ref=e491]
+                        - link "events, (Directory)" [ref=e496] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/events
+                          - text: events
+                    - cell "JSON-schema for public 5.199" [ref=e497]:
+                      - link "JSON-schema for public 5.199" [ref=e500] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e501]:
+                      - generic [ref=e502]: Apr 18, 20242 years ago
+                  - row "execute, (Directory) JSON-schema for public 5.199 Aug 22, 20233 years ago" [ref=e503]:
+                    - cell "execute, (Directory)" [ref=e504]:
+                      - generic [ref=e505]:
+                        - img [ref=e506]
+                        - link "execute, (Directory)" [ref=e511] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/execute
+                          - text: execute
+                    - cell "JSON-schema for public 5.199" [ref=e512]:
+                      - link "JSON-schema for public 5.199" [ref=e515] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/ff08ec8436250434e64ae93bd27fa7da2a009324
+                    - cell "Aug 22, 20233 years ago" [ref=e516]:
+                      - generic [ref=e517]: Aug 22, 20233 years ago
+                  - row "fave, (Directory) JSON-schema for public 5.199 Jun 15, 20242 years ago" [ref=e518]:
+                    - cell "fave, (Directory)" [ref=e519]:
+                      - generic [ref=e520]:
+                        - img [ref=e521]
+                        - link "fave, (Directory)" [ref=e526] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/fave
+                          - text: fave
+                    - cell "JSON-schema for public 5.199" [ref=e527]:
+                      - link "JSON-schema for public 5.199" [ref=e530] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/cf3d2d05fbc607320f29af7965dd30d625dc7da0
+                    - cell "Jun 15, 20242 years ago" [ref=e531]:
+                      - generic [ref=e532]: Jun 15, 20242 years ago
+                  - row "friends, (Directory) JSON-schema for public 5.199 Jun 15, 20242 years ago" [ref=e533]:
+                    - cell "friends, (Directory)" [ref=e534]:
+                      - generic [ref=e535]:
+                        - img [ref=e536]
+                        - link "friends, (Directory)" [ref=e541] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/friends
+                          - text: friends
+                    - cell "JSON-schema for public 5.199" [ref=e542]:
+                      - link "JSON-schema for public 5.199" [ref=e545] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/cf3d2d05fbc607320f29af7965dd30d625dc7da0
+                    - cell "Jun 15, 20242 years ago" [ref=e546]:
+                      - generic [ref=e547]: Jun 15, 20242 years ago
+                  - row "gifts, (Directory) JSON-schema for public 5.199 Jan 20, 2025last year" [ref=e548]:
+                    - cell "gifts, (Directory)" [ref=e549]:
+                      - generic [ref=e550]:
+                        - img [ref=e551]
+                        - link "gifts, (Directory)" [ref=e556] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/gifts
+                          - text: gifts
+                    - cell "JSON-schema for public 5.199" [ref=e557]:
+                      - link "JSON-schema for public 5.199" [ref=e560] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/08576fa2fab4d76478070fd7c083f01fe60b74dc
+                    - cell "Jan 20, 2025last year" [ref=e561]:
+                      - generic [ref=e562]: Jan 20, 2025last year
+                  - row "groups, (Directory) JSON-schema for public 5.199 Apr 14, 2025last year" [ref=e563]:
+                    - cell "groups, (Directory)" [ref=e564]:
+                      - generic [ref=e565]:
+                        - img [ref=e566]
+                        - link "groups, (Directory)" [ref=e571] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/groups
+                          - text: groups
+                    - cell "JSON-schema for public 5.199" [ref=e572]:
+                      - link "JSON-schema for public 5.199" [ref=e575] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/333481bd082ad747d4873ef4a77f9247097eeef0
+                    - cell "Apr 14, 2025last year" [ref=e576]:
+                      - generic [ref=e577]: Apr 14, 2025last year
+                  - row "leadForms, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e578]:
+                    - cell "leadForms, (Directory)" [ref=e579]:
+                      - generic [ref=e580]:
+                        - img [ref=e581]
+                        - link "leadForms, (Directory)" [ref=e586] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/leadForms
+                          - text: leadForms
+                    - cell "JSON-schema for public 5.199" [ref=e587]:
+                      - link "JSON-schema for public 5.199" [ref=e590] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e591]:
+                      - generic [ref=e592]: Apr 18, 20242 years ago
+                  - row "likes, (Directory) JSON-schema for public 5.199 Apr 19, 20242 years ago" [ref=e593]:
+                    - cell "likes, (Directory)" [ref=e594]:
+                      - generic [ref=e595]:
+                        - img [ref=e596]
+                        - link "likes, (Directory)" [ref=e601] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/likes
+                          - text: likes
+                    - cell "JSON-schema for public 5.199" [ref=e602]:
+                      - link "JSON-schema for public 5.199" [ref=e605] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/81bd2be682c626d3efa56d5a859e8567c7a76cbd
+                    - cell "Apr 19, 20242 years ago" [ref=e606]:
+                      - generic [ref=e607]: Apr 19, 20242 years ago
+                  - row "link, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e608]:
+                    - cell "link, (Directory)" [ref=e609]:
+                      - generic [ref=e610]:
+                        - img [ref=e611]
+                        - link "link, (Directory)" [ref=e616] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/link
+                          - text: link
+                    - cell "JSON-schema for public 5.199" [ref=e617]:
+                      - link "JSON-schema for public 5.199" [ref=e620] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e621]:
+                      - generic [ref=e622]: Apr 18, 20242 years ago
+                  - row "market, (Directory) JSON-schema for public 5.199 Apr 14, 2025last year" [ref=e623]:
+                    - cell "market, (Directory)" [ref=e624]:
+                      - generic [ref=e625]:
+                        - img [ref=e626]
+                        - link "market, (Directory)" [ref=e631] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/market
+                          - text: market
+                    - cell "JSON-schema for public 5.199" [ref=e632]:
+                      - link "JSON-schema for public 5.199" [ref=e635] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/333481bd082ad747d4873ef4a77f9247097eeef0
+                    - cell "Apr 14, 2025last year" [ref=e636]:
+                      - generic [ref=e637]: Apr 14, 2025last year
+                  - row "messages, (Directory) JSON-schema for public 5.199 Apr 14, 2025last year" [ref=e638]:
+                    - cell "messages, (Directory)" [ref=e639]:
+                      - generic [ref=e640]:
+                        - img [ref=e641]
+                        - link "messages, (Directory)" [ref=e646] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/messages
+                          - text: messages
+                    - cell "JSON-schema for public 5.199" [ref=e647]:
+                      - link "JSON-schema for public 5.199" [ref=e650] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/333481bd082ad747d4873ef4a77f9247097eeef0
+                    - cell "Apr 14, 2025last year" [ref=e651]:
+                      - generic [ref=e652]: Apr 14, 2025last year
+                  - row "newsfeed, (Directory) JSON-schema for public 5.199 Apr 19, 20242 years ago" [ref=e653]:
+                    - cell "newsfeed, (Directory)" [ref=e654]:
+                      - generic [ref=e655]:
+                        - img [ref=e656]
+                        - link "newsfeed, (Directory)" [ref=e661] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/newsfeed
+                          - text: newsfeed
+                    - cell "JSON-schema for public 5.199" [ref=e662]:
+                      - link "JSON-schema for public 5.199" [ref=e665] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/81bd2be682c626d3efa56d5a859e8567c7a76cbd
+                    - cell "Apr 19, 20242 years ago" [ref=e666]:
+                      - generic [ref=e667]: Apr 19, 20242 years ago
+                  - row "notes, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e668]:
+                    - cell "notes, (Directory)" [ref=e669]:
+                      - generic [ref=e670]:
+                        - img [ref=e671]
+                        - link "notes, (Directory)" [ref=e676] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/notes
+                          - text: notes
+                    - cell "JSON-schema for public 5.199" [ref=e677]:
+                      - link "JSON-schema for public 5.199" [ref=e680] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e681]:
+                      - generic [ref=e682]: Apr 18, 20242 years ago
+                  - row "notifications, (Directory) JSON-schema for public 5.199 Apr 19, 20242 years ago" [ref=e683]:
+                    - cell "notifications, (Directory)" [ref=e684]:
+                      - generic [ref=e685]:
+                        - img [ref=e686]
+                        - link "notifications, (Directory)" [ref=e691] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/notifications
+                          - text: notifications
+                    - cell "JSON-schema for public 5.199" [ref=e692]:
+                      - link "JSON-schema for public 5.199" [ref=e695] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/81bd2be682c626d3efa56d5a859e8567c7a76cbd
+                    - cell "Apr 19, 20242 years ago" [ref=e696]:
+                      - generic [ref=e697]: Apr 19, 20242 years ago
+                  - row "oauth, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e698]:
+                    - cell "oauth, (Directory)" [ref=e699]:
+                      - generic [ref=e700]:
+                        - img [ref=e701]
+                        - link "oauth, (Directory)" [ref=e706] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/oauth
+                          - text: oauth
+                    - cell "JSON-schema for public 5.199" [ref=e707]:
+                      - link "JSON-schema for public 5.199" [ref=e710] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e711]:
+                      - generic [ref=e712]: Apr 18, 20242 years ago
+                  - row "orders, (Directory) JSON-schema for public 5.199 Jun 15, 20242 years ago" [ref=e713]:
+                    - cell "orders, (Directory)" [ref=e714]:
+                      - generic [ref=e715]:
+                        - img [ref=e716]
+                        - link "orders, (Directory)" [ref=e721] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/orders
+                          - text: orders
+                    - cell "JSON-schema for public 5.199" [ref=e722]:
+                      - link "JSON-schema for public 5.199" [ref=e725] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/cf3d2d05fbc607320f29af7965dd30d625dc7da0
+                    - cell "Jun 15, 20242 years ago" [ref=e726]:
+                      - generic [ref=e727]: Jun 15, 20242 years ago
+                  - row "owner, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e728]:
+                    - cell "owner, (Directory)" [ref=e729]:
+                      - generic [ref=e730]:
+                        - img [ref=e731]
+                        - link "owner, (Directory)" [ref=e736] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/owner
+                          - text: owner
+                    - cell "JSON-schema for public 5.199" [ref=e737]:
+                      - link "JSON-schema for public 5.199" [ref=e740] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e741]:
+                      - generic [ref=e742]: Apr 18, 20242 years ago
+                  - row "pages, (Directory) JSON-schema for public 5.199 Dec 19, 20242 years ago" [ref=e743]:
+                    - cell "pages, (Directory)" [ref=e744]:
+                      - generic [ref=e745]:
+                        - img [ref=e746]
+                        - link "pages, (Directory)" [ref=e751] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/pages
+                          - text: pages
+                    - cell "JSON-schema for public 5.199" [ref=e752]:
+                      - link "JSON-schema for public 5.199" [ref=e755] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/73dd29ee86d96af3125aefbaf183203ca4d12737
+                    - cell "Dec 19, 20242 years ago" [ref=e756]:
+                      - generic [ref=e757]: Dec 19, 20242 years ago
+                  - row "photos, (Directory) JSON-schema for public 5.199 Jun 15, 20242 years ago" [ref=e758]:
+                    - cell "photos, (Directory)" [ref=e759]:
+                      - generic [ref=e760]:
+                        - img [ref=e761]
+                        - link "photos, (Directory)" [ref=e766] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/photos
+                          - text: photos
+                    - cell "JSON-schema for public 5.199" [ref=e767]:
+                      - link "JSON-schema for public 5.199" [ref=e770] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/cf3d2d05fbc607320f29af7965dd30d625dc7da0
+                    - cell "Jun 15, 20242 years ago" [ref=e771]:
+                      - generic [ref=e772]: Jun 15, 20242 years ago
+                  - row "podcast, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e773]:
+                    - cell "podcast, (Directory)" [ref=e774]:
+                      - generic [ref=e775]:
+                        - img [ref=e776]
+                        - link "podcast, (Directory)" [ref=e781] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/podcast
+                          - text: podcast
+                    - cell "JSON-schema for public 5.199" [ref=e782]:
+                      - link "JSON-schema for public 5.199" [ref=e785] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e786]:
+                      - generic [ref=e787]: Apr 18, 20242 years ago
+                  - row "podcasts, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e788]:
+                    - cell "podcasts, (Directory)" [ref=e789]:
+                      - generic [ref=e790]:
+                        - img [ref=e791]
+                        - link "podcasts, (Directory)" [ref=e796] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/podcasts
+                          - text: podcasts
+                    - cell "JSON-schema for public 5.199" [ref=e797]:
+                      - link "JSON-schema for public 5.199" [ref=e800] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e801]:
+                      - generic [ref=e802]: Apr 18, 20242 years ago
+                  - row "polls, (Directory) JSON-schema for public 5.199 Apr 14, 2025last year" [ref=e803]:
+                    - cell "polls, (Directory)" [ref=e804]:
+                      - generic [ref=e805]:
+                        - img [ref=e806]
+                        - link "polls, (Directory)" [ref=e811] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/polls
+                          - text: polls
+                    - cell "JSON-schema for public 5.199" [ref=e812]:
+                      - link "JSON-schema for public 5.199" [ref=e815] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/333481bd082ad747d4873ef4a77f9247097eeef0
+                    - cell "Apr 14, 2025last year" [ref=e816]:
+                      - generic [ref=e817]: Apr 14, 2025last year
+                  - row "prettyCards, (Directory) JSON-schema for public 5.199 Apr 19, 20242 years ago" [ref=e818]:
+                    - cell "prettyCards, (Directory)" [ref=e819]:
+                      - generic [ref=e820]:
+                        - img [ref=e821]
+                        - link "prettyCards, (Directory)" [ref=e826] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/prettyCards
+                          - text: prettyCards
+                    - cell "JSON-schema for public 5.199" [ref=e827]:
+                      - link "JSON-schema for public 5.199" [ref=e830] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/81bd2be682c626d3efa56d5a859e8567c7a76cbd
+                    - cell "Apr 19, 20242 years ago" [ref=e831]:
+                      - generic [ref=e832]: Apr 19, 20242 years ago
+                  - row "search, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e833]:
+                    - cell "search, (Directory)" [ref=e834]:
+                      - generic [ref=e835]:
+                        - img [ref=e836]
+                        - link "search, (Directory)" [ref=e841] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/search
+                          - text: search
+                    - cell "JSON-schema for public 5.199" [ref=e842]:
+                      - link "JSON-schema for public 5.199" [ref=e845] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e846]:
+                      - generic [ref=e847]: Apr 18, 20242 years ago
+                  - row "secure, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e848]:
+                    - cell "secure, (Directory)" [ref=e849]:
+                      - generic [ref=e850]:
+                        - img [ref=e851]
+                        - link "secure, (Directory)" [ref=e856] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/secure
+                          - text: secure
+                    - cell "JSON-schema for public 5.199" [ref=e857]:
+                      - link "JSON-schema for public 5.199" [ref=e860] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e861]:
+                      - generic [ref=e862]: Apr 18, 20242 years ago
+                  - row "stats, (Directory) JSON-schema for public 5.199 Dec 19, 20242 years ago" [ref=e863]:
+                    - cell "stats, (Directory)" [ref=e864]:
+                      - generic [ref=e865]:
+                        - img [ref=e866]
+                        - link "stats, (Directory)" [ref=e871] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/stats
+                          - text: stats
+                    - cell "JSON-schema for public 5.199" [ref=e872]:
+                      - link "JSON-schema for public 5.199" [ref=e875] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/73dd29ee86d96af3125aefbaf183203ca4d12737
+                    - cell "Dec 19, 20242 years ago" [ref=e876]:
+                      - generic [ref=e877]: Dec 19, 20242 years ago
+                  - row "status, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e878]:
+                    - cell "status, (Directory)" [ref=e879]:
+                      - generic [ref=e880]:
+                        - img [ref=e881]
+                        - link "status, (Directory)" [ref=e886] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/status
+                          - text: status
+                    - cell "JSON-schema for public 5.199" [ref=e887]:
+                      - link "JSON-schema for public 5.199" [ref=e890] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e891]:
+                      - generic [ref=e892]: Apr 18, 20242 years ago
+                  - row "stickers, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e893]:
+                    - cell "stickers, (Directory)" [ref=e894]:
+                      - generic [ref=e895]:
+                        - img [ref=e896]
+                        - link "stickers, (Directory)" [ref=e901] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/stickers
+                          - text: stickers
+                    - cell "JSON-schema for public 5.199" [ref=e902]:
+                      - link "JSON-schema for public 5.199" [ref=e905] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e906]:
+                      - generic [ref=e907]: Apr 18, 20242 years ago
+                  - row "storage, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e908]:
+                    - cell "storage, (Directory)" [ref=e909]:
+                      - generic [ref=e910]:
+                        - img [ref=e911]
+                        - link "storage, (Directory)" [ref=e916] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/storage
+                          - text: storage
+                    - cell "JSON-schema for public 5.199" [ref=e917]:
+                      - link "JSON-schema for public 5.199" [ref=e920] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e921]:
+                      - generic [ref=e922]: Apr 18, 20242 years ago
+                  - row "store, (Directory) JSON-schema for public 5.199 Jun 15, 20242 years ago" [ref=e923]:
+                    - cell "store, (Directory)" [ref=e924]:
+                      - generic [ref=e925]:
+                        - img [ref=e926]
+                        - link "store, (Directory)" [ref=e931] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/store
+                          - text: store
+                    - cell "JSON-schema for public 5.199" [ref=e932]:
+                      - link "JSON-schema for public 5.199" [ref=e935] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/cf3d2d05fbc607320f29af7965dd30d625dc7da0
+                    - cell "Jun 15, 20242 years ago" [ref=e936]:
+                      - generic [ref=e937]: Jun 15, 20242 years ago
+                  - row "stories, (Directory) JSON-schema for public 5.199 Apr 14, 2025last year" [ref=e938]:
+                    - cell "stories, (Directory)" [ref=e939]:
+                      - generic [ref=e940]:
+                        - img [ref=e941]
+                        - link "stories, (Directory)" [ref=e946] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/stories
+                          - text: stories
+                    - cell "JSON-schema for public 5.199" [ref=e947]:
+                      - link "JSON-schema for public 5.199" [ref=e950] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/333481bd082ad747d4873ef4a77f9247097eeef0
+                    - cell "Apr 14, 2025last year" [ref=e951]:
+                      - generic [ref=e952]: Apr 14, 2025last year
+                  - row "streaming, (Directory) JSON-schema for public 5.199 Apr 19, 20242 years ago" [ref=e953]:
+                    - cell "streaming, (Directory)" [ref=e954]:
+                      - generic [ref=e955]:
+                        - img [ref=e956]
+                        - link "streaming, (Directory)" [ref=e961] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/streaming
+                          - text: streaming
+                    - cell "JSON-schema for public 5.199" [ref=e962]:
+                      - link "JSON-schema for public 5.199" [ref=e965] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/81bd2be682c626d3efa56d5a859e8567c7a76cbd
+                    - cell "Apr 19, 20242 years ago" [ref=e966]:
+                      - generic [ref=e967]: Apr 19, 20242 years ago
+                  - row "tasks, (Directory) Fix version script Mar 2, 20215 years ago" [ref=e968]:
+                    - cell "tasks, (Directory)" [ref=e969]:
+                      - generic [ref=e970]:
+                        - img [ref=e971]
+                        - link "tasks, (Directory)" [ref=e976] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/tasks
+                          - text: tasks
+                    - cell "Fix version script" [ref=e977]:
+                      - link "Fix version script" [ref=e980] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/7a1866dbf6a0f61dbcc055cf076df96ab8d912aa
+                    - cell "Mar 2, 20215 years ago" [ref=e981]:
+                      - generic [ref=e982]: Mar 2, 20215 years ago
+                  - row "translations, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e983]:
+                    - cell "translations, (Directory)" [ref=e984]:
+                      - generic [ref=e985]:
+                        - img [ref=e986]
+                        - link "translations, (Directory)" [ref=e991] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/translations
+                          - text: translations
+                    - cell "JSON-schema for public 5.199" [ref=e992]:
+                      - link "JSON-schema for public 5.199" [ref=e995] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e996]:
+                      - generic [ref=e997]: Apr 18, 20242 years ago
+                  - row "users, (Directory) JSON-schema for public 5.199 Jun 15, 20242 years ago" [ref=e998]:
+                    - cell "users, (Directory)" [ref=e999]:
+                      - generic [ref=e1000]:
+                        - img [ref=e1001]
+                        - link "users, (Directory)" [ref=e1006] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/users
+                          - text: users
+                    - cell "JSON-schema for public 5.199" [ref=e1007]:
+                      - link "JSON-schema for public 5.199" [ref=e1010] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/cf3d2d05fbc607320f29af7965dd30d625dc7da0
+                    - cell "Jun 15, 20242 years ago" [ref=e1011]:
+                      - generic [ref=e1012]: Jun 15, 20242 years ago
+                  - row "utils, (Directory) JSON-schema for public 5.199 Jan 20, 2025last year" [ref=e1013]:
+                    - cell "utils, (Directory)" [ref=e1014]:
+                      - generic [ref=e1015]:
+                        - img [ref=e1016]
+                        - link "utils, (Directory)" [ref=e1021] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/utils
+                          - text: utils
+                    - cell "JSON-schema for public 5.199" [ref=e1022]:
+                      - link "JSON-schema for public 5.199" [ref=e1025] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/08576fa2fab4d76478070fd7c083f01fe60b74dc
+                    - cell "Jan 20, 2025last year" [ref=e1026]:
+                      - generic [ref=e1027]: Jan 20, 2025last year
+                  - row "video, (Directory) JSON-schema for public 5.199 Apr 14, 2025last year" [ref=e1028]:
+                    - cell "video, (Directory)" [ref=e1029]:
+                      - generic [ref=e1030]:
+                        - img [ref=e1031]
+                        - link "video, (Directory)" [ref=e1036] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/video
+                          - text: video
+                    - cell "JSON-schema for public 5.199" [ref=e1037]:
+                      - link "JSON-schema for public 5.199" [ref=e1040] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/333481bd082ad747d4873ef4a77f9247097eeef0
+                    - cell "Apr 14, 2025last year" [ref=e1041]:
+                      - generic [ref=e1042]: Apr 14, 2025last year
+                  - row "wall, (Directory) JSON-schema for public 5.199 Jan 20, 2025last year" [ref=e1043]:
+                    - cell "wall, (Directory)" [ref=e1044]:
+                      - generic [ref=e1045]:
+                        - img [ref=e1046]
+                        - link "wall, (Directory)" [ref=e1051] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/wall
+                          - text: wall
+                    - cell "JSON-schema for public 5.199" [ref=e1052]:
+                      - link "JSON-schema for public 5.199" [ref=e1055] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/08576fa2fab4d76478070fd7c083f01fe60b74dc
+                    - cell "Jan 20, 2025last year" [ref=e1056]:
+                      - generic [ref=e1057]: Jan 20, 2025last year
+                  - row "widgets, (Directory) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e1058]:
+                    - cell "widgets, (Directory)" [ref=e1059]:
+                      - generic [ref=e1060]:
+                        - img [ref=e1061]
+                        - link "widgets, (Directory)" [ref=e1066] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/tree/master/widgets
+                          - text: widgets
+                    - cell "JSON-schema for public 5.199" [ref=e1067]:
+                      - link "JSON-schema for public 5.199" [ref=e1070] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e1071]:
+                      - generic [ref=e1072]: Apr 18, 20242 years ago
+                  - row ".gitignore, (File) JSON-schema for public 5.199 Aug 22, 20233 years ago" [ref=e1073]:
+                    - cell ".gitignore, (File)" [ref=e1074]:
+                      - generic [ref=e1075]:
+                        - img [ref=e1076]
+                        - link ".gitignore, (File)" [ref=e1081] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/blob/master/.gitignore
+                          - text: .gitignore
+                    - cell "JSON-schema for public 5.199" [ref=e1082]:
+                      - link "JSON-schema for public 5.199" [ref=e1085] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/ff08ec8436250434e64ae93bd27fa7da2a009324
+                    - cell "Aug 22, 20233 years ago" [ref=e1086]:
+                      - generic [ref=e1087]: Aug 22, 20233 years ago
+                  - row ".npmignore, (File) Add .npmignore Jul 2, 20188 years ago" [ref=e1088]:
+                    - cell ".npmignore, (File)" [ref=e1089]:
+                      - generic [ref=e1090]:
+                        - img [ref=e1091]
+                        - link ".npmignore, (File)" [ref=e1096] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/blob/master/.npmignore
+                          - text: .npmignore
+                    - cell "Add .npmignore" [ref=e1097]:
+                      - link "Add .npmignore" [ref=e1100] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/f1a77409a71e973d2163bbeced5824c0d8042c29
+                    - cell "Jul 2, 20188 years ago" [ref=e1101]:
+                      - generic [ref=e1102]: Jul 2, 20188 years ago
+                  - row "LICENSE, (File) Initial commit Aug 26, 201610 years ago" [ref=e1103]:
+                    - cell "LICENSE, (File)" [ref=e1104]:
+                      - generic [ref=e1105]:
+                        - img [ref=e1106]
+                        - link "LICENSE, (File)" [ref=e1111] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/blob/master/LICENSE
+                          - text: LICENSE
+                    - cell "Initial commit" [ref=e1112]:
+                      - link "Initial commit" [ref=e1115] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/bb7b1b91cd3b61c6fbc5604dc71cbd70939c5737
+                    - cell "Aug 26, 201610 years ago" [ref=e1116]:
+                      - generic [ref=e1117]: Aug 26, 201610 years ago
+                  - row "README.md, (File) JSON-schema for public 5.199 Apr 18, 20242 years ago" [ref=e1118]:
+                    - cell "README.md, (File)" [ref=e1119]:
+                      - generic [ref=e1120]:
+                        - img [ref=e1121]
+                        - link "README.md, (File)" [ref=e1126] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/blob/master/README.md
+                          - text: README.md
+                    - cell "JSON-schema for public 5.199" [ref=e1127]:
+                      - link "JSON-schema for public 5.199" [ref=e1130] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/140b98d57cb619184c223b8b9874f883b7cf48b4
+                    - cell "Apr 18, 20242 years ago" [ref=e1131]:
+                      - generic [ref=e1132]: Apr 18, 20242 years ago
+                  - row "README_COMBINE.md, (File) JSON-schema for public 5.199 Aug 22, 20233 years ago" [ref=e1133]:
+                    - cell "README_COMBINE.md, (File)" [ref=e1134]:
+                      - generic [ref=e1135]:
+                        - img [ref=e1136]
+                        - link "README_COMBINE.md, (File)" [ref=e1141] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/blob/master/README_COMBINE.md
+                          - text: README_COMBINE.md
+                    - cell "JSON-schema for public 5.199" [ref=e1142]:
+                      - link "JSON-schema for public 5.199" [ref=e1145] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/ff08ec8436250434e64ae93bd27fa7da2a009324
+                    - cell "Aug 22, 20233 years ago" [ref=e1146]:
+                      - generic [ref=e1147]: Aug 22, 20233 years ago
+                  - row "combine.sh, (File) JSON-schema for public 5.199 Aug 22, 20233 years ago" [ref=e1148]:
+                    - cell "combine.sh, (File)" [ref=e1149]:
+                      - generic [ref=e1150]:
+                        - img [ref=e1151]
+                        - link "combine.sh, (File)" [ref=e1156] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/blob/master/combine.sh
+                          - text: combine.sh
+                    - cell "JSON-schema for public 5.199" [ref=e1157]:
+                      - link "JSON-schema for public 5.199" [ref=e1160] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/ff08ec8436250434e64ae93bd27fa7da2a009324
+                    - cell "Aug 22, 20233 years ago" [ref=e1161]:
+                      - generic [ref=e1162]: Aug 22, 20233 years ago
+                  - row "composer.json, (File) composer.json added Dec 6, 201610 years ago" [ref=e1163]:
+                    - cell "composer.json, (File)" [ref=e1164]:
+                      - generic [ref=e1165]:
+                        - img [ref=e1166]
+                        - link "composer.json, (File)" [ref=e1171] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/blob/master/composer.json
+                          - text: composer.json
+                    - cell "composer.json added" [ref=e1172]:
+                      - link "composer.json added" [ref=e1175] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/98033f395ec2034d1a6441f6d98608978c4a53db
+                    - cell "Dec 6, 201610 years ago" [ref=e1176]:
+                      - generic [ref=e1177]: Dec 6, 201610 years ago
+                  - row "errors.json, (File) JSON-schema for public 5.199 Apr 14, 2025last year" [ref=e1178]:
+                    - cell "errors.json, (File)" [ref=e1179]:
+                      - generic [ref=e1180]:
+                        - img [ref=e1181]
+                        - link "errors.json, (File)" [ref=e1186] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/blob/master/errors.json
+                          - text: errors.json
+                    - cell "JSON-schema for public 5.199" [ref=e1187]:
+                      - link "JSON-schema for public 5.199" [ref=e1190] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/333481bd082ad747d4873ef4a77f9247097eeef0
+                    - cell "Apr 14, 2025last year" [ref=e1191]:
+                      - generic [ref=e1192]: Apr 14, 2025last year
+                  - row "package.json, (File) JSON-schema for public 5.199 Apr 14, 2025last year" [ref=e1193]:
+                    - cell "package.json, (File)" [ref=e1194]:
+                      - generic [ref=e1195]:
+                        - img [ref=e1196]
+                        - link "package.json, (File)" [ref=e1201] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/blob/master/package.json
+                          - text: package.json
+                    - cell "JSON-schema for public 5.199" [ref=e1202]:
+                      - link "JSON-schema for public 5.199" [ref=e1205] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/333481bd082ad747d4873ef4a77f9247097eeef0
+                    - cell "Apr 14, 2025last year" [ref=e1206]:
+                      - generic [ref=e1207]: Apr 14, 2025last year
+                  - row "schema-errors.json, (File) JSON-schema for public 5.199 Aug 22, 20233 years ago" [ref=e1208]:
+                    - cell "schema-errors.json, (File)" [ref=e1209]:
+                      - generic [ref=e1210]:
+                        - img [ref=e1211]
+                        - link "schema-errors.json, (File)" [ref=e1216] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/blob/master/schema-errors.json
+                          - text: schema-errors.json
+                    - cell "JSON-schema for public 5.199" [ref=e1217]:
+                      - link "JSON-schema for public 5.199" [ref=e1220] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/ff08ec8436250434e64ae93bd27fa7da2a009324
+                    - cell "Aug 22, 20233 years ago" [ref=e1221]:
+                      - generic [ref=e1222]: Aug 22, 20233 years ago
+                  - row "schema.json, (File) JSON-schema for public 5.199 Apr 19, 20242 years ago" [ref=e1223]:
+                    - cell "schema.json, (File)" [ref=e1224]:
+                      - generic [ref=e1225]:
+                        - img [ref=e1226]
+                        - link "schema.json, (File)" [ref=e1231] [cursor=pointer]:
+                          - /url: /VKCOM/vk-api-schema/blob/master/schema.json
+                          - text: schema.json
+                    - cell "JSON-schema for public 5.199" [ref=e1232]:
+                      - link "JSON-schema for public 5.199" [ref=e1235] [cursor=pointer]:
+                        - /url: /VKCOM/vk-api-schema/commit/81bd2be682c626d3efa56d5a859e8567c7a76cbd
+                    - cell "Apr 19, 20242 years ago" [ref=e1236]:
+                      - generic [ref=e1237]: Apr 19, 20242 years ago
+            - generic [ref=e1239]:
+              - generic [ref=e1240]:
+                - heading "Repository files navigation" [level=2] [ref=e1241]
+                - navigation "Repository files" [ref=e1242]:
+                  - list [ref=e1243]:
+                    - listitem [ref=e1244]:
+                      - link "README" [ref=e1245] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e1247]
+                        - generic [ref=e1249]: README
+                    - listitem [ref=e1250]:
+                      - link "MIT license" [ref=e1251] [cursor=pointer]:
+                        - /url: "#"
+                        - img [ref=e1253]
+                        - generic [ref=e1255]: MIT license
+                - button "Outline" [ref=e1256] [cursor=pointer]:
+                  - img [ref=e1257]
+              - article [ref=e1260]:
+                - generic [ref=e1261]:
+                  - heading "VK API JSON Schema" [level=1] [ref=e1262]
+                  - 'link "Permalink: VK API JSON Schema" [ref=e1263] [cursor=pointer]':
+                    - /url: "#vk-api-json-schema"
+                    - img [ref=e1264]
+                - paragraph [ref=e1266]:
+                  - text: This repository contains JSON Schema documents explaining all the VK.COM API objects and methods mentioned
+                  - link "here" [ref=e1267] [cursor=pointer]:
+                    - /url: https://vk.com/dev
+                  - text: .
+                - paragraph [ref=e1268]:
+                  - text: "JSON Schema standard specifications and the most common usage scenarios could be found here:"
+                  - link "http://json-schema.org/" [ref=e1269] [cursor=pointer]:
+                    - /url: http://json-schema.org/
+                - paragraph [ref=e1270]:
+                  - text: These schemes are compatible with JSON Schema version draft-07 and VK API
+                  - link "version" [ref=e1271] [cursor=pointer]:
+                    - /url: https://vk.com/dev/versions
+                  - text: 5.199.
+                - paragraph [ref=e1272]:
+                  - link "Packagist":
+                    - /url: https://packagist.org/packages/vkcom/vk-api-schema
+                    - img "Packagist"
+                - generic [ref=e1273]:
+                  - heading "Structure" [level=2] [ref=e1274]
+                  - 'link "Permalink: Structure" [ref=e1275] [cursor=pointer]':
+                    - /url: "#structure"
+                    - img [ref=e1276]
+                - paragraph [ref=e1278]: Repository contains several .json files.
+                - list [ref=e1279]:
+                  - listitem [ref=e1280]:
+                    - text: "\"methods.json\" describes all of VK API methods (could be found at"
+                    - link "this page" [ref=e1281] [cursor=pointer]:
+                      - /url: https://vk.com/dev/methods
+                    - text: ).
+                  - listitem [ref=e1282]: "\"objects.json\" describes objects which are used in methods responses."
+                  - listitem [ref=e1283]: "\"responses.json\" describes methods responses structure."
+                  - listitem [ref=e1284]: "\"errors.json\" describes possible method errors."
+                  - listitem [ref=e1285]: "\"schema.json\" describes additional keywords used in our implementation, such as \"method\", \"error\", \"parameter\" and others so to extend the canonical specification for our needs."
+                - generic [ref=e1286]:
+                  - heading "Samples" [level=2] [ref=e1287]
+                  - 'link "Permalink: Samples" [ref=e1288] [cursor=pointer]':
+                    - /url: "#samples"
+                    - img [ref=e1289]
+                - generic [ref=e1291]:
+                  - heading "users.get method description:" [level=3] [ref=e1292]
+                  - 'link "Permalink: users.get method description:" [ref=e1293] [cursor=pointer]':
+                    - /url: "#usersget-method-description"
+                    - img [ref=e1294]
+                - generic [ref=e1296]:
+                  - generic [ref=e1297]:
+                    - text: "{ \"name\":"
+                    - generic [ref=e1298]: "\"users.get\""
+                    - text: ", \"description\":"
+                    - generic [ref=e1299]: "\"Returns detailed information on users.\""
+                    - text: ", \"open\": true, \"parameters\": [ { \"name\":"
+                    - generic [ref=e1300]: "\"user_ids\""
+                    - text: ", \"description\":"
+                    - generic [ref=e1301]: "\"User IDs or screen names ('screen_name'). By default, current user ID.\""
+                    - text: ", \"type\":"
+                    - generic [ref=e1302]: "\"array\""
+                    - text: ", \"items\": { \"type\":"
+                    - generic [ref=e1303]: "\"string\""
+                    - text: "}, \"maxItems\": 1000 }, { \"name\":"
+                    - generic [ref=e1304]: "\"domains\""
+                    - text: ", \"type\":"
+                    - generic [ref=e1305]: "\"array\""
+                    - text: ", \"items\": { \"type\":"
+                    - generic [ref=e1306]: "\"string\""
+                    - text: "} }, { \"name\":"
+                    - generic [ref=e1307]: "\"fields\""
+                    - text: ", \"description\":"
+                    - generic [ref=e1308]: "\"Profile fields to return. Sample values: 'nickname', 'screen_name', 'sex', 'bdate' (birthdate), 'city', 'country', 'timezone', 'photo', 'photo_medium', 'photo_big', 'has_mobile', 'contacts', 'education', 'online', 'counters', 'relation', 'last_seen', 'activity', 'can_write_private_message', 'can_see_all_posts', 'can_post', 'universities';\""
+                    - text: ", \"type\":"
+                    - generic [ref=e1309]: "\"array\""
+                    - text: ", \"items\": { \"type\":"
+                    - generic [ref=e1310]: "\"string\""
+                    - text: "} }, { \"name\":"
+                    - generic [ref=e1311]: "\"name_case\""
+                    - text: ", \"description\":"
+                    - generic [ref=e1312]: "\"Case for declension of user name and surname:; 'nom' — nominative (default); 'gen' — genitive ; 'dat' — dative; 'acc' — accusative ; 'ins' — instrumental ; 'abl' — prepositional\""
+                    - text: ", \"type\":"
+                    - generic [ref=e1313]: "\"string\""
+                    - text: "} ], \"responses\": { \"response\": { \"$ref\":"
+                    - generic [ref=e1314]: "\"responses.json#/definitions/users_get_response\""
+                    - text: "} } }"
+                  - button "Copy code to clipboard" [ref=e1316] [cursor=pointer]:
+                    - img [ref=e1317]
+                - generic [ref=e1320]:
+                  - heading "market_market_album object description:" [level=3] [ref=e1321]
+                  - 'link "Permalink: market_market_album object description:" [ref=e1322] [cursor=pointer]':
+                    - /url: "#market_market_album-object-description"
+                    - img [ref=e1323]
+                - generic [ref=e1325]:
+                  - generic [ref=e1326]:
+                    - text: "\"market_market_album\": { \"type\":"
+                    - generic [ref=e1327]: "\"object\""
+                    - text: ", \"properties\": { \"id\": { \"type\":"
+                    - generic [ref=e1328]: "\"integer\""
+                    - text: ", \"description\":"
+                    - generic [ref=e1329]: "\"Market album ID\""
+                    - text: ", \"minimum\": 1 }, \"owner_id\": { \"type\":"
+                    - generic [ref=e1330]: "\"integer\""
+                    - text: ", \"description\":"
+                    - generic [ref=e1331]: "\"Market album owner's ID\""
+                    - text: "}, \"title\": { \"type\":"
+                    - generic [ref=e1332]: "\"string\""
+                    - text: ", \"description\":"
+                    - generic [ref=e1333]: "\"Market album title\""
+                    - text: "}, \"count\": { \"type\":"
+                    - generic [ref=e1334]: "\"integer\""
+                    - text: ", \"description\":"
+                    - generic [ref=e1335]: "\"Items number\""
+                    - text: ", \"minimum\": 0 }, \"updated_time\": { \"type\":"
+                    - generic [ref=e1336]: "\"integer\""
+                    - text: ", \"description\":"
+                    - generic [ref=e1337]: "\"Date when album has been updated last time in Unixtime\""
+                    - text: ", \"minimum\": 0 }, \"photo\": { \"$ref\":"
+                    - generic [ref=e1338]: "\"#/definitions/photos_photo\""
+                    - text: "} }, \"required\": ["
+                    - generic [ref=e1339]: "\"id\""
+                    - text: ","
+                    - generic [ref=e1340]: "\"owner_id\""
+                    - text: ","
+                    - generic [ref=e1341]: "\"title\""
+                    - text: ","
+                    - generic [ref=e1342]: "\"count\""
+                    - text: ","
+                    - generic [ref=e1343]: "\"updated_time\""
+                    - text: "] }"
+                  - button "Copy code to clipboard" [ref=e1345] [cursor=pointer]:
+                    - img [ref=e1346]
+        - generic [ref=e1352]:
+          - generic [ref=e1355]:
+            - heading "About" [level=2] [ref=e1356]
+            - paragraph [ref=e1357]: JSON Schema of VK API
+            - heading "Topics" [level=3] [ref=e1358]
+            - generic [ref=e1360]:
+              - link "api" [ref=e1361] [cursor=pointer]:
+                - /url: /topics/api
+              - link "vk" [ref=e1362] [cursor=pointer]:
+                - /url: /topics/vk
+              - link "vkontakte" [ref=e1363] [cursor=pointer]:
+                - /url: /topics/vkontakte
+              - link "vkontakte-api" [ref=e1364] [cursor=pointer]:
+                - /url: /topics/vkontakte-api
+              - link "vk-api" [ref=e1365] [cursor=pointer]:
+                - /url: /topics/vk-api
+              - link "vkapi" [ref=e1366] [cursor=pointer]:
+                - /url: /topics/vkapi
+            - heading "Resources" [level=3] [ref=e1367]
+            - link "Readme" [ref=e1369] [cursor=pointer]:
+              - /url: "#readme-ov-file"
+              - img [ref=e1370]
+              - text: Readme
+            - heading "License" [level=3] [ref=e1372]
+            - link "MIT license" [ref=e1374] [cursor=pointer]:
+              - /url: "#MIT-1-ov-file"
+              - img [ref=e1375]
+              - text: MIT license
+            - link "Activity" [ref=e1378] [cursor=pointer]:
+              - /url: /VKCOM/vk-api-schema/activity
+              - img [ref=e1379]
+              - text: Activity
+            - link "Custom properties" [ref=e1382] [cursor=pointer]:
+              - /url: /VKCOM/vk-api-schema/custom-properties
+              - img [ref=e1383]
+              - text: Custom properties
+            - heading "Stars" [level=3] [ref=e1385]
+            - link "218 stars" [ref=e1387] [cursor=pointer]:
+              - /url: /VKCOM/vk-api-schema/stargazers
+              - img [ref=e1388]
+              - strong [ref=e1390]: "218"
+              - text: stars
+            - heading "Watchers" [level=3] [ref=e1391]
+            - link "27 watching" [ref=e1393] [cursor=pointer]:
+              - /url: /VKCOM/vk-api-schema/watchers
+              - img [ref=e1394]
+              - strong [ref=e1396]: "27"
+              - text: watching
+            - heading "Forks" [level=3] [ref=e1397]
+            - link "63 forks" [ref=e1399] [cursor=pointer]:
+              - /url: /VKCOM/vk-api-schema/forks
+              - img [ref=e1400]
+              - strong [ref=e1402]: "63"
+              - text: forks
+            - link "Report repository" [ref=e1404] [cursor=pointer]:
+              - /url: /contact/report-content?content_url=https%3A%2F%2Fgithub.com%2FVKCOM%2Fvk-api-schema&report=VKCOM+%28user%29
+          - generic [ref=e1406]:
+            - heading "Releases" [level=2] [ref=e1407]:
+              - link "Releases" [ref=e1408] [cursor=pointer]:
+                - /url: /VKCOM/vk-api-schema/releases
+            - link "95 tags" [ref=e1409] [cursor=pointer]:
+              - /url: /VKCOM/vk-api-schema/tags
+              - img [ref=e1410]
+              - text: 95 tags
+          - generic [ref=e1413]:
+            - heading "Packages" [level=2] [ref=e1414]:
+              - link "Packages" [ref=e1415] [cursor=pointer]:
+                - /url: /orgs/VKCOM/packages?repo_name=vk-api-schema
+            - generic [ref=e1416]: No packages published
+          - generic [ref=e1418]:
+            - heading "Contributors 14" [level=2] [ref=e1419]:
+              - link "Contributors 14" [ref=e1420] [cursor=pointer]:
+                - /url: /VKCOM/vk-api-schema/graphs/contributors
+                - text: Contributors
+                - generic "14" [ref=e1421]
+            - list [ref=e1422]:
+              - listitem [ref=e1423]:
+                - link "@tsivarev" [ref=e1424] [cursor=pointer]:
+                  - /url: https://github.com/tsivarev
+                  - img "@tsivarev" [ref=e1425]
+              - listitem [ref=e1426]:
+                - link "@fedorov-xyz" [ref=e1427] [cursor=pointer]:
+                  - /url: https://github.com/fedorov-xyz
+                  - img "@fedorov-xyz" [ref=e1428]
+              - listitem [ref=e1429]:
+                - link "@YuryBandarchuk16" [ref=e1430] [cursor=pointer]:
+                  - /url: https://github.com/YuryBandarchuk16
+                  - img "@YuryBandarchuk16" [ref=e1431]
+              - listitem [ref=e1432]:
+                - link "@apiwoman" [ref=e1433] [cursor=pointer]:
+                  - /url: https://github.com/apiwoman
+                  - img "@apiwoman" [ref=e1434]
+              - listitem [ref=e1435]:
+                - link "@klimrmad" [ref=e1436] [cursor=pointer]:
+                  - /url: https://github.com/klimrmad
+                  - img "@klimrmad" [ref=e1437]
+              - listitem [ref=e1438]:
+                - link "@Mobyman" [ref=e1439] [cursor=pointer]:
+                  - /url: https://github.com/Mobyman
+                  - img "@Mobyman" [ref=e1440]
+              - listitem [ref=e1441]:
+                - link "@aotd1" [ref=e1442] [cursor=pointer]:
+                  - /url: https://github.com/aotd1
+                  - img "@aotd1" [ref=e1443]
+              - listitem [ref=e1444]:
+                - link "@alsemyonov" [ref=e1445] [cursor=pointer]:
+                  - /url: https://github.com/alsemyonov
+                  - img "@alsemyonov" [ref=e1446]
+              - listitem [ref=e1447]:
+                - link "@nk2ge5k" [ref=e1448] [cursor=pointer]:
+                  - /url: https://github.com/nk2ge5k
+                  - img "@nk2ge5k" [ref=e1449]
+              - listitem [ref=e1450]:
+                - link "@alatushkin" [ref=e1451] [cursor=pointer]:
+                  - /url: https://github.com/alatushkin
+                  - img "@alatushkin" [ref=e1452]
+              - listitem [ref=e1453]:
+                - link "@allebdev" [ref=e1454] [cursor=pointer]:
+                  - /url: https://github.com/allebdev
+                  - img "@allebdev" [ref=e1455]
+              - listitem [ref=e1456]:
+                - link "@StrixG" [ref=e1457] [cursor=pointer]:
+                  - /url: https://github.com/StrixG
+                  - img "@StrixG" [ref=e1458]
+              - listitem [ref=e1459]:
+                - link "@pale-emperor" [ref=e1460] [cursor=pointer]:
+                  - /url: https://github.com/pale-emperor
+                  - img "@pale-emperor" [ref=e1461]
+              - listitem [ref=e1462]:
+                - link "@VKAdminU" [ref=e1463] [cursor=pointer]:
+                  - /url: https://github.com/VKAdminU
+                  - img "@VKAdminU" [ref=e1464]
+          - generic [ref=e1466]:
+            - heading "Languages" [level=2] [ref=e1467]
+            - list [ref=e1471]:
+              - listitem [ref=e1472]:
+                - link "Shell 100.0%" [ref=e1473] [cursor=pointer]:
+                  - /url: /VKCOM/vk-api-schema/search?l=shell
+                  - img [ref=e1474]
+                  - generic [ref=e1476]: Shell
+                  - generic [ref=e1477]: 100.0%
+  - contentinfo [ref=e1479]:
+    - heading "Footer" [level=2] [ref=e1480]
+    - generic [ref=e1481]:
+      - generic [ref=e1482]:
+        - link "GitHub Homepage" [ref=e1483] [cursor=pointer]:
+          - /url: https://github.com
+          - img [ref=e1484]
+        - generic [ref=e1486]: © 2026 GitHub, Inc.
+      - navigation "Footer" [ref=e1487]:
+        - heading "Footer navigation" [level=3] [ref=e1488]
+        - list "Footer navigation" [ref=e1489]:
+          - listitem [ref=e1490]:
+            - link "Terms" [ref=e1491] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/github-terms/github-terms-of-service
+          - listitem [ref=e1492]:
+            - link "Privacy" [ref=e1493] [cursor=pointer]:
+              - /url: https://docs.github.com/site-policy/privacy-policies/github-privacy-statement
+          - listitem [ref=e1494]:
+            - link "Security" [ref=e1495] [cursor=pointer]:
+              - /url: https://github.com/security
+          - listitem [ref=e1496]:
+            - link "Status" [ref=e1497] [cursor=pointer]:
+              - /url: https://www.githubstatus.com/
+          - listitem [ref=e1498]:
+            - link "Community" [ref=e1499] [cursor=pointer]:
+              - /url: https://github.community/
+          - listitem [ref=e1500]:
+            - link "Docs" [ref=e1501] [cursor=pointer]:
+              - /url: https://docs.github.com/
+          - listitem [ref=e1502]:
+            - link "Contact" [ref=e1503] [cursor=pointer]:
+              - /url: https://support.github.com?tags=dotcom-footer
+          - listitem [ref=e1504]:
+            - button "Manage cookies" [ref=e1506] [cursor=pointer]
+          - listitem [ref=e1507]:
+            - button "Do not share my personal information" [ref=e1509] [cursor=pointer]
