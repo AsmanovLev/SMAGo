@@ -1,6 +1,12 @@
 # SMAGo — Self-Modifying AI Agent
 
-> ⚠️ **DEPRECATED.** The Go implementation of SMAGo is no longer developed. Active work continues in the Elixir rewrite: **[SMAXr](https://github.com/AsmanovLev/SMAXr)**. See the link for the multi-messenger, hot-reloading, eval-based self-modifying agent that came out of this codebase.
+> ## ⚠️ DEPRECATED — this project is no longer developed
+>
+> SMAGo was a Go-based self-modifying AI agent. It has been **superseded by [SMAXr](https://github.com/AsmanovLev/SMAXr)**, the Elixir rewrite.
+>
+> SMAXr keeps the self-modify idea, swaps Go for the BEAM, adds hot-reload of `.ex` files via `apply_patch`, an `eval` tool that compiles `defmodule` blocks live, an async turn loop with `/stop` and queued-message auto-inject, and a clean `.env`-based setup.
+>
+> **👉 Go here: [github.com/AsmanovLev/SMAXr](https://github.com/AsmanovLev/SMAXr)**
 
 ---
 
@@ -10,7 +16,7 @@ A lightweight Go agent that communicates via Telegram, calls any OpenAI-compatib
 
 SMAGo runs as a Windows system tray application with a supervisor that auto-restarts on crash and manages hot-swap upgrades.
 
-> **Written entirely by AI.** Minimax M3 and DeepSeek via OpenCode created the architecture and initial boilerplate. Then SMAGo via MiMo V2.5 (vision) developed itself. Human role: idea, direction, code review.
+> **Written entirely by AI.** Minimax M3 and DeepSeek via OpenCode created the architecture and initial boilerplate. Then SMAGo via mimo-v2.5 (vision) developed itself. Human role: idea, direction, code review.
 
 ### Demo
 
