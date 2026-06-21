@@ -1,0 +1,16 @@
+[   43778ms] [WARNING] The resource https://max.ru/_app/immutable/assets/TechLandingButton.Dr--mBck.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://max.ru/:0
+[   43778ms] [WARNING] The resource https://max.ru/_app/immutable/assets/2.C0W_aNDV.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://max.ru/:0
+[   43778ms] [WARNING] The resource https://max.ru/_app/immutable/assets/0.DgaonB1M.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://max.ru/:0
+[   43778ms] [WARNING] The resource https://max.ru/_app/immutable/assets/8.GC6j936q.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://max.ru/:0
+[   63805ms] [WARNING] The resource https://max.ru/_app/immutable/assets/TechLandingButton.Dr--mBck.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://max.ru/:0
+[   63805ms] [WARNING] The resource https://max.ru/_app/immutable/assets/2.C0W_aNDV.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://max.ru/:0
+[   63805ms] [WARNING] The resource https://max.ru/_app/immutable/assets/0.DgaonB1M.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://max.ru/:0
+[   63805ms] [WARNING] The resource https://max.ru/_app/immutable/assets/8.GC6j936q.css was preloaded using link preload but not used within a few seconds from the window's load event. Please make sure it has an appropriate `as` value and it is preloaded intentionally. @ https://max.ru/:0
+[   79826ms] [LOG] [0] connection attempt #0 @ https://web.max.ru/_app/immutable/chunks/B-dCkrnB.js:21
+[   79826ms] [LOG] [0] awaiting network... @ https://web.max.ru/_app/immutable/chunks/B-dCkrnB.js:21
+[   79831ms] [LOG] [0] network online, connecting... @ https://web.max.ru/_app/immutable/chunks/B-dCkrnB.js:21
+[   80195ms] [LOG] [0] connection opened @ https://web.max.ru/_app/immutable/chunks/B-dCkrnB.js:21
+[   80259ms] [LOG] [0] session inited @ https://web.max.ru/_app/immutable/chunks/B-dCkrnB.js:21
+[   82084ms] [LOG] [0] user logged in @ https://web.max.ru/_app/immutable/chunks/B-dCkrnB.js:21
+[  109704ms] [LOG] AudioContext unlocking... @ https://web.max.ru/_app/immutable/chunks/C2fUzyTp.js:103
+[  109704ms] [LOG] AudioContext unlocked @ https://web.max.ru/_app/immutable/chunks/C2fUzyTp.js:103

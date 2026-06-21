@@ -1,0 +1,10 @@
+[    5897ms] [ERROR] Refused to get unsafe header "X-Sg-Cs" @ https://www.google.com/search?q=telegram+bot+api+editMessageText+method+documentation:41
+[    5897ms] [ERROR] Refused to get unsafe header "X-Sorry-Redirect" @ https://www.google.com/search?q=telegram+bot+api+editMessageText+method+documentation:41
+[    6441ms] [ERROR] Refused to get unsafe header "X-Sg-Cs" @ https://www.google.com/search?q=telegram+bot+api+editMessageText+method+documentation:41
+[    6441ms] [ERROR] Refused to get unsafe header "X-Sorry-Redirect" @ https://www.google.com/search?q=telegram+bot+api+editMessageText+method+documentation:41
+[    7640ms] [ERROR] Refused to get unsafe header "X-Sg-Cs" @ https://www.google.com/search?q=telegram+bot+api+editMessageText+method+documentation:41
+[    7640ms] [ERROR] Refused to get unsafe header "X-Sorry-Redirect" @ https://www.google.com/search?q=telegram+bot+api+editMessageText+method+documentation:41
+[    7926ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/roboto/v48/KFO7CnqEu92Fr1ME7kSn66aGLdTylUAMa3yUBA.woff2 @ https://ogs.google.com/u/0/widget/app?eom=1&awwd=1&gpa=3&em=2&dpi=89978449&origin=https%3A%2F%2Fwww.google.com&cn=app&pid=1&spid=1&hl=en:0
+[    7926ms] [INFO] Slow network is detected. See https://www.chromestatus.com/feature/5636954674692096 for more details. Fallback font will be used while loading: https://fonts.gstatic.com/s/googlesans/v62/4UaRrENHsxJlGDuGo1OIlJfC6l_24rlCK1Yo_Iq2vgCI.woff2 @ https://ogs.google.com/u/0/widget/app?eom=1&awwd=1&gpa=3&em=2&dpi=89978449&origin=https%3A%2F%2Fwww.google.com&cn=app&pid=1&spid=1&hl=en:0
+[    8212ms] [ERROR] Refused to get unsafe header "X-Sg-Cs" @ https://www.google.com/search?q=telegram+bot+api+editMessageText+method+documentation:41
+[    8213ms] [ERROR] Refused to get unsafe header "X-Sorry-Redirect" @ https://www.google.com/search?q=telegram+bot+api+editMessageText+method+documentation:41

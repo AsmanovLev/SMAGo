@@ -1,0 +1,10 @@
+[      65ms] [ERROR] Failed to launch 'max://max.ru/business_support_bot' because the scheme does not have a registered handler. @ https://max.ru/business_support_bot:0
+[    3624ms] [ERROR] Failed to launch 'max://max.ru/business_support_bot' because the scheme does not have a registered handler. @ https://max.ru/business_support_bot:0
+[   10095ms] [LOG] [0] connection attempt #0 @ https://web.max.ru/_app/immutable/chunks/B-dCkrnB.js:21
+[   10096ms] [LOG] [0] awaiting network... @ https://web.max.ru/_app/immutable/chunks/B-dCkrnB.js:21
+[   10101ms] [LOG] [0] network online, connecting... @ https://web.max.ru/_app/immutable/chunks/B-dCkrnB.js:21
+[   11163ms] [LOG] [0] connection opened @ https://web.max.ru/_app/immutable/chunks/B-dCkrnB.js:21
+[   11255ms] [LOG] [0] session inited @ https://web.max.ru/_app/immutable/chunks/B-dCkrnB.js:21
+[   11509ms] [LOG] [0] user logged in @ https://web.max.ru/_app/immutable/chunks/B-dCkrnB.js:21
+[   16426ms] [LOG] AudioContext unlocking... @ https://web.max.ru/_app/immutable/chunks/C2fUzyTp.js:103
+[   16426ms] [LOG] AudioContext unlocked @ https://web.max.ru/_app/immutable/chunks/C2fUzyTp.js:103

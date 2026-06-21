@@ -1,0 +1,490 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - link "hex logo Hex" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "hex logo" [ref=e8]
+          - generic [ref=e9]: Hex
+        - generic [ref=e10]:
+          - search [ref=e14]:
+            - generic [ref=e15]:
+              - generic:
+                - img
+              - combobox "Find packages" [ref=e16]
+              - generic [ref=e17]: Find packages
+          - link "Packages" [ref=e18] [cursor=pointer]:
+            - /url: /packages
+          - link "Pricing" [ref=e19] [cursor=pointer]:
+            - /url: /pricing
+          - link "Docs" [ref=e20] [cursor=pointer]:
+            - /url: /docs
+          - button "Change theme" [ref=e22] [cursor=pointer]:
+            - generic [ref=e23]: Change color theme
+            - img [ref=e25]
+          - link "Log In" [ref=e28] [cursor=pointer]:
+            - /url: /login
+    - main [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - link "Packages" [ref=e34] [cursor=pointer]:
+              - /url: /packages
+              - img [ref=e35]
+              - text: Packages
+            - generic [ref=e38]:
+              - heading "courier" [level=1] [ref=e39]:
+                - link "courier" [ref=e40] [cursor=pointer]:
+                  - /url: /packages/courier
+              - group [ref=e41]:
+                - generic "0.1.0" [ref=e42] [cursor=pointer]:
+                  - img [ref=e43]
+                  - generic [ref=e47]: 0.1.0
+                  - img [ref=e48]
+            - paragraph [ref=e51]: Adapter based email delivery
+          - generic [ref=e52]:
+            - link "HexDocs" [ref=e53] [cursor=pointer]:
+              - /url: https://courier.hexdocs.pm/
+              - img [ref=e54]
+              - generic [ref=e57]: HexDocs
+            - link "HexPreview" [ref=e58] [cursor=pointer]:
+              - /url: https://preview.hex.pm/preview/courier/0.1.0
+              - img [ref=e59]
+              - generic [ref=e62]: HexPreview
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - link "Readme" [ref=e66] [cursor=pointer]:
+              - /url: /packages/courier
+              - img [ref=e67]
+              - generic [ref=e70]: Readme
+            - link "4 Versions" [ref=e71] [cursor=pointer]:
+              - /url: /packages/courier/versions
+              - img [ref=e72]
+              - generic [ref=e76]: 4 Versions
+            - link "3 Dependencies" [ref=e77] [cursor=pointer]:
+              - /url: /packages/courier/dependencies
+              - img [ref=e78]
+              - generic [ref=e81]: 3 Dependencies
+            - link "1 Dependant" [ref=e82] [cursor=pointer]:
+              - /url: /packages/courier/dependents
+              - img [ref=e83]
+              - generic [ref=e86]: 1 Dependant
+            - link "Activity" [ref=e87] [cursor=pointer]:
+              - /url: /packages/courier/audit-logs
+              - img [ref=e88]
+              - generic [ref=e91]: Activity
+          - generic [ref=e92]:
+            - iframe [ref=e96]:
+              - article [ref=f30e2]:
+                - heading "Courier" [level=1] [ref=f30e3]
+                - paragraph [ref=f30e4]: Mail delivery for Elixir
+                - paragraph [ref=f30e5]:
+                  - link "Build Status" [ref=f30e6] [cursor=pointer]:
+                    - /url: http://travis-ci.org/DockYard/courier
+                    - img "Build Status" [ref=f30e192]
+                - paragraph [ref=f30e7]: Courier is an OTP adapter-based mail delivery system for Elixir applications. It means serious business for sending emails.
+                - paragraph [ref=f30e8]
+                - paragraph [ref=f30e9]:
+                  - text: It depends upon
+                  - link "Mail" [ref=f30e10] [cursor=pointer]:
+                    - /url: https://github.com/DockYard/elixir-mail
+                    - code [ref=f30e11]: Mail
+                  - text: for composing the message.
+                - paragraph [ref=f30e12]: "First create your mailer:"
+                - code [ref=f30e14]:
+                  - generic [ref=f30e15]: defmodule MyApp.Mailer do
+                  - generic [ref=f30e16]: "use Courier, otp_app: :my_app"
+                  - generic [ref=f30e17]: end
+                - paragraph [ref=f30e18]:
+                  - text: After this we need to add the Courier Supervisor to your tree. For example, if you are using in a Phoenix app you can edit
+                  - code [ref=f30e19]: lib/my_app.ex
+                - code [ref=f30e21]:
+                  - generic [ref=f30e22]: def start(_type, _args) do
+                  - generic [ref=f30e23]: children = [
+                  - generic [ref=f30e24]: supervisor(MyApp.Repo, []),
+                  - generic [ref=f30e25]: supervisor(MyApp.Endpoint, []),
+                  - generic [ref=f30e27]: "# Mailer Supervisor"
+                  - generic [ref=f30e28]: supervisor(MyApp.Mailer, [])
+                  - generic [ref=f30e29]: "]"
+                  - generic [ref=f30e30]: end
+                - paragraph [ref=f30e31]:
+                  - text: Next set the default adapter in
+                  - code [ref=f30e32]: config/config.exs
+                  - text: or
+                  - code [ref=f30e33]: "config/{environment}.exs"
+                  - text: ":"
+                - code [ref=f30e35]:
+                  - generic [ref=f30e36]: config :my_app, MyApp.Mailer,
+                  - generic [ref=f30e37]: "adapter: Courier.Adapters.SMTP,"
+                  - generic [ref=f30e38]: "relay: \"smtp.myserver.com\","
+                  - generic [ref=f30e39]: "hostname: \"my-mail-server\","
+                  - generic [ref=f30e40]: "port: 2525,"
+                  - generic [ref=f30e41]: "username: System.get_env(\"COURIER_USERNAME\"),"
+                  - generic [ref=f30e42]: "password: System.get_env(\"COURIER_PASSWORD\")"
+                - paragraph [ref=f30e43]:
+                  - text: More configuration options for each adapter is in the
+                  - link "Adapters" [ref=f30e44] [cursor=pointer]:
+                    - /url: "#user-content-Adapters"
+                  - text: section.
+                - paragraph [ref=f30e45]: "Then you can compose and deliver the message:"
+                - code [ref=f30e47]:
+                  - generic [ref=f30e48]: Mail.build_multipart()
+                  - generic [ref=f30e49]: "|> Mail.put_to(\"friend@example.com\")"
+                  - generic [ref=f30e50]: "|> Mail.put_from(\"me@example.com\")"
+                  - generic [ref=f30e51]: "|> Mail.put_subject(\"How are things?\")"
+                  - generic [ref=f30e52]: "|> Mail.put_text(\"Let's meet for drinks!\")"
+                  - generic [ref=f30e53]: "|> Mail.put_html(\"<p>Let's meet for drinks!</p>\")"
+                  - generic [ref=f30e54]: "|> MyApp.Mailer.deliver()"
+                - paragraph [ref=f30e55]: Courier will deliver the message through the adapter that is configured.
+                - heading "Deliveries" [level=2] [ref=f30e56]
+                - paragraph [ref=f30e57]: All deliveries are pushed into a shceduler and sent out asynchronously. Let's learn how to customize this scheduler
+                - heading "Scheduling deliveries" [level=3] [ref=f30e58]
+                - paragraph [ref=f30e59]:
+                  - text: By default if you do not specify a datetime to delivery
+                  - code [ref=f30e60]: at
+                  - text: "Courier will mark the message for immediate delivery. But let's say we want to schedule a specific datetime to send a message. You can do that with:"
+                - code [ref=f30e62]:
+                  - generic [ref=f30e63]: "MyApp.Mailer.deliver(message, at: datetime)"
+                - paragraph [ref=f30e64]:
+                  - text: The
+                  - code [ref=f30e65]: datetime
+                  - text: variable should conform to either an Erlang calendar tuple
+                  - code [ref=f30e66]: "{{year, month, day}, {hour, minute, second}}"
+                - heading "Pooling" [level=3] [ref=f30e67]
+                - paragraph [ref=f30e68]:
+                  - text: Courier will use a pool to rate limit the number of concurrent messages being sent. This is necessary if you are sending to services that hate their own rate limits. The default pool size is
+                  - code [ref=f30e69]: "10"
+                  - text: ". If you'd like to change this default you can simply modify when configuring your mailer:"
+                - code [ref=f30e71]:
+                  - generic [ref=f30e72]: config :my_app, MyApp.Mailer,
+                  - generic [ref=f30e73]: "pool_size: 15"
+                - paragraph [ref=f30e74]:
+                  - link "Read more about the Scheduler, configuring it, and using it." [ref=f30e75] [cursor=pointer]:
+                    - /url: https://hexdocs.pm/courier/Courier.Scheduler.html
+                - heading "Rendering with Phoenix Views" [level=2] [ref=f30e76]
+                - paragraph [ref=f30e77]:
+                  - text: If you'd like to render the
+                  - code [ref=f30e78]: text
+                  - text: or
+                  - code [ref=f30e79]: html
+                  - text: parts with a Phoenix view you should use
+                  - code [ref=f30e80]: Courier.render/4
+                - code [ref=f30e82]:
+                  - generic [ref=f30e83]: Mail.build_multipart()
+                  - generic [ref=f30e84]: "|> Mail.put_to(\"friend@example.com\")"
+                  - generic [ref=f30e85]: "|> Mail.put_from(\"me@example.com\")"
+                  - generic [ref=f30e86]: "|> Mail.put_subject(\"How are things?\")"
+                  - generic [ref=f30e87]: "|> Courier.render(MyApp.MailerView, \"check_in.txt\", user: user)"
+                  - generic [ref=f30e88]: "|> Courier.render(MyApp.MailerView, \"check_in.html\", user: user)"
+                  - generic [ref=f30e89]: "|> MyApp.Mailer.deliver()"
+                - paragraph [ref=f30e90]:
+                  - code [ref=f30e91]: Courier.render/4
+                  - text: will parse the template path to determine the expected
+                  - code [ref=f30e92]: content-type
+                  - text: . For example, if your template is
+                  - code [ref=f30e93]: foobar.html
+                  - text: the assumed
+                  - code [ref=f30e94]: content-type
+                  - text: is
+                  - code [ref=f30e95]: text/html
+                  - text: and Courier will render the template to a string and use
+                  - code [ref=f30e96]: Mail.put_html(message, rendered_template)
+                - heading "Adapters" [level=2] [ref=f30e97]
+                - paragraph [ref=f30e98]: Courier comes with some built-in adapters
+                - heading "Courier.Adapters.SMTP" [level=3] [ref=f30e99]
+                - paragraph [ref=f30e100]:
+                  - text: The built-in SMTP adapter is implemented with
+                  - link "gen_smtp" [ref=f30e101] [cursor=pointer]:
+                    - /url: https://github.com/Vagabond/gen_smtp
+                    - code [ref=f30e102]: gen_smtp
+                - paragraph [ref=f30e103]: "Options:"
+                - list [ref=f30e104]:
+                  - listitem [ref=f30e105]:
+                    - code [ref=f30e106]: relay
+                    - text: mail server host
+                  - listitem [ref=f30e107]:
+                    - code [ref=f30e108]: port
+                    - text: mail server port (defaults to
+                    - code [ref=f30e109]: "25"
+                    - text: when
+                    - code [ref=f30e110]: ssl
+                    - text: is
+                    - code [ref=f30e111]: "false"
+                    - text: ", defaults to"
+                    - code [ref=f30e112]: "465"
+                    - text: when
+                    - code [ref=f30e113]: ssl
+                    - text: is
+                    - code [ref=f30e114]: "true"
+                    - text: )
+                  - listitem [ref=f30e115]:
+                    - code [ref=f30e116]: ssl
+                    - text: connect with SSL (defaults to
+                    - code [ref=f30e117]: "false"
+                    - text: )
+                  - listitem [ref=f30e118]:
+                    - code [ref=f30e119]: hostname
+                    - text: label for the
+                    - code [ref=f30e120]: relay
+                  - listitem [ref=f30e121]:
+                    - code [ref=f30e122]: username
+                    - text: username used for authentication
+                  - listitem [ref=f30e123]:
+                    - code [ref=f30e124]: password
+                    - text: password used for authentication
+                - heading "Courier.Adapters.Logger" [level=3] [ref=f30e125]
+                - paragraph [ref=f30e126]:
+                  - text: Will write deliver all messages to the
+                  - code [ref=f30e127]: Logger
+                  - text: . All attachment encoded data will render as
+                  - code [ref=f30e128]: "[File content]"
+                - paragraph [ref=f30e129]: "Options:"
+                - list [ref=f30e130]:
+                  - listitem [ref=f30e131]:
+                    - code [ref=f30e132]: level
+                    - text: the
+                    - code [ref=f30e133]: Logger
+                    - text: level to send the message to (defaults to
+                    - code [ref=f30e134]: :info
+                    - text: )
+                - heading "Courier.Adapters.Test" [level=3] [ref=f30e135]
+                - paragraph [ref=f30e136]: Exposes the ETS adapter from a REST based API
+                - heading "Courier.Adapters.Web" [level=3] [ref=f30e137]
+                - paragraph [ref=f30e138]:
+                  - text: CourierWeb adds a web interface for viewing the messages sent. To use it add the library to your
+                  - code [ref=f30e139]: mix.exs
+                  - text: file. For more information on this adapter please refer to
+                  - link "CourierWeb" [ref=f30e140] [cursor=pointer]:
+                    - /url: https://github.com/DockYard/courier_web
+                - heading "Writing your own adapter" [level=3] [ref=f30e141]
+                - paragraph [ref=f30e142]:
+                  - text: Creating your own adapter is simple. The only functions necessary are
+                  - code [ref=f30e143]: start_link/1
+                  - text: and
+                  - code [ref=f30e144]: deliver/2
+                - code [ref=f30e146]:
+                  - generic [ref=f30e147]: defmodule MyApp.Adapters.Custom do
+                  - generic [ref=f30e148]: "def start_link(_opts), do: :ignore"
+                  - generic [ref=f30e150]: "def deliver(%Mail.Message{} = message, opts) do"
+                  - generic [ref=f30e151]: "# your customized mailer"
+                  - generic [ref=f30e152]: end
+                  - generic [ref=f30e153]: end
+                - paragraph [ref=f30e154]:
+                  - text: The
+                  - code [ref=f30e155]: message
+                  - text: passed into
+                  - code [ref=f30e156]: deliver/2
+                  - text: is not a rendered
+                  - link "RFC2822" [ref=f30e157] [cursor=pointer]:
+                    - /url: https://www.ietf.org/rfc/rfc2822.txt
+                  - text: message. If you need the rendered version you can use
+                  - code [ref=f30e158]: mail
+                  - text: "to render it:"
+                - code [ref=f30e160]:
+                  - generic [ref=f30e161]: rendered_message = Mail.render(message, Mail.Renderers.RFC2822)
+                - paragraph [ref=f30e162]:
+                  - text: Please refer to the
+                  - code [ref=f30e163]: mail
+                  - text: library to learn more about creating custom message renderers.
+                - paragraph [ref=f30e164]:
+                  - text: Each adapter is treated as its own OTP supervisor within your mailer's supervisor tree. This will give you the opportunity to create more complex adapters with their own workers. Just override
+                  - code [ref=f30e165]: start_link/1
+                  - text: however you'd like. The configuration options declared for your mailer within the given mix environment are passed in as the argument.
+                - heading "Authors" [level=2] [ref=f30e166]
+                - list [ref=f30e167]:
+                  - listitem [ref=f30e168]:
+                    - link "Brian Cardarella" [ref=f30e169] [cursor=pointer]:
+                      - /url: http://twitter.com/bcardarella
+                - paragraph [ref=f30e170]:
+                  - link "We are very thankful for the many contributors" [ref=f30e171] [cursor=pointer]:
+                    - /url: https://github.com/dockyard/courier/graphs/contributors
+                - heading "Versioning" [level=2] [ref=f30e172]
+                - paragraph [ref=f30e173]:
+                  - text: This library follows
+                  - link "Semantic Versioning" [ref=f30e174] [cursor=pointer]:
+                    - /url: http://semver.org
+                - heading "Looking for help with your Elixir project?" [level=2] [ref=f30e175]
+                - paragraph [ref=f30e176]:
+                  - link "At DockYard we are ready to help you build your next Elixir project" [ref=f30e177] [cursor=pointer]:
+                    - /url: https://dockyard.com/phoenix-consulting
+                  - text: . We have a unique expertise in Elixir and Phoenix development that is unmatched.
+                  - link "Get in touch!" [ref=f30e178] [cursor=pointer]:
+                    - /url: https://dockyard.com/contact/hire-us
+                - paragraph [ref=f30e179]:
+                  - text: At DockYard we love Elixir! You can
+                  - link "read our Elixir blog posts" [ref=f30e180] [cursor=pointer]:
+                    - /url: https://dockyard.com/blog/categories/elixir
+                  - text: or come visit us at
+                  - link "The Boston Elixir Meetup" [ref=f30e181] [cursor=pointer]:
+                    - /url: http://www.meetup.com/Boston-Elixir/
+                  - text: that we organize.
+                - heading "Want to help?" [level=2] [ref=f30e182]
+                - paragraph [ref=f30e183]:
+                  - text: Please do! We are always looking to improve this library. Please see our
+                  - link "Contribution Guidelines" [ref=f30e184] [cursor=pointer]:
+                    - /url: https://github.com/dockyard/courier/blob/master/CONTRIBUTING.md
+                  - text: on how to properly submit issues and pull requests.
+                - heading "Legal" [level=2] [ref=f30e185]
+                - paragraph [ref=f30e186]:
+                  - link "DockYard" [ref=f30e187] [cursor=pointer]:
+                    - /url: http://dockyard.com/
+                  - text: ", Inc. © 2016"
+                - paragraph [ref=f30e188]:
+                  - link "@dockyard" [ref=f30e189] [cursor=pointer]:
+                    - /url: http://twitter.com/dockyard
+                - paragraph [ref=f30e190]:
+                  - link "Licensed under the MIT license" [ref=f30e191] [cursor=pointer]:
+                    - /url: http://www.opensource.org/licenses/mit-license.php
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - heading "Checksum" [level=3] [ref=e99]
+                - generic [ref=e100]:
+                  - textbox [ref=e101]: e2cd9174da5676da0e46388d06b6e18f3eaa24465b152c36cf53c48cd295a3ec
+                  - button [ref=e102]:
+                    - img [ref=e103]
+              - generic [ref=e106]:
+                - heading "Dependency Config" [level=3] [ref=e107]
+                - generic [ref=e108]:
+                  - paragraph [ref=e109]: mix.exs
+                  - generic [ref=e110]:
+                    - textbox [ref=e111]: "{:courier, \"~> 0.1.0\"}"
+                    - button [ref=e112]:
+                      - img [ref=e113]
+                - generic [ref=e116]:
+                  - paragraph [ref=e117]: rebar.config
+                  - generic [ref=e118]:
+                    - textbox [ref=e119]: "{courier, \"0.1.0\"}"
+                    - button [ref=e120]:
+                      - img [ref=e121]
+                - generic [ref=e124]:
+                  - paragraph [ref=e125]: Gleam
+                  - generic [ref=e126]:
+                    - textbox [ref=e127]: gleam add courier@0.1.0
+                    - button [ref=e128]:
+                      - img [ref=e129]
+                - generic [ref=e132]:
+                  - paragraph [ref=e133]: erlang.mk
+                  - generic [ref=e134]:
+                    - textbox [ref=e135]: dep_courier = hex 0.1.0
+                    - button [ref=e136]:
+                      - img [ref=e137]
+              - generic [ref=e140]:
+                - heading "Package Details" [level=3] [ref=e141]
+                - generic [ref=e142]:
+                  - generic [ref=e143]:
+                    - generic [ref=e144]: Downloads
+                    - generic [ref=e145]: Last 30 days, all versions
+                  - img "Downloads over the last 30 days" [ref=e146]:
+                    - generic [ref=e147]: "0"
+                    - generic [ref=e148]: "2"
+                    - generic [ref=e149]: "4"
+                    - generic [ref=e150]: "6"
+                    - generic [ref=e151]: "8"
+                - generic [ref=e155]:
+                  - generic [ref=e156]:
+                    - paragraph [ref=e157]: this version
+                    - paragraph [ref=e158]: "585"
+                  - generic [ref=e159]:
+                    - paragraph [ref=e160]: yesterday
+                    - paragraph [ref=e161]: "0"
+                  - generic [ref=e162]:
+                    - paragraph [ref=e163]: last 7 days
+                    - paragraph [ref=e164]: "4"
+                  - generic [ref=e165]:
+                    - paragraph [ref=e166]: all time
+                    - paragraph [ref=e167]: 2 335
+                - generic [ref=e168]:
+                  - generic [ref=e169]:
+                    - paragraph [ref=e170]: Last Updated
+                    - paragraph [ref=e171]: Nov 13, 2016
+                  - generic [ref=e172]:
+                    - paragraph [ref=e173]: License
+                    - paragraph [ref=e175]: MIT
+                  - generic [ref=e176]:
+                    - paragraph [ref=e177]: Build Tools
+                    - generic [ref=e179]: mix
+                  - generic [ref=e180]:
+                    - paragraph [ref=e181]: Publisher
+                    - link "bcardarella bcardarella" [ref=e182] [cursor=pointer]:
+                      - /url: /users/bcardarella
+                      - img "bcardarella" [ref=e183]
+                      - generic [ref=e184]: bcardarella
+              - generic [ref=e185]:
+                - heading "Links" [level=3] [ref=e186]
+                - list [ref=e187]:
+                  - listitem [ref=e188]:
+                    - link "GitHub" [ref=e189] [cursor=pointer]:
+                      - /url: https://github.com/DockYard/courier
+              - generic [ref=e190]:
+                - heading "Owners" [level=3] [ref=e192]
+                - list [ref=e193]:
+                  - listitem [ref=e194]:
+                    - link "bcardarella bcardarella" [ref=e195] [cursor=pointer]:
+                      - /url: /users/bcardarella
+                      - img "bcardarella" [ref=e196]
+                      - generic [ref=e197]: bcardarella
+                  - listitem [ref=e198]:
+                    - link "dockyard-oss dockyard-oss" [ref=e199] [cursor=pointer]:
+                      - /url: /users/dockyard-oss
+                      - img "dockyard-oss" [ref=e200]
+                      - generic [ref=e201]: dockyard-oss
+  - contentinfo [ref=e202]:
+    - generic [ref=e204]:
+      - generic [ref=e205]:
+        - generic [ref=e206]:
+          - img "hex logo" [ref=e207]
+          - generic [ref=e208]: Hex
+        - generic [ref=e209]:
+          - link "GitHub" [ref=e210] [cursor=pointer]:
+            - /url: https://github.com/hexpm
+            - img [ref=e211]
+          - link "X" [ref=e213] [cursor=pointer]:
+            - /url: https://x.com/hexpm
+            - img [ref=e214]
+      - generic [ref=e217]:
+        - generic [ref=e218]:
+          - link "About" [ref=e219] [cursor=pointer]:
+            - /url: /about
+          - link "Blog" [ref=e220] [cursor=pointer]:
+            - /url: /blog
+          - link "Sponsors" [ref=e221] [cursor=pointer]:
+            - /url: /sponsors
+          - link "Status" [ref=e222] [cursor=pointer]:
+            - /url: https://status.hex.pm
+          - link "Advisories" [ref=e223] [cursor=pointer]:
+            - /url: https://osv.dev/list?ecosystem=Hex
+        - generic [ref=e224]:
+          - link "Documentation" [ref=e225] [cursor=pointer]:
+            - /url: /docs
+          - link "FAQ" [ref=e226] [cursor=pointer]:
+            - /url: /docs/faq
+          - link "Specifications" [ref=e227] [cursor=pointer]:
+            - /url: https://github.com/hexpm/specifications
+          - link "Report Client Issue" [ref=e228] [cursor=pointer]:
+            - /url: https://github.com/hexpm/hex/issues
+          - link "Report General Issue" [ref=e229] [cursor=pointer]:
+            - /url: https://github.com/hexpm/hexpm/issues
+          - link "Report Security Issue" [ref=e230] [cursor=pointer]:
+            - /url: mailto:security@hex.pm
+          - link "Contact Support" [ref=e231] [cursor=pointer]:
+            - /url: mailto:support@hex.pm
+        - generic [ref=e232]:
+          - link "Code of Conduct" [ref=e233] [cursor=pointer]:
+            - /url: /policies/codeofconduct
+          - link "Terms of Service" [ref=e234] [cursor=pointer]:
+            - /url: /policies/termsofservice
+          - link "Privacy Policy" [ref=e235] [cursor=pointer]:
+            - /url: /policies/privacy
+          - link "Copyright Policy" [ref=e236] [cursor=pointer]:
+            - /url: /policies/copyright
+          - link "Dispute Policy" [ref=e237] [cursor=pointer]:
+            - /url: /policies/dispute
+    - generic [ref=e239]:
+      - paragraph [ref=e240]: Copyright 2015. Six Colors AB.
+      - paragraph [ref=e241]:
+        - text: Powered by the
+        - link "Erlang VM" [ref=e242] [cursor=pointer]:
+          - /url: https://www.erlang.org/
+        - text: and the
+        - link "Elixir Programming Language" [ref=e243] [cursor=pointer]:
+          - /url: https://elixir-lang.org/

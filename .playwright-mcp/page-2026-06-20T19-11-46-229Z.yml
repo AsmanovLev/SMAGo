@@ -1,0 +1,571 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - link "hex logo Hex" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "hex logo" [ref=e8]
+          - generic [ref=e9]: Hex
+        - generic [ref=e10]:
+          - search [ref=e14]:
+            - generic [ref=e15]:
+              - generic:
+                - img
+              - combobox "Find packages" [ref=e16]
+              - generic [ref=e17]: Find packages
+          - link "Packages" [ref=e18] [cursor=pointer]:
+            - /url: /packages
+          - link "Pricing" [ref=e19] [cursor=pointer]:
+            - /url: /pricing
+          - link "Docs" [ref=e20] [cursor=pointer]:
+            - /url: /docs
+          - button "Change theme" [ref=e22] [cursor=pointer]:
+            - generic [ref=e23]: Change color theme
+            - img [ref=e25]
+          - link "Log In" [ref=e28] [cursor=pointer]:
+            - /url: /login
+    - main [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - link "Packages" [ref=e34] [cursor=pointer]:
+              - /url: /packages
+              - img [ref=e35]
+              - text: Packages
+            - generic [ref=e38]:
+              - heading "messenger_bot" [level=1] [ref=e39]:
+                - link "messenger_bot" [ref=e40] [cursor=pointer]:
+                  - /url: /packages/messenger_bot
+              - group [ref=e41]:
+                - generic "1.3.0" [ref=e42] [cursor=pointer]:
+                  - img [ref=e43]
+                  - generic [ref=e47]: 1.3.0
+                  - img [ref=e48]
+            - paragraph [ref=e51]: Unofficial Facebook Messenger Platform chatbot client and webhook handler
+          - generic [ref=e52]:
+            - link "HexDocs" [ref=e53] [cursor=pointer]:
+              - /url: https://messenger-bot.hexdocs.pm/
+              - img [ref=e54]
+              - generic [ref=e57]: HexDocs
+            - link "HexPreview" [ref=e58] [cursor=pointer]:
+              - /url: https://preview.hex.pm/preview/messenger_bot/1.3.0
+              - img [ref=e59]
+              - generic [ref=e62]: HexPreview
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - link "Readme" [ref=e66] [cursor=pointer]:
+              - /url: /packages/messenger_bot
+              - img [ref=e67]
+              - generic [ref=e70]: Readme
+            - link "41 Versions" [ref=e71] [cursor=pointer]:
+              - /url: /packages/messenger_bot/versions
+              - img [ref=e72]
+              - generic [ref=e76]: 41 Versions
+            - link "5 Dependencies" [ref=e77] [cursor=pointer]:
+              - /url: /packages/messenger_bot/dependencies
+              - img [ref=e78]
+              - generic [ref=e81]: 5 Dependencies
+            - link "0 Dependants" [ref=e82] [cursor=pointer]:
+              - /url: /packages/messenger_bot/dependents
+              - img [ref=e83]
+              - generic [ref=e86]: 0 Dependants
+            - link "Activity" [ref=e87] [cursor=pointer]:
+              - /url: /packages/messenger_bot/audit-logs
+              - img [ref=e88]
+              - generic [ref=e91]: Activity
+          - generic [ref=e92]:
+            - iframe [ref=e241]:
+              - article [ref=f23e2]:
+                - heading "MessengerBot" [level=1] [ref=f23e3]
+                - paragraph [ref=f23e4]:
+                  - link "Build Status" [ref=f23e5] [cursor=pointer]:
+                    - /url: https://travis-ci.org/mustafaturan/messenger_bot
+                    - img "Build Status"
+                  - link "Hex.pm" [ref=f23e6] [cursor=pointer]:
+                    - /url: http://hex.pm/packages/messenger_bot
+                    - img "Hex.pm"
+                  - link "Hex.pm" [ref=f23e7] [cursor=pointer]:
+                    - /url: https://hex.pm/packages/messenger_bot
+                    - img "Hex.pm"
+                  - link "Hex.pm" [ref=f23e8] [cursor=pointer]:
+                    - /url: https://hex.pm/packages/messenger_bot
+                    - img "Hex.pm"
+                  - link "codecov" [ref=f23e9] [cursor=pointer]:
+                    - /url: https://codecov.io/gh/mustafaturan/messenger_bot
+                    - img "codecov"
+                  - link "Inline docs" [ref=f23e10] [cursor=pointer]:
+                    - /url: http://inch-ci.org/github/mustafaturan/messenger_bot
+                    - img "Inline docs"
+                - paragraph [ref=f23e11]:
+                  - text: Unofficial Facebook Messenger Platform
+                  - emphasis [ref=f23e12]: chatbot client
+                  - text: and
+                  - emphasis [ref=f23e13]: webhook handler
+                - paragraph [ref=f23e14]: MessengerBot covers majority of the functions to make calls to Facebook Messenger Platform endpoints.
+                - paragraph [ref=f23e15]: MessengerBot library is designed for processing webhook events coming from Facebook with an event driven approach. It allows any number of subscribers to process same data without blocking.
+                - heading "Installation" [level=2] [ref=f23e16]
+                - paragraph [ref=f23e17]:
+                  - text: The package can be installed by adding
+                  - code [ref=f23e18]: messenger_bot
+                  - text: to your list of dependencies in
+                  - code [ref=f23e19]: mix.exs
+                  - text: ":"
+                - code [ref=f23e21]:
+                  - generic [ref=f23e22]: def deps do
+                  - generic [ref=f23e23]: "[{:messenger_bot, \"1.2.0\"}]"
+                  - generic [ref=f23e24]: end
+                - heading "Configuration" [level=2] [ref=f23e25]
+                - heading "Facebook Messenger App and Page configurations" [level=3] [ref=f23e26]
+                - paragraph [ref=f23e27]:
+                  - code [ref=f23e28]: App
+                  - text: and
+                  - code [ref=f23e29]: Page
+                  - text: configurations can be done via
+                  - code [ref=f23e30]: config.exs
+                  - text: and
+                  - code [ref=f23e31]: MessengerBot.Config
+                  - text: module. Basic idea is to store apps and pages are type of
+                  - code [ref=f23e32]: "MessengerBot.Model.{App, Page}"
+                  - text: types.
+                - paragraph [ref=f23e33]:
+                  - text: If you are using the app for a single page,
+                  - code [ref=f23e34]: config.exs
+                  - text: seems to be right place but if you need to load app info from an external source, then use module functions to save your apps.
+                - paragraph [ref=f23e35]:
+                  - emphasis [ref=f23e36]: "Note:"
+                  - code [ref=f23e37]: App
+                  - text: and
+                  - code [ref=f23e38]: Page
+                  - text: keys must be atom() type like in the examples. For
+                  - code [ref=f23e39]: config.exs
+                  - text: "you can add apps and pages like below:"
+                - code [ref=f23e41]:
+                  - generic [ref=f23e42]: config :messenger_bot,
+                  - generic [ref=f23e43]: "fb_api_version: \"v2.12\","
+                  - generic [ref=f23e44]: "pages: %{"
+                  - generic [ref=f23e45]: "\"1881\" => %{"
+                  - generic [ref=f23e46]: "\"1234\" => %{"
+                  - generic [ref=f23e47]: "id: \"1234\","
+                  - generic [ref=f23e48]: "name: \"Demo Facebook Messenger Bot\","
+                  - generic [ref=f23e49]: "access_token: \"accesstokenforpage\""
+                  - generic [ref=f23e50]: "}"
+                  - generic [ref=f23e51]: "}"
+                  - generic [ref=f23e52]: "},"
+                  - generic [ref=f23e53]: "apps: %{"
+                  - generic [ref=f23e54]: "\"1881\" => %{"
+                  - generic [ref=f23e55]: "id: \"1881\","
+                  - generic [ref=f23e56]: "secret: \"SECRET\","
+                  - generic [ref=f23e57]: "setup_token: \"Setup Token\","
+                  - generic [ref=f23e58]: "access_token: \"ATOKEN123\""
+                  - generic [ref=f23e59]: "}"
+                  - generic [ref=f23e60]: "}"
+                - paragraph [ref=f23e61]:
+                  - text: Any time after loading
+                  - code [ref=f23e62]: messenger_bot
+                  - text: ", you can add more pages for an app."
+                - code [ref=f23e64]:
+                  - generic [ref=f23e65]: "pages = %{"
+                  - generic [ref=f23e66]: "\"1234\" => %{"
+                  - generic [ref=f23e67]: "id: \"1234\","
+                  - generic [ref=f23e68]: "name: \"Demo Facebook Messenger Bot\","
+                  - generic [ref=f23e69]: "token: \"accesstokenforpage\""
+                  - generic [ref=f23e70]: "},"
+                  - generic [ref=f23e71]: "\"1298\" => %{"
+                  - generic [ref=f23e72]: "id: \"1298\","
+                  - generic [ref=f23e73]: "name: \"Demo Facebook Messenger Bot 1298\","
+                  - generic [ref=f23e74]: "token: \"accesstokenforpagefor1298\""
+                  - generic [ref=f23e75]: "}"
+                  - generic [ref=f23e76]: "}"
+                  - generic [ref=f23e78]: "# Update configurations"
+                  - generic [ref=f23e79]: MessengerBot.Config.save_pages(app_id, pages)
+                - paragraph [ref=f23e80]:
+                  - text: "Details:"
+                  - link "https://hexdocs.pm/messenger_bot/1.0.0-beta10/MessengerBot.Config.html#save_pages/2" [ref=f23e81] [cursor=pointer]:
+                    - /url: https://hexdocs.pm/messenger_bot/1.0.0-beta10/MessengerBot.Config.html#save_pages/2
+                - paragraph [ref=f23e82]:
+                  - text: Any time after loading
+                  - code [ref=f23e83]: messenger_bot
+                  - text: ", you can save apps too."
+                - code [ref=f23e85]:
+                  - generic [ref=f23e86]: "apps = %{"
+                  - generic [ref=f23e87]: "\"1881\" => %{"
+                  - generic [ref=f23e88]: "id: \"1881\","
+                  - generic [ref=f23e89]: "secret: \"SECRET\","
+                  - generic [ref=f23e90]: "setup_token: \"Setup Token\","
+                  - generic [ref=f23e91]: "access_token: \"ATOKEN123\""
+                  - generic [ref=f23e92]: "}"
+                  - generic [ref=f23e93]: "}"
+                  - generic [ref=f23e95]: "# Update configurations"
+                  - generic [ref=f23e96]: MessengerBot.Config.save_apps(apps)
+                - paragraph [ref=f23e97]:
+                  - text: "Details:"
+                  - link "https://hexdocs.pm/messenger_bot/1.0.0-beta10/MessengerBot.Config.html#save_apps/1" [ref=f23e98] [cursor=pointer]:
+                    - /url: https://hexdocs.pm/messenger_bot/1.0.0-beta10/MessengerBot.Config.html#save_apps/1
+                - heading "Facebook App setup configuration" [level=3] [ref=f23e99]
+                - paragraph [ref=f23e100]: "Add webhook endpoints to your router:"
+                - code [ref=f23e102]:
+                  - generic [ref=f23e103]: "forward \"/some-path-for-messenger_bot\", to: MessengerBot.Web.Router"
+                  - generic [ref=f23e105]: "# The code above will add following routes"
+                  - generic [ref=f23e106]: "# -> GET /some-path-for-messenger_bot/:app_id (Possible HTTP status codes: 200, 401, 404, 422, 500)"
+                  - generic [ref=f23e107]: "# -> POST /some-path-for-messenger_bot/:app_id (Possible HTTP status codes: 200, 401, 404, 422, 500)"
+                  - generic [ref=f23e108]: "# -> MATCH /some-path-for-messenger_bot/:any (Possible HTTP status code: 404)"
+                - heading "EventBus Configuration" [level=3] [ref=f23e109]
+                - paragraph [ref=f23e110]:
+                  - text: Update your
+                  - code [ref=f23e111]: config.exs
+                  - text: to add
+                  - code [ref=f23e112]: messenger_bot
+                  - text: event topics and id generator for
+                  - code [ref=f23e113]: event_bus
+                  - text: ":"
+                - code [ref=f23e115]:
+                  - generic [ref=f23e116]: config :event_bus,
+                  - generic [ref=f23e117]: "ttl: 900_000_000,"
+                  - generic [ref=f23e118]: "time_unit: :microsecond,"
+                  - generic [ref=f23e119]: "id_generator: MessengerBot.Util.String,"
+                  - generic [ref=f23e120]: "topics: ["
+                  - generic [ref=f23e121]: "##########################################################################"
+                  - generic [ref=f23e122]: "# Webserver Topics"
+                  - generic [ref=f23e123]: "##########################################################################"
+                  - generic [ref=f23e124]: :mb_webserv_succeeded,
+                  - generic [ref=f23e125]: :mb_webserv_payload_failed,
+                  - generic [ref=f23e126]: :mb_webserv_erred,
+                  - generic [ref=f23e127]: "##########################################################################"
+                  - generic [ref=f23e128]: "# Webhook Topics"
+                  - generic [ref=f23e129]: "##########################################################################"
+                  - generic [ref=f23e130]: :mb_delivery_received,
+                  - generic [ref=f23e131]: :mb_read_received,
+                  - generic [ref=f23e132]: :mb_message_echo_received,
+                  - generic [ref=f23e133]: :mb_message_attachments_received,
+                  - generic [ref=f23e134]: :mb_message_quick_reply_received,
+                  - generic [ref=f23e135]: :mb_message_received,
+                  - generic [ref=f23e136]: :mb_optin_received,
+                  - generic [ref=f23e137]: :mb_postback_received,
+                  - generic [ref=f23e138]: :mb_referral_received,
+                  - generic [ref=f23e139]: :mb_game_play_received,
+                  - generic [ref=f23e140]: :mb_payment_received,
+                  - generic [ref=f23e141]: :mb_checkout_update_received,
+                  - generic [ref=f23e142]: :mb_pre_checkout_received,
+                  - generic [ref=f23e143]: :mb_account_linking_received,
+                  - generic [ref=f23e144]: :mb_policy_enforcement_received,
+                  - generic [ref=f23e145]: :mb_app_roles_received,
+                  - generic [ref=f23e146]: :mb_standby_received,
+                  - generic [ref=f23e147]: :mb_pass_thread_control_received,
+                  - generic [ref=f23e148]: :mb_take_thread_control_received,
+                  - generic [ref=f23e149]: :mb_request_thread_control_received,
+                  - generic [ref=f23e150]: :mb_na_received,
+                  - generic [ref=f23e151]: :mb_app_setup_succeeded,
+                  - generic [ref=f23e152]: :mb_app_setup_failed,
+                  - generic [ref=f23e153]: "##########################################################################"
+                  - generic [ref=f23e154]: "# Client Request Topics"
+                  - generic [ref=f23e155]: "##########################################################################"
+                  - generic [ref=f23e156]: :mb_attachment_upload_succeeded,
+                  - generic [ref=f23e157]: :mb_create_message_creatives_succeeded,
+                  - generic [ref=f23e158]: :mb_broadcast_message_succeeded,
+                  - generic [ref=f23e159]: :mb_list_custom_labels_succeeded,
+                  - generic [ref=f23e160]: :mb_fetch_custom_label_succeeded,
+                  - generic [ref=f23e161]: :mb_delete_custom_label_succeeded,
+                  - generic [ref=f23e162]: :mb_label_user_succeeded,
+                  - generic [ref=f23e163]: :mb_unlabel_user_succeeded,
+                  - generic [ref=f23e164]: :mb_list_custom_labels_of_user_succeeded,
+                  - generic [ref=f23e165]: :mb_pass_thread_control_succeeded,
+                  - generic [ref=f23e166]: :mb_take_thread_control_succeeded,
+                  - generic [ref=f23e167]: :mb_request_thread_control_succeeded,
+                  - generic [ref=f23e168]: :mb_fetch_secondary_receivers_succeeded,
+                  - generic [ref=f23e169]: :mb_id_matching_succeeded,
+                  - generic [ref=f23e170]: :mb_create_messenger_code_succeeded,
+                  - generic [ref=f23e171]: :mb_fetch_messaging_feature_review_succeeded,
+                  - generic [ref=f23e172]: :mb_fetch_insights_succeeded,
+                  - generic [ref=f23e173]: :mb_set_messenger_profile_succeeded,
+                  - generic [ref=f23e174]: :mb_reset_messenger_profile_succeeded,
+                  - generic [ref=f23e175]: :mb_fetch_messenger_profile_succeeded,
+                  - generic [ref=f23e176]: :mb_send_message_succeeded,
+                  - generic [ref=f23e177]: :mb_unlink_account_succeeded,
+                  - generic [ref=f23e178]: :mb_fetch_user_profile_succeeded,
+                  - generic [ref=f23e179]: :mb_set_nlp_configs_succeeded,
+                  - generic [ref=f23e180]: :mb_subscribe_to_page_webhooks_succeeded,
+                  - generic [ref=f23e181]: :mb_unsubscribe_to_page_webhooks_succeeded,
+                  - generic [ref=f23e182]: "##########################################################################"
+                  - generic [ref=f23e183]: :mb_attachment_upload_failed,
+                  - generic [ref=f23e184]: :mb_create_message_creatives_failed,
+                  - generic [ref=f23e185]: :mb_broadcast_message_failed,
+                  - generic [ref=f23e186]: :mb_list_custom_labels_failed,
+                  - generic [ref=f23e187]: :mb_fetch_custom_label_failed,
+                  - generic [ref=f23e188]: :mb_delete_custom_label_failed,
+                  - generic [ref=f23e189]: :mb_label_user_failed,
+                  - generic [ref=f23e190]: :mb_unlabel_user_failed,
+                  - generic [ref=f23e191]: :mb_list_custom_labels_of_user_failed,
+                  - generic [ref=f23e192]: :mb_pass_thread_control_failed,
+                  - generic [ref=f23e193]: :mb_take_thread_control_failed,
+                  - generic [ref=f23e194]: :mb_request_thread_control_failed,
+                  - generic [ref=f23e195]: :mb_fetch_secondary_receivers_failed,
+                  - generic [ref=f23e196]: :mb_id_matching_failed,
+                  - generic [ref=f23e197]: :mb_create_messenger_code_failed,
+                  - generic [ref=f23e198]: :mb_fetch_messaging_feature_review_failed,
+                  - generic [ref=f23e199]: :mb_fetch_insights_failed,
+                  - generic [ref=f23e200]: :mb_set_messenger_profile_failed,
+                  - generic [ref=f23e201]: :mb_reset_messenger_profile_failed,
+                  - generic [ref=f23e202]: :mb_fetch_messenger_profile_failed,
+                  - generic [ref=f23e203]: :mb_send_message_failed,
+                  - generic [ref=f23e204]: :mb_unlink_account_failed,
+                  - generic [ref=f23e205]: :mb_fetch_user_profile_failed,
+                  - generic [ref=f23e206]: :mb_set_nlp_configs_failed,
+                  - generic [ref=f23e207]: :mb_subscribe_to_page_webhooks_failed,
+                  - generic [ref=f23e208]: :mb_unsubscribe_to_page_webhooks_failed,
+                  - generic [ref=f23e209]: "##########################################################################"
+                  - generic [ref=f23e210]: :mb_attachment_upload_erred,
+                  - generic [ref=f23e211]: :mb_create_message_creatives_erred,
+                  - generic [ref=f23e212]: :mb_broadcast_message_erred,
+                  - generic [ref=f23e213]: :mb_list_custom_labels_erred,
+                  - generic [ref=f23e214]: :mb_fetch_custom_label_erred,
+                  - generic [ref=f23e215]: :mb_delete_custom_label_erred,
+                  - generic [ref=f23e216]: :mb_label_user_erred,
+                  - generic [ref=f23e217]: :mb_unlabel_user_erred,
+                  - generic [ref=f23e218]: :mb_list_custom_labels_of_user_erred,
+                  - generic [ref=f23e219]: :mb_pass_thread_control_erred,
+                  - generic [ref=f23e220]: :mb_take_thread_control_erred,
+                  - generic [ref=f23e221]: :mb_request_thread_control_erred,
+                  - generic [ref=f23e222]: :mb_fetch_secondary_receivers_erred,
+                  - generic [ref=f23e223]: :mb_id_matching_erred,
+                  - generic [ref=f23e224]: :mb_create_messenger_code_erred,
+                  - generic [ref=f23e225]: :mb_fetch_messaging_feature_review_erred,
+                  - generic [ref=f23e226]: :mb_fetch_insights_erred,
+                  - generic [ref=f23e227]: :mb_set_messenger_profile_erred,
+                  - generic [ref=f23e228]: :mb_reset_messenger_profile_erred,
+                  - generic [ref=f23e229]: :mb_fetch_messenger_profile_erred,
+                  - generic [ref=f23e230]: :mb_send_message_erred,
+                  - generic [ref=f23e231]: :mb_unlink_account_erred,
+                  - generic [ref=f23e232]: :mb_fetch_user_profile_erred,
+                  - generic [ref=f23e233]: :mb_set_nlp_configs_erred,
+                  - generic [ref=f23e234]: :mb_subscribe_to_page_webhooks_erred,
+                  - generic [ref=f23e235]: :mb_unsubscribe_to_page_webhooks_erred]
+                - heading "Usage" [level=2] [ref=f23e236]
+                - heading "Webhook handling" [level=3] [ref=f23e237]
+                - paragraph [ref=f23e238]: MessengerBot library handles allows you to handle all webhooks with subscription to the events.
+                - heading "How to subscribe to event topics?" [level=4] [ref=f23e239]
+                - paragraph [ref=f23e240]:
+                  - code [ref=f23e241]: messenger_bot
+                  - text: package uses
+                  - link "event_bus library" [ref=f23e242] [cursor=pointer]:
+                    - /url: https://github.com/otobus/event_bus
+                  - text: to sent/process Messenger events. Please refer to
+                  - code [ref=f23e243]: event_bus
+                  - text: docs to learn more. You can subscribe registered events. To subscribe all events you can use
+                  - code [ref=f23e244]: "EventBus.subscribe({listener, [\".*\"]})"
+                  - text: and to subscribe only specific topics then
+                  - code [ref=f23e245]: "EventBus.subscribe({listener, [\"mb_message_received$\", \"mb_postback_received$\"]})"
+                  - text: . Please refer to
+                  - code [ref=f23e246]: event_bus
+                  - text: library to documentation and Github wiki pages for more information.
+                - paragraph [ref=f23e247]: "Here is a sample echo bot consumer:"
+                - code [ref=f23e249]:
+                  - generic [ref=f23e250]: "EventBus.subscribe({MessengerBot.Consumer.Echo, [\"mb_message_received$\"]})"
+                  - generic [ref=f23e252]: defmodule MessengerBot.Consumer.Echo do
+                  - generic [ref=f23e253]: "@moduledoc \"\"\""
+                  - generic [ref=f23e254]: Sample consumer implementation which echos for MessengerBot message events
+                  - generic [ref=f23e255]: "\"\"\""
+                  - generic [ref=f23e257]: use GenServer
+                  - generic [ref=f23e259]: "@listener __MODULE__"
+                  - generic [ref=f23e261]: "def process({:mb_message_received, _id} = event_shadow) do"
+                  - generic [ref=f23e262]: "GenServer.cast(__MODULE__, {:echo, event_shadow})"
+                  - generic [ref=f23e263]: end
+                  - generic [ref=f23e265]: "# This func is not necessary, but just for an example"
+                  - generic [ref=f23e266]: "def process({topic, id}) do"
+                  - generic [ref=f23e267]: "EventBus.mark_as_skipped({@listener, topic, id})"
+                  - generic [ref=f23e268]: end
+                  - generic [ref=f23e270]: def start_link do
+                  - generic [ref=f23e271]: "GenServer.start_link(__MODULE__, [], name: __MODULE__)"
+                  - generic [ref=f23e272]: end
+                  - generic [ref=f23e274]: def init(_opts) do
+                  - generic [ref=f23e275]: "{:ok, []}"
+                  - generic [ref=f23e276]: end
+                  - generic [ref=f23e278]: "def handle_cast({:echo, {topic, id}}, state) do"
+                  - generic [ref=f23e279]: "event = EventBus.fetch_event({topic, id})"
+                  - generic [ref=f23e280]: echo_back(event.data)
+                  - generic [ref=f23e281]: "EventBus.mark_as_completed({@listener, topic, id})"
+                  - generic [ref=f23e283]: "{:noreply, state}"
+                  - generic [ref=f23e284]: end
+                  - generic [ref=f23e286]: "defp echo_back(%{app_id: app_id, page_id: page_id, messaging: messaging}) do"
+                  - generic [ref=f23e287]: message = prepare_payload(messaging)
+                  - generic [ref=f23e288]: "MessengerBot.send_message({app_id, page_id}, message)"
+                  - generic [ref=f23e289]: end
+                  - generic [ref=f23e291]: defp prepare_payload(messaging) do
+                  - generic [ref=f23e292]: "%{"
+                  - generic [ref=f23e293]: "\"messaging_type\" => \"RESPONSE\","
+                  - generic [ref=f23e294]: "\"recipient\" => %{\"id\" => messaging[\"sender\"][\"id\"]},"
+                  - generic [ref=f23e295]: "\"message\" => %{"
+                  - generic [ref=f23e296]: "\"text\" => messaging[\"message\"][\"text\"]"
+                  - generic [ref=f23e297]: "}"
+                  - generic [ref=f23e298]: "}"
+                  - generic [ref=f23e299]: end
+                  - generic [ref=f23e300]: end
+                - heading "Using Client to make HTTP request to Facebook endpoints" [level=3] [ref=f23e301]
+                - paragraph [ref=f23e302]:
+                  - text: All MessengerBot client functions can be found on [
+                  - link "https://hexdocs.pm/messenger_bot/1.0.0-beta10/MessengerBot.html#content" [ref=f23e303] [cursor=pointer]:
+                    - /url: https://hexdocs.pm/messenger_bot/1.0.0-beta10/MessengerBot.html#content
+                  - text: ).
+                - heading "Contributing" [level=2] [ref=f23e304]
+                - heading "Issues, Bugs, Documentation, Enhancements" [level=3] [ref=f23e305]
+                - paragraph [ref=f23e306]: Create an issue if there is a bug.
+                - paragraph [ref=f23e307]: Fork the project.
+                - paragraph [ref=f23e308]: Make your improvements and write your tests(make sure you covered all the cases).
+                - paragraph [ref=f23e309]: Make a pull request.
+                - heading "License" [level=2] [ref=f23e310]
+                - paragraph [ref=f23e311]: LGPLv3
+                - paragraph [ref=f23e312]: Copyright (c) 2018 Mustafa Turan
+                - paragraph [ref=f23e313]:
+                  - text: MessengerBot is an Open Source project licensed under the terms of the LGPLv3 license. Please see
+                  - link "http://www.gnu.org/licenses/lgpl-3.0.html" [ref=f23e314] [cursor=pointer]:
+                    - /url: http://www.gnu.org/licenses/lgpl-3.0.html
+                  - text: for license text.
+                - paragraph [ref=f23e315]: The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+                - paragraph [ref=f23e316]: THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+            - generic [ref=e98]:
+              - generic [ref=e99]:
+                - heading "Checksum" [level=3] [ref=e100]
+                - generic [ref=e101]:
+                  - textbox [ref=e102]: bff2c11c2867603be9fb702463def9b41e978cacd82bb094b6d4e5a7e1c5880c
+                  - button [ref=e103]:
+                    - img [ref=e104]
+              - generic [ref=e107]:
+                - heading "Dependency Config" [level=3] [ref=e108]
+                - generic [ref=e109]:
+                  - paragraph [ref=e110]: mix.exs
+                  - generic [ref=e111]:
+                    - textbox [ref=e112]: "{:messenger_bot, \"~> 1.3\"}"
+                    - button [ref=e113]:
+                      - img [ref=e114]
+                - generic [ref=e117]:
+                  - paragraph [ref=e118]: rebar.config
+                  - generic [ref=e119]:
+                    - textbox [ref=e120]: "{messenger_bot, \"1.3.0\"}"
+                    - button [ref=e121]:
+                      - img [ref=e122]
+                - generic [ref=e125]:
+                  - paragraph [ref=e126]: Gleam
+                  - generic [ref=e127]:
+                    - textbox [ref=e128]: gleam add messenger_bot@1.3.0
+                    - button [ref=e129]:
+                      - img [ref=e130]
+                - generic [ref=e133]:
+                  - paragraph [ref=e134]: erlang.mk
+                  - generic [ref=e135]:
+                    - textbox [ref=e136]: dep_messenger_bot = hex 1.3.0
+                    - button [ref=e137]:
+                      - img [ref=e138]
+              - generic [ref=e141]:
+                - heading "Package Details" [level=3] [ref=e142]
+                - generic [ref=e143]:
+                  - generic [ref=e144]:
+                    - generic [ref=e145]: Downloads
+                    - generic [ref=e146]: Last 30 days, all versions
+                  - img "Downloads over the last 30 days" [ref=e147]:
+                    - generic [ref=e148]: "0"
+                    - generic [ref=e149]: "20"
+                    - generic [ref=e150]: "40"
+                    - generic [ref=e151]: "60"
+                    - generic [ref=e152]: "80"
+                - generic [ref=e156]:
+                  - generic [ref=e157]:
+                    - paragraph [ref=e158]: this version
+                    - paragraph [ref=e159]: "381"
+                  - generic [ref=e160]:
+                    - paragraph [ref=e161]: yesterday
+                    - paragraph [ref=e162]: "0"
+                  - generic [ref=e163]:
+                    - paragraph [ref=e164]: last 7 days
+                    - paragraph [ref=e165]: "0"
+                  - generic [ref=e166]:
+                    - paragraph [ref=e167]: all time
+                    - paragraph [ref=e168]: 7 942
+                - generic [ref=e169]:
+                  - generic [ref=e170]:
+                    - paragraph [ref=e171]: Last Updated
+                    - paragraph [ref=e172]: Nov 05, 2018
+                  - generic [ref=e173]:
+                    - paragraph [ref=e174]: License
+                    - paragraph [ref=e176]: LGPLv3
+                  - generic [ref=e177]:
+                    - paragraph [ref=e178]: Build Tools
+                    - generic [ref=e180]: mix
+                  - generic [ref=e181]:
+                    - paragraph [ref=e182]: Publisher
+                    - link "mustafaturan mustafaturan" [ref=e183] [cursor=pointer]:
+                      - /url: /users/mustafaturan
+                      - img "mustafaturan" [ref=e184]
+                      - generic [ref=e185]: mustafaturan
+              - generic [ref=e186]:
+                - heading "Links" [level=3] [ref=e187]
+                - list [ref=e188]:
+                  - listitem [ref=e189]:
+                    - link "GitHub" [ref=e190] [cursor=pointer]:
+                      - /url: https://github.com/mustafaturan/messenger_bot
+              - generic [ref=e191]:
+                - heading "Owners" [level=3] [ref=e193]
+                - list [ref=e194]:
+                  - listitem [ref=e195]:
+                    - link "mustafaturan mustafaturan" [ref=e196] [cursor=pointer]:
+                      - /url: /users/mustafaturan
+                      - img "mustafaturan" [ref=e197]
+                      - generic [ref=e198]: mustafaturan
+  - contentinfo [ref=e199]:
+    - generic [ref=e201]:
+      - generic [ref=e202]:
+        - generic [ref=e203]:
+          - img "hex logo" [ref=e204]
+          - generic [ref=e205]: Hex
+        - generic [ref=e206]:
+          - link "GitHub" [ref=e207] [cursor=pointer]:
+            - /url: https://github.com/hexpm
+            - img [ref=e208]
+          - link "X" [ref=e210] [cursor=pointer]:
+            - /url: https://x.com/hexpm
+            - img [ref=e211]
+      - generic [ref=e214]:
+        - generic [ref=e215]:
+          - link "About" [ref=e216] [cursor=pointer]:
+            - /url: /about
+          - link "Blog" [ref=e217] [cursor=pointer]:
+            - /url: /blog
+          - link "Sponsors" [ref=e218] [cursor=pointer]:
+            - /url: /sponsors
+          - link "Status" [ref=e219] [cursor=pointer]:
+            - /url: https://status.hex.pm
+          - link "Advisories" [ref=e220] [cursor=pointer]:
+            - /url: https://osv.dev/list?ecosystem=Hex
+        - generic [ref=e221]:
+          - link "Documentation" [ref=e222] [cursor=pointer]:
+            - /url: /docs
+          - link "FAQ" [ref=e223] [cursor=pointer]:
+            - /url: /docs/faq
+          - link "Specifications" [ref=e224] [cursor=pointer]:
+            - /url: https://github.com/hexpm/specifications
+          - link "Report Client Issue" [ref=e225] [cursor=pointer]:
+            - /url: https://github.com/hexpm/hex/issues
+          - link "Report General Issue" [ref=e226] [cursor=pointer]:
+            - /url: https://github.com/hexpm/hexpm/issues
+          - link "Report Security Issue" [ref=e227] [cursor=pointer]:
+            - /url: mailto:security@hex.pm
+          - link "Contact Support" [ref=e228] [cursor=pointer]:
+            - /url: mailto:support@hex.pm
+        - generic [ref=e229]:
+          - link "Code of Conduct" [ref=e230] [cursor=pointer]:
+            - /url: /policies/codeofconduct
+          - link "Terms of Service" [ref=e231] [cursor=pointer]:
+            - /url: /policies/termsofservice
+          - link "Privacy Policy" [ref=e232] [cursor=pointer]:
+            - /url: /policies/privacy
+          - link "Copyright Policy" [ref=e233] [cursor=pointer]:
+            - /url: /policies/copyright
+          - link "Dispute Policy" [ref=e234] [cursor=pointer]:
+            - /url: /policies/dispute
+    - generic [ref=e236]:
+      - paragraph [ref=e237]: Copyright 2015. Six Colors AB.
+      - paragraph [ref=e238]:
+        - text: Powered by the
+        - link "Erlang VM" [ref=e239] [cursor=pointer]:
+          - /url: https://www.erlang.org/
+        - text: and the
+        - link "Elixir Programming Language" [ref=e240] [cursor=pointer]:
+          - /url: https://elixir-lang.org/

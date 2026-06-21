@@ -1,0 +1,805 @@
+- generic [active] [ref=e1]:
+  - link "Перейти к основному контенту" [ref=e2] [cursor=pointer]:
+    - /url: "#main-content"
+  - generic [ref=e3]:
+    - banner [ref=e4]:
+      - generic [ref=e5]:
+        - generic [ref=e8]:
+          - generic [ref=e9]:
+            - link "Google Workspace" [ref=e10] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace?hl=ru
+              - img "Google Workspace" [ref=e13]
+            - list [ref=e15]:
+              - listitem [ref=e16]:
+                - link "GoogleWorkspace" [ref=e17] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace?hl=ru
+                  - img "Google" [ref=e18]
+                  - text: Workspace
+          - navigation "Верхние вкладки" [ref=e23]:
+            - link "Главная" [ref=e25] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace?hl=ru
+            - link "Google Chat, selected" [ref=e27] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace/chat?hl=ru
+              - text: Google Chat
+            - generic [ref=e28]:
+              - link "Все продукты" [ref=e29] [cursor=pointer]:
+                - /url: https://developers.google.com/workspace/products-menu?hl=ru
+              - 'button "Раскрывающееся меню для: Все продукты" [ref=e30] [cursor=pointer]': arrow_drop_down
+            - generic [ref=e31]:
+              - link "Ресурсы" [ref=e32] [cursor=pointer]:
+                - /url: https://developers.google.com/workspace/resources-menu?hl=ru
+              - 'button "Раскрывающееся меню для: Ресурсы" [ref=e33] [cursor=pointer]': arrow_drop_down
+            - generic [ref=e34]:
+              - link "Серверы MCP" [ref=e35] [cursor=pointer]:
+                - /url: https://developers.google.com/workspace/guides/configure-mcp-servers?hl=ru
+              - 'button "Раскрывающееся меню для: Серверы MCP" [ref=e36] [cursor=pointer]': arrow_drop_down
+        - generic [ref=e38]:
+          - list [ref=e42]:
+            - listitem [ref=e43]:
+              - link "Google Chat" [ref=e44] [cursor=pointer]:
+                - /url: https://developers.google.com/workspace/chat?hl=ru
+          - navigation "Нижние вкладки" [ref=e47]:
+            - link "Обзор" [ref=e49] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace/chat?hl=ru
+            - link "Руководства, selected" [ref=e51] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace/chat/overview?hl=ru
+              - text: Руководства
+            - link "Справочные материалы" [ref=e53] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace/chat/api/reference?hl=ru
+            - link "MCP-сервер" [ref=e55] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace/chat/api/guides/configure-mcp-server?hl=ru
+            - link "Примеры" [ref=e57] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace/chat/samples?hl=ru
+            - link "Поддержка" [ref=e59] [cursor=pointer]:
+              - /url: https://developers.google.com/workspace/chat/support?hl=ru
+            - link "Создатель карт" [ref=e61] [cursor=pointer]:
+              - /url: https://addons.gsuite.google.com/uikit/builder?hl=ru
+    - generic [ref=e62]:
+      - generic [ref=e63]:
+        - text: filter_list
+        - searchbox "Введите текст для фильтрации" [ref=e64]
+        - text: close
+      - navigation "Боковое меню" [ref=e65]:
+        - text: arrow_back
+        - generic [ref=e66]:
+          - text: arrow_forward arrow_forward arrow_forward
+          - list [ref=e68]:
+            - listitem [ref=e69]:
+              - generic [ref=e71]: Начать
+            - listitem [ref=e72]:
+              - link "Обзор разработки с помощью Google Chat" [ref=e73] [cursor=pointer]:
+                - /url: /workspace/chat/overview
+                - generic [ref=e74]: Обзор разработки с помощью Google Chat
+            - listitem [ref=e75]:
+              - link "Разработка в Google Workspace" [ref=e76] [cursor=pointer]:
+                - /url: /workspace/guides/get-started
+                - generic [ref=e77]: Разработка в Google Workspace
+                - generic [ref=e78]: open_in_new
+            - listitem [ref=e79]:
+              - generic [ref=e80]:
+                - generic [ref=e81] [cursor=pointer]: arrow_drop_down
+                - button "Краткое руководство" [ref=e82] [cursor=pointer]:
+                  - generic [ref=e83]: Краткое руководство
+                - text: arrow_drop_down arrow_drop_down open_in_new open_in_new
+            - listitem [ref=e84]:
+              - generic [ref=e85]:
+                - generic [ref=e86] [cursor=pointer]: arrow_drop_down
+                - button "Аутентификация и авторизация" [ref=e87] [cursor=pointer]:
+                  - generic [ref=e88]: Аутентификация и авторизация
+            - listitem [ref=e89]:
+              - generic [ref=e90]:
+                - generic [ref=e91] [cursor=pointer]: arrow_drop_down
+                - button "Вызов API чата" [ref=e92] [cursor=pointer]:
+                  - generic [ref=e93]: Вызов API чата
+            - listitem [ref=e94]:
+              - generic [ref=e96]: План
+            - listitem [ref=e97]:
+              - link "Определите потребности ваших пользователей" [ref=e98] [cursor=pointer]:
+                - /url: /workspace/chat/audience
+                - generic [ref=e99]: Определите потребности ваших пользователей
+            - listitem [ref=e100]:
+              - link "Определите все пути пользователя" [ref=e101] [cursor=pointer]:
+                - /url: /workspace/chat/journeys
+                - generic [ref=e102]: Определите все пути пользователя
+            - listitem [ref=e103]:
+              - link "Выберите архитектуру приложения Chat" [ref=e104] [cursor=pointer]:
+                - /url: /workspace/chat/structure
+                - generic [ref=e105]: Выберите архитектуру приложения Chat
+            - listitem [ref=e106]:
+              - link "Проектируйте взаимодействие с пользователем" [ref=e107] [cursor=pointer]:
+                - /url: /workspace/chat/interactivity
+                - generic [ref=e108]: Проектируйте взаимодействие с пользователем
+            - listitem [ref=e109]:
+              - generic [ref=e111]: Строить
+            - listitem [ref=e112]:
+              - generic [ref=e113]:
+                - generic [ref=e114] [cursor=pointer]: arrow_drop_down
+                - button "Отправляйте сообщения и управляйте ими" [ref=e115] [cursor=pointer]:
+                  - generic [ref=e116]: Отправляйте сообщения и управляйте ими
+                - text: arrow_drop_down arrow_drop_down arrow_drop_down
+            - listitem [ref=e117]:
+              - generic [ref=e118]:
+                - generic [ref=e119] [cursor=pointer]: arrow_drop_down
+                - button "Работа с пространствами" [ref=e120] [cursor=pointer]:
+                  - generic [ref=e121]: Работа с пространствами
+            - listitem [ref=e122]:
+              - generic [ref=e123]:
+                - generic [ref=e124] [cursor=pointer]: arrow_drop_down
+                - button "Разделите пространство на секции." [ref=e125] [cursor=pointer]:
+                  - generic [ref=e126]: Разделите пространство на секции.
+            - listitem [ref=e127]:
+              - generic [ref=e128]:
+                - generic [ref=e129] [cursor=pointer]: arrow_drop_down
+                - button "Управление участниками в пространствах" [ref=e130] [cursor=pointer]:
+                  - generic [ref=e131]: Управление участниками в пространствах
+            - listitem [ref=e132]:
+              - generic [ref=e133]:
+                - generic [ref=e134] [cursor=pointer]: arrow_drop_down
+                - button "Реагировать на сообщения" [ref=e135] [cursor=pointer]:
+                  - generic [ref=e136]: Реагировать на сообщения
+            - listitem [ref=e137]:
+              - generic [ref=e138]:
+                - generic [ref=e139] [cursor=pointer]: arrow_drop_down
+                - button "Работа с пользовательскими эмодзи" [ref=e140] [cursor=pointer]:
+                  - generic [ref=e141]: Работа с пользовательскими эмодзи
+            - listitem [ref=e142]:
+              - generic [ref=e143]:
+                - generic [ref=e144] [cursor=pointer]: arrow_drop_down
+                - button "Загрузка и скачивание вложений" [ref=e145] [cursor=pointer]:
+                  - generic [ref=e146]: Загрузка и скачивание вложений
+            - listitem [ref=e147]:
+              - generic [ref=e148]:
+                - generic [ref=e149] [cursor=pointer]: arrow_drop_down
+                - button "Взаимодействие с пользователями" [ref=e150] [cursor=pointer]:
+                  - generic [ref=e151]: Взаимодействие с пользователями
+                - text: open_in_new arrow_drop_down
+            - listitem [ref=e152]:
+              - generic [ref=e153]:
+                - generic [ref=e154] [cursor=pointer]: arrow_drop_down
+                - button "Работа с событиями из Google Chat" [ref=e155] [cursor=pointer]:
+                  - generic [ref=e156]: Работа с событиями из Google Chat
+                - text: open_in_new
+            - listitem [ref=e157]:
+              - link "Определите и укажите пользователей Google Chat" [ref=e158] [cursor=pointer]:
+                - /url: /workspace/chat/identify-reference-users
+                - generic [ref=e159]: Определите и укажите пользователей Google Chat
+            - listitem [ref=e160]:
+              - link "Пишите действенные сообщения об ошибках" [ref=e161] [cursor=pointer]:
+                - /url: /workspace/chat/write-error-messages
+                - generic [ref=e162]: Пишите действенные сообщения об ошибках
+            - listitem [ref=e163]:
+              - link "Ознакомьтесь с примерами и учебными пособиями по приложениям Chat" [ref=e164] [cursor=pointer]:
+                - /url: /workspace/chat/samples
+                - generic [ref=e165]: Ознакомьтесь с примерами и учебными пособиями по приложениям Chat
+            - listitem [ref=e166]:
+              - generic [ref=e168]: Развертывание, тестирование и устранение неполадок
+            - listitem [ref=e169]:
+              - link "Создание развертываний и управление ими" [ref=e170] [cursor=pointer]:
+                - /url: /workspace/chat/create-manage-deployments
+                - generic [ref=e171]: Создание развертываний и управление ими
+            - listitem [ref=e172]:
+              - link "Тестирование интерактивных функций" [ref=e173] [cursor=pointer]:
+                - /url: /workspace/chat/test-interactive-features
+                - generic [ref=e174]: Тестирование интерактивных функций
+            - listitem [ref=e175]:
+              - generic [ref=e176]:
+                - generic [ref=e177] [cursor=pointer]: arrow_drop_down
+                - button "Журнал ошибок" [ref=e178] [cursor=pointer]:
+                  - generic [ref=e179]: Журнал ошибок
+            - listitem [ref=e180]:
+              - generic [ref=e181]:
+                - generic [ref=e182] [cursor=pointer]: arrow_drop_down
+                - button "Устранение неполадок" [ref=e183] [cursor=pointer]:
+                  - generic [ref=e184]: Устранение неполадок
+            - listitem [ref=e185]
+            - listitem [ref=e186]:
+              - link "Преобразуйте интерактивное приложение чата в дополнение к Google Workspace" [ref=e187] [cursor=pointer]:
+                - /url: /workspace/add-ons/chat/convert
+                - generic [ref=e188]: Преобразуйте интерактивное приложение чата в дополнение к Google Workspace
+                - generic [ref=e189]: open_in_new
+            - listitem [ref=e190]:
+              - generic [ref=e192]: Опубликовать в Google Workspace Marketplace
+            - listitem [ref=e193]:
+              - link "Публикация приложений чата в Google Workspace Marketplace" [ref=e194] [cursor=pointer]:
+                - /url: /workspace/marketplace/how-to-publish
+                - generic [ref=e195]: Публикация приложений чата в Google Workspace Marketplace
+                - generic [ref=e196]: open_in_new
+            - listitem [ref=e197]:
+              - link "Требования к обработке и проверке публичных чат-приложений" [ref=e198] [cursor=pointer]:
+                - /url: /workspace/marketplace/about-app-review
+                - generic [ref=e199]: Требования к обработке и проверке публичных чат-приложений
+                - generic [ref=e200]: open_in_new
+            - listitem [ref=e201]:
+              - generic [ref=e202]:
+                - generic [ref=e203] [cursor=pointer]: arrow_drop_down
+                - button "Поддерживать опубликованные приложения чата" [ref=e204] [cursor=pointer]:
+                  - generic [ref=e205]: Поддерживать опубликованные приложения чата
+                - text: open_in_new arrow_drop_down
+            - listitem [ref=e206]:
+              - link "Выключите или удалите приложение" [ref=e207] [cursor=pointer]:
+                - /url: /workspace/chat/turn-off-app
+                - generic [ref=e208]: Выключите или удалите приложение
+            - listitem [ref=e209]:
+              - generic [ref=e211]: Управляйте чатом как администратор Google Workspace.
+            - listitem [ref=e212]:
+              - link "Обзор" [ref=e213] [cursor=pointer]:
+                - /url: /workspace/chat/admin-overview
+                - generic [ref=e214]: Обзор
+            - listitem [ref=e215]:
+              - link "Ищите пространства в вашей организации и управляйте ими." [ref=e216] [cursor=pointer]:
+                - /url: /workspace/chat/search-manage-admin
+                - generic [ref=e217]: Ищите пространства в вашей организации и управляйте ими.
+            - listitem [ref=e218]:
+              - link "Сделайте пространство доступным для просмотра определенным пользователям" [ref=e219] [cursor=pointer]:
+                - /url: /workspace/chat/space-target-audience
+                - generic [ref=e220]: Сделайте пространство доступным для просмотра определенным пользователям
+            - listitem [ref=e221]:
+              - generic [ref=e222]:
+                - generic [ref=e223] [cursor=pointer]: arrow_drop_down
+                - button "Перенесите свою организацию в Chat" [ref=e224] [cursor=pointer]:
+                  - generic [ref=e225]: Перенесите свою организацию в Chat
+    - generic [ref=e226]:
+      - main [ref=e227]:
+        - generic [ref=e228]:
+          - generic:
+            - navigation "Содержание"
+        - generic [ref=e229]:
+          - article [ref=e230]:
+            - generic [ref=e234]:
+              - text: Эта страница переведена с помощью
+              - link "Cloud Translation API" [ref=e235] [cursor=pointer]:
+                - /url: //cloud.google.com/translate/?hl=ru
+              - text: .
+            - navigation [ref=e236]:
+              - list "Строка навигации" [ref=e237]:
+                - listitem [ref=e238]:
+                  - link "Главная" [ref=e239] [cursor=pointer]:
+                    - /url: https://developers.google.com/?hl=ru
+                - listitem [ref=e240]:
+                  - generic [ref=e241]: chevron_right
+                  - link "Google Workspace" [ref=e242] [cursor=pointer]:
+                    - /url: https://developers.google.com/workspace?hl=ru
+                - listitem [ref=e243]:
+                  - generic [ref=e244]: chevron_right
+                  - link "Google Chat" [ref=e245] [cursor=pointer]:
+                    - /url: https://developers.google.com/workspace/chat?hl=ru
+                - listitem [ref=e246]:
+                  - generic [ref=e247]: chevron_right
+                  - link "Руководства" [ref=e248] [cursor=pointer]:
+                    - /url: https://developers.google.com/workspace/chat/overview?hl=ru
+            - button "Отправить отзыв" [ref=e250] [cursor=pointer]
+            - heading "Разрабатывайте с помощью Google Chat" [level=1] [ref=e251]
+            - generic [ref=e252]:
+              - paragraph [ref=e253]: На этой странице представлен обзор API Google Chat и приложений Google Chat.
+              - heading "Обзор Google Chat API" [level=2] [ref=e254]
+              - paragraph [ref=e257]:
+                - text: API чата состоит из
+                - link "gRPC-сервисов или REST-ресурсов и методов" [ref=e258] [cursor=pointer]:
+                  - /url: https://cloud.google.com/apis/docs/client-libraries-explained?hl=ru
+                - text: ", предоставляющих доступ к чату, включая пространства, участников пространства, сообщения, реакции на сообщения, вложения сообщений, события пространства и состояния прочтения пользователем."
+              - heading "Концепции" [level=3] [ref=e259]
+              - paragraph [ref=e260]: "В следующем разделе описываются сервисы, ресурсы и методы для API чата:"
+              - generic [ref=e261]:
+                - term [ref=e262]:
+                  - emphasis [ref=e263]: Пространства
+                - definition [ref=e264]:
+                  - paragraph [ref=e265]:
+                    - emphasis [ref=e266]: Пространства
+                    - text: — это места, где люди и приложения могут общаться и обмениваться файлами. Существует несколько типов пространств. Личные сообщения (DM) — это диалоги один на один между двумя пользователями или между пользователем и приложением для чата. Групповые чаты — это диалоги между тремя или более пользователями и приложениями для чата. Именные пространства — это постоянные места, где люди отправляют сообщения, обмениваются файлами и сотрудничают.
+                - definition [ref=e267]:
+                  - paragraph [ref=e268]: "Справочная информация:"
+                  - list [ref=e269]:
+                    - listitem [ref=e270]:
+                      - link "Справочник RPC" [ref=e271] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rpc/google.chat.v1?hl=ru#google.chat.v1.Space
+                    - listitem [ref=e272]:
+                      - link "Справочник REST" [ref=e273] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces?hl=ru
+                - definition [ref=e274]:
+                  - paragraph [ref=e275]: "Примеры использования см. в:"
+                  - list [ref=e276]:
+                    - listitem [ref=e277]:
+                      - link "Создайте пространство" [ref=e278] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/create-spaces?hl=ru
+                    - listitem [ref=e279]:
+                      - link "Обустройте пространство" [ref=e280] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/set-up-spaces?hl=ru
+                    - listitem [ref=e281]:
+                      - link "Найдите место" [ref=e282] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/get-spaces?hl=ru
+                    - listitem [ref=e283]:
+                      - link "Пространства списка" [ref=e284] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/list-spaces?hl=ru
+                    - listitem [ref=e285]:
+                      - link "Обновить пространство" [ref=e286] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/update-spaces?hl=ru
+                    - listitem [ref=e287]:
+                      - link "Удалите пробел" [ref=e288] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/delete-spaces?hl=ru
+                    - listitem [ref=e289]:
+                      - link "Найти личное сообщение (DM)" [ref=e290] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/find-direct-message-in-spaces?hl=ru
+                - term [ref=e291]:
+                  - emphasis [ref=e292]: Члены
+                - definition [ref=e293]:
+                  - paragraph [ref=e294]:
+                    - emphasis [ref=e295]: Участники
+                    - text: — это пользователи и чат-приложения, которые присоединились к пространству или были приглашены в него.
+                - definition [ref=e296]:
+                  - paragraph [ref=e297]: "Справочная информация:"
+                  - list [ref=e298]:
+                    - listitem [ref=e299]:
+                      - link "Справочник RPC" [ref=e300] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rpc/google.chat.v1?hl=ru#google.chat.v1.Membership
+                    - listitem [ref=e301]:
+                      - link "Справочник REST" [ref=e302] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces.members?hl=ru
+                - definition [ref=e303]:
+                  - paragraph [ref=e304]: "Примеры использования см. в:"
+                  - list [ref=e305]:
+                    - listitem [ref=e306]:
+                      - link "Создать членство" [ref=e307] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/create-members?hl=ru
+                    - listitem [ref=e308]:
+                      - link "Оформите членство" [ref=e309] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/get-members?hl=ru
+                    - listitem [ref=e310]:
+                      - link "Список участников" [ref=e311] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/list-members?hl=ru
+                    - listitem [ref=e312]:
+                      - link "Обновить данные участника" [ref=e313] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/update-members?hl=ru
+                    - listitem [ref=e314]:
+                      - link "Удалить членство" [ref=e315] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/delete-members?hl=ru
+                - term [ref=e316]:
+                  - emphasis [ref=e317]: Сообщения
+                - definition [ref=e318]:
+                  - paragraph [ref=e319]:
+                    - emphasis [ref=e320]: Сообщения
+                    - text: включают
+                    - link "текстовые" [ref=e321] [cursor=pointer]:
+                      - /url: https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces.messages?hl=ru
+                    - text: сообщения и
+                    - link "открытки" [ref=e322] [cursor=pointer]:
+                      - /url: https://developers.google.com/workspace/chat/api/reference/rest/v1/cards?hl=ru
+                    - text: ", размещенные в определенных местах. К сообщениям могут быть прикреплены файлы. Пользователи могут реагировать на сообщения, добавляя к ним эмодзи."
+                - definition [ref=e323]:
+                  - paragraph [ref=e324]: "Справочная информация:"
+                  - list [ref=e325]:
+                    - listitem [ref=e326]:
+                      - link "Справочник RPC" [ref=e327] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rpc/google.chat.v1?hl=ru#google.chat.v1.Message
+                    - listitem [ref=e328]:
+                      - link "Справочник REST" [ref=e329] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces.messages?hl=ru
+                - definition [ref=e330]:
+                  - paragraph [ref=e331]: "Примеры использования см. в:"
+                  - list [ref=e332]:
+                    - listitem [ref=e333]:
+                      - link "Создать сообщение" [ref=e334] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/create-messages?hl=ru
+                    - listitem [ref=e335]:
+                      - link "Получить сообщение" [ref=e336] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/get-messages?hl=ru
+                    - listitem [ref=e337]:
+                      - link "Список сообщений" [ref=e338] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/list-messages?hl=ru
+                    - listitem [ref=e339]:
+                      - link "Обновить сообщение" [ref=e340] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/update-messages?hl=ru
+                    - listitem [ref=e341]:
+                      - link "Удалить сообщение" [ref=e342] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/delete-messages?hl=ru
+                - term [ref=e343]:
+                  - emphasis [ref=e344]: Реакции
+                - definition [ref=e345]:
+                  - paragraph [ref=e346]:
+                    - emphasis [ref=e347]: Реакции
+                    - text: представляют собой эмодзи, которые люди используют для реагирования на сообщение, например, 👍, 🚲 и 🌞.
+                - definition [ref=e348]:
+                  - paragraph [ref=e349]: "Справочная информация:"
+                  - list [ref=e350]:
+                    - listitem [ref=e351]:
+                      - link "Справочник RPC" [ref=e352] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rpc/google.chat.v1?hl=ru#google.chat.v1.Reaction
+                    - listitem [ref=e353]:
+                      - link "Справочник REST" [ref=e354] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces.messages.reactions?hl=ru
+                - definition [ref=e355]:
+                  - paragraph [ref=e356]: "Примеры использования см. в:"
+                  - list [ref=e357]:
+                    - listitem [ref=e358]:
+                      - link "Создайте реакцию" [ref=e359] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/create-reactions?hl=ru
+                    - listitem [ref=e360]:
+                      - link "Список реакций" [ref=e361] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/list-reactions?hl=ru
+                    - listitem [ref=e362]:
+                      - link "Удалить реакцию" [ref=e363] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/delete-reactions?hl=ru
+                - term [ref=e364]:
+                  - emphasis [ref=e365]: Пользовательские эмодзи
+                - definition [ref=e366]:
+                  - paragraph [ref=e367]:
+                    - emphasis [ref=e368]: Пользовательские эмодзи
+                    - text: — это созданные и распространенные внутри организации эмодзи в Google Chat. Пользовательские эмодзи могут быть включены в содержимое сообщения или использованы для реакции на сообщение.
+                - definition [ref=e369]:
+                  - paragraph [ref=e370]: "Справочная информация:"
+                  - list [ref=e371]:
+                    - listitem [ref=e372]:
+                      - link "Справочник RPC" [ref=e373] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rpc/google.chat.v1?hl=ru#google.chat.v1.CustomEmoji
+                    - listitem [ref=e374]:
+                      - link "Справочник REST" [ref=e375] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rest/v1/customEmojis?hl=ru
+                - definition [ref=e376]:
+                  - paragraph [ref=e377]: "Примеры использования см. в:"
+                  - list [ref=e378]:
+                    - listitem [ref=e379]:
+                      - link "Создайте собственный эмодзи" [ref=e380] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/create-custom-emoji?hl=ru
+                    - listitem [ref=e381]:
+                      - link "Удалить пользовательский эмодзи" [ref=e382] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/delete-custom-emoji?hl=ru
+                    - listitem [ref=e383]:
+                      - link "Узнайте подробности о пользовательском эмодзи." [ref=e384] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/get-custom-emoji?hl=ru
+                    - listitem [ref=e385]:
+                      - link "Добавить пользовательские эмодзи в организацию" [ref=e386] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/list-custom-emojis?hl=ru
+                - term [ref=e387]:
+                  - emphasis [ref=e388]: Разделы
+                - definition [ref=e389]:
+                  - paragraph [ref=e390]:
+                    - emphasis [ref=e391]: Разделы
+                    - text: позволяют пользователям группировать свои беседы и настраивать список разделов, отображаемых в панели навигации Google Chat. Существуют предопределенные системные разделы и пользовательские разделы.
+                - definition [ref=e392]:
+                  - paragraph [ref=e393]: "Справочная информация:"
+                  - list [ref=e394]:
+                    - listitem [ref=e395]:
+                      - link "Справочник RPC" [ref=e396] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rpc/google.chat.v1?hl=ru#google.chat.v1.Section
+                    - listitem [ref=e397]:
+                      - link "Справочник REST" [ref=e398] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rest/v1/users.sections?hl=ru
+                - definition [ref=e399]:
+                  - paragraph [ref=e400]: "Примеры использования см. в:"
+                  - list [ref=e401]:
+                    - listitem [ref=e402]:
+                      - link "Создать раздел" [ref=e403] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/create-section?hl=ru
+                    - listitem [ref=e404]:
+                      - link "Обновить раздел" [ref=e405] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/update-section?hl=ru
+                    - listitem [ref=e406]:
+                      - link "Удалить раздел" [ref=e407] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/delete-section?hl=ru
+                    - listitem [ref=e408]:
+                      - link "Изменить положение раздела" [ref=e409] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/position-section?hl=ru
+                    - listitem [ref=e410]:
+                      - link "Список разделов" [ref=e411] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/list-sections?hl=ru
+                    - listitem [ref=e412]:
+                      - link "Список пробелов в разделе" [ref=e413] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/list-section-items?hl=ru
+                    - listitem [ref=e414]:
+                      - link "Переместите пробел в другой раздел." [ref=e415] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/move-section-item?hl=ru
+                - term [ref=e416]:
+                  - emphasis [ref=e417]: Медиафайлы и вложения
+                - definition [ref=e418]:
+                  - paragraph [ref=e419]:
+                    - emphasis [ref=e420]: Под медиафайлами
+                    - text: понимаются файлы, загруженные в Google Chat, такие как изображения, видео и документы.
+                - definition [ref=e421]:
+                  - paragraph [ref=e422]: "Справочник медиаресурсов (недоступен в RPC):"
+                  - list [ref=e423]:
+                    - listitem [ref=e424]:
+                      - link "Справочник REST" [ref=e425] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rest/v1/media?hl=ru
+                - definition [ref=e426]:
+                  - paragraph [ref=e427]:
+                    - emphasis [ref=e428]: Вложения
+                    - text: — это медиафайлы, прикрепленные к сообщениям.
+                - definition [ref=e429]:
+                  - paragraph [ref=e430]: "Справочная информация:"
+                  - list [ref=e431]:
+                    - listitem [ref=e432]:
+                      - link "Справочник RPC" [ref=e433] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rpc/google.chat.v1?hl=ru#google.chat.v1.Attachment
+                    - listitem [ref=e434]:
+                      - link "Справочник REST" [ref=e435] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces.messages.attachments?hl=ru
+                - definition [ref=e436]:
+                  - paragraph [ref=e437]: "Примеры использования см. в:"
+                  - list [ref=e438]:
+                    - listitem [ref=e439]:
+                      - link "Загрузите медиафайл в качестве вложения." [ref=e440] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/upload-media-attachments?hl=ru
+                    - listitem [ref=e441]:
+                      - link "Скачать медиафайлы в виде вложений" [ref=e442] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/download-media-attachments?hl=ru
+                    - listitem [ref=e443]:
+                      - link "Получите вложение" [ref=e444] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/get-media-attachments?hl=ru
+                - term [ref=e445]:
+                  - emphasis [ref=e446]: Космические события
+                - definition [ref=e447]:
+                  - paragraph [ref=e448]:
+                    - emphasis [ref=e449]: События в пространстве
+                    - text: отражают изменения в пространстве или его дочерних ресурсах, включая его участников, сообщения и реакции.
+                - definition [ref=e450]:
+                  - paragraph [ref=e451]: "Справочная информация:"
+                  - list [ref=e452]:
+                    - listitem [ref=e453]:
+                      - link "Справочник RPC" [ref=e454] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rpc/google.chat.v1?hl=ru#google.chat.v1.SpaceEvent
+                    - listitem [ref=e455]:
+                      - link "Справочник REST" [ref=e456] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rest/v1/spaces.spaceEvents?hl=ru
+                - definition [ref=e457]:
+                  - paragraph [ref=e458]: "Примеры использования см. в:"
+                  - list [ref=e459]:
+                    - listitem [ref=e460]:
+                      - link "Получить состояние чтения пространства" [ref=e461] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/get-space-read-state?hl=ru
+                    - listitem [ref=e462]:
+                      - link "Обновить состояние чтения пространства" [ref=e463] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/update-space-read-state?hl=ru
+                    - listitem [ref=e464]:
+                      - link "Получить состояние чтения потока" [ref=e465] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/get-thread-read-state?hl=ru
+                - term [ref=e466]:
+                  - emphasis [ref=e467]: Состояния чтения пользователя
+                - definition [ref=e468]:
+                  - paragraph [ref=e469]:
+                    - emphasis [ref=e470]: Состояния прочтения пользователем сообщений
+                    - text: — это ресурсы-одиночки, представляющие подробную информацию о последнем прочитанном сообщении указанного пользователя в пространстве чата Google или в цепочке сообщений.
+                - definition [ref=e471]:
+                  - paragraph [ref=e472]: "Справочник ресурсов по состоянию чтения пространства:"
+                  - list [ref=e473]:
+                    - listitem [ref=e474]:
+                      - link "Справочник RPC" [ref=e475] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rpc/google.chat.v1?hl=ru#google.chat.v1.SpaceReadState
+                    - listitem [ref=e476]:
+                      - link "Справочник REST" [ref=e477] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rest/v1/users.spaces?hl=ru
+                - definition [ref=e478]:
+                  - paragraph [ref=e479]: "Справочник ресурсов состояния чтения потока:"
+                  - list [ref=e480]:
+                    - listitem [ref=e481]:
+                      - link "Справочник RPC" [ref=e482] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rpc/google.chat.v1?hl=ru#google.chat.v1.ThreadReadState
+                    - listitem [ref=e483]:
+                      - link "Справочник REST" [ref=e484] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rest/v1/users.spaces.threads?hl=ru
+                - definition [ref=e485]:
+                  - paragraph [ref=e486]: "Примеры использования см. в:"
+                  - list [ref=e487]:
+                    - listitem [ref=e488]:
+                      - link "Получить состояние чтения пространства" [ref=e489] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/get-space-read-state?hl=ru
+                    - listitem [ref=e490]:
+                      - link "Обновить состояние чтения пространства" [ref=e491] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/update-space-read-state?hl=ru
+                    - listitem [ref=e492]:
+                      - link "Получить состояние чтения потока" [ref=e493] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/get-thread-read-state?hl=ru
+                - term [ref=e494]:
+                  - emphasis [ref=e495]: Настройки уведомлений в пользовательском пространстве
+                - definition [ref=e496]:
+                  - paragraph [ref=e497]:
+                    - emphasis [ref=e498]: Настройки уведомлений в пользовательском пространстве
+                    - text: — это ресурсы-одиночки, представляющие собой указанные настройки уведомлений для пользователя в пространстве Google Chat.
+                - definition [ref=e499]:
+                  - paragraph [ref=e500]: "Справочная информация:"
+                  - list [ref=e501]:
+                    - listitem [ref=e502]:
+                      - link "Справочник RPC" [ref=e503] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rpc/google.chat.v1?hl=ru#google.chat.v1.SpaceNotificationSetting
+                    - listitem [ref=e504]:
+                      - link "Справочник REST" [ref=e505] [cursor=pointer]:
+                        - /url: https://developers.google.com/workspace/chat/api/reference/rest/v1/users.spaces.spaceNotificationSetting?hl=ru
+              - heading "Аутентификация" [level=3] [ref=e506]
+              - paragraph [ref=e507]:
+                - text: Для вызова API чата требуется аутентификация. Каждый метод API чата требует либо
+                - link "аутентификации пользователя" [ref=e508] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace/chat/authenticate-authorize-chat-user?hl=ru
+                - text: (для выполнения действий или доступа к данным от имени пользователя), либо
+                - link "аутентификации приложения" [ref=e509] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace/chat/authenticate-authorize-chat-app?hl=ru
+                - text: (для выполнения действий или доступа к данным в качестве приложения чата). Некоторые методы поддерживают как аутентификацию пользователя, так и аутентификацию приложения.
+              - paragraph [ref=e510]:
+                - text: Чтобы узнать больше об аутентификации в чате, см.
+                - link "раздел «Обзор аутентификации»" [ref=e511] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace/chat/authenticate-authorize?hl=ru
+                - text: .
+              - heading "Клиентские библиотеки" [level=3] [ref=e512]
+              - paragraph [ref=e513]:
+                - text: Для большинства разработчиков рекомендуемый способ вызова API Google Chat — использование официально поддерживаемых нами
+                - link "облачных клиентских библиотек" [ref=e514] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace/chat/libraries?hl=ru
+                - text: для предпочитаемого языка программирования, например Python, Java или Node.js.
+              - paragraph [ref=e515]:
+                - text: Если вы используете Google Apps Script для программирования, воспользуйтесь
+                - link "сервисом Advanced Chat" [ref=e516] [cursor=pointer]:
+                  - /url: https://developers.google.com/apps-script/advanced/chat?hl=ru
+                - text: вместо установки клиентской библиотеки.
+              - heading "Создавайте приложения для чата." [level=2] [ref=e517]
+              - paragraph [ref=e520]: "API чата позволяет создавать приложения Google Chat, которые интегрируют ваши сервисы и ресурсы непосредственно в Google Chat. Вы можете создавать приложения чата для выполнения следующих задач:"
+              - list [ref=e521]:
+                - listitem [ref=e522]: Получение информации на основе структурированных или свободных текстовых запросов, введенных пользователем.
+                - listitem [ref=e523]: Создавайте отчеты об инцидентах или другие документы, используя информацию, предоставленную пользователем.
+                - listitem [ref=e524]: Улучшите командное взаимодействие, например, обеспечив "командную память" или спланировав распределение ресурсов.
+              - paragraph [ref=e525]: "Для проектирования чат-приложения можно использовать несколько различных архитектурных стилей, в том числе следующие:"
+              - list [ref=e526]:
+                - listitem [ref=e527]:
+                  - strong [ref=e528]: Интерактивные приложения
+                  - text: ": Реагируют на действия пользователя, такие как упоминания (@) или команды со слэшем, и представляют информацию или направляют пользователей по рабочему процессу с помощью карточек и диалогов."
+                - listitem [ref=e529]:
+                  - strong [ref=e530]: Приложения командной строки или веб-хуки
+                  - text: ": отправляют упреждающие сообщения, такие как оповещения или уведомления, из другой системы в определенное пространство. Пользователи не могут напрямую взаимодействовать с приложениями такого типа."
+                - listitem [ref=e531]:
+                  - strong [ref=e532]: Приложения, управляемые событиями
+                  - text: ": Подписываются на активность в чате и реагируют на неё, например, на присоединение нового пользователя. В ответ на событие приложение может отправить сообщение или выполнить другое действие."
+              - paragraph [ref=e533]:
+                - text: Подробную информацию о проектировании приложения для чата см. в разделе
+                - link "«Выбор архитектуры приложения Google Chat»" [ref=e534] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace/chat/structure?hl=ru
+                - text: .
+              - heading "Связанные темы" [level=2] [ref=e535]
+              - list [ref=e536]:
+                - listitem [ref=e537]:
+                  - link "Ознакомьтесь с примерами приложения Google Chat" [ref=e538] [cursor=pointer]:
+                    - /url: https://developers.google.com/workspace/chat/samples?hl=ru
+                  - text: .
+                - listitem [ref=e539]:
+                  - link "Создавайте интерактивные приложения Google Chat" [ref=e540] [cursor=pointer]:
+                    - /url: https://developers.google.com/workspace/chat/interact-users-overview?hl=ru
+                  - text: .
+                - listitem [ref=e541]:
+                  - link "Выберите архитектуру приложения Google Chat" [ref=e542] [cursor=pointer]:
+                    - /url: https://developers.google.com/workspace/chat/structure?hl=ru
+                  - text: .
+              - table [ref=e544]:
+                - rowgroup [ref=e545]:
+                  - row "Хотите увидеть API Google Chat в действии? На канале Google Workspace Developers вы найдете видеоролики с советами, рекомендациями и информацией о новейших функциях. Подпишитесь сейчас" [ref=e546]:
+                    - cell [ref=e547]:
+                      - img [ref=e548]
+                    - cell "Хотите увидеть API Google Chat в действии? На канале Google Workspace Developers вы найдете видеоролики с советами, рекомендациями и информацией о новейших функциях. Подпишитесь сейчас" [ref=e549]:
+                      - generic [ref=e550]: Хотите увидеть API Google Chat в действии?
+                      - generic [ref=e551]: На канале Google Workspace Developers вы найдете видеоролики с советами, рекомендациями и информацией о новейших функциях.
+                      - link "Подпишитесь сейчас" [ref=e553] [cursor=pointer]:
+                        - /url: https://www.youtube.com/channel/UCUcg6az6etU_gRtZVAhBXaw?hl=ru
+            - button "Отправить отзыв" [ref=e555] [cursor=pointer]
+          - generic [ref=e557]:
+            - paragraph [ref=e558]:
+              - text: Если не указано иное, контент на этой странице предоставляется по
+              - link "лицензии Creative Commons \"С указанием авторства 4.0\"" [ref=e559] [cursor=pointer]:
+                - /url: https://creativecommons.org/licenses/by/4.0/
+              - text: ", а примеры кода – по"
+              - link "лицензии Apache 2.0" [ref=e560] [cursor=pointer]:
+                - /url: https://www.apache.org/licenses/LICENSE-2.0
+              - text: . Подробнее об этом написано в
+              - link "правилах сайта" [ref=e561] [cursor=pointer]:
+                - /url: https://developers.google.com/site-policies?hl=ru
+              - text: . Java – это зарегистрированный товарный знак корпорации Oracle и ее аффилированных лиц.
+            - paragraph [ref=e562]: "Последнее обновление: 2026-04-23 UTC."
+      - navigation "Промоакции" [ref=e564]:
+        - list [ref=e565]:
+          - listitem [ref=e566]:
+            - link "Блог Блог" [ref=e567] [cursor=pointer]:
+              - /url: https://developers.googleblog.com/search/?query=Google+Workspace
+              - img "Блог" [ref=e569]
+              - text: Блог
+            - generic [ref=e570]: Читайте блог разработчиков Google Workspace
+          - listitem [ref=e571]:
+            - link "X (Твиттер) X (Твиттер)" [ref=e572] [cursor=pointer]:
+              - /url: https://twitter.com/workspacedevs
+              - img "X (Твиттер)" [ref=e574]
+              - text: X (Твиттер)
+            - generic [ref=e575]: Следуйте @workspacedevs в X (Twitter)
+          - listitem [ref=e576]:
+            - link "Примеры кода Примеры кода" [ref=e577] [cursor=pointer]:
+              - /url: https://github.com/googleworkspace
+              - img "Примеры кода" [ref=e579]
+              - text: Примеры кода
+            - generic [ref=e580]: Изучите наши примеры приложений или скопируйте их, чтобы создать свои собственные.
+          - listitem [ref=e581]:
+            - link "Кодлабы Кодлабы" [ref=e582] [cursor=pointer]:
+              - /url: https://codelabs.developers.google.com/?product=googleworkspace&hl=ru
+              - img "Кодлабы" [ref=e584]
+              - text: Кодлабы
+            - generic [ref=e585]: Попробуйте управляемый практический опыт кодирования
+          - listitem [ref=e586]:
+            - link "Видео Видео" [ref=e587] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCUcg6az6etU_gRtZVAhBXaw?hl=ru
+              - img "Видео" [ref=e589]
+              - text: Видео
+            - generic [ref=e590]: Подпишитесь на наш канал на YouTube
+      - navigation "Ссылки в нижнем колонтитуле" [ref=e592]:
+        - list [ref=e593]:
+          - listitem [ref=e594]:
+            - heading "Google Workspace для разработчиков" [level=3] [ref=e595]
+            - list [ref=e596]:
+              - listitem [ref=e597]:
+                - link "Обзор платформы" [ref=e598] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace?hl=ru
+              - listitem [ref=e599]:
+                - link "Продукты для разработчиков" [ref=e600] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace/products?hl=ru
+              - listitem [ref=e601]:
+                - link "Примечания к выпускам" [ref=e602] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace/release-notes?hl=ru
+              - listitem [ref=e603]:
+                - link "Поддержка для разработчиков" [ref=e604] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace/support?hl=ru
+              - listitem [ref=e605]:
+                - link "Условия использования" [ref=e606] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace/terms?hl=ru
+          - listitem [ref=e607]:
+            - heading "Инструменты" [level=3] [ref=e608]
+            - list [ref=e609]:
+              - listitem [ref=e610]:
+                - link "Консоль администратора" [ref=e611] [cursor=pointer]:
+                  - /url: https://admin.google.com/?hl=ru
+              - listitem [ref=e612]:
+                - link "Панель управления скриптами приложений" [ref=e613] [cursor=pointer]:
+                  - /url: https://script.google.com/?hl=ru
+              - listitem [ref=e614]:
+                - link "Консоль Google Cloud" [ref=e615] [cursor=pointer]:
+                  - /url: https://console.cloud.google.com/workspace-api?hl=ru
+              - listitem [ref=e616]:
+                - link "Проводник API" [ref=e617] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace/explore?hl=ru
+          - listitem [ref=e618]:
+            - heading "Подписаться" [level=3] [ref=e619]
+            - list [ref=e620]:
+              - listitem [ref=e621]:
+                - link "Блог" [ref=e622] [cursor=pointer]:
+                  - /url: https://developers.googleblog.com/search/?query=Google+Workspace
+              - listitem [ref=e623]:
+                - link "Новости" [ref=e624] [cursor=pointer]:
+                  - /url: https://developers.google.com/workspace/newsletters?hl=ru
+              - listitem [ref=e625]:
+                - link "X (Твиттер)" [ref=e626] [cursor=pointer]:
+                  - /url: https://twitter.com/workspacedevs
+              - listitem [ref=e627]:
+                - link "YouTube" [ref=e628] [cursor=pointer]:
+                  - /url: https://www.youtube.com/channel/UCUcg6az6etU_gRtZVAhBXaw?hl=ru
+      - generic [ref=e630]:
+        - navigation "Другие сайты Google Developers" [ref=e631]:
+          - link "Google Developers" [ref=e632] [cursor=pointer]:
+            - /url: https://developers.google.com/?hl=ru
+            - img "Google Developers" [ref=e634]
+          - list [ref=e635]:
+            - listitem [ref=e636]:
+              - link "Android" [ref=e637] [cursor=pointer]:
+                - /url: //developer.android.com?hl=ru
+            - listitem [ref=e638]:
+              - link "Chrome" [ref=e639] [cursor=pointer]:
+                - /url: //developer.chrome.com/home?hl=ru
+            - listitem [ref=e640]:
+              - link "Firebase" [ref=e641] [cursor=pointer]:
+                - /url: //firebase.google.com?hl=ru
+            - listitem [ref=e642]:
+              - link "Google Cloud Platform" [ref=e643] [cursor=pointer]:
+                - /url: //cloud.google.com?hl=ru
+            - listitem [ref=e644]:
+              - link "Google AI" [ref=e645] [cursor=pointer]:
+                - /url: //ai.google.dev/?hl=ru
+            - listitem [ref=e646]:
+              - link "Все продукты" [ref=e647] [cursor=pointer]:
+                - /url: https://developers.google.com/products?hl=ru
+        - navigation "Ссылки на утилиты" [ref=e648]:
+          - list [ref=e649]:
+            - listitem [ref=e650]:
+              - link "Условия использования" [ref=e651] [cursor=pointer]:
+                - /url: https://developers.google.com/terms/site-terms?hl=ru
+            - listitem [ref=e652]:
+              - text: "|"
+              - link "Конфиденциальность" [ref=e653] [cursor=pointer]:
+                - /url: //policies.google.com/privacy?hl=ru
+            - text: "|"

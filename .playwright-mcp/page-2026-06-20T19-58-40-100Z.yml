@@ -1,0 +1,190 @@
+- generic [active] [ref=e1]:
+  - navigation [ref=e2]:
+    - generic [ref=e3]:
+      - link "XMPP logo XMPP" [ref=e4] [cursor=pointer]:
+        - /url: https://xmpp.org/
+        - img "XMPP logo" [ref=e5]
+        - text: XMPP
+      - list [ref=e7]:
+        - listitem [ref=e8]:
+          - link "About" [ref=e9] [cursor=pointer]:
+            - /url: https://xmpp.org/about/
+        - listitem [ref=e10]:
+          - link "Uses" [ref=e11] [cursor=pointer]:
+            - /url: https://xmpp.org/uses/
+        - listitem [ref=e12]:
+          - link "Software" [ref=e13] [cursor=pointer]:
+            - /url: https://xmpp.org/software/
+        - listitem [ref=e14]:
+          - link "Specifications" [ref=e15] [cursor=pointer]:
+            - /url: https://xmpp.org/extensions/
+        - listitem [ref=e16]:
+          - link "Community" [ref=e17] [cursor=pointer]:
+            - /url: https://xmpp.org/community/
+        - listitem [ref=e18]:
+          - link "Getting Started" [ref=e19] [cursor=pointer]:
+            - /url: https://xmpp.org/getting-started/
+        - listitem [ref=e20]:
+          - link "News" [ref=e21] [cursor=pointer]:
+            - /url: https://xmpp.org/
+        - listitem [ref=e22]:
+          - link "Jobs" [ref=e23] [cursor=pointer]:
+            - /url: https://xmpp.work
+            - text: Jobs
+  - main [ref=e25]:
+    - generic [ref=e26]:
+      - main [ref=e28]:
+        - heading "About" [level=1] [ref=e30]:
+          - link "About" [ref=e31] [cursor=pointer]:
+            - /url: https://xmpp.org/about/
+        - article [ref=e33]:
+          - paragraph [ref=e34]:
+            - text: E
+            - strong [ref=e35]: x
+            - text: tensible
+            - strong [ref=e36]: M
+            - text: essaging and
+            - strong [ref=e37]: P
+            - text: resence
+            - strong [ref=e38]: P
+            - text: rotocol (XMPP) is an open XML technology for real-time communication, which powers a wide range of applications including instant messaging, presence and collaboration.
+          - paragraph [ref=e39]: To understand what this really means, let’s go on a journey from P back to X…
+          - heading "P — Protocol" [level=2] [ref=e40]
+          - paragraph [ref=e41]: XMPP is a protocol; a set of standards that allows systems to talk to each other. XMPP is used widely across the web, but is often unadvertised. The protocol (or standards) are looked after by the XSF (link).
+          - heading "P — Presence" [level=2] [ref=e42]
+          - paragraph [ref=e43]: The presence indicator tells the servers that you are online / offline / busy. In technical terms, presence determines the state of an XMPP entity; in layman terms, whether you are there and ready to receive messages or not.
+          - heading "M — Messaging" [level=2] [ref=e44]
+          - paragraph [ref=e45]: The ‘messaging’ part of XMPP is the ‘piece’ you see; the Instant Message (IM) sent between clients. XMPP has been designed to send all messages in real-time using a very efficient push mechanism; whereas existing web based mechanisms often make many unnecessary requests introducing network load, and are consequently not real-time.
+          - heading "X — eXtensible" [level=2] [ref=e46]
+          - paragraph [ref=e47]: Defined in an open standard and using an open systems approach of development and application, XMPP is designed to be extensible. In other words, it has been designed to grow and accommodate changes.
+      - complementary [ref=e48]:
+        - heading "about" [level=4] [ref=e49]
+        - list [ref=e50]:
+          - listitem [ref=e51]:
+            - link "Overview" [ref=e52] [cursor=pointer]:
+              - /url: https://xmpp.org/about/technology-overview/
+          - listitem [ref=e53]:
+            - link "The XSF" [ref=e54] [cursor=pointer]:
+              - /url: https://xmpp.org/about/xmpp-standards-foundation/
+          - listitem [ref=e55]:
+            - link "Standards Process" [ref=e56] [cursor=pointer]:
+              - /url: https://xmpp.org/about/standards-process/
+          - listitem [ref=e57]:
+            - link "Compliance Suites" [ref=e58] [cursor=pointer]:
+              - /url: https://xmpp.org/about/compliance-suites/
+          - listitem [ref=e59]:
+            - link "FAQ" [ref=e60] [cursor=pointer]:
+              - /url: https://xmpp.org/about/faq/
+          - listitem [ref=e61]:
+            - link "Myths & Legends" [ref=e62] [cursor=pointer]:
+              - /url: https://xmpp.org/about/myths/
+          - listitem [ref=e63]:
+            - link "Publications" [ref=e64] [cursor=pointer]:
+              - /url: https://xmpp.org/about/publications/
+          - listitem [ref=e65]:
+            - link "Press Kit" [ref=e66] [cursor=pointer]:
+              - /url: https://xmpp.org/about/press-kit/
+          - listitem [ref=e67]:
+            - link "History" [ref=e68] [cursor=pointer]:
+              - /url: https://xmpp.org/about/history/
+  - generic [ref=e69]:
+    - heading "The XSF is generously sponsored by:" [level=4] [ref=e70]:
+      - text: The
+      - link "XSF" [ref=e71] [cursor=pointer]:
+        - /url: https://xmpp.org/about/xmpp-standards-foundation/
+      - text: "is generously sponsored by:"
+    - list [ref=e72]:
+      - listitem [ref=e73]:
+        - link "ProcessOne" [ref=e74] [cursor=pointer]:
+          - /url: https://xmpp.org/sponsors/processone/
+          - img "ProcessOne" [ref=e75]
+      - listitem [ref=e76]:
+        - link "US Secure Hosting Center" [ref=e77] [cursor=pointer]:
+          - /url: https://xmpp.org/sponsors/us-secure-hosting-center/
+          - img "US Secure Hosting Center" [ref=e78]
+      - listitem [ref=e79]:
+        - link "Extensible Messaging Ltd" [ref=e80] [cursor=pointer]:
+          - /url: https://xmpp.org/community/sponsors/
+          - img "Extensible Messaging Ltd" [ref=e81]
+      - listitem [ref=e82]:
+        - link "Tigase" [ref=e83] [cursor=pointer]:
+          - /url: https://xmpp.org/community/sponsors/
+          - img "Tigase" [ref=e84]
+      - listitem [ref=e85]:
+        - link "Tygrys" [ref=e86] [cursor=pointer]:
+          - /url: https://xmpp.org/community/sponsors/
+          - img "Tygrys" [ref=e87]
+    - link "Become a sponsor" [ref=e88] [cursor=pointer]:
+      - /url: https://xmpp.org/community/sponsorship/
+  - generic [ref=e89]:
+    - paragraph [ref=e90]:
+      - text: The xmpp.org domain was generously donated by
+      - link "OpenDomain.org" [ref=e92] [cursor=pointer]:
+        - /url: https://opendomain.org
+      - text: .
+    - paragraph [ref=e93]:
+      - text: This site is organized in the open on
+      - link "GitHub" [ref=e95] [cursor=pointer]:
+        - /url: https://github.com/xsf/xmpp.org
+      - text: .
+      - link "Edit this page" [ref=e96] [cursor=pointer]:
+        - /url: https://github.com/xsf/xmpp.org/edit/master/content/about/_index.md
+        - text: Edit this page
+    - paragraph [ref=e98]: "Last website build: Jun 20, 2026 (0:18 UTC)"
+  - contentinfo [ref=e99]:
+    - generic [ref=e101]:
+      - img "XMPP logo" [ref=e103]
+      - list [ref=e105]:
+        - listitem [ref=e106]:
+          - link "Home" [ref=e107] [cursor=pointer]:
+            - /url: https://xmpp.org/
+        - listitem [ref=e108]:
+          - link "About XMPP" [ref=e109] [cursor=pointer]:
+            - /url: https://xmpp.org/about/
+        - listitem [ref=e110]:
+          - link "Specifications" [ref=e111] [cursor=pointer]:
+            - /url: https://xmpp.org/extensions/
+        - listitem [ref=e112]:
+          - link "Uses" [ref=e113] [cursor=pointer]:
+            - /url: https://xmpp.org/uses/
+        - listitem [ref=e114]:
+          - link "Software" [ref=e115] [cursor=pointer]:
+            - /url: https://xmpp.org/software/
+      - list [ref=e117]:
+        - listitem [ref=e118]:
+          - link "Community" [ref=e119] [cursor=pointer]:
+            - /url: https://xmpp.org/community/
+        - listitem [ref=e120]:
+          - link "Blog" [ref=e121] [cursor=pointer]:
+            - /url: https://xmpp.org/blog/
+        - listitem [ref=e122]:
+          - link "Announcements" [ref=e123] [cursor=pointer]:
+            - /url: https://xmpp.org/announcements/
+        - listitem [ref=e124]:
+          - link "Press Kit" [ref=e125] [cursor=pointer]:
+            - /url: https://xmpp.org/about/press-kit/
+        - listitem [ref=e126]:
+          - link "Contact" [ref=e127] [cursor=pointer]:
+            - /url: https://xmpp.org/contact/
+      - list [ref=e129]:
+        - listitem [ref=e130]:
+          - link "RSS" [ref=e131] [cursor=pointer]:
+            - /url: https://xmpp.org/blog/index.xml
+        - listitem [ref=e132]:
+          - link "@Movim" [ref=e133] [cursor=pointer]:
+            - /url: https://mov.im/community/news.xmpp.org/News
+        - listitem [ref=e134]:
+          - link "@Mastodon" [ref=e135] [cursor=pointer]:
+            - /url: https://fosstodon.org/@xmpp
+        - listitem [ref=e136]:
+          - link "@Bluesky" [ref=e137] [cursor=pointer]:
+            - /url: https://bsky.app/profile/xmpp.org
+        - listitem [ref=e138]:
+          - link "@LinkedIn" [ref=e139] [cursor=pointer]:
+            - /url: https://www.linkedin.com/company/xmpp-standards-foundation
+        - listitem [ref=e140]:
+          - link "@Reddit" [ref=e141] [cursor=pointer]:
+            - /url: https://www.reddit.com/user/xmpp-org/
+        - listitem [ref=e142]:
+          - link "@Youtube" [ref=e143] [cursor=pointer]:
+            - /url: https://www.youtube.com/channel/UCf3Kq2ElJDFQhYDdjn18RuA

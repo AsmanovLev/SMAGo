@@ -1,0 +1,11 @@
+_runtime/
+*.exe
+__pycache__/
+*.pyc
+_deps/
+_build/
+mix.lock
+
+# Elixir deps
+elixir/deps/
+elixir/_build/

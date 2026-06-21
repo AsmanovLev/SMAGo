@@ -1,0 +1,1031 @@
+- generic [ref=e2]:
+  - region "Skip to main content":
+    - link "Skip to main content" [ref=e3] [cursor=pointer]:
+      - /url: "#__docusaurus_skipToContent_fallback"
+  - navigation "Main" [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "Slack Developer Docs" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "Slack Developer Docs" [ref=e9]
+        - link "Guides" [ref=e10] [cursor=pointer]:
+          - /url: /
+        - link "Reference" [ref=e11] [cursor=pointer]:
+          - /url: /reference
+        - link "Samples" [ref=e12] [cursor=pointer]:
+          - /url: /samples
+        - link "Tools" [ref=e13] [cursor=pointer]:
+          - /url: /tools
+      - generic [ref=e14]:
+        - link "Changelog" [ref=e15] [cursor=pointer]:
+          - /url: /changelog
+        - link "Dev Program" [ref=e16] [cursor=pointer]:
+          - /url: https://api.slack.com/developer-program
+        - button "Switch between dark and light mode (currently system mode)" [disabled] [ref=e18]
+        - generic [ref=e19]:
+          - textbox "Search docs" [ref=e23]
+          - link "MANAGE APPS" [ref=e24] [cursor=pointer]:
+            - /url: https://api.slack.com/apps
+  - generic [ref=e27]:
+    - complementary [ref=e28]:
+      - generic [ref=e30]:
+        - navigation "Docs sidebar" [ref=e31]:
+          - list [ref=e32]:
+            - listitem [ref=e33]:
+              - link "Welcome!" [ref=e34] [cursor=pointer]:
+                - /url: /
+                - generic "Welcome!" [ref=e35]
+            - listitem [ref=e36]:
+              - link "Quickstart" [ref=e37] [cursor=pointer]:
+                - /url: /quickstart
+                - generic "Quickstart" [ref=e38]
+            - listitem [ref=e39]:
+              - generic [ref=e40]:
+                - link "Resources" [ref=e41] [cursor=pointer]:
+                  - /url: /developer-support
+                  - generic "Resources" [ref=e42]
+                - button "Expand sidebar category 'Resources'" [ref=e43] [cursor=pointer]
+            - listitem [ref=e44]:
+              - separator [ref=e45]
+            - listitem [ref=e46]:
+              - generic [ref=e47]:
+                - link "Slack platform concepts" [ref=e48] [cursor=pointer]:
+                  - /url: /concepts/overview
+                  - generic "Slack platform concepts" [ref=e49]
+                - button "Expand sidebar category 'Slack platform concepts'" [ref=e50] [cursor=pointer]
+            - listitem [ref=e51]:
+              - generic [ref=e52]:
+                - link "AI in Slack" [ref=e53] [cursor=pointer]:
+                  - /url: /ai/
+                  - generic "AI in Slack" [ref=e54]
+                - button "Expand sidebar category 'AI in Slack'" [ref=e55] [cursor=pointer]
+            - listitem [ref=e56]:
+              - generic [ref=e57]:
+                - link "APIs" [ref=e58] [cursor=pointer]:
+                  - /url: /apis/
+                  - generic "APIs" [ref=e59]
+                - button "Expand sidebar category 'APIs'" [ref=e60] [cursor=pointer]
+            - listitem [ref=e61]:
+              - generic [ref=e62]:
+                - link "App management" [ref=e63] [cursor=pointer]:
+                  - /url: /app-management/
+                  - generic "App management" [ref=e64]
+                - button "Expand sidebar category 'App management'" [ref=e65] [cursor=pointer]
+            - listitem [ref=e66]:
+              - generic [ref=e67]:
+                - link "App manifests" [ref=e68] [cursor=pointer]:
+                  - /url: /app-manifests/
+                  - generic "App manifests" [ref=e69]
+                - button "Expand sidebar category 'App manifests'" [ref=e70] [cursor=pointer]
+            - listitem [ref=e71]:
+              - generic [ref=e72]:
+                - link "Admin resources" [ref=e73] [cursor=pointer]:
+                  - /url: /admins/
+                  - generic "Admin resources" [ref=e74]
+                - button "Expand sidebar category 'Admin resources'" [ref=e75] [cursor=pointer]
+            - listitem [ref=e76]:
+              - generic [ref=e77]:
+                - link "Authentication" [ref=e78] [cursor=pointer]:
+                  - /url: /authentication/
+                  - generic "Authentication" [ref=e79]
+                - button "Expand sidebar category 'Authentication'" [ref=e80] [cursor=pointer]
+            - listitem [ref=e81]:
+              - generic [ref=e82]:
+                - link "Block Kit" [ref=e83] [cursor=pointer]:
+                  - /url: /block-kit/
+                  - generic "Block Kit" [ref=e84]
+                - button "Expand sidebar category 'Block Kit'" [ref=e85] [cursor=pointer]
+            - listitem [ref=e86]:
+              - generic [ref=e87]:
+                - link "Enterprise" [ref=e88] [cursor=pointer]:
+                  - /url: /enterprise/
+                  - generic "Enterprise" [ref=e89]
+                - button "Expand sidebar category 'Enterprise'" [ref=e90] [cursor=pointer]
+            - listitem [ref=e91]:
+              - generic [ref=e92]:
+                - link "Enterprise Search for apps" [ref=e93] [cursor=pointer]:
+                  - /url: /enterprise-search/
+                  - generic "Enterprise Search for apps" [ref=e94]
+                - button "Expand sidebar category 'Enterprise Search for apps'" [ref=e95] [cursor=pointer]
+            - listitem [ref=e96]:
+              - link "GovSlack" [ref=e97] [cursor=pointer]:
+                - /url: /govslack
+                - generic "GovSlack" [ref=e98]
+            - listitem [ref=e99]:
+              - generic [ref=e100]:
+                - link "Interactivity" [ref=e101] [cursor=pointer]:
+                  - /url: /interactivity/
+                  - generic "Interactivity" [ref=e102]
+                - button "Expand sidebar category 'Interactivity'" [ref=e103] [cursor=pointer]
+            - listitem [ref=e104]:
+              - generic [ref=e105]:
+                - link "Messaging" [ref=e106] [cursor=pointer]:
+                  - /url: /messaging/
+                  - generic "Messaging" [ref=e107]
+                - button "Collapse sidebar category 'Messaging'" [expanded] [ref=e108] [cursor=pointer]
+              - list [ref=e109]:
+                - listitem [ref=e110]:
+                  - link "Overview" [ref=e111] [cursor=pointer]:
+                    - /url: /messaging/
+                    - generic "Overview" [ref=e112]
+                - listitem [ref=e113]:
+                  - link "Creating interactive messages" [ref=e114] [cursor=pointer]:
+                    - /url: /messaging/creating-interactive-messages
+                    - generic "Creating interactive messages" [ref=e115]
+                - listitem [ref=e116]:
+                  - link "Formatting message text" [ref=e117] [cursor=pointer]:
+                    - /url: /messaging/formatting-message-text
+                    - generic "Formatting message text" [ref=e118]
+                - listitem [ref=e119]:
+                  - link "Modifying messages" [ref=e120] [cursor=pointer]:
+                    - /url: /messaging/modifying-messages
+                    - generic "Modifying messages" [ref=e121]
+                - listitem [ref=e122]:
+                  - link "Sending and scheduling messages" [ref=e123] [cursor=pointer]:
+                    - /url: /messaging/sending-and-scheduling-messages
+                    - generic "Sending and scheduling messages" [ref=e124]
+                - listitem [ref=e125]:
+                  - link "Sending messages using incoming webhooks" [ref=e126] [cursor=pointer]:
+                    - /url: /messaging/sending-messages-using-incoming-webhooks
+                    - generic "Sending messages using incoming webhooks" [ref=e127]
+                - listitem [ref=e128]:
+                  - link "Retrieving messages" [ref=e129] [cursor=pointer]:
+                    - /url: /messaging/retrieving-messages
+                    - generic "Retrieving messages" [ref=e130]
+                - listitem [ref=e131]:
+                  - link "Working with files" [ref=e132] [cursor=pointer]:
+                    - /url: /messaging/working-with-files
+                    - generic "Working with files" [ref=e133]
+                - listitem [ref=e134]:
+                  - link "Migrating outmoded message compositions to blocks" [ref=e135] [cursor=pointer]:
+                    - /url: /messaging/migrating-outmoded-message-compositions-to-blocks
+                    - generic "Migrating outmoded message compositions to blocks" [ref=e136]
+                - listitem [ref=e137]:
+                  - generic [ref=e138]:
+                    - link "Message metadata" [ref=e139] [cursor=pointer]:
+                      - /url: /messaging/message-metadata/
+                      - generic "Message metadata" [ref=e140]
+                    - button "Expand sidebar category 'Message metadata'" [ref=e141] [cursor=pointer]
+                - listitem [ref=e142]:
+                  - generic [ref=e143]:
+                    - link "Work Objects" [ref=e144] [cursor=pointer]:
+                      - /url: /messaging/work-objects-overview
+                      - generic "Work Objects" [ref=e145]
+                    - button "Expand sidebar category 'Work Objects'" [ref=e146] [cursor=pointer]
+                - listitem [ref=e147]:
+                  - link "Unfurling links in messages" [ref=e148] [cursor=pointer]:
+                    - /url: /messaging/unfurling-links-in-messages
+                    - generic "Unfurling links in messages" [ref=e149]
+            - listitem [ref=e150]:
+              - generic [ref=e151]:
+                - link "Slack Marketplace" [ref=e152] [cursor=pointer]:
+                  - /url: /slack-marketplace/
+                  - generic "Slack Marketplace" [ref=e153]
+                - button "Expand sidebar category 'Slack Marketplace'" [ref=e154] [cursor=pointer]
+            - listitem [ref=e155]:
+              - generic [ref=e156]:
+                - link "Surfaces" [ref=e157] [cursor=pointer]:
+                  - /url: /surfaces/
+                  - generic "Surfaces" [ref=e158]
+                - button "Expand sidebar category 'Surfaces'" [ref=e159] [cursor=pointer]
+            - listitem [ref=e160]:
+              - generic [ref=e161]:
+                - link "Workflows" [ref=e162] [cursor=pointer]:
+                  - /url: /workflows/
+                  - generic "Workflows" [ref=e163]
+                - button "Expand sidebar category 'Workflows'" [ref=e164] [cursor=pointer]
+            - listitem [ref=e165]:
+              - separator [ref=e166]
+            - listitem [ref=e167]:
+              - generic [ref=e168]:
+                - link "Legacy" [ref=e169] [cursor=pointer]:
+                  - /url: /legacy/
+                  - generic "Legacy" [ref=e170]
+                - button "Expand sidebar category 'Legacy'" [ref=e171] [cursor=pointer]
+            - listitem [ref=e172]:
+              - separator [ref=e173]
+            - listitem [ref=e174]:
+              - generic [ref=e175]:
+                - link "日本語版ページ" [ref=e176] [cursor=pointer]:
+                  - /url: /ja-jp/
+                  - generic "日本語版ページ" [ref=e177]
+                - button "Expand sidebar category '日本語版ページ'" [ref=e178] [cursor=pointer]
+        - button "Collapse sidebar" [ref=e179] [cursor=pointer]
+    - main [ref=e180]:
+      - generic [ref=e182]:
+        - generic [ref=e184]:
+          - article [ref=e185]:
+            - navigation "Breadcrumbs" [ref=e186]:
+              - list [ref=e187]:
+                - listitem [ref=e188]:
+                  - link "Home page" [ref=e189] [cursor=pointer]:
+                    - /url: /
+                    - img [ref=e190]
+                - listitem [ref=e192]:
+                  - link "Messaging" [ref=e193] [cursor=pointer]:
+                    - /url: /messaging/
+                - listitem [ref=e194]:
+                  - generic [ref=e195]: Sending and scheduling messages
+            - generic [ref=e196]:
+              - heading "Sending and scheduling messages" [level=1] [ref=e198]
+              - paragraph [ref=e199]:
+                - text: Apps that only
+                - emphasis [ref=e200]: listen
+                - text: can be useful, but there's so much more utility to explore by transforming a monologue into a conversation. Give your app the gift of dialogue by setting it up to send Slack messages.
+              - paragraph [ref=e201]: This guide will help you learn a basic way to accomplish this and show you the paths you can take to make things complex and interactive.
+              - separator [ref=e202]
+              - heading "Sending messagesDirect link to Sending messages" [level=2] [ref=e203]:
+                - text: Sending messages
+                - link "Direct link to Sending messages" [ref=e204] [cursor=pointer]:
+                  - /url: "#getting_started"
+                  - text: "#"
+              - paragraph [ref=e205]:
+                - text: If you don't have a Slack app yet,
+                - link "here's a guide to help you create one" [ref=e206] [cursor=pointer]:
+                  - /url: /app-management/quickstart-app-settings#creating
+                - text: . Make sure you create the app in a workspace that won't mind you posting lots of test messages.
+              - paragraph [ref=e207]: Once you've done that, come back here and keep reading.
+              - heading "Requesting the necessary permissionsDirect link to Requesting the necessary permissions" [level=3] [ref=e208]:
+                - text: Requesting the necessary permissions
+                - link "Direct link to Requesting the necessary permissions" [ref=e209] [cursor=pointer]:
+                  - /url: "#permissions"
+                  - text: "#"
+              - paragraph [ref=e210]:
+                - text: Each Slack app starts off without permission to do very much at all. You will have to grant your app the correct scopes required in order for you to publish messages. There are
+                - link "lots of scopes available" [ref=e211] [cursor=pointer]:
+                  - /url: /reference/scopes
+                - text: ", and you can read our"
+                - link "OAuth guide" [ref=e212] [cursor=pointer]:
+                  - /url: /authentication/installing-with-oauth
+                - text: for more information on why they're needed, and what they do.
+              - paragraph [ref=e213]: For the purposes of this guide, however, we'll skip over that and just tell you the permissions we need right now.
+              - paragraph [ref=e214]:
+                - text: The first is
+                - link "channels:read" [ref=e215] [cursor=pointer]:
+                  - /url: /reference/scopes/channels.read
+                  - code [ref=e216]: channels:read
+                - text: . That scope lets your app retrieve a list of all the public channels in a workspace so that you can
+                - link "pick one to publish a message to" [ref=e217] [cursor=pointer]:
+                  - /url: "#conversations"
+                - text: . If you already know the ID of the channel you wish to send messages to, you can skip out on requesting
+                - code [ref=e218]: channels:read
+                - text: .
+              - paragraph [ref=e219]:
+                - text: The second is
+                - link "chat:write" [ref=e220] [cursor=pointer]:
+                  - /url: /reference/scopes/chat.write
+                  - code [ref=e221]: chat:write
+                - text: . This one grants permission for your app to send messages as itself (apps
+                - emphasis [ref=e222]: can
+                - text: send messages as users or bot users, but
+                - link "we'll cover that later" [ref=e223] [cursor=pointer]:
+                  - /url: "#impersonation"
+                - text: ).
+              - paragraph [ref=e224]: "To request permissions:"
+              - list [ref=e225]:
+                - listitem [ref=e226]:
+                  - text: Open the settings for your app from the
+                  - link "App Management" [ref=e227] [cursor=pointer]:
+                    - /url: https://api.slack.com/apps
+                  - text: page.
+                - listitem [ref=e228]:
+                  - text: In the navigation menu, select
+                  - strong [ref=e229]: OAuth & Permissions
+                  - text: .
+                - listitem [ref=e230]:
+                  - text: Scroll down to the
+                  - strong [ref=e231]: Scopes
+                  - text: section, and pick
+                  - code [ref=e232]: channels:read
+                  - text: and
+                  - code [ref=e233]: chat:write
+                  - text: from the drop-down menu.
+                - listitem [ref=e234]:
+                  - text: Click
+                  - strong [ref=e235]: Save changes
+                  - text: .
+                - listitem [ref=e236]:
+                  - text: Scroll back to the top of this page and look for the button that says
+                  - strong [ref=e237]: Install App to Workspace
+                  - text: (or
+                  - strong [ref=e238]: Reinstall App
+                  - text: if you've done this before). Click it. You'll now see a permission request screen to install your app to its original workspace.
+              - paragraph [ref=e239]: If you had already installed your app to its original workspace before, you might still see the permissions screen if the scopes you just added weren't previously granted to your app.
+              - paragraph [ref=e240]:
+                - text: Authorize your app, and you should see a success message. On the
+                - strong [ref=e241]: OAuth & Permissions
+                - text: page you're brought back to, you should now see an OAuth access token available. Grab this token and store it for later, as we'll use that token to make some
+                - link "Web API" [ref=e242] [cursor=pointer]:
+                  - /url: /apis/web-api/
+                - text: calls.
+              - heading "Picking the right conversationDirect link to Picking the right conversation" [level=3] [ref=e243]:
+                - text: Picking the right conversation
+                - link "Direct link to Picking the right conversation" [ref=e244] [cursor=pointer]:
+                  - /url: "#conversations"
+                  - text: "#"
+              - paragraph [ref=e245]:
+                - text: Now we need to find somewhere within your workspace to send a message. This
+                - link "could be any Slack conversation" [ref=e246] [cursor=pointer]:
+                  - /url: /messaging#conversations
+                - text: ", but we'll use a public channel."
+              - paragraph [ref=e247]:
+                - text: We'll remind you again, it's not a good idea to attempt the instructions in this guide with a real, living workspace. If you really have to, at least
+                - link "create a new, empty public channel" [ref=e248] [cursor=pointer]:
+                  - /url: https://slack.com/help/articles/201402297-Create-a-channel
+                - text: within the workspace for testing purposes.
+              - paragraph [ref=e249]:
+                - text: In order to find a valid Slack conversation ID, we'll use the
+                - link "conversations.list" [ref=e250] [cursor=pointer]:
+                  - /url: /reference/methods/conversations.list
+                  - code [ref=e251]: conversations.list
+                - text: method. This API method will return a list of all public channels in the workspace your app is installed to. You'll need the
+                - link "channels:read" [ref=e252] [cursor=pointer]:
+                  - /url: /reference/scopes/channels.read
+                  - code [ref=e253]: channels:read
+                - text: scope granted to your app.
+              - paragraph [ref=e254]:
+                - text: Within that list, we'll be able to find a specific
+                - code [ref=e255]: id
+                - text: "of the conversation that we want to access. Here's an example API call:"
+              - generic [ref=e256]:
+                - tablist [ref=e257]:
+                  - tab "HTTP" [selected] [ref=e258] [cursor=pointer]
+                  - tab "Java" [ref=e259] [cursor=pointer]
+                  - tab "JavaScript" [ref=e260] [cursor=pointer]
+                  - tab "Python" [ref=e261] [cursor=pointer]
+                - tabpanel [ref=e263]:
+                  - code [ref=e267]:
+                    - generic [ref=e268]: GET https://slack.com/api/conversations.list
+                    - generic [ref=e269]: "Authorization: Bearer xoxb-your-token"
+              - paragraph [ref=e270]:
+                - text: You'll get back a JSON object, with a
+                - code [ref=e271]: channels
+                - text: array containing all the public channels that your app can see. You can find your channel by looking for the
+                - code [ref=e272]: name
+                - text: in each object.
+              - paragraph [ref=e273]:
+                - text: When you've found the matching channel, make note of the
+                - code [ref=e274]: id
+                - text: value, as you'll need it for certain API calls.
+              - generic [ref=e275]:
+                - generic [ref=e276]:
+                  - img [ref=e278]
+                  - text: If your app implements
+                  - link "shortcuts" [ref=e280] [cursor=pointer]:
+                    - /url: /interactivity/implementing-shortcuts
+                  - text: ","
+                  - link "slash commands" [ref=e281] [cursor=pointer]:
+                    - /url: /interactivity/implementing-slash-commands
+                  - text: ", or uses the"
+                  - link "Events API" [ref=e282] [cursor=pointer]:
+                    - /url: /apis/events-api/
+                  - text: ", your app will see conversation"
+                  - code [ref=e283]: id
+                  - text: s in request payloads sent by those features.
+                - paragraph [ref=e285]:
+                  - text: In those cases, your app can dynamically respond using the payload data to identify the relevant conversation, rather than needing to use the
+                  - code [ref=e286]: conversations.list
+                  - text: method described above.
+              - paragraph [ref=e287]: Now that we've picked a destination, we need to decide what our message will look like.
+              - heading "Composing your messageDirect link to Composing your message" [level=3] [ref=e288]:
+                - text: Composing your message
+                - link "Direct link to Composing your message" [ref=e289] [cursor=pointer]:
+                  - /url: "#composing"
+                  - text: "#"
+              - paragraph [ref=e290]:
+                - text: Designing a message is a complicated topic, so we've
+                - link "broken it out into its own section" [ref=e291] [cursor=pointer]:
+                  - /url: /messaging/formatting-message-text
+                - text: that you can read at your leisure.
+              - paragraph [ref=e292]:
+                - text: For this guide, we'll just publish a plain-text message. Here's the
+                - link "message payload" [ref=e293] [cursor=pointer]:
+                  - /url: /messaging#payloads
+                - text: "we're going to send:"
+              - code [ref=e297]:
+                - generic [ref=e298]: "{"
+                - generic [ref=e299]: "\"channel\": \"YOUR_CHANNEL_ID\","
+                - generic [ref=e300]: "\"text\": \"Hello, world\""
+                - generic [ref=e301]: "}"
+              - paragraph [ref=e302]: That seems appropriate, right? Let's get down to the actual business of sending this message.
+              - heading "Publishing your messageDirect link to Publishing your message" [level=3] [ref=e303]:
+                - text: Publishing your message
+                - link "Direct link to Publishing your message" [ref=e304] [cursor=pointer]:
+                  - /url: "#publishing"
+                  - text: "#"
+              - paragraph [ref=e305]:
+                - text: We're nearly there; we just need to make one more API call, this time to
+                - link "chat.postMessage" [ref=e306] [cursor=pointer]:
+                  - /url: /reference/methods/chat.postMessage
+                  - code [ref=e307]: chat.postMessage
+                - text: ". Again, substitute in the values of the token and conversation ID that you noted earlier:"
+              - generic [ref=e308]:
+                - tablist [ref=e309]:
+                  - tab "HTTP" [selected] [ref=e310] [cursor=pointer]
+                  - tab "Java" [ref=e311] [cursor=pointer]
+                  - tab "JavaScript" [ref=e312] [cursor=pointer]
+                  - tab "Python" [ref=e313] [cursor=pointer]
+                - tabpanel [ref=e315]:
+                  - code [ref=e319]:
+                    - generic [ref=e320]: POST https://slack.com/api/chat.postMessage
+                    - generic [ref=e321]: "Content-type: application/json"
+                    - generic [ref=e322]: "Authorization: Bearer xoxb-your-token"
+                    - generic [ref=e323]: "{"
+                    - generic [ref=e324]: "\"channel\": \"YOUR_CHANNEL_ID\","
+                    - generic [ref=e325]: "\"text\": \"Hello world :tada:\""
+                    - generic [ref=e326]: "}"
+              - paragraph [ref=e327]:
+                - text: This time we're using a POST request, so your token from before has to be included in the header of the request as a
+                - link "bearer token" [ref=e328] [cursor=pointer]:
+                  - /url: https://tools.ietf.org/html/rfc6750
+                - text: .
+              - paragraph [ref=e329]:
+                - text: Submit the request and your message should be delivered instantly. You'll get back a response payload containing an
+                - code [ref=e330]: ok
+                - text: confirmation value of
+                - code [ref=e331]: "true"
+                - text: ", and other data such as the"
+                - code [ref=e332]: channel
+                - text: the message was posted to. One very important piece of information in this response is the
+                - code [ref=e333]: ts
+                - text: value, which is essentially the ID of the message, and which you'll need if you want to
+                - link "reply to this message" [ref=e334] [cursor=pointer]:
+                  - /url: "#threading"
+                - text: .
+              - paragraph [ref=e335]: "Locate the Slack conversation the message was sent to and it should be waiting for you:"
+              - generic [ref=e337]:
+                - img "Bot avatar" [ref=e338]
+                - generic [ref=e339]:
+                  - text: Oslo
+                  - paragraph [ref=e340]: Woof! (Hello world!)
+              - paragraph [ref=e341]: Amazing work! You've now implemented one of the core pieces of functionality for any Slack app. Keep reading to see how you can add a little more complexity.
+              - separator [ref=e342]
+              - heading "Replying to your messageDirect link to Replying to your message" [level=3] [ref=e343]:
+                - text: Replying to your message
+                - link "Direct link to Replying to your message" [ref=e344] [cursor=pointer]:
+                  - /url: "#threading"
+                  - text: "#"
+              - paragraph [ref=e345]:
+                - text: In some cases, you might find it more useful for your app to reply to another message, creating a
+                - link "thread" [ref=e346] [cursor=pointer]:
+                  - /url: /messaging#threading
+                - text: . For example, if your app is sending a message in response to being mentioned, then it makes sense to add a
+                - link "threaded reply" [ref=e347] [cursor=pointer]:
+                  - /url: /messaging#threading
+                - text: to the source of the mention.
+              - paragraph [ref=e348]:
+                - link "Make sure the message you want to reply to isn't a reply itself" [ref=e349] [cursor=pointer]:
+                  - /url: /messaging/retrieving-messages#finding_threads
+                - text: ", as shown in our"
+                - link "retrieving messages guide" [ref=e350] [cursor=pointer]:
+                  - /url: /messaging/retrieving-messages#finding_threads
+                - text: .
+              - paragraph [ref=e351]:
+                - text: For this guide, we'll assume the message is an unthreaded one. In fact, let's reply to the message
+                - link "you just published" [ref=e352] [cursor=pointer]:
+                  - /url: "#publishing"
+                - text: ". You need three pieces of information to reply in a thread:"
+              - list [ref=e353]:
+                - listitem [ref=e354]:
+                  - text: An access token with the right permissions, like the
+                  - link "token created earlier" [ref=e355] [cursor=pointer]:
+                    - /url: "#permissions"
+                    - code [ref=e356]: token
+                    - text: created earlier
+                  - text: .
+                - listitem [ref=e357]:
+                  - text: The
+                  - code [ref=e358]: channel
+                  - text: that the parent message lives in.
+                - listitem [ref=e359]:
+                  - text: The
+                  - code [ref=e360]: ts
+                  - text: value of the parent message.
+              - paragraph [ref=e361]:
+                - text: You should still have the last two pieces of information from the response payload you received after
+                - link "publishing the parent message" [ref=e362] [cursor=pointer]:
+                  - /url: "#publishing"
+                - text: .
+              - paragraph [ref=e363]:
+                - text: In more generic terms, you can also find the
+                - code [ref=e364]: ts
+                - text: value of messages by following our
+                - link "guide to retrieving individual messages" [ref=e365] [cursor=pointer]:
+                  - /url: /messaging/retrieving-messages#individual_messages
+                - text: .
+              - paragraph [ref=e366]:
+                - text: Pulling all that data together, we can make another
+                - link "chat.postMessage" [ref=e367] [cursor=pointer]:
+                  - /url: /reference/methods/chat.postMessage
+                  - code [ref=e368]: chat.postMessage
+                - text: "API call to publish a reply:"
+              - generic [ref=e369]:
+                - tablist [ref=e370]:
+                  - tab "HTTP" [selected] [ref=e371] [cursor=pointer]
+                  - tab "Java" [ref=e372] [cursor=pointer]
+                  - tab "JavaScript" [ref=e373] [cursor=pointer]
+                  - tab "Python" [ref=e374] [cursor=pointer]
+                - tabpanel [ref=e376]:
+                  - code [ref=e380]:
+                    - generic [ref=e381]: POST https://slack.com/api/chat.postMessage
+                    - generic [ref=e382]: "Content-type: application/json"
+                    - generic [ref=e383]: "Authorization: Bearer xoxb-your-token"
+                    - generic [ref=e384]: "{"
+                    - generic [ref=e385]: "\"channel\": \"YOUR_CHANNEL_ID\","
+                    - generic [ref=e386]: "\"thread_ts\": \"PARENT_MESSAGE_TS\","
+                    - generic [ref=e387]: "\"text\": \"Hello again!\""
+                    - generic [ref=e388]: "}"
+              - paragraph [ref=e389]: "You'll see another API response payload containing information about the newly published threaded reply. Return to the same conversation in Slack, and you'll see your original message now has a reply:"
+              - generic [ref=e391]:
+                - img "Bot avatar" [ref=e392]
+                - generic [ref=e393]:
+                  - text: Oslo
+                  - paragraph [ref=e394]: Woof! (Hello world!)
+              - generic [ref=e396]:
+                - img "Bot avatar" [ref=e397]
+                - generic [ref=e398]:
+                  - text: Oslo
+                  - paragraph [ref=e399]: Woof Woof! (Hello world, again!)
+              - paragraph [ref=e400]:
+                - text: When publishing threaded reply messages, you can also supply a
+                - code [ref=e401]: reply_broadcast
+                - text: boolean parameter, as listed in the relevant API docs. This parameter, if set to
+                - code [ref=e402]: "true"
+                - text: ", will 'broadcast' a reference to the threaded reply to the parent conversation. Read more about the"
+                - link "Slack user-facing equivalent of this feature here" [ref=e403] [cursor=pointer]:
+                  - /url: https://slack.com/help/articles/115000769927-Message-and-file-threads#reply_to_channel
+                - text: .
+              - separator [ref=e404]
+              - heading "Sending messages as other entitiesDirect link to Sending messages as other entities" [level=3] [ref=e405]:
+                - text: Sending messages as other entities
+                - link "Direct link to Sending messages as other entities" [ref=e406] [cursor=pointer]:
+                  - /url: "#impersonation"
+                  - text: "#"
+              - paragraph [ref=e407]: Apps can publish messages that appear to have been created by a user in the conversation. The message will be attributed to the user and show their profile photo beside it.
+              - paragraph [ref=e408]:
+                - text: "This is a powerful ability and must only be used when the user themselves gives permission to do so. For this reason, this ability is only available when an app has requested and been granted an additional scope:"
+                - link "chat:write.customize" [ref=e409] [cursor=pointer]:
+                  - /url: /reference/scopes/chat.write.customize
+                  - code [ref=e410]: chat:write.customize
+                - text: .
+              - paragraph [ref=e411]: Your app should only use this feature in response to an inciting user action. It should never be unexpected or surprising to a user that a message was posted on their behalf, and it should be heavily signposted in advance.
+              - paragraph [ref=e412]:
+                - text: To modify the appearance of the app, make calls to
+                - link "chat.postMessage" [ref=e413] [cursor=pointer]:
+                  - /url: /reference/methods/chat.postMessage
+                  - code [ref=e414]: chat.postMessage
+                - text: "while providing any of the following parameters:"
+              - list [ref=e415]:
+                - listitem [ref=e416]:
+                  - code [ref=e417]: username
+                  - text: to specify the username for the published message.
+                - listitem [ref=e418]:
+                  - code [ref=e419]: icon_url
+                  - text: to specify a URL to an image to use as the profile photo alongside the message.
+                - listitem [ref=e420]:
+                  - code [ref=e421]: icon_emoji
+                  - text: to specify an emoji (using colon shortcodes, eg.
+                  - code [ref=e422]: ":white_check_mark:"
+                  - text: ) to use as the profile photo alongside the message.
+              - paragraph [ref=e423]:
+                - text: If the
+                - code [ref=e424]: channel
+                - text: parameter is set to a User ID (beginning with
+                - code [ref=e425]: U
+                - text: ), the message will appear in that user's direct message channel with Slack (the system user,
+                - code [ref=e426]: USLACK
+                - text: ). To post a message to that user's direct message channel with the app, use the DM ID (beginning with
+                - code [ref=e427]: D
+                - text: ) instead.
+              - separator [ref=e428]
+              - heading "Text streaming in messagesDirect link to Text streaming in messages" [level=3] [ref=e429]:
+                - text: Text streaming in messages
+                - link "Direct link to Text streaming in messages" [ref=e430] [cursor=pointer]:
+                  - /url: "#text-streaming"
+                  - text: "#"
+              - paragraph [ref=e431]: Three Web API methods work together to provide users a text streaming experience to provide a closer alignment with expected behavior from LLM tools.
+              - paragraph [ref=e432]:
+                - text: Use the
+                - link "chat.startStream" [ref=e433] [cursor=pointer]:
+                  - /url: /reference/methods/chat.startStream
+                  - code [ref=e434]: chat.startStream
+                - text: method to start a text stream, the
+                - link "chat.appendStream" [ref=e435] [cursor=pointer]:
+                  - /url: /reference/methods/chat.appendStream
+                  - code [ref=e436]: chat.appendStream
+                - text: method to append it, and the
+                - link "chat.stopStream" [ref=e437] [cursor=pointer]:
+                  - /url: /reference/methods/chat.stopStream
+                  - code [ref=e438]: chat.stopStream
+                - text: method to stop it. These allow the user to see the response from the LLM as a text stream, rather than a single block of text sent all at once.
+              - paragraph [ref=e439]:
+                - text: The
+                - link "task card" [ref=e440] [cursor=pointer]:
+                  - /url: /reference/block-kit/blocks/task-card-block
+                - text: block and
+                - link "plan" [ref=e441] [cursor=pointer]:
+                  - /url: /reference/block-kit/blocks/plan-block
+                - text: block can be used alongside the streaming API methods to help show the reader what the Agent is and will be doing. Use the
+                - code [ref=e442]: task_display_mode
+                - text: parameter in
+                - code [ref=e443]: chat.startStream
+                - text: to choose between displaying tasks individually in a timeline view or grouped together in a plan view. Then use the
+                - code [ref=e444]: chunks
+                - text: parameter in the three streaming API methods to create and modify the plan and task content.
+              - paragraph [ref=e445]:
+                - text: The Bolt framework, available for
+                - link "Python" [ref=e446] [cursor=pointer]:
+                  - /url: /tools/bolt-python/concepts/message-sending/
+                - text: and
+                - link "JavaScript" [ref=e447] [cursor=pointer]:
+                  - /url: /tools/bolt-js/concepts/message-sending
+                - text: use underlying SDKs that makes this process simpler. Click the links to review the implementation of those methods in the Bolt framework.
+              - separator [ref=e448]
+              - heading "Scheduling messagesDirect link to Scheduling messages" [level=2] [ref=e449]:
+                - text: Scheduling messages
+                - link "Direct link to Scheduling messages" [ref=e450] [cursor=pointer]:
+                  - /url: "#scheduling"
+                  - text: "#"
+              - paragraph [ref=e451]:
+                - text: Scheduling a message is just a bit of fancy footwork on top of sending a message directly. One thing you'll need before starting is a Slack app. If you don't have one yet,
+                - link "here's a very quick guide to help you create one" [ref=e452] [cursor=pointer]:
+                  - /url: /app-management/quickstart-app-settings#creating
+                - text: . Make sure you create the app in a workspace that won't mind you posting lots of test messages!
+              - heading "PermissionsDirect link to Permissions" [level=3] [ref=e453]:
+                - text: Permissions
+                - link "Direct link to Permissions" [ref=e454] [cursor=pointer]:
+                  - /url: "#scheduling-permissions"
+                  - text: "#"
+              - paragraph [ref=e455]: "Now for some particularly pleasant permissions news: your app's permissions are actually the ones you've already acquired to post messages!"
+              - paragraph [ref=e456]: Let’s quickly recap. Your app uses a bot token to perform actions as itself. You grant your app permission to perform specific actions by giving its bot token the corresponding scopes.
+              - paragraph [ref=e457]:
+                - text: "For your app to send scheduled messages, it only needs one scope:"
+                - link "chat:write" [ref=e458] [cursor=pointer]:
+                  - /url: /reference/scopes/chat.write
+                  - code [ref=e459]: chat:write
+                - text: .
+              - paragraph [ref=e460]:
+                - text: "If you don't already know the ID of the channel you wish to send messages to, you may also want to give your app another scope:"
+                - link "channels:read" [ref=e461] [cursor=pointer]:
+                  - /url: /reference/scopes/channels.read
+                  - code [ref=e462]: channels:read
+                - text: . This scope lets your app retrieve a list of all the public channels in a workspace so you can
+                - link "pick one to publish a message to" [ref=e463] [cursor=pointer]:
+                  - /url: /messaging/sending-and-scheduling-messages#conversations
+                - text: .
+              - heading "Schedule a messageDirect link to Schedule a message" [level=3] [ref=e464]:
+                - text: Schedule a message
+                - link "Direct link to Schedule a message" [ref=e465] [cursor=pointer]:
+                  - /url: "#scheduling-a-message"
+                  - text: "#"
+              - paragraph [ref=e466]:
+                - text: Our guide to directly sending messages talked you through a call to
+                - link "chat.postMessage" [ref=e467] [cursor=pointer]:
+                  - /url: /reference/methods/chat.postMessage
+                  - code [ref=e468]: chat.postMessage
+                - text: ". Let's reinvent our app to send a reminder instead: say, about a weekly team breakfast."
+              - code [ref=e472]:
+                - generic [ref=e473]: "{"
+                - generic [ref=e474]: "\"channel\": \"YOUR_CHANNEL_ID\","
+                - generic [ref=e475]: "\"text\": \"Woooooooof! (Dinner time!)\""
+                - generic [ref=e476]: "}"
+              - paragraph [ref=e477]:
+                - text: If you want to do things the hard way, your app
+                - strong [ref=e478]: could
+                - text: implement state storage and job scheduling to send this message at the right time each week, using a database and batch task runner.
+              - paragraph [ref=e479]:
+                - text: If you prefer an easier approach, use a scheduled message instead. Add a
+                - code [ref=e480]: post_at
+                - text: parameter to your JSON request, and pass your JSON to the
+                - link "chat.scheduleMessage" [ref=e481] [cursor=pointer]:
+                  - /url: /reference/methods/chat.scheduleMessage
+                  - code [ref=e482]: chat.scheduleMessage
+                - text: method instead of the
+                - code [ref=e483]: chat.postMessage
+                - text: "method:"
+              - generic [ref=e484]:
+                - tablist [ref=e485]:
+                  - tab "HTTP" [selected] [ref=e486] [cursor=pointer]
+                  - tab "Java" [ref=e487] [cursor=pointer]
+                  - tab "JavaScript" [ref=e488] [cursor=pointer]
+                  - tab "Python" [ref=e489] [cursor=pointer]
+                - tabpanel [ref=e491]:
+                  - code [ref=e495]:
+                    - generic [ref=e496]: POST https://slack.com/api/chat.scheduleMessage
+                    - generic [ref=e497]: "Content-type: application/json"
+                    - generic [ref=e498]: "Authorization: Bearer xoxb-your-token"
+                    - generic [ref=e499]: "{"
+                    - generic [ref=e500]: "\"channel\": \"YOUR_CHANNEL_ID\","
+                    - generic [ref=e501]: "\"text\": \"Hey, team. Don't forget about breakfast catered by John Hughes Bistro today.\","
+                    - generic [ref=e502]: "\"post_at\": 1551891428,"
+                    - generic [ref=e503]: "}"
+              - paragraph [ref=e504]:
+                - text: Then sit back and relax. Like magic, the message appears at the moment specified in the
+                - code [ref=e505]: post_at
+                - text: Unix timestamp.
+              - generic [ref=e507]:
+                - img "Bot avatar" [ref=e508]
+                - generic [ref=e509]:
+                  - text: Oslo
+                  - paragraph [ref=e510]: Woooooooof! (Dinner time!)
+              - generic [ref=e512]:
+                - img [ref=e514]
+                - text: Messages can only be scheduled up to 120 days in advance.
+              - paragraph [ref=e516]:
+                - text: The HTTP response from
+                - code [ref=e517]: chat.scheduleMessage
+                - text: includes a
+                - code [ref=e518]: scheduled_message_id
+                - text: ", which can be used to"
+                - link "delete the scheduled message" [ref=e519] [cursor=pointer]:
+                  - /url: "#deleting"
+                - text: before it is sent. Read on to find out how.
+              - heading "List your scheduled messagesDirect link to List your scheduled messages" [level=3] [ref=e520]:
+                - text: List your scheduled messages
+                - link "Direct link to List your scheduled messages" [ref=e521] [cursor=pointer]:
+                  - /url: "#listing"
+                  - text: "#"
+              - paragraph [ref=e522]: "\"Fire and forget\" reminders are all well and good, but the best-laid breakfast plans sometimes fall through. Let's say a holiday closes the office during one of your team's scheduled breakfast clubs. Better cancel that reminder message!"
+              - paragraph [ref=e523]:
+                - text: Your app can list all the messages that it currently has scheduled with the
+                - link "chat.scheduledMessages.list" [ref=e524] [cursor=pointer]:
+                  - /url: /reference/methods/chat.scheduledMessages.list
+                  - code [ref=e525]: chat.scheduledMessages.list
+                - text: method.
+              - paragraph [ref=e526]:
+                - text: Call the
+                - code [ref=e527]: chat.scheduledMessages.list
+                - text: method with optional
+                - code [ref=e528]: channel
+                - text: ","
+                - code [ref=e529]: latest
+                - text: ", and"
+                - code [ref=e530]: oldest
+                - text: "parameters to specify which channel and time range you're interested in:"
+              - generic [ref=e531]:
+                - tablist [ref=e532]:
+                  - tab "HTTP" [selected] [ref=e533] [cursor=pointer]
+                  - tab "Java" [ref=e534] [cursor=pointer]
+                  - tab "JavaScript" [ref=e535] [cursor=pointer]
+                  - tab "Python" [ref=e536] [cursor=pointer]
+                - tabpanel [ref=e538]:
+                  - code [ref=e542]:
+                    - generic [ref=e543]: POST https://slack.com/api/chat.scheduledMessages.list
+                    - generic [ref=e544]: "Content-type: application/json"
+                    - generic [ref=e545]: "Authorization: Bearer xoxb-your-token"
+                    - generic [ref=e546]: "{"
+                    - generic [ref=e547]: "\"channel\": \"YOUR_CHANNEL_ID\","
+                    - generic [ref=e548]: "\"latest\": 1551991429,"
+                    - generic [ref=e549]: "\"oldest\": 1551991427,"
+                    - generic [ref=e550]: "}"
+              - paragraph [ref=e551]:
+                - code [ref=e552]: oldest
+                - text: signifies the Unix timestamp of the earliest range you're interested in.
+                - code [ref=e553]: latest
+                - text: signifies, well, the latest. So
+                - code [ref=e554]: oldest
+                - text: must be less than
+                - code [ref=e555]: latest
+                - text: if both are specified.
+              - paragraph [ref=e556]:
+                - text: The endpoint yields scheduled messages sent by your app, plus
+                - link "pagination information" [ref=e557] [cursor=pointer]:
+                  - /url: /apis/web-api/pagination
+                - text: .
+              - code [ref=e561]:
+                - generic [ref=e562]: "{"
+                - generic [ref=e563]: "\"ok\": true,"
+                - generic [ref=e564]: "\"scheduled_messages\": ["
+                - generic [ref=e565]: "{"
+                - generic [ref=e566]: "\"id\": \"YOUR_SCHEDULED_MESSAGE_ID\","
+                - generic [ref=e567]: "\"channel_id\": \"YOUR_CHANNEL_ID\","
+                - generic [ref=e568]: "\"post_at\": 1551991428,"
+                - generic [ref=e569]: "\"date_created\": 1551891734"
+                - generic [ref=e570]: "}"
+                - generic [ref=e571]: "],"
+                - generic [ref=e572]: "\"response_metadata\": {"
+                - generic [ref=e573]: "\"next_cursor\": \"\""
+                - generic [ref=e574]: "}"
+                - generic [ref=e575]: "}"
+              - paragraph [ref=e576]:
+                - text: Now that you've got the
+                - code [ref=e577]: id
+                - text: of the breakfast club reminder you want to delete, one more method call awaits, so read on.
+              - heading "Delete a scheduled messageDirect link to Delete a scheduled message" [level=3] [ref=e578]:
+                - text: Delete a scheduled message
+                - link "Direct link to Delete a scheduled message" [ref=e579] [cursor=pointer]:
+                  - /url: "#deleting"
+                  - text: "#"
+              - paragraph [ref=e580]:
+                - text: With the
+                - code [ref=e581]: scheduled_message_id
+                - text: that you need in hand, it's time to banish that breakfast reminder. Use the
+                - link "chat.deleteScheduledMessage" [ref=e582] [cursor=pointer]:
+                  - /url: /reference/methods/chat.deleteScheduledMessage
+                  - code [ref=e583]: chat.deleteScheduledMessage
+                - text: "endpoint:"
+              - generic [ref=e584]:
+                - tablist [ref=e585]:
+                  - tab "HTTP" [selected] [ref=e586] [cursor=pointer]
+                  - tab "Java" [ref=e587] [cursor=pointer]
+                  - tab "JavaScript" [ref=e588] [cursor=pointer]
+                  - tab "Python" [ref=e589] [cursor=pointer]
+                - tabpanel [ref=e591]:
+                  - code [ref=e595]:
+                    - generic [ref=e596]: POST https://slack.com/api/chat.deleteScheduledMessage
+                    - generic [ref=e597]: "Content-type: application/json"
+                    - generic [ref=e598]: "Authorization: Bearer xoxb-your-token"
+                    - generic [ref=e599]: "{"
+                    - generic [ref=e600]: "\"channel\": \"YOUR_CHANNEL_ID\","
+                    - generic [ref=e601]: "\"scheduled_message_id\": \"YOUR_SCHEDULED_MESSAGE_ID\""
+                    - generic [ref=e602]: "}"
+              - paragraph [ref=e603]: You'll receive the typical success response once your scheduled message has been deleted.
+              - heading "Update a scheduled messageDirect link to Update a scheduled message" [level=3] [ref=e604]:
+                - text: Update a scheduled message
+                - link "Direct link to Update a scheduled message" [ref=e605] [cursor=pointer]:
+                  - /url: "#updating"
+                  - text: "#"
+              - paragraph [ref=e606]:
+                - text: To update a pending scheduled message,
+                - link "delete" [ref=e607] [cursor=pointer]:
+                  - /url: "#deleting"
+                - text: the old message and then
+                - link "schedule" [ref=e608] [cursor=pointer]:
+                  - /url: "#scheduling"
+                - text: a new one.
+              - paragraph [ref=e609]:
+                - text: Reminders, notifications, even calendars—all now fall within grasp of your app. You don't have to store any state at all if you don't wish to. Instead, list and delete your scheduled messages on the fly. Combine scheduled messages with
+                - link "user interactivity" [ref=e610] [cursor=pointer]:
+                  - /url: /messaging/creating-interactive-messages
+                - text: to create a chat bot that's a capable, clever assistant. Enjoy the newfound simplicity of scheduled messages!
+          - navigation "Docs pages": « »
+        - generic [ref=e612]:
+          - generic [ref=e615]:
+            - button "Copy as markdown" [ref=e616] [cursor=pointer]
+            - button "More options" [ref=e617] [cursor=pointer]:
+              - img [ref=e618]
+          - list [ref=e622]:
+            - listitem [ref=e623]:
+              - link "Sending messages" [ref=e624] [cursor=pointer]:
+                - /url: "#getting_started"
+              - list [ref=e625]:
+                - listitem [ref=e626]:
+                  - link "Requesting the necessary permissions" [ref=e627] [cursor=pointer]:
+                    - /url: "#permissions"
+                - listitem [ref=e628]:
+                  - link "Picking the right conversation" [ref=e629] [cursor=pointer]:
+                    - /url: "#conversations"
+                - listitem [ref=e630]:
+                  - link "Composing your message" [ref=e631] [cursor=pointer]:
+                    - /url: "#composing"
+                - listitem [ref=e632]:
+                  - link "Publishing your message" [ref=e633] [cursor=pointer]:
+                    - /url: "#publishing"
+                - listitem [ref=e634]:
+                  - link "Replying to your message" [ref=e635] [cursor=pointer]:
+                    - /url: "#threading"
+                - listitem [ref=e636]:
+                  - link "Sending messages as other entities" [ref=e637] [cursor=pointer]:
+                    - /url: "#impersonation"
+                - listitem [ref=e638]:
+                  - link "Text streaming in messages" [ref=e639] [cursor=pointer]:
+                    - /url: "#text-streaming"
+            - listitem [ref=e640]:
+              - link "Scheduling messages" [ref=e641] [cursor=pointer]:
+                - /url: "#scheduling"
+              - list [ref=e642]:
+                - listitem [ref=e643]:
+                  - link "Permissions" [ref=e644] [cursor=pointer]:
+                    - /url: "#scheduling-permissions"
+                - listitem [ref=e645]:
+                  - link "Schedule a message" [ref=e646] [cursor=pointer]:
+                    - /url: "#scheduling-a-message"
+                - listitem [ref=e647]:
+                  - link "List your scheduled messages" [ref=e648] [cursor=pointer]:
+                    - /url: "#listing"
+                - listitem [ref=e649]:
+                  - link "Delete a scheduled message" [ref=e650] [cursor=pointer]:
+                    - /url: "#deleting"
+                - listitem [ref=e651]:
+                  - link "Update a scheduled message" [ref=e652] [cursor=pointer]:
+                    - /url: "#updating"
+  - contentinfo [ref=e653]:
+    - generic [ref=e654]:
+      - generic [ref=e655]:
+        - list [ref=e657]:
+          - listitem [ref=e658]:
+            - link "Slack" [ref=e659] [cursor=pointer]:
+              - /url: /
+              - img [ref=e660]
+        - generic [ref=e676]:
+          - generic [ref=e677]: Tools
+          - list [ref=e678]:
+            - listitem [ref=e679]:
+              - link "Slack CLI" [ref=e680] [cursor=pointer]:
+                - /url: /tools/slack-cli/
+            - listitem [ref=e681]:
+              - link "Bolt frameworks" [ref=e682] [cursor=pointer]:
+                - /url: /tools/#bolt
+            - listitem [ref=e683]:
+              - link "Slack SDKs" [ref=e684] [cursor=pointer]:
+                - /url: /tools/#sdks
+            - listitem [ref=e685]:
+              - link "Block Kit Builder" [ref=e686] [cursor=pointer]:
+                - /url: https://app.slack.com/block-kit-builder/
+            - listitem [ref=e687]:
+              - link "Developer program" [ref=e688] [cursor=pointer]:
+                - /url: https://api.slack.com/developer-program
+            - listitem [ref=e689]:
+              - link "Code samples & tutorials" [ref=e690] [cursor=pointer]:
+                - /url: /samples/
+            - listitem [ref=e691]:
+              - link "All tools" [ref=e692] [cursor=pointer]:
+                - /url: /tools/
+        - generic [ref=e693]:
+          - generic [ref=e694]: Learn
+          - list [ref=e695]:
+            - listitem [ref=e696]:
+              - link "Learning paths" [ref=e697] [cursor=pointer]:
+                - /url: https://slack.dev/learning-paths/
+            - listitem [ref=e698]:
+              - link "Workshops" [ref=e699] [cursor=pointer]:
+                - /url: https://slack.dev/workshops
+            - listitem [ref=e700]:
+              - link "Slack certifications" [ref=e701] [cursor=pointer]:
+                - /url: https://trailheadacademy.salesforce.com/all-offerings#f-assetType=Certification&f-products=Slack&f-siteLanguage=en_US
+            - listitem [ref=e702]:
+              - link "Trailhead" [ref=e703] [cursor=pointer]:
+                - /url: https://trailhead.salesforce.com/
+            - listitem [ref=e704]:
+              - link "Resource library" [ref=e705] [cursor=pointer]:
+                - /url: https://slack.dev/resource-library
+            - listitem [ref=e706]:
+              - link "All learning resources" [ref=e707] [cursor=pointer]:
+                - /url: https://slack.dev/learn
+        - generic [ref=e708]:
+          - generic [ref=e709]: Community
+          - list [ref=e710]:
+            - listitem [ref=e711]:
+              - link "Slack community" [ref=e712] [cursor=pointer]:
+                - /url: https://slack.dev/community
+            - listitem [ref=e713]:
+              - link "Slack events" [ref=e714] [cursor=pointer]:
+                - /url: https://slack.dev/events
+        - generic [ref=e715]:
+          - generic [ref=e716]: Resources
+          - list [ref=e717]:
+            - listitem [ref=e718]:
+              - link "Docs" [ref=e719] [cursor=pointer]:
+                - /url: /
+            - listitem [ref=e720]:
+              - link "Blog" [ref=e721] [cursor=pointer]:
+                - /url: https://slack.dev/blog
+            - listitem [ref=e722]:
+              - link "Slack marketplace" [ref=e723] [cursor=pointer]:
+                - /url: https://slack.com/marketplace
+            - listitem [ref=e724]:
+              - link "Developer newsletter" [ref=e725] [cursor=pointer]:
+                - /url: https://slack.dev/newsletter
+        - generic [ref=e726]:
+          - generic [ref=e727]: Manage Apps
+          - list [ref=e728]:
+            - listitem [ref=e729]:
+              - link "Your apps" [ref=e730] [cursor=pointer]:
+                - /url: https://api.slack.com/apps
+      - generic [ref=e733]:
+        - generic [ref=e734]:
+          - list "Legal links" [ref=e736]:
+            - listitem [ref=e737]:
+              - link "Status" [ref=e738] [cursor=pointer]:
+                - /url: https://slack-status.com/
+            - listitem [ref=e739]:
+              - link "Privacy" [ref=e740] [cursor=pointer]:
+                - /url: https://slack.com/trust/privacy/privacy-policy
+            - listitem [ref=e741]:
+              - link "Terms" [ref=e742] [cursor=pointer]:
+                - /url: https://slack.com/terms-of-service/api
+            - listitem [ref=e743]:
+              - link "Cookie Preferences" [ref=e744] [cursor=pointer]:
+                - /url: "#"
+            - listitem [ref=e745]:
+              - link "Support" [ref=e746] [cursor=pointer]:
+                - /url: https://docs.slack.dev/developer-support
+            - listitem [ref=e747]:
+              - link "Changelog" [ref=e748] [cursor=pointer]:
+                - /url: https://docs.slack.dev/changelog
+            - listitem [ref=e749]:
+              - link "Your Privacy Choices" [ref=e750] [cursor=pointer]:
+                - /url: https://www.salesforce.com/form/other/privacy-request/
+                - text: Your Privacy Choices
+                - img [ref=e751]
+          - generic [ref=e756]: © 2026 Slack Technologies, LLC, a Salesforce company. All rights reserved. Various trademarks held by their respective owners.
+        - list [ref=e757]:
+          - listitem [ref=e758]:
+            - link "LinkedIn" [ref=e759] [cursor=pointer]:
+              - /url: https://www.linkedin.com/company/tiny-spec-inc/
+          - listitem [ref=e761]:
+            - link "Bluesky" [ref=e762] [cursor=pointer]:
+              - /url: https://bsky.app/profile/slack.dev
+          - listitem [ref=e764]:
+            - link "YouTube" [ref=e765] [cursor=pointer]:
+              - /url: https://www.youtube.com/channel/UCY3YECgeBcLCzIrFLP4gblw

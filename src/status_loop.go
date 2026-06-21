@@ -35,8 +35,9 @@ func (a *Agent) startStatus(chatID int64, actionFn func(int64)) *statusLoop {
 }
 
 // beginThinking shows "choose a sticker" while LLM processes.
+// beginThinking shows "typing" while LLM processes.
 func (a *Agent) beginThinking(chatID int64) *statusLoop {
-	return a.startStatus(chatID, a.chooseSticker)
+	return a.startStatus(chatID, a.typing)
 }
 
 // beginToolCall shows "playing" while a tool executes.
@@ -44,7 +45,7 @@ func (a *Agent) beginToolCall(chatID int64) *statusLoop {
 	return a.startStatus(chatID, a.playing)
 }
 
-// beginTyping shows "typing..." while text is being generated.
+// beginTyping shows "choose a sticker" while text is being generated.
 func (a *Agent) beginTyping(chatID int64) *statusLoop {
-	return a.startStatus(chatID, a.typing)
+	return a.startStatus(chatID, a.chooseSticker)
 }

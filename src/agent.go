@@ -321,9 +321,14 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 		_ = sess.Append(ChatMessage{Role: "user", Content: pendingText})
 	}
 	a.recordTrace(chatID, fmt.Sprintf("→ %s\nmax=%d tools=%d", truncateLog(userText, 100), maxSteps, len(tools)))
-
 	emptyResponses := 0
-	for i := 0; i < maxSteps; i++ {
+	prevSteps := a.stepStore.Get(chatID)
+	remainingSteps := maxSteps - prevSteps
+	if remainingSteps <= 0 {
+		a.recordTrace(chatID, fmt.Sprintf("ERROR: hit %d-step cap (all used in previous calls)", maxSteps))
+		return "ERROR: step limit exhausted. Use /maxsteps to increase.", nil
+	}
+	for i := 0; i < remainingSteps; i++ {
 		select {
 		case <-rs.stop:
 			a.recordTrace(chatID, "⏹ stopped by user")
@@ -402,8 +407,8 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 				if emptyResponses >= 3 {
 					a.recordTrace(chatID, "ERROR: 3 empty responses in a row, giving up")
 					a.saveDCPState(chatID, dcp)
-					a.stepStore.Set(chatID, i)
-				return "ERROR: model returned 3 empty responses in a row", nil
+					a.stepStore.Set(chatID, prevSteps+i)
+					return "ERROR: model returned 3 empty responses in a row", nil
 				}
 				a.recordTrace(chatID, fmt.Sprintf("empty response from LLM (attempt %d/3), retrying...", emptyResponses))
 				_ = sess.Append(ChatMessage{Role: "assistant", Content: resp.Content})
@@ -411,13 +416,12 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 				continue
 			}
 			emptyResponses = 0
-			a.recordStep(chatID, i+1, maxSteps, usage, stepDur, nil, len(resp.Content), "")
+			a.recordStep(chatID, prevSteps+i+1, maxSteps, usage, stepDur, nil, len(resp.Content), "")
 			_ = sess.Append(ChatMessage{Role: "assistant", Content: resp.Content})
 			a.saveDCPState(chatID, dcp)
-			a.stepStore.Set(chatID, i + 1)
+			a.stepStore.Set(chatID, prevSteps+i+1)
 			return resp.Content, nil
 		}
-
 		emptyResponses = 0
 		_ = sess.Append(ChatMessage{Role: "assistant", Content: resp.Content, ToolCalls: resp.ToolCalls})
 
@@ -482,7 +486,7 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 			if err != nil {
 				if errors.Is(err, context.Canceled) || errors.Is(err, context.DeadlineExceeded) {
 					toolLines = append(toolLines, fmt.Sprintf("  🛑 %s cancelled", tc.Function.Name))
-					a.recordStep(chatID, i+1, maxSteps, usage, stepDur, toolLines, -1, "")
+					a.recordStep(chatID, prevSteps+i+1, maxSteps, usage, stepDur, toolLines, -1, "")
 					a.saveDCPState(chatID, dcp)
 					return "🛑 aborted.", nil
 				}
@@ -504,9 +508,9 @@ func (a *Agent) HandleOnChannel(chatID int64, userText string, channel string) (
 				)
 			}
 		}
-		a.stepStore.Set(chatID, i + 1)
+		a.stepStore.Set(chatID, prevSteps+i+1)
 		toolLoop.stop()
-		a.recordStep(chatID, i+1, maxSteps, usage, stepDur, toolLines, -1, resp.Content)
+		a.recordStep(chatID, prevSteps+i+1, maxSteps, usage, stepDur, toolLines, -1, resp.Content)
 
 	}
 
@@ -583,7 +587,35 @@ func (a *Agent) sendModelGrid(chatID int64) {
 	a.sendButtons(chatID, info, rows)
 }
 
-// ──────────────────────────────────────────────────────
+func (a *Agent) providerList() string {
+	names := make([]string, 0, len(a.cfg.Providers))
+	for name := range a.cfg.Providers {
+		names = append(names, name)
+	}
+	return strings.Join(names, ", ")
+}
+
+func (a *Agent) sendProviderGrid(chatID int64) {
+	if len(a.cfg.Providers) == 0 {
+		a.send(chatID, "no providers configured")
+		return
+	}
+	var rows [][]InlineButton
+	for name, p := range a.cfg.Providers {
+		modelCount := len(p.Models)
+		current := ""
+		if name == a.cfg.Provider {
+			current = " ✅"
+		}
+		label := fmt.Sprintf("• %s — %d model(s)%s", p.Name, modelCount, current)
+		if len(label) > 60 {
+			label = label[:60] + "…"
+		}
+		rows = append(rows, []InlineButton{{Text: label, CallbackData: "provider:" + name}})
+	}
+	a.sendButtons(chatID, "🤖 pick a provider:", rows)
+}
+
 // DCP commands
 // ──────────────────────────────────────────────────────
 
@@ -656,24 +688,29 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 	}
 
 	pollCh := make(chan *TGUpdate, 4)
-	go func() {
-		defer close(pollCh)
-		for {
-			upd, err := a.tg.LongPoll(ctx)
-			if err != nil {
-				return
+	startPolling := func() {
+		go func() {
+			defer close(pollCh)
+			for {
+				upd, err := a.tg.LongPoll(ctx)
+				if err != nil {
+					log.Printf("poll: error: %v", err)
+					return
+				}
+				if upd == nil {
+					continue
+				}
+				select {
+				case pollCh <- upd:
+				case <-ctx.Done():
+					return
+				}
 			}
-			if upd == nil {
-				continue
-			}
-			select {
-			case pollCh <- upd:
-			case <-ctx.Done():
-				return
-			}
-		}
-	}()
+		}()
+	}
+	startPolling()
 
+	backoff := 5 * time.Second
 	for {
 		var upd *TGUpdate
 		var inj *injectedMsg
@@ -682,8 +719,22 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 			return ctx.Err()
 		case u, ok := <-pollCh:
 			if !ok {
-				return nil
+				log.Printf("poll: disconnected, reconnecting in %v...", backoff)
+				select {
+				case <-ctx.Done():
+					return ctx.Err()
+				case <-time.After(backoff):
+				}
+				if backoff < 60*time.Second {
+					backoff *= 2
+				}
+				pollCh = make(chan *TGUpdate, 4)
+				a.tg.ResetTransport()
+				startPolling()
+				log.Printf("poll: reconnected")
+				continue
 			}
+			backoff = 5 * time.Second
 			upd = u
 		case m := <-a.inject:
 			inj = &m
@@ -754,10 +805,25 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 			case strings.HasPrefix(data, "model:"):
 				name := strings.TrimPrefix(data, "model:")
 				a.cfg.DefaultModel = name
-				if chatID != 0 {
-					a.send(chatID, "✅ model → "+name)
-				}
+				a.refreshModelGrid(chatID, msgID)
+				time.Sleep(200 * time.Millisecond)
 				_ = a.tg.AnswerCallback(cq.ID, "model: "+name)
+			case strings.HasPrefix(data, "provider:"):
+				name := strings.TrimPrefix(data, "provider:")
+				if _, ok := a.cfg.Providers[name]; ok {
+					a.cfg.Provider = name
+					for mName := range a.cfg.Providers[name].Models {
+						a.cfg.DefaultModel = mName
+						break
+					}
+					a.refreshProviderGrid(chatID, msgID)
+				} else {
+					if chatID != 0 {
+						a.send(chatID, "❌ unknown provider: "+name)
+					}
+				}
+				time.Sleep(200 * time.Millisecond)
+				_ = a.tg.AnswerCallback(cq.ID, "provider: "+name)
 			case strings.HasPrefix(data, "rollback:"):
 				version := strings.TrimPrefix(data, "rollback:")
 				_ = a.tg.AnswerCallback(cq.ID, "rolling back to "+version)
@@ -909,18 +975,20 @@ func (a *Agent) RunLoop(ctx context.Context) error {
 				a.send(chatID, "✅ model → "+args)
 			}
 			continue
+		case text == "/providers":
+			a.sendProviderGrid(chatID)
+			continue
 		case text == "/provider" || strings.HasPrefix(text, "/provider "):
 			args := strings.TrimSpace(strings.TrimPrefix(text, "/provider"))
 			if args == "" {
-				var b strings.Builder
-				b.WriteString("provider: " + a.cfg.Provider + "\navailable:\n")
-				for name := range a.cfg.Providers {
-					b.WriteString("  • " + name + "\n")
-				}
-				a.send(chatID, b.String())
+				a.sendProviderGrid(chatID)
 			} else if _, ok := a.cfg.Providers[args]; ok {
 				a.cfg.Provider = args
-				a.send(chatID, "✅ provider → "+args)
+				for mName := range a.cfg.Providers[args].Models {
+					a.cfg.DefaultModel = mName
+					break
+				}
+				a.send(chatID, fmt.Sprintf("✅ provider → %s\n✅ model → %s", args, a.cfg.DefaultModel))
 			} else {
 				a.send(chatID, "❌ unknown provider: "+args)
 			}

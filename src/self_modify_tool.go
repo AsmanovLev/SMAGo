@@ -137,8 +137,12 @@ func (s *SelfModifyTool) actionUpgrade(ctx context.Context, args map[string]any)
 		// fallback: try config
 		chatID = s.cfg.TelegramChatID
 	}
-	if err := saveResumeMarker(chatID, version, 0); err != nil {
-		return "", fmt.Errorf("save resume marker: %w", err)
+	// Read accumulated step count from the step store
+	steps := 0
+	if chatID != 0 {
+		steps = NewStepStore(s.cfg.DataDir).Get(chatID)
+	}
+	if err := saveResumeMarker(chatID, version, steps); err != nil {
 	}
 	if err := ctx.Err(); err != nil {
 		return "", err

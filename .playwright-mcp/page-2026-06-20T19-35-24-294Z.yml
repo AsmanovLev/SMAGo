@@ -1,0 +1,524 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-FI
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - generic:
+          - generic:
+            - generic:
+              - img
+        - 'link "World Cup 2026: The art of the penalty kick" [ref=e13] [cursor=pointer]':
+          - /url: https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQPQgK
+          - 'img "World Cup 2026: The art of the penalty kick" [ref=e14]'
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - combobox "Search" [ref=e19]: top messengers Russia 2025 popular VK telegram whatsapp статистика месячная аудитория top messengers Russia 2025 popular VK telegram whatsapp статистика месячная аудитория
+            - generic [ref=e20]:
+              - button "Clear" [ref=e22] [cursor=pointer]:
+                - img [ref=e24]
+              - generic [ref=e27]:
+                - button "Search by voice" [ref=e28] [cursor=pointer]:
+                  - img [ref=e29]
+                - button "Search by image" [ref=e31] [cursor=pointer]:
+                  - img [ref=e32]
+          - button "Search" [ref=e34] [cursor=pointer]:
+            - img [ref=e37]
+    - generic [ref=e39]:
+      - button "Share" [ref=e40] [cursor=pointer]:
+        - img [ref=e44]
+      - generic [ref=e46]:
+        - button "Google apps" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+        - 'button "Google Account: Lev Asmanov (asmanovlev@gmail.com)" [ref=e53] [cursor=pointer]':
+          - img [ref=e55]
+          - img [ref=e60]
+  - generic [ref=e62]:
+    - navigation [ref=e68]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "AI Mode" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=top+messengers+Russia+2025+popular+VK+telegram+whatsapp+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F&sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-ahMiVxElJGh2HXmqeqNBF0tuZ7ONbjaJgENAhiNlIWuJwV5r939do7j-CNhOqurtdAMjVjkSjWKSoJHIJLxIFWkbTXjnH3UlLHCgZjOrSH272Zd7w&aep=1&ntc=1&sa=X&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ2J8OegQIEBAD
+              - generic [ref=e82]: AI Mode
+          - listitem [ref=e83]:
+            - link "All" [disabled] [ref=e84]:
+              - generic [ref=e86]: All
+          - listitem [ref=e87]:
+            - link "News" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&q=top+messengers+Russia+2025+popular+VK+telegram+whatsapp+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-ahMiVxElJGh2HXmqeqNBF0tuZ7ONbjaJgENAhiNlIWuJwV5r939do7j-CNhOqurtdAMjVjkSjWKSoJHIJLxIFWkbTXjnH3UlLHCgZjOrSH272Zd7w&sa=X&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ0pQJegQIFhAB
+              - generic [ref=e90]: News
+          - listitem [ref=e91]:
+            - link "Images" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-ahMiVxElJGh2HXmqeqNBF0tuZ7ONbjaJgENAhiNlIWuJwV5r939do7j-CNhOqurtdAMjVjkSjWKSoJHIJLxIFWkbTXjnH3UlLHCgZjOrSH272Zd7w&q=top+messengers+Russia+2025+popular+VK+telegram+whatsapp+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F&sa=X&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQtKgLegQIFRAB
+              - generic [ref=e94]: Images
+          - listitem [ref=e95]:
+            - link "Videos" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-ahMiVxElJGh2HXmqeqNBF0tuZ7ONbjaJgENAhiNlIWuJwV5r939do7j-CNhOqurtdAMjVjkSjWKSoJHIJLxIFWkbTXjnH3UlLHCgZjOrSH272Zd7w&q=top+messengers+Russia+2025+popular+VK+telegram+whatsapp+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F&sa=X&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQtKgLegQIExAB
+              - generic [ref=e98]: Videos
+          - listitem [ref=e99]:
+            - link "Short videos" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-ahMiVxElJGh2HXmqeqNBF0tuZ7ONbjaJgENAhiNlIWuJwV5r939do7j-CNhOqurtdAMjVjkSjWKSoJHIJLxIFWkbTXjnH3UlLHCgZjOrSH272Zd7w&q=top+messengers+Russia+2025+popular+VK+telegram+whatsapp+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F&sa=X&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQs6gLegQIFBAB
+              - generic [ref=e102]: Short videos
+          - listitem [ref=e103]:
+            - link "Books" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&q=top+messengers+Russia+2025+popular+VK+telegram+whatsapp+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F&udm=36&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cY2oODYyTyZk24Xz37_7FQ0Kuh3jfnRqiKzI7KrGsO-ahMiVxElJGh2HXmqeqNBF0tuZ7ONbjaJgENAhiNlIWuJwV5r939do7j-CNhOqurtdAMjVjkSjWKSoJHIJLxIFWkbTXjnH3UlLHCgZjOrSH272Zd7w&sa=X&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ0pQJegQIEhAB
+              - generic [ref=e106]: Books
+          - listitem [ref=e107]:
+            - button "More filters" [ref=e108] [cursor=pointer]:
+              - generic "More filters" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: More
+                  - img [ref=e113]
+        - button "Tools" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Tools
+            - img [ref=e121]
+    - heading "Search Results" [level=1] [ref=e123]
+    - main [ref=e129]:
+      - generic [ref=e133]:
+        - generic [ref=e136]:
+          - heading "Web results" [level=2] [ref=e137]
+          - generic [ref=e138]:
+            - generic [ref=e141]:
+              - link "Most popular messenger apps Russia 2025 Statista https://www.statista.com › Internet › Communications" [ref=e143] [cursor=pointer]:
+                - /url: https://www.statista.com/statistics/1116011/poll-on-most-popular-messengers-russia/?srsltid=AfmBOooLDUg-aag4m7RTtaDCfxrDBQnY0vbWMxmxO0XEmbEOfSitaZ5i
+                - heading "Most popular messenger apps Russia 2025" [level=3] [ref=e144]
+                - generic [ref=e150]:
+                  - generic [ref=e152]: Statista
+                  - generic [ref=e154]: https://www.statista.com › Internet › Communications
+              - button "About this result" [ref=e155] [cursor=pointer]:
+                - img [ref=e158]
+            - generic [ref=e161]:
+              - generic [ref=e162]: 3 Dec 2025 —
+              - generic [ref=e163]:
+                - emphasis [ref=e164]: WhatsApp and Telegram were among the most popular chat apps in Russia
+                - text: as of 2025. Unlike some other Meta Platforms' networks, WhatsApp is ...
+            - generic [ref=e166]: "Missing: месячная ‎аудитория"
+        - generic [ref=e177]:
+          - generic [ref=e179]:
+            - generic [ref=e181]:
+              - generic [ref=e182]:
+                - img [ref=e183]
+                - heading "AI Overview" [level=2] [ref=e185]
+              - generic [ref=e186]:
+                - button "View 3 corroboration links" [ref=e189] [cursor=pointer]
+                - button "About this result" [ref=e196]:
+                  - img [ref=e198]
+            - generic [ref=e222]:
+              - generic [ref=e223]:
+                - text: В начале 2026 года самым популярным мессенджером в России стал
+                - strong [ref=e224]: Telegram
+                - text: ", обогнав"
+                - strong [ref=e225]: WhatsApp
+                - text: ", который долгое время удерживал лидерство. По данным аналитического агентства Mediascope, тройка лидеров среди мобильных и десктопных приложений по числу пользователей выглядит следующим образом:"
+                - button "View related links" [disabled] [ref=e229]:
+                  - img [ref=e232]
+              - list [ref=e234]:
+                - listitem [ref=e235]:
+                  - generic [ref=e236]:
+                    - strong [ref=e237]: Telegram
+                    - text: ": около"
+                    - strong [ref=e238]: 95,6 - 95,9 млн
+                    - text: пользователей в месяц.
+                - listitem [ref=e239]:
+                  - generic [ref=e240]:
+                    - strong [ref=e241]: WhatsApp
+                    - text: ": около"
+                    - strong [ref=e242]: 80,3 - 89,4 млн
+                    - text: человек (после блокировки звонков и частичных ограничений).
+                - listitem [ref=e243]:
+                  - generic [ref=e244]:
+                    - strong [ref=e245]: VK (VK Messenger и соцсеть)
+                    - text: ": около"
+                    - strong [ref=e246]: 55,8 - 73 млн
+                    - text: ежемесячных пользователей.
+                  - generic [ref=e248]:
+                    - link [ref=e250] [cursor=pointer]:
+                      - /url: https://lifehacker.ru/top-messendzherov-2025/
+                    - button [disabled] [ref=e251]:
+                      - generic [ref=e253]:
+                        - generic [ref=e254]: Лайфхакер
+                        - generic [ref=e255]: "+1"
+                      - img [ref=e258]
+              - generic [ref=e261]:
+                - text: Помимо глобальных сервисов, в стране активно продвигается национальное приложение
+                - strong [ref=e262]: Max
+                - text: (созданное холдингом VK), чья аудитория достигла более 70 млн человек.
+                - button [disabled] [ref=e266]:
+                  - img [ref=e269]
+              - generic [ref=e272]:
+                - emphasis [ref=e273]:
+                  - text: "Примечание: По данным"
+                  - strong [ref=e274]: Mediascope
+                  - text: ", в декабре 2025 года сервис"
+                  - strong [ref=e275]: imo
+                  - text: также вошел в топ-5, собрав аудиторию около 9,8 млн пользователей в РФ.
+                - generic [ref=e277]:
+                  - link [ref=e279] [cursor=pointer]:
+                    - /url: https://www.forbes.ru/tekhnologii/554754-amerikanskij-messendzer-imo-stal-patym-po-popularnosti-v-rossii
+                  - button [disabled] [ref=e280]:
+                    - generic [ref=e283]: Forbes.ru
+                    - img [ref=e286]
+              - generic [ref=e289]:
+                - generic [ref=e290]: "Если вас интересуют другие детали, уточните:"
+                - list [ref=e291]:
+                  - listitem [ref=e292]:
+                    - generic [ref=e293]:
+                      - text: Хотите ли вы узнать
+                      - strong [ref=e294]: суточную (DAU)
+                      - text: или
+                      - strong [ref=e295]: месячную (MAU)
+                      - text: аудиторию?
+                  - listitem [ref=e296]:
+                    - generic [ref=e297]:
+                      - text: Интересует ли вас статистика по
+                      - strong [ref=e298]: возрастным группам
+                      - text: или
+                      - strong [ref=e299]: полу аудитории
+                      - text: "?"
+          - button "Show more AI Overview" [ref=e305]:
+            - generic [ref=e307] [cursor=pointer]:
+              - generic [ref=e308]: Show more
+              - img [ref=e310]
+        - generic [ref=e315]:
+          - heading "Результаты поиска" [level=2] [ref=e316]
+          - generic [ref=e317]:
+            - generic [ref=e320]:
+              - link "Telegram обошел WhatsApp по популярности в России Forbes.ru https://www.forbes.ru › tekhnologii" [ref=e322] [cursor=pointer]:
+                - /url: https://www.forbes.ru/tekhnologii/556595-i-vtorye-stanut-pervymi-telegram-obosel-whatsapp-po-popularnosti-v-rossii
+                - heading "Telegram обошел WhatsApp по популярности в России" [level=3] [ref=e323]
+                - generic [ref=e329]:
+                  - generic [ref=e331]: Forbes.ru
+                  - generic [ref=e333]: https://www.forbes.ru › tekhnologii
+              - generic [ref=e334]:
+                - generic [ref=e335]: ·
+                - link "Translate this page" [ref=e336] [cursor=pointer]:
+                  - /url: https://www.forbes.ru/tekhnologii/556595-i-vtorye-stanut-pervymi-telegram-obosel-whatsapp-po-popularnosti-v-rossii
+              - button "About this result" [ref=e337] [cursor=pointer]:
+                - img [ref=e340]
+            - generic [ref=e343]:
+              - generic [ref=e344]: 4 Mar 2026 —
+              - generic [ref=e345]:
+                - text: Количество пользователей, зашедших в
+                - emphasis [ref=e346]: Telegram
+                - text: в январе 2026 года, составило 95,978 млн человек, а у
+                - emphasis [ref=e347]: WhatsApp
+                - text: — 89,418 млн. На третьем месте ...
+              - link "Read more" [ref=e348] [cursor=pointer]:
+                - /url: https://www.forbes.ru/tekhnologii/556595-i-vtorye-stanut-pervymi-telegram-obosel-whatsapp-po-popularnosti-v-rossii#:~:text=%D0%9A%D0%BE%D0%BB%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%2C%20%D0%B7%D0%B0%D1%88%D0%B5%D0%B4%D1%88%D0%B8%D1%85%20%D0%B2%20Telegram,89%2C418%20%D0%BC%D0%BB%D0%BD.%20%D0%9D%D0%B0%20%D1%82%D1%80%D0%B5%D1%82%D1%8C%D0%B5%D0%BC%20%D0%BC%D0%B5%D1%81%D1%82%D0%B5
+            - generic [ref=e350]: "Missing: top ‎messengers"
+        - generic [ref=e354]:
+          - generic [ref=e357]:
+            - link "Самые популярные мессенджеры в России в 2025 TargetSMS https://targetsms.ru › Блог" [ref=e359] [cursor=pointer]:
+              - /url: https://targetsms.ru/blog/1731-samye-populyarnye-messendzhery-v-rossii-v-2025/
+              - heading "Самые популярные мессенджеры в России в 2025" [level=3] [ref=e360]
+              - generic [ref=e366]:
+                - generic [ref=e368]: TargetSMS
+                - generic [ref=e370]: https://targetsms.ru › Блог
+            - generic [ref=e371]:
+              - generic [ref=e372]: ·
+              - link "Translate this page" [ref=e373] [cursor=pointer]:
+                - /url: https://targetsms.ru/blog/1731-samye-populyarnye-messendzhery-v-rossii-v-2025/
+            - button "About this result" [ref=e374] [cursor=pointer]:
+              - img [ref=e377]
+          - generic [ref=e380]:
+            - generic [ref=e381]:
+              - text: 1.ТОП-5 самых популярных мессенджеров в России в
+              - emphasis [ref=e382]: "2025"
+              - text: году ·
+              - emphasis [ref=e383]: WhatsApp
+              - text: ·
+              - emphasis [ref=e384]: Telegram
+              - text: ·
+              - emphasis [ref=e385]: VK Messenger
+              - text: · Яндекс.Мессенджер · Skype.
+            - link "Read more" [ref=e386] [cursor=pointer]:
+              - /url: https://targetsms.ru/blog/1731-samye-populyarnye-messendzhery-v-rossii-v-2025/#:~:text=1.%D0%A2%D0%9E%D0%9F%2D5%20%D1%81%D0%B0%D0%BC%D1%8B%D1%85%20%D0%BF%D0%BE%D0%BF%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D1%85%20%D0%BC%D0%B5%D1%81%D1%81%D0%B5%D0%BD%D0%B4%D0%B6%D0%B5%D1%80%D0%BE%D0%B2%20%D0%B2,%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%B2%202025%20%D0%B3%D0%BE%D0%B4%D1%83&text=WhatsApp&text=Telegram&text=VK%20Messenger&text=%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81.%D0%9C%D0%B5%D1%81%D1%81%D0%B5%D0%BD%D0%B4%D0%B6%D0%B5%D1%80&text=Skype
+          - generic [ref=e388]: "Missing: месячная ‎аудитория"
+        - generic [ref=e392]:
+          - generic [ref=e395]:
+            - link "Рейтинг самых популярных мессенджеров в 2026 году Корпоративный мессенджер eXpress https://express.ms › blog › obzory › populyarnye-mess..." [ref=e397] [cursor=pointer]:
+              - /url: https://express.ms/blog/obzory/populyarnye-messendzhery-v-2026-godu/
+              - heading "Рейтинг самых популярных мессенджеров в 2026 году" [level=3] [ref=e398]
+              - generic [ref=e404]:
+                - generic [ref=e406]: Корпоративный мессенджер eXpress
+                - generic [ref=e408]: https://express.ms › blog › obzory › populyarnye-mess...
+            - button "About this result" [ref=e409] [cursor=pointer]:
+              - img [ref=e412]
+          - generic [ref=e415]:
+            - generic [ref=e416]: 12 Feb 2026 —
+            - generic [ref=e417]:
+              - text: В России
+              - emphasis [ref=e418]: Telegram
+              - text: занимает второе место по популярности после
+              - emphasis [ref=e419]: WhatsApp
+              - text: ":"
+              - emphasis [ref=e420]: аудитория
+              - text: составляет около 89 млн активных пользователей в месяц.
+            - link "Read more" [ref=e421] [cursor=pointer]:
+              - /url: https://express.ms/blog/obzory/populyarnye-messendzhery-v-2026-godu/#:~:text=%D0%92%20%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20Telegram%20%D0%B7%D0%B0%D0%BD%D0%B8%D0%BC%D0%B0%D0%B5%D1%82%20%D0%B2%D1%82%D0%BE%D1%80%D0%BE%D0%B5,%D0%BC%D0%BB%D0%BD%20%D0%B0%D0%BA%D1%82%D0%B8%D0%B2%D0%BD%D1%8B%D1%85%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%20%D0%B2%20%D0%BC%D0%B5%D1%81%D1%8F%D1%86.
+        - generic [ref=e426]:
+          - heading "People also ask" [level=2] [ref=e428]
+          - generic [ref=e429]:
+            - button "Какой мессенджер считается самым популярным в России на 2025 год?" [ref=e435] [cursor=pointer]:
+              - generic [ref=e437]: Какой мессенджер считается самым популярным в России на 2025 год?
+              - img [ref=e440]
+            - button "Какова аудитория мессенджеров в 2025 году?" [ref=e449] [cursor=pointer]:
+              - generic [ref=e451]: Какова аудитория мессенджеров в 2025 году?
+              - img [ref=e454]
+            - button "Какова аудитория Telegram и WhatsApp в России?" [ref=e463] [cursor=pointer]:
+              - generic [ref=e465]: Какова аудитория Telegram и WhatsApp в России?
+              - img [ref=e468]
+            - button "Какое мессенджер самое популярное в России?" [ref=e477] [cursor=pointer]:
+              - generic [ref=e479]: Какое мессенджер самое популярное в России?
+              - img [ref=e482]
+        - generic [ref=e487]:
+          - heading "Результаты поиска" [level=2] [ref=e488]
+          - generic [ref=e489]:
+            - generic [ref=e492]:
+              - link "Показатели российских мессенджеров в августе 2025 года tssonline.ru https://www.tssonline.ru › news › p..." [ref=e494] [cursor=pointer]:
+                - /url: https://www.tssonline.ru/news/pokazateli-rossiyskih-messengerov-v-avguste-2025-goda
+                - heading "Показатели российских мессенджеров в августе 2025 года" [level=3] [ref=e495]
+                - generic [ref=e501]:
+                  - generic [ref=e503]: tssonline.ru
+                  - generic [ref=e505]: https://www.tssonline.ru › news › p...
+              - generic [ref=e506]:
+                - generic [ref=e507]: ·
+                - link "Translate this page" [ref=e508] [cursor=pointer]:
+                  - /url: https://www.tssonline.ru/news/pokazateli-rossiyskih-messengerov-v-avguste-2025-goda
+              - button "About this result" [ref=e509] [cursor=pointer]:
+                - img [ref=e512]
+            - generic [ref=e515]:
+              - generic [ref=e516]: 23 Sept 2025 —
+              - generic [ref=e517]:
+                - text: До конца года
+                - emphasis [ref=e518]: месячный
+                - text: охват
+                - emphasis [ref=e519]: WhatsApp
+                - text: может вырасти еще на 1–3%,
+                - emphasis [ref=e520]: VK
+                - text: — на 3–5%,
+                - emphasis [ref=e521]: Telegram
+                - text: — на 6–9%, а Max — на 15–25%. В то же время « ...
+              - link "Read more" [ref=e522] [cursor=pointer]:
+                - /url: https://www.tssonline.ru/news/pokazateli-rossiyskih-messengerov-v-avguste-2025-goda#:~:text=%D0%94%D0%BE%20%D0%BA%D0%BE%D0%BD%D1%86%D0%B0%20%D0%B3%D0%BE%D0%B4%D0%B0%20%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D1%8B%D0%B9%20%D0%BE%D1%85%D0%B2%D0%B0%D1%82,%D1%87%D0%B0%D1%81%D1%82%D1%8C%20%D0%BA%D0%BE%D1%82%D0%BE%D1%80%D0%BE%D0%B9%20%D0%BF%D0%B5%D1%80%D0%B5%D0%B9%D0%B4%D0%B5%D1%82%20%D0%B2%20Max.
+            - generic [ref=e524]: "Missing: top ‎messengers"
+        - generic [ref=e528]:
+          - generic [ref=e531]:
+            - link "Названы самые популярные мессенджеры в России Лайфхакер https://lifehacker.ru › ... › Новости" [ref=e533] [cursor=pointer]:
+              - /url: https://lifehacker.ru/top-messendzherov-2025/
+              - heading "Названы самые популярные мессенджеры в России" [level=3] [ref=e534]
+              - generic [ref=e540]:
+                - generic [ref=e542]: Лайфхакер
+                - generic [ref=e544]: https://lifehacker.ru › ... › Новости
+            - generic [ref=e545]:
+              - generic [ref=e546]: ·
+              - link "Translate this page" [ref=e547] [cursor=pointer]:
+                - /url: https://lifehacker.ru/top-messendzherov-2025/
+            - button "About this result" [ref=e548] [cursor=pointer]:
+              - img [ref=e551]
+          - generic [ref=e554]:
+            - generic [ref=e555]: 23 Sept 2025 —
+            - generic [ref=e556]:
+              - emphasis [ref=e557]: WhatsApp
+              - text: — 82,1 миллиона;;
+              - emphasis [ref=e558]: Telegram
+              - text: — почти 68 миллионов;;
+              - emphasis [ref=e559]: VK
+              - text: "— 55,8 миллиона: ОК — 18,4 миллиона;; Max — 7 миллионов."
+            - link "Read more" [ref=e560] [cursor=pointer]:
+              - /url: https://lifehacker.ru/top-messendzherov-2025/#:~:text=WhatsApp%20%E2%80%94%2082%2C1%20%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%B0%3B,Max%20%E2%80%94%207%20%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2.
+          - generic [ref=e562]:
+            - text: "Missing: messengers ‎| Show results with:"
+            - link "messengers" [ref=e563] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&q=top+%22messengers%22+Russia+2025+popular+VK+telegram+whatsapp+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F&sa=X&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ5t4CegQIVRAB
+        - generic [ref=e567]:
+          - generic [ref=e570]:
+            - link "Опубликован рейтинг мессенджеров в России - Хайтек hightech.fm https://hightech.fm › 2025/09/22 › messenger-list-russia" [ref=e572] [cursor=pointer]:
+              - /url: https://hightech.fm/2025/09/22/messenger-list-russia
+              - heading "Опубликован рейтинг мессенджеров в России - Хайтек" [level=3] [ref=e573]
+              - generic [ref=e579]:
+                - generic [ref=e581]: hightech.fm
+                - generic [ref=e583]: https://hightech.fm › 2025/09/22 › messenger-list-russia
+            - button "About this result" [ref=e584] [cursor=pointer]:
+              - img [ref=e587]
+          - generic [ref=e590]:
+            - generic [ref=e591]: 22 Sept 2025 —
+            - generic [ref=e592]:
+              - emphasis [ref=e593]: Telegram прибавил 5,5 млн и достиг почти 68 млн в сутки
+              - text: . У VK показатель вырос до 55,8 млн (+1,2 млн). У «Одноклассников» суточная аудитория ...
+            - link "Read more" [ref=e594] [cursor=pointer]:
+              - /url: https://hightech.fm/2025/09/22/messenger-list-russia#:~:text=Telegram%20%D0%BF%D1%80%D0%B8%D0%B1%D0%B0%D0%B2%D0%B8%D0%BB%205%2C5%20%D0%BC%D0%BB%D0%BD%20%D0%B8,7%20%D0%BC%D0%BB%D0%BD%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9%20%D0%B2%20%D0%B4%D0%B5%D0%BD%D1%8C.
+          - generic [ref=e596]: "Missing: messengers ‎статистика"
+        - generic [ref=e600]:
+          - generic [ref=e603]:
+            - link "Самые популярные социальные сети в России в 2025 году ppc.world https://ppc.world › Статьи" [ref=e605] [cursor=pointer]:
+              - /url: https://ppc.world/articles/auditoriya-vosmi-krupneyshih-socsetey-v-rossii-issledovaniya-i-cifry/
+              - heading "Самые популярные социальные сети в России в 2025 году" [level=3] [ref=e606]
+              - generic [ref=e612]:
+                - generic [ref=e614]: ppc.world
+                - generic [ref=e616]: https://ppc.world › Статьи
+            - generic [ref=e617]:
+              - generic [ref=e618]: ·
+              - link "Translate this page" [ref=e619] [cursor=pointer]:
+                - /url: https://ppc.world/articles/auditoriya-vosmi-krupneyshih-socsetey-v-rossii-issledovaniya-i-cifry/
+            - button "About this result" [ref=e620] [cursor=pointer]:
+              - img [ref=e623]
+          - generic [ref=e626]:
+            - generic [ref=e627]:
+              - text: Средняя
+              - emphasis [ref=e628]: месячная аудитория
+              - text: (MAU)
+              - emphasis [ref=e629]: ВКонтакте
+              - text: в России к концу третьего квартала 2024 года достигла 88,1 млн пользователей. За год показатель вырос на 4%, ...
+            - link "Read more" [ref=e630] [cursor=pointer]:
+              - /url: https://ppc.world/articles/auditoriya-vosmi-krupneyshih-socsetey-v-rossii-issledovaniya-i-cifry/#:~:text=%D0%A1%D1%80%D0%B5%D0%B4%D0%BD%D1%8F%D1%8F%20%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F%20%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F%20(MAU)%20%D0%92%D0%9A%D0%BE%D0%BD%D1%82%D0%B0%D0%BA%D1%82%D0%B5,4%25%2C%20%D1%81%D0%BE%D0%BE%D0%B1%D1%89%D0%B0%D0%B5%D1%82%D1%81%D1%8F%20%D0%B2%20%D0%BE%D1%82%D1%87%D0%B5%D1%82%D0%B5%20%D0%BF%D0%BB%D0%BE%D1%89%D0%B0%D0%B4%D0%BA%D0%B8.
+          - generic [ref=e632]: "Missing: messengers ‎whatsapp"
+        - generic [ref=e636]:
+          - generic [ref=e639]:
+            - link "Самые популярные мессенджеры в России и в мире Umnico https://umnico.com › ... › Блог" [ref=e641] [cursor=pointer]:
+              - /url: https://umnico.com/ru/blog/populyarnye-messendzhery/
+              - heading "Самые популярные мессенджеры в России и в мире" [level=3] [ref=e642]
+              - generic [ref=e648]:
+                - generic [ref=e650]: Umnico
+                - generic [ref=e652]: https://umnico.com › ... › Блог
+            - generic [ref=e653]:
+              - generic [ref=e654]: ·
+              - link "Translate this page" [ref=e655] [cursor=pointer]:
+                - /url: https://umnico.com/ru/blog/populyarnye-messendzhery/
+            - button "About this result" [ref=e656] [cursor=pointer]:
+              - img [ref=e659]
+          - generic [ref=e662]:
+            - generic [ref=e663]: 20 Oct 2024 —
+            - generic [ref=e664]:
+              - text: Какой мессенджер самый популярный в России в
+              - emphasis [ref=e665]: "2025"
+              - text: году? ... По данным аналитических сервисов, лидером остаётся
+              - emphasis [ref=e666]: WhatsApp
+              - text: — им пользуются около 97 ...
+            - link "Read more" [ref=e667] [cursor=pointer]:
+              - /url: https://umnico.com/ru/blog/populyarnye-messendzhery/#:~:text=%D0%9A%D0%B0%D0%BA%D0%BE%D0%B9%20%D0%BC%D0%B5%D1%81%D1%81%D0%B5%D0%BD%D0%B4%D0%B6%D0%B5%D1%80%20%D1%81%D0%B0%D0%BC%D1%8B%D0%B9%20%D0%BF%D0%BE%D0%BF%D1%83%D0%BB%D1%8F%D1%80%D0%BD%D1%8B%D0%B9%20%D0%B2,%D0%A0%D0%BE%D1%81%D1%81%D0%B8%D0%B8%20%D0%B2%202025%20%D0%B3%D0%BE%D0%B4%D1%83%3F&text=%D0%9F%D0%BE%20%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D0%BC%20%D0%B0%D0%BD%D0%B0%D0%BB%D0%B8%D1%82%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B8%D1%85%20%D1%81%D0%B5%D1%80%D0%B2%D0%B8%D1%81%D0%BE%D0%B2%2C%20%D0%BB%D0%B8%D0%B4%D0%B5%D1%80%D0%BE%D0%BC,%D0%BE%D0%BA%D0%BE%D0%BB%D0%BE%2097%20%D0%BC%D0%B8%D0%BB%D0%BB%D0%B8%D0%BE%D0%BD%D0%BE%D0%B2%20%D1%80%D0%BE%D1%81%D1%81%D0%B8%D1%8F%D0%BD%20%D0%B5%D0%B6%D0%B5%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%BE.
+        - generic [ref=e671]:
+          - generic [ref=e674]:
+            - link "Telegram первым из мессенджеров в России достиг ... Sostav.ru https://www.sostav.ru › publication" [ref=e676] [cursor=pointer]:
+              - /url: https://www.sostav.ru/publication/telegram-pervym-iz-messendzherov-v-rossii-dostig-auditorii-v-100-mln-polzovatelej-77389.html
+              - heading "Telegram первым из мессенджеров в России достиг ..." [level=3] [ref=e677]
+              - generic [ref=e683]:
+                - generic [ref=e685]: Sostav.ru
+                - generic [ref=e687]: https://www.sostav.ru › publication
+            - generic [ref=e688]:
+              - generic [ref=e689]: ·
+              - link "Translate this page" [ref=e690] [cursor=pointer]:
+                - /url: https://www.sostav.ru/publication/telegram-pervym-iz-messendzherov-v-rossii-dostig-auditorii-v-100-mln-polzovatelej-77389.html
+            - button "About this result" [ref=e691] [cursor=pointer]:
+              - img [ref=e694]
+          - generic [ref=e697]:
+            - generic [ref=e698]: 15 Aug 2025 —
+            - generic [ref=e699]:
+              - text: В июле
+              - emphasis [ref=e700]: "2025"
+              - text: "-го уникальная"
+              - emphasis [ref=e701]: месячная аудитория
+              - text: (MAU)
+              - emphasis [ref=e702]: Telegram
+              - text: составила 92,7 млн человек, практически достигнув уровня
+              - emphasis [ref=e703]: WhatsApp
+              - text: "* с 93,5 млн ..."
+            - link "Read more" [ref=e704] [cursor=pointer]:
+              - /url: https://www.sostav.ru/publication/telegram-pervym-iz-messendzherov-v-rossii-dostig-auditorii-v-100-mln-polzovatelej-77389.html#:~:text=%D0%92%20%D0%B8%D1%8E%D0%BB%D0%B5%202025%2D%D0%B3%D0%BE%20%D1%83%D0%BD%D0%B8%D0%BA%D0%B0%D0%BB%D1%8C%D0%BD%D0%B0%D1%8F%20%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F,WhatsApp*%20%D1%81%2093%2C5%20%D0%BC%D0%BB%D0%BD%20%D0%BF%D0%BE%D0%BB%D1%8C%D0%B7%D0%BE%D0%B2%D0%B0%D1%82%D0%B5%D0%BB%D0%B5%D0%B9.
+      - generic [ref=e706]:
+        - generic [ref=e711]:
+          - heading "People also search for" [level=2] [ref=e713]
+          - generic [ref=e715]:
+            - generic [ref=e716]:
+              - link "Is WhatsApp banned in Russia" [ref=e720] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&q=Is+WhatsApp+banned+in+Russia&sa=X&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ1QJ6BAg6EAE
+                - generic [ref=e721]:
+                  - generic [ref=e726]: Is WhatsApp banned in Russia
+                  - img [ref=e730]
+              - link "VK messenger" [ref=e735] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&q=VK+messenger&sa=X&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ1QJ6BAhWEAE
+                - generic [ref=e736]:
+                  - generic [ref=e741]: VK messenger
+                  - img [ref=e745]
+              - link "Max app Russia" [ref=e750] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&q=Max+app+Russia&sa=X&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ1QJ6BAhQEAE
+                - generic [ref=e751]:
+                  - generic [ref=e756]: Max app Russia
+                  - img [ref=e760]
+            - generic [ref=e762]:
+              - link "MAX messaging app" [ref=e766] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&q=MAX+messaging+app&sa=X&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ1QJ6BAhIEAE
+                - generic [ref=e767]:
+                  - generic [ref=e772]: MAX messaging app
+                  - img [ref=e776]
+              - link "Yandex Messenger" [ref=e781] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&q=Yandex+Messenger&sa=X&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ1QJ6BAhDEAE
+                - generic [ref=e782]:
+                  - generic [ref=e787]: Yandex Messenger
+                  - img [ref=e791]
+              - link "Аналоги телеграм" [ref=e796] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&q=%D0%90%D0%BD%D0%B0%D0%BB%D0%BE%D0%B3%D0%B8+%D1%82%D0%B5%D0%BB%D0%B5%D0%B3%D1%80%D0%B0%D0%BC&sa=X&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ1QJ6BAhBEAE
+                - generic [ref=e797]:
+                  - generic [ref=e802]: Аналоги телеграм
+                  - img [ref=e806]
+        - generic [ref=e808]:
+          - heading "Notices about Filtered Results" [level=2] [ref=e809]
+          - generic [ref=e812]:
+            - text: In response to a legal request submitted to Google, we have removed 3 result(s) from this page. If you wish, you may
+            - link "read more about the request" [ref=e813] [cursor=pointer]:
+              - /url: https://lumendatabase.org/notices/86271817
+            - text: at LumenDatabase.org.
+        - navigation [ref=e814]:
+          - heading "Page navigation" [level=1] [ref=e815]
+          - text: "1"
+          - link "Page 2" [ref=e818] [cursor=pointer]:
+            - /url: /search?q=top+messengers+Russia+2025+popular+VK+telegram+whatsapp+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F&sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&ei=des2ar3PNcbvwPAP1qaemAk&start=10&sa=N&sstk=AU9db-DBCgISEPeKYndKCDQgw26j3Dq0p9_dihG6gx_kJT_i4LO9lW1_Dw3A91j9wqSr9bmsur6L_O2Defvkue29zBvVmGWkGoKTXw&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ8tMDegQIQhAG
+            - text: "2"
+          - link "Page 3" [ref=e820] [cursor=pointer]:
+            - /url: /search?q=top+messengers+Russia+2025+popular+VK+telegram+whatsapp+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F&sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&ei=des2ar3PNcbvwPAP1qaemAk&start=20&sa=N&sstk=AU9db-DBCgISEPeKYndKCDQgw26j3Dq0p9_dihG6gx_kJT_i4LO9lW1_Dw3A91j9wqSr9bmsur6L_O2Defvkue29zBvVmGWkGoKTXw&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ8tMDegQIQhAI
+            - text: "3"
+          - link "Page 4" [ref=e822] [cursor=pointer]:
+            - /url: /search?q=top+messengers+Russia+2025+popular+VK+telegram+whatsapp+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F&sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&ei=des2ar3PNcbvwPAP1qaemAk&start=30&sa=N&sstk=AU9db-DBCgISEPeKYndKCDQgw26j3Dq0p9_dihG6gx_kJT_i4LO9lW1_Dw3A91j9wqSr9bmsur6L_O2Defvkue29zBvVmGWkGoKTXw&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ8tMDegQIQhAK
+            - text: "4"
+          - link "Page 5" [ref=e824] [cursor=pointer]:
+            - /url: /search?q=top+messengers+Russia+2025+popular+VK+telegram+whatsapp+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F&sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&ei=des2ar3PNcbvwPAP1qaemAk&start=40&sa=N&sstk=AU9db-DBCgISEPeKYndKCDQgw26j3Dq0p9_dihG6gx_kJT_i4LO9lW1_Dw3A91j9wqSr9bmsur6L_O2Defvkue29zBvVmGWkGoKTXw&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ8tMDegQIQhAM
+            - text: "5"
+          - link "Page 6" [ref=e826] [cursor=pointer]:
+            - /url: /search?q=top+messengers+Russia+2025+popular+VK+telegram+whatsapp+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F&sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&ei=des2ar3PNcbvwPAP1qaemAk&start=50&sa=N&sstk=AU9db-DBCgISEPeKYndKCDQgw26j3Dq0p9_dihG6gx_kJT_i4LO9lW1_Dw3A91j9wqSr9bmsur6L_O2Defvkue29zBvVmGWkGoKTXw&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ8tMDegQIQhAO
+            - text: "6"
+          - link "Page 7" [ref=e828] [cursor=pointer]:
+            - /url: /search?q=top+messengers+Russia+2025+popular+VK+telegram+whatsapp+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F&sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&ei=des2ar3PNcbvwPAP1qaemAk&start=60&sa=N&sstk=AU9db-DBCgISEPeKYndKCDQgw26j3Dq0p9_dihG6gx_kJT_i4LO9lW1_Dw3A91j9wqSr9bmsur6L_O2Defvkue29zBvVmGWkGoKTXw&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ8tMDegQIQhAQ
+            - text: "7"
+          - heading "Next" [level=2] [ref=e830]:
+            - link "Next" [ref=e831] [cursor=pointer]:
+              - /url: /search?q=top+messengers+Russia+2025+popular+VK+telegram+whatsapp+%D1%81%D1%82%D0%B0%D1%82%D0%B8%D1%81%D1%82%D0%B8%D0%BA%D0%B0+%D0%BC%D0%B5%D1%81%D1%8F%D1%87%D0%BD%D0%B0%D1%8F+%D0%B0%D1%83%D0%B4%D0%B8%D1%82%D0%BE%D1%80%D0%B8%D1%8F&sca_esv=d3289bdb09452055&sxsrf=APpeQnsVRlevZjilZmBGl2vnweaNnZEHwA:1781984117885&ei=des2ar3PNcbvwPAP1qaemAk&start=10&sa=N&sstk=AU9db-DBCgISEPeKYndKCDQgw26j3Dq0p9_dihG6gx_kJT_i4LO9lW1_Dw3A91j9wqSr9bmsur6L_O2Defvkue29zBvVmGWkGoKTXw&ved=2ahUKEwj93d2SyJaVAxXGNxAIHVaTB5MQ8NMDegQIQhAS
+              - generic [ref=e833]: Next
+      - navigation
+    - contentinfo [ref=e834]:
+      - heading "Footer links" [level=1] [ref=e835]
+      - generic [ref=e839]:
+        - generic [ref=e843]: Results are not personalised
+        - generic [ref=e845]:
+          - text: Finland
+          - generic [ref=e847]:
+            - button "Helsinki - From your IP address" [ref=e849] [cursor=pointer]:
+              - generic [ref=e850]: Helsinki
+              - generic [ref=e852]:
+                - text: "-"
+                - generic [ref=e853]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=e855] [cursor=pointer]: Update location
+        - generic [ref=e858]:
+          - link "Help" [ref=e859] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-FI&fg=1
+          - link "Send feedback" [ref=e860] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e861] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-FI&fg=1
+          - link "Terms" [ref=e862] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-FI&fg=1

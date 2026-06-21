@@ -1,0 +1,577 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e2]:
+    - generic [ref=e5]:
+      - list [ref=e6]:
+        - listitem [ref=e7]:
+          - link "Twitter" [ref=e8] [cursor=pointer]:
+            - /url: https://twitter.com/telegram
+            - text: Twitter
+      - list [ref=e9]:
+        - listitem [ref=e10]:
+          - link "Главная" [ref=e11] [cursor=pointer]:
+            - /url: //telegram.org/
+        - listitem [ref=e12]:
+          - link "FAQ" [ref=e13] [cursor=pointer]:
+            - /url: //telegram.org/faq
+        - listitem [ref=e14]:
+          - link "Приложения" [ref=e15] [cursor=pointer]:
+            - /url: //telegram.org/apps
+        - listitem [ref=e16]:
+          - link "API" [ref=e17] [cursor=pointer]:
+            - /url: /api
+        - listitem [ref=e18]:
+          - link "Протокол" [ref=e19] [cursor=pointer]:
+            - /url: /mtproto
+        - listitem [ref=e20]:
+          - link "Схема" [ref=e21] [cursor=pointer]:
+            - /url: /schema
+    - generic [ref=e24]:
+      - list [ref=e313]:
+        - listitem [ref=e314]:
+          - link "What Can You Do with Bots?" [ref=e315] [cursor=pointer]:
+            - /url: "#what-can-you-do-with-bots"
+        - listitem [ref=e316]:
+          - link "How Do Bots Work?" [ref=e317] [cursor=pointer]:
+            - /url: "#how-do-bots-work"
+        - listitem [ref=e318]:
+          - link "How Do I Create a Bot?" [ref=e319] [cursor=pointer]:
+            - /url: "#how-do-i-create-a-bot"
+      - 'heading "Bots: An introduction for developers" [level=1] [ref=e25]'
+      - generic [ref=e26]:
+        - paragraph [ref=e27]:
+          - text: Bots are
+          - strong [ref=e28]: small applications
+          - text: that run entirely within the Telegram app. Users interact with bots through
+          - strong [ref=e29]: flexible interfaces
+          - text: that can support
+          - strong [ref=e30]: any kind of task or service
+          - text: ". For more information, see:"
+        - list [ref=e31]:
+          - listitem [ref=e32]:
+            - link "Detailed Guide to Bot Features" [ref=e33] [cursor=pointer]:
+              - /url: /bots/features
+          - listitem [ref=e34]:
+            - link "Full API Reference for Developers" [ref=e35] [cursor=pointer]:
+              - /url: /bots/api
+          - listitem [ref=e36]:
+            - 'link "Basic Tutorial: From @BotFather to ''Hello World''" [ref=e37] [cursor=pointer]':
+              - /url: /bots/tutorial
+        - paragraph [ref=e38]:
+          - text: The
+          - strong [ref=e39]: Telegram Bot Platform
+          - text: hosts more than
+          - strong [ref=e40]: 10 million
+          - text: bots and is
+          - strong [ref=e41]: free
+          - text: for both users and developers.
+        - heading "What Can You Do with Bots?" [level=3] [ref=e42]:
+          - link [ref=e320]:
+            - /url: "#what-can-you-do-with-bots"
+          - text: What Can You Do with Bots?
+        - list [ref=e43]:
+          - listitem [ref=e44]:
+            - link "Replace Entire Websites" [ref=e45] [cursor=pointer]:
+              - /url: "#replace-entire-websites"
+          - listitem [ref=e46]:
+            - link "Natively Integrate AI Chatbots" [ref=e47] [cursor=pointer]:
+              - /url: "#natively-integrate-ai-chatbots"
+          - listitem [ref=e48]:
+            - link "Manage Your Business" [ref=e49] [cursor=pointer]:
+              - /url: "#manage-your-business"
+          - listitem [ref=e50]:
+            - link "Receive Payments" [ref=e51] [cursor=pointer]:
+              - /url: "#receive-payments"
+          - listitem [ref=e52]:
+            - link "Create Custom Tools" [ref=e53] [cursor=pointer]:
+              - /url: "#create-custom-tools"
+          - listitem [ref=e54]:
+            - link "Integrate with Services and Devices" [ref=e55] [cursor=pointer]:
+              - /url: "#integrate-with-services-and-devices"
+          - listitem [ref=e56]:
+            - link "Host Games" [ref=e57] [cursor=pointer]:
+              - /url: "#host-games"
+          - listitem [ref=e58]:
+            - link "Build Social Networks" [ref=e59] [cursor=pointer]:
+              - /url: "#build-social-networks"
+          - listitem [ref=e60]:
+            - link "Monetize Your Service" [ref=e61] [cursor=pointer]:
+              - /url: "#monetize-your-service"
+          - listitem [ref=e62]:
+            - link "Promote Your Project" [ref=e63] [cursor=pointer]:
+              - /url: "#promote-your-project"
+          - listitem [ref=e64]:
+            - link "Anything Else!" [ref=e65] [cursor=pointer]:
+              - /url: "#anything-else"
+        - heading "Replace Entire Websites" [level=4] [ref=e66]:
+          - link [ref=e322]:
+            - /url: "#replace-entire-websites"
+          - text: Replace Entire Websites
+        - paragraph [ref=e67]:
+          - text: Telegram bots can host
+          - link "Mini Apps" [ref=e68] [cursor=pointer]:
+            - /url: /bots/webapps
+          - text: built with
+          - emphasis [ref=e69]: JavaScript
+          - text: . This allows for
+          - strong [ref=e70]: infinitely flexible
+          - text: interfaces that can power everything from online stores to arcade games. Unlike websites, bots support
+          - link "seamless authorization" [ref=e71] [cursor=pointer]:
+            - /url: /api/url-authorization
+          - text: and notifications through Telegram out of the box.
+        - blockquote [ref=e73]:
+          - paragraph [ref=e74]:
+            - text: Try
+            - link "@DurgerKingBot" [ref=e75] [cursor=pointer]:
+              - /url: https://t.me/durgerkingbot
+            - text: – or check out the
+            - link "dedicated guide to Mini Apps" [ref=e76] [cursor=pointer]:
+              - /url: /bots/webapps
+            - text: to build your own.
+        - heading "Natively Integrate AI Chatbots" [level=4] [ref=e77]:
+          - link [ref=e325]:
+            - /url: "#natively-integrate-ai-chatbots"
+          - text: Natively Integrate AI Chatbots
+        - paragraph [ref=e78]: Bots natively support threaded conversations to manage several different topics in parallel. This is especially useful for building AI chatbots — and lets users easily access information from previous chats.
+        - paragraph [ref=e79]:
+          - text: Instead of waiting for full replies, chatbots can also
+          - link "stream live responses" [ref=e80] [cursor=pointer]:
+            - /url: https://core.telegram.org/bots/api#sendmessagedraft
+          - text: as they’re generated.
+        - blockquote [ref=e81]:
+          - paragraph [ref=e82]:
+            - text: You can easily enable topics in private chats by toggling on
+            - emphasis [ref=e83]: Threaded Mode
+            - text: via
+            - link "@BotFather" [ref=e84] [cursor=pointer]:
+              - /url: https://t.me/botfather
+            - text: .
+        - blockquote [ref=e87]:
+          - paragraph [ref=e88]:
+            - text: This feature is subject to an additional fee for Telegram Star purchases as described in
+            - link "Section 6.2.6" [ref=e89] [cursor=pointer]:
+              - /url: https://telegram.org/tos/bot-developers#6-2-6-enabling-topics-in-private-chats
+            - text: of our Terms of Service for Bot Developers.
+        - heading "Manage Your Business" [level=4] [ref=e90]:
+          - link [ref=e328]:
+            - /url: "#manage-your-business"
+          - text: Manage Your Business
+        - paragraph [ref=e91]:
+          - link "Telegram Business" [ref=e92] [cursor=pointer]:
+            - /url: https://telegram.org/blog/telegram-business
+          - text: users can connect Telegram bots to process and answer messages
+          - strong [ref=e93]: on their behalf
+          - text: ", via their personal account. This allows businesses to"
+          - strong [ref=e94]: seamlessly integrate
+          - text: any existing tools and workflows, or add new AI assistants to
+          - strong [ref=e95]: increase productivity
+          - text: .
+        - paragraph [ref=e96]:
+          - text: As we continue to expand the set of
+          - strong [ref=e97]: free tools
+          - link "available to bots" [ref=e98] [cursor=pointer]:
+            - /url: https://core.telegram.org/bots
+          - text: through this integration, we encourage all developers to
+          - strong [ref=e99]: innovate
+          - text: and
+          - strong [ref=e100]: develop
+          - text: useful applications and services for
+          - strong [ref=e101]: businesses
+          - text: on Telegram.
+        - blockquote [ref=e103]:
+          - paragraph [ref=e104]:
+            - text: Developers can turn on
+            - link "Business Mode" [ref=e105] [cursor=pointer]:
+              - /url: https://core.telegram.org/bots/features#bots-for-business
+            - text: in
+            - link "@BotFather" [ref=e106] [cursor=pointer]:
+              - /url: https://t.me/BotFather
+            - text: if their bot supports
+            - link "integration" [ref=e107] [cursor=pointer]:
+              - /url: https://core.telegram.org/bots/api#businessconnection
+            - text: with Telegram Business accounts.
+        - heading "Receive Payments" [level=5] [ref=e108]:
+          - link [ref=e331]:
+            - /url: "#receive-payments"
+          - text: Receive Payments
+        - paragraph [ref=e109]:
+          - text: Bots can sell all kinds of goods and services on Telegram – to anyone in the world.
+          - link "Telegram Stars" [ref=e110] [cursor=pointer]:
+            - /url: https://telegram.org/blog/telegram-stars
+          - text: allow users to securely and effortlessly buy
+          - strong [ref=e111]: digital products
+          - text: via in-app purchases. In addition,
+          - strong [ref=e112]: physical products
+          - text: can be easily purchased through
+          - link "third-party providers" [ref=e113] [cursor=pointer]:
+            - /url: https://core.telegram.org/bots/payments#payments-for-physical-products
+          - text: that support integration with Mini Apps.
+        - blockquote [ref=e115]:
+          - paragraph [ref=e116]:
+            - text: Try
+            - link "@ShopBot" [ref=e117] [cursor=pointer]:
+              - /url: https://t.me/shopbot
+            - text: – or check out our dedicated guides for
+            - link "digital" [ref=e118] [cursor=pointer]:
+              - /url: https://core.telegram.org/bots/payments-stars
+            - text: and
+            - link "physical" [ref=e119] [cursor=pointer]:
+              - /url: https://core.telegram.org/bots/payments
+            - text: products to build your own.
+        - heading "Create Custom Tools" [level=4] [ref=e120]:
+          - link [ref=e334]:
+            - /url: "#create-custom-tools"
+          - text: Create Custom Tools
+        - paragraph [ref=e121]:
+          - text: Increase your productivity by creating bots for
+          - strong [ref=e122]: specific tasks
+          - text: – like converting files, managing chats or fetching today’s forecast. Users can chat directly with bots, or add them to groups and channels to introduce extra features.
+        - blockquote [ref=e124]:
+          - paragraph [ref=e125]:
+            - text: Mini apps can generate media and files – that users can effortlessly share to
+            - link "other chats" [ref=e126] [cursor=pointer]:
+              - /url: webapps#sharing-media
+            - text: or a post
+            - link "as a story" [ref=e127] [cursor=pointer]:
+              - /url: webapps#sharing-from-mini-apps-to-stories
+            - text: .
+        - heading "Integrate with Services and Devices" [level=4] [ref=e128]:
+          - link [ref=e337]:
+            - /url: "#integrate-with-services-and-devices"
+          - text: Integrate with Services and Devices
+        - paragraph [ref=e129]:
+          - text: Mini apps can
+          - strong [ref=e130]: seamlessly integrate
+          - text: with third-party services, APIs and devices to instantly process and update information – like changing a user's
+          - link "emoji status" [ref=e131] [cursor=pointer]:
+            - /url: webapps#setting-emoji-status
+          - text: when they start a game
+          - img "🎮" [ref=e132]
+          - text: or get in a taxi
+          - img "🚕" [ref=e133]
+          - text: .
+        - blockquote [ref=e135]:
+          - paragraph [ref=e136]:
+            - text: By default, Mini Apps seamlessly integrate with Android and iOS, allowing users to add
+            - link "direct shortcuts" [ref=e137] [cursor=pointer]:
+              - /url: https://telegram.org/blog/fullscreen-miniapps-and-more#home-screen-shortcuts
+            - text: to their device’s home screen.
+        - paragraph [ref=e138]:
+          - text: Likewise, many popular platforms already have official Telegram bots, which allow users to comfortably access content in one app – or perform quick searches using
+          - link "inline mode" [ref=e139] [cursor=pointer]:
+            - /url: /bots/inline
+          - text: .
+        - link [ref=e340] [cursor=pointer]:
+          - /url: /file/464001186/11e04/7XO37b9iccE.133932/a29f8bf593af567fcc
+          - img [ref=e341]
+        - blockquote [ref=e141]:
+          - paragraph [ref=e142]:
+            - text: Try
+            - link "@GMailBot" [ref=e143] [cursor=pointer]:
+              - /url: https://t.me/gmailbot
+            - text: ","
+            - link "@GitHubBot" [ref=e144] [cursor=pointer]:
+              - /url: https://t.me/githubbot
+            - text: ","
+            - link "@Bing" [ref=e145] [cursor=pointer]:
+              - /url: https://t.me/bing
+            - text: ","
+            - link "@YouTube" [ref=e146] [cursor=pointer]:
+              - /url: https://t.me/youtube
+            - text: ","
+            - link "@wiki" [ref=e147] [cursor=pointer]:
+              - /url: https://t.me/wiki
+            - text: and more.
+        - heading "Host Games" [level=4] [ref=e148]:
+          - link [ref=e342]:
+            - /url: "#host-games"
+          - text: Host Games
+        - paragraph [ref=e149]:
+          - text: Developers can create both lightweight
+          - link "HTML5 Games" [ref=e150] [cursor=pointer]:
+            - /url: /bots/games
+          - text: and immersive
+          - strong [ref=e151]: full-screen modern games
+          - text: with support for
+          - link "detailed motion controls" [ref=e152] [cursor=pointer]:
+            - /url: webapps#accelerometer
+          - text: ", location-based"
+          - link "points of interest" [ref=e153] [cursor=pointer]:
+            - /url: webapps#locationmanager
+          - text: and dynamic
+          - link "hardware optimizations" [ref=e154] [cursor=pointer]:
+            - /url: webapps#additional-data-in-user-agent
+          - text: .
+        - blockquote [ref=e156]:
+          - paragraph [ref=e157]:
+            - text: Try some of the games in the
+            - link "@Gamee" [ref=e158] [cursor=pointer]:
+              - /url: https://t.me/gamee
+            - text: library – or check out the
+            - link "HTML5" [ref=e159] [cursor=pointer]:
+              - /url: /bots/games
+            - text: and
+            - link "Mini App" [ref=e160] [cursor=pointer]:
+              - /url: /bots/webapps
+            - text: manuals to build your own.
+        - heading "Build Social Networks" [level=4] [ref=e161]:
+          - link [ref=e345]:
+            - /url: "#build-social-networks"
+          - text: Build Social Networks
+        - paragraph [ref=e162]: Bots can serve as an intermediary to connect users based on shared interests, location, and more. Coordinate meetups, show local services, or help people sell second-hand items.
+        - blockquote [ref=e164]:
+          - paragraph [ref=e165]:
+            - text: Users can place
+            - link "direct shortcuts" [ref=e166] [cursor=pointer]:
+              - /url: https://telegram.org/blog/fullscreen-miniapps-and-more#home-screen-shortcuts
+            - text: to specific mini apps on the
+            - strong [ref=e167]: home screen
+            - text: of their devices – accessing services in
+            - strong [ref=e168]: one tap
+            - text: .
+        - heading "Monetize Your Service" [level=4] [ref=e169]:
+          - link [ref=e348]:
+            - /url: "#monetize-your-service"
+          - text: Monetize Your Service
+        - paragraph [ref=e170]:
+          - text: Telegram offers a
+          - strong [ref=e171]: robust ecosystem
+          - text: of monetization features, allowing any bot to support its development with
+          - strong [ref=e172]: multiple revenue streams
+          - text: . Popular bots can passively earn income through
+          - link "Revenue Sharing" [ref=e173] [cursor=pointer]:
+            - /url: https://telegram.org/blog/dynamic-video-quality-and-more#telegram-ads-in-bots
+          - text: from Telegram Ads, implement
+          - link "subscription plans" [ref=e174] [cursor=pointer]:
+            - /url: https://telegram.org/blog/fullscreen-miniapps-and-more#subscription-plans
+          - text: for users – or offer
+          - link "paid content" [ref=e175] [cursor=pointer]:
+            - /url: https://telegram.org/blog/superchannels-star-reactions-subscriptions#paid-media-for-bots
+          - text: and
+          - link "digital products" [ref=e176] [cursor=pointer]:
+            - /url: https://telegram.org/blog/telegram-stars#telegram-stars
+          - text: for
+          - link "Telegram Stars" [ref=e177] [cursor=pointer]:
+            - /url: https://telegram.org/blog/telegram-stars
+          - text: .
+        - blockquote [ref=e179]:
+          - paragraph [ref=e180]:
+            - text: Telegram Stars in your bot's balance can be used to
+            - link "increase message limits" [ref=e181] [cursor=pointer]:
+              - /url: https://telegram.org/blog/dynamic-video-quality-and-more#increased-message-limits-for-bots
+            - text: ","
+            - link "send gifts" [ref=e182] [cursor=pointer]:
+              - /url: https://core.telegram.org/bots/api#sendgift
+            - text: to users or
+            - link "accept rewards" [ref=e183] [cursor=pointer]:
+              - /url: https://telegram.org/blog/monetization-for-channels
+            - text: in Toncoin.
+        - heading "Promote Your Project" [level=4] [ref=e184]:
+          - link [ref=e351]:
+            - /url: "#promote-your-project"
+          - text: Promote Your Project
+        - paragraph [ref=e185]:
+          - text: Bots can host
+          - link "affiliate marketing programs" [ref=e186] [cursor=pointer]:
+            - /url: https://telegram.org/blog/affiliate-programs-ai-sticker-search
+          - text: – giving developers a
+          - strong [ref=e187]: transparent way
+          - text: to quickly scale with organic growth from
+          - strong [ref=e188]: user referrals
+          - text: .
+        - paragraph [ref=e189]:
+          - text: Affiliate Programs support custom
+          - strong [ref=e190]: revenue sharing rates
+          - text: and variable
+          - strong [ref=e191]: commission periods
+          - text: ", allowing you to customize your offers and update your campaign over time."
+        - blockquote [ref=e194]:
+          - paragraph [ref=e195]:
+            - text: To learn more and get started in just a few taps, check out our
+            - link "dedicated guide" [ref=e196] [cursor=pointer]:
+              - /url: https://telegram.org/tour/affiliate-programs
+            - text: .
+        - heading "Anything Else" [level=4] [ref=e197]:
+          - link [ref=e354]:
+            - /url: "#anything-else"
+          - text: Anything Else
+        - paragraph [ref=e198]:
+          - text: The possibilities for bots are endless – from simple scripts to complex mini apps. Whether you’re a beginner or professional programmer, you can create personalized tools with the help of the
+          - link "Bot Platform" [ref=e199] [cursor=pointer]:
+            - /url: /bots/api
+          - text: .
+        - blockquote [ref=e200]:
+          - paragraph [ref=e201]:
+            - text: All Mini Apps you build on Telegram can be
+            - strong [ref=e202]: highly customized
+            - text: to fit your brand identity, including by uploading high-quality
+            - link "media demos" [ref=e203] [cursor=pointer]:
+              - /url: "#mini-app-previews"
+            - text: and setting a custom
+            - link "Loading Screen" [ref=e204] [cursor=pointer]:
+              - /url: "#customizable-loading-screen"
+            - text: with your own logo and color palette
+        - separator [ref=e205]
+        - heading "How Do Bots Work?" [level=3] [ref=e206]:
+          - link [ref=e356]:
+            - /url: "#how-do-bots-work"
+          - text: How Do Bots Work?
+        - blockquote [ref=e207]:
+          - paragraph [ref=e208]:
+            - text: For a detailed explanation of Bot Features, see
+            - link "this guide" [ref=e209] [cursor=pointer]:
+              - /url: /bots/features
+        - paragraph [ref=e210]: Telegram bots are special accounts that do not need a phone number to set up. Bots are connected to their owner’s server, which processes inputs and requests from users.
+        - paragraph [ref=e211]:
+          - text: Telegram’s intermediary server handles all encryption and communication with the Telegram API. Developers communicate with this server via an easy HTTPS-interface with a simplified version of the
+          - link "Telegram API" [ref=e212] [cursor=pointer]:
+            - /url: /api
+          - text: – known as the
+          - link "Bot API" [ref=e213] [cursor=pointer]:
+            - /url: /bots/api
+          - text: .
+        - heading "How Are Bots Different from Users?" [level=4] [ref=e214]:
+          - link [ref=e358]:
+            - /url: "#how-are-bots-different-from-users"
+          - text: How Are Bots Different from Users?
+        - paragraph [ref=e215]: Bots are able to process inputs and requests in ways that user accounts can’t, but there are several differences between a bot and a normal user.
+        - list [ref=e216]:
+          - listitem [ref=e217]: Bots don’t have ‘last seen’ or online statuses – instead they show a ‘bot’ label in the chat.
+          - listitem [ref=e218]: Bots have limited cloud storage – older messages may be removed by the server shortly after they have been processed.
+          - listitem [ref=e219]: Bots can't start conversations with users. A user must either add them to a group or send them a message first. People can search for your bot’s username or start a chat via its unique t.me/bot_username link.
+          - listitem [ref=e220]:
+            - text: By default, bots added to groups
+            - strong [ref=e221]: only see relevant messages
+            - text: in the chat (see
+            - link "Privacy Mode" [ref=e222] [cursor=pointer]:
+              - /url: /bots/features#privacy-mode
+            - text: ).
+          - listitem [ref=e223]: Bots never eat, sleep or complain (unless expressly programmed otherwise).
+        - heading "Bot Links" [level=4] [ref=e224]:
+          - link [ref=e360]:
+            - /url: "#bot-links"
+          - text: Bot Links
+        - paragraph [ref=e225]:
+          - text: Bot usernames normally require a ‘bot’ suffix, but some bots don’t have them – such as
+          - link "@stickers" [ref=e226] [cursor=pointer]:
+            - /url: https://t.me/stickers
+          - text: ","
+          - link "@gif" [ref=e227] [cursor=pointer]:
+            - /url: https://t.me/gif
+          - text: ","
+          - link "@wiki" [ref=e228] [cursor=pointer]:
+            - /url: https://t.me/wiki
+          - text: or
+          - link "@bing" [ref=e229] [cursor=pointer]:
+            - /url: https://t.me/bing
+          - text: .
+        - paragraph [ref=e230]:
+          - text: Anyone can
+          - link "assign collectible usernames" [ref=e231] [cursor=pointer]:
+            - /url: https://telegram.org/blog/shareable-folders-custom-wallpapers#bot-links-and-telegram-premium-on-fragment
+          - text: to bots, including those without the 'bot' suffix.
+        - heading "How Do I Create a Bot?" [level=3] [ref=e232]:
+          - link [ref=e362]:
+            - /url: "#how-do-i-create-a-bot"
+          - text: How Do I Create a Bot?
+        - paragraph [ref=e233]:
+          - text: Creating Telegram bots is super-easy, but you will need at least some skills in
+          - strong [ref=e234]: computer programming
+          - text: .
+        - paragraph [ref=e235]:
+          - text: Creating a bot is streamlined by Telegram’s Bot API, which gives the tools and framework required to integrate your code. To get started, message
+          - link "@BotFather" [ref=e236] [cursor=pointer]:
+            - /url: https://t.me/botfather
+          - text: on Telegram to register your bot and receive its authentication token.
+        - blockquote [ref=e237]:
+          - paragraph [ref=e238]:
+            - text: Your
+            - strong [ref=e239]: bot token
+            - text: is its unique identifier – store it in a
+            - strong [ref=e240]: secure place
+            - text: ", and only share it with people who need direct access to the bot. Everyone who has your token will have"
+            - strong [ref=e241]: full control
+            - text: over your bot.
+        - heading "What Next?" [level=4] [ref=e242]:
+          - link [ref=e364]:
+            - /url: "#what-next"
+          - text: What Next?
+        - paragraph [ref=e243]:
+          - text: We recommend that you check out our guide to
+          - link "Bot Features" [ref=e244] [cursor=pointer]:
+            - /url: /bots/features
+          - text: "to see what you can teach your bot to do:"
+        - list [ref=e245]:
+          - listitem [ref=e246]:
+            - link "Detailed Guide to Bot Features" [ref=e247] [cursor=pointer]:
+              - /url: /bots/features
+          - listitem [ref=e248]:
+            - link "Full API Reference for Developers" [ref=e249] [cursor=pointer]:
+              - /url: /bots/api
+          - listitem [ref=e250]:
+            - 'link "Basic Tutorial: From @BotFather to ''Hello World''" [ref=e251] [cursor=pointer]':
+              - /url: /bots/tutorial
+          - listitem [ref=e252]:
+            - link "Code Examples" [ref=e253] [cursor=pointer]:
+              - /url: /bots/samples
+    - generic [ref=e255]:
+      - generic [ref=e256]:
+        - heading "Telegram" [level=5] [ref=e257]
+        - text: Telegram — это облачный мессенджер для мобильных устройств и компьютеров. Быстрый и безопасный.
+      - generic [ref=e258]:
+        - heading "О Telegram" [level=5] [ref=e259]:
+          - link "О Telegram" [ref=e260] [cursor=pointer]:
+            - /url: //telegram.org/faq
+        - list [ref=e261]:
+          - listitem [ref=e262]:
+            - link "FAQ" [ref=e263] [cursor=pointer]:
+              - /url: //telegram.org/faq
+          - listitem [ref=e264]:
+            - link "Приватность" [ref=e265] [cursor=pointer]:
+              - /url: //telegram.org/privacy
+          - listitem [ref=e266]:
+            - link "Для СМИ" [ref=e267] [cursor=pointer]:
+              - /url: //telegram.org/press
+      - generic [ref=e268]:
+        - heading "Для мобильных" [level=5] [ref=e269]:
+          - link "Для мобильных" [ref=e270] [cursor=pointer]:
+            - /url: //telegram.org/apps#mobile-apps
+        - list [ref=e271]:
+          - listitem [ref=e272]:
+            - link "iPhone/iPad" [ref=e273] [cursor=pointer]:
+              - /url: //telegram.org/dl/ios
+          - listitem [ref=e274]:
+            - link "Android" [ref=e275] [cursor=pointer]:
+              - /url: //telegram.org/android
+          - listitem [ref=e276]:
+            - link "Мобильная веб-версия" [ref=e277] [cursor=pointer]:
+              - /url: //telegram.org/dl/web
+      - generic [ref=e278]:
+        - heading "Для компьютера" [level=5] [ref=e279]:
+          - link "Для компьютера" [ref=e280] [cursor=pointer]:
+            - /url: //telegram.org/apps#desktop-apps
+        - list [ref=e281]:
+          - listitem [ref=e282]:
+            - link "PC/Mac/Linux" [ref=e283] [cursor=pointer]:
+              - /url: //desktop.telegram.org/
+          - listitem [ref=e284]:
+            - link "macOS" [ref=e285] [cursor=pointer]:
+              - /url: //macos.telegram.org/
+          - listitem [ref=e286]:
+            - link "Веб-версия" [ref=e287] [cursor=pointer]:
+              - /url: //telegram.org/dl/web
+      - generic [ref=e288]:
+        - heading "Платформы" [level=5] [ref=e289]:
+          - link "Платформы" [ref=e290] [cursor=pointer]:
+            - /url: /
+        - list [ref=e291]:
+          - listitem [ref=e292]:
+            - link "API" [ref=e293] [cursor=pointer]:
+              - /url: /api
+          - listitem [ref=e294]:
+            - link "Переводы" [ref=e295] [cursor=pointer]:
+              - /url: //translations.telegram.org/
+          - listitem [ref=e296]:
+            - link "Instant View" [ref=e297] [cursor=pointer]:
+              - /url: //instantview.telegram.org/
+  - generic:
+    - generic: Наверх

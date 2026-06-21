@@ -1,0 +1,334 @@
+- generic [active] [ref=e1]:
+  - blockquote [ref=e2]:
+    - heading [level=2] [ref=e3]: Documentation Index
+    - paragraph [ref=e4]:
+      - text: "Fetch the complete documentation index at:"
+      - link [ref=e5] [cursor=pointer]:
+        - /url: /llms.txt
+        - text: /llms.txt
+    - paragraph [ref=e6]: Use this file to discover all available pages before exploring further.
+  - generic [ref=e7]:
+    - link "Skip to main content" [ref=e8] [cursor=pointer]:
+      - /url: "#content-area"
+    - generic [ref=e10]:
+      - banner [ref=e11]:
+        - generic [ref=e14]:
+          - generic [ref=e17]:
+            - link "Documentation - Discord home page dark logo" [ref=e19] [cursor=pointer]:
+              - /url: https://docs.discord.com/developers
+              - generic [ref=e20]: Documentation - Discord home page
+              - img "dark logo" [ref=e21]
+            - button "Open search" [ref=e23] [cursor=pointer]:
+              - generic [ref=e24]:
+                - img [ref=e25]
+                - generic [ref=e28]: Search...
+              - generic [ref=e29]: Ctrl K
+            - navigation "Main" [ref=e31]:
+              - list [ref=e32]:
+                - listitem [ref=e33]:
+                  - link "Help Center" [ref=e34] [cursor=pointer]:
+                    - /url: https://support-dev.discord.com/hc/en-us
+                    - generic [ref=e35]: Help Center
+                - listitem [ref=e36]:
+                  - link "Developer Portal" [ref=e37] [cursor=pointer]:
+                    - /url: https://discord.com/developers/home
+                    - generic [ref=e38]:
+                      - generic [ref=e39]: Developer Portal
+                      - img [ref=e40]
+          - generic [ref=e43]:
+            - link "Home" [ref=e44] [cursor=pointer]:
+              - /url: /developers/intro
+              - text: Home
+            - link "Bots & Companion Apps" [ref=e46] [cursor=pointer]:
+              - /url: /developers/bots/overview
+              - text: Bots & Companion Apps
+            - link "Social SDK" [ref=e48] [cursor=pointer]:
+              - /url: /developers/discord-social-sdk/overview
+              - text: Social SDK
+            - link "Activities" [ref=e50] [cursor=pointer]:
+              - /url: /developers/activities/overview
+              - text: Activities
+            - link "Guides" [ref=e52] [cursor=pointer]:
+              - /url: /developers/guides
+              - img [ref=e53]
+              - text: Guides
+            - link "Change Log" [ref=e55] [cursor=pointer]:
+              - /url: /developers/change-log
+              - img [ref=e56]
+              - text: Change Log
+            - link "Reference" [ref=e58] [cursor=pointer]:
+              - /url: /developers/reference
+              - img [ref=e59]
+              - text: Reference
+      - generic [ref=e61]:
+        - navigation "Pages" [ref=e62]:
+          - generic [ref=e64]:
+            - list [ref=e65]:
+              - listitem [ref=e66]:
+                - link "Developer Portal" [ref=e67] [cursor=pointer]:
+                  - /url: https://discord.com/developers/home
+                  - img [ref=e68]
+                  - generic [ref=e69]: Developer Portal
+              - listitem [ref=e70]:
+                - link "API & SDK Reference" [ref=e71] [cursor=pointer]:
+                  - /url: /developers/reference
+                  - img [ref=e72]
+                  - generic [ref=e73]: API & SDK Reference
+              - listitem [ref=e74]:
+                - link "Developer Community" [ref=e75] [cursor=pointer]:
+                  - /url: https://discord.com/invite/discord-developers
+                  - img [ref=e76]
+                  - generic [ref=e77]: Developer Community
+            - generic [ref=e78]:
+              - heading "Welcome" [level=3] [ref=e80]
+              - list [ref=e81]:
+                - listitem [ref=e82]:
+                  - link "Introduction" [ref=e83] [cursor=pointer]:
+                    - /url: /developers/intro
+                    - generic [ref=e86]: Introduction
+            - generic [ref=e87]:
+              - heading "App Fundamentals" [level=3] [ref=e89]
+              - list [ref=e90]:
+                - listitem [ref=e91]:
+                  - link "Overview of Apps" [ref=e92] [cursor=pointer]:
+                    - /url: /developers/quick-start/overview-of-apps
+                    - generic [ref=e95]: Overview of Apps
+                - listitem [ref=e96]:
+                  - link "Discord Bots" [ref=e97] [cursor=pointer]:
+                    - /url: /developers/platform/bots
+                    - generic [ref=e100]: Discord Bots
+                - listitem [ref=e101]:
+                  - link "OAuth2 & Permissions" [ref=e102] [cursor=pointer]:
+                    - /url: /developers/platform/oauth2-and-permissions
+                    - generic [ref=e105]: OAuth2 & Permissions
+                - listitem [ref=e106]:
+                  - link "Interactions & Commands" [ref=e107] [cursor=pointer]:
+                    - /url: /developers/platform/interactions
+                    - generic [ref=e110]: Interactions & Commands
+                - listitem [ref=e111]:
+                  - link "Components & Modals" [ref=e112] [cursor=pointer]:
+                    - /url: /developers/platform/components
+                    - generic [ref=e115]: Components & Modals
+                - listitem [ref=e116]:
+                  - link "Server & Channel Management" [ref=e117] [cursor=pointer]:
+                    - /url: /developers/platform/server-and-channel-management
+                    - generic [ref=e120]: Server & Channel Management
+                - listitem [ref=e121]:
+                  - link "Webhooks" [ref=e122] [cursor=pointer]:
+                    - /url: /developers/platform/webhooks
+                    - generic [ref=e125]: Webhooks
+            - generic [ref=e126]:
+              - heading "Game & Platform Features" [level=3] [ref=e128]
+              - list [ref=e129]:
+                - listitem [ref=e130]:
+                  - link "Account Linking" [ref=e131] [cursor=pointer]:
+                    - /url: /developers/platform/account-linking
+                    - generic [ref=e134]: Account Linking
+                - listitem [ref=e135]:
+                  - link "Social Layer" [ref=e136] [cursor=pointer]:
+                    - /url: /developers/platform/social-layer
+                    - generic [ref=e139]: Social Layer
+                - listitem [ref=e140]:
+                  - link "Rich Presence" [ref=e141] [cursor=pointer]:
+                    - /url: /developers/platform/rich-presence
+                    - generic [ref=e144]: Rich Presence
+                - listitem [ref=e145]:
+                  - link "Activities" [ref=e146] [cursor=pointer]:
+                    - /url: /developers/platform/activities
+                    - generic [ref=e149]: Activities
+                - listitem [ref=e150]:
+                  - link "Community Servers" [ref=e151] [cursor=pointer]:
+                    - /url: /developers/platform/community-servers
+                    - generic [ref=e154]: Community Servers
+            - generic [ref=e155]:
+              - heading "Growth & Distribution" [level=3] [ref=e157]
+              - list [ref=e158]:
+                - listitem [ref=e159]:
+                  - link "App Discovery" [ref=e160] [cursor=pointer]:
+                    - /url: /developers/platform/discovery
+                    - generic [ref=e163]: App Discovery
+                - listitem [ref=e164]:
+                  - link "Game Profiles" [ref=e165] [cursor=pointer]:
+                    - /url: /developers/platform/game-profiles
+                    - generic [ref=e168]: Game Profiles
+                - listitem [ref=e169]:
+                  - link "Claim Your Game" [ref=e170] [cursor=pointer]:
+                    - /url: /developers/platform/claim-your-game
+                    - generic [ref=e173]: Claim Your Game
+                - listitem [ref=e174]:
+                  - link "Grow Your Game" [ref=e175] [cursor=pointer]:
+                    - /url: /developers/game-development/how-to-grow-your-game
+                    - generic [ref=e178]: Grow Your Game
+            - generic [ref=e179]:
+              - heading "Monetization" [level=3] [ref=e181]
+              - list [ref=e182]:
+                - listitem [ref=e183]:
+                  - link "Premium Apps & Activities" [ref=e184] [cursor=pointer]:
+                    - /url: /developers/platform/app-monetization
+                    - generic [ref=e187]: Premium Apps & Activities
+                - listitem [ref=e188]:
+                  - link "Social Commerce" [ref=e189] [cursor=pointer]:
+                    - /url: /developers/social-commerce/overview
+                    - generic [ref=e192]: Social Commerce
+            - generic [ref=e193]:
+              - heading "Tools & Resources" [level=3] [ref=e195]
+              - list [ref=e196]:
+                - listitem [ref=e197]:
+                  - link "Community Resources" [ref=e198] [cursor=pointer]:
+                    - /url: /developers/developer-tools/community-resources
+                    - generic [ref=e201]: Community Resources
+                - listitem [ref=e202]:
+                  - link "Managing Developer Team" [ref=e203] [cursor=pointer]:
+                    - /url: /developers/topics/teams
+                    - generic [ref=e206]: Managing Developer Team
+            - generic [ref=e207]:
+              - heading "Policies and Agreements" [level=3] [ref=e209]
+              - list [ref=e210]:
+                - listitem [ref=e211]:
+                  - link "Developer Policy" [ref=e212] [cursor=pointer]:
+                    - /url: https://support-dev.discord.com/hc/en-us/articles/8563934450327-Discord-Developer-Policy
+                    - generic [ref=e213]:
+                      - generic [ref=e215]: Developer Policy
+                      - img [ref=e217]
+                - listitem [ref=e219]:
+                  - link "Developer Terms of Service" [ref=e220] [cursor=pointer]:
+                    - /url: https://support-dev.discord.com/hc/en-us/articles/8562894815383-Discord-Developer-Terms-of-Service
+                    - generic [ref=e221]:
+                      - generic [ref=e223]: Developer Terms of Service
+                      - img [ref=e225]
+          - button "Toggle dark mode" [ref=e228] [cursor=pointer]:
+            - generic [ref=e229]:
+              - img [ref=e230]
+              - img [ref=e237]
+          - button "close" [ref=e241] [cursor=pointer]:
+            - generic [ref=e242]: close
+            - img [ref=e243]
+        - main [ref=e244]:
+          - generic [ref=e246]:
+            - generic [ref=e247]:
+              - generic [ref=e248]:
+                - link "Welcome" [ref=e251] [cursor=pointer]:
+                  - /url: /developers/intro
+                - generic [ref=e252]:
+                  - heading "Discord Developer Platform" [level=1] [ref=e253]
+                  - generic [ref=e254]:
+                    - button "Copy page" [ref=e255] [cursor=pointer]:
+                      - generic [ref=e256]:
+                        - img [ref=e257]
+                        - generic [ref=e260]: Copy page
+                    - button "More actions" [ref=e261] [cursor=pointer]:
+                      - img [ref=e262]
+              - paragraph [ref=e265]: Build bots and integrations on Discord, or connect your game with rich presence, voice chat, and more.
+            - generic [ref=e266]:
+              - img "Discord Developer Platform" [ref=e267]
+              - heading "Navigate to header What do you want to build?" [level=2] [ref=e268]:
+                - link "Navigate to header" [ref=e269] [cursor=pointer]:
+                  - /url: "#what-do-you-want-to-build"
+                  - img [ref=e271]
+                - generic [ref=e273] [cursor=pointer]: What do you want to build?
+              - generic [ref=e274]:
+                - link [ref=e275] [cursor=pointer]:
+                  - link [ref=e277]:
+                    - /url: /developers/platform/bots
+                    - img [ref=e279]
+                    - generic [ref=e282]:
+                      - heading [level=2] [ref=e283]: Bots & Apps
+                      - generic [ref=e285]: Build automated apps, commands, and integrations that run inside Discord servers.
+                - link [ref=e286] [cursor=pointer]:
+                  - link [ref=e288]:
+                    - /url: /developers/platform/activities
+                    - img [ref=e290]
+                    - generic [ref=e292]:
+                      - heading [level=2] [ref=e293]: Activities
+                      - generic [ref=e295]: Create multiplayer games and social experiences that launch directly inside Discord.
+                - link [ref=e296] [cursor=pointer]:
+                  - link [ref=e298]:
+                    - /url: /developers/platform/social-layer
+                    - img [ref=e300]
+                    - generic [ref=e302]:
+                      - heading [level=2] [ref=e303]: Social Layer for Games
+                      - generic [ref=e305]: Add rich presence, voice chat, and social features to your game across all platforms.
+              - heading "Navigate to header New to Discord development?" [level=2] [ref=e306]:
+                - link "Navigate to header" [ref=e307] [cursor=pointer]:
+                  - /url: "#new-to-discord-development"
+                  - img [ref=e309]
+                - generic [ref=e311] [cursor=pointer]: New to Discord development?
+              - generic [ref=e312]:
+                - link [ref=e313] [cursor=pointer]:
+                  - link [ref=e315]:
+                    - /url: /developers/quick-start/overview-of-apps
+                    - img [ref=e317]
+                    - generic [ref=e320]:
+                      - heading [level=2] [ref=e321]: Overview of Apps
+                      - generic [ref=e323]: Understand what Discord apps are, the different types, and how to get started.
+                - link [ref=e324] [cursor=pointer]:
+                  - link [ref=e326]:
+                    - /url: /developers/quick-start/getting-started
+                    - img [ref=e328]
+                    - generic [ref=e330]:
+                      - heading [level=2] [ref=e331]: Build Your First App
+                      - generic [ref=e333]: Follow a step-by-step guide to build and run your first Discord bot.
+              - heading "Navigate to header Resources" [level=2] [ref=e334]:
+                - link "Navigate to header" [ref=e335] [cursor=pointer]:
+                  - /url: "#resources"
+                  - img [ref=e337]
+                - generic [ref=e339] [cursor=pointer]: Resources
+              - generic [ref=e340]:
+                - link [ref=e341] [cursor=pointer]:
+                  - link [ref=e343]:
+                    - /url: https://discord.com/invite/discord-developers
+                    - img [ref=e345]
+                    - img [ref=e349]
+                    - generic [ref=e351]:
+                      - heading [level=2] [ref=e352]: Join the Developer Discord
+                      - generic [ref=e354]: Get support, API announcements, and participate in developer events.
+                - link [ref=e355] [cursor=pointer]:
+                  - link [ref=e357]:
+                    - /url: https://github.com/discord/discord-api-docs
+                    - img [ref=e359]
+                    - img [ref=e363]
+                    - generic [ref=e365]:
+                      - heading [level=2] [ref=e366]: Report Issues on GitHub
+                      - generic [ref=e368]: Report issues with the Discord API and SDKs.
+                - link [ref=e369] [cursor=pointer]:
+                  - link [ref=e371]:
+                    - /url: https://support-dev.discord.com/
+                    - img [ref=e373]
+                    - img [ref=e377]
+                    - generic [ref=e380]:
+                      - heading [level=2] [ref=e381]: Visit the Developer Help Center
+                      - generic [ref=e383]: Find articles, FAQs, and reach out to Discord’s developer support team.
+            - generic [ref=e385]:
+              - paragraph [ref=e386]: Was this page helpful?
+              - generic [ref=e388]:
+                - button "Yes" [ref=e389] [cursor=pointer]:
+                  - img [ref=e390]
+                  - generic [ref=e392]: "Yes"
+                - button "No" [ref=e393] [cursor=pointer]:
+                  - img [ref=e394]
+                  - generic [ref=e396]: "No"
+            - link "Overview of Discord Apps Next" [ref=e399] [cursor=pointer]:
+              - /url: /developers/quick-start/overview-of-apps
+              - generic [ref=e400]:
+                - generic [ref=e401]: Overview of Discord Apps
+                - generic [ref=e402]:
+                  - img [ref=e403]
+                  - generic [ref=e405]: Next
+            - generic [ref=e407]:
+              - link "github" [ref=e408] [cursor=pointer]:
+                - /url: https://github.com/discord/discord-api-docs
+                - generic [ref=e409]: github
+                - img [ref=e410]
+              - link "discord" [ref=e411] [cursor=pointer]:
+                - /url: https://discord.gg/discord-developers
+                - generic [ref=e412]: discord
+                - img [ref=e413]
+              - link "youtube" [ref=e414] [cursor=pointer]:
+                - /url: https://www.youtube.com/@DiscordDevelopers
+                - generic [ref=e415]: youtube
+                - img [ref=e416]
+              - link "linkedin" [ref=e417] [cursor=pointer]:
+                - /url: https://www.linkedin.com/showcase/discord-developers
+                - generic [ref=e418]: linkedin
+                - img [ref=e419]
+  - alert [ref=e420]

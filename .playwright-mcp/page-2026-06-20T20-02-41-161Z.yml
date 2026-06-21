@@ -1,0 +1,254 @@
+- generic [active] [ref=e1]:
+  - dialog [ref=e2]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - paragraph [ref=e9]: Корпорация Майкрософт и наши сторонние поставщики используют файлы cookie и аналогичные технологии для предоставления, поддержки и улучшения наших услуг и рекламных объявлений. С вашего согласия мы будем использовать эти данные для персонализации объявлений и связанной с ними аналитики.
+        - paragraph [ref=e10]:
+          - text: Выберите "Принять", чтобы согласиться с этими видами использования, "Отклонить", чтобы отклонить их, или выберите "Другие варианты", чтобы увидеть все доступные варианты. Изменить выбор можно в разделе "Управление файлами cookie" в нижней части этой страницы.
+          - link "Заявление о конфиденциальности" [ref=e11] [cursor=pointer]:
+            - /url: https://go.microsoft.com/fwlink/?LinkId=521839
+      - generic [ref=e12]:
+        - link "Принимаю" [ref=e14] [cursor=pointer]:
+          - /url: "javascript: void(0)"
+        - link "Отклонить" [ref=e16] [cursor=pointer]:
+          - /url: "javascript: void(0)"
+      - link "Дополнительные параметры" [ref=e18] [cursor=pointer]:
+        - /url: "javascript: void(0)"
+  - banner [ref=e19]:
+    - button "Перейти к контенту" [ref=e20] [cursor=pointer]:
+      - generic [ref=e22]: Перейти к контенту
+    - button "Отзыв о доступности" [ref=e23] [cursor=pointer]:
+      - generic [ref=e25]: Отзыв о доступности
+    - generic [ref=e26]:
+      - link "Вернуться к Поиску Bing" [ref=e27] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Вернуться к Поиску Bing" [level=1] [ref=e28]
+      - search [ref=e29]:
+        - button "Поиск" [ref=e32] [cursor=pointer]
+        - searchbox "Введите свой поисковый запрос здесь — пока вы печатаете, будут отображаться предлагаемые варианты" [ref=e33]: github go messenger bot libraries go-telegram-bot-api discordgo slack-go
+        - button "Поиск с использованием изображения" [ref=e39] [cursor=pointer]
+    - complementary "Награды и предпочтения учетной записи" [ref=e41]:
+      - button "Microsoft Rewards" [ref=e42] [cursor=pointer]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: Rewards
+          - img [ref=e47]
+      - link "Войти" [ref=e59] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic "Войти" [ref=e60]
+    - navigation "Фильтр поиска" [ref=e61]:
+      - list [ref=e62]:
+        - listitem [ref=e63]:
+          - link "Все" [ref=e64] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=e65]:
+          - link "Поиск" [ref=e66] [cursor=pointer]:
+            - /url: /copilotsearch?q=github+go+messenger+bot+libraries+go-telegram-bot-api+discordgo+slack-go&FORM=CSSCOP
+            - img [ref=e67]
+            - text: Поиск
+        - listitem [ref=e69]:
+          - link "Изображения" [ref=e70] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=d612a66f4882a7b26c6f52e0ac433666850c9c81395f8cb9db8216f15c5e7c0fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2ltYWdlcy9zZWFyY2g_cT1naXRodWIrZ28rbWVzc2VuZ2VyK2JvdCtsaWJyYXJpZXMrZ28tdGVsZWdyYW0tYm90LWFwaStkaXNjb3JkZ28rc2xhY2stZ28mRk9STT1IRFJTQzM&ntb=1
+        - listitem [ref=e71]:
+          - link "Видео" [ref=e72] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=89389ca6a861dfb147ddabecb5c0faf23bce0b9eb5b440ab838a4273da4f4c60JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1naXRodWIrZ28rbWVzc2VuZ2VyK2JvdCtsaWJyYXJpZXMrZ28tdGVsZWdyYW0tYm90LWFwaStkaXNjb3JkZ28rc2xhY2stZ28mRk9STT1IRFJTQzQ&ntb=1
+        - listitem [ref=e73]:
+          - link "Карты" [ref=e74] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=657b52dec954f11bd1ead9378d9182301c074177a637b1f4df4df848cb9ee779JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L21hcHM_cT1naXRodWIrZ28rbWVzc2VuZ2VyK2JvdCtsaWJyYXJpZXMrZ28tdGVsZWdyYW0tYm90LWFwaStkaXNjb3JkZ28rc2xhY2stZ28mRk9STT1IRFJTQzY&ntb=1
+        - listitem [ref=e75]:
+          - link "Новости" [ref=e76] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=c59b8f7f4e09e35bf80f10e9cd0b45dd93ed57cba9dace343b5843337c5a85b6JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L25ld3Mvc2VhcmNoP3E9Z2l0aHViK2dvK21lc3Nlbmdlcitib3QrbGlicmFyaWVzK2dvLXRlbGVncmFtLWJvdC1hcGkrZGlzY29yZGdvK3NsYWNrLWdvJkZPUk09SERSU0M3&ntb=1
+        - listitem [ref=e77]:
+          - link "Copilot" [ref=e78] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=4080b3e24f982da25e3bdd0739f9b5c2ed715dccb6450565f96f5301e10f175dJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2NoYXQ_cHJvbXB0PWdpdGh1YitnbyttZXNzZW5nZXIrYm90K2xpYnJhcmllcytnby10ZWxlZ3JhbS1ib3QtYXBpK2Rpc2NvcmRnbytzbGFjay1nbyZzZW5kcXVlcnk9MSZGT1JNPVNDQ09EWA&ntb=1
+        - listitem [ref=e79]:
+          - button "Еще" [ref=e80] [cursor=pointer]:
+            - img [ref=e82]
+            - text: Еще
+  - generic [ref=e84]:
+    - main "Результаты поиска" [ref=e85]:
+      - generic [ref=e87]: "Приблизительное число результатов: 198 000"
+      - list [ref=e97]:
+        - listitem [ref=e98]:
+          - link "Github" [ref=e100] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=537a29bb04333e0dc39229aadcf0f338f72608110f0073911d8e3a75cad1ce50JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL2dvLXRlbGVncmFtLWJvdC1hcGkv&ntb=1
+            - generic [ref=e105]:
+              - generic [ref=e106]: Github
+              - generic [ref=e108]:
+                - generic [ref=e109]: https://github.com › go-telegram-bot-api
+                - generic [ref=e110]: Перевести этот результат
+          - heading "go-telegram-bot-api · GitHub" [level=2] [ref=e111]:
+            - link "go-telegram-bot-api · GitHub" [ref=e112] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=537a29bb04333e0dc39229aadcf0f338f72608110f0073911d8e3a75cad1ce50JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL2dvLXRlbGVncmFtLWJvdC1hcGkv&ntb=1
+          - paragraph [ref=e114]: 13 авг. 2024 г. · Golang library for the Telegram Bot API. go-telegram-bot-api has one repository available. Follow their code on GitHub.
+          - generic [ref=e115]:
+            - list [ref=e116]:
+              - listitem [ref=e117]:
+                - link "GitHub - go-telegram-bot-ap…" [ref=e118] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=672c1372b6e241e85adf9d88e43f4ff5e08dd818c08d671cbd7d2e7d7dcd1c82JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL2dvLXRlbGVncmFtLWJvdC1hcGkvdGVsZWdyYW0tYm90LWFwaQ&ntb=1
+                - paragraph [ref=e119]: The scope of this project is just to provide a wrapper around the API without any …
+            - list [ref=e120]:
+              - listitem [ref=e121]:
+                - 'link "GitHub - go-telegram/bot: T…" [ref=e122] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=0214fe24e8cfbec96eb5a37ce207404ed0fcfa7c14473491ab6c0076f14d16e3JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL2dvLXRlbGVncmFtL2JvdA&ntb=1
+                - paragraph [ref=e123]: Telegram Bot API Go framework. Contribute to go-telegram/bot …
+          - link "Смотреть только результаты от github.com" [ref=e124] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=8ca852d1918342c5992dc850e9652d064e7f2a9a780bf5a3edc09ff975c5b7f0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPXNpdGU6Z2l0aHViLmNvbStnaXRodWIrZ28rbWVzc2VuZ2VyK2JvdCtsaWJyYXJpZXMrZ28tdGVsZWdyYW0tYm90LWFwaStkaXNjb3JkZ28rc2xhY2stZ28mZm9ybT1ETElOS1I&ntb=1
+        - listitem [ref=e125]:
+          - link "Go Packages" [ref=e127] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=822e4e203e3c813316cd0ab2711cdaa5b24e2cf870cea8392900fad488d2b7f1JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9wa2cuZ28uZGV2L2dpdGh1Yi5jb20vZ28tdGVsZWdyYW0tYm90LWFwaS90ZWxlZ3JhbS1ib3QtYXBpL3Y1&ntb=1
+            - generic [ref=e132]:
+              - generic [ref=e133]: Go Packages
+              - generic [ref=e135]:
+                - generic [ref=e136]: https://pkg.go.dev › github.com › go-telegram-bot-api › ...
+                - generic [ref=e137]: Перевести этот результат
+          - heading "tgbotapi package - github.com/go-telegram-bot-api/telegram-bot …" [level=2] [ref=e138]:
+            - link "tgbotapi package - github.com/go-telegram-bot-api/telegram-bot …" [ref=e139] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=822e4e203e3c813316cd0ab2711cdaa5b24e2cf870cea8392900fad488d2b7f1JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9wa2cuZ28uZGV2L2dpdGh1Yi5jb20vZ28tdGVsZWdyYW0tYm90LWFwaS90ZWxlZ3JhbS1ib3QtYXBpL3Y1&ntb=1
+          - paragraph [ref=e141]: 13 дек. 2021 г. · First, ensure the library is installed and up to date by running go get -u github.com/go-telegram-bot-api/telegram-bot-api/v5. This is a very simple bot that just displays any gotten updates, …
+        - listitem [ref=e142]:
+          - link "Github" [ref=e144] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=672c1372b6e241e85adf9d88e43f4ff5e08dd818c08d671cbd7d2e7d7dcd1c82JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL2dvLXRlbGVncmFtLWJvdC1hcGkvdGVsZWdyYW0tYm90LWFwaQ&ntb=1
+            - generic [ref=e149]:
+              - generic [ref=e150]: Github
+              - generic [ref=e152]:
+                - generic [ref=e153]: https://github.com › go-telegram-bot-api › telegram-bot-api
+                - generic [ref=e154]: Перевести этот результат
+          - 'heading "GitHub - go-telegram-bot-api/telegram-bot-api: Golang bindings for the ..." [level=2] [ref=e155]':
+            - 'link "GitHub - go-telegram-bot-api/telegram-bot-api: Golang bindings for the ..." [ref=e156] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=672c1372b6e241e85adf9d88e43f4ff5e08dd818c08d671cbd7d2e7d7dcd1c82JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL2dvLXRlbGVncmFtLWJvdC1hcGkvdGVsZWdyYW0tYm90LWFwaQ&ntb=1
+          - generic [ref=e160]:
+            - tablist [ref=e163]:
+              - tab "Overview" [selected] [ref=e164]
+              - tab "Example" [ref=e165] [cursor=pointer]
+            - tabpanel "Overview" [ref=e167]:
+              - list [ref=e168]:
+                - listitem [ref=e169]:
+                  - text: All methods are fairly self-explanatory, and reading the godoc page should explain everything. If some…
+                  - text: There are more tutorials and high-level information on the website, go-telegram-bot-api.dev.
+                - listitem [ref=e170]:
+                  - text: The scope of this project is just to provide a wrapper around the API without any additional features. T…
+                  - text: Join the development group if you want to ask questions or discuss development.
+              - 'link "Дополнительно: github.com" [ref=e171] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=672c1372b6e241e85adf9d88e43f4ff5e08dd818c08d671cbd7d2e7d7dcd1c82JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL2dvLXRlbGVncmFtLWJvdC1hcGkvdGVsZWdyYW0tYm90LWFwaQ&ntb=1
+        - listitem [ref=e172]:
+          - link "Go Packages" [ref=e174] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=f8b214d899487abdd57bfba639e4bd5ca47be89286d6992b78b5bb56e6191489JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9wa2cuZ28uZGV2L2dpdGh1Yi5jb20vZ28tdGVsZWdyYW0vYm90&ntb=1
+            - generic [ref=e179]:
+              - generic [ref=e180]: Go Packages
+              - generic [ref=e182]:
+                - generic [ref=e183]: https://pkg.go.dev › github.com › go-telegram › bot
+                - generic [ref=e184]: Перевести этот результат
+          - heading "bot package - github.com/go-telegram/bot - Go Packages" [level=2] [ref=e185]:
+            - link "bot package - github.com/go-telegram/bot - Go Packages" [ref=e186] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=f8b214d899487abdd57bfba639e4bd5ca47be89286d6992b78b5bb56e6191489JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9wa2cuZ28uZGV2L2dpdGh1Yi5jb20vZ28tdGVsZWdyYW0vYm90&ntb=1
+          - paragraph [ref=e188]: 22 мая 2026 г. · If you want to use webhooks, instead of using bot.Start, you should use the bot.StartWebhook method to start the bot. Also, you should use bot.WebhookHandler() method as …
+        - listitem [ref=e189]:
+          - link "awesomegolibs.com" [ref=e191] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=27ec87d0f5df2f7689728e7d6843185273a14d605c830f64e99716162c91a84aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9hd2Vzb21lZ29saWJzLmNvbS9saWJyYXJ5L3RlbGVncmFtLWJvdC1hcGk&ntb=1
+            - generic [ref=e196]:
+              - generic [ref=e197]: awesomegolibs.com
+              - generic [ref=e199]:
+                - generic [ref=e200]: https://awesomegolibs.com › library › telegram-bot-api
+                - generic [ref=e201]: Перевести этот результат
+          - heading "telegram-bot-api - Awesome Go Library for Bot Building" [level=2] [ref=e202]:
+            - link "telegram-bot-api - Awesome Go Library for Bot Building" [ref=e203] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=27ec87d0f5df2f7689728e7d6843185273a14d605c830f64e99716162c91a84aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9hd2Vzb21lZ29saWJzLmNvbS9saWJyYXJ5L3RlbGVncmFtLWJvdC1hcGk&ntb=1
+          - paragraph [ref=e205]: Explore telegram-bot-api, a powerful Go library for Bot Building. Simple and clean Telegram bot client.
+        - listitem [ref=e206]:
+          - link "rollout.com" [ref=e208] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=4a31c3a4996dda60979d32bff83901726dcfe12e197080fb0197a61f8ac73535JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9yb2xsb3V0LmNvbS9pbnRlZ3JhdGlvbi1ndWlkZXMvdGVsZWdyYW0tYm90LWFwaS9zZGsvc3RlcC1ieS1zdGVwLWd1aWRlLXRvLWJ1aWxkaW5nLWEtdGVsZWdyYW0tYm90LWFwaS1hcGktaW50ZWdyYXRpb24taW4tZ28&ntb=1
+            - generic [ref=e213]:
+              - generic [ref=e214]: rollout.com
+              - generic [ref=e216]:
+                - generic [ref=e217]: https://rollout.com › integration-guides › telegram...
+                - generic [ref=e218]: Перевести этот результат
+          - heading "How to build a Telegram Bot API integration - Rollout" [level=2] [ref=e219]:
+            - link "How to build a Telegram Bot API integration - Rollout" [ref=e220] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=4a31c3a4996dda60979d32bff83901726dcfe12e197080fb0197a61f8ac73535JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9yb2xsb3V0LmNvbS9pbnRlZ3JhdGlvbi1ndWlkZXMvdGVsZWdyYW0tYm90LWFwaS9zZGsvc3RlcC1ieS1zdGVwLWd1aWRlLXRvLWJ1aWxkaW5nLWEtdGVsZWdyYW0tYm90LWFwaS1hcGktaW50ZWdyYXRpb24taW4tZ28&ntb=1
+          - paragraph [ref=e222]: 3 авг. 2024 г. · The Telegram Bot API is a powerful tool, and when combined with Go's simplicity and efficiency, you've got a recipe for some seriously cool projects. Go is an excellent choice for …
+        - listitem [ref=e223]:
+          - generic [ref=e224]:
+            - link "Исследуйте это изображение" [ref=e227] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=xyaKgpqk&id=97986072E3B435F625CB2911F8FF337861C8DF31&thid=OIP.xyaKgpqky-bFsZbSUDAKaQHaDt&mediaurl=https://opengraph.githubassets.com/861d069f087b0c1b762939761a348dd8427b06961cd9396288341fb7b638b931/go-telegram/bot&q=github+go+messenger+bot+libraries+go-telegram-bot-api+discordgo+slack-go&ck=193F182324521FBAD66E5DF66655C054&idpp=rc&expw=1200&exph=600&form=rc2idp
+            - generic [ref=e229]:
+              - link "Github" [ref=e231] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=0214fe24e8cfbec96eb5a37ce207404ed0fcfa7c14473491ab6c0076f14d16e3JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL2dvLXRlbGVncmFtL2JvdA&ntb=1
+                - generic [ref=e236]:
+                  - generic [ref=e237]: Github
+                  - generic [ref=e239]:
+                    - generic [ref=e240]: https://github.com › go-telegram › bot
+                    - generic [ref=e241]: Перевести этот результат
+              - 'heading "GitHub - go-telegram/bot: Telegram Bot API Go …" [level=2] [ref=e242]':
+                - 'link "GitHub - go-telegram/bot: Telegram Bot API Go …" [ref=e243] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=0214fe24e8cfbec96eb5a37ce207404ed0fcfa7c14473491ab6c0076f14d16e3JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL2dvLXRlbGVncmFtL2JvdA&ntb=1
+              - paragraph [ref=e244]: 8 мая 2026 г. · Telegram Bot API Go framework. Contribute to go-telegram/bot development by creating an account on GitHub.
+        - listitem [ref=e246]:
+          - link "awesomegolibs.com" [ref=e248] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=c4e392801829f5c58f24d849dfffaccd61613592da0ff8c3057359aaca118c49JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9hd2Vzb21lZ29saWJzLmNvbS9saWJyYXJ5L2dvLXRn&ntb=1
+            - generic [ref=e253]:
+              - generic [ref=e254]: awesomegolibs.com
+              - generic [ref=e256]:
+                - generic [ref=e257]: https://awesomegolibs.com › library › go-tg
+                - generic [ref=e258]: Перевести этот результат
+          - heading "go-tg - Awesome Go Library for Bot Building" [level=2] [ref=e259]:
+            - link "go-tg - Awesome Go Library for Bot Building" [ref=e260] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=c4e392801829f5c58f24d849dfffaccd61613592da0ff8c3057359aaca118c49JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9hd2Vzb21lZ29saWJzLmNvbS9saWJyYXJ5L2dvLXRn&ntb=1
+          - paragraph [ref=e262]: Explore go-tg, a powerful Go library for Bot Building. Generated from official docs Go client library for accessing Telegram Bot API, with batteries for building complex bots included.
+        - listitem [ref=e263]:
+          - link "Go Packages" [ref=e265] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=85f4970595be6614990e0cb2e99b43cdd1e0ff5a5000859d0894f62048df973dJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9wa2cuZ28uZGV2L2dpdGh1Yi5jb20vZ28tdGVsZWdyYW0tYm90LWFwaS90ZWxlZ3JhbS1ib3QtYXBp&ntb=1
+            - generic [ref=e270]:
+              - generic [ref=e271]: Go Packages
+              - generic [ref=e273]:
+                - generic [ref=e274]: https://pkg.go.dev › github.com › go-telegram-bot-api › ...
+                - generic [ref=e275]: Перевести этот результат
+          - heading "github.com/go-telegram-bot-api/telegram-bot-api - Go Packages" [level=2] [ref=e276]:
+            - link "github.com/go-telegram-bot-api/telegram-bot-api - Go Packages" [ref=e277] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=85f4970595be6614990e0cb2e99b43cdd1e0ff5a5000859d0894f62048df973dJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9wa2cuZ28uZGV2L2dpdGh1Yi5jb20vZ28tdGVsZWdyYW0tYm90LWFwaS90ZWxlZ3JhbS1ib3QtYXBp&ntb=1
+          - paragraph [ref=e279]: 8 окт. 2018 г. · Package tgbotapi has functions and types used for interacting with the Telegram Bot API.
+        - listitem [ref=e280]:
+          - generic [ref=e281]:
+            - link "Исследуйте это изображение" [ref=e284] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=RULwkVaV&id=300532125CBB54A030C7331BB6E1FF4A5B464B89&thid=OIP.RULwkVaVjF-riOOw1sqrIwHaDh&mediaurl=https://repository-images.githubusercontent.com/380799735/d0c20dc9-60ae-46e1-9083-4979a4120af0&q=github+go+messenger+bot+libraries+go-telegram-bot-api+discordgo+slack-go&ck=E525D7A7739E87DF15516F35236AF682&idpp=rc&expw=1246&exph=592&form=rc2idp
+            - generic [ref=e286]:
+              - link "Github" [ref=e288] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=e8983a5213298ca3d46ef0f14045826f576c7ee9368d1f0f32925f3c922596a9JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL215bW1yYWMvdGVsZWdv&ntb=1
+                - generic [ref=e293]:
+                  - generic [ref=e294]: Github
+                  - generic [ref=e296]:
+                    - generic [ref=e297]: https://github.com › mymmrac › telego
+                    - generic [ref=e298]: Перевести этот результат
+              - 'heading "GitHub - mymmrac/telego: Telegram Bot API library for Go" [level=2] [ref=e299]':
+                - 'link "GitHub - mymmrac/telego: Telegram Bot API library for Go" [ref=e300] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=e8983a5213298ca3d46ef0f14045826f576c7ee9368d1f0f32925f3c922596a9JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL215bW1yYWMvdGVsZWdv&ntb=1
+              - paragraph [ref=e301]: 6 дн. назад · The goal of this library was to create API with the same types and methods as actual Telegram Bot API. Every type and method have been …
+        - listitem [ref=e303]:
+          - link "Некоторые результаты удалены" [ref=e305] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=344d5a01c9020ae0f64570329c97724738ffd487613df9d1570aabd450329c84JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9NjE3MzUw&ntb=1
+        - listitem [ref=e306]:
+          - navigation "Другие результаты по запросу github go messenger bot libraries go-telegram-bot-api discordgo slack-go":
+            - list:
+              - listitem [ref=e307]:
+                - generic "Страница 1" [ref=e308]: "1"
+              - listitem [ref=e309]:
+                - link "Страница 2" [ref=e310] [cursor=pointer]:
+                  - /url: /search?q=github+go+messenger+bot+libraries+go-telegram-bot-api+discordgo+slack-go&FPIG=E71284106E7F4C859F3D1D7B5C1D12DF&first=11&FORM=PERE
+                  - text: "2"
+              - listitem [ref=e311]:
+                - link "Страница 3" [ref=e312] [cursor=pointer]:
+                  - /url: /search?q=github+go+messenger+bot+libraries+go-telegram-bot-api+discordgo+slack-go&FPIG=E71284106E7F4C859F3D1D7B5C1D12DF&first=21&FORM=PERE1
+                  - text: "3"
+              - listitem [ref=e313]:
+                - link "Следующая страница" [ref=e314] [cursor=pointer]:
+                  - /url: /search?q=github+go+messenger+bot+libraries+go-telegram-bot-api+discordgo+slack-go&FPIG=E71284106E7F4C859F3D1D7B5C1D12DF&first=11&FORM=PORE
+    - complementary "Дополнительные результаты" [ref=e315]:
+      - list
+  - contentinfo [ref=e316]:
+    - generic [ref=e317]:
+      - list:
+        - listitem [ref=e318]:
+          - link "Конфиденциальность" [ref=e319] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=21b033e4690739c4b00c739e1cf31e392a048d8ccb3ae7bae1d3804b0b25c834JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=e320]:
+          - link "Условия" [ref=e321] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=35dbb4284fed750b180ae689312f45529a3b13fc05a5d31d6bb10222597c960fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1

@@ -1,0 +1,285 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e6]:
+        - link "hex logo Hex" [ref=e7] [cursor=pointer]:
+          - /url: /
+          - img "hex logo" [ref=e8]
+          - generic [ref=e9]: Hex
+        - generic [ref=e10]:
+          - search [ref=e14]:
+            - generic [ref=e15]:
+              - generic:
+                - img
+              - combobox "Find packages" [ref=e16]
+              - generic [ref=e17]: Find packages
+          - link "Packages" [ref=e18] [cursor=pointer]:
+            - /url: /packages
+          - link "Pricing" [ref=e19] [cursor=pointer]:
+            - /url: /pricing
+          - link "Docs" [ref=e20] [cursor=pointer]:
+            - /url: /docs
+          - button "Change theme" [ref=e22] [cursor=pointer]:
+            - generic [ref=e23]: Change color theme
+            - img [ref=e25]
+          - link "Log In" [ref=e28] [cursor=pointer]:
+            - /url: /login
+    - main [ref=e29]:
+      - generic [ref=e30]:
+        - generic [ref=e32]:
+          - generic [ref=e33]:
+            - link "Packages" [ref=e34] [cursor=pointer]:
+              - /url: /packages
+              - img [ref=e35]
+              - text: Packages
+            - generic [ref=e38]:
+              - heading "pe4kin" [level=1] [ref=e39]:
+                - link "pe4kin" [ref=e40] [cursor=pointer]:
+                  - /url: /packages/pe4kin
+              - group [ref=e41]:
+                - generic "0.2.5" [ref=e42] [cursor=pointer]:
+                  - img [ref=e43]
+                  - generic [ref=e47]: 0.2.5
+                  - img [ref=e48]
+            - paragraph [ref=e51]: Telegram messenger bot API wrapper
+          - generic [ref=e52]:
+            - link "HexDocs" [ref=e53] [cursor=pointer]:
+              - /url: https://pe4kin.hexdocs.pm/
+              - img [ref=e54]
+              - generic [ref=e57]: HexDocs
+            - link "HexPreview" [ref=e58] [cursor=pointer]:
+              - /url: https://preview.hex.pm/preview/pe4kin/0.2.5
+              - img [ref=e59]
+              - generic [ref=e62]: HexPreview
+        - generic [ref=e64]:
+          - generic [ref=e65]:
+            - link "Readme" [ref=e66] [cursor=pointer]:
+              - /url: /packages/pe4kin
+              - img [ref=e67]
+              - generic [ref=e70]: Readme
+            - link "9 Versions" [ref=e71] [cursor=pointer]:
+              - /url: /packages/pe4kin/versions
+              - img [ref=e72]
+              - generic [ref=e76]: 9 Versions
+            - link "2 Dependencies" [ref=e77] [cursor=pointer]:
+              - /url: /packages/pe4kin/dependencies
+              - img [ref=e78]
+              - generic [ref=e81]: 2 Dependencies
+            - link "0 Dependants" [ref=e82] [cursor=pointer]:
+              - /url: /packages/pe4kin/dependents
+              - img [ref=e83]
+              - generic [ref=e86]: 0 Dependants
+            - link "Activity" [ref=e87] [cursor=pointer]:
+              - /url: /packages/pe4kin/audit-logs
+              - img [ref=e88]
+              - generic [ref=e91]: Activity
+          - generic [ref=e92]:
+            - iframe [ref=e241]:
+              - article [ref=f31e2]:
+                - heading "pe4kin" [level=1] [ref=f31e3]
+                - paragraph [ref=f31e4]: Erlang Telegram bot library. Erlang wrapper for Telegram messenger bot APIs.
+                - paragraph [ref=f31e5]:
+                  - text: With pe4kin you can receive, send, reply and forward text, as well as media messages using
+                  - link "telegram bot API" [ref=f31e6] [cursor=pointer]:
+                    - /url: https://core.telegram.org/bots/api
+                  - text: .
+                - paragraph [ref=f31e7]:
+                  - text: Pe4kin is the name of the
+                  - link "multiplicational postman" [ref=f31e8] [cursor=pointer]:
+                    - /url: https://ru.wikipedia.org/wiki/%D0%9F%D0%BE%D1%87%D1%82%D0%B0%D0%BB%D1%8C%D0%BE%D0%BD_%D0%9F%D0%B5%D1%87%D0%BA%D0%B8%D0%BD
+                  - text: .
+                - heading "Example" [level=2] [ref=f31e9]
+                - code [ref=f31e11]:
+                  - generic [ref=f31e12]: "% $ rebar3 compile"
+                  - generic [ref=f31e13]: "% $ rebar3 shell"
+                  - generic [ref=f31e15]: "> application:ensure_all_started(pe4kin)."
+                  - generic [ref=f31e17]: "% First of all, you need to get bot's credentials."
+                  - generic [ref=f31e18]: "% Consult telegram docs https://core.telegram.org/bots#6-botfather"
+                  - generic [ref=f31e19]: "> BotName = <<\"Pe4kin_Test_Bot\">>."
+                  - generic [ref=f31e20]: "> BotToken = <<\"186***:******\">>."
+                  - generic [ref=f31e23]: "%"
+                  - generic [ref=f31e24]: "% Receive messages from users"
+                  - generic [ref=f31e25]: "%"
+                  - generic [ref=f31e27]: "% Launch incoming messages receiver worker."
+                  - generic [ref=f31e28]: "% XXX: In real applications you'll want to launch pe4kin_receiver gen_server"
+                  - generic [ref=f31e29]: "% under supervisor!"
+                  - generic [ref=f31e30]: "> pe4kin:launch_bot(BotName, BotToken, #{receiver => true})."
+                  - generic [ref=f31e32]: "% Subscribe self to incoming messages"
+                  - generic [ref=f31e33]: "> pe4kin_receiver:subscribe(BotName, self())."
+                  - generic [ref=f31e35]: "% Start HTTP-polling of telegram server for incoming messages"
+                  - generic [ref=f31e36]: "> pe4kin_receiver:start_http_poll(BotName, #{limit=>100, timeout=>60})."
+                  - generic [ref=f31e38]: "% Wait for new messages."
+                  - generic [ref=f31e39]: "% ...here you should send \"/start\" to this bot via telegram client..."
+                  - generic [ref=f31e40]: "> Update = receive {pe4kin_update, BotName, Upd} -> Upd end."
+                  - generic [ref=f31e42]: "% Guess incoming update payload type."
+                  - generic [ref=f31e43]: "> message = pe4kin_types:update_type(Update)."
+                  - generic [ref=f31e45]: "% Note `ChatId` - it uniquely identifies this particular chat and will be used"
+                  - generic [ref=f31e46]: "% in replies."
+                  - generic [ref=f31e47]: "> #{<<\"message\">> := #{<<\"chat\">> := #{<<\"id\">> := ChatId}} = Message} = Update."
+                  - generic [ref=f31e49]: "% Guess message payload type"
+                  - generic [ref=f31e50]: "> text = pe4kin_types:message_type(Message)."
+                  - generic [ref=f31e52]: "% Decode \"/start\" command (will raise exception if no commands in message)"
+                  - generic [ref=f31e53]: "> {<<\"/start\">>, BotName, true, _} = pe4kin_types:message_command(BotName, Message)."
+                  - generic [ref=f31e56]: "%"
+                  - generic [ref=f31e57]: "% Send messages"
+                  - generic [ref=f31e58]: "%"
+                  - generic [ref=f31e60]: "% Check that bot configured properly"
+                  - generic [ref=f31e61]: "> {ok, #{<<\"first_name\">> := _, <<\"id\">> := _, <<\"username\">> := _}} = pe4kin:get_me(BotName)."
+                  - generic [ref=f31e63]: "% Send reply to previously received `Update` message (note `ChatId`)"
+                  - generic [ref=f31e64]: "> From = maps:get(<<\"first_name\">>, maps:get(<<\"from\">>, Message, #{}), <<\"Anonymous\">>)."
+                  - generic [ref=f31e65]: "> HeartEmoji = pe4kin_emoji:name_to_char('heart')."
+                  - generic [ref=f31e66]: "> ResponseText = unicode:characters_to_binary([<<\"Hello, \">>, From, HeartEmoji])."
+                  - generic [ref=f31e67]: "> {ok, _} = pe4kin:send_message(BotName, #{chat_id => ChatId, text => ResponseText})."
+                  - generic [ref=f31e69]: "% Send image to the same chat"
+                  - generic [ref=f31e70]: "> CatImgFileName = \"funny_cat.jpg\"."
+                  - generic [ref=f31e71]: "> {ok, CatImgBin} = file:read_file(CatImgFileName)."
+                  - generic [ref=f31e72]: "> Photo = {file, CatImgFileName, <<\"image/jpeg\">>, CatImgBin}."
+                  - generic [ref=f31e73]: "> {ok, _} = pe4kin:send_photo(BotName, #{chat_id => ChatId, photo => Photo})."
+            - generic [ref=e98]:
+              - generic [ref=e99]:
+                - heading "Checksum" [level=3] [ref=e100]
+                - generic [ref=e101]:
+                  - textbox [ref=e102]: 97ff911f8362bb9c0d036553cb05727e7567e8311563a2aacc320a39687f2691
+                  - button [ref=e103]:
+                    - img [ref=e104]
+              - generic [ref=e107]:
+                - heading "Dependency Config" [level=3] [ref=e108]
+                - generic [ref=e109]:
+                  - paragraph [ref=e110]: mix.exs
+                  - generic [ref=e111]:
+                    - textbox [ref=e112]: "{:pe4kin, \"~> 0.2.5\"}"
+                    - button [ref=e113]:
+                      - img [ref=e114]
+                - generic [ref=e117]:
+                  - paragraph [ref=e118]: rebar.config
+                  - generic [ref=e119]:
+                    - textbox [ref=e120]: "{pe4kin, \"0.2.5\"}"
+                    - button [ref=e121]:
+                      - img [ref=e122]
+                - generic [ref=e125]:
+                  - paragraph [ref=e126]: Gleam
+                  - generic [ref=e127]:
+                    - textbox [ref=e128]: gleam add pe4kin@0.2.5
+                    - button [ref=e129]:
+                      - img [ref=e130]
+                - generic [ref=e133]:
+                  - paragraph [ref=e134]: erlang.mk
+                  - generic [ref=e135]:
+                    - textbox [ref=e136]: dep_pe4kin = hex 0.2.5
+                    - button [ref=e137]:
+                      - img [ref=e138]
+              - generic [ref=e141]:
+                - heading "Package Details" [level=3] [ref=e142]
+                - generic [ref=e143]:
+                  - generic [ref=e144]:
+                    - generic [ref=e145]: Downloads
+                    - generic [ref=e146]: Last 30 days, all versions
+                  - img "Downloads over the last 30 days" [ref=e147]:
+                    - generic [ref=e148]: "0"
+                    - generic [ref=e149]: "5"
+                    - generic [ref=e150]: "10"
+                    - generic [ref=e151]: "15"
+                    - generic [ref=e152]: "20"
+                - generic [ref=e156]:
+                  - generic [ref=e157]:
+                    - paragraph [ref=e158]: this version
+                    - paragraph [ref=e159]: 1 058
+                  - generic [ref=e160]:
+                    - paragraph [ref=e161]: yesterday
+                    - paragraph [ref=e162]: "11"
+                  - generic [ref=e163]:
+                    - paragraph [ref=e164]: last 7 days
+                    - paragraph [ref=e165]: "22"
+                  - generic [ref=e166]:
+                    - paragraph [ref=e167]: all time
+                    - paragraph [ref=e168]: 2 977
+                - generic [ref=e169]:
+                  - generic [ref=e170]:
+                    - paragraph [ref=e171]: Last Updated
+                    - paragraph [ref=e172]: Jun 08, 2025
+                  - generic [ref=e173]:
+                    - paragraph [ref=e174]: License
+                    - paragraph [ref=e176]: Apache 2.0
+                  - generic [ref=e177]:
+                    - paragraph [ref=e178]: Build Tools
+                    - generic [ref=e180]: rebar3
+                  - generic [ref=e181]:
+                    - paragraph [ref=e182]: Publisher
+                    - link "seriyps seriyps" [ref=e183] [cursor=pointer]:
+                      - /url: /users/seriyps
+                      - img "seriyps" [ref=e184]
+                      - generic [ref=e185]: seriyps
+              - generic [ref=e186]:
+                - heading "Links" [level=3] [ref=e187]
+                - list [ref=e188]:
+                  - listitem [ref=e189]:
+                    - link "Github" [ref=e190] [cursor=pointer]:
+                      - /url: https://github.com/seriyps/pe4kin
+              - generic [ref=e191]:
+                - heading "Owners" [level=3] [ref=e193]
+                - list [ref=e194]:
+                  - listitem [ref=e195]:
+                    - link "seriyps seriyps" [ref=e196] [cursor=pointer]:
+                      - /url: /users/seriyps
+                      - img "seriyps" [ref=e197]
+                      - generic [ref=e198]: seriyps
+  - contentinfo [ref=e199]:
+    - generic [ref=e201]:
+      - generic [ref=e202]:
+        - generic [ref=e203]:
+          - img "hex logo" [ref=e204]
+          - generic [ref=e205]: Hex
+        - generic [ref=e206]:
+          - link "GitHub" [ref=e207] [cursor=pointer]:
+            - /url: https://github.com/hexpm
+            - img [ref=e208]
+          - link "X" [ref=e210] [cursor=pointer]:
+            - /url: https://x.com/hexpm
+            - img [ref=e211]
+      - generic [ref=e214]:
+        - generic [ref=e215]:
+          - link "About" [ref=e216] [cursor=pointer]:
+            - /url: /about
+          - link "Blog" [ref=e217] [cursor=pointer]:
+            - /url: /blog
+          - link "Sponsors" [ref=e218] [cursor=pointer]:
+            - /url: /sponsors
+          - link "Status" [ref=e219] [cursor=pointer]:
+            - /url: https://status.hex.pm
+          - link "Advisories" [ref=e220] [cursor=pointer]:
+            - /url: https://osv.dev/list?ecosystem=Hex
+        - generic [ref=e221]:
+          - link "Documentation" [ref=e222] [cursor=pointer]:
+            - /url: /docs
+          - link "FAQ" [ref=e223] [cursor=pointer]:
+            - /url: /docs/faq
+          - link "Specifications" [ref=e224] [cursor=pointer]:
+            - /url: https://github.com/hexpm/specifications
+          - link "Report Client Issue" [ref=e225] [cursor=pointer]:
+            - /url: https://github.com/hexpm/hex/issues
+          - link "Report General Issue" [ref=e226] [cursor=pointer]:
+            - /url: https://github.com/hexpm/hexpm/issues
+          - link "Report Security Issue" [ref=e227] [cursor=pointer]:
+            - /url: mailto:security@hex.pm
+          - link "Contact Support" [ref=e228] [cursor=pointer]:
+            - /url: mailto:support@hex.pm
+        - generic [ref=e229]:
+          - link "Code of Conduct" [ref=e230] [cursor=pointer]:
+            - /url: /policies/codeofconduct
+          - link "Terms of Service" [ref=e231] [cursor=pointer]:
+            - /url: /policies/termsofservice
+          - link "Privacy Policy" [ref=e232] [cursor=pointer]:
+            - /url: /policies/privacy
+          - link "Copyright Policy" [ref=e233] [cursor=pointer]:
+            - /url: /policies/copyright
+          - link "Dispute Policy" [ref=e234] [cursor=pointer]:
+            - /url: /policies/dispute
+    - generic [ref=e236]:
+      - paragraph [ref=e237]: Copyright 2015. Six Colors AB.
+      - paragraph [ref=e238]:
+        - text: Powered by the
+        - link "Erlang VM" [ref=e239] [cursor=pointer]:
+          - /url: https://www.erlang.org/
+        - text: and the
+        - link "Elixir Programming Language" [ref=e240] [cursor=pointer]:
+          - /url: https://elixir-lang.org/

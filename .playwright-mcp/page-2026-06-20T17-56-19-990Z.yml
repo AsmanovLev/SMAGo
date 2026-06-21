@@ -1,0 +1,31 @@
+- generic [ref=e2]:
+  - generic [ref=e6]:
+    - generic "Вход с логином и паролем от Госуслуг" [ref=e7]:
+      - button "Назад" [ref=e85] [cursor=pointer]
+      - banner [ref=e9]:
+        - link "Портал государственных услуг Российской Федерации" [ref=e10] [cursor=pointer]:
+          - /url: https://gosuslugi.ru
+          - text: Портал государственных услуг Российской Федерации
+          - img [ref=e11]
+      - generic [ref=e87]:
+        - button "Назад" [ref=e89] [cursor=pointer]
+        - generic [ref=e90]:
+          - heading "Подтвердите вход по одноразовому коду" [level=3] [ref=e91]
+          - generic [ref=e92]: Введите одноразовый код (TOTP) из приложения, куда поступают коды
+          - generic [ref=e97]:
+            - generic [ref=e98]: Код подтверждения
+            - generic [ref=e99]:
+              - textbox [active] [ref=e101]
+              - textbox [ref=e103]
+              - textbox [ref=e105]
+              - textbox [ref=e107]
+              - textbox [ref=e109]
+              - textbox [ref=e111]
+          - link "Не могу подтвердить вход" [ref=e113] [cursor=pointer]:
+            - /url: https://www.gosuslugi.ru/help/faq/login/363636
+    - generic [ref=e48]:
+      - img [ref=e50]
+      - link "Куда ещё можно войти с паролем от Госуслуг?" [ref=e52] [cursor=pointer]:
+        - /url: https://www.gosuslugi.ru/landing/esia-help
+  - generic:
+    - status

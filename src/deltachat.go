@@ -68,8 +68,20 @@ d.bot = deltachat.NewBot(d.rpc)
 	})
 	d.bot.OnNewMsg(d.handleNewMessage)
 	go func() {
-		d.bot.Run()
-		d.running = false
+		for {
+			d.running = true
+			d.bot.Run()
+			d.running = false
+			if ctx.Err() != nil {
+				return
+			}
+			log.Printf("deltachat: bot.Run() exited, reconnecting in 10s...")
+			select {
+			case <-ctx.Done():
+				return
+			case <-time.After(10 * time.Second):
+			}
+		}
 	}()
 
 	// 2. Wait for bot.Run to start consuming

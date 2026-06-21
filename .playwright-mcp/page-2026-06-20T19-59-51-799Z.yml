@@ -1,0 +1,505 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-FI
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - generic:
+          - generic:
+            - generic:
+              - img
+        - 'link "World Cup 2026: The art of the penalty kick" [ref=e13] [cursor=pointer]':
+          - /url: https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQPQgK
+          - 'img "World Cup 2026: The art of the penalty kick" [ref=e14]'
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - combobox "Search" [ref=e19]: VK bots API 2025 documentation VK bots API 2025 documentation
+            - generic [ref=e20]:
+              - button "Clear" [ref=e22] [cursor=pointer]:
+                - img [ref=e24]
+              - generic [ref=e27]:
+                - button "Search by voice" [ref=e28] [cursor=pointer]:
+                  - img [ref=e29]
+                - button "Search by image" [ref=e31] [cursor=pointer]:
+                  - img [ref=e32]
+          - button "Search" [ref=e34] [cursor=pointer]:
+            - img [ref=e37]
+    - generic [ref=e39]:
+      - button "Share" [ref=e40] [cursor=pointer]:
+        - img [ref=e44]
+      - generic [ref=e46]:
+        - button "Google apps" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+        - 'button "Google Account: Lev Asmanov (asmanovlev@gmail.com)" [ref=e53] [cursor=pointer]':
+          - img [ref=e55]
+          - img [ref=e60]
+  - generic [ref=e62]:
+    - navigation [ref=e68]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "AI Mode" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=VK+bots+API+2025+documentation&sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&aep=1&ntc=1&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ2J8OegQIExAD
+              - generic [ref=e82]: AI Mode
+          - listitem [ref=e83]:
+            - link "All" [disabled] [ref=e84]:
+              - generic [ref=e86]: All
+          - listitem [ref=e87]:
+            - link "Images" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&q=VK+bots+API+2025+documentation&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQtKgLegQIGhAB
+              - generic [ref=e90]: Images
+          - listitem [ref=e91]:
+            - link "Videos" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&q=VK+bots+API+2025+documentation&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQtKgLegQIGRAB
+              - generic [ref=e94]: Videos
+          - listitem [ref=e95]:
+            - link "Forums" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&udm=18&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&q=VK+bots+API+2025+documentation&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQs6gLegQIGBAB
+              - generic [ref=e98]: Forums
+          - listitem [ref=e99]:
+            - link "Short videos" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&q=VK+bots+API+2025+documentation&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQs6gLegQIFxAB
+              - generic [ref=e102]: Short videos
+          - listitem [ref=e103]:
+            - link "News" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&q=VK+bots+API+2025+documentation&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8c4u0nXx4bEIpwm1lnNH832a9BVCEiB2iPJNekNderQwJGZIG7YID1eBGNWasq2rzBIURiSCrdR156KVg_RXap7nymj7qwomXHj_SiILyyw7TcR3PVsX7LYP5lqUywwLYwse9eq2FeU_-NVh-70aseSA4lTx9cXY16UPdF4e2jlvrjfGwp&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ0pQJegQIFhAB
+              - generic [ref=e106]: News
+          - listitem [ref=e107]:
+            - button "More filters" [ref=e108] [cursor=pointer]:
+              - generic "More filters" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: More
+                  - img [ref=e113]
+        - button "Tools" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Tools
+            - img [ref=e121]
+    - heading "Search Results" [level=1] [ref=e123]
+    - generic [ref=e128]:
+      - generic [ref=e147]:
+        - generic [ref=e149]:
+          - generic [ref=e151]:
+            - generic [ref=e152]:
+              - img [ref=e153]
+              - heading "AI Overview" [level=2] [ref=e155]
+            - button "About this result" [ref=e159]:
+              - img [ref=e161]
+          - generic [ref=e181]:
+            - generic [ref=e184]:
+              - generic [ref=e185]:
+                - text: The official
+                - strong [ref=e186]: VKontakte (VK) Bots API
+                - text: allows developers to integrate chatbots directly into community messages. The documentation dictates how to manage community interactions, event handling, keyboards, and server communication using either the
+                - strong [ref=e187]: Long Poll API
+                - text: or
+                - strong [ref=e188]: Webhooks
+                - text: .
+                - generic [ref=e190]:
+                  - link "Docs.rs (+3) - View related links" [ref=e192] [cursor=pointer]:
+                    - /url: https://docs.rs/vk-bot-api
+                  - button "Docs.rs (+3) - View related links" [disabled] [ref=e193]:
+                    - generic [ref=e195]:
+                      - generic [ref=e196]: Docs.rs
+                      - generic [ref=e197]: "+3"
+                    - img [ref=e200]
+              - generic [ref=e202]: "To begin building and structuring your bot's logic, refer directly to these core sections of the documentation:"
+              - list [ref=e204]:
+                - listitem [ref=e205]:
+                  - generic [ref=e206]:
+                    - strong [ref=e207]:
+                      - link "VK for Developers Guide" [ref=e209] [cursor=pointer]:
+                        - /url: https://dev.vk.com/guide
+                      - text: ":"
+                    - text: The official starting point for setting up your community, obtaining access tokens, and understanding app types.
+                - listitem [ref=e210]:
+                  - generic [ref=e211]:
+                    - strong [ref=e212]:
+                      - link [ref=e214] [cursor=pointer]:
+                        - /url: https://dev.vk.com/method
+                        - text: VK API Reference
+                      - text: ":"
+                    - text: A comprehensive directory of all core methods, including messaging, file attachments, user profiles, and chat management.
+                - listitem [ref=e215]:
+                  - generic [ref=e216]:
+                    - strong [ref=e217]:
+                      - link [ref=e219] [cursor=pointer]:
+                        - /url: https://teams.vk.com/botapi/
+                        - text: VK Teams Bot API
+                      - text: ":"
+                    - text: If your intent relates to building bots for the VK Teams enterprise messenger, use this dedicated endpoint and endpoint documentation.
+                - listitem [ref=e220]:
+                  - generic [ref=e221]:
+                    - strong [ref=e222]:
+                      - link [ref=e224] [cursor=pointer]:
+                        - /url: https://dev.vk.com/reference/access-rights
+                        - text: VK API Access Rights
+                      - text: ":"
+                    - text: Important guidelines on how to authenticate your bot and scope user/community permissions.
+                  - generic [ref=e226]:
+                    - link [ref=e228] [cursor=pointer]:
+                      - /url: https://dev.vk.com/method
+                    - button [disabled] [ref=e229]:
+                      - generic [ref=e231]:
+                        - generic [ref=e232]: dev.vk.com
+                        - generic [ref=e233]: "+6"
+                      - img [ref=e236]
+              - generic [ref=e240]:
+                - text: If you tell me what
+                - strong [ref=e241]: programming language
+                - text: (e.g., Python, Node.js, or Go) you are using, I can provide a
+                - strong [ref=e242]: code snippet and library recommendations
+                - text: to help you get started!
+            - generic [ref=e247]:
+              - generic [ref=e249]:
+                - button "8 sites" [ref=e250] [cursor=pointer]:
+                  - generic [ref=e259]: 8 sites
+                - button "About this result" [ref=e264] [cursor=pointer]:
+                  - img [ref=e266]
+              - list [ref=e269]:
+                - listitem [ref=e270]:
+                  - generic [ref=e271]:
+                    - link "VK Bot API for Rust - Docs.rs. Opens in new tab." [ref=e272] [cursor=pointer]:
+                      - /url: https://docs.rs/vk-bot-api
+                    - generic [ref=e273]:
+                      - generic [ref=e275]:
+                        - generic [ref=e276]: VK Bot API for Rust - Docs.rs
+                        - generic [ref=e277]: Features * Full VK Bot API coverage. * Async/await support. * Strongly typed models. * Extensible handler system. * Multiple updat...
+                      - generic [ref=e278]:
+                        - generic [ref=e283]: Docs.rs
+                        - button "About this result" [ref=e287] [cursor=pointer]:
+                          - img [ref=e289]
+                - listitem [ref=e293]:
+                  - generic [ref=e294]:
+                    - link "Creating a Bot — vk-botting 0.11.0 documentation. Opens in new tab." [ref=e295] [cursor=pointer]:
+                      - /url: https://vk-botting.readthedocs.io/en/latest/vk.html
+                    - generic [ref=e296]:
+                      - generic [ref=e298]:
+                        - generic [ref=e299]: Creating a Bot — vk-botting 0.11.0 documentation
+                        - generic [ref=e300]: In order to work with the library and the VK API in general, we must first create a VK Bot. Creating a Bot is a pretty straightfor...
+                      - generic [ref=e301]:
+                        - generic [ref=e306]: Read the Docs
+                        - button [ref=e310] [cursor=pointer]:
+                          - img [ref=e312]
+                - listitem [ref=e316]:
+                  - generic [ref=e317]:
+                    - link [ref=e318] [cursor=pointer]:
+                      - /url: https://teams.vk.com/botapi/
+                    - generic [ref=e319]:
+                      - generic [ref=e321]:
+                        - generic [ref=e322]: VK Teams Bot API
+                        - generic [ref=e323]: Bot authorization. Each bot receives a unique authentication token upon creation. The token must be transferred in each request. S...
+                      - generic [ref=e324]:
+                        - generic [ref=e329]: VK Teams
+                        - button [ref=e333] [cursor=pointer]:
+                          - img [ref=e335]
+        - button "Show more AI Overview" [ref=e341]:
+          - generic [ref=e343] [cursor=pointer]:
+            - generic [ref=e344]: Show more
+            - img [ref=e346]
+      - main [ref=e349]:
+        - generic [ref=e353]:
+          - generic [ref=e356]:
+            - heading "Web results" [level=2] [ref=e357]
+            - generic [ref=e358]:
+              - generic [ref=e361]:
+                - link "VK Teams Bot API VK Teams https://teams.vk.com › botapi" [ref=e363] [cursor=pointer]:
+                  - /url: https://teams.vk.com/botapi/
+                  - heading "VK Teams Bot API" [level=3] [ref=e364]
+                  - generic [ref=e370]:
+                    - generic [ref=e372]: VK Teams
+                    - generic [ref=e374]: https://teams.vk.com › botapi
+                - button "About this result" [ref=e375] [cursor=pointer]:
+                  - img [ref=e378]
+              - generic [ref=e381]:
+                - generic [ref=e382]:
+                  - emphasis [ref=e383]: Create a bot
+                  - text: . To create a bot account, refer to Metabot. Bot authorization. Each bot receives a unique authentication token upon creation.
+                - link "Read more" [ref=e384] [cursor=pointer]:
+                  - /url: https://teams.vk.com/botapi/#:~:text=Create%20a%20bot,unique%20authentication%20token%20upon%20creation.
+              - generic [ref=e386]:
+                - text: "Missing: 2025 ‎| Show results with:"
+                - link "2025" [ref=e387] [cursor=pointer]:
+                  - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&q=VK+bots+API+%222025%22+documentation&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ5t4CegQIKRAB
+          - generic [ref=e391]:
+            - generic [ref=e394]:
+              - link "Step-by-step instructions for writing your first bot for VK Teams VK Teams https://teams.vk.com › botapi › tutorial" [ref=e396] [cursor=pointer]:
+                - /url: https://teams.vk.com/botapi/tutorial/
+                - heading "Step-by-step instructions for writing your first bot for VK Teams" [level=3] [ref=e397]
+                - generic [ref=e403]:
+                  - generic [ref=e405]: VK Teams
+                  - generic [ref=e407]: https://teams.vk.com › botapi › tutorial
+              - button "About this result" [ref=e408] [cursor=pointer]:
+                - img [ref=e411]
+            - generic [ref=e414]:
+              - generic [ref=e415]:
+                - emphasis [ref=e416]: Register a bot
+                - text: ". First of all, you need to register the bot: Looking for @metabot; We send him a message /newbot; We send a name for the new bot."
+              - link "Read more" [ref=e417] [cursor=pointer]:
+                - /url: https://teams.vk.com/botapi/tutorial/#:~:text=Register%20a%20bot,name%20for%20the%20new%20bot.
+            - generic [ref=e419]:
+              - text: "Missing: 2025 ‎| Show results with:"
+              - link "2025" [ref=e420] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&q=VK+bots+API+%222025%22+documentation&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ5t4CegQIKBAB
+          - generic [ref=e424]:
+            - generic [ref=e427]:
+              - link "VK Bot API for Rust Docs.rs https://docs.rs › vk-bot-api" [ref=e429] [cursor=pointer]:
+                - /url: https://docs.rs/vk-bot-api
+                - heading "VK Bot API for Rust" [level=3] [ref=e430]
+                - generic [ref=e436]:
+                  - generic [ref=e438]: Docs.rs
+                  - generic [ref=e440]: https://docs.rs › vk-bot-api
+              - button "About this result" [ref=e441] [cursor=pointer]:
+                - img [ref=e444]
+            - generic [ref=e447]:
+              - generic [ref=e448]:
+                - text: A modern, asynchronous, fully-featured
+                - emphasis [ref=e449]: VK Bot API library for Rust
+                - text: . §Features. Full VK Bot API coverage; Async/await support; Strongly typed models; Extensible ...
+              - link "Read more" [ref=e450] [cursor=pointer]:
+                - /url: https://docs.rs/vk-bot-api#:~:text=A%20modern%2C%20asynchronous%2C%20fully%2Dfeatured%20VK,Extensible%20handler%20system
+            - generic [ref=e452]:
+              - text: "Missing: 2025 ‎| Show results with:"
+              - link "2025" [ref=e453] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&q=VK+bots+API+%222025%22+documentation&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ5t4CegQIJxAB
+          - generic [ref=e457]:
+            - generic [ref=e460]:
+              - link "API Reference — vk-botting 0.11.0 documentation Read the Docs https://vk-botting.readthedocs.io › latest › api" [ref=e462] [cursor=pointer]:
+                - /url: https://vk-botting.readthedocs.io/en/latest/api.html
+                - heading "API Reference — vk-botting 0.11.0 documentation" [level=3] [ref=e463]
+                - generic [ref=e469]:
+                  - generic [ref=e471]: Read the Docs
+                  - generic [ref=e473]: https://vk-botting.readthedocs.io › latest › api
+              - button "About this result" [ref=e474] [cursor=pointer]:
+                - img [ref=e477]
+            - generic [ref=e480]:
+              - generic [ref=e481]:
+                - emphasis [ref=e482]: Represents a VK bot
+                - text: . This class is a subclass of vk_botting.client.Client and as a result anything that you can do with a vk_botting.
+              - link "Read more" [ref=e483] [cursor=pointer]:
+                - /url: https://vk-botting.readthedocs.io/en/latest/api.html#:~:text=Represents%20a%20VK%20bot.%20This,can%20do%20with%20this%20bot.
+            - generic [ref=e485]:
+              - text: "Missing: 2025 ‎| Show results with:"
+              - link "2025" [ref=e486] [cursor=pointer]:
+                - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&q=VK+bots+API+%222025%22+documentation&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ5t4CegQIKhAB
+          - generic [ref=e490]:
+            - generic [ref=e493]:
+              - link "vk-bot · GitHub Topics GitHub https://github.com › topics › vk-bot" [ref=e495] [cursor=pointer]:
+                - /url: https://github.com/topics/vk-bot?o=desc&s=forks
+                - heading "vk-bot · GitHub Topics" [level=3] [ref=e496]
+                - generic [ref=e502]:
+                  - generic [ref=e504]: GitHub
+                  - generic [ref=e506]: https://github.com › topics › vk-bot
+              - button "About this result" [ref=e507] [cursor=pointer]:
+                - img [ref=e510]
+            - generic [ref=e513]:
+              - generic [ref=e514]:
+                - text: Asynchronous framework for building high-performance & easy to scale projects interacting with
+                - emphasis [ref=e515]: VK's API
+                - text: .
+                - emphasis [ref=e516]: bot
+                - text: async
+                - emphasis [ref=e517]: vk vk
+                - text: "-"
+                - emphasis [ref=e518]: bot vk
+                - text: "-"
+                - emphasis [ref=e519]: api
+                - text: vkwave async-
+                - emphasis [ref=e520]: vk
+                - text: . Updated on ...
+              - link "Read more" [ref=e521] [cursor=pointer]:
+                - /url: https://github.com/topics/vk-bot?o=desc&s=forks#:~:text=Asynchronous%20framework%20for%20building%20high%2Dperformance,on%20Dec%207%2C%202024
+          - generic [ref=e526]:
+            - heading "People also ask" [level=2] [ref=e528]
+            - generic [ref=e529]:
+              - button "How to use vk api?" [ref=e535] [cursor=pointer]:
+                - generic [ref=e537]: How to use vk api?
+                - img [ref=e540]
+              - button "What is the limit of Telegram bot API?" [ref=e549] [cursor=pointer]:
+                - generic [ref=e551]: What is the limit of Telegram bot API?
+                - img [ref=e554]
+              - button "How to use API in Telegram bot?" [ref=e563] [cursor=pointer]:
+                - generic [ref=e565]: How to use API in Telegram bot?
+                - img [ref=e568]
+          - generic [ref=e573]:
+            - heading "Web results" [level=2] [ref=e574]
+            - generic [ref=e575]:
+              - generic [ref=e578]:
+                - link "FAQ Bot API VK Teams https://teams.vk.com › botapi › faq" [ref=e580] [cursor=pointer]:
+                  - /url: https://teams.vk.com/botapi/faq
+                  - heading "FAQ Bot API" [level=3] [ref=e581]
+                  - generic [ref=e587]:
+                    - generic [ref=e589]: VK Teams
+                    - generic [ref=e591]: https://teams.vk.com › botapi › faq
+                - button "About this result" [ref=e592] [cursor=pointer]:
+                  - img [ref=e595]
+              - generic [ref=e598]:
+                - generic [ref=e599]:
+                  - text: A program written by third parties using the
+                  - emphasis [ref=e600]: Bot API
+                  - text: . How to start using the
+                  - emphasis [ref=e601]: bot
+                  - text: "? Write a message to the"
+                  - emphasis [ref=e602]: bot
+                  - text: . How do I get help with commands?
+                - link "Read more" [ref=e603] [cursor=pointer]:
+                  - /url: https://teams.vk.com/botapi/faq#:~:text=How%20to%20start%20using%20the&text=How%20to%20start%20using%20the,bot%3F&text=How%20do%20I%20get%20help,with%20commands%3F
+              - generic [ref=e605]: "Missing: 2025 ‎documentation"
+          - generic [ref=e609]:
+            - generic [ref=e612]:
+              - link "Custom VK Bot ChatBro https://www.chatbro.com › documentation › custom_vk_..." [ref=e614] [cursor=pointer]:
+                - /url: https://www.chatbro.com/documentation/custom_vk_bot/
+                - heading "Custom VK Bot" [level=3] [ref=e615]
+                - generic [ref=e621]:
+                  - generic [ref=e623]: ChatBro
+                  - generic [ref=e625]: https://www.chatbro.com › documentation › custom_vk_...
+              - button "About this result" [ref=e626] [cursor=pointer]:
+                - img [ref=e629]
+            - generic [ref=e632]:
+              - generic [ref=e633]:
+                - emphasis [ref=e634]: Navigate to the "API Usage" tab and click on the "Create Token" button
+                - text: . Choose "Allow access to community management" and "Allow access to community messages, ...
+              - link "Read more" [ref=e635] [cursor=pointer]:
+                - /url: https://www.chatbro.com/documentation/custom_vk_bot/#:~:text=Navigate%20to%20the%20%22API%20Usage%22,then%20click%20the%20%22Create%22%20button.
+          - generic [ref=e639]:
+            - generic [ref=e642]:
+              - link "node-vk-bot-api NPM https://www.npmjs.com › package › node-vk-bot-api" [ref=e644] [cursor=pointer]:
+                - /url: https://www.npmjs.com/package/node-vk-bot-api
+                - heading "node-vk-bot-api" [level=3] [ref=e645]
+                - generic [ref=e651]:
+                  - generic [ref=e653]: NPM
+                  - generic [ref=e655]: https://www.npmjs.com › package › node-vk-bot-api
+              - button "About this result" [ref=e656] [cursor=pointer]:
+                - img [ref=e659]
+            - generic [ref=e662]:
+              - generic [ref=e663]: 23 Apr 2021 —
+              - generic [ref=e664]:
+                - emphasis [ref=e665]: VK bot framework for Node.js
+                - text: ", based on Bots Long Poll API and Callback API. Latest version: 3.5.0, last published: 5 years ago."
+          - generic [ref=e669]:
+            - generic [ref=e672]:
+              - link "VKTeams Bot MCP Server Lib.rs https://lib.rs › Web programming › HTTP client" [ref=e674] [cursor=pointer]:
+                - /url: https://lib.rs/crates/vkteams-bot-mcp
+                - heading "VKTeams Bot MCP Server" [level=3] [ref=e675]
+                - generic [ref=e681]:
+                  - generic [ref=e683]: Lib.rs
+                  - generic [ref=e685]: https://lib.rs › Web programming › HTTP client
+              - button "About this result" [ref=e686] [cursor=pointer]:
+                - img [ref=e689]
+            - generic [ref=e692]:
+              - generic [ref=e693]:
+                - text: A Model Context Protocol (MCP) server for
+                - emphasis [ref=e694]: VK Teams Bot API
+                - text: . Easily integrate VK Teams bots with LLM agents, automation systems, or any external service via a ...
+              - link "Read more" [ref=e695] [cursor=pointer]:
+                - /url: https://lib.rs/crates/vkteams-bot-mcp#:~:text=A%20Model%20Context%20Protocol%20(MCP),service%20via%20a%20universal%20protocol.
+          - generic [ref=e699]:
+            - generic [ref=e702]:
+              - link "API | VK Cloud Documentation VK Cloud https://cloud.vk.com › docs › tools-for-using-services" [ref=e704] [cursor=pointer]:
+                - /url: https://cloud.vk.com/docs/en/tools-for-using-services/api
+                - heading "API | VK Cloud Documentation" [level=3] [ref=e705]
+                - generic [ref=e711]:
+                  - generic [ref=e713]: VK Cloud
+                  - generic [ref=e715]: https://cloud.vk.com › docs › tools-for-using-services
+              - button "About this result" [ref=e716] [cursor=pointer]:
+                - img [ref=e719]
+            - generic [ref=e723]:
+              - emphasis [ref=e724]: Managing VK Cloud services via API
+              - text: . Specifics of connection and the description of endpoints.
+            - generic [ref=e726]: "Missing: bots ‎2025"
+        - generic [ref=e728]:
+          - generic [ref=e733]:
+            - heading "People also search for" [level=2] [ref=e735]
+            - generic [ref=e737]:
+              - generic [ref=e738]:
+                - link "Vk bots api 2025 documentation github" [ref=e742] [cursor=pointer]:
+                  - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&q=Vk+bots+api+2025+documentation+github&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ1QJ6BAgtEAE
+                  - generic [ref=e743]:
+                    - generic [ref=e748]: Vk bots api 2025 documentation github
+                    - img [ref=e752]
+                - link "Vk bots api 2025 documentation example" [ref=e757] [cursor=pointer]:
+                  - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&q=Vk+bots+api+2025+documentation+example&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ1QJ6BAg5EAE
+                  - generic [ref=e758]:
+                    - generic [ref=e763]: Vk bots api 2025 documentation example
+                    - img [ref=e767]
+                - link "Vkontakte api" [ref=e772] [cursor=pointer]:
+                  - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&q=Vkontakte+api&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ1QJ6BAg4EAE
+                  - generic [ref=e773]:
+                    - generic [ref=e778]: Vkontakte api
+                    - img [ref=e782]
+              - generic [ref=e784]:
+                - link "Vk api standalone" [ref=e788] [cursor=pointer]:
+                  - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&q=Vk+api+standalone&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ1QJ6BAgzEAE
+                  - generic [ref=e789]:
+                    - generic [ref=e794]: Vk api standalone
+                    - img [ref=e798]
+                - link "VK WorkSpace" [ref=e803] [cursor=pointer]:
+                  - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&q=VK+WorkSpace&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ1QJ6BAgvEAE
+                  - generic [ref=e804]:
+                    - generic [ref=e809]: VK WorkSpace
+                    - img [ref=e813]
+                - link "Push API" [ref=e818] [cursor=pointer]:
+                  - /url: /search?sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&q=Push+API&sa=X&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ1QJ6BAguEAE
+                  - generic [ref=e819]:
+                    - generic [ref=e824]: Push API
+                    - img [ref=e828]
+          - navigation [ref=e830]:
+            - heading "Page navigation" [level=1] [ref=e831]
+            - text: "1"
+            - link "Page 2" [ref=e834] [cursor=pointer]:
+              - /url: /search?q=VK+bots+API+2025+documentation&sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&ei=LfE2at2sDOyf1fIP-dei2QU&start=10&sa=N&sstk=AU9db-D_U82JQP3Clj6r_WdJmNPY5_FpLXUKZxpd3dYdtuEHKpuCw1EFsRgmVoOfzCNQa5-tpMoOxcOkWy_KZvheJty15qZ9z7lCMw&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ8tMDegQIKxAE
+              - text: "2"
+            - link "Page 3" [ref=e836] [cursor=pointer]:
+              - /url: /search?q=VK+bots+API+2025+documentation&sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&ei=LfE2at2sDOyf1fIP-dei2QU&start=20&sa=N&sstk=AU9db-D_U82JQP3Clj6r_WdJmNPY5_FpLXUKZxpd3dYdtuEHKpuCw1EFsRgmVoOfzCNQa5-tpMoOxcOkWy_KZvheJty15qZ9z7lCMw&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ8tMDegQIKxAG
+              - text: "3"
+            - link "Page 4" [ref=e838] [cursor=pointer]:
+              - /url: /search?q=VK+bots+API+2025+documentation&sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&ei=LfE2at2sDOyf1fIP-dei2QU&start=30&sa=N&sstk=AU9db-D_U82JQP3Clj6r_WdJmNPY5_FpLXUKZxpd3dYdtuEHKpuCw1EFsRgmVoOfzCNQa5-tpMoOxcOkWy_KZvheJty15qZ9z7lCMw&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ8tMDegQIKxAI
+              - text: "4"
+            - link "Page 5" [ref=e840] [cursor=pointer]:
+              - /url: /search?q=VK+bots+API+2025+documentation&sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&ei=LfE2at2sDOyf1fIP-dei2QU&start=40&sa=N&sstk=AU9db-D_U82JQP3Clj6r_WdJmNPY5_FpLXUKZxpd3dYdtuEHKpuCw1EFsRgmVoOfzCNQa5-tpMoOxcOkWy_KZvheJty15qZ9z7lCMw&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ8tMDegQIKxAK
+              - text: "5"
+            - link "Page 6" [ref=e842] [cursor=pointer]:
+              - /url: /search?q=VK+bots+API+2025+documentation&sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&ei=LfE2at2sDOyf1fIP-dei2QU&start=50&sa=N&sstk=AU9db-D_U82JQP3Clj6r_WdJmNPY5_FpLXUKZxpd3dYdtuEHKpuCw1EFsRgmVoOfzCNQa5-tpMoOxcOkWy_KZvheJty15qZ9z7lCMw&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ8tMDegQIKxAM
+              - text: "6"
+            - link "Page 7" [ref=e844] [cursor=pointer]:
+              - /url: /search?q=VK+bots+API+2025+documentation&sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&ei=LfE2at2sDOyf1fIP-dei2QU&start=60&sa=N&sstk=AU9db-D_U82JQP3Clj6r_WdJmNPY5_FpLXUKZxpd3dYdtuEHKpuCw1EFsRgmVoOfzCNQa5-tpMoOxcOkWy_KZvheJty15qZ9z7lCMw&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ8tMDegQIKxAO
+              - text: "7"
+            - link "Page 8" [ref=e846] [cursor=pointer]:
+              - /url: /search?q=VK+bots+API+2025+documentation&sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&ei=LfE2at2sDOyf1fIP-dei2QU&start=70&sa=N&sstk=AU9db-D_U82JQP3Clj6r_WdJmNPY5_FpLXUKZxpd3dYdtuEHKpuCw1EFsRgmVoOfzCNQa5-tpMoOxcOkWy_KZvheJty15qZ9z7lCMw&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ8tMDegQIKxAQ
+              - text: "8"
+            - link "Page 9" [ref=e848] [cursor=pointer]:
+              - /url: /search?q=VK+bots+API+2025+documentation&sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&ei=LfE2at2sDOyf1fIP-dei2QU&start=80&sa=N&sstk=AU9db-D_U82JQP3Clj6r_WdJmNPY5_FpLXUKZxpd3dYdtuEHKpuCw1EFsRgmVoOfzCNQa5-tpMoOxcOkWy_KZvheJty15qZ9z7lCMw&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ8tMDegQIKxAS
+              - text: "9"
+            - link "Page 10" [ref=e850] [cursor=pointer]:
+              - /url: /search?q=VK+bots+API+2025+documentation&sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&ei=LfE2at2sDOyf1fIP-dei2QU&start=90&sa=N&sstk=AU9db-D_U82JQP3Clj6r_WdJmNPY5_FpLXUKZxpd3dYdtuEHKpuCw1EFsRgmVoOfzCNQa5-tpMoOxcOkWy_KZvheJty15qZ9z7lCMw&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ8tMDegQIKxAU
+              - text: "10"
+            - heading "Next" [level=2] [ref=e852]:
+              - link "Next" [ref=e853] [cursor=pointer]:
+                - /url: /search?q=VK+bots+API+2025+documentation&sca_esv=d3289bdb09452055&sxsrf=APpeQnvSvh6xTw_ZIJwhezhPFwvI1Ct4rw:1781985581210&ei=LfE2at2sDOyf1fIP-dei2QU&start=10&sa=N&sstk=AU9db-D_U82JQP3Clj6r_WdJmNPY5_FpLXUKZxpd3dYdtuEHKpuCw1EFsRgmVoOfzCNQa5-tpMoOxcOkWy_KZvheJty15qZ9z7lCMw&ved=2ahUKEwid97_MzZaVAxXsT1UIHfmrKFsQ8NMDegQIKxAW
+                - generic [ref=e855]: Next
+        - navigation
+    - contentinfo [ref=e856]:
+      - heading "Footer links" [level=1] [ref=e857]
+      - generic [ref=e861]:
+        - generic [ref=e865]: Results are not personalised
+        - generic [ref=e867]:
+          - text: Finland
+          - generic [ref=e869]:
+            - button "Helsinki - From your IP address" [ref=e871] [cursor=pointer]:
+              - generic [ref=e872]: Helsinki
+              - generic [ref=e874]:
+                - text: "-"
+                - generic [ref=e875]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=e877] [cursor=pointer]: Update location
+        - generic [ref=e880]:
+          - link "Help" [ref=e881] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-FI&fg=1
+          - link "Send feedback" [ref=e882] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e883] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-FI&fg=1
+          - link "Terms" [ref=e884] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-FI&fg=1

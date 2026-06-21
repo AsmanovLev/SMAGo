@@ -1,0 +1,446 @@
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - link "LINE Developers LINE Developers" [ref=e7] [cursor=pointer]:
+          - /url: /en/
+          - generic [ref=e8]:
+            - img "LINE Developers" [ref=e9]
+            - img "LINE Developers" [ref=e10]
+        - generic [ref=e12]:
+          - link "About" [ref=e13] [cursor=pointer]:
+            - /url: /en/about/
+            - generic [ref=e15]: About
+          - link "News" [ref=e16] [cursor=pointer]:
+            - /url: /en/news/
+            - generic [ref=e18]: News
+          - link "Products" [ref=e19] [cursor=pointer]:
+            - /url: /en/services/
+            - generic [ref=e21]: Products
+          - link "Documentation" [ref=e22] [cursor=pointer]:
+            - /url: /en/docs/
+            - generic [ref=e24]: Documentation
+          - link "Tips" [ref=e25] [cursor=pointer]:
+            - /url: /en/tips/
+            - generic [ref=e27]: Tips
+          - link "FAQ" [ref=e28] [cursor=pointer]:
+            - /url: /en/faq/
+            - generic [ref=e30]: FAQ
+          - link "Glossary" [ref=e31] [cursor=pointer]:
+            - /url: /en/glossary/
+            - generic [ref=e33]: Glossary
+          - generic [ref=e36]: More
+      - generic [ref=e38]:
+        - button "" [ref=e39] [cursor=pointer]:
+          - generic [ref=e40]: 
+        - generic [ref=e41]:
+          - button " " [ref=e42] [cursor=pointer]:
+            - generic [ref=e43]: 
+            - generic [ref=e44]: 
+          - alert "loading" [ref=e45]
+          - link "" [ref=e46] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e48]: 
+  - generic [ref=e49]:
+    - generic [ref=e54]:
+      - link "" [ref=e55] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e56]: 
+      - generic [ref=e58]:
+        - alert "loading" [ref=e59]
+        - alert "loading" [ref=e60]
+        - alert "loading" [ref=e61]
+        - alert "loading" [ref=e62]
+        - alert "loading" [ref=e63]
+        - alert "loading" [ref=e64]
+        - alert "loading" [ref=e65]
+        - alert "loading" [ref=e66]
+        - alert "loading" [ref=e67]
+        - alert "loading" [ref=e68]
+        - alert "loading" [ref=e69]
+        - alert "loading" [ref=e70]
+      - link "" [ref=e71] [cursor=pointer]:
+        - /url: "#"
+        - generic [ref=e72]: 
+    - navigation "breadcrumb" [ref=e73]:
+      - list [ref=e74]:
+        - listitem [ref=e75]:
+          - generic [ref=e76]: Home
+        - listitem [ref=e77]:
+          - text: 
+          - alert "loading" [ref=e78]
+    - generic [ref=e80]:
+      - list [ref=e82]:
+        - listitem [ref=e83]:
+          - link "API reference " [ref=e85] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e86]: API reference
+            - generic [ref=e88]: 
+        - listitem [ref=e89]:
+          - link "Development guidelines " [ref=e91] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e92]: Development guidelines
+            - generic [ref=e94]: 
+        - listitem [ref=e95]:
+          - generic [ref=e96]:
+            - link "Quickstart " [ref=e97] [cursor=pointer]:
+              - /url: "#"
+              - generic [ref=e98]: Quickstart
+              - generic [ref=e100]: 
+            - list [ref=e102]:
+              - listitem [ref=e103]:
+                - link "Messaging API overview" [ref=e104] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/overview/
+              - listitem [ref=e105]:
+                - link "Message types" [ref=e106] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/message-types/
+              - listitem [ref=e107]:
+                - link "Get started with the Messaging API" [ref=e108] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/getting-started/
+              - listitem [ref=e109]:
+                - link "Issue channel access token v2.1" [ref=e110] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/generate-json-web-token/
+              - listitem [ref=e111]:
+                - link "Build a bot" [ref=e112] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/building-bot/
+              - listitem [ref=e113]:
+                - link "Messaging API pricing" [ref=e114] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/pricing/
+        - listitem [ref=e115]:
+          - link "Guides " [ref=e117] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e118]: Guides
+            - generic [ref=e120]: 
+        - listitem [ref=e121]:
+          - link "Webhooks " [ref=e123] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e124]: Webhooks
+            - generic [ref=e126]: 
+        - listitem [ref=e127]:
+          - link "Rich menus " [ref=e129] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e130]: Rich menus
+            - generic [ref=e132]: 
+        - listitem [ref=e133]:
+          - link "LINE Bot Designer " [ref=e135] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e136]: LINE Bot Designer
+            - generic [ref=e138]: 
+        - listitem [ref=e139]:
+          - link "Flex Message " [ref=e141] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e142]: Flex Message
+            - generic [ref=e144]: 
+        - listitem [ref=e145]:
+          - link "Concepts " [ref=e147] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e148]: Concepts
+            - generic [ref=e150]: 
+        - listitem [ref=e151]:
+          - link "Reference " [ref=e153] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e154]: Reference
+            - generic [ref=e156]: 
+        - listitem [ref=e157]:
+          - link "Resources " [ref=e159] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e160]: Resources
+            - generic [ref=e162]: 
+        - listitem [ref=e163]:
+          - link "Case studies " [ref=e165] [cursor=pointer]:
+            - /url: "#"
+            - generic [ref=e166]: Case studies
+            - generic [ref=e168]: 
+      - generic [ref=e169]:
+        - main [ref=e171]:
+          - generic [ref=e172]:
+            - heading "Messaging API overview" [level=1] [ref=e173]
+            - generic [ref=e174]:
+              - button " Copy for LLM" [ref=e175] [cursor=pointer]:
+                - generic [ref=e176]: 
+                - text: Copy for LLM
+              - link " View as Markdown" [ref=e177] [cursor=pointer]:
+                - /url: /en/docs/messaging-api/overview/index.html.md
+                - generic [ref=e178]: 
+                - text: View as Markdown
+              - link "View on GitHub" [ref=e179] [cursor=pointer]:
+                - /url: https://github.com/line/line-developers-docs-source/blob/main/docs/en/docs/messaging-api/overview/index.html.md
+                - img [ref=e180]:
+                  - img [ref=e181]
+                - text: View on GitHub
+            - paragraph [ref=e184]: Use the Messaging API to build bots to provide personalized experiences on LINE to your users.
+            - generic [ref=e185]:
+              - generic [ref=e186]:
+                - generic [ref=e187]: 
+                - text: What is LINE Official Account
+              - paragraph [ref=e189]:
+                - text: If you are unfamiliar with LINE Official Account, visit the comprehensive learning platform,
+                - link "LY Marketing Campus " [ref=e190] [cursor=pointer]:
+                  - /url: https://lymcampus.jp/
+                - text: (only available in Japanese).
+            - 'heading "How the Messaging API works #" [level=2] [ref=e191]':
+              - 'link "How the Messaging API works #" [ref=e193] [cursor=pointer]':
+                - /url: "#how-messaging-api-works"
+            - paragraph [ref=e194]: "With the Messaging API, a bot server can send and receive data to and from the LINE Platform. Requests are sent over HTTPS in JSON. The communication flow between a bot server and the LINE Platform is as follows:"
+            - list [ref=e195]:
+              - listitem [ref=e196]: A user sends a message to a LINE Official Account.
+              - listitem [ref=e197]: The LINE Platform sends a webhook event to the webhook URL of the bot server.
+              - listitem [ref=e198]: The bot server checks the webhook event and responds to the user through the LINE Platform.
+            - paragraph
+            - 'heading "Try the demo #" [level=2] [ref=e199]':
+              - 'link "Try the demo #" [ref=e201] [cursor=pointer]':
+                - /url: "#line-api-use-case"
+            - paragraph [ref=e202]: Try using the demo to experience Messaging API for yourself. You can view the demo on your smartphone. Scan the QR code to add the LINE Official Account for the demo as a friend.
+            - paragraph [ref=e203]
+            - generic [ref=e204]:
+              - generic [ref=e205]:
+                - generic [ref=e206]: 
+                - text: Data the Demo App Retrieves
+              - paragraph [ref=e208]: The LINE Official Account for the demo has a function to send your device's location information. If you do not wish to send this information, turn off the location sharing function on your device before using the service. We will also collect some of your profile information (user ID) from your LINE account. However, this information isn't stored on the server. Please understand the above before using this service.
+            - 'heading "What you can do with the Messaging API #" [level=2] [ref=e209]':
+              - 'link "What you can do with the Messaging API #" [ref=e211] [cursor=pointer]':
+                - /url: "#what-you-can-do"
+            - paragraph [ref=e212]: Here are the things you can do with the Messaging API.
+            - 'heading "Send reply messages #" [level=3] [ref=e213]':
+              - 'link "Send reply messages #" [ref=e215] [cursor=pointer]':
+                - /url: "#send-reply-messages"
+            - paragraph [ref=e216]:
+              - text: With the Messaging API, you can send reply messages to users who added your LINE Official Account as a friend. For more information, see
+              - link "Sending messages" [ref=e217] [cursor=pointer]:
+                - /url: /en/docs/messaging-api/sending-messages/
+              - text: .
+            - 'heading "Send messages at any time #" [level=3] [ref=e218]':
+              - 'link "Send messages at any time #" [ref=e220] [cursor=pointer]':
+                - /url: "#send-messages-at-any-time"
+            - paragraph [ref=e221]:
+              - text: With the Messaging API, you can send messages directly to users at all times. For more information, see
+              - link "Sending messages" [ref=e222] [cursor=pointer]:
+                - /url: /en/docs/messaging-api/sending-messages/
+              - text: .
+            - 'heading "Send different message types #" [level=3] [ref=e223]':
+              - 'link "Send different message types #" [ref=e225] [cursor=pointer]':
+                - /url: "#send-different-message-types"
+            - paragraph [ref=e226]:
+              - text: With the Messaging API, you can send different types of messages to users as listed below. For more information about the specification of these messages, see
+              - link "Message types" [ref=e227] [cursor=pointer]:
+                - /url: /en/docs/messaging-api/message-types/
+              - text: .
+            - list [ref=e228]:
+              - listitem [ref=e229]:
+                - link "Text message" [ref=e230] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/message-types/#text-messages
+              - listitem [ref=e231]:
+                - link "Text message (v2)" [ref=e232] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/message-types/#text-messages-v2
+              - listitem [ref=e233]:
+                - link "Sticker message" [ref=e234] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/message-types/#sticker-messages
+              - listitem [ref=e235]:
+                - link "Image message" [ref=e236] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/message-types/#image-messages
+              - listitem [ref=e237]:
+                - link "Video message" [ref=e238] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/message-types/#video-messages
+              - listitem [ref=e239]:
+                - link "Audio message" [ref=e240] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/message-types/#audio-messages
+              - listitem [ref=e241]:
+                - link "Location message" [ref=e242] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/message-types/#location-messages
+              - listitem [ref=e243]:
+                - link "Coupon message" [ref=e244] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/message-types/#coupon-messages
+              - listitem [ref=e245]:
+                - link "Imagemap message" [ref=e246] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/message-types/#imagemap-messages
+              - listitem [ref=e247]:
+                - link "Template message" [ref=e248] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/message-types/#template-messages
+              - listitem [ref=e249]:
+                - link "Flex Message" [ref=e250] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/message-types/#flex-messages
+            - 'heading "Get content sent by users #" [level=3] [ref=e251]':
+              - 'link "Get content sent by users #" [ref=e253] [cursor=pointer]':
+                - /url: "#get-content-sent-by-users"
+            - paragraph [ref=e254]:
+              - text: With the Messaging API, you can get images, videos, audio, and files sent by users. Content that users send is automatically deleted after a period of time. For more information, see
+              - link "Get content" [ref=e255] [cursor=pointer]:
+                - /url: /en/reference/messaging-api/#get-content
+              - text: in the Messaging API reference.
+            - 'heading "Get user profiles #" [level=3] [ref=e256]':
+              - 'link "Get user profiles #" [ref=e258] [cursor=pointer]':
+                - /url: "#get-user-profiles"
+            - paragraph [ref=e259]:
+              - text: With the Messaging API, you can get profile information of a user who interacts with your LINE Official Account, in one-on-one and group chats. The types of profile information you can get are user's display name, language, profile image and status message. For more information, see
+              - link "Get profile" [ref=e260] [cursor=pointer]:
+                - /url: /en/reference/messaging-api/#get-profile
+              - text: in the Messaging API reference.
+            - 'heading "Join group chats #" [level=3] [ref=e261]':
+              - 'link "Join group chats #" [ref=e263] [cursor=pointer]':
+                - /url: "#join-group-chats"
+            - paragraph [ref=e264]:
+              - text: With the Messaging API, you can send messages in group chats and get information of the group chat members. For more information, see
+              - link "Group chats and multi-person chats" [ref=e265] [cursor=pointer]:
+                - /url: /en/docs/messaging-api/group-chats/
+              - text: .
+            - 'heading "Use rich menus #" [level=3] [ref=e266]':
+              - 'link "Use rich menus #" [ref=e268] [cursor=pointer]':
+                - /url: "#use-rich-menus"
+            - paragraph [ref=e269]:
+              - text: With the Messaging API, you can set and customize a rich menu in a chat. Rich menus help users find how they can interact with your LINE Official Account. Users can use this menu from the chat at all times. For more information, see
+              - link "Use rich menus" [ref=e270] [cursor=pointer]:
+                - /url: /en/docs/messaging-api/using-rich-menus/
+              - text: .
+            - 'heading "Use beacons #" [level=3] [ref=e271]':
+              - 'link "Use beacons #" [ref=e273] [cursor=pointer]':
+                - /url: "#use-beacons"
+            - paragraph [ref=e274]:
+              - text: With LINE Beacon, you can set your LINE Official Account to interact with the user who enters a beacon region. For more information, see
+              - link "Use beacons with LINE" [ref=e275] [cursor=pointer]:
+                - /url: /en/docs/messaging-api/using-beacons/
+              - text: .
+            - 'heading "Use account link #" [level=3] [ref=e276]':
+              - 'link "Use account link #" [ref=e278] [cursor=pointer]':
+                - /url: "#use-account-link"
+            - paragraph [ref=e279]:
+              - text: With the Messaging API, you can securely link user accounts in your service to their LINE accounts, if they friended your LINE Official Account. For more information, see
+              - link "User account linking" [ref=e280] [cursor=pointer]:
+                - /url: /en/docs/messaging-api/linking-accounts/
+              - text: .
+            - 'heading "Get the number of sent messages #" [level=3] [ref=e281]':
+              - 'link "Get the number of sent messages #" [ref=e283] [cursor=pointer]':
+                - /url: "#get-number-of-messages"
+            - paragraph [ref=e284]: "With the Messaging API, you can get the number of messages you sent from your LINE Official Account. The API returns only the number of messages sent through the Messaging API, not LINE Official Account Manager. For more information, see the following references:"
+            - list [ref=e285]:
+              - listitem [ref=e286]:
+                - link "Get the target limit for sending messages this month" [ref=e287] [cursor=pointer]:
+                  - /url: /en/reference/messaging-api/#get-quota
+              - listitem [ref=e288]:
+                - link "Get number of messages sent this month" [ref=e289] [cursor=pointer]:
+                  - /url: /en/reference/messaging-api/#get-consumption
+              - listitem [ref=e290]:
+                - link "Get number of sent reply messages" [ref=e291] [cursor=pointer]:
+                  - /url: /en/reference/messaging-api/#get-number-of-reply-messages
+              - listitem [ref=e292]:
+                - link "Get number of sent push messages" [ref=e293] [cursor=pointer]:
+                  - /url: /en/reference/messaging-api/#get-number-of-push-messages
+              - listitem [ref=e294]:
+                - link "Get number of sent multicast messages" [ref=e295] [cursor=pointer]:
+                  - /url: /en/reference/messaging-api/#get-number-of-multicast-messages
+              - listitem [ref=e296]:
+                - link "Get number of sent broadcast messages" [ref=e297] [cursor=pointer]:
+                  - /url: /en/reference/messaging-api/#get-number-of-broadcast-messages
+            - 'heading "Messaging API pricing #" [level=2] [ref=e298]':
+              - 'link "Messaging API pricing #" [ref=e300] [cursor=pointer]':
+                - /url: "#line-official-account-plan"
+            - paragraph [ref=e301]: You can get started with the Messaging API for free. Anyone can use the Messaging API to send a message from a LINE Official Account.
+            - paragraph [ref=e302]:
+              - text: You can send a certain number of messages each month for free. The number of free messages depends on the
+              - link "subscription plan " [ref=e303] [cursor=pointer]:
+                - /url: https://www.lycbiz.com/jp/service/line-official-account/plan/
+              - text: (only available in Japanese) of your LINE Official Account. The subscription plan may vary by country or region. See your region's subscription plan for more information.
+            - paragraph [ref=e304]:
+              - text: For more information on Messaging API pricing, see
+              - link "Messaging API pricing" [ref=e305] [cursor=pointer]:
+                - /url: /en/docs/messaging-api/pricing/
+              - text: .
+            - 'heading "Next steps #" [level=2] [ref=e306]':
+              - 'link "Next steps #" [ref=e308] [cursor=pointer]':
+                - /url: "#next-steps-with-the-messaging-api"
+            - paragraph [ref=e309]:
+              - text: As the next step,
+              - link "get started with the Messaging API" [ref=e310] [cursor=pointer]:
+                - /url: /en/docs/messaging-api/getting-started/
+              - text: to create a bot. First, create a LINE Official Account. Once you've created a LINE Official Account, you can create a Messaging API channel for that LINE Official Account.
+            - 'heading "Learn more #" [level=2] [ref=e311]':
+              - 'link "Learn more #" [ref=e313] [cursor=pointer]':
+                - /url: "#related-pages-for-messaging-api"
+            - list [ref=e314]:
+              - listitem [ref=e315]:
+                - link "Messaging API development guidelines" [ref=e316] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/development-guidelines/
+              - listitem [ref=e317]:
+                - link "LINE Messaging API SDKs" [ref=e318] [cursor=pointer]:
+                  - /url: /en/docs/messaging-api/line-bot-sdk/
+              - listitem [ref=e319]:
+                - link "Messaging API reference" [ref=e320] [cursor=pointer]:
+                  - /url: /en/reference/messaging-api/
+        - list [ref=e322]:
+          - listitem [ref=e323]:
+            - link "How the Messaging API works" [ref=e324] [cursor=pointer]:
+              - /url: "#how-messaging-api-works"
+          - listitem [ref=e325]:
+            - link "Try the demo" [ref=e326] [cursor=pointer]:
+              - /url: "#line-api-use-case"
+          - listitem [ref=e327]:
+            - link "What you can do with the Messaging API" [ref=e328] [cursor=pointer]:
+              - /url: "#what-you-can-do"
+            - list [ref=e329]:
+              - listitem [ref=e330]:
+                - link "Send reply messages" [ref=e331] [cursor=pointer]:
+                  - /url: "#send-reply-messages"
+              - listitem [ref=e332]:
+                - link "Send messages at any time" [ref=e333] [cursor=pointer]:
+                  - /url: "#send-messages-at-any-time"
+              - listitem [ref=e334]:
+                - link "Send different message types" [ref=e335] [cursor=pointer]:
+                  - /url: "#send-different-message-types"
+              - listitem [ref=e336]:
+                - link "Get content sent by users" [ref=e337] [cursor=pointer]:
+                  - /url: "#get-content-sent-by-users"
+              - listitem [ref=e338]:
+                - link "Get user profiles" [ref=e339] [cursor=pointer]:
+                  - /url: "#get-user-profiles"
+              - listitem [ref=e340]:
+                - link "Join group chats" [ref=e341] [cursor=pointer]:
+                  - /url: "#join-group-chats"
+              - listitem [ref=e342]:
+                - link "Use rich menus" [ref=e343] [cursor=pointer]:
+                  - /url: "#use-rich-menus"
+              - listitem [ref=e344]:
+                - link "Use beacons" [ref=e345] [cursor=pointer]:
+                  - /url: "#use-beacons"
+              - listitem [ref=e346]:
+                - link "Use account link" [ref=e347] [cursor=pointer]:
+                  - /url: "#use-account-link"
+              - listitem [ref=e348]:
+                - link "Get the number of sent messages" [ref=e349] [cursor=pointer]:
+                  - /url: "#get-number-of-messages"
+          - listitem [ref=e350]:
+            - link "Messaging API pricing" [ref=e351] [cursor=pointer]:
+              - /url: "#line-official-account-plan"
+          - listitem [ref=e352]:
+            - link "Next steps" [ref=e353] [cursor=pointer]:
+              - /url: "#next-steps-with-the-messaging-api"
+          - listitem [ref=e354]:
+            - link "Learn more" [ref=e355] [cursor=pointer]:
+              - /url: "#related-pages-for-messaging-api"
+    - contentinfo [ref=e356]:
+      - generic [ref=e357]:
+        - generic [ref=e358]: © LY Corporation
+        - generic [ref=e359]:
+          - list [ref=e361]:
+            - listitem [ref=e362]:
+              - link "About LINE Developers site" [ref=e363] [cursor=pointer]:
+                - /url: /en/about/
+            - listitem [ref=e364]
+            - listitem [ref=e366]:
+              - link "Terms and Policies" [ref=e367] [cursor=pointer]:
+                - /url: /en/terms-and-policies/
+            - listitem [ref=e368]
+            - listitem [ref=e370]:
+              - link "About trademarks" [ref=e371] [cursor=pointer]:
+                - /url: /en/trademark/
+            - listitem [ref=e372]
+            - listitem [ref=e374]:
+              - link "LINE API Status " [ref=e375] [cursor=pointer]:
+                - /url: https://api.line-status.info/
+                - text: LINE API Status
+                - generic [ref=e377]: 
+          - generic [ref=e378]:
+            - button "Family Sites " [ref=e379] [cursor=pointer]:
+              - text: Family Sites
+              - generic [ref=e380]: 
+            - generic:
+              - link:
+                - /url: https://twitter.com/lycorptechjp_e

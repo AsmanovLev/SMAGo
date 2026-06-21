@@ -1,0 +1,420 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-FI
+  - generic [ref=e8]:
+    - search [ref=e9]:
+      - generic [ref=e11]:
+        - generic:
+          - generic:
+            - generic:
+              - img
+        - 'link "World Cup 2026: The art of the penalty kick" [ref=e13] [cursor=pointer]':
+          - /url: https://www.google.com/webhp?hl=en&ictx=2&sa=X&ved=0ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQPQgK
+          - 'img "World Cup 2026: The art of the penalty kick" [ref=e14]'
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - combobox "Search" [ref=e19]: VK bots API messages.edit callback button documentation VK bots API messages.edit callback button documentation
+            - generic [ref=e20]:
+              - button "Clear" [ref=e22] [cursor=pointer]:
+                - img [ref=e24]
+              - generic [ref=e27]:
+                - button "Search by voice" [ref=e28] [cursor=pointer]:
+                  - img [ref=e29]
+                - button "Search by image" [ref=e31] [cursor=pointer]:
+                  - img [ref=e32]
+          - button "Search" [ref=e34] [cursor=pointer]:
+            - img [ref=e37]
+    - generic [ref=e39]:
+      - button "Share" [ref=e40] [cursor=pointer]:
+        - img [ref=e44]
+      - generic [ref=e46]:
+        - button "Google apps" [ref=e48] [cursor=pointer]:
+          - img [ref=e49]
+        - 'button "Google Account: Lev Asmanov (asmanovlev@gmail.com)" [ref=e53] [cursor=pointer]':
+          - img [ref=e55]
+          - img [ref=e60]
+  - generic [ref=e62]:
+    - navigation [ref=e68]:
+      - generic [ref=e74]:
+        - list [ref=e75]:
+          - listitem [ref=e76]:
+            - link "AI Mode" [ref=e79] [cursor=pointer]:
+              - /url: /search?q=VK+bots+API+messages.edit+callback+button+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&udm=50&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&aep=1&ntc=1&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ2J8OegQIExAD
+              - generic [ref=e82]: AI Mode
+          - listitem [ref=e83]:
+            - link "All" [disabled] [ref=e84]:
+              - generic [ref=e86]: All
+          - listitem [ref=e87]:
+            - link "Videos" [ref=e88] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&udm=7&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&q=VK+bots+API+messages.edit+callback+button+documentation&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQtKgLegQIGBAB
+              - generic [ref=e90]: Videos
+          - listitem [ref=e91]:
+            - link "Images" [ref=e92] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&udm=2&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&q=VK+bots+API+messages.edit+callback+button+documentation&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQtKgLegQIGRAB
+              - generic [ref=e94]: Images
+          - listitem [ref=e95]:
+            - link "Forums" [ref=e96] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&udm=18&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&q=VK+bots+API+messages.edit+callback+button+documentation&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQs6gLegQIFRAB
+              - generic [ref=e98]: Forums
+          - listitem [ref=e99]:
+            - link "Short videos" [ref=e100] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&udm=39&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&q=VK+bots+API+messages.edit+callback+button+documentation&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQs6gLegQIFhAB
+              - generic [ref=e102]: Short videos
+          - listitem [ref=e103]:
+            - link "News" [ref=e104] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&q=VK+bots+API+messages.edit+callback+button+documentation&tbm=nws&source=lnms&fbs=ABfTbFVyMZGZf1hfvX9uKjN_-G8cxpBkeIeqYwoCbfNVc4vKE-Dsslc-KGKq55jF_BVsFlBx_GgM0fzV1XsSsLkzcasTEYACEWIWzF-55pNrwAKUeHOsvxvmV9GK7aWe1Dt1gL4yRbNiCM_1tjUQdwIRQAk2T8uGlV_QBaNCWEF78fG96j7oIlPEaM2vmIW2fPyLZFIF-bNq&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ0pQJegQIFxAB
+              - generic [ref=e106]: News
+          - listitem [ref=e107]:
+            - button "More filters" [ref=e108] [cursor=pointer]:
+              - generic "More filters" [ref=e109]:
+                - generic [ref=e110]:
+                  - generic [ref=e111]: More
+                  - img [ref=e113]
+        - button "Tools" [ref=e116] [cursor=pointer]:
+          - generic [ref=e118]:
+            - generic [ref=e119]: Tools
+            - img [ref=e121]
+    - heading "Search Results" [level=1] [ref=e123]
+    - main [ref=e129]:
+      - generic [ref=e133]:
+        - generic [ref=e136]:
+          - heading "Web results" [level=2] [ref=e137]
+          - generic [ref=e138]:
+            - generic [ref=e141]:
+              - link "API Reference — vk-botting 0.11.0 documentation Read the Docs https://vk-botting.readthedocs.io › latest › api" [ref=e143] [cursor=pointer]:
+                - /url: https://vk-botting.readthedocs.io/en/latest/api.html
+                - heading "API Reference — vk-botting 0.11.0 documentation" [level=3] [ref=e144]
+                - generic [ref=e150]:
+                  - generic [ref=e152]: Read the Docs
+                  - generic [ref=e154]: https://vk-botting.readthedocs.io › latest › api
+              - button "About this result" [ref=e155] [cursor=pointer]:
+                - img [ref=e158]
+            - generic [ref=e161]:
+              - generic [ref=e162]:
+                - text: This could be used to wait for a user to reply to a
+                - emphasis [ref=e163]: message
+                - text: or to
+                - emphasis [ref=e164]: edit
+                - text: a
+                - emphasis [ref=e165]: message
+                - text: in a self-containedway. ... Called when a
+                - emphasis [ref=e166]: callback button
+                - text: is pressed. Parameters.
+              - link "Read more" [ref=e167] [cursor=pointer]:
+                - /url: https://vk-botting.readthedocs.io/en/latest/api.html#:~:text=This%20could%20be%20used%20to,a%20message%20in%20a%20self%2Dcontainedway.&text=Called%20when%20a%20callback%20button,Parameters
+        - generic [ref=e171]:
+          - generic [ref=e174]:
+            - link "VK Teams Bot API VK Teams https://teams.vk.com › botapi" [ref=e176] [cursor=pointer]:
+              - /url: https://teams.vk.com/botapi/
+              - heading "VK Teams Bot API" [level=3] [ref=e177]
+              - generic [ref=e183]:
+                - generic [ref=e185]: VK Teams
+                - generic [ref=e187]: https://teams.vk.com › botapi
+            - button "About this result" [ref=e188] [cursor=pointer]:
+              - img [ref=e191]
+          - generic [ref=e194]:
+            - generic [ref=e195]:
+              - emphasis [ref=e196]: Edit
+              - text: text
+              - emphasis [ref=e197]: message
+              - text: . GET/
+              - emphasis [ref=e198]: messages
+              - text: /deleteMessages. Delete
+              - emphasis [ref=e199]: message
+              - text: . GET/
+              - emphasis [ref=e200]: messages
+              - text: /
+              - emphasis [ref=e201]: answerCallbackQuery
+              - text: . Response to a request for processing a
+              - emphasis [ref=e202]: button
+              - text: click. chats.
+            - link "Read more" [ref=e203] [cursor=pointer]:
+              - /url: https://teams.vk.com/botapi/#:~:text=GET%E2%80%8B%2Fmessages%E2%80%8B%2FdeleteMessages,chats
+        - generic [ref=e207]:
+          - generic [ref=e210]:
+            - link "Step-by-step instructions for writing your first bot for VK Teams VK Teams https://teams.vk.com › botapi › tutorial" [ref=e212] [cursor=pointer]:
+              - /url: https://teams.vk.com/botapi/tutorial/
+              - heading "Step-by-step instructions for writing your first bot for VK Teams" [level=3] [ref=e213]
+              - generic [ref=e219]:
+                - generic [ref=e221]: VK Teams
+                - generic [ref=e223]: https://teams.vk.com › botapi › tutorial
+            - button "About this result" [ref=e224] [cursor=pointer]:
+              - img [ref=e227]
+          - generic [ref=e230]:
+            - generic [ref=e231]:
+              - text: Register a
+              - emphasis [ref=e232]: bot
+              - text: . First of all, you need to register the
+              - emphasis [ref=e233]: bot
+              - text: ": Looking for @metabot; We send him a"
+              - emphasis [ref=e234]: message
+              - text: /newbot; We send a name for the new
+              - emphasis [ref=e235]: bot
+              - text: .
+            - link "Read more" [ref=e236] [cursor=pointer]:
+              - /url: https://teams.vk.com/botapi/tutorial/#:~:text=Register%20a%20bot,name%20for%20the%20new%20bot.
+          - generic [ref=e238]:
+            - text: "Missing: edit ‎| Show results with:"
+            - link "edit" [ref=e239] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&q=VK+bots+API+messages.+%22edit%22+callback+button+documentation&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ5t4CegQILhAB
+        - generic [ref=e243]:
+          - generic [ref=e246]:
+            - link "vk-bot-api/doc/01-api_method.md at master GitHub https://github.com › eslavondigital › vk-bot-api › blob" [ref=e248] [cursor=pointer]:
+              - /url: https://github.com/eslavondigital/vk-bot-api/blob/master/doc/01-api_method.md
+              - heading "vk-bot-api/doc/01-api_method.md at master" [level=3] [ref=e249]
+              - generic [ref=e255]:
+                - generic [ref=e257]: GitHub
+                - generic [ref=e259]: https://github.com › eslavondigital › vk-bot-api › blob
+            - button "About this result" [ref=e260] [cursor=pointer]:
+              - img [ref=e263]
+          - generic [ref=e266]:
+            - generic [ref=e267]:
+              - text: Below is information about the
+              - emphasis [ref=e268]: vk
+              - text: .com methodological APIs implemented in the current version of the package. Full
+              - emphasis [ref=e269]: documentation
+              - text: "on"
+              - emphasis [ref=e270]: vk api
+              - text: methods https://
+              - emphasis [ref=e271]: vk
+              - text: .com ...
+            - link "Read more" [ref=e272] [cursor=pointer]:
+              - /url: https://github.com/eslavondigital/vk-bot-api/blob/master/doc/01-api_method.md#:~:text=Below%20is%20information%20about%20the,on%20vk%20api%20methods%20https%3A%2F%2Fvk.com%2Fdev%2Fmethods
+          - generic [ref=e274]:
+            - text: "Missing: button ‎| Show results with:"
+            - link "button" [ref=e275] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&q=VK+bots+API+messages.edit+callback+%22button%22+documentation&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ5t4CegQILxAB
+        - generic [ref=e279]:
+          - generic [ref=e282]:
+            - link "Set up VK bot - Knowledge base - GitBook GitBook https://mobsted-2.gitbook.io › intro-placeholder › set_u..." [ref=e284] [cursor=pointer]:
+              - /url: https://mobsted-2.gitbook.io/knowledge-base/messengers/intro-placeholder/set_up_vk_bot
+              - heading "Set up VK bot - Knowledge base - GitBook" [level=3] [ref=e285]
+              - generic [ref=e291]:
+                - generic [ref=e293]: GitBook
+                - generic [ref=e295]: https://mobsted-2.gitbook.io › intro-placeholder › set_u...
+            - button "About this result" [ref=e296] [cursor=pointer]:
+              - img [ref=e299]
+          - generic [ref=e302]:
+            - generic [ref=e303]: 6 Sept 2019 —
+            - generic [ref=e304]:
+              - text: 20) Go to the
+              - emphasis [ref=e305]: VK bot
+              - text: setup page, the "
+              - emphasis [ref=e306]: Callback API
+              - text: "\" / \"Event types\" tab;. 21) In the list, check the checkboxes: Incoming"
+              - emphasis [ref=e307]: messages
+              - text: ", Outgoing ..."
+            - link "Read more" [ref=e308] [cursor=pointer]:
+              - /url: https://mobsted-2.gitbook.io/knowledge-base/messengers/intro-placeholder/set_up_vk_bot#:~:text=20)%20Go%20to%20the%20VK,the%20checkboxes%3A%20Incoming%20messages%2C%20Outgoing
+          - generic [ref=e310]:
+            - text: "Missing: documentation ‎| Show results with:"
+            - link "documentation" [ref=e311] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&q=VK+bots+API+messages.edit+callback+button+%22documentation%22&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ5t4CegQILRAB
+        - generic [ref=e315]:
+          - generic [ref=e318]:
+            - link "FAQ Bot API VK Teams https://teams.vk.com › botapi › faq" [ref=e320] [cursor=pointer]:
+              - /url: https://teams.vk.com/botapi/faq
+              - heading "FAQ Bot API" [level=3] [ref=e321]
+              - generic [ref=e327]:
+                - generic [ref=e329]: VK Teams
+                - generic [ref=e331]: https://teams.vk.com › botapi › faq
+            - button "About this result" [ref=e332] [cursor=pointer]:
+              - img [ref=e335]
+          - generic [ref=e338]:
+            - generic [ref=e339]:
+              - text: A program written by third parties using the
+              - emphasis [ref=e340]: Bot API
+              - text: . How to start using the
+              - emphasis [ref=e341]: bot
+              - text: "? Write a"
+              - emphasis [ref=e342]: message
+              - text: to the
+              - emphasis [ref=e343]: bot
+              - text: . How do I get help with commands?
+            - link "Read more" [ref=e344] [cursor=pointer]:
+              - /url: https://teams.vk.com/botapi/faq#:~:text=How%20to%20start%20using%20the&text=How%20to%20start%20using%20the,bot%3F&text=How%20do%20I%20get%20help,with%20commands%3F
+          - generic [ref=e346]:
+            - text: "Missing: callback ‎| Show results with:"
+            - link "callback" [ref=e347] [cursor=pointer]:
+              - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&q=VK+bots+API+messages.edit+%22callback%22+button+documentation&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ5t4CegQILBAB
+        - generic [ref=e351]:
+          - generic [ref=e354]:
+            - link "Setting up an integration with the VKontakte module Simla.com https://docs.simla.com › ... › VKontakte" [ref=e356] [cursor=pointer]:
+              - /url: https://docs.simla.com/Users/Chats/ConnectionOfMessengersAndChats/Vkontakte/IntegrationSettingsWithVkontakte
+              - heading "Setting up an integration with the VKontakte module" [level=3] [ref=e357]
+              - generic [ref=e363]:
+                - generic [ref=e365]: Simla.com
+                - generic [ref=e367]: https://docs.simla.com › ... › VKontakte
+            - button "About this result" [ref=e368] [cursor=pointer]:
+              - img [ref=e371]
+          - generic [ref=e374]:
+            - generic [ref=e375]: 21 Feb 2024 —
+            - generic [ref=e376]:
+              - text: Prior to connecting, you need to create an
+              - emphasis [ref=e377]: API
+              - text: key that will be used to exchange
+              - emphasis [ref=e378]: messages
+              - text: . The key is available in the "
+              - emphasis [ref=e379]: API
+              - text: access keys" section ...
+            - link "Read more" [ref=e380] [cursor=pointer]:
+              - /url: https://docs.simla.com/Users/Chats/ConnectionOfMessengersAndChats/Vkontakte/IntegrationSettingsWithVkontakte#:~:text=Prior%20to%20connecting%2C%20you%20need,the%20%22API%20access%20keys%22%20section.
+        - generic [ref=e384]:
+          - generic [ref=e387]:
+            - link "Users / Integration with Vkontakte Simla.com https://help.retailcrm.pro › Users › VKMessenger" [ref=e389] [cursor=pointer]:
+              - /url: https://help.retailcrm.pro/Users/VKMessenger
+              - heading "Users / Integration with Vkontakte" [level=3] [ref=e390]
+              - generic [ref=e396]:
+                - generic [ref=e398]: Simla.com
+                - generic [ref=e400]: https://help.retailcrm.pro › Users › VKMessenger
+            - button "About this result" [ref=e401] [cursor=pointer]:
+              - img [ref=e404]
+          - generic [ref=e407]:
+            - generic [ref=e408]: 22 Apr 2019 —
+            - generic [ref=e409]:
+              - text: The integration is set up. Incoming
+              - emphasis [ref=e410]: messages
+              - text: of your group will be uploaded to your system automatically. The group id is in “
+              - emphasis [ref=e411]: Callback API
+              - text: ” tab.
+            - link "Read more" [ref=e412] [cursor=pointer]:
+              - /url: https://help.retailcrm.pro/Users/VKMessenger#:~:text=The%20integration%20is%20set%20up.,is%20in%20%E2%80%9CCallback%20API%E2%80%9D%20tab.
+        - generic [ref=e417]:
+          - heading "People also ask" [level=2] [ref=e419]
+          - button "How to use vk api?" [ref=e426] [cursor=pointer]:
+            - generic [ref=e428]: How to use vk api?
+            - img [ref=e431]
+        - generic [ref=e436]:
+          - heading "Web results" [level=2] [ref=e437]
+          - generic [ref=e438]:
+            - generic [ref=e441]:
+              - link "README.md - node-vk-bot-api GitHub https://github.com › node-vk-bot-api › blob › master › R..." [ref=e443] [cursor=pointer]:
+                - /url: https://github.com/node-vk-bot-api/node-vk-bot-api/blob/master/README.md
+                - heading "README.md - node-vk-bot-api" [level=3] [ref=e444]
+                - generic [ref=e450]:
+                  - generic [ref=e452]: GitHub
+                  - generic [ref=e454]: https://github.com › node-vk-bot-api › blob › master › R...
+              - button "About this result" [ref=e455] [cursor=pointer]:
+                - img [ref=e458]
+            - generic [ref=e461]:
+              - generic [ref=e462]:
+                - emphasis [ref=e463]: VK bot framework for Node.js
+                - text: ", based on Bots Long Poll API and Callback API. Install $ npm i node-vk-bot-api -S Usage"
+              - link "Read more" [ref=e464] [cursor=pointer]:
+                - /url: https://github.com/node-vk-bot-api/node-vk-bot-api/blob/master/README.md#:~:text=%F0%9F%A4%96%20VK%20bot%20framework%20for,Poll%20API%20and%20Callback%20API.&text=Install&text=%24%20npm%20i%20node%2Dvk%2Dbot%2Dapi%20%2DS&text=Usage
+        - generic [ref=e468]:
+          - generic [ref=e471]:
+            - link "How to Integrate VKontakte (VK) Community - SaleSmartly salesmartly.com https://help-en.salesmartly.com › docs › vkontakte-com..." [ref=e473] [cursor=pointer]:
+              - /url: https://help-en.salesmartly.com/docs/vkontakte-community-integration
+              - heading "How to Integrate VKontakte (VK) Community - SaleSmartly" [level=3] [ref=e474]
+              - generic [ref=e480]:
+                - generic [ref=e482]: salesmartly.com
+                - generic [ref=e484]: https://help-en.salesmartly.com › docs › vkontakte-com...
+            - button "About this result" [ref=e485] [cursor=pointer]:
+              - img [ref=e488]
+          - generic [ref=e491]:
+            - generic [ref=e492]: 27 Aug 2025 —
+            - generic [ref=e493]:
+              - text: (1) On the Community
+              - emphasis [ref=e494]: API
+              - text: Settings page, click
+              - emphasis [ref=e495]: Callback API
+              - text: ", click the activity type, and check the"
+              - emphasis [ref=e496]: message
+              - text: permissions (please check all, ...
+            - link "Read more" [ref=e497] [cursor=pointer]:
+              - /url: https://help-en.salesmartly.com/docs/vkontakte-community-integration#:~:text=(1)%20On%20the%20Community%20API,be%20able%20to%20receive%20messages).
+      - generic [ref=e499]:
+        - generic [ref=e504]:
+          - heading "People also search for" [level=2] [ref=e506]
+          - generic [ref=e508]:
+            - generic [ref=e509]:
+              - link "Vk bots api messages edit callback button documentation github" [ref=e513] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&q=Vk+bots+api+messages+edit+callback+button+documentation+github&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ1QJ6BAg5EAE
+                - generic [ref=e514]:
+                  - generic [ref=e519]: Vk bots api messages edit callback button documentation github
+                  - img [ref=e523]
+              - link "Vk bots api messages edit callback button documentation example" [ref=e528] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&q=Vk+bots+api+messages+edit+callback+button+documentation+example&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ1QJ6BAg9EAE
+                - generic [ref=e529]:
+                  - generic [ref=e534]: Vk bots api messages edit callback button documentation example
+                  - img [ref=e538]
+              - link "Vkontakte api" [ref=e543] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&q=Vkontakte+api&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ1QJ6BAg8EAE
+                - generic [ref=e544]:
+                  - generic [ref=e549]: Vkontakte api
+                  - img [ref=e553]
+            - generic [ref=e555]:
+              - link "Vk api standalone" [ref=e559] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&q=Vk+api+standalone&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ1QJ6BAg7EAE
+                - generic [ref=e560]:
+                  - generic [ref=e565]: Vk api standalone
+                  - img [ref=e569]
+              - link "VK WorkSpace" [ref=e574] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&q=VK+WorkSpace&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ1QJ6BAg6EAE
+                - generic [ref=e575]:
+                  - generic [ref=e580]: VK WorkSpace
+                  - img [ref=e584]
+              - link "Messages send vk" [ref=e589] [cursor=pointer]:
+                - /url: /search?sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&q=Messages+send+vk&sa=X&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ1QJ6BAg4EAE
+                - generic [ref=e590]:
+                  - generic [ref=e595]: Messages send vk
+                  - img [ref=e599]
+        - navigation [ref=e601]:
+          - heading "Page navigation" [level=1] [ref=e602]
+          - text: "1"
+          - link "Page 2" [ref=e605] [cursor=pointer]:
+            - /url: /search?q=VK+bots+API+messages.edit+callback+button+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&ei=suU2arm5JIqTwPAPoJaYqAc&start=10&sa=N&sstk=AU9db-AbN1MsMLxuG7pyqFRR_ULRvglXaW600QlZGgeI4fneSN-ZWeKKlyr-jyQ7dbSwY6Cu_OFTvv4MdMsa4uzdEaduTVyoLJ2fVw&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ8tMDegQIMBAE
+            - text: "2"
+          - link "Page 3" [ref=e607] [cursor=pointer]:
+            - /url: /search?q=VK+bots+API+messages.edit+callback+button+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&ei=suU2arm5JIqTwPAPoJaYqAc&start=20&sa=N&sstk=AU9db-AbN1MsMLxuG7pyqFRR_ULRvglXaW600QlZGgeI4fneSN-ZWeKKlyr-jyQ7dbSwY6Cu_OFTvv4MdMsa4uzdEaduTVyoLJ2fVw&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ8tMDegQIMBAG
+            - text: "3"
+          - link "Page 4" [ref=e609] [cursor=pointer]:
+            - /url: /search?q=VK+bots+API+messages.edit+callback+button+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&ei=suU2arm5JIqTwPAPoJaYqAc&start=30&sa=N&sstk=AU9db-AbN1MsMLxuG7pyqFRR_ULRvglXaW600QlZGgeI4fneSN-ZWeKKlyr-jyQ7dbSwY6Cu_OFTvv4MdMsa4uzdEaduTVyoLJ2fVw&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ8tMDegQIMBAI
+            - text: "4"
+          - link "Page 5" [ref=e611] [cursor=pointer]:
+            - /url: /search?q=VK+bots+API+messages.edit+callback+button+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&ei=suU2arm5JIqTwPAPoJaYqAc&start=40&sa=N&sstk=AU9db-AbN1MsMLxuG7pyqFRR_ULRvglXaW600QlZGgeI4fneSN-ZWeKKlyr-jyQ7dbSwY6Cu_OFTvv4MdMsa4uzdEaduTVyoLJ2fVw&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ8tMDegQIMBAK
+            - text: "5"
+          - link "Page 6" [ref=e613] [cursor=pointer]:
+            - /url: /search?q=VK+bots+API+messages.edit+callback+button+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&ei=suU2arm5JIqTwPAPoJaYqAc&start=50&sa=N&sstk=AU9db-AbN1MsMLxuG7pyqFRR_ULRvglXaW600QlZGgeI4fneSN-ZWeKKlyr-jyQ7dbSwY6Cu_OFTvv4MdMsa4uzdEaduTVyoLJ2fVw&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ8tMDegQIMBAM
+            - text: "6"
+          - link "Page 7" [ref=e615] [cursor=pointer]:
+            - /url: /search?q=VK+bots+API+messages.edit+callback+button+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&ei=suU2arm5JIqTwPAPoJaYqAc&start=60&sa=N&sstk=AU9db-AbN1MsMLxuG7pyqFRR_ULRvglXaW600QlZGgeI4fneSN-ZWeKKlyr-jyQ7dbSwY6Cu_OFTvv4MdMsa4uzdEaduTVyoLJ2fVw&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ8tMDegQIMBAO
+            - text: "7"
+          - link "Page 8" [ref=e617] [cursor=pointer]:
+            - /url: /search?q=VK+bots+API+messages.edit+callback+button+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&ei=suU2arm5JIqTwPAPoJaYqAc&start=70&sa=N&sstk=AU9db-AbN1MsMLxuG7pyqFRR_ULRvglXaW600QlZGgeI4fneSN-ZWeKKlyr-jyQ7dbSwY6Cu_OFTvv4MdMsa4uzdEaduTVyoLJ2fVw&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ8tMDegQIMBAQ
+            - text: "8"
+          - link "Page 9" [ref=e619] [cursor=pointer]:
+            - /url: /search?q=VK+bots+API+messages.edit+callback+button+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&ei=suU2arm5JIqTwPAPoJaYqAc&start=80&sa=N&sstk=AU9db-AbN1MsMLxuG7pyqFRR_ULRvglXaW600QlZGgeI4fneSN-ZWeKKlyr-jyQ7dbSwY6Cu_OFTvv4MdMsa4uzdEaduTVyoLJ2fVw&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ8tMDegQIMBAS
+            - text: "9"
+          - heading "Next" [level=2] [ref=e621]:
+            - link "Next" [ref=e622] [cursor=pointer]:
+              - /url: /search?q=VK+bots+API+messages.edit+callback+button+documentation&sca_esv=3dbb119c7baa06b1&sxsrf=APpeQntwSw1dBYiFqhN8jaM-mUih22mqzA:1781982642604&ei=suU2arm5JIqTwPAPoJaYqAc&start=10&sa=N&sstk=AU9db-AbN1MsMLxuG7pyqFRR_ULRvglXaW600QlZGgeI4fneSN-ZWeKKlyr-jyQ7dbSwY6Cu_OFTvv4MdMsa4uzdEaduTVyoLJ2fVw&ved=2ahUKEwi52qHTwpaVAxWKCRAIHSALBnUQ8NMDegQIMBAU
+              - generic [ref=e624]: Next
+      - navigation
+    - contentinfo [ref=e625]:
+      - heading "Footer links" [level=1] [ref=e626]
+      - generic [ref=e630]:
+        - generic [ref=e634]: Results are not personalised
+        - generic [ref=e636]:
+          - text: Finland
+          - generic [ref=e638]:
+            - button "Helsinki - From your IP address" [ref=e640] [cursor=pointer]:
+              - generic [ref=e641]: Helsinki
+              - generic [ref=e643]:
+                - text: "-"
+                - generic [ref=e644]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=e646] [cursor=pointer]: Update location
+        - generic [ref=e649]:
+          - link "Help" [ref=e650] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-FI&fg=1
+          - link "Send feedback" [ref=e651] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e652] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-FI&fg=1
+          - link "Terms" [ref=e653] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-FI&fg=1

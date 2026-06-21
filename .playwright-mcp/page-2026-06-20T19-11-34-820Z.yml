@@ -1,0 +1,580 @@
+- generic [ref=e3]:
+  - generic [ref=e4]:
+    - navigation [ref=e5]:
+      - generic [ref=e7]:
+        - link "hex logo Hex" [ref=e8] [cursor=pointer]:
+          - /url: /
+          - img "hex logo" [ref=e9]
+          - generic [ref=e10]: Hex
+        - generic [ref=e11]:
+          - search [ref=e15]:
+            - generic [ref=e16]:
+              - generic:
+                - img
+              - combobox "Find packages" [ref=e17]: chat
+              - generic [ref=e18]: Find packages
+          - link "Packages" [ref=e19] [cursor=pointer]:
+            - /url: /packages
+          - link "Pricing" [ref=e20] [cursor=pointer]:
+            - /url: /pricing
+          - link "Docs" [ref=e21] [cursor=pointer]:
+            - /url: /docs
+          - button "Change theme" [ref=e23] [cursor=pointer]:
+            - generic [ref=e24]: Change color theme
+            - img [ref=e26]
+          - link "Log In" [ref=e29] [cursor=pointer]:
+            - /url: /login
+    - main [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e33]:
+          - heading "Packages" [level=1] [ref=e34]
+          - paragraph [ref=e35]: Browse and discover packages for the Erlang ecosystem
+        - main [ref=e36]:
+          - generic [ref=e37]:
+            - complementary "Filters" [ref=e38]:
+              - generic [ref=e39]:
+                - generic [ref=e42]: Filters
+                - generic [ref=e43]:
+                  - generic [ref=e44]:
+                    - generic [ref=e45]: Build tool
+                    - generic [ref=e46]:
+                      - combobox "Build tool" [ref=e47] [cursor=pointer]:
+                        - option "Any" [selected]
+                        - option "mix"
+                        - option "rebar3"
+                        - option "make"
+                        - option "gleam"
+                      - generic:
+                        - img
+                  - generic [ref=e48]:
+                    - generic [ref=e49]: Depends on
+                    - generic [ref=e50]:
+                      - generic:
+                        - img
+                      - textbox "Depends on" [ref=e51]:
+                        - /placeholder: package name
+                  - generic [ref=e52]:
+                    - generic [ref=e53]:
+                      - generic [ref=e54]: Updated after
+                      - generic [ref=e55]: last release
+                    - textbox "Updated after last release" [ref=e56]
+                - button "Clear all" [ref=e58]
+            - generic [ref=e59]:
+              - generic [ref=e60]:
+                - generic [ref=e61]:
+                  - img [ref=e62]
+                  - heading "Exact Match" [level=3] [ref=e65]
+                - list [ref=e66]:
+                  - listitem [ref=e67]:
+                    - generic [ref=e68]:
+                      - link "chat" [ref=e69] [cursor=pointer]:
+                        - /url: /packages/chat
+                      - link "v9.4.14" [ref=e70] [cursor=pointer]:
+                        - /url: /packages/chat
+                    - generic [ref=e71]:
+                      - generic [ref=e72]:
+                        - paragraph [ref=e73]: CHAT CXC 138 25 X.509 CMS Instant Messenger
+                        - paragraph [ref=e74]: Updated 2 months ago
+                      - generic [ref=e75]:
+                        - generic [ref=e76]: "385"
+                        - generic [ref=e77]: recent downloads
+                        - 'generic "total downloads: 12 546" [ref=e78]'
+              - generic [ref=e79]:
+                - generic [ref=e80]:
+                  - generic [ref=e81]:
+                    - heading "Search Results" [level=2] [ref=e82]
+                    - generic [ref=e83]:
+                      - strong [ref=e84]: "82"
+                      - text: packages found
+                      - text: Page 1 of 3
+                  - generic [ref=e86]:
+                    - generic [ref=e87]: Sort by
+                    - generic [ref=e89]:
+                      - combobox "Sort by" [ref=e90] [cursor=pointer]:
+                        - option "Recent downloads" [selected]
+                        - option "Total downloads"
+                        - option "Recently updated"
+                        - option "Recently created"
+                        - option "Name (A–Z)"
+                      - generic:
+                        - img
+                - list [ref=e92]:
+                  - listitem [ref=e93]:
+                    - generic [ref=e94]:
+                      - link "ts_chatterbox" [ref=e95] [cursor=pointer]:
+                        - /url: /packages/ts_chatterbox
+                      - link "v0.15.1" [ref=e96] [cursor=pointer]:
+                        - /url: /packages/ts_chatterbox
+                    - generic [ref=e97]:
+                      - generic [ref=e98]:
+                        - paragraph [ref=e99]: chatterbox library for http2
+                        - paragraph [ref=e100]: Updated about 2 years ago
+                      - generic [ref=e101]:
+                        - generic [ref=e102]: 1 337 929
+                        - generic [ref=e103]: recent downloads
+                        - 'generic "total downloads: 27 671 292" [ref=e104]'
+                  - listitem [ref=e105]:
+                    - generic [ref=e106]:
+                      - link "alice_roller" [ref=e107] [cursor=pointer]:
+                        - /url: /packages/alice_roller
+                      - link "v0.3.1" [ref=e108] [cursor=pointer]:
+                        - /url: /packages/alice_roller
+                    - generic [ref=e109]:
+                      - generic [ref=e110]:
+                        - paragraph [ref=e111]: An addon for Alice that allows users to roll dice in chat
+                        - paragraph [ref=e112]: Updated about 6 years ago
+                      - generic [ref=e113]:
+                        - generic [ref=e114]: 50 200
+                        - generic [ref=e115]: recent downloads
+                        - 'generic "total downloads: 86 991" [ref=e116]'
+                  - listitem [ref=e117]:
+                    - generic [ref=e118]:
+                      - link "alice_personable" [ref=e119] [cursor=pointer]:
+                        - /url: /packages/alice_personable
+                      - link "v0.0.2" [ref=e120] [cursor=pointer]:
+                        - /url: /packages/alice_personable
+                    - generic [ref=e121]:
+                      - generic [ref=e122]:
+                        - paragraph [ref=e123]: A plugin for the Alice chat bot to make her seem a bit more human.
+                        - paragraph [ref=e124]: Updated about 10 years ago
+                      - generic [ref=e125]:
+                        - generic [ref=e126]: 20 096
+                        - generic [ref=e127]: recent downloads
+                        - 'generic "total downloads: 38 719" [ref=e128]'
+                  - listitem [ref=e129]:
+                    - generic [ref=e130]:
+                      - link "tmi" [ref=e131] [cursor=pointer]:
+                        - /url: /packages/tmi
+                      - link "v0.7.0" [ref=e132] [cursor=pointer]:
+                        - /url: /packages/tmi
+                    - generic [ref=e133]:
+                      - generic [ref=e134]:
+                        - paragraph [ref=e135]: Connect to and interact with Twitch chat from Elixir.
+                        - paragraph [ref=e136]: Updated about 2 years ago
+                      - generic [ref=e137]:
+                        - generic [ref=e138]: 4 682
+                        - generic [ref=e139]: recent downloads
+                        - 'generic "total downloads: 133 273" [ref=e140]'
+                  - listitem [ref=e141]:
+                    - generic [ref=e142]:
+                      - link "llm_composer" [ref=e143] [cursor=pointer]:
+                        - /url: /packages/llm_composer
+                      - link "v0.19.6" [ref=e144] [cursor=pointer]:
+                        - /url: /packages/llm_composer
+                    - generic [ref=e145]:
+                      - generic [ref=e146]:
+                        - paragraph [ref=e147]: LlmComposer is an Elixir library that facilitates chat interactions with language models, providing tools to handle user messages, generate responses, and execute functions automatically based on m...
+                        - paragraph [ref=e148]: Updated 4 days ago
+                      - generic [ref=e149]:
+                        - generic [ref=e150]: 4 408
+                        - generic [ref=e151]: recent downloads
+                        - 'generic "total downloads: 13 214" [ref=e152]'
+                  - listitem [ref=e153]:
+                    - generic [ref=e154]:
+                      - link "chatterbox" [ref=e155] [cursor=pointer]:
+                        - /url: /packages/chatterbox
+                      - link "v0.8.0" [ref=e156] [cursor=pointer]:
+                        - /url: /packages/chatterbox
+                    - generic [ref=e157]:
+                      - generic [ref=e158]:
+                        - paragraph [ref=e159]: chatterbox library for http2
+                        - paragraph [ref=e160]: Updated about 7 years ago
+                      - generic [ref=e161]:
+                        - generic [ref=e162]: 2 155
+                        - generic [ref=e163]: recent downloads
+                        - 'generic "total downloads: 169 771" [ref=e164]'
+                  - listitem [ref=e165]:
+                    - generic [ref=e166]:
+                      - link "google_api_chat" [ref=e167] [cursor=pointer]:
+                        - /url: /packages/google_api_chat
+                      - link "v0.43.0" [ref=e168] [cursor=pointer]:
+                        - /url: /packages/google_api_chat
+                    - generic [ref=e169]:
+                      - generic [ref=e170]:
+                        - paragraph [ref=e171]: Google Chat API client library. The Google Chat API lets you build Chat apps to integrate your services with Google Chat and manage Chat resources such as spaces, members, and messages.
+                        - paragraph [ref=e172]: Updated about 1 year ago
+                      - generic [ref=e173]:
+                        - generic [ref=e174]: 1 634
+                        - generic [ref=e175]: recent downloads
+                        - 'generic "total downloads: 15 181" [ref=e176]'
+                  - listitem [ref=e177]:
+                    - generic [ref=e178]:
+                      - link "wechat_sdk" [ref=e179] [cursor=pointer]:
+                        - /url: /packages/wechat_sdk
+                      - link "v0.19.0" [ref=e180] [cursor=pointer]:
+                        - /url: /packages/wechat_sdk
+                    - generic [ref=e181]:
+                      - generic [ref=e182]:
+                        - paragraph [ref=e183]: "WeChat SDK for Elixir, 支持: 公众号/小程序/第三方应用/企业微信/微信支付"
+                        - paragraph [ref=e184]: Updated 8 months ago
+                      - generic [ref=e185]:
+                        - generic [ref=e186]: 1 228
+                        - generic [ref=e187]: recent downloads
+                        - 'generic "total downloads: 13 764" [ref=e188]'
+                  - listitem [ref=e189]:
+                    - generic [ref=e190]:
+                      - link "aquila" [ref=e191] [cursor=pointer]:
+                        - /url: /packages/aquila
+                      - link "v0.1.1" [ref=e192] [cursor=pointer]:
+                        - /url: /packages/aquila
+                    - generic [ref=e193]:
+                      - generic [ref=e194]:
+                        - paragraph [ref=e195]: Batteries-included Elixir library for OpenAI-compatible Responses and Chat Completions APIs
+                        - paragraph [ref=e196]: Updated 8 months ago
+                      - generic [ref=e197]:
+                        - generic [ref=e198]: "665"
+                        - generic [ref=e199]: recent downloads
+                        - 'generic "total downloads: 1 475" [ref=e200]'
+                  - listitem [ref=e201]:
+                    - generic [ref=e202]:
+                      - link "wechat" [ref=e203] [cursor=pointer]:
+                        - /url: /packages/wechat
+                      - link "v0.4.8" [ref=e204] [cursor=pointer]:
+                        - /url: /packages/wechat
+                    - generic [ref=e205]:
+                      - generic [ref=e206]:
+                        - paragraph [ref=e207]: Wechat API wrapper in Elixir.
+                        - paragraph [ref=e208]: Updated about 6 years ago
+                      - generic [ref=e209]:
+                        - generic [ref=e210]: "561"
+                        - generic [ref=e211]: recent downloads
+                        - 'generic "total downloads: 13 169" [ref=e212]'
+                  - listitem [ref=e213]:
+                    - generic [ref=e214]:
+                      - link "elixir_wechat" [ref=e215] [cursor=pointer]:
+                        - /url: /packages/elixir_wechat
+                      - link "v0.4.6" [ref=e216] [cursor=pointer]:
+                        - /url: /packages/elixir_wechat
+                    - generic [ref=e217]:
+                      - generic [ref=e218]:
+                        - paragraph [ref=e219]: WeChat SDK for Elixir
+                        - paragraph [ref=e220]: Updated about 3 years ago
+                      - generic [ref=e221]:
+                        - generic [ref=e222]: "558"
+                        - generic [ref=e223]: recent downloads
+                        - 'generic "total downloads: 12 544" [ref=e224]'
+                  - listitem [ref=e225]:
+                    - generic [ref=e226]:
+                      - link "hedwig" [ref=e227] [cursor=pointer]:
+                        - /url: /packages/hedwig
+                      - link "v1.0.1" [ref=e228] [cursor=pointer]:
+                        - /url: /packages/hedwig
+                    - generic [ref=e229]:
+                      - generic [ref=e230]:
+                        - paragraph [ref=e231]: An adapter-based chat bot framework
+                        - paragraph [ref=e232]: Updated about 6 years ago
+                      - generic [ref=e233]:
+                        - generic [ref=e234]: "481"
+                        - generic [ref=e235]: recent downloads
+                        - 'generic "total downloads: 40 398" [ref=e236]'
+                  - listitem [ref=e237]:
+                    - generic [ref=e238]:
+                      - link "jido_chat" [ref=e239] [cursor=pointer]:
+                        - /url: /packages/jido_chat
+                      - link "v1.0.2" [ref=e240] [cursor=pointer]:
+                        - /url: /packages/jido_chat
+                    - generic [ref=e241]:
+                      - generic [ref=e242]:
+                        - paragraph [ref=e243]: Core chat SDK types and adapter contracts for the Jido ecosystem
+                        - paragraph [ref=e244]: Updated 3 weeks ago
+                      - generic [ref=e245]:
+                        - generic [ref=e246]: "421"
+                        - generic [ref=e247]: recent downloads
+                        - 'generic "total downloads: 421" [ref=e248]'
+                  - listitem [ref=e249]:
+                    - generic [ref=e250]:
+                      - link "ex_wechatpay" [ref=e251] [cursor=pointer]:
+                        - /url: /packages/ex_wechatpay
+                      - link "v0.3.6" [ref=e252] [cursor=pointer]:
+                        - /url: /packages/ex_wechatpay
+                    - generic [ref=e253]:
+                      - generic [ref=e254]:
+                        - paragraph [ref=e255]: Elixir SDK for WeChat Pay API v3
+                        - paragraph [ref=e256]: Updated 1 month ago
+                      - generic [ref=e257]:
+                        - generic [ref=e258]: "396"
+                        - generic [ref=e259]: recent downloads
+                        - 'generic "total downloads: 1 778" [ref=e260]'
+                  - listitem [ref=e261]:
+                    - generic [ref=e262]:
+                      - link "botlead" [ref=e263] [cursor=pointer]:
+                        - /url: /packages/botlead
+                      - link "v0.3.2" [ref=e264] [cursor=pointer]:
+                        - /url: /packages/botlead
+                    - generic [ref=e265]:
+                      - generic [ref=e266]:
+                        - paragraph [ref=e267]: Elixir framework for writing and configuring chat bots
+                        - paragraph [ref=e268]: Updated 11 months ago
+                      - generic [ref=e269]:
+                        - generic [ref=e270]: "384"
+                        - generic [ref=e271]: recent downloads
+                        - 'generic "total downloads: 22 481" [ref=e272]'
+                  - listitem [ref=e273]:
+                    - generic [ref=e274]:
+                      - link "wechat_pay" [ref=e275] [cursor=pointer]:
+                        - /url: /packages/wechat_pay
+                      - link "v0.10.0" [ref=e276] [cursor=pointer]:
+                        - /url: /packages/wechat_pay
+                    - generic [ref=e277]:
+                      - generic [ref=e278]:
+                        - paragraph [ref=e279]: WechatPay API wrapper in Elixir
+                        - paragraph [ref=e280]: Updated about 4 years ago
+                      - generic [ref=e281]:
+                        - generic [ref=e282]: "293"
+                        - generic [ref=e283]: recent downloads
+                        - 'generic "total downloads: 4 562" [ref=e284]'
+                  - listitem [ref=e285]:
+                    - generic [ref=e286]:
+                      - link "discord_interactions" [ref=e287] [cursor=pointer]:
+                        - /url: /packages/discord_interactions
+                      - link "v0.1.0" [ref=e288] [cursor=pointer]:
+                        - /url: /packages/discord_interactions
+                    - generic [ref=e289]:
+                      - generic [ref=e290]:
+                        - paragraph [ref=e291]: An Elixir library for handling Discord interaction webhooks, which can be used to implement application commands with simple chat responses, as well as more complex user interfaces using components.
+                        - paragraph [ref=e292]: Updated about 1 year ago
+                      - generic [ref=e293]:
+                        - generic [ref=e294]: "215"
+                        - generic [ref=e295]: recent downloads
+                        - 'generic "total downloads: 1 220" [ref=e296]'
+                  - listitem [ref=e297]:
+                    - generic [ref=e298]:
+                      - link "log_out" [ref=e299] [cursor=pointer]:
+                        - /url: /packages/log_out
+                      - link "v0.1.4" [ref=e300] [cursor=pointer]:
+                        - /url: /packages/log_out
+                    - generic [ref=e301]:
+                      - generic [ref=e302]:
+                        - paragraph [ref=e303]: A pluggable Elixir Logger backend for routing exceptions and logs directly to team chat platforms like Slack, Discord, Telegram, and Zulip.
+                        - paragraph [ref=e304]: Updated 2 months ago
+                      - generic [ref=e305]:
+                        - generic [ref=e306]: "211"
+                        - generic [ref=e307]: recent downloads
+                        - 'generic "total downloads: 253" [ref=e308]'
+                  - listitem [ref=e309]:
+                    - generic [ref=e310]:
+                      - link "lib_wechat" [ref=e311] [cursor=pointer]:
+                        - /url: /packages/lib_wechat
+                      - link "v0.4.2" [ref=e312] [cursor=pointer]:
+                        - /url: /packages/lib_wechat
+                    - generic [ref=e313]:
+                      - generic [ref=e314]:
+                        - paragraph [ref=e315]: A library for WeChat API
+                        - paragraph [ref=e316]: Updated 1 month ago
+                      - generic [ref=e317]:
+                        - generic [ref=e318]: "186"
+                        - generic [ref=e319]: recent downloads
+                        - 'generic "total downloads: 1 212" [ref=e320]'
+                  - listitem [ref=e321]:
+                    - generic [ref=e322]:
+                      - link "opex" [ref=e323] [cursor=pointer]:
+                        - /url: /packages/opex
+                      - link "v0.2.4" [ref=e324] [cursor=pointer]:
+                        - /url: /packages/opex
+                    - generic [ref=e325]:
+                      - generic [ref=e326]:
+                        - paragraph [ref=e327]: OpEx - OpenRouter and Model Context Protocol (MCP) client library for Elixir. Provides a flexible chat interface with tool calling and MCP server support.
+                        - paragraph [ref=e328]: Updated 7 months ago
+                      - generic [ref=e329]:
+                        - generic [ref=e330]: "174"
+                        - generic [ref=e331]: recent downloads
+                        - 'generic "total downloads: 487" [ref=e332]'
+                  - listitem [ref=e333]:
+                    - generic [ref=e334]:
+                      - link "planga_phoenix" [ref=e335] [cursor=pointer]:
+                        - /url: /packages/planga_phoenix
+                      - link "v1.1.0" [ref=e336] [cursor=pointer]:
+                        - /url: /packages/planga_phoenix
+                    - generic [ref=e337]:
+                      - generic [ref=e338]:
+                        - paragraph [ref=e339]: Easy usage of the Planga Seamless Chat Service inside an Elixir+Phoenix application.
+                        - paragraph [ref=e340]: Updated about 7 years ago
+                      - generic [ref=e341]:
+                        - generic [ref=e342]: "165"
+                        - generic [ref=e343]: recent downloads
+                        - 'generic "total downloads: 2 373" [ref=e344]'
+                  - listitem [ref=e345]:
+                    - generic [ref=e346]:
+                      - link "slack_bot_ws" [ref=e347] [cursor=pointer]:
+                        - /url: /packages/slack_bot_ws
+                      - link "v0.1.0-rc.2" [ref=e348] [cursor=pointer]:
+                        - /url: /packages/slack_bot_ws
+                    - generic [ref=e349]:
+                      - generic [ref=e350]:
+                        - paragraph [ref=e351]: A framework that solves the complexity of Slack bots—reconnects, backoff, tiered rate limits, slash-command and chat parsing—so you can build the fun bits.
+                        - paragraph [ref=e352]: Updated 5 months ago
+                      - generic [ref=e353]:
+                        - generic [ref=e354]: "164"
+                        - generic [ref=e355]: recent downloads
+                        - 'generic "total downloads: 353" [ref=e356]'
+                  - listitem [ref=e357]:
+                    - generic [ref=e358]:
+                      - link "openrouter_sdk" [ref=e359] [cursor=pointer]:
+                        - /url: /packages/openrouter_sdk
+                      - link "v0.1.4" [ref=e360] [cursor=pointer]:
+                        - /url: /packages/openrouter_sdk
+                    - generic [ref=e361]:
+                      - generic [ref=e362]:
+                        - paragraph [ref=e363]: "Unofficial Elixir SDK for the OpenRouter API: chat, anthropic messages, embeddings, speech, transcription, OAuth PKCE, and a versioned model/provider catalog. Not affiliated with or endorsed by the..."
+                        - paragraph [ref=e364]: Updated 1 month ago
+                      - generic [ref=e365]:
+                        - generic [ref=e366]: "164"
+                        - generic [ref=e367]: recent downloads
+                        - 'generic "total downloads: 164" [ref=e368]'
+                  - listitem [ref=e369]:
+                    - generic [ref=e370]:
+                      - link "ex_wechat" [ref=e371] [cursor=pointer]:
+                        - /url: /packages/ex_wechat
+                      - link "v0.1.8" [ref=e372] [cursor=pointer]:
+                        - /url: /packages/ex_wechat
+                    - generic [ref=e373]:
+                      - generic [ref=e374]:
+                        - paragraph [ref=e375]: A Phoenix/Elixir Wechat Api.
+                        - paragraph [ref=e376]: Updated about 8 years ago
+                      - generic [ref=e377]:
+                        - generic [ref=e378]: "160"
+                        - generic [ref=e379]: recent downloads
+                        - 'generic "total downloads: 3 141" [ref=e380]'
+                  - listitem [ref=e381]:
+                    - generic [ref=e382]:
+                      - link "tower_discord" [ref=e383] [cursor=pointer]:
+                        - /url: /packages/tower_discord
+                      - link "v0.1.1" [ref=e384] [cursor=pointer]:
+                        - /url: /packages/tower_discord
+                    - generic [ref=e385]:
+                      - generic [ref=e386]:
+                        - paragraph [ref=e387]: Error tracking and reporting to a Discord chat using Tower.
+                        - paragraph [ref=e388]: Updated 9 months ago
+                      - generic [ref=e389]:
+                        - generic [ref=e390]: "159"
+                        - generic [ref=e391]: recent downloads
+                        - 'generic "total downloads: 568" [ref=e392]'
+                  - listitem [ref=e393]:
+                    - generic [ref=e394]:
+                      - link "piratetok_live" [ref=e395] [cursor=pointer]:
+                        - /url: /packages/piratetok_live
+                      - link "v0.1.6" [ref=e396] [cursor=pointer]:
+                        - /url: /packages/piratetok_live
+                    - generic [ref=e397]:
+                      - generic [ref=e398]:
+                        - paragraph [ref=e399]: TikTok Live WebSocket connector — real-time chat, gifts, likes, and viewer events. No authentication required.
+                        - paragraph [ref=e400]: Updated 2 months ago
+                      - generic [ref=e401]:
+                        - generic [ref=e402]: "159"
+                        - generic [ref=e403]: recent downloads
+                        - 'generic "total downloads: 159" [ref=e404]'
+                  - listitem [ref=e405]:
+                    - generic [ref=e406]:
+                      - link "hipchat_elixir" [ref=e407] [cursor=pointer]:
+                        - /url: /packages/hipchat_elixir
+                      - link "v0.5.1" [ref=e408] [cursor=pointer]:
+                        - /url: /packages/hipchat_elixir
+                    - generic [ref=e409]:
+                      - generic [ref=e410]:
+                        - paragraph [ref=e411]: HipChat client library for Elixir
+                        - paragraph [ref=e412]: Updated about 8 years ago
+                      - generic [ref=e413]:
+                        - generic [ref=e414]: "149"
+                        - generic [ref=e415]: recent downloads
+                        - 'generic "total downloads: 2 992" [ref=e416]'
+                  - listitem [ref=e417]:
+                    - generic [ref=e418]:
+                      - link "chatter" [ref=e419] [cursor=pointer]:
+                        - /url: /packages/chatter
+                      - link "v0.0.15" [ref=e420] [cursor=pointer]:
+                        - /url: /packages/chatter
+                    - generic [ref=e421]:
+                      - generic [ref=e422]:
+                        - paragraph [ref=e423]: Chatter is extracted from the ScaleSmall project as a standalone piece. This may be used independently to broadcast messages to a set of nodes. It uses a mixture of UDP multicast and TCP to deliver...
+                        - paragraph [ref=e424]: Updated about 10 years ago
+                      - generic [ref=e425]:
+                        - generic [ref=e426]: "140"
+                        - generic [ref=e427]: recent downloads
+                        - 'generic "total downloads: 10 139" [ref=e428]'
+                  - listitem [ref=e429]:
+                    - generic [ref=e430]:
+                      - link "jido_chat_telegram" [ref=e431] [cursor=pointer]:
+                        - /url: /packages/jido_chat_telegram
+                      - link "v1.1.0" [ref=e432] [cursor=pointer]:
+                        - /url: /packages/jido_chat_telegram
+                    - generic [ref=e433]:
+                      - generic [ref=e434]:
+                        - paragraph [ref=e435]: Telegram adapter package for Jido.Chat
+                        - paragraph [ref=e436]: Updated 3 weeks ago
+                      - generic [ref=e437]:
+                        - generic [ref=e438]: "136"
+                        - generic [ref=e439]: recent downloads
+                        - 'generic "total downloads: 136" [ref=e440]'
+                - generic [ref=e442]:
+                  - generic [ref=e443]: Showing 1–29 packages of 82 total
+                  - navigation "Pagination" [ref=e444]:
+                    - img [ref=e446]
+                    - generic [ref=e448]:
+                      - generic [ref=e449]: "1"
+                      - link "2" [ref=e450] [cursor=pointer]:
+                        - /url: /packages?sort=recent_downloads&search=chat&page=2
+                      - link "3" [ref=e451] [cursor=pointer]:
+                        - /url: /packages?sort=recent_downloads&search=chat&page=3
+                    - link "Next page" [ref=e452] [cursor=pointer]:
+                      - /url: /packages?sort=recent_downloads&search=chat&page=2
+                      - img [ref=e453]
+  - contentinfo [ref=e455]:
+    - generic [ref=e457]:
+      - generic [ref=e458]:
+        - generic [ref=e459]:
+          - img "hex logo" [ref=e460]
+          - generic [ref=e461]: Hex
+        - generic [ref=e462]:
+          - link "GitHub" [ref=e463] [cursor=pointer]:
+            - /url: https://github.com/hexpm
+            - img [ref=e464]
+          - link "X" [ref=e466] [cursor=pointer]:
+            - /url: https://x.com/hexpm
+            - img [ref=e467]
+      - generic [ref=e470]:
+        - generic [ref=e471]:
+          - link "About" [ref=e472] [cursor=pointer]:
+            - /url: /about
+          - link "Blog" [ref=e473] [cursor=pointer]:
+            - /url: /blog
+          - link "Sponsors" [ref=e474] [cursor=pointer]:
+            - /url: /sponsors
+          - link "Status" [ref=e475] [cursor=pointer]:
+            - /url: https://status.hex.pm
+          - link "Advisories" [ref=e476] [cursor=pointer]:
+            - /url: https://osv.dev/list?ecosystem=Hex
+        - generic [ref=e477]:
+          - link "Documentation" [ref=e478] [cursor=pointer]:
+            - /url: /docs
+          - link "FAQ" [ref=e479] [cursor=pointer]:
+            - /url: /docs/faq
+          - link "Specifications" [ref=e480] [cursor=pointer]:
+            - /url: https://github.com/hexpm/specifications
+          - link "Report Client Issue" [ref=e481] [cursor=pointer]:
+            - /url: https://github.com/hexpm/hex/issues
+          - link "Report General Issue" [ref=e482] [cursor=pointer]:
+            - /url: https://github.com/hexpm/hexpm/issues
+          - link "Report Security Issue" [ref=e483] [cursor=pointer]:
+            - /url: mailto:security@hex.pm
+          - link "Contact Support" [ref=e484] [cursor=pointer]:
+            - /url: mailto:support@hex.pm
+        - generic [ref=e485]:
+          - link "Code of Conduct" [ref=e486] [cursor=pointer]:
+            - /url: /policies/codeofconduct
+          - link "Terms of Service" [ref=e487] [cursor=pointer]:
+            - /url: /policies/termsofservice
+          - link "Privacy Policy" [ref=e488] [cursor=pointer]:
+            - /url: /policies/privacy
+          - link "Copyright Policy" [ref=e489] [cursor=pointer]:
+            - /url: /policies/copyright
+          - link "Dispute Policy" [ref=e490] [cursor=pointer]:
+            - /url: /policies/dispute
+    - generic [ref=e492]:
+      - paragraph [ref=e493]: Copyright 2015. Six Colors AB.
+      - paragraph [ref=e494]:
+        - text: Powered by the
+        - link "Erlang VM" [ref=e495] [cursor=pointer]:
+          - /url: https://www.erlang.org/
+        - text: and the
+        - link "Elixir Programming Language" [ref=e496] [cursor=pointer]:
+          - /url: https://elixir-lang.org/

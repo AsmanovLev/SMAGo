@@ -1,0 +1,283 @@
+- generic [active] [ref=e1]:
+  - dialog [ref=e2]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - paragraph [ref=e9]: Корпорация Майкрософт и наши сторонние поставщики используют файлы cookie и аналогичные технологии для предоставления, поддержки и улучшения наших услуг и рекламных объявлений. С вашего согласия мы будем использовать эти данные для персонализации объявлений и связанной с ними аналитики.
+        - paragraph [ref=e10]:
+          - text: Выберите "Принять", чтобы согласиться с этими видами использования, "Отклонить", чтобы отклонить их, или выберите "Другие варианты", чтобы увидеть все доступные варианты. Изменить выбор можно в разделе "Управление файлами cookie" в нижней части этой страницы.
+          - link "Заявление о конфиденциальности" [ref=e11] [cursor=pointer]:
+            - /url: https://go.microsoft.com/fwlink/?LinkId=521839
+      - generic [ref=e12]:
+        - link "Принимаю" [ref=e14] [cursor=pointer]:
+          - /url: "javascript: void(0)"
+        - link "Отклонить" [ref=e16] [cursor=pointer]:
+          - /url: "javascript: void(0)"
+      - link "Дополнительные параметры" [ref=e18] [cursor=pointer]:
+        - /url: "javascript: void(0)"
+  - banner [ref=e19]:
+    - button "Перейти к контенту" [ref=e20] [cursor=pointer]:
+      - generic [ref=e22]: Перейти к контенту
+    - button "Отзыв о доступности" [ref=e23] [cursor=pointer]:
+      - generic [ref=e25]: Отзыв о доступности
+    - generic [ref=e26]:
+      - link "Вернуться к Поиску Bing" [ref=e27] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Вернуться к Поиску Bing" [level=1] [ref=e28]
+      - search [ref=e29]:
+        - button "Поиск" [ref=e32] [cursor=pointer]
+        - searchbox "Введите свой поисковый запрос здесь — пока вы печатаете, будут отображаться предлагаемые варианты" [ref=e33]: signal api third party bot capabilities signal-cli 2025
+        - button "Поиск с использованием изображения" [ref=e39] [cursor=pointer]
+    - complementary "Награды и предпочтения учетной записи" [ref=e41]:
+      - button "Microsoft Rewards" [ref=e42] [cursor=pointer]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: Rewards
+          - img [ref=e47]
+      - link "Войти" [ref=e59] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic "Войти" [ref=e60]
+    - navigation "Фильтр поиска" [ref=e61]:
+      - list [ref=e62]:
+        - listitem [ref=e63]:
+          - link "Все" [ref=e64] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=e65]:
+          - link "Поиск" [ref=e66] [cursor=pointer]:
+            - /url: /copilotsearch?q=signal+api+third+party+bot+capabilities+signal-cli+2025&FORM=CSSCOP
+            - img [ref=e67]
+            - text: Поиск
+        - listitem [ref=e69]:
+          - link "Изображения" [ref=e70] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=47eb0aa60df7a8ec4b7cc152cff9efe42a90d2640291f703ff9dd9480d4365dcJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2ltYWdlcy9zZWFyY2g_cT1zaWduYWwrYXBpK3RoaXJkK3BhcnR5K2JvdCtjYXBhYmlsaXRpZXMrc2lnbmFsLWNsaSsyMDI1JkZPUk09SERSU0Mz&ntb=1
+        - listitem [ref=e71]:
+          - link "Видео" [ref=e72] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=7b76ff46c098dc10b306fb2ddf439b8827be23808185eb152f0890283b532389JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1zaWduYWwrYXBpK3RoaXJkK3BhcnR5K2JvdCtjYXBhYmlsaXRpZXMrc2lnbmFsLWNsaSsyMDI1JkZPUk09SERSU0M0&ntb=1
+        - listitem [ref=e73]:
+          - link "Карты" [ref=e74] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=bca529f1e051f3d4bd15b0a28a536469fd210631fe146e6ca76de80f3777f4beJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L21hcHM_cT1zaWduYWwrYXBpK3RoaXJkK3BhcnR5K2JvdCtjYXBhYmlsaXRpZXMrc2lnbmFsLWNsaSsyMDI1JkZPUk09SERSU0M2&ntb=1
+        - listitem [ref=e75]:
+          - link "Новости" [ref=e76] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=e6430618961d7163c734b9f012646dd96a28513b8002533c5f612a535b1e456cJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L25ld3Mvc2VhcmNoP3E9c2lnbmFsK2FwaSt0aGlyZCtwYXJ0eStib3QrY2FwYWJpbGl0aWVzK3NpZ25hbC1jbGkrMjAyNSZGT1JNPUhEUlNDNw&ntb=1
+        - listitem [ref=e77]:
+          - link "Copilot" [ref=e78] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=73abb645545298b626738db09e13813cf49891c63dfed00e09274014c54e3440JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2NoYXQ_cHJvbXB0PXNpZ25hbCthcGkrdGhpcmQrcGFydHkrYm90K2NhcGFiaWxpdGllcytzaWduYWwtY2xpKzIwMjUmc2VuZHF1ZXJ5PTEmRk9STT1TQ0NPRFg&ntb=1
+        - listitem [ref=e79]:
+          - button "Еще" [ref=e80] [cursor=pointer]:
+            - img [ref=e82]
+            - text: Еще
+  - generic [ref=e84]:
+    - main "Результаты поиска" [ref=e85]:
+      - generic [ref=e87]: "Приблизительное число результатов: 3 150"
+      - list [ref=e97]:
+        - listitem [ref=e98]:
+          - link "readthedocs.io" [ref=e100] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=7edea92724f5dfb3b042d5fc6b904649a7ac41d2ad0d8b7254eeac02a89f0a0bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9zaWduYWwtYm90LnJlYWR0aGVkb2NzLmlvL2VuL3N0YWJsZS8&ntb=1
+            - generic [ref=e105]:
+              - generic [ref=e106]: readthedocs.io
+              - generic [ref=e108]:
+                - generic [ref=e109]: https://signal-bot.readthedocs.io › en › stable
+                - generic [ref=e110]: Перевести этот результат
+          - heading "Welcome to Signal-Bot’s documentation!" [level=2] [ref=e111]:
+            - link "Welcome to Signal-Bot’s documentation!" [ref=e112] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=7edea92724f5dfb3b042d5fc6b904649a7ac41d2ad0d8b7254eeac02a89f0a0bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9zaWduYWwtYm90LnJlYWR0aGVkb2NzLmlvL2VuL3N0YWJsZS8&ntb=1
+          - paragraph [ref=e114]: Signal-Bot assumes that you already have signal-cli available and registered with an account from which messages will be sent and received.
+        - listitem [ref=e115]:
+          - link "Github" [ref=e117] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=481c7e6e2e039af6c52c5c719ff0acce4bac9efdc47776aebd6d6132c6873313JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL3NpZ25hbC1ib3Qvc2lnbmFsLWJvdA&ntb=1
+            - generic [ref=e122]:
+              - generic [ref=e123]: Github
+              - generic [ref=e125]:
+                - generic [ref=e126]: https://github.com › signal-bot › signal-bot
+                - generic [ref=e127]: Перевести этот результат
+          - 'heading "GitHub - signal-bot/signal-bot: https://signal-bot.github.io" [level=2] [ref=e128]':
+            - 'link "GitHub - signal-bot/signal-bot: https://signal-bot.github.io" [ref=e129] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=481c7e6e2e039af6c52c5c719ff0acce4bac9efdc47776aebd6d6132c6873313JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL3NpZ25hbC1ib3Qvc2lnbmFsLWJvdA&ntb=1
+          - generic [ref=e133]:
+            - tablist [ref=e136]:
+              - tab "signal-bot" [ref=e137] [cursor=pointer]
+              - tab "The idea" [ref=e138] [cursor=pointer]
+              - tab "To do" [ref=e139] [cursor=pointer]
+              - tab "Mocker (work in progress)" [selected] [ref=e140]
+            - tabpanel "Mocker (work in progress)" [ref=e142]:
+              - list [ref=e143]:
+                - listitem [ref=e144]:
+                  - generic [ref=e145]:
+                    - text: The idea behind
+                    - strong [ref=e146]: Mocker
+                    - text: is to enable for testing and debugging of signal-bot and its plugins. It offers a dbus service that (partially) mimicks the dbus service of signal-cli (if needed, it should eventually mimick the signal-cli dbus service interface exactly).
+              - 'link "Дополнительно: github.com" [ref=e147] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=481c7e6e2e039af6c52c5c719ff0acce4bac9efdc47776aebd6d6132c6873313JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL3NpZ25hbC1ib3Qvc2lnbmFsLWJvdA&ntb=1
+        - listitem [ref=e148]:
+          - generic [ref=e149]:
+            - link "Исследуйте это изображение" [ref=e152] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=ndJFIIk0&id=12368B93E806D48F4C142958238870320060E4D1&thid=OIP._heFdT2NieIVNyiN-dMglgHaD4&mediaurl=https://docs.openclaw.ai/og/channels/signal.png&q=signal+api+third+party+bot+capabilities+signal-cli+2025&ck=57A7D577E1F9FF9D8D10CC4BDA0A6328&idpp=rc&expw=1200&exph=630&form=rc2idp
+            - generic [ref=e154]:
+              - link "openclaw.ai" [ref=e156] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=33787337e56ddc21727ede5f06cb02c48ce5535b13dcdfe6a2d817193b42b612JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kb2NzLm9wZW5jbGF3LmFpL2NoYW5uZWxzL3NpZ25hbA&ntb=1
+                - generic [ref=e161]:
+                  - generic [ref=e162]: openclaw.ai
+                  - generic [ref=e164]:
+                    - generic [ref=e165]: https://docs.openclaw.ai › channels › signal
+                    - generic [ref=e166]: Перевести этот результат
+              - heading "Signal - OpenClaw" [level=2] [ref=e167]:
+                - link "Signal - OpenClaw" [ref=e168] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=33787337e56ddc21727ede5f06cb02c48ce5535b13dcdfe6a2d817193b42b612JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kb2NzLm9wZW5jbGF3LmFpL2NoYW5uZWxzL3NpZ25hbA&ntb=1
+              - paragraph [ref=e169]: Registering a phone number account with signal-cli can de-authenticate the main Signal app session for that number. Prefer a dedicated bot number, or use QR …
+        - listitem [ref=e171]:
+          - generic [ref=e172]:
+            - link "Исследуйте это изображение" [ref=e175] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=bYnMXHg1&id=345523AD10C8E942F41948998C884C9D1D4E7A63&thid=OIP.bYnMXHg1uQcIgMdehQB0_QHaD3&mediaurl=https://media2.dev.to/dynamic/image/width=1200,height=627,fit=cover,gravity=auto,format=auto/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/4hz02zo2nc27i4fkaqz8.png&q=signal+api+third+party+bot+capabilities+signal-cli+2025&ck=E6D68192BCD58B8812AD101BCC050E0E&idpp=rc&expw=1200&exph=627&form=rc2idp
+            - generic [ref=e177]:
+              - link "DEV Community" [ref=e179] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=c9849541554e40a49bf9eca5531882ee8da3c3b072114d89c318dee1d5982e04JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXYudG8vZWNsYXcvYnVpbGRpbmctYW4tYWktcG93ZXJlZC1zaWduYWwtYm90LXdpdGgtb3BlbmNsYXctYS1jb21wbGV0ZS1ndWlkZS1pMTc&ntb=1
+                - generic [ref=e184]:
+                  - generic [ref=e185]: DEV Community
+                  - generic [ref=e187]:
+                    - generic [ref=e188]: https://dev.to › eclaw
+                    - generic [ref=e189]: Перевести этот результат
+              - 'heading "Building an AI-Powered Signal Bot with OpenClaw: A …" [level=2] [ref=e190]':
+                - 'link "Building an AI-Powered Signal Bot with OpenClaw: A …" [ref=e191] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=c9849541554e40a49bf9eca5531882ee8da3c3b072114d89c318dee1d5982e04JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZXYudG8vZWNsYXcvYnVpbGRpbmctYW4tYWktcG93ZXJlZC1zaWduYWwtYm90LXdpdGgtb3BlbmNsYXctYS1jb21wbGV0ZS1ndWlkZS1pMTc&ntb=1
+              - paragraph [ref=e192]: 20 мар. 2026 г. · The integration supports two setup paths. Path A (QR Link) lets you link signal-cli as a secondary device to an existing Signal account — ideal …
+        - listitem [ref=e194]:
+          - link "deepwiki.com" [ref=e196] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=a6447bec0489f92008e547e96e636d56e253f31bb0155e932d2959e640073f0bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZWVwd2lraS5jb20vc2lnbmFsYm90LW9yZy9zaWduYWxib3QvMTIuNi1zaWduYWxhcGktcmVmZXJlbmNl&ntb=1
+            - generic [ref=e201]:
+              - generic [ref=e202]: deepwiki.com
+              - generic [ref=e204]:
+                - generic [ref=e205]: https://deepwiki.com › signalbot-org › signalbot
+                - generic [ref=e206]: Перевести этот результат
+          - heading "SignalAPI Reference | signalbot-org/signalbot | DeepWiki" [level=2] [ref=e207]:
+            - link "SignalAPI Reference | signalbot-org/signalbot | DeepWiki" [ref=e208] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=a6447bec0489f92008e547e96e636d56e253f31bb0155e932d2959e640073f0bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9kZWVwd2lraS5jb20vc2lnbmFsYm90LW9yZy9zaWduYWxib3QvMTIuNi1zaWduYWxhcGktcmVmZXJlbmNl&ntb=1
+          - paragraph [ref=e210]: 15 февр. 2026 г. · The SignalAPI class serves as the communication bridge between the signalbot framework and the signal-cli-rest-api service. It encapsulates all HTTP REST and WebSocket …
+        - listitem [ref=e211]:
+          - link "signalbot-org.github.io" [ref=e213] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=63ea330fa237e1fbf9c6c8e3ecc6fb086beaecb2d97ef2f05a0528d7fc8ff911JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9zaWduYWxib3Qtb3JnLmdpdGh1Yi5pby9zaWduYWxib3Qv&ntb=1
+            - generic [ref=e218]:
+              - generic [ref=e219]: signalbot-org.github.io
+              - generic [ref=e221]:
+                - generic [ref=e222]: https://signalbot-org.github.io › signalbot
+                - generic [ref=e223]: Перевести этот результат
+          - heading "Signalbot" [level=2] [ref=e224]:
+            - link "Signalbot" [ref=e225] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=63ea330fa237e1fbf9c6c8e3ecc6fb086beaecb2d97ef2f05a0528d7fc8ff911JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9zaWduYWxib3Qtb3JnLmdpdGh1Yi5pby9zaWduYWxib3Qv&ntb=1
+          - paragraph [ref=e227]: 14 февр. 2026 г. · Documentation for Signalbot, a Python library for building Signal bots using the signal-cli-rest-api.
+        - listitem [ref=e228]:
+          - generic [ref=e230]:
+            - heading "Люди также спрашивают" [level=2] [ref=e231]:
+              - generic [ref=e232]: Люди также спрашивают
+            - list [ref=e235]:
+              - listitem [ref=e236]:
+                - heading "How do I use a signal CLI bot?" [level=3] [ref=e237]:
+                  - button "How do I use a signal CLI bot?" [ref=e238] [cursor=pointer]:
+                    - generic [ref=e239]: How do I use a signal CLI bot?
+                    - generic:
+                      - img
+              - listitem [ref=e240]:
+                - heading "What is a signal-bot plugin?" [level=3] [ref=e241]:
+                  - button "What is a signal-bot plugin?" [ref=e242] [cursor=pointer]:
+                    - generic [ref=e243]: What is a signal-bot plugin?
+                    - generic:
+                      - img
+              - listitem [ref=e244]:
+                - heading "How many setup paths does signal-CLI support?" [level=3] [ref=e245]:
+                  - button "How many setup paths does signal-CLI support?" [ref=e246] [cursor=pointer]:
+                    - generic [ref=e247]: How many setup paths does signal-CLI support?
+                    - generic:
+                      - img
+              - listitem [ref=e248]:
+                - heading "How do I run a bot on a signal account?" [level=3] [ref=e249]:
+                  - button "How do I run a bot on a signal account?" [ref=e250] [cursor=pointer]:
+                    - generic [ref=e251]: How do I run a bot on a signal account?
+                    - generic:
+                      - img
+        - listitem [ref=e253]:
+          - link "claw.ist" [ref=e255] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=ec274506b6c2d93bab3346aab23ccc1334758bc5d7edc01e05df459408e06331JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jbGF3LmlzdC9zaWduYWwtYWktYm90LXNldHVwLWd1aWRl&ntb=1
+            - generic [ref=e260]:
+              - generic [ref=e261]: claw.ist
+              - generic [ref=e263]:
+                - generic [ref=e264]: https://claw.ist › signal-ai-bot-setup-guide
+                - generic [ref=e265]: Перевести этот результат
+          - 'heading "Signal Bot with AI: Set Up a Private Claude Assistant on Signal" [level=2] [ref=e266]':
+            - 'link "Signal Bot with AI: Set Up a Private Claude Assistant on Signal" [ref=e267] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=ec274506b6c2d93bab3346aab23ccc1334758bc5d7edc01e05df459408e06331JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9jbGF3LmlzdC9zaWduYWwtYWktYm90LXNldHVwLWd1aWRl&ntb=1
+          - paragraph [ref=e269]: This guide shows you how to set up a Claude-powered AI assistant on Signal using signal-cli and OpenClaw, giving you private AI conversations without sacrificing security.
+        - listitem [ref=e270]:
+          - generic [ref=e271]:
+            - link "Исследуйте это изображение" [ref=e274] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=sjWH5xS4&id=8368E0F44E1C34F1DD44E0E038D1E59B22A44025&thid=OIP.sjWH5xS4_bWPYpRXcUGAOQHaD4&mediaurl=https://cdn.prod.website-files.com/654151be5c8f07ebc15119fb/65de4ba581512ad1b77713f8_654e61ed4358885cde9b69ac_Opengraph.png&q=signal+api+third+party+bot+capabilities+signal-cli+2025&ck=F860AFF7B7DC68A13E6FC73E2919ED7A&idpp=rc&expw=1200&exph=630&form=rc2idp
+            - generic [ref=e276]:
+              - link "sentz.com" [ref=e278] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=67102e1a4e0b958346230fc399df01cc4f6acb911cdbeafd8fac9b2f22607040JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuc2VudHouY29tL2RldmVsb3BlcnMvc2lnbmFsLWNoYXQtYm90LXNkaw&ntb=1
+                - generic [ref=e283]:
+                  - generic [ref=e284]: sentz.com
+                  - generic [ref=e286]:
+                    - generic [ref=e287]: https://www.sentz.com › developers › signal-ch…
+                    - generic [ref=e288]: Перевести этот результат
+              - heading "Signal Chat Bot SDK - Sentz" [level=2] [ref=e289]:
+                - link "Signal Chat Bot SDK - Sentz" [ref=e290] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=67102e1a4e0b958346230fc399df01cc4f6acb911cdbeafd8fac9b2f22607040JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly93d3cuc2VudHouY29tL2RldmVsb3BlcnMvc2lnbmFsLWNoYXQtYm90LXNkaw&ntb=1
+              - paragraph [ref=e291]: Forest bots run with signal-cli or auxin-cli as the backend. Auxin-cli is beta software, and does not yet allow you to register a new phone number, so for this guide we …
+        - listitem [ref=e293]:
+          - generic [ref=e294]:
+            - link "Исследуйте это изображение" [ref=e297] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=TIgsIHd3&id=45C64787ADEC9099882CDEF38A13990BC9F296E3&thid=OIP.TIgsIHd36FMWBpTvDZsgxAHaDt&mediaurl=https://opengraph.githubassets.com/50e208ccef2688f9a56c6129e8c22492d1e687cb53ca6aa10eab0037f371f539/bbernhard/signal-cli-rest-api&q=signal+api+third+party+bot+capabilities+signal-cli+2025&ck=BF8D8E3A044B78A72C457AADDD750399&idpp=rc&expw=1200&exph=600&form=rc2idp
+            - generic [ref=e299]:
+              - link "Github" [ref=e301] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=50f2e23afea85f45c6be36e48d35202d25d4e92b9c5e84d1a05d2ba4c5dc172bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL2JiZXJuaGFyZC9zaWduYWwtY2xpLXJlc3QtYXBp&ntb=1
+                - generic [ref=e306]:
+                  - generic [ref=e307]: Github
+                  - generic [ref=e309]:
+                    - generic [ref=e310]: https://github.com › bbernhard › signal-cli-rest-api
+                    - generic [ref=e311]: Перевести этот результат
+              - 'heading "GitHub - bbernhard/signal-cli-rest-api: Dockerized …" [level=2] [ref=e312]':
+                - 'link "GitHub - bbernhard/signal-cli-rest-api: Dockerized …" [ref=e313] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=50f2e23afea85f45c6be36e48d35202d25d4e92b9c5e84d1a05d2ba4c5dc172bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL2JiZXJuaGFyZC9zaWduYWwtY2xpLXJlc3QtYXBp&ntb=1
+              - paragraph [ref=e314]: signal-cli, which this REST API wrapper is based on, recommends to call receive on a regular basis. So, if you are not already calling the receive endpoint regularly, …
+        - listitem [ref=e316]:
+          - generic [ref=e317]:
+            - link "Исследуйте это изображение" [ref=e320] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=WE5Q87MT&id=B2C572F13AA98BFB1D5029E51E44D596EAC70280&thid=OIP.WE5Q87MTNZM6oGuhfNDjWgHaEO&mediaurl=https://messengerbot.app/wp-content/uploads/2025/09/signal-messenger-bot-api.png&q=signal+api+third+party+bot+capabilities+signal-cli+2025&ck=82807A02D40A5AF8733D18866B3D7C68&idpp=rc&expw=1792&exph=1024&form=rc2idp
+            - generic [ref=e322]:
+              - link "Messenger Bot" [ref=e324] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=7ce72bbfbac915f773fe2fb332381c776c692a0087d497b04c66a18b1898514aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9tZXNzZW5nZXJib3QuYXBwL2V4cGxvcmluZy10aGUtc2lnbmFsLW1lc3Nlbmdlci1ib3QtYXBpLWZlYXR1cmVzLWJvdHMtYW5kLXNlY3VyaXR5LWluc2lnaHRzLw&ntb=1
+                - generic [ref=e329]:
+                  - generic [ref=e330]: Messenger Bot
+                  - generic [ref=e332]:
+                    - generic [ref=e333]: https://messengerbot.app › exploring-the-signal...
+                    - generic [ref=e334]: Перевести этот результат
+              - 'heading "Exploring the Signal Messenger Bot API: Features, …" [level=2] [ref=e335]':
+                - 'link "Exploring the Signal Messenger Bot API: Features, …" [ref=e336] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=7ce72bbfbac915f773fe2fb332381c776c692a0087d497b04c66a18b1898514aJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9tZXNzZW5nZXJib3QuYXBwL2V4cGxvcmluZy10aGUtc2lnbmFsLW1lc3Nlbmdlci1ib3QtYXBpLWZlYXR1cmVzLWJvdHMtYW5kLXNlY3VyaXR5LWluc2lnaHRzLw&ntb=1
+              - paragraph [ref=e337]: As we navigate through the capabilities of AI bots within Signal, we will provide insights into their practical applications and compare the Signal Messenger Bot …
+        - listitem [ref=e339]:
+          - link "Некоторые результаты удалены" [ref=e341] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=344d5a01c9020ae0f64570329c97724738ffd487613df9d1570aabd450329c84JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9NjE3MzUw&ntb=1
+        - listitem [ref=e342]:
+          - navigation "Другие результаты по запросу signal api third party bot capabilities signal-cli 2025":
+            - list:
+              - listitem [ref=e343]:
+                - generic "Страница 1" [ref=e344]: "1"
+              - listitem [ref=e345]:
+                - link "Страница 2" [ref=e346] [cursor=pointer]:
+                  - /url: /search?q=signal+api+third+party+bot+capabilities+signal-cli+2025&FPIG=13846DED983344FCABDE7B89A976BF9D&first=11&FORM=PERE
+                  - text: "2"
+              - listitem [ref=e347]:
+                - link "Страница 3" [ref=e348] [cursor=pointer]:
+                  - /url: /search?q=signal+api+third+party+bot+capabilities+signal-cli+2025&FPIG=13846DED983344FCABDE7B89A976BF9D&first=21&FORM=PERE1
+                  - text: "3"
+              - listitem [ref=e349]:
+                - link "Следующая страница" [ref=e350] [cursor=pointer]:
+                  - /url: /search?q=signal+api+third+party+bot+capabilities+signal-cli+2025&FPIG=13846DED983344FCABDE7B89A976BF9D&first=11&FORM=PORE
+    - complementary "Дополнительные результаты" [ref=e351]:
+      - list
+  - contentinfo [ref=e352]:
+    - generic [ref=e353]:
+      - list:
+        - listitem [ref=e354]:
+          - link "Конфиденциальность" [ref=e355] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=21b033e4690739c4b00c739e1cf31e392a048d8ccb3ae7bae1d3804b0b25c834JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=e356]:
+          - link "Условия" [ref=e357] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=35dbb4284fed750b180ae689312f45529a3b13fc05a5d31d6bb10222597c960fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1

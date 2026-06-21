@@ -1,0 +1,453 @@
+- generic [active] [ref=e1]:
+  - dialog [ref=e2]:
+    - generic [ref=e7]:
+      - generic [ref=e8]:
+        - paragraph [ref=e9]: Корпорация Майкрософт и наши сторонние поставщики используют файлы cookie и аналогичные технологии для предоставления, поддержки и улучшения наших услуг и рекламных объявлений. С вашего согласия мы будем использовать эти данные для персонализации объявлений и связанной с ними аналитики.
+        - paragraph [ref=e10]:
+          - text: Выберите "Принять", чтобы согласиться с этими видами использования, "Отклонить", чтобы отклонить их, или выберите "Другие варианты", чтобы увидеть все доступные варианты. Изменить выбор можно в разделе "Управление файлами cookie" в нижней части этой страницы.
+          - link "Заявление о конфиденциальности" [ref=e11] [cursor=pointer]:
+            - /url: https://go.microsoft.com/fwlink/?LinkId=521839
+      - generic [ref=e12]:
+        - link "Принимаю" [ref=e14] [cursor=pointer]:
+          - /url: "javascript: void(0)"
+        - link "Отклонить" [ref=e16] [cursor=pointer]:
+          - /url: "javascript: void(0)"
+      - link "Дополнительные параметры" [ref=e18] [cursor=pointer]:
+        - /url: "javascript: void(0)"
+  - banner [ref=e19]:
+    - button "Перейти к контенту" [ref=e20] [cursor=pointer]:
+      - generic [ref=e22]: Перейти к контенту
+    - button "Отзыв о доступности" [ref=e23] [cursor=pointer]:
+      - generic [ref=e25]: Отзыв о доступности
+    - generic [ref=e26]:
+      - link "Вернуться к Поиску Bing" [ref=e27] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Вернуться к Поиску Bing" [level=1] [ref=e28]
+      - search [ref=e29]:
+        - button "Поиск" [ref=e32] [cursor=pointer]
+        - searchbox "Введите свой поисковый запрос здесь — пока вы печатаете, будут отображаться предлагаемые варианты" [ref=e33]: microsoft teams bot api 2025 proactive messages rate limit
+        - button "Поиск с использованием изображения" [ref=e39] [cursor=pointer]
+    - complementary "Награды и предпочтения учетной записи" [ref=e41]:
+      - button "Microsoft Rewards" [ref=e42] [cursor=pointer]:
+        - generic [ref=e44]:
+          - generic [ref=e45]: Rewards
+          - img [ref=e47]
+      - link "Войти" [ref=e59] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic "Войти" [ref=e60]
+    - navigation "Фильтр поиска" [ref=e61]:
+      - list [ref=e62]:
+        - listitem [ref=e63]:
+          - link "Все" [ref=e64] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=e65]:
+          - link "Поиск" [ref=e66] [cursor=pointer]:
+            - /url: /copilotsearch?q=microsoft+teams+bot+api+2025+proactive+messages+rate+limit&FORM=CSSCOP
+            - img [ref=e67]
+            - text: Поиск
+        - listitem [ref=e69]:
+          - link "Видео" [ref=e70] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=e5801bf45fc88aadd3fb4977a6dcea462b812de711ed496a370d7c44a353808eJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1taWNyb3NvZnQrdGVhbXMrYm90K2FwaSsyMDI1K3Byb2FjdGl2ZSttZXNzYWdlcytyYXRlK2xpbWl0JkZPUk09SERSU0M0&ntb=1
+        - listitem [ref=e71]:
+          - link "Изображения" [ref=e72] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=53b299460f75a2e8ae71dc597b3513fe3cf35a64ba28206a55b23c2d74285280JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2ltYWdlcy9zZWFyY2g_cT1taWNyb3NvZnQrdGVhbXMrYm90K2FwaSsyMDI1K3Byb2FjdGl2ZSttZXNzYWdlcytyYXRlK2xpbWl0JkZPUk09SERSU0Mz&ntb=1
+        - listitem [ref=e73]:
+          - link "Карты" [ref=e74] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=a127cb46f9b133799f78711b7dc4f3cc6097cb1d504617e70d3d89c206ef8a40JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L21hcHM_cT1taWNyb3NvZnQrdGVhbXMrYm90K2FwaSsyMDI1K3Byb2FjdGl2ZSttZXNzYWdlcytyYXRlK2xpbWl0JkZPUk09SERSU0M2&ntb=1
+        - listitem [ref=e75]:
+          - link "Новости" [ref=e76] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=34ffc6e58871dcdf75feb783e31f3c7f5b906a75bc8628e42f0b1e9f6c18d8aeJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L25ld3Mvc2VhcmNoP3E9bWljcm9zb2Z0K3RlYW1zK2JvdCthcGkrMjAyNStwcm9hY3RpdmUrbWVzc2FnZXMrcmF0ZStsaW1pdCZGT1JNPUhEUlNDNw&ntb=1
+        - listitem [ref=e77]:
+          - link "Copilot" [ref=e78] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=5ae077c56e68d134a18702f123cc76df0b8e7a76bd357ff05d9c24f61a8117b0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2NoYXQ_cHJvbXB0PW1pY3Jvc29mdCt0ZWFtcytib3QrYXBpKzIwMjUrcHJvYWN0aXZlK21lc3NhZ2VzK3JhdGUrbGltaXQmc2VuZHF1ZXJ5PTEmRk9STT1TQ0NPRFg&ntb=1
+        - listitem [ref=e79]:
+          - button "Еще" [ref=e80] [cursor=pointer]:
+            - img [ref=e82]
+            - text: Еще
+  - generic [ref=e84]:
+    - main "Результаты поиска" [ref=e85]:
+      - generic [ref=e87]: "Приблизительное число результатов: 110 000"
+      - list [ref=e98]:
+        - listitem [ref=e99]:
+          - generic [ref=e107]:
+            - generic [ref=e110]:
+              - generic [ref=e112]:
+                - button "Нравится" [ref=e113]:
+                  - img [ref=e114]
+                - button "Не нравится" [ref=e116]:
+                  - img [ref=e117]
+              - generic [ref=e121]:
+                - link "enter image description here" [ref=e125] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=6bec4e755965df283d1f65f0ef3a0caaebe29f703369d74489c6890235bb4d58JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L2ltYWdlcy9zZWFyY2g_cT1taWNyb3NvZnQrdGVhbXMrYm90K2FwaSsyMDI1K3Byb2FjdGl2ZSttZXNzYWdlcytyYXRlK2xpbWl0JmlkPTY5RUIwODdCNjhFRjhGQTM0NDYwOEUwMTA4QUE1MUJCNEUzOTQzOUU&ntb=1
+                  - img "enter image description here" [ref=e126]
+                - generic [ref=e128]:
+                  - text: If your application sends one
+                  - strong [ref=e129]: bot message
+                  - text: to each user individually (i.e., 3000 separate 1:1 conversations), the thread
+                  - strong [ref=e130]: limit
+                  - text: doesn't throttle because each
+                  - strong [ref=e131]: message
+                  - text: is considered a separate conversation. However, keep in mind the global
+                  - strong [ref=e132]: limit
+                  - text: per app per tenant, which is 50 Requests Per Second (RPS).
+              - link "Stack Overflow Question regarding rate limiting for MS Teams Bot If your application sends one bot message to each user individually (i.e., 3000 separate 1:1 conversations), the thread limit doesn't throttle because each message is considered a …" [ref=e136] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=caf19af0576da748c0376232dbfd9a142d94e00cd69cb49d9d4e19da7e0488c8JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvNzcyODUzMTQvcXVlc3Rpb24tcmVnYXJkaW5nLXJhdGUtbGltaXRpbmctZm9yLW1zLXRlYW1zLWJvdCM6fjp0ZXh0PUlmJTIweW91ciUyMGFwcGxpY2F0aW9uJTIwc2VuZHMlMjBvbmUlMjBib3QlMjBtZXNzYWdlJTIwdG8sdGVuYW50JTJDJTIwd2hpY2glMjBpcyUyMDUwJTIwUmVxdWVzdHMlMjBQZXIlMjBTZWNvbmQlMjAlMjhSUFMlMjku&ntb=1
+                - generic [ref=e137]:
+                  - generic [ref=e141]: Stack Overflow
+                  - generic [ref=e143]: Question regarding rate limiting for MS Teams Bot
+                  - generic [ref=e144]: If your application sends one bot message to each user individually (i.e., 3000 separate 1:1 conversations), the thread limit doesn't throttle because each message is considered a …
+            - status
+        - listitem [ref=e145]:
+          - link "Microsoft Learn" [ref=e147] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=abbd1f9a248c9ff8e40b275e7f51d7af150e6c61ad335e93add31d461e6558d5JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL2JvdHMvaG93LXRvL3JhdGUtbGltaXQ&ntb=1
+            - generic [ref=e152]:
+              - generic [ref=e153]: Microsoft Learn
+              - generic [ref=e155]:
+                - generic [ref=e156]: https://learn.microsoft.com › ... › bots › how-to › rate-limit
+                - generic [ref=e157]: Перевести этот результат
+          - heading "Rate limiting for bots - Teams | Microsoft Learn" [level=2] [ref=e158]:
+            - link "Rate limiting for bots - Teams | Microsoft Learn" [ref=e159] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=abbd1f9a248c9ff8e40b275e7f51d7af150e6c61ad335e93add31d461e6558d5JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL2JvdHMvaG93LXRvL3JhdGUtbGltaXQ&ntb=1
+          - generic [ref=e161]:
+            - link "Rate limiting is a method to limit messages to a certain maximum frequency. As a general principle, your application must limit the number of messages it posts to an ind…" [ref=e162] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=abbd1f9a248c9ff8e40b275e7f51d7af150e6c61ad335e93add31d461e6558d5JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL2JvdHMvaG93LXRvL3JhdGUtbGltaXQ&ntb=1
+              - text: Rate limiting is a method to limit messages to a certain maximum frequency. As a general principle, your application must limit the number of messages it posts to an ind…
+            - generic [ref=e163]:
+              - generic [ref=e165]:
+                - link "Handle rate limits" [ref=e166] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=3a1cfd9836009028879403a9c67b680bbc32773991ab1a05d28fd4821048763fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL2JvdHMvaG93LXRvL3JhdGUtbGltaXQjOn46dGV4dD1XaGVuIGlzc3VpbmcgYSBCb3QgQg&ntb=1
+                - generic [ref=e168]:
+                  - generic [ref=e169]:
+                    - heading "Handle rate limits" [level=2] [ref=e170]
+                    - img [ref=e173]
+                  - paragraph [ref=e175]:
+                    - text: When issuing a Bot Builder SDK operation, you can handle Microsoft.Rest.HttpOperationException and check for the status code.
+                    - text: "The following code shows an example of handling rate limits:"
+              - generic [ref=e177]:
+                - link "Handle HTTP 429 responses" [ref=e178] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=1a78921b870ff63b68d39bf186457cbd473db2b3773e47248139ff0d261a852bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL2JvdHMvaG93LXRvL3JhdGUtbGltaXQjOn46dGV4dD1JbiBnZW5lcmFsLCB5b3UgbXVzdA&ntb=1
+                - generic [ref=e180]:
+                  - generic [ref=e181]:
+                    - heading "Handle HTTP 429 responses" [level=2] [ref=e182]
+                    - img [ref=e185]
+                  - paragraph [ref=e187]: In general, you must take simple precautions to avoid receiving HTTP 429 responses. For example, avoid issuing multiple requests to the same personal or channel conversation. Instead, create a batch of the API requests.
+              - generic [ref=e189]:
+                - link "Detect transient exceptions example" [ref=e190] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=92d00948bc8723bd8d80838b931ec0e85aafb5dcced3dd4d19d0291615bca34dJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL2JvdHMvaG93LXRvL3JhdGUtbGltaXQjOn46dGV4dD1UaGUgZm9sbG93aW5nIGNvZGUgcw&ntb=1
+                - generic [ref=e192]:
+                  - generic [ref=e193]:
+                    - heading "Detect transient exceptions example" [level=2] [ref=e194]
+                    - img [ref=e197]
+                  - paragraph [ref=e199]:
+                    - text: "The following code shows an example of using exponential backoff using the transient fault handling application block:"
+                    - text: You can perform backoff and retries using transient fault handling. For guidelines on obtaining and installing the NuGet packa…
+              - generic [ref=e201]:
+                - link "Backoff example" [ref=e202] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=d3287aa0d3940dc199a2847fef96c83e5c9b70b1c7a1f8a3ffba7b75b76d890dJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL2JvdHMvaG93LXRvL3JhdGUtbGltaXQjOn46dGV4dD1JbiBhZGRpdGlvbiB0byBkZXRlYw&ntb=1
+                - generic [ref=e204]:
+                  - generic [ref=e205]:
+                    - heading "Backoff example" [level=2] [ref=e206]
+                    - img [ref=e209]
+                  - paragraph [ref=e211]:
+                    - text: In addition to detecting rate limits, you can also perform an exponential backoff.
+                    - text: "The following code shows an example of exponential backoff:"
+                    - text: You can also perform a System.Action method execution with the retry policy de…
+        - listitem [ref=e212]:
+          - link "Microsoft Learn" [ref=e214] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=fe2b850bf5b8c1cc7f4ffca85506d7b10b9689b4f0a46e5d2e8b72347ca2693fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL2JvdHMvaG93LXRvL2NvbnZlcnNhdGlvbnMvc2VuZC1wcm9hY3RpdmUtbWVzc2FnZXM&ntb=1
+            - generic [ref=e219]:
+              - generic [ref=e220]: Microsoft Learn
+              - generic [ref=e222]:
+                - generic [ref=e223]: https://learn.microsoft.com › en-us › microsoftteams › ...
+                - generic [ref=e224]: Перевести этот результат
+          - heading "Send proactive messages - Teams | Microsoft Learn" [level=2] [ref=e225]:
+            - link "Send proactive messages - Teams | Microsoft Learn" [ref=e226] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=fe2b850bf5b8c1cc7f4ffca85506d7b10b9689b4f0a46e5d2e8b72347ca2693fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL2JvdHMvaG93LXRvL2NvbnZlcnNhdGlvbnMvc2VuZC1wcm9hY3RpdmUtbWVzc2FnZXM&ntb=1
+          - paragraph [ref=e228]: 23 апр. 2026 г. · Learn how to send proactive messages with your Teams bot, install your app using Microsoft Graph, and check code samples based on Bot Framework SDK v4.
+        - listitem [ref=e229]:
+          - generic [ref=e231]:
+            - heading "Видео Microsoft Teams Bot Api 2025 Proactive messages Rate Limit" [level=2] [ref=e233]:
+              - link "Видео Microsoft Teams Bot Api 2025 Proactive messages Rate Limit" [ref=e234] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=137a66aa0d4e2f36fd594d0d5c93776e2648b66d31c8e3ddfb86b13106ac4788JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1NaWNyb3NvZnQrVGVhbXMrYm90K2FwaSsyMDI1K3Byb2FjdGl2ZSttZXNzYWdlcytyYXRlK2xpbWl0JnFwdnQ9bWljcm9zb2Z0K3RlYW1zK2JvdCthcGkrMjAyNStwcm9hY3RpdmUrbWVzc2FnZXMrcmF0ZStsaW1pdCZGT1JNPVZEUkU&ntb=1
+            - generic [ref=e236]:
+              - 'link "DEMO - Send proactive messages from Teams botsиз YouTube · Длительность: 3 мин41 с · Просмотров: 10,1тыс. · отправлено: 1 июн. 2021 г. · кем отправлено: Microsoft 365 Developer · Щелкните для воспроизведения. · In this demo, you’ll learn how to send proactive messages from your Microsoft Teams bot for welcome messages and to notify channel members of external events. This video is part of a series in a playlist and is associated with a Microsoft Learning module: ''Create interactive conversational bots for Microsoft Teams''. Refer to the following URL ..." [ref=e239] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=77a744a03ad668b196d019074c11cf4f23ebdce8be7e2ca78f3848e990c93fe0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9bWljcm9zb2Z0K3RlYW1zK2JvdCthcGkrMjAyNStwcm9hY3RpdmUrbWVzc2FnZXMrcmF0ZStsaW1pdCZtaWQ9NEM0OTcyMkZDNjIyMDkyN0NGM0Y0QzQ5NzIyRkM2MjIwOTI3Q0YzRiZjaHVybD1odHRwcyUzYSUyZiUyZnd3dy55b3V0dWJlLmNvbSUyZmNoYW5uZWwlMmZVQ1ZfNkhPaHd4WUxYQUdkLUpPcUtQb1EmRk9STT1WSVJF&ntb=1
+                - generic [ref=e240]:
+                  - generic [ref=e249]: 3:41
+                  - generic [ref=e250]:
+                    - generic "DEMO - Send proactive messages from Teams bots" [ref=e251]:
+                      - text: DEMO - Send
+                      - strong [ref=e252]: proactive
+                      - strong [ref=e253]: messages
+                      - text: from
+                      - strong [ref=e254]: Teams
+                      - text: bots
+                    - generic [ref=e255]:
+                      - generic [ref=e256]:
+                        - img "Сайт источника видео" [ref=e257]
+                        - text: YouTube · Microsoft 365 Developer
+                      - generic [ref=e258]: "Просмотров: 10,1тыс. · 1 июн. 2021 г."
+              - 'link "Proactive messages in Microsoft Teams bots (Javascript/Typescript)из YouTube · Длительность: 20 мин25 с · Просмотров: 3,8тыс. · отправлено: 5 авг. 2020 г. · кем отправлено: Marcos Zanré · Щелкните для воспроизведения. · Being able to proactively send a message or card from a bot to a user or channel is key to almost all bot logics. This video demonstrates some of the concepts and scenarios covered when planning for proactive messages in Javascript/Typescript Teams bots, whether when sending content from a bot or an external API. As part of the reference ..." [ref=e261] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=7982914a88496ff9bf56be380e879e93c58aa48ebabe9d51a2f2bac0ad7a12c5JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9bWljcm9zb2Z0K3RlYW1zK2JvdCthcGkrMjAyNStwcm9hY3RpdmUrbWVzc2FnZXMrcmF0ZStsaW1pdCZtaWQ9QTFFNDNBQzFBOEUyMkYxMUQzODVBMUU0M0FDMUE4RTIyRjExRDM4NSZjaHVybD1odHRwcyUzYSUyZiUyZnd3dy55b3V0dWJlLmNvbSUyZmNoYW5uZWwlMmZVQy1rU2JZMk9Zdk5jVDhXVUZUWXgyTUEmRk9STT1WSVJF&ntb=1
+                - generic [ref=e262]:
+                  - generic [ref=e271]: 20:25
+                  - generic [ref=e272]:
+                    - generic "Proactive messages in Microsoft Teams bots (Javascript/Typescript)" [ref=e273]:
+                      - strong [ref=e274]: Proactive
+                      - strong [ref=e275]: messages
+                      - text: in
+                      - strong [ref=e276]: Microsoft
+                      - strong [ref=e277]: Teams
+                      - text: bots (Javascript/Typescript)
+                    - generic [ref=e278]:
+                      - generic [ref=e279]:
+                        - img "Сайт источника видео" [ref=e280]
+                        - text: YouTube · Marcos Zanré
+                      - generic [ref=e281]: "Просмотров: 3,8тыс. · 5 авг. 2020 г."
+              - 'link "Send proactive messages from Teams botsиз YouTube · Длительность: 2 мин52 с · Просмотров: 4,6тыс. · отправлено: 1 июн. 2021 г. · кем отправлено: Microsoft 365 Developer · Щелкните для воспроизведения. · In this video, you’ll learn how to send proactive messages from your Microsoft Teams bot for welcome messages and to notify people of external events. This video is part of a series in a playlist and is associated with a Microsoft Learning module: ''Create interactive conversational bots for Microsoft Teams''. Refer to the following URL to ..." [ref=e284] [cursor=pointer]':
+                - /url: https://www.bing.com/ck/a?!&&p=e4fe9cc5dfa9bfd42e832c33a8e7ae3495e52db9646502ba7b7991b6a12b7d5eJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9bWljcm9zb2Z0K3RlYW1zK2JvdCthcGkrMjAyNStwcm9hY3RpdmUrbWVzc2FnZXMrcmF0ZStsaW1pdCZtaWQ9ODM3MDAwNUE5MUMxMzc4ODZEMjM4MzcwMDA1QTkxQzEzNzg4NkQyMyZjaHVybD1odHRwcyUzYSUyZiUyZnd3dy55b3V0dWJlLmNvbSUyZmNoYW5uZWwlMmZVQ1ZfNkhPaHd4WUxYQUdkLUpPcUtQb1EmRk9STT1WSVJF&ntb=1
+                - generic [ref=e285]:
+                  - generic [ref=e294]: 2:52
+                  - generic [ref=e295]:
+                    - generic "Send proactive messages from Teams bots" [ref=e296]:
+                      - text: Send
+                      - strong [ref=e297]: proactive
+                      - strong [ref=e298]: messages
+                      - text: from
+                      - strong [ref=e299]: Teams
+                      - text: bots
+                    - generic [ref=e300]:
+                      - generic [ref=e301]:
+                        - img "Сайт источника видео" [ref=e302]
+                        - text: YouTube · Microsoft 365 Developer
+                      - generic [ref=e303]: "Просмотров: 4,6тыс. · 1 июн. 2021 г."
+        - listitem [ref=e304]:
+          - generic [ref=e305]:
+            - link "Исследуйте это изображение" [ref=e308] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=dTaUtGRE&id=5D4B1BD4E08077D7B24BBB5E2F7AEFB90E2F0466&thid=OIP.dTaUtGREYwu6u2rT-Fe-LgHaDt&mediaurl=https://opengraph.githubassets.com/319db00e6d4c9b5d909c9f96d9a77247f959c9e24ac519bc12543cae733c933e/MicrosoftDocs/msteams-docs&q=microsoft+teams+bot+api+2025+proactive+messages+rate+limit&ck=55B869EFD946722F58BBF36E42DCF786&idpp=rc&expw=1200&exph=600&form=rc2idp
+            - generic [ref=e310]:
+              - link "Github" [ref=e312] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=717e5a020228b24e78b5f52f30877019a81918fd405f5e23adddd4f713d56f1fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL01pY3Jvc29mdERvY3MvbXN0ZWFtcy1kb2NzL2Jsb2IvbWFpbi9tc3RlYW1zLXBsYXRmb3JtL2JvdHMvaG93LXRvL3JhdGUtbGltaXQubWQ&ntb=1
+                - generic [ref=e317]:
+                  - generic [ref=e318]: Github
+                  - generic [ref=e320]:
+                    - generic [ref=e321]: https://github.com › ... › bots › how-to › rate-limi…
+                    - generic [ref=e322]: Перевести этот результат
+              - heading "Optimize your bot with rate limiting in Teams - GitHub" [level=2] [ref=e323]:
+                - link "Optimize your bot with rate limiting in Teams - GitHub" [ref=e324] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=717e5a020228b24e78b5f52f30877019a81918fd405f5e23adddd4f713d56f1fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL01pY3Jvc29mdERvY3MvbXN0ZWFtcy1kb2NzL2Jsb2IvbWFpbi9tc3RlYW1zLXBsYXRmb3JtL2JvdHMvaG93LXRvL3JhdGUtbGltaXQubWQ&ntb=1
+              - paragraph [ref=e325]: 6 февр. 2025 г. · Learn how to optimize bot with rate limiting, detect transient exceptions, perform an exponential backoff, and know about add per bot thread …
+        - listitem [ref=e327]:
+          - generic [ref=e328]:
+            - link "Исследуйте это изображение" [ref=e331] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=KB6EgGmG&id=DB8F6B870373BA665B94080902F662203F9D1306&thid=OIP.KB6EgGmGBFpmcOn0J_zA0gHaEO&mediaurl=https://learn.microsoft.com/en-us/microsoftteams/platform/assets/images/cards/suggested-actions.png&q=microsoft+teams+bot+api+2025+proactive+messages+rate+limit&ck=E4749895D9CC4B6AA00F86FD99EF7C26&idpp=rc&expw=1200&exph=685&form=rc2idp
+            - generic [ref=e333]:
+              - link "Microsoft Learn" [ref=e335] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=93f26454f89c899588023d4697f1e6345e30a14e506d796467aa1ffe23eb59fbJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL2JvdHMvYnVpbGQtY29udmVyc2F0aW9uYWwtY2FwYWJpbGl0eQ&ntb=1
+                - generic [ref=e340]:
+                  - generic [ref=e341]: Microsoft Learn
+                  - generic [ref=e343]:
+                    - generic [ref=e344]: https://learn.microsoft.com › en-us › microsoftt…
+                    - generic [ref=e345]: Перевести этот результат
+              - heading "Conversations with a Bot - Teams | Microsoft Learn" [level=2] [ref=e346]:
+                - link "Conversations with a Bot - Teams | Microsoft Learn" [ref=e347] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=93f26454f89c899588023d4697f1e6345e30a14e506d796467aa1ffe23eb59fbJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL2JvdHMvYnVpbGQtY29udmVyc2F0aW9uYWwtY2FwYWJpbGl0eQ&ntb=1
+              - paragraph [ref=e348]: 16 мар. 2025 г. · Your bot gets messages from Teams using the Text property and can send back single or multiple responses to users. For more information, see …
+        - listitem [ref=e350]:
+          - generic [ref=e351]:
+            - link "Исследуйте это изображение" [ref=e354] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=vxpS9T8N&id=69EB087B68EF8FA344608E0108AA51BB4E39439E&thid=OIP.vxpS9T8ND02D2Ov2Q81U8gHaDb&mediaurl=https://i.sstatic.net/jLz4g.png&q=microsoft+teams+bot+api+2025+proactive+messages+rate+limit&ck=8A13FD7B673552B091A50A63C52D827E&idpp=rc&expw=1136&exph=527&form=rc2idp
+            - generic [ref=e356]:
+              - link "Stack Overflow" [ref=e358] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=6ad3fb8bc6678b15d199ca2607035eb0e6b169cee0420917c2ee9bf6c49059d0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvNzcyODUzMTQvcXVlc3Rpb24tcmVnYXJkaW5nLXJhdGUtbGltaXRpbmctZm9yLW1zLXRlYW1zLWJvdA&ntb=1
+                - generic [ref=e363]:
+                  - generic [ref=e364]: Stack Overflow
+                  - generic [ref=e366]:
+                    - generic [ref=e367]: https://stackoverflow.com › questions › ...
+                    - generic [ref=e368]: Перевести этот результат
+              - heading "Question regarding rate limiting for MS Teams Bot" [level=2] [ref=e369]:
+                - link "Question regarding rate limiting for MS Teams Bot" [ref=e370] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=6ad3fb8bc6678b15d199ca2607035eb0e6b169cee0420917c2ee9bf6c49059d0JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9zdGFja292ZXJmbG93LmNvbS9xdWVzdGlvbnMvNzcyODUzMTQvcXVlc3Rpb24tcmVnYXJkaW5nLXJhdGUtbGltaXRpbmctZm9yLW1zLXRlYW1zLWJvdA&ntb=1
+              - paragraph [ref=e371]: 13 окт. 2023 г. · If your application sends one bot message to each user …
+              - generic [ref=e373]:
+                - list [ref=e374]:
+                  - listitem [ref=e375]:
+                    - generic [ref=e376]: "Отзывы: 1"
+                - list
+        - listitem [ref=e378]:
+          - link "silverpc.hu" [ref=e380] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=8a60e805daf915d01c25c3149fe5e712b86005394122ed8d35e1a13efafe3c70JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9ibG9nLnNpbHZlcnBjLmh1LzIwMjUvMTAvMjIvbmF2aWdhdGluZy10ZWFtcy1ib3QtZnJhbWV3b3JrLW92ZXJjb21pbmctcHJvYWN0aXZlLW1lc3NhZ2luZy1saW1pdGF0aW9ucy13aXRoLWdyYXBoLWFwaS8&ntb=1
+            - generic [ref=e385]:
+              - generic [ref=e386]: silverpc.hu
+              - generic [ref=e388]:
+                - generic [ref=e389]: https://blog.silverpc.hu › navigating...
+                - generic [ref=e390]: Перевести этот результат
+          - 'heading "Navigating Teams Bot Framework: Overcoming Proactive Messaging ..." [level=2] [ref=e391]':
+            - 'link "Navigating Teams Bot Framework: Overcoming Proactive Messaging ..." [ref=e392] [cursor=pointer]':
+              - /url: https://www.bing.com/ck/a?!&&p=8a60e805daf915d01c25c3149fe5e712b86005394122ed8d35e1a13efafe3c70JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9ibG9nLnNpbHZlcnBjLmh1LzIwMjUvMTAvMjIvbmF2aWdhdGluZy10ZWFtcy1ib3QtZnJhbWV3b3JrLW92ZXJjb21pbmctcHJvYWN0aXZlLW1lc3NhZ2luZy1saW1pdGF0aW9ucy13aXRoLWdyYXBoLWFwaS8&ntb=1
+          - paragraph [ref=e394]: 22 окт. 2025 г. · Unlock advanced proactive messaging in Microsoft Teams bots. Learn to overcome limitations and send targeted notifications using the powerful Microsoft Graph API.
+        - listitem [ref=e395]:
+          - generic [ref=e397]:
+            - heading "Люди также спрашивают" [level=2] [ref=e398]:
+              - generic [ref=e399]: Люди также спрашивают
+            - list [ref=e402]:
+              - listitem [ref=e403]:
+                - heading "How many bot messages can a bot send to a user?" [level=3] [ref=e404]:
+                  - button "How many bot messages can a bot send to a user?" [ref=e405] [cursor=pointer]:
+                    - generic [ref=e406]: How many bot messages can a bot send to a user?
+                    - generic:
+                      - img
+              - listitem [ref=e407]:
+                - heading "What happens if a bot sends too many requests?" [level=3] [ref=e408]:
+                  - button "What happens if a bot sends too many requests?" [ref=e409] [cursor=pointer]:
+                    - generic [ref=e410]: What happens if a bot sends too many requests?
+                    - generic:
+                      - img
+              - listitem [ref=e411]:
+                - heading "What if the bot message size limit exceeds 40 kb?" [level=3] [ref=e412]:
+                  - button "What if the bot message size limit exceeds 40 kb?" [ref=e413] [cursor=pointer]:
+                    - generic [ref=e414]: What if the bot message size limit exceeds 40 kb?
+                    - generic:
+                      - img
+              - listitem [ref=e415]:
+                - heading "How many bot messages can a tenant send per second?" [level=3] [ref=e416]:
+                  - button "How many bot messages can a tenant send per second?" [ref=e417] [cursor=pointer]:
+                    - generic [ref=e418]: How many bot messages can a tenant send per second?
+                    - generic:
+                      - img
+        - listitem [ref=e420]:
+          - link "Microsoft Community" [ref=e422] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=8a235200c717a9af860128f8ea98ddeb37055301fcc5298db1195725121820b6JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly90ZWNoY29tbXVuaXR5Lm1pY3Jvc29mdC5jb20vZGlzY3Vzc2lvbnMvdGVhbXNkZXZlbG9wZXIvYm90LW1lc3NhZ2UtbGltaXRhdGlvbi1hbmQtYWx0ZXJuYXRpdmUtZm9yLXRoYXQtbGltaXRhdGlvbi8zOTQxNTcx&ntb=1
+            - generic [ref=e427]:
+              - generic [ref=e428]: Microsoft Community
+              - generic [ref=e430]:
+                - generic [ref=e431]: https://techcommunity.microsoft.com › discussions › ...
+                - generic [ref=e432]: Перевести этот результат
+          - heading "bot message limitation and alternative for that limitation | Microsoft ..." [level=2] [ref=e433]:
+            - link "bot message limitation and alternative for that limitation | Microsoft ...":
+              - /url: https://www.bing.com/ck/a?!&&p=8a235200c717a9af860128f8ea98ddeb37055301fcc5298db1195725121820b6JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly90ZWNoY29tbXVuaXR5Lm1pY3Jvc29mdC5jb20vZGlzY3Vzc2lvbnMvdGVhbXNkZXZlbG9wZXIvYm90LW1lc3NhZ2UtbGltaXRhdGlvbi1hbmQtYWx0ZXJuYXRpdmUtZm9yLXRoYXQtbGltaXRhdGlvbi8zOTQxNTcx&ntb=1
+          - paragraph [ref=e435]: 13 сент. 2023 г. · Yes, you're correct that the bot message size limit is 40 KB. If your message, including the tabular data, exceeds this limit, you will receive a 413 status code (RequestEntityTooLarge).
+        - listitem [ref=e436]:
+          - link "Microsoft Learn" [ref=e438] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=cc3437f6232f1b2a2a6b3906750c88c0bbfd2b875a398f7198c9ae43e5cffbb1JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL2Fuc3dlcnMvcXVlc3Rpb25zLzU1NDYxMDMvbWljcm9zb2Z0LXRlYW1zLWJvdC1mcmFtZXdvcmstcHJvYWN0aXZlLW1lc3NhZ2luZw&ntb=1
+            - generic [ref=e443]:
+              - generic [ref=e444]: Microsoft Learn
+              - generic [ref=e446]:
+                - generic [ref=e447]: https://learn.microsoft.com › en-us › answers › ...
+                - generic [ref=e448]: Перевести этот результат
+          - heading "Microsoft Teams Bot Framework – Proactive messaging limitations …" [level=2] [ref=e449]:
+            - link "Microsoft Teams Bot Framework – Proactive messaging limitations …":
+              - /url: https://www.bing.com/ck/a?!&&p=cc3437f6232f1b2a2a6b3906750c88c0bbfd2b875a398f7198c9ae43e5cffbb1JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL2Fuc3dlcnMvcXVlc3Rpb25zLzU1NDYxMDMvbWljcm9zb2Z0LXRlYW1zLWJvdC1mcmFtZXdvcmstcHJvYWN0aXZlLW1lc3NhZ2luZw&ntb=1
+          - paragraph [ref=e451]: 5 сент. 2025 г. · I'm building a Microsoft Teams bot using the Bot Framework and Microsoft Graph API. I need to proactively message a user who hasn't interacted with the bot yet. Currently, I only have their …
+        - listitem [ref=e452]:
+          - generic [ref=e453]:
+            - link "Исследуйте это изображение" [ref=e456] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=WZD6Ch/v&id=7808BA9664DDFCC031F69C7FD013CDCE73C798F7&thid=OIP.WZD6Ch_vP0kuDHCDKlH10AHaEK&mediaurl=https://learn.microsoft.com/en-us/microsoftteams/platform/assets/images/bots/chat-bot-ux.gif&q=microsoft+teams+bot+api+2025+proactive+messages+rate+limit&ck=F7AA910D899F7CAD8A46DB78BAE96F61&idpp=rc&expw=2732&exph=1536&form=rc2idp
+            - generic [ref=e458]:
+              - link "Microsoft Learn" [ref=e460] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=e5f919cafc160a5aa5b31480eeb77a35531fbc8420ba91bdc3f6b446a738b81bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL2JvdHMvb3ZlcnZpZXc&ntb=1
+                - generic [ref=e465]:
+                  - generic [ref=e466]: Microsoft Learn
+                  - generic [ref=e468]:
+                    - generic [ref=e469]: https://learn.microsoft.com › en-us › microsoftt…
+                    - generic [ref=e470]: Перевести этот результат
+              - heading "Teams bots overview - Teams | Microsoft Learn" [level=2] [ref=e471]:
+                - link "Teams bots overview - Teams | Microsoft Learn" [ref=e472] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=e5f919cafc160a5aa5b31480eeb77a35531fbc8420ba91bdc3f6b446a738b81bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9sZWFybi5taWNyb3NvZnQuY29tL2VuLXVzL21pY3Jvc29mdHRlYW1zL3BsYXRmb3JtL2JvdHMvb3ZlcnZpZXc&ntb=1
+              - paragraph [ref=e473]: 10 нояб. 2025 г. · Bots are software applications that interact with users through text-based conversations. Bots follow predefined rules to answer questions or …
+        - listitem [ref=e475]:
+          - link "Github" [ref=e477] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=7249f7b0f65165dccd1e0d59474f0d202e10a15951e8b7a2cf3100f64e31a4edJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL01pY3Jvc29mdERvY3MvTWljcm9zb2Z0LXRlYW1zLWRvY3MvYmxvYi9tYXN0ZXIvdGVhbXMvcmF0ZWxpbWl0aW5nLm1k&ntb=1
+            - generic [ref=e482]:
+              - generic [ref=e483]: Github
+              - generic [ref=e485]:
+                - generic [ref=e486]: https://github.com › ... › master › teams › ratelimiting.md
+                - generic [ref=e487]: Перевести этот результат
+          - heading "Microsoft-teams-docs/teams/ratelimiting.md at master - GitHub" [level=2] [ref=e488]:
+            - link "Microsoft-teams-docs/teams/ratelimiting.md at master - GitHub":
+              - /url: https://www.bing.com/ck/a?!&&p=7249f7b0f65165dccd1e0d59474f0d202e10a15951e8b7a2cf3100f64e31a4edJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cHM6Ly9naXRodWIuY29tL01pY3Jvc29mdERvY3MvTWljcm9zb2Z0LXRlYW1zLWRvY3MvYmxvYi9tYXN0ZXIvdGVhbXMvcmF0ZWxpbWl0aW5nLm1k&ntb=1
+          - paragraph [ref=e490]: As a general principle, your application should limit the number of messages it posts into an individual chat or channel conversation. This ensures an optimal experience that does not feel “spammy” to …
+        - listitem [ref=e491]:
+          - generic [ref=e492]:
+            - heading "Глубокий анализ microsoft teams bot api 2025 proactive messages ra…" [level=2] [ref=e493]:
+              - text: Глубокий анализ
+              - strong [ref=e494]: microsoft teams bot api 2025 proactive messages ra
+              - text: …
+            - list [ref=e495]:
+              - listitem [ref=e496]:
+                - link "teams proactive message examples" [ref=e497] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=2fec9d224f5b6c354a15bcf2c6096a91e4fa6090cd442d6c30528837529bd478JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPXRlYW1zK3Byb2FjdGl2ZSttZXNzYWdlK2V4YW1wbGVzJkZPUk09UVNSRTE&ntb=1
+                  - generic [ref=e499]:
+                    - text: teams proactive
+                    - strong [ref=e500]: message examples
+              - listitem [ref=e501]:
+                - link "send proactive messages in teams" [ref=e502] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=ed13b808c1a10af1330eff8f91b8f31f1b5922d2948d0d458fbce0a720b3d54fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPXNlbmQrcHJvYWN0aXZlK21lc3NhZ2VzK2luK3RlYW1zJkZPUk09UVNSRTI&ntb=1
+                  - generic [ref=e504]:
+                    - strong [ref=e505]: send
+                    - text: proactive messages
+                    - strong [ref=e506]: in
+                    - text: teams
+              - listitem [ref=e507]:
+                - link "Microsoft Teams chat bot" [ref=e508] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=65d46cbe9759a4725eb69369ca612abf177961b90f704cf93cef22df3dc6506bJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtUZWFtcytjaGF0K2JvdCZGT1JNPVFTUkUz&ntb=1
+                  - generic [ref=e510]:
+                    - text: Microsoft Teams
+                    - strong [ref=e511]: chat
+                    - text: bot
+        - listitem [ref=e512]:
+          - link "Некоторые результаты удалены" [ref=e514] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=344d5a01c9020ae0f64570329c97724738ffd487613df9d1570aabd450329c84JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9NjE3MzUw&ntb=1
+        - listitem [ref=e515]:
+          - navigation "Другие результаты по запросу microsoft teams bot api 2025 proactive messages rate limit":
+            - list:
+              - listitem [ref=e516]:
+                - generic "Страница 1" [ref=e517]: "1"
+              - listitem [ref=e518]:
+                - link "Страница 2" [ref=e519] [cursor=pointer]:
+                  - /url: /search?q=microsoft+teams+bot+api+2025+proactive+messages+rate+limit&FPIG=4DA9FE78F3694BCB8856697E82A23381&first=11&FORM=PERE
+                  - text: "2"
+              - listitem [ref=e520]:
+                - link "Страница 3" [ref=e521] [cursor=pointer]:
+                  - /url: /search?q=microsoft+teams+bot+api+2025+proactive+messages+rate+limit&FPIG=4DA9FE78F3694BCB8856697E82A23381&first=21&FORM=PERE1
+                  - text: "3"
+              - listitem [ref=e522]:
+                - link "Следующая страница" [ref=e523] [cursor=pointer]:
+                  - /url: /search?q=microsoft+teams+bot+api+2025+proactive+messages+rate+limit&FPIG=4DA9FE78F3694BCB8856697E82A23381&first=11&FORM=PORE
+    - complementary "Дополнительные результаты" [ref=e524]:
+      - list [ref=e525]:
+        - listitem [ref=e526]:
+          - generic "Похожие поисковые запросы" [ref=e527]:
+            - generic [ref=e529]:
+              - heading "Глубокий анализ microsoft teams bot api 2025 proactive messages ra…" [level=2] [ref=e531]:
+                - text: Глубокий анализ
+                - strong [ref=e532]: microsoft teams bot api 2025 proactive messages ra
+                - text: …
+              - generic [ref=e533]:
+                - link "teams proactive message examples" [ref=e535] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=03e9cc61f617448940f8c415684602509aff9a5903765e0f1ebdd35a5f56a1c1JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPXRlYW1zK3Byb2FjdGl2ZSttZXNzYWdlK2V4YW1wbGVzJkZPUk09UjVGRA&ntb=1
+                  - generic [ref=e537]:
+                    - text: teams proactive
+                    - strong [ref=e538]: message examples
+                - link "send proactive messages in teams" [ref=e540] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=7274c50c3994149ead6478158a0747da341b12e8e1bbb820821ea16a65e4fd93JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPXNlbmQrcHJvYWN0aXZlK21lc3NhZ2VzK2luK3RlYW1zJkZPUk09UjVGRDE&ntb=1
+                  - generic [ref=e542]:
+                    - strong [ref=e543]: send
+                    - text: proactive messages
+                    - strong [ref=e544]: in
+                    - text: teams
+                - link "Microsoft Teams chat bot" [ref=e546] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=ebdd04d5c45038d74934c1a90fed29ed08b928f219105318b818cd961bf23ebeJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1L3NlYXJjaD9xPU1pY3Jvc29mdCtUZWFtcytjaGF0K2JvdCZGT1JNPVI1RkQy&ntb=1
+                  - generic [ref=e548]:
+                    - text: Microsoft Teams
+                    - strong [ref=e549]: chat
+                    - text: bot
+  - contentinfo [ref=e550]:
+    - generic [ref=e551]:
+      - list:
+        - listitem [ref=e552]:
+          - link "Конфиденциальность" [ref=e553] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=21b033e4690739c4b00c739e1cf31e392a048d8ccb3ae7bae1d3804b0b25c834JmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=e554]:
+          - link "Условия" [ref=e555] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=35dbb4284fed750b180ae689312f45529a3b13fc05a5d31d6bb10222597c960fJmltdHM9MTc4MTkxMzYwMA&ptn=3&ver=2&hsh=4&fclid=3321685f-79a7-63ff-22e5-7f37788e62e3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1

@@ -1,0 +1,5 @@
+[    8252ms] [ERROR] The Content Security Policy directive 'frame-ancestors' is ignored when delivered via a <meta> element. @ https://yandex.com/dev/messenger/doc/ru/:0
+[    8253ms] [WARNING] <link rel=preload> has an unsupported `type` value @ https://yandex.com/dev/messenger/doc/ru/:0
+[    8253ms] [WARNING] <link rel=preload> has an unsupported `type` value @ https://yandex.com/dev/messenger/doc/ru/:0
+[    8253ms] [WARNING] <link rel=preload> has an unsupported `type` value @ https://yandex.com/dev/messenger/doc/ru/:0
+[    8253ms] [WARNING] <link rel=preload> has an unsupported `type` value @ https://yandex.com/dev/messenger/doc/ru/:0
